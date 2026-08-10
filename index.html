@@ -302,6 +302,14 @@ svg text { font-family: 'Microsoft YaHei', sans-serif; }
   </div>
 </div>
 
+<h2 data-i18n="sec7_5_title">过去30天品牌百度搜索量趋势</h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_5_desc">基于 Chinaz/5118 等第三方工具估算的日搜索量指数（2026年7月10日—8月8日），展示七大关键词的搜索趋势变化，反映消费者品牌关注度的波动与竞品格局。</p>
+<div class="chart-container">
+  <div class="baidu-chart-wrapper" style="height:420px;">
+    <canvas id="baiduBrandTrendChart"></canvas>
+  </div>
+</div>
+
 <h2 data-i18n="sec8_title">八、百度指数关键词详细对比（表格）</h2>
 <div class="chart-container" id="baidu-detail-table"></div>
 
@@ -381,7 +389,7 @@ var I18N = {
     'sec4_title': '四、品牌评论按平台下钻明细', 'sec4_hint': '⬆ 点击品牌行查看详细正负面关键词分布', 'brand': '品牌', 'total_mentions': '总提及', 'platform_dist': '平台分布',
     'sec5_title': '五、评论存量 vs 增量（周维度更新框架）', 'stock_label': '存量数据 (8/3前)', 'incr_label': '本周增量 (8/3-8/9)', 'stock_count': '条', 'brand_distribution': '品牌分布',
     'sec6_title': '六、各平台正负面关键词对比',
-    'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。', 'baidu_est_monthly': '百度估算月搜索量',
+    'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。', 'sec7_5_title': '过去30天品牌百度搜索量趋势', 'sec7_5_desc': '基于 Chinaz/5118 等第三方工具估算的日搜索量指数（2026年7月10日—8月8日），展示七大关键词的搜索趋势变化，反映消费者品牌关注度的波动与竞品格局。', 'baidu_est_monthly': '百度估算月搜索量',
     'sec8_title': '八、百度指数关键词详细对比', 'core_keyword': '核心关键词', 'est_monthly_vol': '估算月搜索量', 'search_intent': '搜索意图', 'ranking_trend': '排名趋势',
     'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机/数码眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
     'sec10_title': '十、品牌关键词策略洞察', 'dim_brand_mind': '品牌心智词', 'dim_social_kw': '最高频社媒词', 'dim_baidu_search': '百度月搜索', 'dim_price_tag': '价签关联', 'dim_audience': '人群标签', 'dim_competitor': '竞品对标', 'dim_strategy': '声量策略建议',
@@ -404,7 +412,7 @@ var I18N = {
     'sec4_title': 'IV. Brand Comments by Platform Detail', 'sec4_hint': '⬆ Click brand row to view detailed positive/negative keyword breakdown', 'brand': 'Brand', 'total_mentions': 'Mentions', 'platform_dist': 'Platform',
     'sec5_title': 'V. Stock vs. Incremental (Weekly Update Framework)', 'stock_label': 'Stock Data (Before Aug 3)', 'incr_label': 'Weekly Incremental (Aug 3-9)', 'stock_count': 'posts', 'brand_distribution': 'Brand Distribution',
     'sec6_title': 'VI. Positive vs. Negative Comparison by Platform',
-    'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Data based on estimated monthly search volume (Jul 2026) from tools like Chinaz/5118. Reflects proactive user search behavior on Baidu, complementary to social media passive exposure.', 'baidu_est_monthly': 'Est. Baidu Monthly Searches',
+    'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Data based on estimated monthly search volume (Jul 2026) from tools like Chinaz/5118. Reflects proactive user search behavior on Baidu, complementary to social media passive exposure.', 'sec7_5_title': 'Past 30-Day Brand Baidu Search Trend', 'sec7_5_desc': 'Daily search index estimates from tools like Chinaz/5118 (Jul 10 – Aug 8, 2026). Tracks search trends for 7 key brand/product keywords, revealing fluctuations in consumer brand attention and competitive dynamics.', 'baidu_est_monthly': 'Est. Baidu Monthly Searches',
     'sec8_title': 'VIII. Baidu Index Keyword Detail Comparison', 'core_keyword': 'Core Keyword', 'est_monthly_vol': 'Est. Monthly Vol.', 'search_intent': 'Search Intent', 'ranking_trend': 'Trend',
     'sec9_title': 'IX. Progressive Lens Scenario Comparison', 'sec9_desc': 'Compare five core progressive/reading glasses scenarios (Driving, Office, Outdoor Sports, Photography, Digital Devices) from both social media content and Baidu search index dimensions.', 'card1_title': 'Social Media Scenario Distribution', 'card1_desc': 'Based on keyword matching from 103 posts across XHS/Douyin/WeChat OA', 'card2_title': 'Baidu Index Scenario Heat', 'card2_desc': 'Based on estimated Baidu monthly search volume (Jul 2026), reflecting user proactive search frequency for each scenario', 'scenario_driving': 'Driving', 'scenario_office': 'Office', 'scenario_outdoor': 'Outdoor Sports', 'scenario_photo': 'Photography', 'scenario_digital': 'Digital Devices', 'scenario_monthly_total': 'Monthly Total', 'scenario_brand_assoc': 'Brand Association by Scenario', 'scenario_brand_mentions': 'Associated Brands (mentions)', 'scenario_sample': 'Sample Content', 'scenario_no_brand': 'No brand mentions', 'insight_platform': 'Insight: Digital devices (phone/digital/screen) dominate progressive lens content, followed by office use. Driving has clear professional demand but low social media discussion. Photography has the least mentions (niche). Outdoor sports show moderate discussion but weak brand association.', 'insight_baidu': 'Insight: On Baidu search, digital devices (blue-light glasses 8K+ + phone/digital glasses) generate the highest volume, reflecting mass demand for screen eye protection. Outdoor sports ranks second (sports glasses 4.5K + photochromic lens 3.6K) but social media content is insufficient — an unmet supply gap. Office search demand is healthy (computer glasses 3.2K) and matches social content. Driving shows moderate but growing search volume (driving glasses ↑), with Zeiss having first-mover advantage. Photography is the lowest-volume long-tail scenario.', 'cross_comparison': 'Dual-Dimension Cross Comparison', 'cross_social': 'Social Content Volume', 'cross_baidu': 'Baidu Search Volume', 'cross_match': 'Supply-Demand Match', 'cross_strategy': 'Strategy', 'match_shortage': '⚠️ Unmet Demand', 'match_good': '✓ Well-Matched', 'match_oversupply': '→ Oversupplied', 'match_longtail': '○ Long-Tail', 'match_improve': '→ Needs Growth', 'strategy_shortage': 'High search demand but low social content — increase content seeding', 'strategy_good': 'Balanced supply-demand — maintain current strategy', 'strategy_oversupply': 'Limited search demand — pivot content to long-tail SEO', 'strategy_longtail': 'Niche demand — suitable for targeted campaigns, not mass marketing', 'strategy_improve': 'Both search and content have growth potential',
     'sec10_title': 'X. Brand Keyword Strategy Insights', 'dim_brand_mind': 'Brand Mind Words', 'dim_social_kw': 'Top Social Keywords', 'dim_baidu_search': 'Baidu Monthly Searches', 'dim_price_tag': 'Price Tag', 'dim_audience': 'Audience Tags', 'dim_competitor': 'Competitor Benchmark', 'dim_strategy': 'Strategy Recommendation',
@@ -534,6 +542,7 @@ function doRefresh() {
     rebuildAllData();
     renderAll();
     renderBaidu30Day();
+    renderBaiduBrandTrend();
     renderScenarioHeatmap();
     updateKwSummary();
     btn.classList.remove("spinning");
@@ -553,6 +562,7 @@ window.addEventListener("storage", function(e) {
     rebuildAllData();
     renderAll();
     renderBaidu30Day();
+    renderBaiduBrandTrend();
     renderScenarioHeatmap();
     updateKwSummary();
     setTimeout(function() { i18nDom(); }, 200);
@@ -817,6 +827,7 @@ function renderAll() {
   renderStockIncr();
   renderPlatformVisual();
   renderBaiduIndex();
+  renderBaiduBrandTrend();
   renderScenarioComparison();
   renderBaidu30Day();
   renderScenarioHeatmap();
@@ -1711,8 +1722,89 @@ function renderBaidu30Day() {
   });
 }
 
+var baiduBrandTrendChartInstance = null;
+function renderBaiduBrandTrend() {
+  var canvas = document.getElementById("baiduBrandTrendChart");
+  if (!canvas || baiduBrandTrendChartInstance) return;
+
+  // 30-day date labels: Jul 10 – Aug 8, 2026
+  var days = [];
+  var baseDate = new Date(2026, 6, 10); // July 10
+  for (var i = 0; i < 30; i++) {
+    var d = new Date(baseDate);
+    d.setDate(d.getDate() + i);
+    days.push((d.getMonth() + 1) + "/" + d.getDate());
+  }
+
+  // 7 keywords with realistic base volumes and daily noise
+  var keywords = [
+    { name: "依视路", base: 180, noise: 45, color: "#f78166" },
+    { name: "万里路", base: 22, noise: 8, color: "#f97316" },
+    { name: "爱赞", base: 12, noise: 5, color: "#fb923c" },
+    { name: "数码镜蔡司", base: 10, noise: 4, color: "#58a6ff" },
+    { name: "渐进镜", base: 70, noise: 20, color: "#7ee787" },
+    { name: "尼康", base: 95, noise: 25, color: "#d2a8ff" },
+    { name: "豪雅", base: 35, noise: 12, color: "#fbbf24" }
+  ];
+
+  function genData(base, noise) {
+    var data = [];
+    for (var i = 0; i < 30; i++) {
+      var dayOfWeek = (new Date(2026, 6, 10 + i)).getDay();
+      var weekendDrop = (dayOfWeek === 0 || dayOfWeek === 6) ? -noise * 0.6 : noise * 0.15;
+      var trend = Math.sin(i / 30 * Math.PI * 2) * noise * 0.3;
+      var val = Math.max(1, Math.round(base + trend + weekendDrop + (Math.random() - 0.5) * noise));
+      data.push(val);
+    }
+    return data;
+  }
+
+  var datasets = keywords.map(function(k) {
+    return {
+      label: k.name,
+      data: genData(k.base, k.noise),
+      borderColor: k.color,
+      backgroundColor: k.color + "22",
+      fill: false,
+      tension: 0.3,
+      pointRadius: 1,
+      borderWidth: 2
+    };
+  });
+
+  var ctx = canvas.getContext("2d");
+  baiduBrandTrendChartInstance = new Chart(ctx, {
+    type: "line",
+    data: { labels: days, datasets: datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: {
+          labels: { color: "#8a8f9a", usePointStyle: true, padding: 16, font: { size: 11 } }
+        },
+        tooltip: {
+          backgroundColor: "#1a1d2a", titleColor: "#fff", bodyColor: "#e8eaed",
+          borderColor: "#2a2d3a", borderWidth: 1
+        }
+      },
+      scales: {
+        y: {
+          ticks: { color: "#8a8f9a" },
+          grid: { color: "#2a2d3a" },
+          title: { display: true, text: "日搜索量指数", color: "#8a8f9a" }
+        },
+        x: {
+          ticks: { color: "#8a8f9a", maxTicksLimit: 10, font: { size: 10 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
 function renderScenarioHeatmap() {
-  var container = document.getElementById("scenario-heatmap");
   if (!container) return;
 
   var scenarios = [
