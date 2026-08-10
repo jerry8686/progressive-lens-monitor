@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.5</title>
+<title>渐进镜舆情监控平台 v2.6</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -300,7 +300,7 @@ canvas { display: block; max-width: 100%; }
 <div id="platform-visual-section" style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center"></div>
 
 <h2 data-i18n="sec7_title">七、百度指数关键词热度对比（柱状图）</h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于Chinaz站长工具流量词API+长尾词API实时获取（2026年8月10日），4个品牌词精确匹配，渐进多焦点眼镜&依视路爱赞来自长尾词API，*标注为估算/代理值。</p>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于Chinaz站长工具流量词API+长尾词API实时获取（2026年8月10日），4个品牌词精确匹配，渐进多焦点眼镜&依视路爱赞来自长尾词API，蔡司产品线/豪雅手机镜/依视路万里路为估算值，*标注为估算/代理值。</p>
 <div class="chart-container">
   <div class="baidu-chart-wrapper">
     <canvas id="baiduIndexChart"></canvas>
@@ -1317,11 +1317,11 @@ function renderBaiduIndex() {
     baiduChartInstance = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "渐进多焦点眼镜"],
+        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路爱赞*", "依视路万里路*", "渐进多焦点眼镜", "蔡司泽锐*", "蔡司智锐*", "蔡司熠光*", "豪雅手机镜*"],
         datasets: [{
-          label: "百度指数 (来自站长工具实时数据)",
-          data: [1196, 516, 1052, 357, 190, 340, 89],
-          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#f97316", "#fb923c", "#7ee787"],
+          label: "百度指数 (来自站长工具实时数据+估算*)",
+          data: [1196, 516, 1052, 357, 340, 190, 89, 120, 80, 45, 180],
+          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#fb923c", "#f97316", "#7ee787", "#58a6ff88", "#58a6ff88", "#58a6ff88", "#7ee78788"],
           borderRadius: 6
         }]
       },
@@ -1343,23 +1343,25 @@ function renderBaiduIndex() {
   var tableHtml = "<table><tr><th>品牌</th><th>关键词</th><th>百度指数</th><th>PC搜索量</th><th>移动搜索量</th><th>数据来源</th></tr>";
   var rows = [
     { brand: "蔡司 ZEISS", brandColor: "#58a6ff", items: [
-      { kw: "蔡司", allIndex: "1,196", pc: "13,576", mobile: "44,056", source: "✅ 流量词API" }
+      { kw: "蔡司", allIndex: "1,196", pc: "13,576", mobile: "44,056", source: "✅ 流量词API" },
+      { kw: "蔡司泽锐", allIndex: "~120", pc: "—", mobile: "—", source: "⚠️ 估算" },
+      { kw: "蔡司智锐", allIndex: "~80", pc: "—", mobile: "—", source: "⚠️ 估算" },
+      { kw: "蔡司熠光", allIndex: "~45", pc: "—", mobile: "—", source: "⚠️ 估算" }
     ]},
     { brand: "依视路 Essilor", brandColor: "#f78166", items: [
-      { kw: "依视路", allIndex: "516", pc: "5,916", mobile: "25,825", source: "✅ 流量词API" }
+      { kw: "依视路", allIndex: "516", pc: "5,916", mobile: "25,825", source: "✅ 流量词API" },
+      { kw: "依视路爱赞", allIndex: "未收录", pc: "69", mobile: "271", source: "✅ 长尾词API" },
+      { kw: "依视路万里路", allIndex: "未收录", pc: "~24", mobile: "~166", source: "⚠️ 长尾词聚合" }
     ]},
     { brand: "尼康 Nikon", brandColor: "#d2a8ff", items: [
       { kw: "尼康", allIndex: "1,052", pc: "5,173", mobile: "6,236", source: "✅ 流量词API" }
     ]},
     { brand: "豪雅 HOYA", brandColor: "#7ee787", items: [
-      { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 流量词API" }
+      { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 流量词API" },
+      { kw: "豪雅手机镜", allIndex: "~180", pc: "—", mobile: "—", source: "⚠️ 估算" }
     ]},
     { brand: "渐进多焦点眼镜", brandColor: "#7ee787", items: [
       { kw: "渐进多焦点眼镜", allIndex: "89", pc: "142", mobile: "2,240", source: "✅ 长尾词API" }
-    ]},
-    { brand: "依视路产品线（搜索量）", brandColor: "#f97316", items: [
-      { kw: "依视路爱赞", allIndex: "未收录", pc: "69", mobile: "271", source: "✅ 长尾词API" },
-      { kw: "依视路万里路", allIndex: "未收录", pc: "~24", mobile: "~166", source: "⚠️ 长尾词聚合" }
     ]},
   ];
   rows.forEach(function(r) {
@@ -1733,16 +1735,18 @@ function renderBaiduBrandTrend() {
 
   // 真实百度指数(来自站长工具Chinaz流量词+长尾词API, 2026-08-10)
   // real=精确匹配, proxy=长尾词聚合代理值, est=估算
-  // 依视路万里路/依视路爱赞 搜索量较低，使用长尾词API聚合数据
   var keywords = [
-    { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
-    { name: "依视路万里路*", base: 190, noise: 35, color: "#f97316", source: "proxy" },
-    { name: "依视路爱赞*", base: 340, noise: 50, color: "#fb923c", source: "real" },
-
     { name: "蔡司", base: 1196, noise: 150, color: "#58a6ff", source: "real" },
-    { name: "渐进多焦点眼镜", base: 89, noise: 20, color: "#7ee787", source: "real" },
+    { name: "蔡司泽锐*", base: 120, noise: 20, color: "#58a6ff88", source: "est" },
+    { name: "蔡司智锐*", base: 80, noise: 15, color: "#58a6ff88", source: "est" },
+    { name: "蔡司熠光*", base: 45, noise: 10, color: "#58a6ff88", source: "est" },
+    { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
+    { name: "依视路爱赞*", base: 340, noise: 50, color: "#fb923c", source: "real" },
+    { name: "依视路万里路*", base: 190, noise: 35, color: "#f97316", source: "proxy" },
     { name: "尼康", base: 1052, noise: 130, color: "#d2a8ff", source: "real" },
-    { name: "豪雅", base: 357, noise: 55, color: "#fbbf24", source: "real" }
+    { name: "豪雅", base: 357, noise: 55, color: "#fbbf24", source: "real" },
+    { name: "豪雅手机镜*", base: 180, noise: 30, color: "#fbbf2466", source: "est" },
+    { name: "渐进多焦点眼镜", base: 89, noise: 20, color: "#7ee787", source: "real" }
   ];
 
   function genData(base, noise) {
