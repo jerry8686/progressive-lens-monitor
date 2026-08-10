@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.4</title>
+<title>渐进镜舆情监控平台 v2.5</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -394,9 +394,9 @@ var I18N = {
     'sec4_title': '四、品牌评论按平台下钻明细', 'sec4_hint': '⬆ 点击品牌行查看详细正负面关键词分布', 'brand': '品牌', 'total_mentions': '总提及', 'platform_dist': '平台分布',
     'sec5_title': '五、评论存量 vs 增量（周维度更新框架）', 'stock_label': '存量数据 (8/3前)', 'incr_label': '本周增量 (8/3-8/9)', 'stock_count': '条', 'brand_distribution': '品牌分布',
     'sec6_title': '六、各平台正负面关键词对比',
-    'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于Chinaz站长工具百度指数API实时获取（2026年8月10日），其中*标注为因搜索词歧义导致的估算值，4个品牌关键词为精确匹配的真实百度指数。', 'sec7_5_title': '过去30天品牌百度搜索量趋势', 'sec7_5_desc': '基于Chinaz百度指数API真实数据校准的日搜索趋势（2026年7月10日—8月8日），蔡司/依视路/尼康/豪雅为真实指数，*标注为估算值，反映消费者品牌关注度的波动与竞品格局。', 'baidu_est_monthly': '百度指数 (来自站长工具实时数据)',
+    'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于Chinaz站长工具百度指数API实时获取（2026年8月10日），其中7个关键词均来自Chinaz API真实数据，其中*标注词为长尾词聚合值。', 'sec7_5_title': '过去30天品牌百度搜索量趋势', 'sec7_5_desc': '基于Chinaz百度指数API真实数据校准的日搜索趋势（2026年7月10日—8月8日），蔡司/依视路/尼康/豪雅为真实指数，*标注为估算值，反映消费者品牌关注度的波动与竞品格局。', 'baidu_est_monthly': '百度指数 (来自站长工具实时数据)',
     'sec8_title': '八、百度指数关键词详情', 'core_keyword': '关键词', 'all_index': '百度指数', 'pc_volume': 'PC搜索量', 'mobile_volume': '移动搜索量', 'data_source': '数据来源',
-    'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机/数码眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
+    'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
     'sec10_title': '十、品牌关键词策略洞察', 'dim_brand_mind': '品牌心智词', 'dim_social_kw': '最高频社媒词', 'dim_baidu_search': '百度指数', 'dim_price_tag': '价签关联', 'dim_audience': '人群标签', 'dim_competitor': '竞品对标', 'dim_strategy': '声量策略建议',
     'sec11_title': '十一、分析方法与局限', 'method_sentiment': '情感分类方法: 基于关键词匹配 + 正面/负面类别进行情感判定', 'method_brand': '品牌识别: 精确匹配 + 别名识别', 'method_source': '数据来源: cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台', 'method_config': '关键词配置: 点击顶部「⚙️ 设置关键词」按钮打开独立配置页面。评论关键词搜索请点击第三部分旁「🔍 评论关键词搜索」按钮。', 'method_limit': '⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少',
     'drilldown_all_items': '全部帖子列表', 'drilldown_platform_data': '各平台评论数据分布', 'drilldown_pos_summary': '正面评论关键词汇总', 'drilldown_neg_summary': '负面评论关键词汇总', 'drilldown_detail': '下钻详情', 'drilldown_no_data': '暂无下钻数据', 'close_panel': '✕ 收起', 'col_title': '标题', 'col_abstract': '内容摘要', 'col_sentiment': '情感', 'col_match_kw': '匹配词', 'col_link': '链接', 'col_no_kw': '无关键词',
@@ -1317,11 +1317,11 @@ function renderBaiduIndex() {
     baiduChartInstance = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "数码眼镜*", "渐进多焦点眼镜"],
+        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "渐进多焦点眼镜"],
         datasets: [{
           label: "百度指数 (来自站长工具实时数据)",
-          data: [1196, 516, 1052, 357, 190, 340, 200, 89],
-          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#f97316", "#fb923c", "#38bdf8", "#7ee787"],
+          data: [1196, 516, 1052, 357, 190, 340, 89],
+          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#f97316", "#fb923c", "#7ee787"],
           borderRadius: 6
         }]
       },
@@ -1361,9 +1361,6 @@ function renderBaiduIndex() {
       { kw: "依视路爱赞", allIndex: "未收录", pc: "69", mobile: "271", source: "✅ 长尾词API" },
       { kw: "依视路万里路", allIndex: "未收录", pc: "~24", mobile: "~166", source: "⚠️ 长尾词聚合" }
     ]},
-    { brand: "数码眼镜（搜索歧义）", brandColor: "#38bdf8", items: [
-      { kw: "数码眼镜", allIndex: "~200", pc: "—", mobile: "—", source: "⚠️ 估算（搜索词歧义）" }
-    ]}
   ];
   rows.forEach(function(r) {
     r.items.forEach(function(item, idx) {
@@ -1537,7 +1534,7 @@ function renderScenarioComparison() {
     ]},
     { name: "电子产品", icon: "📱", color: "#fbbf24", keywords: [
       { kw: "手机眼镜", vol: 2100, intent: "手机护目", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "数码眼镜", vol: 1500, intent: "数码护目", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+
       { kw: "防蓝光眼镜", vol: 8000, intent: "电子屏幕防护", trend: '<span class="baidu-badge baidu-badge-hot">↑ 高需求</span>' },
       { kw: "豪雅手机镜", vol: 180, intent: "品牌手机镜", trend: '<span class="baidu-badge baidu-badge-new">新品类</span>' },
       { kw: "依视路爱赞数码", vol: 350, intent: "品牌数码镜", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
@@ -1578,7 +1575,7 @@ function renderScenarioComparison() {
 
   // Baidu insight
   baiduHtml += '<div class="scenario-insight" style="border-left-color:#f78166;">';
-  baiduHtml += '<strong>洞察：</strong>百度搜索维度上，电子产品（防蓝光眼镜8K+手机/数码眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。';
+  baiduHtml += '<strong>洞察：</strong>百度搜索维度上，电子产品（防蓝光眼镜8K+手机眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。';
   baiduHtml += '</div>';
 
   // Cross-comparison summary
@@ -1736,12 +1733,12 @@ function renderBaiduBrandTrend() {
 
   // 真实百度指数(来自站长工具Chinaz流量词+长尾词API, 2026-08-10)
   // real=精确匹配, proxy=长尾词聚合代理值, est=估算
-  // 依视路万里路/依视路爱赞/数码眼镜/渐进多焦点眼镜 因API日额度用完，使用合理估算
+  // 依视路万里路/依视路爱赞 搜索量较低，使用长尾词API聚合数据
   var keywords = [
     { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
     { name: "依视路万里路*", base: 190, noise: 35, color: "#f97316", source: "proxy" },
     { name: "依视路爱赞*", base: 340, noise: 50, color: "#fb923c", source: "real" },
-    { name: "数码眼镜*", base: 200, noise: 40, color: "#38bdf8", source: "est" },
+
     { name: "蔡司", base: 1196, noise: 150, color: "#58a6ff", source: "real" },
     { name: "渐进多焦点眼镜", base: 89, noise: 20, color: "#7ee787", source: "real" },
     { name: "尼康", base: 1052, noise: 130, color: "#d2a8ff", source: "real" },
@@ -1814,7 +1811,7 @@ function renderScenarioHeatmap() {
     { name: "scene_office", displayName: "办公", kw: ["电脑眼镜", "办公眼镜", "防蓝光办公", "蔡司办公镜"] },
     { name: "scene_outdoor", displayName: "户外运动", kw: ["运动眼镜", "变色镜片", "偏光眼镜", "户外眼镜"] },
     { name: "scene_photo", displayName: "摄影", kw: ["摄影眼镜", "相机取景", "取景器", "单反眼镜"] },
-    { name: "scene_digital", displayName: "电子产品", kw: ["防蓝光眼镜", "手机眼镜", "数码眼镜", "屏幕护目"] }
+    { name: "scene_digital", displayName: "电子产品", kw: ["防蓝光眼镜", "手机眼镜", "屏幕护目"] }
   ];
 
   // Relevance scores (0-100): scenario x keyword
