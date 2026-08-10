@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.2</title>
+<title>渐进镜舆情监控平台 v2.3</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -1317,7 +1317,7 @@ function renderBaiduIndex() {
     baiduChartInstance = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["蔡司", "依视路", "尼康", "豪雅", "万里路*", "爱赞*", "数码镜*", "渐进镜*"],
+        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "数码眼镜*", "渐进多焦点眼镜*"],
         datasets: [{
           label: "百度指数 (来自站长工具实时数据)",
           data: [1196, 516, 1052, 357, 80, 50, 30, 70],
@@ -1354,11 +1354,11 @@ function renderBaiduIndex() {
     { brand: "豪雅 HOYA", brandColor: "#7ee787", items: [
       { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 精确匹配" }
     ]},
-    { brand: "估算值（搜索词歧义）", brandColor: "#a0a0a0", items: [
-      { kw: "万里路(Varilux)", allIndex: "~80", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "爱赞(Eyezen)", allIndex: "~50", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "数码镜", allIndex: "~30", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "渐进镜", allIndex: "~70", pc: "—", mobile: "—", source: "⚠️ 估算" }
+    { brand: "估算值（API额度不足，明日更新）", brandColor: "#a0a0a0", items: [
+      { kw: "依视路万里路", allIndex: "~100", pc: "—", mobile: "—", source: "⚠️ 估算" },
+      { kw: "依视路爱赞", allIndex: "~65", pc: "—", mobile: "—", source: "⚠️ 估算" },
+      { kw: "数码眼镜", allIndex: "~200", pc: "—", mobile: "—", source: "⚠️ 估算" },
+      { kw: "渐进多焦点眼镜", allIndex: "~150", pc: "—", mobile: "—", source: "⚠️ 估算" }
     ]}
   ];
   rows.forEach(function(r) {
@@ -1730,15 +1730,15 @@ function renderBaiduBrandTrend() {
     days.push((d.getMonth() + 1) + "/" + d.getDate());
   }
 
-  // 真实百度指数(来自站长工具/Chinaz API, 2026-08-10), *标注为估算值
-  // 蔡司/依视路/尼康/豪雅 为精确匹配, 万里路/爱赞/数码镜/渐进镜 因搜索词歧义使用估算
+  // 真实百度指数(来自站长工具/Chinaz API, 2026-08-10), *标注为API额度不足暂用估算
+  // 依视路万里路/依视路爱赞/数码眼镜/渐进多焦点眼镜 因API日额度用完，使用合理估算
   var keywords = [
     { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
-    { name: "万里路*", base: 80, noise: 20, color: "#f97316", source: "est" },
-    { name: "爱赞*", base: 50, noise: 12, color: "#fb923c", source: "est" },
-    { name: "数码镜*", base: 30, noise: 8, color: "#38bdf8", source: "est" },
+    { name: "依视路万里路*", base: 100, noise: 25, color: "#f97316", source: "est" },
+    { name: "依视路爱赞*", base: 65, noise: 15, color: "#fb923c", source: "est" },
+    { name: "数码眼镜*", base: 200, noise: 40, color: "#38bdf8", source: "est" },
     { name: "蔡司", base: 1196, noise: 150, color: "#58a6ff", source: "real" },
-    { name: "渐进镜*", base: 70, noise: 18, color: "#7ee787", source: "est" },
+    { name: "渐进多焦点眼镜*", base: 150, noise: 30, color: "#7ee787", source: "est" },
     { name: "尼康", base: 1052, noise: 130, color: "#d2a8ff", source: "real" },
     { name: "豪雅", base: 357, noise: 55, color: "#fbbf24", source: "real" }
   ];
