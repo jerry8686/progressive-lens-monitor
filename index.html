@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>渐进镜舆情监控平台</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>渐进镜舆情监控平台 v2.1</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -59,6 +62,8 @@ tr:hover td { background: rgba(90,107,255,0.05); }
 .refresh-toast { position: fixed; bottom: 100px; right: 30px; background: #4ade80; color: #0f1117; padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 600; z-index: 998; opacity: 0; transition: opacity 0.3s; }
 .refresh-toast.show { opacity: 1; }
 svg text { font-family: 'Microsoft YaHei', sans-serif; }
+canvas { display: block; max-width: 100%; }
+.baidu-chart-wrapper canvas { width: 100% !important; height: 100% !important; }
 .update-notice { background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.3); border-radius: 12px; padding: 16px; margin: 20px 0; font-size: 14px; }
 .update-notice strong { color: #fbbf24; }
 .compact-row { display: flex; gap: 20px; flex-wrap: wrap; }
@@ -245,7 +250,7 @@ svg text { font-family: 'Microsoft YaHei', sans-serif; }
   .stat-card .value { font-size: 1.5em; }
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <button class="lang-toggle-btn" onclick="toggleLang()" title="Switch language">EN</button>
@@ -1805,6 +1810,7 @@ function renderBaiduBrandTrend() {
 }
 
 function renderScenarioHeatmap() {
+  var container = document.getElementById("scenario-heatmap");
   if (!container) return;
 
   var scenarios = [
