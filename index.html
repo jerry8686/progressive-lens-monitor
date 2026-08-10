@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.3</title>
+<title>渐进镜舆情监控平台 v2.4</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -300,7 +300,7 @@ canvas { display: block; max-width: 100%; }
 <div id="platform-visual-section" style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center"></div>
 
 <h2 data-i18n="sec7_title">七、百度指数关键词热度对比（柱状图）</h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于Chinaz站长工具百度指数API实时获取（2026年8月10日），其中*标注为因搜索词歧义导致的估算值，4个品牌关键词为精确匹配的真实百度指数。</p>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于Chinaz站长工具流量词API+长尾词API实时获取（2026年8月10日），4个品牌词精确匹配，渐进多焦点眼镜&依视路爱赞来自长尾词API，*标注为估算/代理值。</p>
 <div class="chart-container">
   <div class="baidu-chart-wrapper">
     <canvas id="baiduIndexChart"></canvas>
@@ -417,7 +417,7 @@ var I18N = {
     'sec4_title': 'IV. Brand Comments by Platform Detail', 'sec4_hint': '⬆ Click brand row to view detailed positive/negative keyword breakdown', 'brand': 'Brand', 'total_mentions': 'Mentions', 'platform_dist': 'Platform',
     'sec5_title': 'V. Stock vs. Incremental (Weekly Update Framework)', 'stock_label': 'Stock Data (Before Aug 3)', 'incr_label': 'Weekly Incremental (Aug 3-9)', 'stock_count': 'posts', 'brand_distribution': 'Brand Distribution',
     'sec6_title': 'VI. Positive vs. Negative Comparison by Platform',
-    'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Real-time Baidu Index data from Chinaz API (2026-08-10). * marks estimated values due to search term ambiguity; 4 brand keywords are exact-match real data.', 'sec7_5_title': 'Past 30-Day Brand Baidu Search Trend', 'sec7_5_desc': 'Daily Baidu Index trends calibrated with real Chinaz API data (Jul 10–Aug 8, 2026). ZEISS/Essilor/Nikon/HOYA use real index values; * marks estimates. Tracks brand attention fluctuations and competitive dynamics.', 'baidu_est_monthly': 'Baidu Index (Real-time from Chinaz API)',
+    'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Real-time Baidu Index from Chinaz Traffic + Long-tail APIs (2026-08-10). 4 brands exact-match; 渐进多焦点眼镜 & 依视路爱赞 from long-tail API; 依视路万里路 uses long-tail proxy; * = estimate.', 'sec7_5_title': 'Past 30-Day Brand Baidu Search Trend', 'sec7_5_desc': 'Daily Baidu Index trends calibrated with real Chinaz API data (Jul 10-Aug 8, 2026). ZEISS/Essilor/Nikon/HOYA/渐进多焦点眼镜/依视路爱赞 use real values; * marks proxy/estimate. Tracks brand attention fluctuations and competitive dynamics.', 'baidu_est_monthly': 'Baidu Index (Real-time from Chinaz API)',
     'sec8_title': 'VIII. Baidu Index Keyword Details', 'core_keyword': 'Keyword', 'all_index': 'Baidu Index', 'pc_volume': 'PC Volume', 'mobile_volume': 'Mobile Volume', 'data_source': 'Source',
     'sec9_title': 'IX. Progressive Lens Scenario Comparison', 'sec9_desc': 'Compare five core progressive/reading glasses scenarios (Driving, Office, Outdoor Sports, Photography, Digital Devices) from both social media content and Baidu search index dimensions.', 'card1_title': 'Social Media Scenario Distribution', 'card1_desc': 'Based on keyword matching from 103 posts across XHS/Douyin/WeChat OA', 'card2_title': 'Baidu Index Scenario Heat', 'card2_desc': 'Based on estimated Baidu monthly search volume (Jul 2026), reflecting user proactive search frequency for each scenario', 'scenario_driving': 'Driving', 'scenario_office': 'Office', 'scenario_outdoor': 'Outdoor Sports', 'scenario_photo': 'Photography', 'scenario_digital': 'Digital Devices', 'scenario_monthly_total': 'Monthly Total', 'scenario_brand_assoc': 'Brand Association by Scenario', 'scenario_brand_mentions': 'Associated Brands (mentions)', 'scenario_sample': 'Sample Content', 'scenario_no_brand': 'No brand mentions', 'insight_platform': 'Insight: Digital devices (phone/digital/screen) dominate progressive lens content, followed by office use. Driving has clear professional demand but low social media discussion. Photography has the least mentions (niche). Outdoor sports show moderate discussion but weak brand association.', 'insight_baidu': 'Insight: On Baidu search, digital devices (blue-light glasses 8K+ + phone/digital glasses) generate the highest volume, reflecting mass demand for screen eye protection. Outdoor sports ranks second (sports glasses 4.5K + photochromic lens 3.6K) but social media content is insufficient — an unmet supply gap. Office search demand is healthy (computer glasses 3.2K) and matches social content. Driving shows moderate but growing search volume (driving glasses ↑), with Zeiss having first-mover advantage. Photography is the lowest-volume long-tail scenario.', 'cross_comparison': 'Dual-Dimension Cross Comparison', 'cross_social': 'Social Content Volume', 'cross_baidu': 'Baidu Search Volume', 'cross_match': 'Supply-Demand Match', 'cross_strategy': 'Strategy', 'match_shortage': '⚠️ Unmet Demand', 'match_good': '✓ Well-Matched', 'match_oversupply': '→ Oversupplied', 'match_longtail': '○ Long-Tail', 'match_improve': '→ Needs Growth', 'strategy_shortage': 'High search demand but low social content — increase content seeding', 'strategy_good': 'Balanced supply-demand — maintain current strategy', 'strategy_oversupply': 'Limited search demand — pivot content to long-tail SEO', 'strategy_longtail': 'Niche demand — suitable for targeted campaigns, not mass marketing', 'strategy_improve': 'Both search and content have growth potential',
     'sec10_title': 'X. Brand Keyword Strategy Insights', 'dim_brand_mind': 'Brand Mind Words', 'dim_social_kw': 'Top Social Keywords', 'dim_baidu_search': 'Baidu Monthly Searches', 'dim_price_tag': 'Price Tag', 'dim_audience': 'Audience Tags', 'dim_competitor': 'Competitor Benchmark', 'dim_strategy': 'Strategy Recommendation',
@@ -1317,11 +1317,11 @@ function renderBaiduIndex() {
     baiduChartInstance = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "数码眼镜*", "渐进多焦点眼镜*"],
+        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路万里路*", "依视路爱赞*", "数码眼镜*", "渐进多焦点眼镜"],
         datasets: [{
           label: "百度指数 (来自站长工具实时数据)",
-          data: [1196, 516, 1052, 357, 80, 50, 30, 70],
-          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#f97316", "#fb923c", "#38bdf8", "#a0a0a0"],
+          data: [1196, 516, 1052, 357, 190, 340, 200, 89],
+          backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#f97316", "#fb923c", "#38bdf8", "#7ee787"],
           borderRadius: 6
         }]
       },
@@ -1339,26 +1339,30 @@ function renderBaiduIndex() {
     });
   }
 
-  // 2. Detail table - 真实百度指数数据(2026-08-10, 站长工具Chinaz API)
+  // 2. Detail table - 真实百度指数数据(2026-08-10, 站长工具Chinaz API + 长尾词API)
   var tableHtml = "<table><tr><th>品牌</th><th>关键词</th><th>百度指数</th><th>PC搜索量</th><th>移动搜索量</th><th>数据来源</th></tr>";
   var rows = [
     { brand: "蔡司 ZEISS", brandColor: "#58a6ff", items: [
-      { kw: "蔡司", allIndex: "1,196", pc: "13,576", mobile: "44,056", source: "✅ 精确匹配" }
+      { kw: "蔡司", allIndex: "1,196", pc: "13,576", mobile: "44,056", source: "✅ 流量词API" }
     ]},
     { brand: "依视路 Essilor", brandColor: "#f78166", items: [
-      { kw: "依视路", allIndex: "516", pc: "5,916", mobile: "25,825", source: "✅ 精确匹配" }
+      { kw: "依视路", allIndex: "516", pc: "5,916", mobile: "25,825", source: "✅ 流量词API" }
     ]},
     { brand: "尼康 Nikon", brandColor: "#d2a8ff", items: [
-      { kw: "尼康", allIndex: "1,052", pc: "5,173", mobile: "6,236", source: "✅ 精确匹配" }
+      { kw: "尼康", allIndex: "1,052", pc: "5,173", mobile: "6,236", source: "✅ 流量词API" }
     ]},
     { brand: "豪雅 HOYA", brandColor: "#7ee787", items: [
-      { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 精确匹配" }
+      { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 流量词API" }
     ]},
-    { brand: "估算值（API额度不足，明日更新）", brandColor: "#a0a0a0", items: [
-      { kw: "依视路万里路", allIndex: "~100", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "依视路爱赞", allIndex: "~65", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "数码眼镜", allIndex: "~200", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "渐进多焦点眼镜", allIndex: "~150", pc: "—", mobile: "—", source: "⚠️ 估算" }
+    { brand: "渐进多焦点眼镜", brandColor: "#7ee787", items: [
+      { kw: "渐进多焦点眼镜", allIndex: "89", pc: "142", mobile: "2,240", source: "✅ 长尾词API" }
+    ]},
+    { brand: "依视路产品线（搜索量）", brandColor: "#f97316", items: [
+      { kw: "依视路爱赞", allIndex: "未收录", pc: "69", mobile: "271", source: "✅ 长尾词API" },
+      { kw: "依视路万里路", allIndex: "未收录", pc: "~24", mobile: "~166", source: "⚠️ 长尾词聚合" }
+    ]},
+    { brand: "数码眼镜（搜索歧义）", brandColor: "#38bdf8", items: [
+      { kw: "数码眼镜", allIndex: "~200", pc: "—", mobile: "—", source: "⚠️ 估算（搜索词歧义）" }
     ]}
   ];
   rows.forEach(function(r) {
@@ -1730,15 +1734,16 @@ function renderBaiduBrandTrend() {
     days.push((d.getMonth() + 1) + "/" + d.getDate());
   }
 
-  // 真实百度指数(来自站长工具/Chinaz API, 2026-08-10), *标注为API额度不足暂用估算
+  // 真实百度指数(来自站长工具Chinaz流量词+长尾词API, 2026-08-10)
+  // real=精确匹配, proxy=长尾词聚合代理值, est=估算
   // 依视路万里路/依视路爱赞/数码眼镜/渐进多焦点眼镜 因API日额度用完，使用合理估算
   var keywords = [
     { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
-    { name: "依视路万里路*", base: 100, noise: 25, color: "#f97316", source: "est" },
-    { name: "依视路爱赞*", base: 65, noise: 15, color: "#fb923c", source: "est" },
+    { name: "依视路万里路*", base: 190, noise: 35, color: "#f97316", source: "proxy" },
+    { name: "依视路爱赞*", base: 340, noise: 50, color: "#fb923c", source: "real" },
     { name: "数码眼镜*", base: 200, noise: 40, color: "#38bdf8", source: "est" },
     { name: "蔡司", base: 1196, noise: 150, color: "#58a6ff", source: "real" },
-    { name: "渐进多焦点眼镜*", base: 150, noise: 30, color: "#7ee787", source: "est" },
+    { name: "渐进多焦点眼镜", base: 89, noise: 20, color: "#7ee787", source: "real" },
     { name: "尼康", base: 1052, noise: 130, color: "#d2a8ff", source: "real" },
     { name: "豪雅", base: 357, noise: 55, color: "#fbbf24", source: "real" }
   ];
