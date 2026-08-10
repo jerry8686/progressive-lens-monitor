@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关键词设置 — 渐进镜舆情分析</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; min-height: 100vh; }
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+
+h1 { font-size: 22px; color: #fff; margin-bottom: 4px; }
+h2 { font-size: 16px; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #2a2d3a; }
+h3 { font-size: 14px; color: #8a8f9a; margin-bottom: 8px; }
+
+.subtitle { color: #8a8f9a; font-size: 13px; margin-bottom: 20px; }
+
+/* Header toolbar */
+.header-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 16px 20px; background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; }
+.header-toolbar .info { display: flex; align-items: center; gap: 12px; }
+.header-toolbar .active-count { font-size: 13px; color: #8a8f9a; }
+.header-toolbar .active-count strong { color: #5a6bff; }
+.header-btns { display: flex; gap: 10px; }
+
+.btn { padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; transition: all 0.2s; }
+.btn-cancel { background: #2a2d3a; color: #8a8f9a; border: 1px solid #3a3d4a; }
+.btn-cancel:hover { color: #fff; border-color: #5a6bff; }
+.btn-confirm { background: linear-gradient(135deg, #5a6bff, #7c3aed); color: white; }
+.btn-confirm:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(90,107,255,0.3); }
+
+/* ===== TAB BAR ===== */
+.tab-bar { display: flex; gap: 4px; margin-bottom: 20px; background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 6px; }
+.tab-btn { flex: 1; padding: 12px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; background: transparent; color: #8a8f9a; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.tab-btn:hover { color: #e8eaed; }
+.tab-btn.active { background: linear-gradient(135deg, rgba(90,107,255,0.15), rgba(124,58,237,0.15)); color: #b8c7ff; border: 1px solid rgba(90,107,255,0.3); }
+.tab-btn .tab-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: rgba(255,255,255,0.06); color: #8a8f9a; }
+.tab-btn.active .tab-badge { background: rgba(90,107,255,0.2); color: #b8c7ff; }
+
+/* Tab content */
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ===== CONTENT KEYWORD TAB ===== */
+.content-kw-section { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.content-kw-section.cat { border-left: 3px solid #60a5fa; }
+.content-kw-section.brand { border-left: 3px solid #fbbf24; }
+.content-kw-section.product { border-left: 3px solid #34d399; }
+.content-kw-section.scene { border-left: 3px solid #f472b6; }
+.content-kw-section.audience { border-left: 3px solid #a78bfa; }
+
+/* ===== KEYWORD GROUPS ===== */
+.kw-group { margin-bottom: 14px; }
+.kw-group-title { font-size: 13px; color: #8a8f9a; margin-bottom: 6px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.kw-group-title .count { font-size: 11px; color: #5a6bff; }
+.kw-checkboxes { display: flex; flex-wrap: wrap; gap: 5px; }
+.kw-checkbox-item { display: flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(255,255,255,0.03); border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); cursor: pointer; font-size: 12px; transition: all 0.15s; user-select: none; }
+.kw-checkbox-item:hover { border-color: rgba(90,107,255,0.3); background: rgba(90,107,255,0.05); }
+.kw-checkbox-item input[type="checkbox"] { accent-color: #5a6bff; margin: 0; cursor: pointer; }
+
+/* Color-coded checked states */
+.kw-checkbox-item.checked-cat { border-color: rgba(96,165,250,0.4); background: rgba(96,165,250,0.08); }
+.kw-checkbox-item.checked-brand { border-color: rgba(251,191,36,0.4); background: rgba(251,191,36,0.08); }
+.kw-checkbox-item.checked-product { border-color: rgba(52,211,153,0.4); background: rgba(52,211,153,0.08); }
+.kw-checkbox-item.checked-scene { border-color: rgba(244,114,182,0.4); background: rgba(244,114,182,0.08); }
+.kw-checkbox-item.checked-audience { border-color: rgba(167,139,250,0.4); background: rgba(167,139,250,0.08); }
+.kw-checkbox-item.checked-pos { border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.08); }
+.kw-checkbox-item.checked-neg { border-color: rgba(248,113,113,0.3); background: rgba(248,113,113,0.08); }
+
+/* Actions row */
+.kw-actions { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.kw-actions button { padding: 5px 12px; background: #2a2d3a; border: 1px solid #3a3d4a; border-radius: 6px; color: #8a8f9a; font-size: 11px; cursor: pointer; transition: all 0.15s; }
+.kw-actions button:hover { color: #fff; border-color: #5a6bff; }
+
+/* ===== CUSTOM KEYWORDS ===== */
+.add-kw-section { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin-top: 20px; }
+.add-kw-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.add-kw-row input { padding: 10px 14px; background: #0f1117; border: 1px solid #2a2d3a; border-radius: 8px; color: #e8eaed; font-size: 13px; outline: none; min-width: 160px; flex: 1; }
+.add-kw-row input:focus { border-color: #5a6bff; }
+.add-kw-row select { padding: 10px 14px; background: #0f1117; border: 1px solid #2a2d3a; border-radius: 8px; color: #e8eaed; font-size: 13px; outline: none; cursor: pointer; }
+.add-kw-btn { padding: 10px 20px; background: #5a6bff; border: none; border-radius: 8px; color: white; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.add-kw-btn:hover { background: #4a5ae0; }
+.custom-kw-area { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.custom-kw-tag { padding: 4px 10px; border-radius: 12px; font-size: 12px; display: flex; align-items: center; gap: 6px; }
+.custom-kw-tag.ct-cat { background: rgba(96,165,250,0.12); color: #60a5fa; border: 1px solid rgba(96,165,250,0.25); }
+.custom-kw-tag.ct-brand { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.25); }
+.custom-kw-tag.ct-product { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
+.custom-kw-tag.ct-scene { background: rgba(244,114,182,0.12); color: #f472b6; border: 1px solid rgba(244,114,182,0.25); }
+.custom-kw-tag.ct-audience { background: rgba(167,139,250,0.12); color: #a78bfa; border: 1px solid rgba(167,139,250,0.25); }
+.custom-kw-tag.ct-pos { background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.25); }
+.custom-kw-tag.ct-neg { background: rgba(248,113,113,0.12); color: #f87171; border: 1px solid rgba(248,113,113,0.25); }
+.custom-kw-rm { cursor: pointer; font-weight: bold; font-size: 14px; opacity: 0.6; }
+.custom-kw-rm:hover { opacity: 1; }
+
+/* ===== COMMENT TAB LAYOUT ===== */
+.main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.kw-section { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; }
+.kw-section.pos { border-left: 3px solid #4ade80; }
+.kw-section.neg { border-left: 3px solid #f87171; }
+
+/* Bottom bar */
+.bottom-bar { position: sticky; bottom: 0; background: #0f1117; border-top: 1px solid #2a2d3a; padding: 16px 24px; display: flex; justify-content: center; gap: 16px; margin-top: 30px; }
+.bottom-bar .btn { padding: 12px 40px; font-size: 15px; }
+
+/* Toast */
+.toast { position: fixed; top: 20px; right: 20px; padding: 12px 24px; border-radius: 10px; font-size: 14px; font-weight: 600; z-index: 999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.toast.show { opacity: 1; }
+.toast.success { background: #4ade80; color: #0f1117; }
+.toast.info { background: #5a6bff; color: white; }
+
+/* Reset button */
+.reset-link { color: #f87171; font-size: 12px; cursor: pointer; text-decoration: underline; margin-left: 12px; }
+.reset-link:hover { color: #ff4444; }
+
+.empty-state { text-align: center; padding: 16px; color: #4a4d5a; font-size: 13px; }
+
+/* Responsive */
+@media (max-width: 768px) { .main-grid { grid-template-columns: 1fr; } }
+
+.lang-toggle-btn { padding: 8px 16px; background: #2a2d3a; border: 1px solid #5a6bff; border-radius: 20px; color: #b8c7ff; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.lang-toggle-btn:hover { background: #5a6bff; color: #fff; }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header-toolbar">
+  <div class="info">
+    <h1 style="margin:0;" data-i18n="ks_heading">⚙️ 关键词设置</h1>
+    <span class="active-count" id="header-summary">加载中...</span>
+  </div>
+  <button class="lang-toggle-btn" onclick="toggleLang()">EN</button>
+    <div class="header-btns">
+    <button class="btn btn-cancel" onclick="handleCancel()">← 返回主报告</button>
+  </div>
+</div>
+
+<p class="subtitle" data-i18n="ks_subtitle">分为「内容关键词」和「评论关键词」两部分。内容关键词用于内容检索与筛选，评论关键词用于情感分析。修改后点击底部「完成」保存并返回主报告。</p>
+
+<!-- ===== TAB BAR ===== -->
+<div class="tab-bar">
+  <button class="tab-btn active" id="tab-btn-content" onclick="switchTab('content')">
+    <span data-i18n="ks_tab_content">📋 内容关键词</span> <span class="tab-badge" id="content-count-badge">0</span>
+  </button>
+  <button class="tab-btn" id="tab-btn-comment" onclick="switchTab('comment')">
+    <span data-i18n="ks_tab_comment">💬 评论关键词</span> <span class="tab-badge" id="comment-count-badge">0</span>
+  </button>
+</div>
+
+<!-- ===== TAB 1: CONTENT KEYWORDS ===== -->
+<div class="tab-content active" id="tab-content">
+  <div class="content-kw-section cat">
+    <h2 style="color:#60a5fa;" data-i18n="ks_cat_product">📋 品类关键词</h2>
+    <div class="kw-actions">
+      <button onclick="selectAllContent('品类')">全选</button>
+      <button onclick="deselectAllContent('品类')">取消全选</button>
+    </div>
+    <div id="content-groups-品类"></div>
+  </div>
+
+  <div class="content-kw-section brand">
+    <h2 style="color:#fbbf24;" data-i18n="ks_cat_brand">🏷️ 品牌关键词</h2>
+    <div class="kw-actions">
+      <button onclick="selectAllContent('品牌')">全选</button>
+      <button onclick="deselectAllContent('品牌')">取消全选</button>
+    </div>
+    <div id="content-groups-品牌"></div>
+  </div>
+
+  <div class="content-kw-section product">
+    <h2 style="color:#34d399;" data-i18n="ks_cat_series">🔧 产品系列关键词</h2>
+    <div class="kw-actions">
+      <button onclick="selectAllContent('产品')">全选</button>
+      <button onclick="deselectAllContent('产品')">取消全选</button>
+    </div>
+    <div id="content-groups-产品"></div>
+  </div>
+
+  <div class="content-kw-section scene">
+    <h2 style="color:#f472b6;" data-i18n="ks_cat_scene">🏪 场景关键词</h2>
+    <div class="kw-actions">
+      <button onclick="selectAllContent('场景')">全选</button>
+      <button onclick="deselectAllContent('场景')">取消全选</button>
+    </div>
+    <div id="content-groups-场景"></div>
+  </div>
+
+  <div class="content-kw-section audience">
+    <h2 style="color:#a78bfa;" data-i18n="ks_cat_audience">👥 人群关键词</h2>
+    <div class="kw-actions">
+      <button onclick="selectAllContent('人群')">全选</button>
+      <button onclick="deselectAllContent('人群')">取消全选</button>
+    </div>
+    <div id="content-groups-人群"></div>
+  </div>
+
+  <!-- Custom content keywords -->
+  <div class="add-kw-section">
+    <h2>➕ 添加自定义内容关键词 <span class="reset-link" onclick="resetContentDefaults()">恢复默认</span></h2>
+    <div class="add-kw-row">
+      <input type="text" id="custom-content-input" placeholder="输入新关键词，例如: 离焦镜、离焦..." onkeydown="if(event.key==='Enter')addCustomContent()">
+      <select id="custom-content-type">
+        <option value="品类">📋 品类</option>
+        <option value="品牌">🏷️ 品牌</option>
+        <option value="产品">🔧 产品</option>
+        <option value="场景">🏪 场景</option>
+        <option value="人群">👥 人群</option>
+      </select>
+      <button class="add-kw-btn" onclick="addCustomContent()">添加</button>
+    </div>
+    <div class="custom-kw-area" id="custom-content-area"></div>
+  </div>
+</div>
+
+<!-- ===== TAB 2: COMMENT KEYWORDS ===== -->
+<div class="tab-content" id="tab-comment">
+  <div class="main-grid">
+    <div class="kw-section pos">
+      <h2 style="color:#4ade80;" data-i18n="ks_pos_comment">😊 正面评论关键词</h2>
+      <div class="kw-actions">
+        <button onclick="selectAllPos()">全选正面</button>
+        <button onclick="deselectAllPos()">取消全选</button>
+      </div>
+      <div id="pos-kw-groups"></div>
+    </div>
+
+    <div class="kw-section neg">
+      <h2 style="color:#f87171;" data-i18n="ks_neg_comment">😟 负面评论关键词</h2>
+      <div class="kw-actions">
+        <button onclick="selectAllNeg()">全选负面</button>
+        <button onclick="deselectAllNeg()">取消全选</button>
+      </div>
+      <div id="neg-kw-groups"></div>
+    </div>
+  </div>
+
+  <!-- Custom comment keywords -->
+  <div class="add-kw-section">
+    <h2>➕ 添加自定义评论关键词 <span class="reset-link" onclick="resetCommentDefaults()">恢复默认</span></h2>
+    <div class="add-kw-row">
+      <input type="text" id="custom-kw-input" placeholder="输入新关键词，例如: 膜层、阿贝数、偏色..." onkeydown="if(event.key==='Enter')addCustomKeyword()">
+      <select id="custom-kw-type">
+        <option value="positive">😊 正面</option>
+        <option value="negative">😟 负面</option>
+      </select>
+      <button class="add-kw-btn" onclick="addCustomKeyword()">添加</button>
+    </div>
+    <div class="custom-kw-area" id="custom-kw-area"></div>
+  </div>
+</div>
+
+<!-- Bottom bar -->
+<div class="bottom-bar">
+  <button class="btn btn-cancel" onclick="handleCancel()">← 返回主报告（放弃更改）</button>
+  <button class="btn btn-confirm" onclick="handleConfirm()">✓ 完成（保存更改）</button>
+</div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="i18n.js"></script>
+<script>
+// ==================== DATA: CONTENT KEYWORDS ====================
+const DEFAULT_CONTENT_GROUPS = {
+  "品类": ["渐进镜", "渐进多焦点", "老花镜", "老花眼", "老视", "防疲劳眼镜", "防疲劳镜片", "数码镜", "手机镜", "数码护目镜", "渐进片", "多焦点镜片"],
+  "品牌": ["蔡司", "依视路", "豪雅", "明月", "凯米", "暴龙", "万新", "尼康", "罗敦司得"],
+  "产品": ["泽锐", "智锐", "新清锐", "钻晶膜岩", "钻晶膜臻", "钻晶膜御", "钻晶膜致", "悦览S1", "万里路", "防蓝光", "变色镜片", "膜岩"],
+  "场景": ["配镜", "验光", "眼镜店", "潘家园", "折扣", "打折", "线上配镜", "实体店", "验光仪", "度数"],
+  "人群": ["40岁", "中老年", "近视", "老花", "视力", "眼疲劳", "数码疲劳", "上班族", "学生"]
+};
+
+// ==================== DATA: COMMENT KEYWORDS ====================
+const DEFAULT_POS_GROUPS = {"清晰度": ["清晰", "高清", "透亮", "通透", "锐利"], "舒适度": ["舒服", "舒适", "无感", "不晕", "适应快", "自然", "轻松", "轻便", "轻盈"], "性价比": ["性价比", "值", "划算", "不贵", "便宜", "省钱", "折扣", "折", "实惠"], "品质感": ["品质", "做工好", "德国", "精工", "大牌", "高端", "专业", "正品", "授权", "进口"], "功能效果": ["防蓝光", "防疲劳", "抗疲劳", "护眼", "改善", "缓解", "有用"], "服务体验": ["服务好", "专业验光", "耐心", "满意", "推荐", "安利", "种草", "惊喜", "好镜片"]};
+const DEFAULT_NEG_GROUPS = {"佩戴不适": ["头晕", "眩晕", "不适应", "难受", "不舒服", "恶心"], "质量问题": ["划痕", "磨损", "脱膜", "气泡", "模糊", "反光", "眩光", "变形"], "价格问题": ["贵", "太贵", "不值", "智商税", "坑", "暴利", "被宰", "虚高"], "验配失败": ["验光不准", "度数不对", "配错了", "退货", "翻车", "踩坑", "避雷", "避坑"], "服务差": ["态度差", "敷衍", "不专业", "忽悠", "骗", "踩雷"], "适应失败": ["白配"]};
+
+// ==================== STATE ====================
+let currentContentGroups = {};
+let customContentKeywords = []; // [{kw, type}]
+let currentPosGroups = {};
+let currentNegGroups = {};
+let customPosKeywords = [];
+let customNegKeywords = [];
+
+// ==================== TAB SWITCHING ====================
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  if (tab === 'content') {
+    document.getElementById('tab-btn-content').classList.add('active');
+    document.getElementById('tab-content').classList.add('active');
+  } else {
+    document.getElementById('tab-btn-comment').classList.add('active');
+    document.getElementById('tab-comment').classList.add('active');
+  }
+}
+
+// ==================== LOAD FROM STORAGE ====================
+function loadFromStorage() {
+  try {
+    let saved = localStorage.getItem('progressiveLensKeywordSettings');
+    if (saved) {
+      let data = JSON.parse(saved);
+      // Content keywords
+      if (data.contentGroups && Object.keys(data.contentGroups).length > 0) {
+        currentContentGroups = data.contentGroups;
+      } else {
+        currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+      }
+      if (data.customContent) customContentKeywords = data.customContent;
+      // Comment keywords
+      if (data.posGroups && Object.keys(data.posGroups).length > 0) {
+        currentPosGroups = data.posGroups;
+      } else {
+        currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+      }
+      if (data.negGroups && Object.keys(data.negGroups).length > 0) {
+        currentNegGroups = data.negGroups;
+      } else {
+        currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+      }
+      if (data.customPos) customPosKeywords = data.customPos;
+      if (data.customNeg) customNegKeywords = data.customNeg;
+    } else {
+      currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+      currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+      currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+    }
+  } catch(e) {
+    currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+    currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+    currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+  }
+}
+
+// ==================== SAVE TO STORAGE ====================
+function saveToStorage() {
+  let data = {
+    contentGroups: currentContentGroups,
+    customContent: customContentKeywords,
+    posGroups: currentPosGroups,
+    negGroups: currentNegGroups,
+    customPos: customPosKeywords,
+    customNeg: customNegKeywords,
+    confirmed: true,
+    timestamp: new Date().toISOString()
+  };
+  localStorage.setItem('progressiveLensKeywordSettings', JSON.stringify(data));
+  localStorage.setItem('progressiveLensKeywordSettingsUpdated', Date.now().toString());
+}
+
+// ==================== RENDER: CONTENT KEYWORDS ====================
+function renderContentGroups() {
+  const typeColors = {
+    '品类': 'cat', '品牌': 'brand', '产品': 'product', '场景': 'scene', '人群': 'audience'
+  };
+  for (let [type, defaultKws] of Object.entries(DEFAULT_CONTENT_GROUPS)) {
+    let containerId = 'content-groups-' + type;
+    let el = document.getElementById(containerId);
+    if (!el) continue;
+    let activeKws = currentContentGroups[type] || [];
+    let html = '<div class="kw-group"><div class="kw-checkboxes">';
+    defaultKws.forEach(kw => {
+      let checked = activeKws.includes(kw);
+      let cls = 'checked-' + typeColors[type];
+      html += '<label class="kw-checkbox-item' + (checked ? ' ' + cls : '') + '" id="cb-content-' + type + '-' + kw.replace(/[\s'"]/g, '_') + '">';
+      html += '<input type="checkbox"' + (checked ? ' checked' : '') + ' onchange="toggleContentKeyword(\'' + type + '\', \'' + kw.replace(/'/g, "\\'") + '\', this.checked)"> ' + kw;
+      html += '</label>';
+    });
+    html += '</div></div>';
+    el.innerHTML = html;
+  }
+}
+
+function toggleContentKeyword(type, kw, checked) {
+  if (!currentContentGroups[type]) currentContentGroups[type] = [];
+  if (checked) {
+    if (!currentContentGroups[type].includes(kw)) currentContentGroups[type].push(kw);
+  } else {
+    currentContentGroups[type] = currentContentGroups[type].filter(k => k !== kw);
+  }
+  updateCheckboxStyleContent(type, kw, checked);
+  updateCounts();
+}
+
+function updateCheckboxStyleContent(type, kw, checked) {
+  const typeColors = {
+    '品类': 'cat', '品牌': 'brand', '产品': 'product', '场景': 'scene', '人群': 'audience'
+  };
+  let cls = 'checked-' + typeColors[type];
+  let el = document.getElementById('cb-content-' + type + '-' + kw.replace(/[\s'"]/g, '_'));
+  if (el) {
+    if (checked) el.classList.add(cls); else el.classList.remove(cls);
+  }
+}
+
+function selectAllContent(type) {
+  currentContentGroups[type] = [...DEFAULT_CONTENT_GROUPS[type]];
+  renderContentGroups();
+  updateCounts();
+}
+
+function deselectAllContent(type) {
+  currentContentGroups[type] = [];
+  renderContentGroups();
+  updateCounts();
+}
+
+// ==================== RENDER: CUSTOM CONTENT KEYWORDS ====================
+function renderCustomContent() {
+  const typeColors = {
+    '品类': 'cat', '品牌': 'brand', '产品': 'product', '场景': 'scene', '人群': 'audience'
+  };
+  const typeIcons = {
+    '品类': '📋', '品牌': '🏷️', '产品': '🔧', '场景': '🏪', '人群': '👥'
+  };
+  let html = '';
+  customContentKeywords.forEach((item, idx) => {
+    let cls = 'ct-' + typeColors[item.type];
+    let icon = typeIcons[item.type] || '📌';
+    html += '<span class="custom-kw-tag ' + cls + '">' + icon + ' ' + escapeHtml(item.kw) + ' <span class="custom-kw-rm" onclick="removeCustomContent(' + idx + ')">✕</span></span>';
+  });
+  if (!html) html = '<div class="empty-state">暂无自定义内容关键词，在上方输入框中添加</div>';
+  document.getElementById('custom-content-area').innerHTML = html;
+}
+
+function addCustomContent() {
+  let input = document.getElementById('custom-content-input');
+  let type = document.getElementById('custom-content-type').value;
+  let kw = input.value.trim();
+  if (!kw) return;
+  let exists = customContentKeywords.some(c => c.kw === kw && c.type === type);
+  if (!exists) {
+    customContentKeywords.push({kw, type});
+  }
+  input.value = '';
+  input.focus();
+  renderCustomContent();
+  updateCounts();
+  input.style.borderColor = '#60a5fa';
+  setTimeout(() => input.style.borderColor = '', 800);
+}
+
+function removeCustomContent(idx) {
+  customContentKeywords.splice(idx, 1);
+  renderCustomContent();
+  updateCounts();
+}
+
+function resetContentDefaults() {
+  if (confirm('确定恢复内容关键词为默认设置？这将清除所有自定义内容关键词。')) {
+    currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+    customContentKeywords = [];
+    renderContentGroups();
+    renderCustomContent();
+    updateCounts();
+    showToast('内容关键词已恢复默认', 'info');
+  }
+}
+
+// ==================== RENDER: COMMENT KEYWORDS ====================
+function renderPosGroups() {
+  let html = '';
+  for (let [cat, kws] of Object.entries(currentPosGroups)) {
+    let checkedCount = kws.length;
+    html += '<div class="kw-group"><div class="kw-group-title">' + cat + ' <span class="count">(' + checkedCount + '词)</span></div><div class="kw-checkboxes">';
+    DEFAULT_POS_GROUPS[cat].forEach(kw => {
+      let checked = kws.includes(kw);
+      let cls = checked ? ' checked-pos' : '';
+      html += '<label class="kw-checkbox-item' + cls + '" id="cb-pos-' + kw.replace(/[\s'"]/g, '_') + '">';
+      html += '<input type="checkbox"' + (checked ? ' checked' : '') + ' onchange="toggleKeyword(\'positive\', \'' + cat.replace(/'/g, "\\'") + '\', \'' + kw.replace(/'/g, "\\'") + '\', this.checked)"> ' + kw;
+      html += '</label>';
+    });
+    html += '</div></div>';
+  }
+  document.getElementById('pos-kw-groups').innerHTML = html;
+}
+
+function renderNegGroups() {
+  let html = '';
+  for (let [cat, kws] of Object.entries(currentNegGroups)) {
+    let checkedCount = kws.length;
+    html += '<div class="kw-group"><div class="kw-group-title">' + cat + ' <span class="count">(' + checkedCount + '词)</span></div><div class="kw-checkboxes">';
+    DEFAULT_NEG_GROUPS[cat].forEach(kw => {
+      let checked = kws.includes(kw);
+      let cls = checked ? ' checked-neg' : '';
+      html += '<label class="kw-checkbox-item' + cls + '" id="cb-neg-' + kw.replace(/[\s'"]/g, '_') + '">';
+      html += '<input type="checkbox"' + (checked ? ' checked' : '') + ' onchange="toggleKeyword(\'negative\', \'' + cat.replace(/'/g, "\\'") + '\', \'' + kw.replace(/'/g, "\\'") + '\', this.checked)"> ' + kw;
+      html += '</label>';
+    });
+    html += '</div></div>';
+  }
+  document.getElementById('neg-kw-groups').innerHTML = html;
+}
+
+function toggleKeyword(type, cat, kw, checked) {
+  let groups = type === 'positive' ? currentPosGroups : currentNegGroups;
+  if (checked) {
+    if (!groups[cat].includes(kw)) groups[cat].push(kw);
+  } else {
+    groups[cat] = groups[cat].filter(k => k !== kw);
+  }
+  let cls = type === 'positive' ? 'checked-pos' : 'checked-neg';
+  let el = document.getElementById('cb-' + type + '-' + kw.replace(/[\s'"]/g, '_'));
+  if (el) {
+    if (checked) el.classList.add(cls); else el.classList.remove(cls);
+  }
+  updateCounts();
+}
+
+function selectAllPos() {
+  for (let cat of Object.keys(currentPosGroups)) currentPosGroups[cat] = [...DEFAULT_POS_GROUPS[cat]];
+  renderPosGroups();
+  updateCounts();
+}
+function deselectAllPos() {
+  for (let cat of Object.keys(currentPosGroups)) currentPosGroups[cat] = [];
+  renderPosGroups();
+  updateCounts();
+}
+function selectAllNeg() {
+  for (let cat of Object.keys(currentNegGroups)) currentNegGroups[cat] = [...DEFAULT_NEG_GROUPS[cat]];
+  renderNegGroups();
+  updateCounts();
+}
+function deselectAllNeg() {
+  for (let cat of Object.keys(currentNegGroups)) currentNegGroups[cat] = [];
+  renderNegGroups();
+  updateCounts();
+}
+
+// ==================== RENDER: CUSTOM COMMENT KEYWORDS ====================
+function renderCustomKeywords() {
+  let html = '';
+  customPosKeywords.forEach(kw => {
+    html += '<span class="custom-kw-tag ct-pos">😊 ' + escapeHtml(kw) + ' <span class="custom-kw-rm" onclick="removeCustomKw(\'positive\', \'' + kw.replace(/'/g, "\\'") + '\')">✕</span></span>';
+  });
+  customNegKeywords.forEach(kw => {
+    html += '<span class="custom-kw-tag ct-neg">😟 ' + escapeHtml(kw) + ' <span class="custom-kw-rm" onclick="removeCustomKw(\'negative\', \'' + kw.replace(/'/g, "\\'") + '\')">✕</span></span>';
+  });
+  if (!html) html = '<div class="empty-state">暂无自定义评论关键词，在上方输入框中添加</div>';
+  document.getElementById('custom-kw-area').innerHTML = html;
+}
+
+function addCustomKeyword() {
+  let input = document.getElementById('custom-kw-input');
+  let type = document.getElementById('custom-kw-type').value;
+  let kw = input.value.trim();
+  if (!kw) return;
+  let list = type === 'positive' ? customPosKeywords : customNegKeywords;
+  if (!list.includes(kw)) list.push(kw);
+  input.value = '';
+  input.focus();
+  renderCustomKeywords();
+  updateCounts();
+  input.style.borderColor = '#4ade80';
+  setTimeout(() => input.style.borderColor = '', 800);
+}
+
+function removeCustomKw(type, kw) {
+  let list = type === 'positive' ? customPosKeywords : customNegKeywords;
+  let idx = list.indexOf(kw);
+  if (idx >= 0) list.splice(idx, 1);
+  renderCustomKeywords();
+  updateCounts();
+}
+
+function resetCommentDefaults() {
+  if (confirm('确定恢复评论关键词为默认设置？这将清除所有自定义评论关键词。')) {
+    currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+    currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+    customPosKeywords = [];
+    customNegKeywords = [];
+    renderPosGroups();
+    renderNegGroups();
+    renderCustomKeywords();
+    updateCounts();
+    showToast('评论关键词已恢复默认', 'info');
+  }
+}
+
+// ==================== UPDATE COUNTS ====================
+function updateCounts() {
+  let contentTotal = 0;
+  for (let kws of Object.values(currentContentGroups)) contentTotal += kws.length;
+  contentTotal += customContentKeywords.length;
+
+  let posTotal = 0, negTotal = 0;
+  for (let kws of Object.values(currentPosGroups)) posTotal += kws.length;
+  for (let kws of Object.values(currentNegGroups)) negTotal += kws.length;
+  posTotal += customPosKeywords.length;
+  negTotal += customNegKeywords.length;
+
+  document.getElementById('content-count-badge').textContent = contentTotal;
+  document.getElementById('comment-count-badge').textContent = posTotal + negTotal;
+  document.getElementById('header-summary').innerHTML = '内容词 <strong>' + contentTotal + '</strong> · 评论词 😊<strong>' + posTotal + '</strong> 😟<strong>' + negTotal + '</strong>';
+}
+
+// ==================== ACTIONS ====================
+function goBackToMain() {
+  var base = window.location.href.replace(/[^\/]*$/, '');
+  window.location.href = langUrl('评论舆情分析_品牌评论图谱_20260809.html');
+}
+
+function handleCancel() {
+  goBackToMain();
+}
+
+function handleConfirm() {
+  saveToStorage();
+  showToast('✅ 关键词设置已保存，正在返回...', 'success');
+  setTimeout(function() {
+    goBackToMain();
+  }, 800);
+}
+
+// ==================== TOAST ====================
+function showToast(msg, type) {
+  let toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast ' + type + ' show';
+  setTimeout(() => toast.classList.remove('show'), 2500);
+}
+
+// ==================== UTILS ====================
+function escapeHtml(str) {
+  let div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// ==================== RENDER ALL ====================
+function renderAll() {
+  renderContentGroups();
+  renderCustomContent();
+  renderPosGroups();
+  renderNegGroups();
+  renderCustomKeywords();
+  updateCounts();
+}
+
+// ==================== INIT ====================
+loadFromStorage();
+renderAll();
+
+// Apply i18n after render
+function i18nKs() {
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    var text = t(key);
+    if (text && text !== key) el.textContent = text;
+  });
+  var langBtn = document.querySelector('.lang-toggle-btn');
+  if (langBtn) { langBtn.textContent = t('lang_label'); langBtn.title = t('lang_tip'); }
+  document.title = t('ks_title');
+}
+setTimeout(i18nKs, 50);
+
+// Listen for storage changes
+window.addEventListener('storage', function(e) {
+  if (e.key === 'progressiveLensKeywordSettings' && !e.newValue) {
+    currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+    currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+    currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+    customContentKeywords = [];
+    customPosKeywords = [];
+    customNegKeywords = [];
+    renderAll();
+  }
+});
+</script>
+</body>
+</html>

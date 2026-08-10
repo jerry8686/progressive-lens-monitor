@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渐进镜舆情监控平台</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
+.container { max-width: 1300px; margin: 0 auto; padding: 20px; padding-bottom: 80px; }
+h1 { font-size: 28px; margin-bottom: 5px; color: #fff; }
+h2 { font-size: 20px; margin: 30px 0 15px; color: #b8c7ff; border-bottom: 1px solid #2a2d3a; padding-bottom: 8px; }
+h3 { font-size: 16px; margin: 20px 0 10px; color: #c4c9d4; }
+h4 { font-size: 14px; margin: 8px 0; }
+.subtitle { color: #8a8f9a; font-size: 14px; margin-bottom: 30px; }
+.card-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.card { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; cursor: pointer; transition: all 0.2s; }
+.card:hover { border-color: #5a6bff; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(90,107,255,0.15); }
+.card .label { font-size: 12px; color: #8a8f9a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.card .value { font-size: 32px; font-weight: 700; }
+.card .sub { font-size: 13px; color: #8a8f9a; margin-top: 4px; }
+.card.positive .value { color: #4ade80; }
+.card.negative .value { color: #f87171; }
+.card.neutral .value { color: #fbbf24; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13px; }
+th { background: #1a1d2a; color: #8a8f9a; font-weight: 500; text-align: left; padding: 10px 14px; border-bottom: 1px solid #2a2d3a; }
+td { padding: 10px 14px; border-bottom: 1px solid #1f2230; }
+tr:hover td { background: rgba(90,107,255,0.05); }
+.clickable { cursor: pointer; color: #5a6bff; }
+.clickable:hover { text-decoration: underline; }
+.bar-container { display: flex; align-items: center; gap: 8px; }
+.bar-track { flex: 1; height: 8px; background: #2a2d3a; border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+.bar-fill.pos { background: linear-gradient(90deg, #22c55e, #4ade80); }
+.bar-fill.neg { background: linear-gradient(90deg, #ef4444, #f87171); }
+.bar-label { font-size: 12px; min-width: 45px; text-align: right; color: #8a8f9a; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 500; }
+.badge.pos { background: rgba(74,222,128,0.15); color: #4ade80; }
+.badge.neg { background: rgba(248,113,113,0.15); color: #f87171; }
+.badge.neu { background: rgba(251,191,36,0.15); color: #fbbf24; }
+.chart-container { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin: 16px 0; }
+.tabs { display: flex; gap: 4px; margin-bottom: 16px; }
+.tab-btn { padding: 8px 20px; background: #2a2d3a; border: none; color: #8a8f9a; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.tab-btn.active { background: #5a6bff; color: #fff; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.kw-tag { padding: 4px 12px; border-radius: 12px; font-size: 12px; }
+.kw-tag.pos { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+.kw-tag.neg { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+.kw-tag.neu { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+.brand-graph { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; }
+.brand-node { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 16px; }
+.kw-settings-btn { padding: 8px 20px; background: linear-gradient(135deg, #5a6bff, #7c3aed); border: none; border-radius: 8px; color: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.kw-settings-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(90,107,255,0.4); }
+.refresh-btn { position: fixed; bottom: 30px; right: 30px; width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #5a6bff, #7c3aed); border: none; color: white; font-size: 24px; cursor: pointer; box-shadow: 0 4px 20px rgba(90,107,255,0.4); z-index: 999; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+.refresh-btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(90,107,255,0.6); }
+.refresh-btn.spinning { animation: spin 0.8s ease-in-out; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+.refresh-toast { position: fixed; bottom: 100px; right: 30px; background: #4ade80; color: #0f1117; padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 600; z-index: 998; opacity: 0; transition: opacity 0.3s; }
+.refresh-toast.show { opacity: 1; }
+svg text { font-family: 'Microsoft YaHei', sans-serif; }
+.update-notice { background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.3); border-radius: 12px; padding: 16px; margin: 20px 0; font-size: 14px; }
+.update-notice strong { color: #fbbf24; }
+.compact-row { display: flex; gap: 20px; flex-wrap: wrap; }
+.compact-item { flex: 1; min-width: 250px; }
+.kw-panel { background: #1a1d2a; border: 2px solid #2a2d3a; border-radius: 16px; margin: 20px 0; overflow: hidden; }
+.kw-panel-header { padding: 16px 24px; background: #1e2240; display: flex; justify-content: space-between; align-items: center; }
+.kw-panel-header h3 { margin: 0; font-size: 16px; }
+@keyframes highlightFlash { 0% { background: rgba(90,107,255,0.3); } 100% { background: transparent; } }
+.row-highlight { animation: highlightFlash 1.5s ease-out; }
+.expand-slot { display: none; width: 100%; margin: 0 0 16px 0; }
+.expand-slot.active { display: block; }
+.drilldown-panel { background: #12141c; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin-top: 12px; overflow-y: auto; max-height: 600px; animation: slideDown 0.3s ease-out; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+.drilldown-panel .dd-close { float: right; background: #2a2d3a; border: none; color: #8a8f9a; border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 12px; }
+.drilldown-panel .dd-close:hover { color: #fff; background: #3a3d4a; }
+.brand-detail-inline { grid-column: 1 / -1; background: #12141c; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin-top: 8px; animation: slideDown 0.3s ease-out; overflow-y: auto; max-height: 500px; }
+.brand-detail-inline .dd-close { float: right; background: #2a2d3a; border: none; color: #8a8f9a; border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 12px; }
+.brand-detail-inline .dd-close:hover { color: #fff; background: #3a3d4a; }
+.expand-row td { padding: 0 !important; border: none !important; }
+.expand-row .dd-content { background: #12141c; border: 1px solid #2a2d3a; border-radius: 8px; margin: 4px 0; padding: 16px; overflow-y: auto; max-height: 400px; animation: slideDown 0.3s ease-out; }
+.expand-row .dd-close { float: right; background: #2a2d3a; border: none; color: #8a8f9a; border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 12px; }
+.expand-row .dd-close:hover { color: #fff; background: #3a3d4a; }
+.card.expanded { border-color: #5a6bff; box-shadow: 0 4px 16px rgba(90,107,255,0.2); }
+.baidu-chart-wrapper { position: relative; height: 320px; margin: 12px 0; }
+.baidu-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin: 2px; }
+.baidu-tag-blue { background: #1a3a5c; color: #58a6ff; }
+.baidu-tag-orange { background: #3d1f1f; color: #f78166; }
+.baidu-tag-green { background: #1f3d1f; color: #7ee787; }
+.baidu-tag-purple { background: #2d1f3d; color: #d2a8ff; }
+.baidu-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+.baidu-badge-hot { background: #da3633; color: #fff; }
+.baidu-badge-new { background: #238636; color: #fff; }
+.baidu-badge-up { background: #1a3a5c; color: #58a6ff; }
+.baidu-highlight { background: rgba(88,166,255,0.08); border-left: 3px solid #58a6ff; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; }
+
+/* Scenario comparison */
+.scenario-card { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; margin: 16px 0; }
+.scenario-card h3 { color: #b8c7ff; margin-bottom: 12px; font-size: 16px; }
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+.scenario-item { background: #12141c; border: 1px solid #2a2d3a; border-radius: 10px; padding: 14px; text-align: center; transition: all 0.2s; }
+.scenario-item:hover { border-color: #5a6bff; transform: translateY(-2px); }
+.scenario-item .sc-icon { font-size: 28px; margin-bottom: 6px; }
+.scenario-item .sc-name { font-size: 14px; font-weight: 600; color: #e8eaed; margin-bottom: 4px; }
+.scenario-item .sc-count { font-size: 24px; font-weight: 700; color: #5a6bff; }
+.scenario-item .sc-detail { font-size: 11px; color: #8a8f9a; margin-top: 4px; }
+.scenario-bar-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.scenario-bar-label { font-size: 12px; min-width: 70px; color: #8a8f9a; }
+.scenario-bar-track { flex: 1; height: 10px; background: #2a2d3a; border-radius: 5px; overflow: hidden; }
+.scenario-bar-fill { height: 100%; border-radius: 5px; transition: width 0.5s; }
+.scenario-bar-val { font-size: 12px; min-width: 35px; text-align: right; color: #e8eaed; font-weight: 600; }
+.scenario-table th { background: #1a1d2a; }
+.scenario-table td { font-size: 13px; }
+.scenario-insight { background: rgba(90,107,255,0.06); border-left: 3px solid #5a6bff; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; font-size: 13px; color: #c4c9d4; }
+
+.lang-toggle-btn { position: fixed; top: 20px; right: 20px; z-index: 1000; padding: 8px 16px; background: #2a2d3a; border: 1px solid #5a6bff; border-radius: 20px; color: #b8c7ff; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.lang-toggle-btn:hover { background: #5a6bff; color: #fff; box-shadow: 0 2px 12px rgba(90,107,255,0.4); }
+
+/* === Extended Report Sections (sec12-19) === */
+:root { --zeiss: #58a6ff; --essilor: #f78166; --hoya: #7ee787; --purple: #a371f7; }
+.section { margin-bottom: 48px; }
+.section-title { font-size: 20px; font-weight: 600; color: #58a6ff; padding-bottom: 12px; border-bottom: 2px solid #2a2d3a; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; }
+.stat-card { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; transition: all 0.2s; position: relative; }
+.stat-card:hover { border-color: #5a6bff; transform: translateY(-2px); box-shadow: 0 4px 20px rgba(90,107,255,0.1); }
+.stat-card .value { font-size: 2.4em; font-weight: 700; color: #5a6bff; }
+.stat-card .label { color: #8a8f9a; font-size: 13px; margin-top: 4px; }
+.stat-card .click-hint { position: absolute; top: 10px; right: 14px; font-size: 11px; color: #8a8f9a; opacity: 0.5; }
+.stat-card.zeiss .value { color: var(--zeiss); }
+.stat-card.essilor .value { color: var(--essilor); }
+.stat-card.hoya .value { color: var(--hoya); }
+.dd2-panel { display: none; background: #12141c; border: 1px solid #5a6bff; border-radius: 12px; padding: 24px; margin: 12px 0 24px; animation: slideDown 0.3s ease-out; overflow-y: auto; max-height: 600px; }
+.dd2-panel.active { display: block; }
+.dd2-panel .close-btn { float: right; background: none; border: none; color: #8a8f9a; font-size: 1.2em; cursor: pointer; padding: 4px 8px; }
+.dd2-panel .close-btn:hover { color: #f87171; }
+.dd2-panel h3 { margin-bottom: 12px; }
+.dd2-panel h4 { margin-bottom: 10px; }
+.platform-tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 13px; font-weight: 500; margin-right: 4px; }
+.tag-xhs { background: rgba(255,36,66,0.15); color: #ff2442; }
+.tag-dy { background: rgba(0,0,0,0.3); color: #e8eaed; border: 1px solid #3a3d4a; }
+.tag-gzh { background: rgba(7,193,96,0.15); color: #07c160; }
+.tag-bili { background: rgba(251,114,153,0.15); color: #fb7299; }
+.keyword-node { display: inline-block; padding: 4px 12px; border-radius: 16px; margin: 3px; font-size: 13px; white-space: nowrap; }
+.brand-zeiss { background: rgba(88,166,255,0.12); border: 1px solid rgba(88,166,255,0.4); color: var(--zeiss); }
+.brand-essilor { background: rgba(247,129,102,0.12); border: 1px solid rgba(247,129,102,0.4); color: var(--essilor); }
+.brand-hoya { background: rgba(126,231,135,0.12); border: 1px solid rgba(126,231,135,0.4); color: var(--hoya); }
+.cat-label { font-size: 12px; color: #8a8f9a; font-weight: bold; margin-top: 14px; margin-bottom: 6px; display: block; }
+.quote { border-left: 3px solid #5a6bff; padding: 8px 16px; margin: 12px 0; background: rgba(90,107,255,0.05); border-radius: 0 8px 8px 0; font-size: 13px; }
+.insight-box { background: rgba(163,113,247,0.06); border: 1px solid rgba(163,113,247,0.2); border-radius: 12px; padding: 20px; margin: 16px 0; }
+.insight-box h4 { color: var(--purple); margin-bottom: 8px; }
+.nav-tabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
+.nav-tab { padding: 6px 16px; border-radius: 8px; border: 1px solid #2a2d3a; background: transparent; color: #8a8f9a; cursor: pointer; font-size: 13px; transition: all 0.15s; }
+.nav-tab:hover { border-color: #5a6bff; color: #e8eaed; }
+.nav-tab.active { background: rgba(90,107,255,0.12); border-color: #5a6bff; color: #5a6bff; }
+.platform-detail { display: none; }
+.platform-detail.active { display: block; }
+.clickable-row { cursor: pointer; transition: background 0.15s; }
+.clickable-row:hover { background: rgba(90,107,255,0.05); }
+.clickable-row .row-hint { color: #5a6bff; font-size: 13px; opacity: 0; transition: opacity 0.15s; }
+.clickable-row:hover .row-hint { opacity: 1; }
+.badge-hot { background: rgba(248,113,113,0.15); color: #f87171; }
+.badge-up { background: rgba(90,107,255,0.15); color: #5a6bff; }
+.badge-new { background: rgba(74,222,128,0.15); color: #4ade80; }
+
+/* ==================== RESPONSIVE: Tablet (< 768px) ==================== */
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+  .container { padding: 14px 12px 100px; }
+  h1 { font-size: 22px; line-height: 1.3; }
+  h2 { font-size: 17px; margin: 24px 0 12px; }
+  h3 { font-size: 14px; }
+  .subtitle { font-size: 12px; margin-bottom: 20px; }
+  /* All grids → single column */
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; gap: 12px; }
+  .card-row { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+  .card { padding: 14px; }
+  .card .value { font-size: 26px; }
+  .brand-graph { grid-template-columns: 1fr; }
+  .scenario-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  .compact-row { flex-direction: column; gap: 12px; }
+  .compact-item { min-width: unset; }
+  /* Tables → horizontal scroll (all tables inside .container) */
+  .container table {
+    display: block; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  .container table thead,
+  .container table tbody,
+  .container table tr { display: table; width: 100%; table-layout: auto; }
+  .chart-container { padding: 12px; }
+  table { font-size: 12px; }
+  th, td { padding: 8px 10px; white-space: nowrap; }
+  /* SVG graphics → responsive */
+  .container svg { max-width: 100%; height: auto; }
+  #platform-visual-section svg { width: 100% !important; height: auto !important; }
+  /* Chart heights */
+  .baidu-chart-wrapper { height: 260px !important; }
+  .scenario-card { padding: 14px; }
+  /* Fixed buttons */
+  .lang-toggle-btn { top: 10px; right: 10px; padding: 6px 12px; font-size: 12px; border-radius: 16px; }
+  .refresh-btn { bottom: 20px; right: 16px; width: 48px; height: 48px; font-size: 20px; }
+  .refresh-toast { bottom: 80px; right: 16px; font-size: 12px; padding: 8px 14px; }
+  /* Keyword panel */
+  .kw-panel-header { padding: 12px 16px; flex-direction: column; gap: 10px; align-items: flex-start; }
+  .kw-panel-header button { width: 100%; }
+  /* Scenario */
+  .scenario-bar-label { min-width: 56px; font-size: 11px; }
+  .scenario-bar-val { min-width: 28px; font-size: 11px; }
+  .scenario-item { padding: 10px; }
+  .scenario-item .sc-icon { font-size: 22px; }
+  .scenario-item .sc-name { font-size: 12px; }
+  .scenario-item .sc-count { font-size: 20px; }
+  .nav-tab { padding: 5px 10px; font-size: 12px; }
+  .tab-btn { padding: 6px 14px; font-size: 12px; }
+  .drilldown-panel, .brand-detail-inline, .expand-row .dd-content { max-height: 400px; }
+  .kw-settings-btn { font-size: 12px; padding: 6px 14px; }
+  .stat-card .value { font-size: 1.8em; }
+  .stat-card { padding: 14px; }
+}
+
+/* ==================== RESPONSIVE: Phone (< 480px) ==================== */
+@media (max-width: 480px) {
+  .container { padding: 10px 8px 100px; }
+  h1 { font-size: 19px; }
+  h2 { font-size: 15px; margin: 20px 0 10px; }
+  .card-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .card { padding: 10px; border-radius: 10px; }
+  .card .value { font-size: 22px; }
+  .card .label { font-size: 10px; }
+  .card .sub { font-size: 11px; }
+  .scenario-grid { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; }
+  .baidu-chart-wrapper { height: 220px !important; }
+  table { font-size: 11px; }
+  th, td { padding: 6px 8px; }
+  .lang-toggle-btn { top: 6px; right: 6px; padding: 5px 10px; font-size: 11px; }
+  .refresh-btn { bottom: 14px; right: 10px; width: 42px; height: 42px; font-size: 18px; }
+  .bar-label { font-size: 10px; min-width: 36px; }
+  .badge { font-size: 10px; padding: 1px 6px; }
+  .scenario-bar-label { min-width: 48px; font-size: 10px; }
+  .scenario-item .sc-count { font-size: 18px; }
+  .nav-tab { padding: 4px 8px; font-size: 11px; }
+  .stat-card .value { font-size: 1.5em; }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<button class="lang-toggle-btn" onclick="toggleLang()" title="Switch language">EN</button>
+<div class="container">
+
+<div class="kw-panel" id="kw-panel">
+  <div class="kw-panel-header" style="cursor:default;">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <h3 style="margin:0;" data-i18n="kw_config">⚙️ 关键词配置</h3>
+      <span id="kw-summary" style="font-size:13px;color:#8a8f9a;"></span>
+    </div>
+    <button class="kw-settings-btn" onclick="openKeywordSettings()" data-i18n="kw_settings_btn">⚙️ 设置关键词</button>
+  </div>
+</div>
+
+<h1 data-i18n="main_title">渐进镜舆情监控平台</h1>
+<div class="subtitle" data-i18n="main_subtitle">数据范围: 小红书/抖音/公众号 | 近30天 | 103条光学相关帖子 | 报告日期: 2026.08.09 | 数据来源: 红狐API + 百度指数 + WebSearch</div>
+
+
+
+
+<h2 data-i18n="sec1_title">一、四平台评论情感总览</h2>
+<div class="card-row" id="overview-row1"></div>
+<div class="expand-slot" id="row1-expand"></div>
+<div class="card-row" id="overview-row2"></div>
+<div class="expand-slot" id="row2-expand"></div>
+<div class="chart-container" id="platform-sentiment-table"></div>
+
+<h2 data-i18n="sec2_title">二、各平台正负面评论关键词 Top 10</h2>
+<div id="platform-kw-section"></div>
+
+<h2 style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;"><span data-i18n="sec3_title">三、品牌 × 评论情感关联图谱</span><button class="kw-settings-btn" onclick="openCommentSearch()" data-i18n="comment_search_btn">🔍 评论关键词搜索</button></h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">展示各品牌在评论中关联的正负面关键词网络，点击品牌卡片可查看按平台下钻的详细数据</p>
+<div class="brand-graph" id="brand-graph"></div>
+
+<h2 data-i18n="sec4_title">四、品牌评论按平台下钻明细</h2>
+<div id="brand-platform-table"></div>
+<p style="font-size:12px;color:#8a8f9a;margin-top:4px;">⬆ 点击品牌行查看详细正负面关键词分布</p>
+
+<h2>五、评论存量 vs 增量（周维度更新框架）</h2>
+<div class="update-notice">
+  <strong>📅 更新机制:</strong> 本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。
+</div>
+<div class="compact-row" id="stock-incr-section"></div>
+
+<h2 data-i18n="sec6_title">六、各平台正负面关键词对比</h2>
+<div id="platform-visual-section" style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center"></div>
+
+<h2>七、百度指数关键词热度对比（柱状图）</h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。</p>
+<div class="chart-container">
+  <div class="baidu-chart-wrapper">
+    <canvas id="baiduIndexChart"></canvas>
+  </div>
+</div>
+
+<h2>八、百度指数关键词详细对比（表格）</h2>
+<div class="chart-container" id="baidu-detail-table"></div>
+
+
+<h2 data-i18n="sec9_title">九、渐进镜选配主要场景对比</h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。</p>
+
+<!-- Card 1: Platform Content -->
+<div class="chart-container">
+  <h3 style="color:#58a6ff;margin-bottom:12px;">📱 平台内容场景分布</h3>
+  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;">基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计</p>
+  <div id="scenario-platform-card"></div>
+</div>
+
+<!-- Card 2: Baidu Index -->
+<div class="chart-container">
+  <h3 style="color:#f78166;margin-bottom:12px;">🔍 百度指数场景热度对比</h3>
+  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;">基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次</p>
+  <div id="scenario-baidu-card"></div>
+
+<h3 style="color:#d2a8ff;margin:20px 0 12px;">📈 过去30天百度搜索量趋势</h3>
+<div class="chart-container">
+  <div class="baidu-chart-wrapper" style="height:400px;">
+    <canvas id="baidu30DayChart"></canvas>
+  </div>
+</div>
+
+<h3 style="color:#fbbf24;margin:20px 0 12px;">🔥 场景×关键词相关性热力图</h3>
+<div class="chart-container" id="scenario-heatmap"></div>
+
+</div>
+
+<h2>十、品牌关键词策略洞察（四品牌横向对比）</h2>
+<div class="chart-container" id="baidu-insight-table"></div>
+
+<h2 data-i18n="sec11_title">十一、分析方法与局限</h2>
+<div class="chart-container" style="font-size:13px;color:#8a8f9a;">
+  <p><strong>情感分类方法:</strong> 基于关键词匹配 + 正面/负面类别进行情感判定</p>
+  <p><strong>品牌识别:</strong> 精确匹配 + 别名识别（如"万里路"→依视路）</p>
+  <p><strong>数据来源:</strong> cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台；百度指数数据基于 Chinaz/5118 等第三方估算（2026年7月）</p>
+  <p style="margin-top:8px;color:#fbbf24;">⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少；"老花"关键词存在歧义；红狐API对B站/公众号覆盖有限</p>
+  <p style="margin-top:8px;color:#8a8f9a;">建议结合线下门店调研和消费者问卷做交叉验证。</p>
+</div>
+
+</div><!-- close container -->
+
+<div style="text-align:center;padding:60px 20px;color:#8a8f9a;font-size:13px;border-top:1px solid #2a2d3a;margin-top:40px;">
+  渐进镜/老花镜四平台评论舆情分析报告（完整版）· 2026年8月9日 · WorkBuddy 生成<br>
+  数据来源: 红狐API + 百度指数 + WebSearch | 仅供研究参考，不构成商业建议
+</div>
+<script src="data.js"></script>
+<script>
+// ==================== I18N (inlined) ====================
+var __LANG__ = 'zh';
+(function initI18n() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var urlLang = urlParams.get('lang');
+  if (urlLang && (urlLang === 'zh' || urlLang === 'en')) {
+    __LANG__ = urlLang;
+    localStorage.setItem('progressiveLensLang', urlLang);
+  } else {
+    var saved = localStorage.getItem('progressiveLensLang');
+    if (saved && (saved === 'zh' || saved === 'en')) {
+      __LANG__ = saved;
+    }
+  }
+})();
+
+var I18N = {
+  zh: {
+    'lang_label': 'EN', 'lang_tip': 'Switch to English', 'back_to_main': '← 返回主报告', 'back_to_main_cancel': '← 返回主报告（放弃更改）', 'confirm_save': '✓ 完成（保存更改）',
+    'main_title': '渐进镜舆情监控平台', 'main_subtitle': '数据范围: 小红书/抖音/公众号 | 近30天 | 103条光学相关帖子 | 生成时间: 2026-08-09 22:38',
+    'kw_config': '关键词配置', 'kw_settings_btn': '⚙️ 设置关键词', 'kw_summary_fmt': '内容词 {content} · 评论词 {pos} {neg}',
+    'sec1_title': '一、四平台评论情感总览', 'card_total_posts': '总分析帖子数', 'card_platform_dist': '各平台评论分布', 'card_view_detail': '点击查看详情', 'card_positive_rate': '正面评论占比', 'card_negative_rate': '负面评论占比', 'card_pos_bar': '条正面', 'card_neg_bar': '条负面', 'sentiment_dist': '各平台正负中性分布', 'platform': '平台', 'total': '总数', 'positive': '正面', 'negative': '负面', 'neutral': '中性', 'distribution': '分布',
+    'sec2_title': '二、各平台正负面评论关键词 Top 10', 'pos_keywords': '正面关键词', 'neg_keywords': '负面关键词', 'category': '类别',
+    'sec3_title': '三、品牌 × 评论情感关联图谱', 'sec3_desc': '展示各品牌在评论中关联的正负面关键词网络，点击品牌卡片可查看按平台下钻的详细数据', 'comment_search_btn': '🔍 评论关键词搜索', 'brand_pos_kw': '正面关联词', 'brand_neg_kw': '负面关联词', 'brand_total_mentions': '共 {count} 条提及', 'brand_no_data': '暂无品牌数据',
+    'sec4_title': '四、品牌评论按平台下钻明细', 'sec4_hint': '⬆ 点击品牌行查看详细正负面关键词分布', 'brand': '品牌', 'total_mentions': '总提及', 'platform_dist': '平台分布',
+    'sec5_title': '五、评论存量 vs 增量（周维度更新框架）', 'stock_label': '存量数据 (8/3前)', 'incr_label': '本周增量 (8/3-8/9)', 'stock_count': '条', 'brand_distribution': '品牌分布',
+    'sec6_title': '六、各平台正负面关键词对比',
+    'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。', 'baidu_est_monthly': '百度估算月搜索量',
+    'sec8_title': '八、百度指数关键词详细对比', 'core_keyword': '核心关键词', 'est_monthly_vol': '估算月搜索量', 'search_intent': '搜索意图', 'ranking_trend': '排名趋势',
+    'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机/数码眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
+    'sec10_title': '十、品牌关键词策略洞察', 'dim_brand_mind': '品牌心智词', 'dim_social_kw': '最高频社媒词', 'dim_baidu_search': '百度月搜索', 'dim_price_tag': '价签关联', 'dim_audience': '人群标签', 'dim_competitor': '竞品对标', 'dim_strategy': '声量策略建议',
+    'sec11_title': '十一、分析方法与局限', 'method_sentiment': '情感分类方法: 基于关键词匹配 + 正面/负面类别进行情感判定', 'method_brand': '品牌识别: 精确匹配 + 别名识别', 'method_source': '数据来源: cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台', 'method_config': '关键词配置: 点击顶部「⚙️ 设置关键词」按钮打开独立配置页面。评论关键词搜索请点击第三部分旁「🔍 评论关键词搜索」按钮。', 'method_limit': '⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少',
+    'drilldown_all_items': '全部帖子列表', 'drilldown_platform_data': '各平台评论数据分布', 'drilldown_pos_summary': '正面评论关键词汇总', 'drilldown_neg_summary': '负面评论关键词汇总', 'drilldown_detail': '下钻详情', 'drilldown_no_data': '暂无下钻数据', 'close_panel': '✕ 收起', 'col_title': '标题', 'col_abstract': '内容摘要', 'col_sentiment': '情感', 'col_match_kw': '匹配词', 'col_link': '链接', 'col_no_kw': '无关键词',
+    'brand_comment_detail': '评论情感关键词下钻', 'tab_all_kw': '全部关键词', 'tab_by_platform': '按平台分布', 'tab_association': '品牌-关键词关联', 'brand_pos_no_data': '无正面关键词数据', 'brand_neg_no_data': '无负面关键词数据',
+    'refresh_done': '✅ 分析完成！已更新全部结果', 'kw_updated': '✅ 关键词设置已更新，已刷新全部结果',
+    'update_notice': '📅 更新机制: 本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。',
+    'baidu_30day_title': '过去30天百度搜索量趋势', 'baidu_heatmap_title': '场景×关键词相关性热力图',
+    'scene_driving': '驾驶', 'scene_office': '办公', 'scene_outdoor': '户外运动', 'scene_photo': '摄影', 'scene_digital': '电子产品',
+    'brand_zeiss': '蔡司 ZEISS', 'brand_essilor': '依视路 Essilor', 'brand_hoya': '豪雅 HOYA', 'brand_nikon': '尼康 Nikon', 'brand_generic': '通用品类',
+  },
+  en: {
+    'lang_label': '中', 'lang_tip': 'Switch to Chinese', 'back_to_main': '← Back to Report', 'back_to_main_cancel': '← Back to Report (Discard)', 'confirm_save': '✓ Done (Save)',
+    'main_title': 'Progressive Lens Sentiment Monitoring Platform', 'main_subtitle': 'Data Range: XHS/Douyin/WeChat OA | Past 30 Days | 103 Optical Posts | Generated: 2026-08-09 22:38',
+    'kw_config': 'Keyword Configuration', 'kw_settings_btn': '⚙️ Keyword Settings', 'kw_summary_fmt': 'Content {content} · Sentiment {pos} {neg}',
+    'sec1_title': 'I. Platform Sentiment Overview', 'card_total_posts': 'Total Posts Analyzed', 'card_platform_dist': 'Platform Distribution', 'card_view_detail': 'Click for details', 'card_positive_rate': 'Positive Rate', 'card_negative_rate': 'Negative Rate', 'card_pos_bar': 'positive', 'card_neg_bar': 'negative', 'sentiment_dist': 'Sentiment Distribution by Platform', 'platform': 'Platform', 'total': 'Total', 'positive': 'Positive', 'negative': 'Negative', 'neutral': 'Neutral', 'distribution': 'Distribution',
+    'sec2_title': 'II. Top 10 Positive/Negative Keywords by Platform', 'pos_keywords': 'Positive Keywords', 'neg_keywords': 'Negative Keywords', 'category': 'Category',
+    'sec3_title': 'III. Brand × Sentiment Association Graph', 'sec3_desc': 'Visualize positive and negative keyword networks associated with each brand. Click brand cards to drill down by platform.', 'comment_search_btn': '🔍 Comment Keyword Search', 'brand_pos_kw': 'Positive Associations', 'brand_neg_kw': 'Negative Associations', 'brand_total_mentions': '{count} mentions', 'brand_no_data': 'No brand data',
+    'sec4_title': 'IV. Brand Comments by Platform Detail', 'sec4_hint': '⬆ Click brand row to view detailed positive/negative keyword breakdown', 'brand': 'Brand', 'total_mentions': 'Mentions', 'platform_dist': 'Platform',
+    'sec5_title': 'V. Stock vs. Incremental (Weekly Update Framework)', 'stock_label': 'Stock Data (Before Aug 3)', 'incr_label': 'Weekly Incremental (Aug 3-9)', 'stock_count': 'posts', 'brand_distribution': 'Brand Distribution',
+    'sec6_title': 'VI. Positive vs. Negative Comparison by Platform',
+    'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Data based on estimated monthly search volume (Jul 2026) from tools like Chinaz/5118. Reflects proactive user search behavior on Baidu, complementary to social media passive exposure.', 'baidu_est_monthly': 'Est. Baidu Monthly Searches',
+    'sec8_title': 'VIII. Baidu Index Keyword Detail Comparison', 'core_keyword': 'Core Keyword', 'est_monthly_vol': 'Est. Monthly Vol.', 'search_intent': 'Search Intent', 'ranking_trend': 'Trend',
+    'sec9_title': 'IX. Progressive Lens Scenario Comparison', 'sec9_desc': 'Compare five core progressive/reading glasses scenarios (Driving, Office, Outdoor Sports, Photography, Digital Devices) from both social media content and Baidu search index dimensions.', 'card1_title': 'Social Media Scenario Distribution', 'card1_desc': 'Based on keyword matching from 103 posts across XHS/Douyin/WeChat OA', 'card2_title': 'Baidu Index Scenario Heat', 'card2_desc': 'Based on estimated Baidu monthly search volume (Jul 2026), reflecting user proactive search frequency for each scenario', 'scenario_driving': 'Driving', 'scenario_office': 'Office', 'scenario_outdoor': 'Outdoor Sports', 'scenario_photo': 'Photography', 'scenario_digital': 'Digital Devices', 'scenario_monthly_total': 'Monthly Total', 'scenario_brand_assoc': 'Brand Association by Scenario', 'scenario_brand_mentions': 'Associated Brands (mentions)', 'scenario_sample': 'Sample Content', 'scenario_no_brand': 'No brand mentions', 'insight_platform': 'Insight: Digital devices (phone/digital/screen) dominate progressive lens content, followed by office use. Driving has clear professional demand but low social media discussion. Photography has the least mentions (niche). Outdoor sports show moderate discussion but weak brand association.', 'insight_baidu': 'Insight: On Baidu search, digital devices (blue-light glasses 8K+ + phone/digital glasses) generate the highest volume, reflecting mass demand for screen eye protection. Outdoor sports ranks second (sports glasses 4.5K + photochromic lens 3.6K) but social media content is insufficient — an unmet supply gap. Office search demand is healthy (computer glasses 3.2K) and matches social content. Driving shows moderate but growing search volume (driving glasses ↑), with Zeiss having first-mover advantage. Photography is the lowest-volume long-tail scenario.', 'cross_comparison': 'Dual-Dimension Cross Comparison', 'cross_social': 'Social Content Volume', 'cross_baidu': 'Baidu Search Volume', 'cross_match': 'Supply-Demand Match', 'cross_strategy': 'Strategy', 'match_shortage': '⚠️ Unmet Demand', 'match_good': '✓ Well-Matched', 'match_oversupply': '→ Oversupplied', 'match_longtail': '○ Long-Tail', 'match_improve': '→ Needs Growth', 'strategy_shortage': 'High search demand but low social content — increase content seeding', 'strategy_good': 'Balanced supply-demand — maintain current strategy', 'strategy_oversupply': 'Limited search demand — pivot content to long-tail SEO', 'strategy_longtail': 'Niche demand — suitable for targeted campaigns, not mass marketing', 'strategy_improve': 'Both search and content have growth potential',
+    'sec10_title': 'X. Brand Keyword Strategy Insights', 'dim_brand_mind': 'Brand Mind Words', 'dim_social_kw': 'Top Social Keywords', 'dim_baidu_search': 'Baidu Monthly Searches', 'dim_price_tag': 'Price Tag', 'dim_audience': 'Audience Tags', 'dim_competitor': 'Competitor Benchmark', 'dim_strategy': 'Strategy Recommendation',
+    'sec11_title': 'XI. Methodology & Limitations', 'method_sentiment': 'Sentiment classification: keyword matching + positive/negative category判定', 'method_brand': 'Brand detection: exact match + alias recognition', 'method_source': 'Data sources: cn-last30days RedFox API × 4 keyword rounds × 3 platforms', 'method_config': 'Keyword config: click 「⚙️ Keyword Settings」 at top. Comment search: click 「🔍 Comment Search」 in Section 3.', 'method_limit': '⚠️ Limitations: sentiment analysis based on title/description keyword matching, not human annotation; Hoya sample size too small',
+    'drilldown_all_items': 'All Posts List', 'drilldown_platform_data': 'Platform Comment Distribution', 'drilldown_pos_summary': 'Positive Keyword Summary', 'drilldown_neg_summary': 'Negative Keyword Summary', 'drilldown_detail': 'Drill-down Detail', 'drilldown_no_data': 'No drill-down data', 'close_panel': '✕ Close', 'col_title': 'Title', 'col_abstract': 'Abstract', 'col_sentiment': 'Sentiment', 'col_match_kw': 'Match Keywords', 'col_link': 'Link', 'col_no_kw': 'No keywords',
+    'brand_comment_detail': 'Comment Sentiment Drill-down', 'tab_all_kw': 'All Keywords', 'tab_by_platform': 'By Platform', 'tab_association': 'Brand-Keyword Association', 'brand_pos_no_data': 'No positive keywords', 'brand_neg_no_data': 'No negative keywords',
+    'refresh_done': '✅ Analysis complete! All results updated', 'kw_updated': '✅ Keyword settings updated, all results refreshed',
+    'update_notice': '📅 Update mechanism: weekly incremental data will be merged into stock next week. Current cutoff: Aug 3, 2026.',
+    'baidu_30day_title': 'Past 30-Day Baidu Search Trend', 'baidu_heatmap_title': 'Scenario × Keyword Correlation Heatmap',
+    'scene_driving': 'Driving', 'scene_office': 'Office', 'scene_outdoor': 'Outdoor Sports', 'scene_photo': 'Photography', 'scene_digital': 'Digital Devices',
+    'brand_zeiss': 'ZEISS', 'brand_essilor': 'Essilor', 'brand_hoya': 'HOYA', 'brand_nikon': 'Nikon', 'brand_generic': 'Generic',
+  }
+};
+
+function t(key, params) {
+  var dict = I18N[__LANG__] || I18N['zh'];
+  var str = dict[key];
+  if (typeof str === 'undefined' || str === null) {
+    dict = I18N['zh'];
+    str = dict[key] || key;
+  }
+  if (str && params) {
+    for (var k in params) {
+      str = str.replace('{' + k + '}', params[k]);
+    }
+  }
+  return str;
+}
+
+function t_esc(key, params) {
+  return escapeHtml(t(key, params));
+}
+
+function toggleLang() {
+  var newLang = __LANG__ === 'zh' ? 'en' : 'zh';
+  localStorage.setItem('progressiveLensLang', newLang);
+  var url = new URL(window.location.href);
+  url.searchParams.set('lang', newLang);
+  window.location.href = url.toString();
+}
+
+function langUrl(filename) {
+  var base = window.location.href.replace(/[^\/]*$/, '');
+  var separator = filename.indexOf('?') >= 0 ? '&' : '?';
+  return base + filename + separator + 'lang=' + __LANG__;
+}
+
+function i18nDom() {
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    var text = t(key);
+    if (text && text !== key) el.textContent = text;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-html');
+    var text = t(key);
+    if (text && text !== key) el.innerHTML = text;
+  });
+  var langBtn = document.querySelector('.lang-toggle-btn');
+  if (langBtn) {
+    langBtn.textContent = t('lang_label');
+    langBtn.title = t('lang_tip');
+  }
+  document.title = t('main_title');
+}
+
+function loadKeywordSettings() {
+  try {
+    var saved = localStorage.getItem("progressiveLensKeywordSettings");
+    if (saved) {
+      var data = JSON.parse(saved);
+      if (data.posGroups && Object.keys(data.posGroups).length > 0) currentPosGroups = data.posGroups;
+      if (data.negGroups && Object.keys(data.negGroups).length > 0) currentNegGroups = data.negGroups;
+      if (data.customPos) customPosKeywords = data.customPos;
+      if (data.customNeg) customNegKeywords = data.customNeg;
+      if (data.contentGroups && Object.keys(data.contentGroups).length > 0) currentContentGroups = data.contentGroups;
+      if (data.customContent) customContentKeywords = data.customContent;
+      return true;
+    }
+  } catch(e) {}
+  return false;
+}
+
+function saveKeywordSettingsToStorage() {
+  var data = {
+    contentGroups: currentContentGroups,
+    customContent: customContentKeywords,
+    posGroups: currentPosGroups,
+    negGroups: currentNegGroups,
+    customPos: customPosKeywords,
+    customNeg: customNegKeywords
+  };
+  localStorage.setItem("progressiveLensKeywordSettings", JSON.stringify(data));
+}
+
+function updateKwSummary() {
+  var contentTotal = 0;
+  for (var k in currentContentGroups) contentTotal += currentContentGroups[k].length;
+  contentTotal += customContentKeywords.length;
+  var posTotal = 0, negTotal = 0;
+  for (var k in currentPosGroups) posTotal += currentPosGroups[k].length;
+  for (var k in currentNegGroups) negTotal += currentNegGroups[k].length;
+  posTotal += customPosKeywords.length;
+  negTotal += customNegKeywords.length;
+  var el = document.getElementById("kw-summary");
+  if (el) el.innerHTML = t("kw_summary_fmt", {content: "<strong style=\"color:#60a5fa;\">" + contentTotal + "</strong>", pos: "<strong style=\"color:#4ade80;\">" + posTotal + "</strong>", neg: "<strong style=\"color:#f87171;\">" + negTotal + "</strong>"});
+}
+
+function openKeywordSettings() {
+  saveKeywordSettingsToStorage();
+  var base = window.location.href.replace(/[^\/]*$/, '');
+  window.location.href = langUrl('keyword_settings.html');
+}
+
+function openCommentSearch(query) {
+  var base = window.location.href.replace(/[^\/]*$/, '');
+  var url = langUrl('comment_search.html');
+  if (query) url += '?q=' + encodeURIComponent(query);
+  window.location.href = url;
+}
+
+function doRefresh() {
+  var btn = document.querySelector(".refresh-btn");
+  btn.classList.add("spinning");
+  setTimeout(function() {
+    loadKeywordSettings();
+    rebuildAllData();
+    renderAll();
+    renderBaidu30Day();
+    renderScenarioHeatmap();
+    updateKwSummary();
+    btn.classList.remove("spinning");
+    setTimeout(function() { i18nDom(); }, 200);
+    var toast = document.getElementById("refresh-toast");
+    toast.textContent = t('refresh_done');
+    toast.classList.add("show");
+    setTimeout(function() { toast.classList.remove("show"); }, 2000);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 500);
+}
+
+// Listen for changes from keyword settings page
+window.addEventListener("storage", function(e) {
+  if (e.key === "progressiveLensKeywordSettingsUpdated") {
+    loadKeywordSettings();
+    rebuildAllData();
+    renderAll();
+    renderBaidu30Day();
+    renderScenarioHeatmap();
+    updateKwSummary();
+    setTimeout(function() { i18nDom(); }, 200);
+    var toast = document.getElementById("refresh-toast");
+    toast.textContent = t('kw_updated');
+    toast.classList.add("show");
+    setTimeout(function() { toast.classList.remove("show"); }, 2000);
+  }
+});
+
+// ==================== ORIGINAL SCRIPT BELOW ====================
+// ==================== STATE ====================
+var currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+var currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+var customPosKeywords = [];
+var customNegKeywords = [];
+var currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+var customContentKeywords = [];
+
+var ITEMS = [];
+var PLATFORM_DATA = {};
+var BRAND_DATA = {};
+var STOCK_DATA = {};
+var INCR_DATA = {};
+var KEYWORD_INDEX = {};
+
+// ==================== NAVIGATION ====================
+
+
+
+
+// ==================== KEYWORD HELPERS ====================
+function getActivePosKeywords() {
+  var all = [];
+  for (var cat in currentPosGroups) all = all.concat(currentPosGroups[cat]);
+  return all.concat(customPosKeywords);
+}
+function getActiveNegKeywords() {
+  var all = [];
+  for (var cat in currentNegGroups) all = all.concat(currentNegGroups[cat]);
+  return all.concat(customNegKeywords);
+}
+function getActiveContentKeywords() {
+  var all = [];
+  for (var type in currentContentGroups) all = all.concat(currentContentGroups[type]);
+  customContentKeywords.forEach(function(c) { all.push(c.kw); });
+  return Array.from(new Set(all));
+}
+
+// ==================== BRAND DETECTION ====================
+function detectBrands(text) {
+  var found = [];
+  var t = text.toLowerCase();
+  for (var brand in BRAND_NAMES) {
+    var aliases = BRAND_NAMES[brand];
+    if (t.indexOf(brand.toLowerCase()) >= 0 || aliases.some(function(a) { return t.indexOf(a.toLowerCase()) >= 0; })) {
+      found.push(brand);
+    }
+  }
+  return Array.from(new Set(found));
+}
+
+// ==================== SENTIMENT COMPUTATION ====================
+function computeSentiment(text) {
+  var posScore = 0, negScore = 0;
+  var posFound = {}, negFound = {};
+  for (var cat in currentPosGroups) {
+    var m = currentPosGroups[cat].filter(function(kw) { return text.indexOf(kw) >= 0; });
+    if (m.length > 0) { posFound[cat] = m; posScore += m.length; }
+  }
+  for (var cat in currentNegGroups) {
+    var m = currentNegGroups[cat].filter(function(kw) { return text.indexOf(kw) >= 0; });
+    if (m.length > 0) { negFound[cat] = m; negScore += m.length; }
+  }
+  if (customPosKeywords.length > 0) {
+    var m = customPosKeywords.filter(function(kw) { return text.indexOf(kw) >= 0; });
+    if (m.length > 0) { posFound["自定义正面"] = m; posScore += m.length; }
+  }
+  if (customNegKeywords.length > 0) {
+    var m = customNegKeywords.filter(function(kw) { return text.indexOf(kw) >= 0; });
+    if (m.length > 0) { negFound["自定义负面"] = m; negScore += m.length; }
+  }
+
+  // ===== Context-aware adjustments =====
+  // "模糊" + "清晰/解决/改善/升级/更换/新" = context is likely positive (problem -> solution)
+  var t = text.toLowerCase();
+  if (negFound["质量问题"] && negFound["质量问题"].indexOf("模糊") >= 0) {
+    var positiveContext = ["清晰", "解决", "改善", "升级", "更换", "新眼镜", "新镜片", "配新", "一步到位", "换新"];
+    var hasPosContext = positiveContext.some(function(w) { return t.indexOf(w) >= 0; });
+    if (hasPosContext) {
+      // Move "模糊" from negative to neutral (it describes old problem, not product complaint)
+      negScore -= 1;
+      negFound["质量问题"] = negFound["质量问题"].filter(function(k) { return k !== "模糊"; });
+      if (negFound["质量问题"].length === 0) delete negFound["质量问题"];
+    }
+  }
+  // "坑" in price context + "划算/性价比/不贵/折扣" = actually positive (advertising hook)
+  if (negFound["价格问题"] && negFound["价格问题"].indexOf("坑") >= 0) {
+    var adHooks = ["明码标价", "不用担心踩坑", "正品可溯源", "性价比", "折扣", "划算"];
+    var isAdHook = adHooks.some(function(w) { return t.indexOf(w) >= 0; });
+    if (isAdHook) {
+      negScore -= 1;
+      negFound["价格问题"] = negFound["价格问题"].filter(function(k) { return k !== "坑"; });
+      if (negFound["价格问题"].length === 0) delete negFound["价格问题"];
+    }
+  }
+  // "踩坑" in hook "不用担心踩坑" = neutral, not negative
+  if (negFound["验配失败"] && negFound["验配失败"].indexOf("踩坑") >= 0) {
+    if (t.indexOf("不用担心踩坑") >= 0 || t.indexOf("不踩坑") >= 0 || t.indexOf("避免踩坑") >= 0) {
+      negScore -= 1;
+      negFound["验配失败"] = negFound["验配失败"].filter(function(k) { return k !== "踩坑" && k !== "避坑"; });
+      if (negFound["验配失败"].length === 0) delete negFound["验配失败"];
+    }
+  }
+  // "难受" in "眼睛干涩模糊真的太难受" + "蔡司/清晰/还原" = marketing, not negative review
+  if (negFound["佩戴不适"] && negFound["佩戴不适"].indexOf("难受") >= 0) {
+    var solutionWords = ["蔡司", "清晰", "还原", "视界", "升级", "团购"];
+    var isMarketing = solutionWords.some(function(w) { return t.indexOf(w) >= 0; });
+    if (isMarketing) {
+      negScore -= 1;
+      negFound["佩戴不适"] = negFound["佩戴不适"].filter(function(k) { return k !== "难受"; });
+      if (negFound["佩戴不适"].length === 0) delete negFound["佩戴不适"];
+    }
+  }
+
+  var sentiment = posScore > negScore ? "positive" : negScore > posScore ? "negative" : "neutral";
+  return { sentiment: sentiment, posFound: posFound, negFound: negFound };
+}
+
+// ==================== DATA REBUILD ====================
+function rebuildAllData() {
+  ITEMS = RAW_ITEMS.map(function(item) {
+    var text = item.title + " " + (item.desc || "");
+    var result = computeSentiment(text);
+    var brands = detectBrands(text);
+    return {
+      id: item.id,
+      platform: item.platform,
+      title: item.title,
+      desc: item.desc,
+      likes: item.likes,
+      comments: item.comments,
+      url: item.url,
+      published_at: item.published_at,
+      sentiment: result.sentiment,
+      pos_keywords: result.posFound,
+      neg_keywords: result.negFound,
+      brands: brands
+    };
+  });
+
+  KEYWORD_INDEX = {};
+  ITEMS.forEach(function(item) {
+    for (var cat in (item.pos_keywords || {})) {
+      item.pos_keywords[cat].forEach(function(kw) {
+        if (!KEYWORD_INDEX[kw]) KEYWORD_INDEX[kw] = [];
+        KEYWORD_INDEX[kw].push(item.id);
+      });
+    }
+    for (var cat in (item.neg_keywords || {})) {
+      item.neg_keywords[cat].forEach(function(kw) {
+        if (!KEYWORD_INDEX[kw]) KEYWORD_INDEX[kw] = [];
+        KEYWORD_INDEX[kw].push(item.id);
+      });
+    }
+    item.brands.forEach(function(b) {
+      if (!KEYWORD_INDEX[b]) KEYWORD_INDEX[b] = [];
+      KEYWORD_INDEX[b].push(item.id);
+    });
+  });
+
+  PLATFORM_DATA = {};
+  ["小红书", "抖音", "公众号"].forEach(function(p) {
+    PLATFORM_DATA[p] = { total: 0, positive: 0, negative: 0, neutral: 0,
+      pos_categories: {}, neg_categories: {}, pos_keywords: {}, neg_keywords: {} };
+  });
+
+  BRAND_DATA = {};
+  for (var b in BRAND_NAMES) {
+    BRAND_DATA[b] = { total: 0, positive: 0, negative: 0, neutral: 0,
+      pos_keywords: {}, neg_keywords: {}, by_platform: {} };
+  }
+
+  STOCK_DATA = { count: 0, positive: 0, negative: 0, neutral: 0, brands: {} };
+  INCR_DATA = { count: 0, positive: 0, negative: 0, neutral: 0, brands: {} };
+
+  ITEMS.forEach(function(item) {
+    var plat = item.platform;
+    var s = item.sentiment;
+    var brands = item.brands;
+    var pubDate = item.published_at || "";
+    var isIncr = pubDate >= "2026-08-03" && pubDate <= "2026-08-09";
+    var target = isIncr ? INCR_DATA : STOCK_DATA;
+
+    target.count++;
+    target[s]++;
+    brands.forEach(function(b) {
+      if (!target.brands[b]) target.brands[b] = { total: 0, positive: 0, negative: 0, neutral: 0 };
+      target.brands[b].total++;
+      target.brands[b][s]++;
+    });
+
+    if (PLATFORM_DATA[plat]) {
+      var pd = PLATFORM_DATA[plat];
+      pd.total++; pd[s]++;
+      for (var cat in (item.pos_keywords || {})) {
+        pd.pos_categories[cat] = (pd.pos_categories[cat] || 0) + 1;
+        item.pos_keywords[cat].forEach(function(kw) { pd.pos_keywords[kw] = (pd.pos_keywords[kw] || 0) + 1; });
+      }
+      for (var cat in (item.neg_keywords || {})) {
+        pd.neg_categories[cat] = (pd.neg_categories[cat] || 0) + 1;
+        item.neg_keywords[cat].forEach(function(kw) { pd.neg_keywords[kw] = (pd.neg_keywords[kw] || 0) + 1; });
+      }
+    }
+
+    brands.forEach(function(brand) {
+      if (!BRAND_DATA[brand]) return;
+      var bd = BRAND_DATA[brand];
+      bd.total++; bd[s]++;
+      for (var cat in (item.pos_keywords || {})) {
+        item.pos_keywords[cat].forEach(function(kw) { bd.pos_keywords[kw] = (bd.pos_keywords[kw] || 0) + 1; });
+      }
+      for (var cat in (item.neg_keywords || {})) {
+        item.neg_keywords[cat].forEach(function(kw) { bd.neg_keywords[kw] = (bd.neg_keywords[kw] || 0) + 1; });
+      }
+      if (!bd.by_platform[plat]) bd.by_platform[plat] = { total: 0, positive: 0, negative: 0, neutral: 0 };
+      bd.by_platform[plat].total++;
+      bd.by_platform[plat][s]++;
+    });
+  });
+
+  // Sort keywords
+  for (var p in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[p];
+    pd.pos_keywords = Object.entries(pd.pos_keywords).sort(function(a,b) { return b[1]-a[1]; });
+    pd.neg_keywords = Object.entries(pd.neg_keywords).sort(function(a,b) { return b[1]-a[1]; });
+    pd.pos_categories = Object.entries(pd.pos_categories).sort(function(a,b) { return b[1]-a[1]; });
+    pd.neg_categories = Object.entries(pd.neg_categories).sort(function(a,b) { return b[1]-a[1]; });
+  }
+  for (var b in BRAND_DATA) {
+    var bd = BRAND_DATA[b];
+    bd.pos_keywords = Object.entries(bd.pos_keywords).sort(function(a,b) { return b[1]-a[1]; });
+    bd.neg_keywords = Object.entries(bd.neg_keywords).sort(function(a,b) { return b[1]-a[1]; });
+  }
+}
+
+// ==================== INITIALIZATION ====================
+function initAll() {
+  loadKeywordSettings();
+  rebuildAllData();
+  renderAll();
+  updateKwSummary();
+}
+
+// ==================== RENDER ALL ====================
+function renderAll() {
+  renderOverview();
+  renderPlatformSentimentTable();
+  renderPlatformKeywords();
+  renderBrandGraph();
+  renderBrandPlatformTable();
+  renderStockIncr();
+  renderPlatformVisual();
+  renderBaiduIndex();
+  renderScenarioComparison();
+  renderBaidu30Day();
+  renderScenarioHeatmap();
+  setTimeout(function() { i18nDom(); }, 200);
+}
+
+// ==================== OVERVIEW CARDS ====================
+function renderOverview() {
+  var totalPos = ITEMS.filter(function(i) { return i.sentiment === "positive"; }).length;
+  var totalNeg = ITEMS.filter(function(i) { return i.sentiment === "negative"; }).length;
+  var totalNeu = ITEMS.filter(function(i) { return i.sentiment === "neutral"; }).length;
+  var xhs = ITEMS.filter(function(i) { return i.platform === "小红书"; }).length;
+  var dy = ITEMS.filter(function(i) { return i.platform === "抖音"; }).length;
+  var gzh = ITEMS.filter(function(i) { return i.platform === "公众号"; }).length;
+
+  document.getElementById("overview-row1").innerHTML =
+    '<div class="card neutral" onclick="openDrilldown(\'overview-total\', event, 1)">' +
+      '<div class="label">📊 ' + '总帖子数' + '</div>' +
+      '<div class="value">' + ITEMS.length + '</div>' +
+      '<div class="sub">正面' + totalPos + ' · 负面' + totalNeg + ' · 中性' + totalNeu + '</div>' +
+    '</div>' +
+    '<div class="card" onclick="openDrilldown(\'overview-platform\', event, 1)">' +
+      '<div class="label">' + '平台分布' + '</div>' +
+      '<div class="value" style="font-size:24px;">📕' + xhs + ' 📱' + dy + ' 📰' + gzh + '</div>' +
+      '<div class="sub">' + '点击查看详情' + '</div>' +
+    '</div>';
+  document.getElementById("overview-row2").innerHTML =
+    '<div class="card positive" onclick="openDrilldown(\'overview-positive\', event, 2)">' +
+      '<div class="label">😊 ' + '正面率' + '</div>' +
+      '<div class="value">' + (totalPos/ITEMS.length*100).toFixed(1) + '%</div>' +
+      '<div class="sub">' + totalPos + '条正面</div>' +
+    '</div>' +
+    '<div class="card negative" onclick="openDrilldown(\'overview-negative\', event, 2)">' +
+      '<div class="label">😟 ' + '负面率' + '</div>' +
+      '<div class="value">' + (totalNeg/ITEMS.length*100).toFixed(1) + '%</div>' +
+      '<div class="sub">' + totalNeg + '条负面</div>' +
+    '</div>';
+}
+
+function renderPlatformSentimentTable() {
+  var html = "<h3>各平台正负中性分布</h3><table><tr><th>平台</th><th>总数</th><th>正面</th><th>负面</th><th>中性</th><th>分布</th></tr>";
+  for (var plat in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[plat];
+    if (pd.total === 0) continue;
+    var pp = (pd.positive/pd.total*100).toFixed(1);
+    var np = (pd.negative/pd.total*100).toFixed(1);
+    var nep = (pd.neutral/pd.total*100).toFixed(1);
+    html += "<tr><td><strong>" + plat + "</strong></td><td>" + pd.total + "</td>";
+    html += "<td><span class=\"badge pos\">" + pd.positive + " (" + pp + "%)</span></td>";
+    html += "<td><span class=\"badge neg\">" + pd.negative + " (" + np + "%)</span></td>";
+    html += "<td><span class=\"badge neu\">" + pd.neutral + " (" + nep + "%)</span></td>";
+    html += "<td><div class=\"bar-container\"><div class=\"bar-track\">";
+    html += "<div class=\"bar-fill pos\" style=\"width:" + pp + "%\"></div>";
+    html += "<div class=\"bar-fill neg\" style=\"width:" + np + "%\"></div>";
+    html += "</div></div></td></tr>";
+  }
+  html += "</table>";
+  document.getElementById("platform-sentiment-table").innerHTML = html;
+}
+
+// ==================== PLATFORM KEYWORDS ====================
+function renderPlatformKeywords() {
+  var html = "";
+  for (var plat in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[plat];
+    if (pd.total === 0) continue;
+    html += "<div class=\"chart-container\"><h3>" + plat + " — 正面关键词</h3>";
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px\">";
+    pd.pos_keywords.slice(0, 10).forEach(function(pair) {
+      html += "<span class=\"kw-tag pos\" style=\"cursor:pointer\" onclick=\"quickSearch('" + escapeJs(pair[0]) + "')\" title=\"点击搜索该关键词\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;\">类别: ";
+    html += pd.pos_categories.map(function(pair) { return pair[0] + "(" + pair[1] + ")"; }).join(", ");
+    html += "</div></div>";
+
+    html += "<div class=\"chart-container\"><h3>" + plat + " — 负面关键词</h3>";
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px\">";
+    pd.neg_keywords.slice(0, 10).forEach(function(pair) {
+      html += "<span class=\"kw-tag neg\" style=\"cursor:pointer\" onclick=\"quickSearch('" + escapeJs(pair[0]) + "')\" title=\"点击搜索该关键词\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;\">类别: ";
+    html += pd.neg_categories.map(function(pair) { return pair[0] + "(" + pair[1] + ")"; }).join(", ");
+    html += "</div></div>";
+  }
+  document.getElementById("platform-kw-section").innerHTML = html;
+}
+
+// ==================== BRAND GRAPH ====================
+function renderBrandGraph() {
+  var html = "";
+  var sorted = Object.entries(BRAND_DATA).filter(function(pair) { return pair[1].total > 0; }).sort(function(a,b) { return b[1].total - a[1].total; });
+  sorted.forEach(function(pair) {
+    var brand = pair[0], bd = pair[1];
+    var pp = bd.total > 0 ? (bd.positive/bd.total*100).toFixed(0) : 0;
+    var np = bd.total > 0 ? (bd.negative/bd.total*100).toFixed(0) : 0;
+    html += "<div class=\"brand-node\" onclick=\"showBrandCommentDetail('" + escapeJs(brand) + "')\" style=\"cursor:pointer\">";
+    html += "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:8px\">";
+    html += "<span style=\"font-size:18px;font-weight:700\">" + escapeHtml(brand) + "</span>";
+    html += "<span style=\"font-size:13px;color:#8a8f9a\">共 " + bd.total + " 条提及</span>";
+    html += "</div>";
+    html += "<div style=\"display:flex;gap:16px;margin-bottom:10px\">";
+    html += "<span>😊 <span style=\"color:#4ade80\">" + bd.positive + "</span> (" + pp + "%)</span>";
+    html += "<span>😟 <span style=\"color:#f87171\">" + bd.negative + "</span> (" + np + "%)</span>";
+    html += "</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;margin-bottom:6px\">正面关联词:</div>";
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
+    bd.pos_keywords.slice(0, 8).forEach(function(pair) {
+      html += "<span class=\"kw-tag pos\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;margin:10px 0 6px\">负面关联词:</div>";
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
+    bd.neg_keywords.slice(0, 6).forEach(function(pair) {
+      html += "<span class=\"kw-tag neg\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div></div>";
+  });
+  document.getElementById("brand-graph").innerHTML = html || "<p style=\"color:#8a8f9a;\">暂无品牌数据</p>";
+}
+
+function renderBrandPlatformTable() {
+  var html = "<table><tr><th>品牌</th><th>总提及</th><th>😊 正面</th><th>😟 负面</th><th>平台分布</th></tr>";
+  var sorted = Object.entries(BRAND_DATA).filter(function(pair) { return pair[1].total > 0; }).sort(function(a,b) { return b[1].total - a[1].total; });
+  sorted.forEach(function(pair) {
+    var brand = pair[0], bd = pair[1];
+    var platInfo = Object.entries(bd.by_platform).filter(function(p) { return p[1].total > 0; })
+      .map(function(p) { return p[0] + " 😊" + p[1].positive + "/😟" + p[1].negative; }).join(" · ");
+    html += "<tr class=\"clickable\" onclick=\"showBrandCommentDetail('" + escapeJs(brand) + "')\">";
+    html += "<td><strong>" + escapeHtml(brand) + "</strong></td><td>" + bd.total + "</td>";
+    html += "<td><span class=\"badge pos\">" + bd.positive + "</span></td>";
+    html += "<td><span class=\"badge neg\">" + bd.negative + "</span></td>";
+    html += "<td style=\"font-size:12px;color:#8a8f9a\">" + (platInfo || "-") + "</td></tr>";
+  });
+  html += "</table>";
+  document.getElementById("brand-platform-table").innerHTML = html;
+}
+
+// ==================== STOCK vs INCR ====================
+function renderStockIncr() {
+  var html = "";
+  html += "<div class=\"compact-item\"><div class=\"chart-container\" style=\"height:100%\">";
+  html += "<h3>📦 存量数据 (8/3前) — " + STOCK_DATA.count + "条</h3>";
+  html += "<div style=\"display:flex;gap:12px;margin-bottom:10px\">";
+  html += "<span class=\"badge pos\">😊 " + STOCK_DATA.positive + "条</span>";
+  html += "<span class=\"badge neg\">😟 " + STOCK_DATA.negative + "条</span>";
+  html += "<span class=\"badge neu\">➖ " + STOCK_DATA.neutral + "条</span>";
+  html += "</div>";
+  var sp = STOCK_DATA.count > 0 ? STOCK_DATA.positive/STOCK_DATA.count*100 : 0;
+  var sn = STOCK_DATA.count > 0 ? STOCK_DATA.negative/STOCK_DATA.count*100 : 0;
+  html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + sp + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + sn + "%\"></div></div>";
+  html += "<div style=\"font-size:12px;color:#8a8f9a\">品牌分布:</div>";
+  Object.entries(STOCK_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
+    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
+  });
+  html += "</div></div>";
+
+  html += "<div class=\"compact-item\"><div class=\"chart-container\" style=\"height:100%\">";
+  html += "<h3>🆕 本周增量 (8/3-8/9) — " + INCR_DATA.count + "条</h3>";
+  html += "<div style=\"display:flex;gap:12px;margin-bottom:10px\">";
+  html += "<span class=\"badge pos\">😊 " + INCR_DATA.positive + "条</span>";
+  html += "<span class=\"badge neg\">😟 " + INCR_DATA.negative + "条</span>";
+  html += "<span class=\"badge neu\">➖ " + INCR_DATA.neutral + "条</span>";
+  html += "</div>";
+  var ip = INCR_DATA.count > 0 ? INCR_DATA.positive/INCR_DATA.count*100 : 0;
+  var ine = INCR_DATA.count > 0 ? INCR_DATA.negative/INCR_DATA.count*100 : 0;
+  html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + ip + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + ine + "%\"></div></div>";
+  html += "<div style=\"font-size:12px;color:#8a8f9a\">品牌分布:</div>";
+  Object.entries(INCR_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
+    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
+  });
+  html += "</div></div>";
+  document.getElementById("stock-incr-section").innerHTML = html;
+}
+
+// ==================== PLATFORM VISUAL ====================
+function renderPlatformVisual() {
+  var html = "";
+  for (var plat in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[plat];
+    if (pd.total === 0) continue;
+    var max = pd.total;
+    html += "<div style=\"text-align:center\"><strong>" + plat + "</strong>";
+    html += "<svg width=\"280\" height=\"80\" viewBox=\"0 0 280 80\">";
+    html += "<rect x=\"0\" y=\"5\" width=\"" + (pd.positive/max*280) + "\" height=\"30\" rx=\"4\" fill=\"#4ade80\" opacity=\"0.8\"/>";
+    html += "<text x=\"5\" y=\"24\" fill=\"white\" font-size=\"12\">😊 " + pd.positive + "条</text>";
+    html += "<rect x=\"0\" y=\"40\" width=\"" + (pd.negative/max*280) + "\" height=\"30\" rx=\"4\" fill=\"#f87171\" opacity=\"0.8\"/>";
+    html += "<text x=\"5\" y=\"59\" fill=\"white\" font-size=\"12\">😟 " + pd.negative + "条</text>";
+    html += "</svg></div>";
+  }
+  document.getElementById("platform-visual-section").innerHTML = html;
+}
+
+// ==================== QUICK SEARCH (redirect to comment_search.html) ====================
+function quickSearch(kw) {
+  openCommentSearch(kw);
+}
+
+// ==================== REFRESH ====================
+
+
+// ==================== DRILLDOWN ====================
+var currentDrilldownType = null;
+function openDrilldown(type, ev, rowNum) {
+  // Close all expand slots
+  document.querySelectorAll(".expand-slot").forEach(function(s) { s.classList.remove("active"); s.innerHTML = ""; });
+  document.querySelectorAll(".card").forEach(function(c) { c.classList.remove("expanded"); });
+
+  // Toggle: if same type clicked, just close
+  if (currentDrilldownType === type) {
+    currentDrilldownType = null;
+    return;
+  }
+  currentDrilldownType = type;
+
+  // Highlight the clicked card
+  if (ev && ev.currentTarget) {
+    ev.currentTarget.classList.add("expanded");
+  } else if (window.event && window.event.currentTarget) {
+    window.event.currentTarget.classList.add("expanded");
+  }
+
+  var titleMap = {
+    "overview-total": t("drilldown_all_items"),
+    "overview-platform": t("drilldown_platform_data"),
+    "overview-positive": t("drilldown_pos_summary"),
+    "overview-negative": t("drilldown_neg_summary")
+  };
+  var inner = "";
+  switch(type) {
+    case "overview-total":
+      inner = buildAllItemsList();
+      break;
+    case "overview-platform":
+      inner = buildPlatformTable();
+      break;
+    case "overview-positive":
+      inner = buildTopKeywords("positive");
+      break;
+    case "overview-negative":
+      inner = buildTopKeywords("negative");
+      break;
+    default:
+      inner = "<p>暂无下钻数据</p>";
+  }
+
+  var panel = document.createElement("div");
+  panel.className = "drilldown-panel";
+  panel.innerHTML = "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;\"><h3 style=\"margin:0;\">" + (titleMap[type] || t("drilldown_detail")) + "</h3><button class=\"dd-close\" onclick=\"closeInlineDrilldown()\">✕ 收起</button></div>" + inner;
+
+  // Insert into the corresponding expand-slot (outside the grid)
+  var slotId = rowNum === 1 ? "row1-expand" : "row2-expand";
+  var slot = document.getElementById(slotId);
+  if (slot) {
+    slot.appendChild(panel);
+    slot.classList.add("active");
+  }
+}
+
+function closeInlineDrilldown() {
+  document.querySelectorAll(".expand-slot").forEach(function(s) { s.classList.remove("active"); s.innerHTML = ""; });
+  currentDrilldownType = null;
+  document.querySelectorAll(".card").forEach(function(c) { c.classList.remove("expanded"); });
+}
+
+var currentBrandDetail = null;
+function showBrandCommentDetail(brand) {
+  var bd = BRAND_DATA[brand];
+  if (!bd) return;
+  // Remove any existing inline brand detail
+  var existing = document.getElementById("brand-detail-inline");
+  if (existing) existing.remove();
+  var existingRow = document.getElementById("brand-detail-inline-row");
+  if (existingRow) existingRow.remove();
+  // If clicking same brand, just close
+  if (currentBrandDetail === brand) {
+    currentBrandDetail = null;
+    return;
+  }
+  currentBrandDetail = brand;
+  var html = "<button class=\"dd-close\" onclick=\"closeBrandDetail()\">✕ 收起</button>";
+  html += "<h3 style=\"margin-bottom:8px;\">" + escapeHtml(brand) + " — 评论情感关键词下钻</h3>";
+  html += "<p style=\"color:#8a8f9a;font-size:13px;margin-bottom:12px;\">总提及 " + bd.total + " 条 | 😊" + bd.positive + " | 😟" + bd.negative + "</p>";
+  html += "<div class=\"tabs\">";
+  html += "<button class=\"tab-btn active\" onclick=\"showBrandTab(event, 'all')\">全部关键词</button>";
+  html += "<button class=\"tab-btn\" onclick=\"showBrandTab(event, 'by-platform')\">按平台分布</button>";
+  html += "<button class=\"tab-btn\" onclick=\"showBrandTab(event, 'association')\">品牌-关键词关联</button>";
+  html += "</div>";
+  html += "<div id=\"brand-tab-all\" class=\"tab-content active\">" + buildBrandKeywords(brand, bd) + "</div>";
+  html += "<div id=\"brand-tab-by-platform\" class=\"tab-content\">" + buildBrandPlatformBreakdown(brand, bd) + "</div>";
+  html += "<div id=\"brand-tab-association\" class=\"tab-content\">" + buildBrandAssociationGraph(brand) + "</div>";
+  var div = document.createElement("div");
+  div.id = "brand-detail-inline";
+  div.className = "brand-detail-inline";
+  div.innerHTML = html;
+  // Find the clicked element and insert after it
+  var target = null;
+  if (window.event && window.event.currentTarget) {
+    target = window.event.currentTarget;
+  }
+  if (target && target.classList.contains("brand-node")) {
+    // Insert after the brand node card in the grid
+    target.parentNode.insertBefore(div, target.nextSibling);
+  } else if (target && target.tagName === "TR") {
+    // For table rows, insert an expand row right after the clicked row
+    var expandRow = document.createElement("tr");
+    expandRow.className = "expand-row";
+    expandRow.id = "brand-detail-inline-row";
+    var expandCell = document.createElement("td");
+    expandCell.colSpan = 5;
+    expandCell.className = "dd-content";
+    expandCell.appendChild(div);
+    expandRow.appendChild(expandCell);
+    target.parentNode.insertBefore(expandRow, target.nextSibling);
+    // Hide the floating div styles for inline table
+    div.style.marginTop = "0";
+  } else {
+    // Fallback: append to brand-platform-table container
+    var container = document.getElementById("brand-platform-table");
+    container.appendChild(div);
+  }
+}
+
+function closeBrandDetail() {
+  var existing = document.getElementById("brand-detail-inline");
+  if (existing) existing.remove();
+  var expandRow = document.getElementById("brand-detail-inline-row");
+  if (expandRow) expandRow.remove();
+  currentBrandDetail = null;
+}
+
+function showBrandTab(event, tab) {
+  event.stopPropagation();
+  document.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
+  event.target.classList.add("active");
+  document.querySelectorAll(".tab-content").forEach(function(c) { c.classList.remove("active"); });
+  document.getElementById("brand-tab-" + tab).classList.add("active");
+}
+
+function buildBrandKeywords(brand, bd) {
+  var html = "<div style=\"display:flex;gap:20px;flex-wrap:wrap\">";
+  html += "<div style=\"flex:1;min-width:280px\"><h4 style=\"color:#4ade80;margin-bottom:8px\">😊 正面关键词</h4>";
+  if (bd.pos_keywords.length > 0) {
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
+    bd.pos_keywords.forEach(function(pair) {
+      html += "<span class=\"kw-tag pos\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();closeBrandDetail();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div>";
+  } else html += "<p style=\"color:#8a8f9a;font-size:13px;\">无正面关键词数据</p>";
+  html += "</div>";
+  html += "<div style=\"flex:1;min-width:280px\"><h4 style=\"color:#f87171;margin-bottom:8px\">😟 负面关键词</h4>";
+  if (bd.neg_keywords.length > 0) {
+    html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
+    bd.neg_keywords.forEach(function(pair) {
+      html += "<span class=\"kw-tag neg\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();closeBrandDetail();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</div>";
+  } else html += "<p style=\"color:#8a8f9a;font-size:13px;\">无负面关键词数据</p>";
+  html += "</div></div>";
+  return html;
+}
+
+function buildBrandPlatformBreakdown(brand, bd) {
+  var html = "<table><tr><th>平台</th><th>总数</th><th>😊 正面</th><th>😟 负面</th><th>😐 中性</th></tr>";
+  ["小红书", "抖音", "公众号"].forEach(function(plat) {
+    var bp = bd.by_platform[plat];
+    if (bp && bp.total > 0) {
+      html += "<tr><td><strong>" + plat + "</strong></td><td>" + bp.total + "</td>";
+      html += "<td><span class=\"badge pos\">" + (bp.positive||0) + "</span></td>";
+      html += "<td><span class=\"badge neg\">" + (bp.negative||0) + "</span></td>";
+      html += "<td><span class=\"badge neu\">" + (bp.neutral||0) + "</span></td></tr>";
+    }
+  });
+  html += "</table>";
+  return html;
+}
+
+function buildBrandAssociationGraph(brand) {
+  var bd = BRAND_DATA[brand];
+  if (!bd) return "<p style=\"color:#8a8f9a;\">该品牌暂无数据</p>";
+  var allKws = [];
+  bd.pos_keywords.forEach(function(pair) { allKws.push({ keyword: pair[0], count: pair[1], sentiment: "positive" }); });
+  bd.neg_keywords.forEach(function(pair) { allKws.push({ keyword: pair[0], count: pair[1], sentiment: "negative" }); });
+  if (allKws.length === 0) return "<p style=\"color:#8a8f9a;\">该品牌暂无足够关键词数据</p>";
+
+  var svg = "<svg width=\"680\" height=\"300\" viewBox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\">";
+  svg += "<rect width=\"680\" height=\"300\" fill=\"#1a1d2a\" rx=\"8\"/>";
+  var cx = 340, cy = 150;
+  svg += "<circle cx=\"" + cx + "\" cy=\"" + cy + "\" r=\"35\" fill=\"#5a6bff\" opacity=\"0.9\"/>";
+  svg += "<text x=\"" + cx + "\" y=\"" + (cy+5) + "\" text-anchor=\"middle\" fill=\"white\" font-size=\"14\" font-weight=\"bold\">" + escapeHtml(brand) + "</text>";
+  var maxCnt = Math.max.apply(null, allKws.map(function(k) { return k.count; }));
+  allKws.forEach(function(kw, i) {
+    var angle = (i / allKws.length) * 2 * Math.PI - Math.PI/2;
+    var r = 85 + (i % 3) * 20;
+    var kx = cx + Math.cos(angle) * r, ky = cy + Math.sin(angle) * r;
+    var color = kw.sentiment === "positive" ? "#4ade80" : "#f87171";
+    var opacity = 0.3 + (kw.count / maxCnt) * 0.6;
+    svg += "<line x1=\"" + cx + "\" y1=\"" + cy + "\" x2=\"" + kx + "\" y2=\"" + ky + "\" stroke=\"" + color + "\" stroke-opacity=\"" + opacity + "\" stroke-width=\"" + (1+kw.count/5) + "\"/>";
+    svg += "<circle cx=\"" + kx + "\" cy=\"" + ky + "\" r=\"" + (12+kw.count) + "\" fill=\"" + color + "\" opacity=\"" + opacity + "\"/>";
+    svg += "<text x=\"" + kx + "\" y=\"" + (ky+4) + "\" text-anchor=\"middle\" fill=\"white\" font-size=\"" + (9+kw.count/2) + "\">" + escapeHtml(kw.keyword) + "</text>";
+  });
+  svg += "</svg>";
+  return "<div style=\"text-align:center\">" + svg + "<p style=\"color:#8a8f9a;font-size:12px;margin-top:8px;\">🟢 正面 | 🔴 负面 | 连线粗细=关联强度</p></div>";
+}
+
+function buildAllItemsList() {
+  var html = "<table><tr><th>平台</th><th>标题</th><th>内容摘要</th><th>情感</th><th>匹配词</th><th>链接</th></tr>";
+  ITEMS.forEach(function(item) {
+    var sLabel = item.sentiment === "positive" ? "😊" : item.sentiment === "negative" ? "😟" : "😐";
+    var sClass = item.sentiment === "positive" ? "pos" : item.sentiment === "negative" ? "neg" : "neu";
+    var desc = item.desc || "";
+    var descShort = desc.length > 80 ? desc.substring(0, 80) + "..." : desc;
+    // Build matched keyword tags
+    var kwTags = "";
+    var allPos = [], allNeg = [];
+    for (var cat in (item.pos_keywords || {})) allPos = allPos.concat(item.pos_keywords[cat]);
+    for (var cat in (item.neg_keywords || {})) allNeg = allNeg.concat(item.neg_keywords[cat]);
+    if (allPos.length > 0) {
+      kwTags += '<span style="color:#4ade80;font-size:11px;">+' + allPos.slice(0, 3).join(",") + '</span>';
+    }
+    if (allNeg.length > 0) {
+      if (kwTags) kwTags += " ";
+      kwTags += '<span style="color:#f87171;font-size:11px;">-' + allNeg.slice(0, 3).join(",") + '</span>';
+    }
+    if (!kwTags) kwTags = '<span style="color:#8a8f9a;font-size:11px;">无关键词</span>';
+    html += "<tr><td>" + item.platform + "</td>";
+    html += "<td style=\"max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;\" title=\"" + escapeHtml(item.title) + "\">" + escapeHtml(item.title) + "</td>";
+    html += "<td style=\"max-width:250px;font-size:12px;color:#8a8f9a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;\" title=\"" + escapeHtml(desc) + "\">" + escapeHtml(descShort) + "</td>";
+    html += "<td><span class=\"badge " + sClass + "\">" + sLabel + "</span></td>";
+    html += "<td>" + kwTags + "</td>";
+    html += "<td>" + (item.url ? "<a href=\"" + item.url + "\" target=\"_blank\" style=\"color:#5a6bff\">🔗</a>" : "-") + "</td>";
+    html += "</tr>";
+  });
+  html += "</table>";
+  return html;
+}
+
+function buildPlatformTable() {
+  var html = "<table><tr><th>平台</th><th>总数</th><th>😊 正面</th><th>😟 负面</th><th>😐 中性</th></tr>";
+  for (var plat in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[plat];
+    if (pd.total === 0) continue;
+    html += "<tr><td><strong>" + plat + "</strong></td><td>" + pd.total + "</td>";
+    html += "<td><span class=\"badge pos\">" + pd.positive + "</span></td>";
+    html += "<td><span class=\"badge neg\">" + pd.negative + "</span></td>";
+    html += "<td><span class=\"badge neu\">" + pd.neutral + "</span></td></tr>";
+  }
+  html += "</table>";
+  return html;
+}
+
+function buildTopKeywords(sentiment) {
+  var html = "<table><tr><th>平台</th><th>Top 15 关键词</th><th>类别分布</th></tr>";
+  for (var plat in PLATFORM_DATA) {
+    var pd = PLATFORM_DATA[plat];
+    if (pd.total === 0) continue;
+    var data = sentiment === "positive" ? pd.pos_keywords : pd.neg_keywords;
+    var cats = sentiment === "positive" ? pd.pos_categories : pd.neg_categories;
+    var color = sentiment === "positive" ? "pos" : "neg";
+    html += "<tr><td><strong>" + plat + "</strong></td><td>";
+    data.slice(0, 15).forEach(function(pair) {
+      html += "<span class=\"kw-tag " + color + "\" style=\"margin:2px\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
+    });
+    html += "</td><td style=\"font-size:12px\">";
+    cats.forEach(function(pair) { html += "<div>" + pair[0] + ": " + pair[1] + "</div>"; });
+    html += "</td></tr>";
+  }
+  html += "</table>";
+  return html;
+}
+
+// ==================== BAIDU INDEX ====================
+var baiduChartInstance = null;
+function renderBaiduIndex() {
+  // 1. Bar chart
+  var canvas = document.getElementById("baiduIndexChart");
+  if (canvas && !baiduChartInstance) {
+    var ctx = canvas.getContext("2d");
+    baiduChartInstance = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["蔡司", "依视路", "豪雅", "尼康", "老花镜", "配眼镜", "渐进镜片", "防蓝光眼镜"],
+        datasets: [{
+          label: "百度估算月搜索量",
+          data: [29250, 8500, 1200, 3200, 18000, 45000, 2500, 8000],
+          backgroundColor: ["#58a6ff", "#f78166", "#7ee787", "#d2a8ff", "#d2a8ff", "#8b949e", "#d2a8ff", "#d2a8ff"],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: {
+            ticks: { color: "#8a8f9a", callback: function(v) { return v >= 1000 ? (v/1000) + "k" : v; } },
+            grid: { color: "#2a2d3a" }
+          },
+          x: { ticks: { color: "#e8eaed", font: { size: 12 } }, grid: { display: false } }
+        }
+      }
+    });
+  }
+
+  // 2. Detail table
+  var tableHtml = "<table><tr><th>品牌/品类</th><th>核心关键词</th><th>估算月搜索量</th><th>搜索意图</th><th>排名趋势</th></tr>";
+  var rows = [
+    { brand: "蔡司 ZEISS", brandColor: "#58a6ff", tagClass: "baidu-tag-blue", items: [
+      { kw: "蔡司", vol: "29,250", intent: "品牌泛搜索", trend: '<span class="baidu-badge baidu-badge-up">↑ 前3</span>' },
+      { kw: "蔡司泽锐", vol: "540", intent: "产品选购", trend: '<span class="baidu-badge baidu-badge-up">↑ 前2</span>' },
+      { kw: "蔡司智锐", vol: "405", intent: "渐进/高端选购", trend: '<span class="baidu-badge baidu-badge-up">↑ 前3</span>' },
+      { kw: "蔡司熠光", vol: "320", intent: "新品渐进选购", trend: '<span class="baidu-badge baidu-badge-new">新品关注中</span>' },
+      { kw: "蔡司数码镜", vol: "280", intent: "数码护目选购", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "蔡司驾驶渐进镜", vol: "190", intent: "驾驶场景渐进", trend: "稳定" },
+      { kw: "蔡司办公镜", vol: "230", intent: "办公场景选购", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+    ]},
+    { brand: "依视路 Essilor", brandColor: "#f78166", tagClass: "baidu-tag-orange", items: [
+      { kw: "依视路", vol: "8,500", intent: "品牌泛搜索", trend: "稳定" },
+      { kw: "依视路星趣控", vol: "1,200", intent: "青少年防控专用", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "依视路万里路", vol: "680", intent: "渐进镜片选购", trend: "稳定" },
+      { kw: "依视路爱赞数码", vol: "350", intent: "数码护目选购", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+    ]},
+    { brand: "豪雅 HOYA", brandColor: "#7ee787", tagClass: "baidu-tag-green", items: [
+      { kw: "豪雅镜片", vol: "1,200", intent: "品牌/产品搜索", trend: "稳定" },
+      { kw: "豪雅手机镜", vol: "180", intent: "手机护目选购", trend: '<span class="baidu-badge baidu-badge-new">新品类</span>' }
+    ]},
+    { brand: "尼康 Nikon", brandColor: "#d2a8ff", tagClass: "baidu-tag-purple", items: [
+      { kw: "尼康镜片", vol: "3,200", intent: "品牌泛搜索", trend: "稳定" },
+      { kw: "尼康数码镜", vol: "420", intent: "数码护目选购", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "尼康办公镜", vol: "260", intent: "办公场景选购", trend: "稳定" },
+      { kw: "尼康渐进镜", vol: "310", intent: "渐进镜片选购", trend: "稳定" }
+    ]},
+    { brand: "通用品类", brandColor: "#d2a8ff", tagClass: "baidu-tag-purple", items: [
+      { kw: "配眼镜", vol: "45,000", intent: "需求入口", trend: "-" },
+      { kw: "老花镜", vol: "18,000", intent: "品类需求", trend: '<span class="baidu-badge baidu-badge-hot">↑ 中老年用户</span>' },
+      { kw: "渐进镜片", vol: "2,500", intent: "专业品类搜索", trend: "稳定" }
+    ]}
+  ];
+  rows.forEach(function(r) {
+    r.items.forEach(function(item, idx) {
+      tableHtml += "<tr>";
+      if (idx === 0) tableHtml += '<td rowspan="' + r.items.length + '" style="font-weight:bold;color:' + r.brandColor + '">' + r.brand + "</td>";
+      tableHtml += '<td><span class="baidu-tag ' + r.tagClass + '">' + item.kw + "</span></td>";
+      tableHtml += '<td style="font-weight:bold;' + (idx === 0 ? "color:" + r.brandColor : "") + '">' + item.vol + "</td>";
+      tableHtml += "<td>" + item.intent + "</td>";
+      tableHtml += "<td>" + item.trend + "</td></tr>";
+    });
+  });
+  tableHtml += "</table>";
+  document.getElementById("baidu-detail-table").innerHTML = tableHtml;
+
+  // 3. Strategy insights table
+  var insightHtml = "<table><tr><th>维度</th><th style='color:#58a6ff'>蔡司</th><th style='color:#f78166'>依视路</th><th style='color:#7ee787'>豪雅</th><th style='color:#d2a8ff'>尼康</th></tr>";
+  var insights = [
+    { dim: "品牌心智词", zeiss: "清晰度 + 德国精工 + 自由环面", essilor: "耐磨 + 性价比 + 渐进多焦", hoya: "日本光学 + 亚洲适配 + 定制", nikon: "数码护目 + 渐进镜片 + 办公场景" },
+    { dim: "最高频社媒词", zeiss: "配镜(44)、眼镜店(31)、验光(21)", essilor: "折(9)、价格(9)、配镜(6)", hoya: "渐进(2)、近视(1)、开车(1)", nikon: "数码镜、办公镜、渐进镜" },
+    { dim: "百度月搜索", zeiss: "~29,250 (品牌词)", essilor: "~8,500 (品牌词)", hoya: "~1,200 (镜片词)", nikon: "~3,200 (品牌词)" },
+    { dim: "价签关联", zeiss: "2-2.5折；潘家园", essilor: "3折；价格贵；预算", hoya: "贵（极少量提及）", nikon: "中高端定位（声量待提升）" },
+    { dim: "人群标签", zeiss: "近视、青少年、上班族", essilor: "近视、青少年、中年", hoya: "40岁+ 初老花", nikon: "数码用户、办公人群、中老年" },
+    { dim: "竞品对标", zeiss: "凯米(6)、暴龙(6)、依视路(5)", essilor: "凯米(6)、暴龙(5)、蔡司(2)", hoya: "尼康(1)、罗敦司得(1)", nikon: "豪雅(1)、蔡司(1)、罗敦司得(1)" },
+    { dim: "声量策略建议", zeiss: "维持内容种草优势，强化验光配镜一体化", essilor: "加强青少年防控内容，减少纯价格对比帖", hoya: "急需内容种草投入，主打渐进镜专家差异化", nikon: "强化数码护目场景，提升社媒内容种草" }
+  ];
+  insights.forEach(function(i) {
+    insightHtml += "<tr><td><b>" + i.dim + "</b></td><td>" + i.zeiss + "</td><td>" + i.essilor + "</td><td>" + i.hoya + "</td><td>" + i.nikon + "</td></tr>";
+  });
+  insightHtml += "</table>";
+  document.getElementById("baidu-insight-table").innerHTML = insightHtml;
+}
+
+
+// ==================== SCENARIO COMPARISON ====================
+function renderScenarioComparison() {
+  // Define scenarios with keywords
+  var scenarios = [
+    { name: "驾驶", icon: "🚗", keywords: ["驾驶", "开车", "驾车", "夜驾", "行车", "司机", "驾照", "路况"], color: "#58a6ff" },
+    { name: "办公", icon: "💻", keywords: ["办公", "电脑", "上班", "桌前", "屏幕", "工作", "打字", "写字楼"], color: "#f78166" },
+    { name: "户外运动", icon: "⛳", keywords: ["户外", "运动", "跑步", "骑行", "高尔夫", "钓鱼", "爬山", "徒步", "健身", "球"], color: "#7ee787" },
+    { name: "摄影", icon: "📷", keywords: ["摄影", "拍照", "相机", "单反", "取景", "快门", "镜头焦距"], color: "#d2a8ff" },
+    { name: "电子产品", icon: "📱", keywords: ["手机", "电子", "数码", "平板", "电脑", "屏幕", "显示器", "笔记本", "视频", "游戏"], color: "#fbbf24" }
+  ];
+
+  var platforms = ["小红书", "抖音", "公众号"];
+
+  // ===== Card 1: Platform content =====
+  var platformHtml = "";
+
+  // Scenario cards grid
+  platformHtml += '<div class="scenario-grid">';
+  scenarios.forEach(function(sc) {
+    var matched = ITEMS.filter(function(item) {
+      var text = (item.title || "") + " " + (item.desc || "");
+      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
+    });
+    var byPlatform = {};
+    platforms.forEach(function(p) {
+      byPlatform[p] = matched.filter(function(m) { return m.platform === p; }).length;
+    });
+    // Also check "未知" platform
+    var otherCount = matched.filter(function(m) { return platforms.indexOf(m.platform) < 0; }).length;
+
+    platformHtml += '<div class="scenario-item">';
+    platformHtml += '<div class="sc-icon">' + sc.icon + '</div>';
+    platformHtml += '<div class="sc-name">' + sc.name + '</div>';
+    platformHtml += '<div class="sc-count" style="color:' + sc.color + '">' + matched.length + '</div>';
+    platformHtml += '<div class="sc-detail">';
+    var parts = [];
+    platforms.forEach(function(p) {
+      if (byPlatform[p] > 0) parts.push(p.substring(0,1) + byPlatform[p]);
+    });
+    if (otherCount > 0) parts.push("其他" + otherCount);
+    platformHtml += parts.length > 0 ? parts.join(" · ") : "暂无";
+    platformHtml += '</div>';
+    platformHtml += '</div>';
+  });
+  platformHtml += '</div>';
+
+  // Platform breakdown bars
+  platformHtml += '<div style="margin-top:20px;">';
+  scenarios.forEach(function(sc) {
+    var matched = ITEMS.filter(function(item) {
+      var text = (item.title || "") + " " + (item.desc || "");
+      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
+    });
+    var total = matched.length;
+    var maxVal = Math.max(1, total);
+
+    platformHtml += '<div style="margin-bottom:12px;">';
+    platformHtml += '<div style="font-size:13px;font-weight:600;margin-bottom:6px;">' + sc.icon + ' ' + sc.name + ' <span style="color:#8a8f9a;font-size:12px;">(' + total + '条)</span></div>';
+
+    platforms.forEach(function(p) {
+      var cnt = matched.filter(function(m) { return m.platform === p; }).length;
+      var pct = total > 0 ? (cnt / total * 100) : 0;
+      var width = total > 0 ? (cnt / maxVal * 100) : 0;
+      platformHtml += '<div class="scenario-bar-row">';
+      platformHtml += '<span class="scenario-bar-label">' + p + '</span>';
+      platformHtml += '<div class="scenario-bar-track"><div class="scenario-bar-fill" style="width:' + width + '%;background:' + sc.color + ';"></div></div>';
+      platformHtml += '<span class="scenario-bar-val">' + cnt + '</span>';
+      platformHtml += '</div>';
+    });
+    platformHtml += '</div>';
+  });
+  platformHtml += '</div>';
+
+  // Brand association per scenario
+  platformHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
+  platformHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">各场景品牌关联</h4>';
+  platformHtml += '<table class="scenario-table"><tr><th>场景</th><th>关联品牌（提及次数）</th><th>典型内容</th></tr>';
+  scenarios.forEach(function(sc) {
+    var matched = ITEMS.filter(function(item) {
+      var text = (item.title || "") + " " + (item.desc || "");
+      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
+    });
+    var brandCounts = {};
+    matched.forEach(function(m) {
+      (m.brands || []).forEach(function(b) {
+        brandCounts[b] = (brandCounts[b] || 0) + 1;
+      });
+    });
+    var sortedBrands = Object.keys(brandCounts).sort(function(a, b) { return brandCounts[b] - brandCounts[a]; });
+    var brandStr = sortedBrands.length > 0
+      ? sortedBrands.map(function(b) { return b + "(" + brandCounts[b] + ")"; }).join("、")
+      : '<span style="color:#555;">无品牌提及</span>';
+
+    // Find a representative post
+    var sample = matched.length > 0 ? matched[0] : null;
+    var sampleStr = sample
+      ? '<span style="color:#8a8f9a;">' + escapeHtml(sample.title.substring(0, 30)) + (sample.title.length > 30 ? "..." : "") + '</span>'
+      : '<span style="color:#555;">-</span>';
+
+    platformHtml += '<tr><td style="font-weight:600;color:' + sc.color + ';">' + sc.icon + ' ' + sc.name + '</td>';
+    platformHtml += '<td>' + brandStr + '</td>';
+    platformHtml += '<td>' + sampleStr + '</td></tr>';
+  });
+  platformHtml += '</table>';
+  platformHtml += '</div>';
+
+  // Insight
+  platformHtml += '<div class="scenario-insight">';
+  platformHtml += '<strong>洞察：</strong>电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。';
+  platformHtml += '</div>';
+
+  document.getElementById("scenario-platform-card").innerHTML = platformHtml;
+
+  // ===== Card 2: Baidu Index =====
+  var baiduScenarios = [
+    { name: "驾驶", icon: "🚗", color: "#58a6ff", keywords: [
+      { kw: "驾驶眼镜", vol: 1200, intent: "驾驶专用眼镜", trend: "稳定" },
+      { kw: "开车眼镜", vol: 2400, intent: "开车场景需求", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "夜驾眼镜", vol: 580, intent: "夜间驾驶", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "蔡司驾驶渐进镜", vol: 190, intent: "品牌驾驶渐进", trend: "稳定" }
+    ]},
+    { name: "办公", icon: "💻", color: "#f78166", keywords: [
+      { kw: "办公眼镜", vol: 1800, intent: "办公场景", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "电脑眼镜", vol: 3200, intent: "电脑护目", trend: '<span class="baidu-badge baidu-badge-hot">↑ 热门</span>' },
+      { kw: "防蓝光办公镜", vol: 860, intent: "防蓝光办公", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "蔡司办公镜", vol: 230, intent: "品牌办公镜", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+    ]},
+    { name: "户外运动", icon: "⛳", color: "#7ee787", keywords: [
+      { kw: "运动眼镜", vol: 4500, intent: "运动防护", trend: '<span class="baidu-badge baidu-badge-hot">↑ 热门</span>' },
+      { kw: "户外眼镜", vol: 920, intent: "户外场景", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "变色镜片", vol: 3600, intent: "户外变色需求", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "偏光眼镜", vol: 2800, intent: "户外防眩光", trend: "稳定" }
+    ]},
+    { name: "摄影", icon: "📷", color: "#d2a8ff", keywords: [
+      { kw: "摄影眼镜", vol: 420, intent: "摄影取景", trend: "稳定" },
+      { kw: "相机取景器", vol: 680, intent: "相机附件", trend: "稳定" }
+    ]},
+    { name: "电子产品", icon: "📱", color: "#fbbf24", keywords: [
+      { kw: "手机眼镜", vol: 2100, intent: "手机护目", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "数码眼镜", vol: 1500, intent: "数码护目", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
+      { kw: "防蓝光眼镜", vol: 8000, intent: "电子屏幕防护", trend: '<span class="baidu-badge baidu-badge-hot">↑ 高需求</span>' },
+      { kw: "豪雅手机镜", vol: 180, intent: "品牌手机镜", trend: '<span class="baidu-badge baidu-badge-new">新品类</span>' },
+      { kw: "依视路爱赞数码", vol: 350, intent: "品牌数码镜", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+    ]}
+  ];
+
+  // Baidu scenario cards
+  var baiduHtml = '<div class="scenario-grid">';
+  baiduScenarios.forEach(function(sc) {
+    var totalVol = sc.keywords.reduce(function(sum, k) { return sum + k.vol; }, 0);
+    baiduHtml += '<div class="scenario-item">';
+    baiduHtml += '<div class="sc-icon">' + sc.icon + '</div>';
+    baiduHtml += '<div class="sc-name">' + sc.name + '</div>';
+    baiduHtml += '<div class="sc-count" style="color:' + sc.color + '">' + totalVol.toLocaleString() + '</div>';
+    baiduHtml += '<div class="sc-detail">月搜索总量</div>';
+    baiduHtml += '</div>';
+  });
+  baiduHtml += '</div>';
+
+  // Baidu detail table
+  baiduHtml += '<div style="margin-top:20px;">';
+  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>核心关键词</th><th>月搜索量</th><th>搜索意图</th><th>趋势</th></tr>';
+  baiduScenarios.forEach(function(sc) {
+    sc.keywords.forEach(function(item, idx) {
+      baiduHtml += '<tr>';
+      if (idx === 0) {
+        baiduHtml += '<td rowspan="' + sc.keywords.length + '" style="font-weight:bold;color:' + sc.color + ';">' + sc.icon + ' ' + sc.name + '</td>';
+      }
+      baiduHtml += '<td><span class="baidu-tag" style="background:' + sc.color + '22;color:' + sc.color + ';">' + item.kw + '</span></td>';
+      baiduHtml += '<td style="font-weight:600;">' + item.vol.toLocaleString() + '</td>';
+      baiduHtml += '<td>' + item.intent + '</td>';
+      baiduHtml += '<td>' + item.trend + '</td>';
+      baiduHtml += '</tr>';
+    });
+  });
+  baiduHtml += '</table>';
+  baiduHtml += '</div>';
+
+  // Baidu insight
+  baiduHtml += '<div class="scenario-insight" style="border-left-color:#f78166;">';
+  baiduHtml += '<strong>洞察：</strong>百度搜索维度上，电子产品（防蓝光眼镜8K+手机/数码眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。';
+  baiduHtml += '</div>';
+
+  // Cross-comparison summary
+  baiduHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
+  baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 双维度交叉对比</h4>';
+  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>社媒内容量</th><th>百度搜索量</th><th>供需匹配度</th><th>策略建议</th></tr>';
+
+  // Compute social media counts
+  var crossData = [];
+  scenarios.forEach(function(sc) {
+    var socialCount = ITEMS.filter(function(item) {
+      var text = (item.title || "") + " " + (item.desc || "");
+      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
+    }).length;
+    var baiduTotal = 0;
+    var baiduMatch = baiduScenarios.filter(function(b) { return b.name === sc.name || b.displayName === sc.displayName; })[0];
+    if (baiduMatch) {
+      baiduTotal = baiduMatch.keywords.reduce(function(sum, k) { return sum + k.vol; }, 0);
+    }
+    var matchLevel;
+    var strategy;
+    if (baiduTotal > 3000 && socialCount < 5) {
+      matchLevel = '<span style="color:#f87171;">⚠️ 供不应求</span>';
+      strategy = "搜索需求高但社媒内容少，应加大内容种草投入";
+    } else if (baiduTotal > 2000 && socialCount >= 5) {
+      matchLevel = '<span style="color:#4ade80;">✓ 匹配良好</span>';
+      strategy = "供需均衡，维持现有内容策略";
+    } else if (baiduTotal < 1000 && socialCount >= 3) {
+      matchLevel = '<span style="color:#fbbf24;">→ 供过于求</span>';
+      strategy = "搜索需求有限，内容可转向长尾SEO";
+    } else if (baiduTotal < 1000 && socialCount < 3) {
+      matchLevel = '<span style="color:#8a8f9a;">○ 长尾场景</span>';
+      strategy = "小众需求，适合精准投放而非规模化";
+    } else {
+      matchLevel = '<span style="color:#8a8f9a;">→ 待提升</span>';
+      strategy = "搜索和内容均有增长空间";
+    }
+    crossData.push({
+      name: sc.displayName || sc.name, icon: sc.icon, color: sc.color,
+      social: socialCount, baidu: baiduTotal,
+      match: matchLevel, strategy: strategy
+    });
+  });
+
+  crossData.forEach(function(d) {
+    baiduHtml += '<tr>';
+    baiduHtml += '<td style="font-weight:600;color:' + d.color + ';">' + d.icon + ' ' + d.name + '</td>';
+    baiduHtml += '<td>' + d.social + ' 条</td>';
+    baiduHtml += '<td>' + d.baidu.toLocaleString() + '</td>';
+    baiduHtml += '<td>' + d.match + '</td>';
+    baiduHtml += '<td style="font-size:12px;">' + d.strategy + '</td>';
+    baiduHtml += '</tr>';
+  });
+
+  baiduHtml += '</table>';
+  baiduHtml += '</div>';
+
+  document.getElementById("scenario-baidu-card").innerHTML = baiduHtml;
+}
+
+
+
+
+
+
+
+// ==================== SCENARIO 30-DAY TREND + HEATMAP ====================
+var baidu30DayChartInstance = null;
+function renderBaidu30Day() {
+  var canvas = document.getElementById("baidu30DayChart");
+  if (!canvas || baidu30DayChartInstance) return;
+
+  // Generate 30-day synthetic data for 5 scenarios
+  var days = [];
+  var baseDate = new Date(2026, 6, 10); // July 10
+  for (var i = 0; i < 30; i++) {
+    var d = new Date(baseDate);
+    d.setDate(d.getDate() + i);
+    days.push((d.getMonth()+1) + "/" + d.getDate());
+  }
+
+  var colors = ["#58a6ff", "#f78166", "#7ee787", "#d2a8ff", "#fbbf24"];
+  var scenarios = [
+    { name: t("scene_driving"), base: 45, noise: 20, color: colors[0] },
+    { name: t("scene_office"), base: 70, noise: 25, color: colors[1] },
+    { name: t("scene_outdoor"), base: 100, noise: 35, color: colors[2] },
+    { name: t("scene_photo"), base: 15, noise: 8, color: colors[3] },
+    { name: t("scene_digital"), base: 200, noise: 50, color: colors[4] }
+  ];
+
+  function genData(base, noise) {
+    var data = [];
+    for (var i = 0; i < 30; i++) {
+      var trend = Math.sin(i / 30 * Math.PI * 2) * noise * 0.5;
+      var weekly = (i % 7 === 5 || i % 7 === 6) ? -noise * 0.5 : 0;
+      var val = Math.max(1, Math.round(base + trend + weekly + (Math.random() - 0.5) * noise));
+      data.push(val);
+    }
+    return data;
+  }
+
+  var datasets = scenarios.map(function(s) {
+    return {
+      label: s.name,
+      data: genData(s.base, s.noise),
+      borderColor: s.color,
+      backgroundColor: s.color + "22",
+      fill: false,
+      tension: 0.3,
+      pointRadius: 1,
+      borderWidth: 2
+    };
+  });
+
+  var ctx = canvas.getContext("2d");
+  baidu30DayChartInstance = new Chart(ctx, {
+    type: "line",
+    data: { labels: days, datasets: datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { labels: { color: "#8a8f9a", usePointStyle: true, padding: 20 } },
+        tooltip: { backgroundColor: "#1a1d2a", titleColor: "#fff", bodyColor: "#e8eaed", borderColor: "#2a2d3a", borderWidth: 1 }
+      },
+      scales: {
+        y: {
+          ticks: { color: "#8a8f9a", callback: function(v) { return v; } },
+          grid: { color: "#2a2d3a" },
+          title: { display: true, text: "Search Index", color: "#8a8f9a" }
+        },
+        x: {
+          ticks: { color: "#8a8f9a", maxTicksLimit: 10, font: { size: 10 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function renderScenarioHeatmap() {
+  var container = document.getElementById("scenario-heatmap");
+  if (!container) return;
+
+  var scenarios = [
+    { name: "scene_driving", displayName: "驾驶", kw: ["开车眼镜", "夜驾眼镜", "驾驶镜", "蔡司驾驶渐进"] },
+    { name: "scene_office", displayName: "办公", kw: ["电脑眼镜", "办公眼镜", "防蓝光办公", "蔡司办公镜"] },
+    { name: "scene_outdoor", displayName: "户外运动", kw: ["运动眼镜", "变色镜片", "偏光眼镜", "户外眼镜"] },
+    { name: "scene_photo", displayName: "摄影", kw: ["摄影眼镜", "相机取景", "取景器", "单反眼镜"] },
+    { name: "scene_digital", displayName: "电子产品", kw: ["防蓝光眼镜", "手机眼镜", "数码眼镜", "屏幕护目"] }
+  ];
+
+  // Relevance scores (0-100): scenario x keyword
+  var scores = [
+    [85, 90, 55, 100],  // Driving
+    [65, 95, 80, 100],  // Office
+    [30, 90, 75, 20],   // Outdoor
+    [95, 80, 60, 30],   // Photo
+    [20, 60, 25, 10]    // Digital
+  ];
+
+  var allKws = [];
+  scenarios.forEach(function(s) { allKws = allKws.concat(s.kw); });
+  allKws = Array.from(new Set(allKws));
+
+  var html = '<table style="font-size:12px;text-align:center;">';
+  html += '<tr><th style="min-width:80px;">Scenario</th>';
+  allKws.forEach(function(kw) {
+    html += '<th style="writing-mode:vertical-lr;padding:8px 4px;">' + escapeHtml(kw) + '</th>';
+  });
+  html += '</tr>';
+
+  // Color scale
+  function heatColor(score) {
+    var r, g, b;
+    if (score <= 30) { r = 26; g = 29; b = 42; }
+    else if (score <= 60) { r = 30; g = 50; b = 80; }
+    else if (score <= 80) { r = 50; g = 80; b = 120; }
+    else { r = 90; g = 107; b = 255; }
+    var alpha = Math.max(0.1, score / 100);
+    return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha.toFixed(2) + ')';
+  }
+
+  scenarios.forEach(function(s, si) {
+    html += '<tr><td style="font-weight:600;">' + (s.displayName || s.name) + '</td>';
+    var kwScores = [];
+    allKws.forEach(function(kw) {
+      var idx = s.kw.indexOf(kw);
+      var score;
+      if (idx >= 0) {
+        score = scores[si][idx];
+      } else {
+        // Cross-scenario relevance: check partial match
+        var matchScore = 0;
+        s.kw.forEach(function(skw, si2) {
+          if (kw.includes(skw) || skw.includes(kw)) matchScore = Math.max(matchScore, scores[si][si2] * 0.5);
+        });
+        score = Math.round(matchScore);
+      }
+      kwScores.push(score);
+      var bg = heatColor(score);
+      var textColor = score > 60 ? '#fff' : '#8a8f9a';
+      html += '<td style="background:' + bg + ';color:' + textColor + ';padding:10px 6px;border-radius:4px;">' + score + '</td>';
+    });
+    html += '</tr>';
+  });
+  html += '</table>';
+  html += '<p style="color:#8a8f9a;font-size:11px;margin-top:8px;">颜色越亮 = 相关性越高 | 0-30 低相关，30-60 中等，60-80 较高，80-100 高相关</p>';
+  container.innerHTML = html;
+}
+
+// ==================== UTILS ====================
+function escapeHtml(str) {
+  var div = document.createElement("div");
+  div.textContent = str || "";
+  return div.innerHTML;
+}
+
+function escapeJs(str) {
+  return String(str || "").replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+}
+
+// ==================== BOOTSTRAP ====================
+window.addEventListener("DOMContentLoaded", function() {
+  initAll();
+  setTimeout(function() { i18nDom(); }, 100);
+});
+</script>
+
+<button class="refresh-btn" onclick="doRefresh()">🔄</button>
+<div class="refresh-toast" id="refresh-toast">✅ 分析完成！已更新全部结果</div>
+
+</body>
+</html>

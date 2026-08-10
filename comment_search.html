@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>评论关键词搜索 — 渐进镜舆情分析</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
+.container { max-width: 1300px; margin: 0 auto; padding: 20px; padding-bottom: 80px; }
+
+h1 { font-size: 24px; margin-bottom: 5px; color: #fff; }
+h2 { font-size: 18px; margin: 24px 0 12px; color: #b8c7ff; border-bottom: 1px solid #2a2d3a; padding-bottom: 8px; }
+h3 { font-size: 15px; margin: 16px 0 8px; color: #c4c9d4; }
+.subtitle { color: #8a8f9a; font-size: 13px; margin-bottom: 20px; }
+
+/* Header toolbar */
+.header-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 16px 20px; background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 12px; }
+.header-toolbar .info { display: flex; align-items: center; gap: 12px; }
+.header-btns { display: flex; gap: 10px; }
+
+.btn { padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; transition: all 0.2s; }
+.btn-back { background: #2a2d3a; color: #8a8f9a; border: 1px solid #3a3d4a; }
+.btn-back:hover { color: #fff; border-color: #5a6bff; }
+
+/* Search module */
+.search-module { background: linear-gradient(135deg, #1a1d2a 0%, #1e2240 100%); border: 2px solid #2a2d3a; border-radius: 16px; padding: 28px 24px; margin: 20px 0; }
+.search-input-row { display: flex; gap: 12px; align-items: center; }
+.search-input-wrap { flex: 1; position: relative; }
+.search-input-wrap input { width: 100%; padding: 14px 18px; background: #0f1117; border: 1px solid #2a2d3a; border-radius: 10px; color: #e8eaed; font-size: 15px; outline: none; transition: border-color 0.2s; }
+.search-input-wrap input:focus { border-color: #5a6bff; box-shadow: 0 0 0 3px rgba(90,107,255,0.15); }
+.search-input-wrap input::placeholder { color: #4a4d5a; }
+.search-btn { padding: 14px 28px; background: #5a6bff; border: none; border-radius: 10px; color: white; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+.search-btn:hover { background: #4a5ae0; }
+.search-clear-btn { padding: 14px 20px; background: #2a2d3a; border: none; border-radius: 10px; color: #8a8f9a; font-size: 14px; cursor: pointer; }
+.search-clear-btn:hover { color: #fff; background: #3a3d4a; }
+
+.autocomplete-dropdown { display: none; position: absolute; top: 58px; left: 0; right: 0; background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 8px; max-height: 200px; overflow-y: auto; z-index: 100; box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+.autocomplete-dropdown.active { display: block; }
+.autocomplete-item { padding: 10px 16px; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+.autocomplete-item:hover { background: rgba(90,107,255,0.15); }
+.autocomplete-item .ac-count { font-size: 11px; color: #8a8f9a; }
+
+.quick-chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.chip-label { font-size: 13px; color: #8a8f9a; padding: 6px 0; margin-right: 4px; }
+.chip { padding: 6px 14px; border-radius: 16px; font-size: 12px; cursor: pointer; transition: all 0.2s; border: 1px solid transparent; }
+.chip.pos { background: rgba(74,222,128,0.1); color: #4ade80; border-color: rgba(74,222,128,0.2); }
+.chip.pos:hover { background: rgba(74,222,128,0.25); border-color: rgba(74,222,128,0.5); }
+.chip.neg { background: rgba(248,113,113,0.1); color: #f87171; border-color: rgba(248,113,113,0.2); }
+.chip.neg:hover { background: rgba(248,113,113,0.25); border-color: rgba(248,113,113,0.5); }
+.chip.brand { background: rgba(90,107,255,0.1); color: #b8c7ff; border-color: rgba(90,107,255,0.2); }
+.chip.brand:hover { background: rgba(90,107,255,0.25); border-color: rgba(90,107,255,0.5); }
+.chip.content { background: rgba(96,165,250,0.1); color: #60a5fa; border-color: rgba(96,165,250,0.2); }
+.chip.content:hover { background: rgba(96,165,250,0.25); border-color: rgba(96,165,250,0.5); }
+
+.filter-row { display: flex; gap: 10px; align-items: center; margin: 8px 0; flex-wrap: wrap; }
+.filter-row select { padding: 8px 14px; background: #0f1117; border: 1px solid #2a2d3a; border-radius: 8px; color: #e8eaed; font-size: 13px; outline: none; cursor: pointer; }
+.filter-row select:focus { border-color: #5a6bff; }
+.filter-label { font-size: 12px; color: #8a8f9a; margin-right: 2px; }
+
+.search-results { margin-top: 20px; }
+.search-results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.search-results-header .count { color: #8a8f9a; font-size: 13px; }
+.search-results-header .count strong { color: #5a6bff; }
+
+/* Table */
+.results-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.results-table th { background: #0f1117; color: #8a8f9a; font-weight: 500; text-align: left; padding: 10px 12px; border-bottom: 2px solid #2a2d3a; position: sticky; top: 0; }
+.results-table td { padding: 10px 12px; border-bottom: 1px solid #1f2230; }
+.results-table tr:hover td { background: rgba(90,107,255,0.08); }
+.result-link { color: #5a6bff; text-decoration: none; font-size: 12px; cursor: pointer; }
+.result-link:hover { text-decoration: underline; }
+.result-title { max-width: 350px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.result-kw { display: flex; flex-wrap: wrap; gap: 4px; }
+
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 500; }
+.badge.pos { background: rgba(74,222,128,0.15); color: #4ade80; }
+.badge.neg { background: rgba(248,113,113,0.15); color: #f87171; }
+.badge.neu { background: rgba(251,191,36,0.15); color: #fbbf24; }
+
+/* Tags */
+.kw-tag { padding: 4px 12px; border-radius: 12px; font-size: 12px; }
+.kw-tag.pos { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+.kw-tag.neg { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+.kw-tag.neu { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+
+.empty-state { text-align: center; padding: 40px; color: #4a4d5a; }
+.empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+
+.pagination { display: flex; justify-content: center; gap: 6px; margin-top: 16px; }
+.page-btn { padding: 6px 12px; background: #2a2d3a; border: none; border-radius: 6px; color: #8a8f9a; cursor: pointer; font-size: 12px; }
+.page-btn:hover { background: #3a3d4a; color: #fff; }
+.page-btn.active { background: #5a6bff; color: #fff; }
+
+/* Toast */
+.toast { position: fixed; top: 20px; right: 20px; padding: 12px 24px; border-radius: 10px; font-size: 14px; font-weight: 600; z-index: 999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.toast.show { opacity: 1; }
+.toast.info { background: #5a6bff; color: white; }
+
+/* Info bar */
+.info-bar { background: #1a1d2a; border: 1px solid #2a2d3a; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 13px; color: #8a8f9a; }
+.info-bar strong { color: #b8c7ff; }
+
+.lang-toggle-btn { padding: 8px 16px; background: #2a2d3a; border: 1px solid #5a6bff; border-radius: 20px; color: #b8c7ff; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.lang-toggle-btn:hover { background: #5a6bff; color: #fff; }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header-toolbar">
+  <div class="info">
+    <h1 style="margin:0;" data-i18n="cs_heading">🔎 评论关键词搜索</h1>
+  </div>
+  <button class="lang-toggle-btn" onclick="toggleLang()">EN</button>
+    <div class="header-btns">
+    <button class="btn btn-back" onclick="handleBack()">← 返回主报告</button>
+  </div>
+</div>
+
+<p class="subtitle" data-i18n="cs_subtitle">搜索正负面关键词来源内容，查看原帖详情。支持按品牌、平台、情感倾向筛选。关键词可在主报告的「⚙️ 设置关键词」中配置。</p>
+
+<div class="info-bar" id="kw-info-bar">
+  <strong data-i18n="cs_kw_config">当前关键词配置:</strong> <span id="kw-summary-text">加载中...</span>
+</div>
+
+<!-- ===== SEARCH MODULE ===== -->
+<div class="search-module">
+  <div class="search-input-row">
+    <div class="search-input-wrap">
+      <input type="text" id="keyword-input" placeholder="" id="search-placeholder-text" oninput="handleInput()" onkeydown="if(event.key==='Enter') doSearch()" autocomplete="off">
+      <div class="autocomplete-dropdown" id="autocomplete"></div>
+    </div>
+    <button class="search-btn" onclick="doSearch()" data-i18n="cs_search_btn">🔍 搜索</button>
+    <button class="search-clear-btn" onclick="clearSearch()" data-i18n="cs_clear_btn">✕ 清除</button>
+  </div>
+  <div id="quick-chips-content" class="quick-chips"></div>
+  <div id="quick-chips-pos" class="quick-chips"></div>
+  <div id="quick-chips-neg" class="quick-chips"></div>
+  <div id="quick-chips-brand" class="quick-chips"></div>
+  <div class="filter-row">
+    <span class="filter-label" data-i18n="cs_filter_label">筛选:</span>
+    <select id="filter-platform" onchange="applyFilters()">
+      <option value="all">全部平台</option>
+      <option value="小红书">📕 小红书</option>
+      <option value="抖音">📱 抖音</option>
+      <option value="公众号">📰 公众号</option>
+    </select>
+    <select id="filter-brand" onchange="applyFilters()">
+      <option value="all">全部品牌</option>
+      <option value="蔡司">蔡司</option>
+      <option value="依视路">依视路</option>
+      <option value="豪雅">豪雅</option>
+      <option value="明月">明月</option>
+      <option value="凯米">凯米</option>
+      <option value="无品牌">无品牌关联</option>
+    </select>
+    <select id="filter-sentiment" onchange="applyFilters()">
+      <option value="all">全部情感</option>
+      <option value="positive">😊 正面</option>
+      <option value="negative">😟 负面</option>
+      <option value="neutral">😐 中性</option>
+    </select>
+  </div>
+  <div class="search-results" id="search-results">
+    <div class="empty-state"><div class="icon">🔍</div><p data-i18n="cs_empty_prompt">输入关键词或点击上方标签开始检索</p></div>
+  </div>
+</div>
+
+<!-- ===== ALL ITEMS TABLE ===== -->
+<h2 data-i18n="cs_all_items">📋 全部帖子数据</h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:12px;">以下为全部帖子数据，可直接浏览或使用上方搜索功能筛选</p>
+<div id="all-items-table"></div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script>
+// ==================== STATE ====================
+let currentPosGroups = JSON.parse(JSON.stringify(DEFAULT_POS_GROUPS));
+let currentNegGroups = JSON.parse(JSON.stringify(DEFAULT_NEG_GROUPS));
+let customPosKeywords = [];
+let customNegKeywords = [];
+let currentContentGroups = JSON.parse(JSON.stringify(DEFAULT_CONTENT_GROUPS));
+let customContentKeywords = [];
+
+let ITEMS = [];
+let KEYWORD_INDEX = {};
+let currentQuery = '';
+let currentResults = [];
+const RESULTS_PER_PAGE = 20;
+let currentPage = 1;
+
+// ==================== LOAD KEYWORD SETTINGS ====================
+function loadKeywordSettings() {
+  try {
+    let saved = localStorage.getItem('progressiveLensKeywordSettings');
+    if (saved) {
+      let data = JSON.parse(saved);
+      if (data.posGroups && Object.keys(data.posGroups).length > 0) currentPosGroups = data.posGroups;
+      if (data.negGroups && Object.keys(data.negGroups).length > 0) currentNegGroups = data.negGroups;
+      if (data.customPos) customPosKeywords = data.customPos;
+      if (data.customNeg) customNegKeywords = data.customNeg;
+      if (data.contentGroups && Object.keys(data.contentGroups).length > 0) currentContentGroups = data.contentGroups;
+      if (data.customContent) customContentKeywords = data.customContent;
+    }
+  } catch(e) {}
+}
+
+// ==================== KEYWORD HELPERS ====================
+function getActivePosKeywords() {
+  let all = [];
+  for (let [cat, kws] of Object.entries(currentPosGroups)) all = all.concat(kws);
+  return all.concat(customPosKeywords);
+}
+function getActiveNegKeywords() {
+  let all = [];
+  for (let [cat, kws] of Object.entries(currentNegGroups)) all = all.concat(kws);
+  return all.concat(customNegKeywords);
+}
+function getActiveContentKeywords() {
+  let all = [];
+  for (let [type, kws] of Object.entries(currentContentGroups)) all = all.concat(kws);
+  customContentKeywords.forEach(c => all.push(c.kw));
+  return [...new Set(all)];
+}
+
+// ==================== BRAND DETECTION ====================
+function detectBrands(text) {
+  let found = [];
+  let t = text.toLowerCase();
+  for (let [brand, aliases] of Object.entries(BRAND_NAMES)) {
+    if (t.includes(brand.toLowerCase()) || aliases.some(a => t.includes(a.toLowerCase()))) {
+      found.push(brand);
+    }
+  }
+  return [...new Set(found)];
+}
+
+// ==================== SENTIMENT COMPUTATION ====================
+function computeSentiment(text) {
+  let posScore = 0, negScore = 0;
+  let posFound = {}, negFound = {};
+
+  for (let [cat, kws] of Object.entries(currentPosGroups)) {
+    let m = kws.filter(kw => text.includes(kw));
+    if (m.length > 0) { posFound[cat] = m; posScore += m.length; }
+  }
+  for (let [cat, kws] of Object.entries(currentNegGroups)) {
+    let m = kws.filter(kw => text.includes(kw));
+    if (m.length > 0) { negFound[cat] = m; negScore += m.length; }
+  }
+  if (customPosKeywords.length > 0) {
+    let m = customPosKeywords.filter(kw => text.includes(kw));
+    if (m.length > 0) { posFound['自定义正面'] = m; posScore += m.length; }
+  }
+  if (customNegKeywords.length > 0) {
+    let m = customNegKeywords.filter(kw => text.includes(kw));
+    if (m.length > 0) { negFound['自定义负面'] = m; negScore += m.length; }
+  }
+
+  let sentiment = posScore > negScore ? 'positive' : negScore > posScore ? 'negative' : 'neutral';
+  return { sentiment, posFound, negFound };
+}
+
+// ==================== BUILD DATA ====================
+function buildData() {
+  ITEMS = RAW_ITEMS.map(function(item) {
+    var text = item.title + ' ' + (item.desc || '');
+    var result = computeSentiment(text);
+    var brands = detectBrands(text);
+    return {
+      id: item.id, platform: item.platform, title: item.title, desc: item.desc,
+      likes: item.likes, comments: item.comments, url: item.url, published_at: item.published_at,
+      sentiment: result.sentiment,
+      pos_keywords: result.posFound,
+      neg_keywords: result.negFound,
+      brands: brands
+    };
+  });
+
+  // Build keyword index
+  KEYWORD_INDEX = {};
+  ITEMS.forEach(function(item) {
+    for (let [cat, kws] of Object.entries(item.pos_keywords || {})) {
+      kws.forEach(function(kw) {
+        if (!KEYWORD_INDEX[kw]) KEYWORD_INDEX[kw] = [];
+        KEYWORD_INDEX[kw].push(item.id);
+      });
+    }
+    for (let [cat, kws] of Object.entries(item.neg_keywords || {})) {
+      kws.forEach(function(kw) {
+        if (!KEYWORD_INDEX[kw]) KEYWORD_INDEX[kw] = [];
+        KEYWORD_INDEX[kw].push(item.id);
+      });
+    }
+    item.brands.forEach(function(b) {
+      if (!KEYWORD_INDEX[b]) KEYWORD_INDEX[b] = [];
+      KEYWORD_INDEX[b].push(item.id);
+    });
+  });
+}
+
+// ==================== UPDATE KW SUMMARY ====================
+function updateKwSummary() {
+  var contentTotal = 0;
+  for (var kws of Object.values(currentContentGroups)) contentTotal += kws.length;
+  contentTotal += customContentKeywords.length;
+
+  var posTotal = 0, negTotal = 0;
+  for (var kws of Object.values(currentPosGroups)) posTotal += kws.length;
+  for (var kws of Object.values(currentNegGroups)) negTotal += kws.length;
+  posTotal += customPosKeywords.length;
+  negTotal += customNegKeywords.length;
+
+  document.getElementById('kw-summary-text').innerHTML =
+    '内容词 <strong style="color:#60a5fa;">' + contentTotal + '</strong> · ' +
+    '评论词 😊<strong style="color:#4ade80;">' + posTotal + '</strong> ' +
+    '😟<strong style="color:#f87171;">' + negTotal + '</strong>';
+}
+
+// ==================== QUICK CHIPS ====================
+function renderQuickChips() {
+  var kwMap = {};
+  ITEMS.forEach(function(item) {
+    for (var cat in (item.pos_keywords || {})) {
+      item.pos_keywords[cat].forEach(function(kw) { kwMap[kw] = (kwMap[kw] || 0) + 1; });
+    }
+    for (var cat in (item.neg_keywords || {})) {
+      item.neg_keywords[cat].forEach(function(kw) { kwMap[kw] = (kwMap[kw] || 0) + 1; });
+    }
+    var text = ((item.title || '') + ' ' + (item.desc || '')).toLowerCase();
+    getActiveContentKeywords().forEach(function(kw) {
+      if (text.includes(kw.toLowerCase())) kwMap[kw] = (kwMap[kw] || 0) + 1;
+    });
+  });
+
+  var activePos = getActivePosKeywords();
+  var activeNeg = getActiveNegKeywords();
+  var activeContent = getActiveContentKeywords();
+  var posChips = activePos.filter(function(kw) { return kwMap[kw]; }).sort(function(a,b) { return kwMap[b] - kwMap[a]; }).slice(0, 12);
+  var negChips = activeNeg.filter(function(kw) { return kwMap[kw]; }).sort(function(a,b) { return kwMap[b] - kwMap[a]; }).slice(0, 8);
+  var contentChips = activeContent.filter(function(kw) { return kwMap[kw] && activePos.indexOf(kw) === -1 && activeNeg.indexOf(kw) === -1; }).sort(function(a,b) { return kwMap[b] - kwMap[a]; }).slice(0, 15);
+
+  var contentEl = document.getElementById('quick-chips-content');
+  if (contentEl) {
+    contentEl.innerHTML = '<span class="chip-label">内容关键词:</span>' +
+      contentChips.map(function(kw) { return '<span class="chip content" onclick="quickSearch(\'' + escapeJs(kw) + '\')">' + escapeHtml(kw) + ' (' + kwMap[kw] + ')</span>'; }).join('');
+  }
+
+  var posEl = document.getElementById('quick-chips-pos');
+  if (posEl) {
+    posEl.innerHTML = '<span class="chip-label">正面高频词:</span>' +
+      posChips.map(function(kw) { return '<span class="chip pos" onclick="quickSearch(\'' + escapeJs(kw) + '\')">' + escapeHtml(kw) + ' (' + kwMap[kw] + ')</span>'; }).join('');
+  }
+
+  var negEl = document.getElementById('quick-chips-neg');
+  if (negEl) {
+    negEl.innerHTML = '<span class="chip-label">负面高频词:</span>' +
+      negChips.map(function(kw) { return '<span class="chip neg" onclick="quickSearch(\'' + escapeJs(kw) + '\')">' + escapeHtml(kw) + ' (' + kwMap[kw] + ')</span>'; }).join('');
+  }
+
+  var brandEl = document.getElementById('quick-chips-brand');
+  if (brandEl) {
+    brandEl.innerHTML = '<span class="chip-label">品牌:</span>' +
+      ['蔡司', '依视路', '凯米'].filter(function(b) { return kwMap[b]; }).map(function(b) { return '<span class="chip brand" onclick="quickSearch(\'' + b + '\')">' + b + '</span>'; }).join('');
+  }
+}
+
+// ==================== SEARCH ====================
+function handleInput() {
+  var input = document.getElementById('keyword-input');
+  var val = input.value.trim().toLowerCase();
+  var dropdown = document.getElementById('autocomplete');
+  if (val.length < 1) { dropdown.classList.remove('active'); return; }
+  var contentKws = getActiveContentKeywords();
+  var allKeys = [...new Set([...Object.keys(KEYWORD_INDEX), ...contentKws])];
+  var matches = allKeys.filter(function(kw) { return kw.toLowerCase().includes(val); })
+    .sort(function(a, b) {
+      var aCount = KEYWORD_INDEX[a] ? KEYWORD_INDEX[a].length : 0;
+      var bCount = KEYWORD_INDEX[b] ? KEYWORD_INDEX[b].length : 0;
+      return bCount - aCount;
+    }).slice(0, 10);
+  if (matches.length === 0) { dropdown.classList.remove('active'); return; }
+  dropdown.innerHTML = matches.map(function(kw) {
+    var count = KEYWORD_INDEX[kw] ? KEYWORD_INDEX[kw].length : 0;
+    var label = count > 0 ? kw + ' (' + count + '条)' : kw + ' (内容词)';
+    return '<div class="autocomplete-item" onclick="quickSearch(\'' + escapeJs(kw) + '\')"><span>' + escapeHtml(label) + '</span></div>';
+  }).join('');
+  dropdown.classList.add('active');
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.search-input-wrap')) document.getElementById('autocomplete').classList.remove('active');
+});
+
+function quickSearch(kw) {
+  document.getElementById('keyword-input').value = kw;
+  document.getElementById('autocomplete').classList.remove('active');
+  doSearch();
+  document.getElementById('search-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearSearch() {
+  document.getElementById('keyword-input').value = '';
+  document.getElementById('filter-platform').value = 'all';
+  document.getElementById('filter-brand').value = 'all';
+  document.getElementById('filter-sentiment').value = 'all';
+  document.getElementById('autocomplete').classList.remove('active');
+  currentQuery = ''; currentResults = []; currentPage = 1;
+  document.getElementById('search-results').innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p data-i18n="cs_empty_prompt">输入关键词或点击上方标签开始检索</p></div>';
+}
+
+function doSearch() {
+  var input = document.getElementById('keyword-input');
+  var query = input.value.trim().toLowerCase();
+  if (!query) { clearSearch(); return; }
+  currentQuery = query; currentPage = 1;
+  applyFilters();
+}
+
+function applyFilters() {
+  if (!currentQuery) return;
+  var platformFilter = document.getElementById('filter-platform').value;
+  var brandFilter = document.getElementById('filter-brand').value;
+  var sentimentFilter = document.getElementById('filter-sentiment').value;
+
+  var matchedIds = new Set();
+  var indexKey = Object.keys(KEYWORD_INDEX).find(function(k) { return k === currentQuery; });
+  if (indexKey) KEYWORD_INDEX[indexKey].forEach(function(id) { matchedIds.add(id); });
+
+  if (matchedIds.size === 0) {
+    ITEMS.forEach(function(item) {
+      var text = (item.title + ' ' + (item.desc || '')).toLowerCase();
+      if (text.includes(currentQuery)) matchedIds.add(item.id);
+    });
+  }
+
+  currentResults = ITEMS.filter(function(item) {
+    if (!matchedIds.has(item.id)) return false;
+    if (platformFilter !== 'all' && item.platform !== platformFilter) return false;
+    if (brandFilter === '无品牌' && item.brands.length > 0) return false;
+    if (brandFilter !== 'all' && brandFilter !== '无品牌' && !item.brands.includes(brandFilter)) return false;
+    if (sentimentFilter !== 'all' && item.sentiment !== sentimentFilter) return false;
+    return true;
+  });
+  renderResults();
+}
+
+function renderResults() {
+  var container = document.getElementById('search-results');
+  var totalPages = Math.ceil(currentResults.length / RESULTS_PER_PAGE);
+  var start = (currentPage - 1) * RESULTS_PER_PAGE;
+  var pageItems = currentResults.slice(start, start + RESULTS_PER_PAGE);
+
+  if (currentResults.length === 0) {
+    container.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>未找到匹配「' + escapeHtml(currentQuery) + '」的结果</p><p style="font-size:12px;color:#4a4d5a;">尝试更换关键词或清除筛选条件</p></div>';
+    return;
+  }
+
+  var html = '<div class="search-results-header"><div class="count">搜索「<strong>' + escapeHtml(currentQuery) + '</strong>」找到 <strong>' + currentResults.length + '</strong> 条结果';
+  var pf = document.getElementById('filter-platform').value;
+  var bf = document.getElementById('filter-brand').value;
+  var sf = document.getElementById('filter-sentiment').value;
+  var filters = [];
+  if (pf !== 'all') filters.push('平台: ' + pf);
+  if (bf !== 'all') filters.push('品牌: ' + bf);
+  if (sf !== 'all') filters.push(sf === 'positive' ? '正面' : sf === 'negative' ? '负面' : '中性');
+  if (filters.length > 0) html += ' (已筛选: ' + filters.join(', ') + ')';
+  html += '</div></div>';
+
+  html += '<table class="results-table"><tr><th>平台</th><th>标题</th><th>情感</th><th>匹配关键词</th><th>品牌</th><th>发布时间</th><th>赞</th><th>链接</th></tr>';
+
+  pageItems.forEach(function(item) {
+    var sentimentLabel = item.sentiment === 'positive' ? '😊 正面' : item.sentiment === 'negative' ? '😟 负面' : '😐 中性';
+    var sentimentClass = item.sentiment === 'positive' ? 'pos' : item.sentiment === 'negative' ? 'neg' : 'neu';
+    var matchedKws = [];
+    for (var cat in (item.pos_keywords || {})) {
+      item.pos_keywords[cat].forEach(function(kw) {
+        if (kw.includes(currentQuery) || currentQuery.includes(kw)) matchedKws.push('<span class="kw-tag pos">' + escapeHtml(kw) + '</span>');
+      });
+    }
+    for (var cat in (item.neg_keywords || {})) {
+      item.neg_keywords[cat].forEach(function(kw) {
+        if (kw.includes(currentQuery) || currentQuery.includes(kw)) matchedKws.push('<span class="kw-tag neg">' + escapeHtml(kw) + '</span>');
+      });
+    }
+    if (matchedKws.length === 0) matchedKws.push('<span class="kw-tag neu">' + escapeHtml(currentQuery) + '</span>');
+
+    html += '<tr><td>' + item.platform + '</td>';
+    html += '<td class="result-title" title="' + escapeHtml(item.title) + '">' + escapeHtml(item.title) + '</td>';
+    html += '<td><span class="badge ' + sentimentClass + '">' + sentimentLabel + '</span></td>';
+    html += '<td><div class="result-kw">' + matchedKws.join('') + '</div></td>';
+    var brandStr = item.brands.length > 0 ? item.brands.join(', ') : '<span style="color:#4a4d5a">-</span>';
+    html += '<td>' + brandStr + '</td>';
+    html += '<td style="font-size:12px;color:#8a8f9a">' + (item.published_at || '-') + '</td>';
+    html += '<td>' + (item.likes || 0) + '</td>';
+    if (item.url) html += '<td><a href="' + item.url + '" target="_blank" class="result-link">🔗 查看</a></td>';
+    else html += '<td><span style="color:#4a4d5a">-</span></td>';
+    html += '</tr>';
+  });
+  html += '</table>';
+
+  if (totalPages > 1) {
+    html += '<div class="pagination">';
+    for (var p = 1; p <= totalPages; p++) {
+      html += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
+    }
+    html += '</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+function goToPage(page) {
+  currentPage = page;
+  renderResults();
+  document.getElementById('search-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ==================== ALL ITEMS TABLE ====================
+function renderAllItemsTable() {
+  var container = document.getElementById('all-items-table');
+  var html = '<table class="results-table"><tr><th>平台</th><th>标题</th><th>情感</th><th>品牌</th><th>发布时间</th><th>赞</th><th>评论</th><th>链接</th></tr>';
+
+  ITEMS.forEach(function(item) {
+    var sentimentLabel = item.sentiment === 'positive' ? '😊' : item.sentiment === 'negative' ? '😟' : '😐';
+    var sentimentClass = item.sentiment === 'positive' ? 'pos' : item.sentiment === 'negative' ? 'neg' : 'neu';
+    var brandStr = item.brands.length > 0 ? item.brands.join(', ') : '<span style="color:#4a4d5a">-</span>';
+    html += '<tr style="cursor:pointer" onclick="quickSearch(\'' + escapeJs(item.brands.length > 0 ? item.brands[0] : item.platform) + '\')">';
+    html += '<td>' + item.platform + '</td>';
+    html += '<td class="result-title" title="' + escapeHtml(item.title) + '">' + escapeHtml(item.title) + '</td>';
+    html += '<td><span class="badge ' + sentimentClass + '">' + sentimentLabel + '</span></td>';
+    html += '<td style="font-size:12px">' + brandStr + '</td>';
+    html += '<td style="font-size:12px;color:#8a8f9a">' + (item.published_at || '-') + '</td>';
+    html += '<td>' + (item.likes || 0) + '</td>';
+    html += '<td>' + (item.comments || 0) + '</td>';
+    if (item.url) html += '<td><a href="' + item.url + '" target="_blank" class="result-link">🔗 查看</a></td>';
+    else html += '<td><span style="color:#4a4d5a">-</span></td>';
+    html += '</tr>';
+  });
+  html += '</table>';
+
+  container.innerHTML = html;
+}
+
+// ==================== UTILS ====================
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str || '';
+  return div.innerHTML;
+}
+
+function escapeJs(str) {
+  return String(str || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
+}
+
+function showToast(msg, type) {
+  var toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast ' + (type || 'info') + ' show';
+  setTimeout(function() { toast.classList.remove('show'); }, 2500);
+}
+
+function handleBack() {
+  var base = window.location.href.replace(/[^\/]*$/, '');
+  window.location.href = langUrl('评论舆情分析_品牌评论图谱_20260809.html');
+}
+
+// Listen for keyword settings changes
+window.addEventListener('storage', function(e) {
+  if (e.key === 'progressiveLensKeywordSettingsUpdated') {
+    loadKeywordSettings();
+    buildData();
+    renderQuickChips();
+    renderAllItemsTable();
+    updateKwSummary();
+    showToast('关键词设置已更新，已刷新数据', 'info');
+  }
+});
+
+// ==================== INIT ====================
+loadKeywordSettings();
+buildData();
+renderQuickChips();
+renderAllItemsTable();
+updateKwSummary();
+
+// Set localized placeholder
+var phEl = document.getElementById("search-placeholder-text");
+if (phEl) phEl.placeholder = t("cs_search_placeholder");
+
+// Apply i18n to all data-i18n elements
+function i18nCs() {
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    var text = t(key);
+    if (text && text !== key) el.textContent = text;
+  });
+  var langBtn = document.querySelector('.lang-toggle-btn');
+  if (langBtn) { langBtn.textContent = t('lang_label'); langBtn.title = t('lang_tip'); }
+  document.title = t('cs_title');
+  var subEl = document.querySelector('.subtitle');
+  if (subEl) subEl.textContent = t('cs_subtitle');
+  var allDesc = document.querySelector('p[style*="color:#8a8f9a;font-size:13px"]');
+  if (allDesc) allDesc.textContent = t('cs_all_items_desc');
+}
+setTimeout(i18nCs, 50);
+
+// Check for query parameter (auto-search)
+var urlParams = new URLSearchParams(window.location.search);
+var q = urlParams.get('q');
+if (q) {
+  document.getElementById('keyword-input').value = q;
+  doSearch();
+}
+</script>
+
+</body>
+</html>
