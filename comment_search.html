@@ -143,10 +143,12 @@ h3 { font-size: 15px; margin: 16px 0 8px; color: #c4c9d4; }
   <div class="filter-row">
     <span class="filter-label" data-i18n="cs_filter_label">筛选:</span>
     <select id="filter-platform" onchange="applyFilters()">
-      <option value="all">全部平台</option>
+      <option value="all" data-i18n="cs_filter_all_platform">全部平台</option>
       <option value="小红书">📕 小红书</option>
       <option value="抖音">📱 抖音</option>
       <option value="公众号">📰 公众号</option>
+      <option value="B站">📺 B站</option>
+      <option value="知乎">💬 知乎</option>
     </select>
     <select id="filter-brand" onchange="applyFilters()">
       <option value="all">全部品牌</option>

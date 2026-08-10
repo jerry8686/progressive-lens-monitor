@@ -142,6 +142,7 @@ svg text { font-family: 'Microsoft YaHei', sans-serif; }
 .tag-dy { background: rgba(0,0,0,0.3); color: #e8eaed; border: 1px solid #3a3d4a; }
 .tag-gzh { background: rgba(7,193,96,0.15); color: #07c160; }
 .tag-bili { background: rgba(251,114,153,0.15); color: #fb7299; }
+.tag-zhihu { background: rgba(0,102,255,0.15); color: #0066ff; }
 .keyword-node { display: inline-block; padding: 4px 12px; border-radius: 16px; margin: 3px; font-size: 13px; white-space: nowrap; }
 .brand-zeiss { background: rgba(88,166,255,0.12); border: 1px solid rgba(88,166,255,0.4); color: var(--zeiss); }
 .brand-essilor { background: rgba(247,129,102,0.12); border: 1px solid rgba(247,129,102,0.4); color: var(--essilor); }
@@ -284,71 +285,71 @@ svg text { font-family: 'Microsoft YaHei', sans-serif; }
 <div id="brand-platform-table"></div>
 <p style="font-size:12px;color:#8a8f9a;margin-top:4px;">⬆ 点击品牌行查看详细正负面关键词分布</p>
 
-<h2>五、评论存量 vs 增量（周维度更新框架）</h2>
+<h2 data-i18n="sec5_title">五、评论存量 vs 增量（周维度更新框架）</h2>
 <div class="update-notice">
-  <strong>📅 更新机制:</strong> 本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。
+  <strong data-i18n="update_notice_prefix">📅 更新机制:</strong> <span data-i18n="update_notice">本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。</span>
 </div>
 <div class="compact-row" id="stock-incr-section"></div>
 
 <h2 data-i18n="sec6_title">六、各平台正负面关键词对比</h2>
 <div id="platform-visual-section" style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center"></div>
 
-<h2>七、百度指数关键词热度对比（柱状图）</h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。</p>
+<h2 data-i18n="sec7_title">七、百度指数关键词热度对比（柱状图）</h2>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于 Chinaz/5118 等第三方工具的估算月均搜索量（2026年7月），反映用户在百度的主动搜索行为，与社媒被动曝光形成互补视角。</p>
 <div class="chart-container">
   <div class="baidu-chart-wrapper">
     <canvas id="baiduIndexChart"></canvas>
   </div>
 </div>
 
-<h2>八、百度指数关键词详细对比（表格）</h2>
+<h2 data-i18n="sec8_title">八、百度指数关键词详细对比（表格）</h2>
 <div class="chart-container" id="baidu-detail-table"></div>
 
 
 <h2 data-i18n="sec9_title">九、渐进镜选配主要场景对比</h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。</p>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec9_desc">从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。</p>
 
 <!-- Card 1: Platform Content -->
 <div class="chart-container">
-  <h3 style="color:#58a6ff;margin-bottom:12px;">📱 平台内容场景分布</h3>
-  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;">基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计</p>
+  <h3 style="color:#58a6ff;margin-bottom:12px;" data-i18n="card1_title">📱 平台内容场景分布</h3>
+  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;" data-i18n="card1_desc">基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计</p>
   <div id="scenario-platform-card"></div>
 </div>
 
 <!-- Card 2: Baidu Index -->
 <div class="chart-container">
-  <h3 style="color:#f78166;margin-bottom:12px;">🔍 百度指数场景热度对比</h3>
-  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;">基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次</p>
+  <h3 style="color:#f78166;margin-bottom:12px;" data-i18n="card2_title">🔍 百度指数场景热度对比</h3>
+  <p style="color:#8a8f9a;font-size:12px;margin-bottom:16px;" data-i18n="card2_desc">基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次</p>
   <div id="scenario-baidu-card"></div>
 
-<h3 style="color:#d2a8ff;margin:20px 0 12px;">📈 过去30天百度搜索量趋势</h3>
+<h3 style="color:#d2a8ff;margin:20px 0 12px;" data-i18n="baidu_30day_title">📈 过去30天百度搜索量趋势</h3>
 <div class="chart-container">
   <div class="baidu-chart-wrapper" style="height:400px;">
     <canvas id="baidu30DayChart"></canvas>
   </div>
 </div>
 
-<h3 style="color:#fbbf24;margin:20px 0 12px;">🔥 场景×关键词相关性热力图</h3>
+<h3 style="color:#fbbf24;margin:20px 0 12px;" data-i18n="baidu_heatmap_title">🔥 场景×关键词相关性热力图</h3>
 <div class="chart-container" id="scenario-heatmap"></div>
 
 </div>
 
-<h2>十、品牌关键词策略洞察（四品牌横向对比）</h2>
+<h2 data-i18n="sec10_title">十、品牌关键词策略洞察（四品牌横向对比）</h2>
 <div class="chart-container" id="baidu-insight-table"></div>
 
 <h2 data-i18n="sec11_title">十一、分析方法与局限</h2>
 <div class="chart-container" style="font-size:13px;color:#8a8f9a;">
-  <p><strong>情感分类方法:</strong> 基于关键词匹配 + 正面/负面类别进行情感判定</p>
-  <p><strong>品牌识别:</strong> 精确匹配 + 别名识别（如"万里路"→依视路）</p>
-  <p><strong>数据来源:</strong> cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台；百度指数数据基于 Chinaz/5118 等第三方估算（2026年7月）</p>
-  <p style="margin-top:8px;color:#fbbf24;">⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少；"老花"关键词存在歧义；红狐API对B站/公众号覆盖有限</p>
+  <p data-i18n-html="method_sentiment"><strong>情感分类方法:</strong> 基于关键词匹配 + 正面/负面类别进行情感判定</p>
+  <p data-i18n-html="method_brand"><strong>品牌识别:</strong> 精确匹配 + 别名识别（如"万里路"→依视路）</p>
+  <p data-i18n-html="method_source"><strong>数据来源:</strong> cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台；百度指数数据基于 Chinaz/5118 等第三方估算（2026年7月）</p>
+  <p style="margin-top:8px;color:#fbbf24;" data-i18n="method_limit">⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少；"老花"关键词存在歧义；红狐API对B站/公众号覆盖有限</p>
   <p style="margin-top:8px;color:#8a8f9a;">建议结合线下门店调研和消费者问卷做交叉验证。</p>
 </div>
 
 </div><!-- close container -->
 
 <div style="text-align:center;padding:60px 20px;color:#8a8f9a;font-size:13px;border-top:1px solid #2a2d3a;margin-top:40px;">
-  渐进镜/老花镜四平台评论舆情分析报告（完整版）· 2026年8月9日 · WorkBuddy 生成<br>
+  <span data-i18n="main_title">渐进镜舆情监控平台</span> · 2026年8月9日 · WorkBuddy 生成<br>
   数据来源: 红狐API + 百度指数 + WebSearch | 仅供研究参考，不构成商业建议
 </div>
 <script src="data.js"></script>
@@ -372,7 +373,7 @@ var __LANG__ = 'zh';
 var I18N = {
   zh: {
     'lang_label': 'EN', 'lang_tip': 'Switch to English', 'back_to_main': '← 返回主报告', 'back_to_main_cancel': '← 返回主报告（放弃更改）', 'confirm_save': '✓ 完成（保存更改）',
-    'main_title': '渐进镜舆情监控平台', 'main_subtitle': '数据范围: 小红书/抖音/公众号 | 近30天 | 103条光学相关帖子 | 生成时间: 2026-08-09 22:38',
+    'main_title': '渐进镜舆情监控平台', 'main_subtitle': '数据范围: 小红书/抖音/公众号/B站/知乎 | 近30天 | 103条光学相关帖子 | 生成时间: 2026-08-09 22:38',
     'kw_config': '关键词配置', 'kw_settings_btn': '⚙️ 设置关键词', 'kw_summary_fmt': '内容词 {content} · 评论词 {pos} {neg}',
     'sec1_title': '一、四平台评论情感总览', 'card_total_posts': '总分析帖子数', 'card_platform_dist': '各平台评论分布', 'card_view_detail': '点击查看详情', 'card_positive_rate': '正面评论占比', 'card_negative_rate': '负面评论占比', 'card_pos_bar': '条正面', 'card_neg_bar': '条负面', 'sentiment_dist': '各平台正负中性分布', 'platform': '平台', 'total': '总数', 'positive': '正面', 'negative': '负面', 'neutral': '中性', 'distribution': '分布',
     'sec2_title': '二、各平台正负面评论关键词 Top 10', 'pos_keywords': '正面关键词', 'neg_keywords': '负面关键词', 'category': '类别',
@@ -388,14 +389,14 @@ var I18N = {
     'drilldown_all_items': '全部帖子列表', 'drilldown_platform_data': '各平台评论数据分布', 'drilldown_pos_summary': '正面评论关键词汇总', 'drilldown_neg_summary': '负面评论关键词汇总', 'drilldown_detail': '下钻详情', 'drilldown_no_data': '暂无下钻数据', 'close_panel': '✕ 收起', 'col_title': '标题', 'col_abstract': '内容摘要', 'col_sentiment': '情感', 'col_match_kw': '匹配词', 'col_link': '链接', 'col_no_kw': '无关键词',
     'brand_comment_detail': '评论情感关键词下钻', 'tab_all_kw': '全部关键词', 'tab_by_platform': '按平台分布', 'tab_association': '品牌-关键词关联', 'brand_pos_no_data': '无正面关键词数据', 'brand_neg_no_data': '无负面关键词数据',
     'refresh_done': '✅ 分析完成！已更新全部结果', 'kw_updated': '✅ 关键词设置已更新，已刷新全部结果',
-    'update_notice': '📅 更新机制: 本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。',
+    'update_notice_prefix': '📅 更新机制:', 'update_notice': '本周增量数据将在下周更新时自动并入存量。当前分界时间: 2026年8月3日。',
     'baidu_30day_title': '过去30天百度搜索量趋势', 'baidu_heatmap_title': '场景×关键词相关性热力图',
     'scene_driving': '驾驶', 'scene_office': '办公', 'scene_outdoor': '户外运动', 'scene_photo': '摄影', 'scene_digital': '电子产品',
     'brand_zeiss': '蔡司 ZEISS', 'brand_essilor': '依视路 Essilor', 'brand_hoya': '豪雅 HOYA', 'brand_nikon': '尼康 Nikon', 'brand_generic': '通用品类',
   },
   en: {
     'lang_label': '中', 'lang_tip': 'Switch to Chinese', 'back_to_main': '← Back to Report', 'back_to_main_cancel': '← Back to Report (Discard)', 'confirm_save': '✓ Done (Save)',
-    'main_title': 'Progressive Lens Sentiment Monitoring Platform', 'main_subtitle': 'Data Range: XHS/Douyin/WeChat OA | Past 30 Days | 103 Optical Posts | Generated: 2026-08-09 22:38',
+    'main_title': 'Progressive Lens Sentiment Monitoring Platform', 'main_subtitle': 'Data Range: XHS/Douyin/WeChat OA/Bilibili/Zhihu | Past 30 Days | 103 Optical Posts | Generated: 2026-08-09 22:38',
     'kw_config': 'Keyword Configuration', 'kw_settings_btn': '⚙️ Keyword Settings', 'kw_summary_fmt': 'Content {content} · Sentiment {pos} {neg}',
     'sec1_title': 'I. Platform Sentiment Overview', 'card_total_posts': 'Total Posts Analyzed', 'card_platform_dist': 'Platform Distribution', 'card_view_detail': 'Click for details', 'card_positive_rate': 'Positive Rate', 'card_negative_rate': 'Negative Rate', 'card_pos_bar': 'positive', 'card_neg_bar': 'negative', 'sentiment_dist': 'Sentiment Distribution by Platform', 'platform': 'Platform', 'total': 'Total', 'positive': 'Positive', 'negative': 'Negative', 'neutral': 'Neutral', 'distribution': 'Distribution',
     'sec2_title': 'II. Top 10 Positive/Negative Keywords by Platform', 'pos_keywords': 'Positive Keywords', 'neg_keywords': 'Negative Keywords', 'category': 'Category',
@@ -411,7 +412,7 @@ var I18N = {
     'drilldown_all_items': 'All Posts List', 'drilldown_platform_data': 'Platform Comment Distribution', 'drilldown_pos_summary': 'Positive Keyword Summary', 'drilldown_neg_summary': 'Negative Keyword Summary', 'drilldown_detail': 'Drill-down Detail', 'drilldown_no_data': 'No drill-down data', 'close_panel': '✕ Close', 'col_title': 'Title', 'col_abstract': 'Abstract', 'col_sentiment': 'Sentiment', 'col_match_kw': 'Match Keywords', 'col_link': 'Link', 'col_no_kw': 'No keywords',
     'brand_comment_detail': 'Comment Sentiment Drill-down', 'tab_all_kw': 'All Keywords', 'tab_by_platform': 'By Platform', 'tab_association': 'Brand-Keyword Association', 'brand_pos_no_data': 'No positive keywords', 'brand_neg_no_data': 'No negative keywords',
     'refresh_done': '✅ Analysis complete! All results updated', 'kw_updated': '✅ Keyword settings updated, all results refreshed',
-    'update_notice': '📅 Update mechanism: weekly incremental data will be merged into stock next week. Current cutoff: Aug 3, 2026.',
+    'update_notice_prefix': '📅 Update Mechanism:', 'update_notice': 'Weekly incremental data will be merged into stock next week. Current cutoff: Aug 3, 2026.',
     'baidu_30day_title': 'Past 30-Day Baidu Search Trend', 'baidu_heatmap_title': 'Scenario × Keyword Correlation Heatmap',
     'scene_driving': 'Driving', 'scene_office': 'Office', 'scene_outdoor': 'Outdoor Sports', 'scene_photo': 'Photography', 'scene_digital': 'Digital Devices',
     'brand_zeiss': 'ZEISS', 'brand_essilor': 'Essilor', 'brand_hoya': 'HOYA', 'brand_nikon': 'Nikon', 'brand_generic': 'Generic',
@@ -724,7 +725,7 @@ function rebuildAllData() {
   });
 
   PLATFORM_DATA = {};
-  ["小红书", "抖音", "公众号"].forEach(function(p) {
+  ["小红书", "抖音", "公众号", "B站", "知乎"].forEach(function(p) {
     PLATFORM_DATA[p] = { total: 0, positive: 0, negative: 0, neutral: 0,
       pos_categories: {}, neg_categories: {}, pos_keywords: {}, neg_keywords: {} };
   });
@@ -830,33 +831,35 @@ function renderOverview() {
   var xhs = ITEMS.filter(function(i) { return i.platform === "小红书"; }).length;
   var dy = ITEMS.filter(function(i) { return i.platform === "抖音"; }).length;
   var gzh = ITEMS.filter(function(i) { return i.platform === "公众号"; }).length;
+  var bili = ITEMS.filter(function(i) { return i.platform === "B站"; }).length;
+  var zhihu = ITEMS.filter(function(i) { return i.platform === "知乎"; }).length;
 
   document.getElementById("overview-row1").innerHTML =
     '<div class="card neutral" onclick="openDrilldown(\'overview-total\', event, 1)">' +
-      '<div class="label">📊 ' + '总帖子数' + '</div>' +
+      '<div class="label">📊 ' + t('card_total_posts') + '</div>' +
       '<div class="value">' + ITEMS.length + '</div>' +
-      '<div class="sub">正面' + totalPos + ' · 负面' + totalNeg + ' · 中性' + totalNeu + '</div>' +
+      '<div class="sub">' + t('positive') + totalPos + ' · ' + t('negative') + totalNeg + ' · ' + t('neutral') + totalNeu + '</div>' +
     '</div>' +
     '<div class="card" onclick="openDrilldown(\'overview-platform\', event, 1)">' +
-      '<div class="label">' + '平台分布' + '</div>' +
-      '<div class="value" style="font-size:24px;">📕' + xhs + ' 📱' + dy + ' 📰' + gzh + '</div>' +
-      '<div class="sub">' + '点击查看详情' + '</div>' +
+      '<div class="label">' + t('card_platform_dist') + '</div>' +
+      '<div class="value" style="font-size:24px;">📕' + xhs + ' 📱' + dy + ' 📰' + gzh + ' 📺' + bili + ' 💬' + zhihu + '</div>' +
+      '<div class="sub">' + t('card_view_detail') + '</div>' +
     '</div>';
   document.getElementById("overview-row2").innerHTML =
     '<div class="card positive" onclick="openDrilldown(\'overview-positive\', event, 2)">' +
-      '<div class="label">😊 ' + '正面率' + '</div>' +
+      '<div class="label">😊 ' + t('card_positive_rate') + '</div>' +
       '<div class="value">' + (totalPos/ITEMS.length*100).toFixed(1) + '%</div>' +
-      '<div class="sub">' + totalPos + '条正面</div>' +
+      '<div class="sub">' + totalPos + t('card_pos_bar') + '</div>' +
     '</div>' +
     '<div class="card negative" onclick="openDrilldown(\'overview-negative\', event, 2)">' +
-      '<div class="label">😟 ' + '负面率' + '</div>' +
+      '<div class="label">😟 ' + t('card_negative_rate') + '</div>' +
       '<div class="value">' + (totalNeg/ITEMS.length*100).toFixed(1) + '%</div>' +
-      '<div class="sub">' + totalNeg + '条负面</div>' +
+      '<div class="sub">' + totalNeg + t('card_neg_bar') + '</div>' +
     '</div>';
 }
 
 function renderPlatformSentimentTable() {
-  var html = "<h3>各平台正负中性分布</h3><table><tr><th>平台</th><th>总数</th><th>正面</th><th>负面</th><th>中性</th><th>分布</th></tr>";
+  var html = "<h3>" + t('sentiment_dist') + "</h3><table><tr><th>" + t('platform') + "</th><th>" + t('total') + "</th><th>" + t('positive') + "</th><th>" + t('negative') + "</th><th>" + t('neutral') + "</th><th>" + t('distribution') + "</th></tr>";
   for (var plat in PLATFORM_DATA) {
     var pd = PLATFORM_DATA[plat];
     if (pd.total === 0) continue;
@@ -882,23 +885,23 @@ function renderPlatformKeywords() {
   for (var plat in PLATFORM_DATA) {
     var pd = PLATFORM_DATA[plat];
     if (pd.total === 0) continue;
-    html += "<div class=\"chart-container\"><h3>" + plat + " — 正面关键词</h3>";
+    html += "<div class=\"chart-container\"><h3>" + plat + " — " + t('pos_keywords') + "</h3>";
     html += "<div style=\"display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px\">";
     pd.pos_keywords.slice(0, 10).forEach(function(pair) {
       html += "<span class=\"kw-tag pos\" style=\"cursor:pointer\" onclick=\"quickSearch('" + escapeJs(pair[0]) + "')\" title=\"点击搜索该关键词\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
     });
     html += "</div>";
-    html += "<div style=\"font-size:12px;color:#8a8f9a;\">类别: ";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;\">" + t('category') + ": ";
     html += pd.pos_categories.map(function(pair) { return pair[0] + "(" + pair[1] + ")"; }).join(", ");
     html += "</div></div>";
 
-    html += "<div class=\"chart-container\"><h3>" + plat + " — 负面关键词</h3>";
+    html += "<div class=\"chart-container\"><h3>" + plat + " — " + t('neg_keywords') + "</h3>";
     html += "<div style=\"display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px\">";
     pd.neg_keywords.slice(0, 10).forEach(function(pair) {
       html += "<span class=\"kw-tag neg\" style=\"cursor:pointer\" onclick=\"quickSearch('" + escapeJs(pair[0]) + "')\" title=\"点击搜索该关键词\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
     });
     html += "</div>";
-    html += "<div style=\"font-size:12px;color:#8a8f9a;\">类别: ";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;\">" + t('category') + ": ";
     html += pd.neg_categories.map(function(pair) { return pair[0] + "(" + pair[1] + ")"; }).join(", ");
     html += "</div></div>";
   }
@@ -935,11 +938,11 @@ function renderBrandGraph() {
     });
     html += "</div></div>";
   });
-  document.getElementById("brand-graph").innerHTML = html || "<p style=\"color:#8a8f9a;\">暂无品牌数据</p>";
+  document.getElementById("brand-graph").innerHTML = html || "<p style=\"color:#8a8f9a;\">" + t('brand_no_data') + "</p>";
 }
 
 function renderBrandPlatformTable() {
-  var html = "<table><tr><th>品牌</th><th>总提及</th><th>😊 正面</th><th>😟 负面</th><th>平台分布</th></tr>";
+  var html = "<table><tr><th>" + t('brand') + "</th><th>" + t('total_mentions') + "</th><th>😊 " + t('positive') + "</th><th>😟 " + t('negative') + "</th><th>" + t('platform_dist') + "</th></tr>";
   var sorted = Object.entries(BRAND_DATA).filter(function(pair) { return pair[1].total > 0; }).sort(function(a,b) { return b[1].total - a[1].total; });
   sorted.forEach(function(pair) {
     var brand = pair[0], bd = pair[1];
@@ -959,32 +962,32 @@ function renderBrandPlatformTable() {
 function renderStockIncr() {
   var html = "";
   html += "<div class=\"compact-item\"><div class=\"chart-container\" style=\"height:100%\">";
-  html += "<h3>📦 存量数据 (8/3前) — " + STOCK_DATA.count + "条</h3>";
+  html += "<h3>📦 " + t('stock_label') + " — " + STOCK_DATA.count + t('stock_count') + "</h3>";
   html += "<div style=\"display:flex;gap:12px;margin-bottom:10px\">";
-  html += "<span class=\"badge pos\">😊 " + STOCK_DATA.positive + "条</span>";
-  html += "<span class=\"badge neg\">😟 " + STOCK_DATA.negative + "条</span>";
-  html += "<span class=\"badge neu\">➖ " + STOCK_DATA.neutral + "条</span>";
+  html += "<span class=\"badge pos\">😊 " + STOCK_DATA.positive + t('stock_count') + "</span>";
+  html += "<span class=\"badge neg\">😟 " + STOCK_DATA.negative + t('stock_count') + "</span>";
+  html += "<span class=\"badge neu\">➖ " + STOCK_DATA.neutral + t('stock_count') + "</span>";
   html += "</div>";
   var sp = STOCK_DATA.count > 0 ? STOCK_DATA.positive/STOCK_DATA.count*100 : 0;
   var sn = STOCK_DATA.count > 0 ? STOCK_DATA.negative/STOCK_DATA.count*100 : 0;
   html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + sp + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + sn + "%\"></div></div>";
-  html += "<div style=\"font-size:12px;color:#8a8f9a\">品牌分布:</div>";
+  html += "<div style=\"font-size:12px;color:#8a8f9a\">" + t('brand_distribution') + ":</div>";
   Object.entries(STOCK_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
     html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
   });
   html += "</div></div>";
 
   html += "<div class=\"compact-item\"><div class=\"chart-container\" style=\"height:100%\">";
-  html += "<h3>🆕 本周增量 (8/3-8/9) — " + INCR_DATA.count + "条</h3>";
+  html += "<h3>🆕 " + t('incr_label') + " — " + INCR_DATA.count + t('stock_count') + "</h3>";
   html += "<div style=\"display:flex;gap:12px;margin-bottom:10px\">";
-  html += "<span class=\"badge pos\">😊 " + INCR_DATA.positive + "条</span>";
-  html += "<span class=\"badge neg\">😟 " + INCR_DATA.negative + "条</span>";
-  html += "<span class=\"badge neu\">➖ " + INCR_DATA.neutral + "条</span>";
+  html += "<span class=\"badge pos\">😊 " + INCR_DATA.positive + t('stock_count') + "</span>";
+  html += "<span class=\"badge neg\">😟 " + INCR_DATA.negative + t('stock_count') + "</span>";
+  html += "<span class=\"badge neu\">➖ " + INCR_DATA.neutral + t('stock_count') + "</span>";
   html += "</div>";
   var ip = INCR_DATA.count > 0 ? INCR_DATA.positive/INCR_DATA.count*100 : 0;
   var ine = INCR_DATA.count > 0 ? INCR_DATA.negative/INCR_DATA.count*100 : 0;
   html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + ip + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + ine + "%\"></div></div>";
-  html += "<div style=\"font-size:12px;color:#8a8f9a\">品牌分布:</div>";
+  html += "<div style=\"font-size:12px;color:#8a8f9a\">" + t('brand_distribution') + ":</div>";
   Object.entries(INCR_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
     html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
   });
@@ -1065,7 +1068,7 @@ function openDrilldown(type, ev, rowNum) {
 
   var panel = document.createElement("div");
   panel.className = "drilldown-panel";
-  panel.innerHTML = "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;\"><h3 style=\"margin:0;\">" + (titleMap[type] || t("drilldown_detail")) + "</h3><button class=\"dd-close\" onclick=\"closeInlineDrilldown()\">✕ 收起</button></div>" + inner;
+  panel.innerHTML = "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;\"><h3 style=\"margin:0;\">" + (titleMap[type] || t("drilldown_detail")) + "</h3><button class=\"dd-close\" onclick=\"closeInlineDrilldown()\">" + t("close_panel") + "</button></div>" + inner;
 
   // Insert into the corresponding expand-slot (outside the grid)
   var slotId = rowNum === 1 ? "row1-expand" : "row2-expand";
@@ -1097,7 +1100,7 @@ function showBrandCommentDetail(brand) {
     return;
   }
   currentBrandDetail = brand;
-  var html = "<button class=\"dd-close\" onclick=\"closeBrandDetail()\">✕ 收起</button>";
+  var html = "<button class=\"dd-close\" onclick=\"closeBrandDetail()\">" + t("close_panel") + "</button>";
   html += "<h3 style=\"margin-bottom:8px;\">" + escapeHtml(brand) + " — 评论情感关键词下钻</h3>";
   html += "<p style=\"color:#8a8f9a;font-size:13px;margin-bottom:12px;\">总提及 " + bd.total + " 条 | 😊" + bd.positive + " | 😟" + bd.negative + "</p>";
   html += "<div class=\"tabs\">";
@@ -1180,8 +1183,8 @@ function buildBrandKeywords(brand, bd) {
 }
 
 function buildBrandPlatformBreakdown(brand, bd) {
-  var html = "<table><tr><th>平台</th><th>总数</th><th>😊 正面</th><th>😟 负面</th><th>😐 中性</th></tr>";
-  ["小红书", "抖音", "公众号"].forEach(function(plat) {
+  var html = "<table><tr><th>" + t('platform') + "</th><th>" + t('total') + "</th><th>😊 " + t('positive') + "</th><th>😟 " + t('negative') + "</th><th>😐 " + t('neutral') + "</th></tr>";
+  ["小红书", "抖音", "公众号", "B站", "知乎"].forEach(function(plat) {
     var bp = bd.by_platform[plat];
     if (bp && bp.total > 0) {
       html += "<tr><td><strong>" + plat + "</strong></td><td>" + bp.total + "</td>";
@@ -1223,7 +1226,7 @@ function buildBrandAssociationGraph(brand) {
 }
 
 function buildAllItemsList() {
-  var html = "<table><tr><th>平台</th><th>标题</th><th>内容摘要</th><th>情感</th><th>匹配词</th><th>链接</th></tr>";
+  var html = "<table><tr><th>" + t('platform') + "</th><th>" + t('col_title') + "</th><th>" + t('col_abstract') + "</th><th>" + t('col_sentiment') + "</th><th>" + t('col_match_kw') + "</th><th>" + t('col_link') + "</th></tr>";
   ITEMS.forEach(function(item) {
     var sLabel = item.sentiment === "positive" ? "😊" : item.sentiment === "negative" ? "😟" : "😐";
     var sClass = item.sentiment === "positive" ? "pos" : item.sentiment === "negative" ? "neg" : "neu";
@@ -1255,7 +1258,7 @@ function buildAllItemsList() {
 }
 
 function buildPlatformTable() {
-  var html = "<table><tr><th>平台</th><th>总数</th><th>😊 正面</th><th>😟 负面</th><th>😐 中性</th></tr>";
+  var html = "<table><tr><th>" + t('platform') + "</th><th>" + t('total') + "</th><th>😊 " + t('positive') + "</th><th>😟 " + t('negative') + "</th><th>😐 " + t('neutral') + "</th></tr>";
   for (var plat in PLATFORM_DATA) {
     var pd = PLATFORM_DATA[plat];
     if (pd.total === 0) continue;
@@ -1269,7 +1272,7 @@ function buildPlatformTable() {
 }
 
 function buildTopKeywords(sentiment) {
-  var html = "<table><tr><th>平台</th><th>Top 15 关键词</th><th>类别分布</th></tr>";
+  var html = "<table><tr><th>" + t('platform') + "</th><th>Top 15 " + t('pos_keywords') + "</th><th>" + t('category') + "</th></tr>";
   for (var plat in PLATFORM_DATA) {
     var pd = PLATFORM_DATA[plat];
     if (pd.total === 0) continue;
