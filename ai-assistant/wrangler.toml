@@ -1,0 +1,10 @@
+name = "progressive-lens-ai-assistant"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# 环境变量：在 Cloudflare 控制台 → Workers → 你的 Worker → Settings → Variables 中添加
+# HUNYUAN_API_KEY = "你的混元API Key"
+# 或通过 CLI: wrangler secret put HUNYUAN_API_KEY
+
+[vars]
+# 不使用明文密钥，请使用 wrangler secret put 或控制台添加
