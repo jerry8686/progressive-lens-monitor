@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.6</title>
+<title>渐进镜舆情监控平台 v2.7.1</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -1966,13 +1966,13 @@ window.addEventListener("DOMContentLoaded", function() {
 <!-- ==================== AI Assistant Widget ==================== -->
 <button class="ai-fab" id="ai-fab" onclick="toggleAIPanel()">
   <span class="ai-fab-icon">🤖</span>
-  <span>AI 解读助手</span>
+  <span>PAL Mate</span>
 </button>
 
 <div class="ai-panel" id="ai-panel">
   <div class="ai-panel-header">
     <div>
-      <div class="ai-title">🤖 渐进镜数据 AI 助手</div>
+      <div class="ai-title">🤖 万里灵镜 PAL Mate</div>
       <div class="ai-sub">基于真实舆情数据，帮你解读洞察</div>
     </div>
     <button class="ai-close" onclick="toggleAIPanel()">✕</button>
@@ -1997,8 +1997,8 @@ function toggleAIPanel() {
   var panel = document.getElementById('ai-panel');
   panel.classList.toggle('open');
   if (panel.classList.contains('open') && aiHistory.length === 0) {
-    addAIMessage('bot', '你好！我是渐进镜舆情数据助手 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」或「What\'s the sentiment across platforms?」');
-    aiHistory.push({ role: 'assistant', content: '你好！我是渐进镜舆情数据助手。' });
+    addAIMessage('bot', '你好！我是万里灵镜 PAL Mate 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」或「What\'s the sentiment across platforms?」');
+    aiHistory.push({ role: 'assistant', content: '你好！我是万里灵镜 PAL Mate。' });
   }
   if (panel.classList.contains('open')) {
     setTimeout(function(){ document.getElementById('ai-input').focus(); }, 100);
@@ -2057,7 +2057,7 @@ async function sendAIMessage() {
 
   if (AI_API_ENDPOINT.includes('your-subdomain')) {
     thinkingMsg.classList.remove('thinking');
-    thinkingMsg.innerHTML = renderMarkdown('⚠️ **后端未配置**\n\nAI 助手需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）');
+    thinkingMsg.innerHTML = renderMarkdown('⚠️ **后端未配置**\n\nPAL Mate 需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）');
     document.getElementById('ai-status').textContent = '';
     return;
   }

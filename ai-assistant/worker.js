@@ -1,4 +1,4 @@
-// Cloudflare Worker - 渐进镜舆情平台 AI 助手代理
+// Cloudflare Worker - 万里灵镜 PAL Mate 代理（渐进镜舆情平台 AI 助手）
 // 接收前端聊天请求，注入数据上下文，转发到腾讯混元 OpenAI 兼容接口
 
 import { SYSTEM_PROMPT } from "./data_context.js";
@@ -104,7 +104,7 @@ export default {
       return handleChat(request, env);
     }
 
-    return new Response("Progressive Lens AI Assistant Worker. POST to /api/chat", {
+    return new Response("万里灵镜 PAL Mate (Progressive Lens AI Assistant) Worker. POST to /api/chat", {
       status: 200,
       headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
