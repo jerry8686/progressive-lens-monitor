@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.8.4</title>
+<title>渐进镜舆情监控平台 v2.8.5</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -125,6 +125,17 @@ canvas { display: block; max-width: 100%; }
 :root { --zeiss: #58a6ff; --essilor: #f78166; --hoya: #7ee787; --purple: #a371f7; }
 .section { margin-bottom: 48px; }
 .section-title { font-size: 20px; font-weight: 600; color: #58a6ff; padding-bottom: 12px; border-bottom: 2px solid #2a2d3a; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+/* ===== 模块收缩（三角形按钮） ===== */
+.sec-wrap { margin-bottom: 48px; }
+.sec-headrow { display: flex; align-items: center; margin-bottom: 0; }
+.sec-headrow h2 { flex: 1; margin-top: 0; }
+.sec-toggle { cursor: pointer; user-select: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; margin-right: 6px; border-radius: 5px; color: #58a6ff; font-size: 12px; line-height: 1; flex: none;
+  transition: background .15s, transform .15s; background: rgba(88,166,255,.08); }
+.sec-toggle:hover { background: rgba(88,166,255,.22); transform: scale(1.08); }
+.sec-wrap.collapsed > *:not(.sec-headrow) { display: none !important; }
+.sec-wrap.collapsed .sec-headrow h2 { border-bottom: none !important; padding-bottom: 0 !important; margin-bottom: 16px !important; color: #8a8f9a; }
+.sec-collapsed-hint { font-size: 12px; color: #5a6070; margin-left: 8px; font-weight: 400; }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
 .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; }
@@ -451,7 +462,7 @@ var __LANG__ = 'zh';
 var I18N = {
   zh: {
     'lang_label': 'EN', 'lang_tip': 'Switch to English', 'back_to_main': '← 返回主报告', 'back_to_main_cancel': '← 返回主报告（放弃更改）', 'confirm_save': '✓ 完成（保存更改）',
-    'main_title': '渐进镜舆情监控平台', 'main_subtitle': '数据范围: 小红书/抖音/公众号/B站/知乎 | 近30天 | 103条光学相关帖子 | 生成时间: 2026-08-09 22:38',
+    'main_title': '渐进镜舆情监控平台', 'main_subtitle': '数据范围: 小红书/抖音/公众号/B站/知乎 | 近30天 | 103条光学相关帖子 | 交叉对比场景数据刷新: 2026-08-21（红狐近30天真实社媒量 + Chinaz 百度）',
     'kw_config': '关键词配置', 'kw_settings_btn': '⚙️ 设置关键词', 'kw_summary_fmt': '内容词 {content} · 评论词 {pos} {neg}',
     'sec1_title': '一、四平台评论情感总览', 'card_total_posts': '总分析帖子数', 'card_platform_dist': '各平台评论分布', 'card_view_detail': '点击查看详情', 'card_positive_rate': '正面评论占比', 'card_negative_rate': '负面评论占比', 'card_pos_bar': '条正面', 'card_neg_bar': '条负面', 'sentiment_dist': '各平台正负中性分布', 'platform': '平台', 'total': '总数', 'positive': '正面', 'negative': '负面', 'neutral': '中性', 'distribution': '分布',
     'sec2_title': '二、各平台正负面评论关键词 Top 10', 'pos_keywords': '正面关键词', 'neg_keywords': '负面关键词', 'category': '类别',
@@ -890,6 +901,46 @@ function initAll() {
 }
 
 // ==================== RENDER ALL ====================
+// ==================== 模块收缩（三角形按钮） ====================
+function setupCollapsibles() {
+  var states = {};
+  try { states = JSON.parse(localStorage.getItem('pl_collapse') || '{}'); } catch (e) {}
+  var h2s = Array.prototype.slice.call(document.querySelectorAll('.container h2'));
+  h2s.forEach(function(h2, idx) {
+    var key = h2.getAttribute('data-i18n') || ('sec' + idx);
+    if (h2.parentNode && h2.parentNode.classList && h2.parentNode.classList.contains('sec-wrap')) return; // 已处理
+    var wrap = document.createElement('div');
+    wrap.className = 'sec-wrap';
+    var headrow = document.createElement('div');
+    headrow.className = 'sec-headrow';
+    var btn = document.createElement('span');
+    btn.className = 'sec-toggle';
+    btn.textContent = '▼';
+    btn.title = '点击折叠/展开本模块';
+    headrow.appendChild(btn);
+    h2.parentNode.insertBefore(wrap, h2);
+    wrap.appendChild(headrow);
+    headrow.appendChild(h2);
+    // 收集 h2 之后到下一个 h2 之前的兄弟节点
+    var n = h2.nextSibling;
+    while (n && !(n.nodeType === 1 && n.tagName === 'H2')) {
+      var nx = n.nextSibling;
+      wrap.appendChild(n);
+      n = nx;
+    }
+    if (states[key]) { wrap.classList.add('collapsed'); btn.textContent = '▶'; }
+    function toggle() {
+      wrap.classList.toggle('collapsed');
+      btn.textContent = wrap.classList.contains('collapsed') ? '▶' : '▼';
+      states[key] = wrap.classList.contains('collapsed');
+      try { localStorage.setItem('pl_collapse', JSON.stringify(states)); } catch (e) {}
+    }
+    btn.addEventListener('click', function(e) { e.stopPropagation(); toggle(); });
+    h2.style.cursor = 'pointer';
+    h2.addEventListener('click', function(e) { if (e.target && e.target.tagName !== 'BUTTON') toggle(); });
+  });
+}
+
 function renderAll() {
   renderOverview();
   renderPlatformSentimentTable();
@@ -903,6 +954,7 @@ function renderAll() {
   renderScenarioComparison();
   renderBaidu30Day();
   renderScenarioHeatmap();
+  setupCollapsibles();
   setTimeout(function() { i18nDom(); }, 200);
 }
 
@@ -1486,70 +1538,97 @@ function renderBaiduIndex() {
 
 // ==================== SCENARIO COMPARISON ====================
 function renderScenarioComparison() {
-  // Define scenarios with keywords
-  var scenarios = [
-    { name: "驾驶", icon: "🚗", keywords: ["驾驶", "开车", "驾车", "夜驾", "行车", "司机", "驾照", "路况"], color: "#58a6ff" },
-    { name: "办公", icon: "💻", keywords: ["办公", "电脑", "上班", "桌前", "屏幕", "工作", "打字", "写字楼"], color: "#f78166" },
-    { name: "户外运动", icon: "⛳", keywords: ["户外", "运动", "跑步", "骑行", "高尔夫", "钓鱼", "爬山", "徒步", "健身", "球"], color: "#7ee787" },
-    { name: "摄影", icon: "📷", keywords: ["摄影", "拍照", "相机", "单反", "取景", "快门", "镜头焦距"], color: "#d2a8ff" },
-    { name: "电子产品", icon: "📱", keywords: ["手机", "电子", "数码", "平板", "电脑", "屏幕", "显示器", "笔记本", "视频", "游戏"], color: "#fbbf24" }
-  ];
+  // ===== 真实数据（2026-08-21）=====
+  // 社媒内容量 = 红狐多平台近30天真实总量(xhs+dy+gzh)；百度搜索量 = Chinaz 月搜索量
+  // 场景专属渐进镜词在百度均"无收录"(长尾)，故搜索量≈0；以下为真实抓取结果
+  var CROSS_DATA = {
+    "驾驶": [
+      {kw:"驾驶渐进镜", social:13, xhs:0, dy:0, gzh:13},
+      {kw:"开车渐进镜", social:20, xhs:1, dy:0, gzh:19},
+      {kw:"驾驶老花镜", social:0, xhs:0, dy:0, gzh:0},
+      {kw:"开车老花镜", social:10, xhs:4, dy:0, gzh:6},
+      {kw:"驾驶多焦点眼镜", social:0, xhs:0, dy:0, gzh:0},
+      {kw:"夜间驾驶老花镜", social:0, xhs:0, dy:0, gzh:0}
+    ],
+    "办公数码": [
+      {kw:"办公渐进镜", social:22, xhs:1, dy:0, gzh:21},
+      {kw:"电脑渐进镜", social:9, xhs:1, dy:0, gzh:8},
+      {kw:"手机渐进镜", social:94, xhs:2, dy:0, gzh:92},
+      {kw:"防蓝光渐进镜", social:2, xhs:1, dy:0, gzh:1},
+      {kw:"办公老花镜", social:2, xhs:0, dy:0, gzh:2},
+      {kw:"渐进防蓝光眼镜", social:1, xhs:1, dy:0, gzh:0},
+      {kw:"数码老花镜", social:5, xhs:1, dy:0, gzh:4},
+      {kw:"室内渐进镜", social:13, xhs:1, dy:0, gzh:12},
+      {kw:"阅读渐进镜", social:23, xhs:2, dy:0, gzh:21}
+    ],
+    "户外运动": [
+      {kw:"户外渐进镜", social:27, xhs:6, dy:0, gzh:21},
+      {kw:"徒步老花镜", social:2, xhs:0, dy:0, gzh:2},
+      {kw:"旅游老花镜", social:1, xhs:1, dy:0, gzh:0},
+      {kw:"钓鱼老花镜", social:0, xhs:0, dy:0, gzh:0},
+      {kw:"运动老花镜", social:3, xhs:1, dy:0, gzh:2},
+      {kw:"户外老花镜", social:6, xhs:2, dy:0, gzh:4},
+      {kw:"运动渐进镜", social:67, xhs:5, dy:1, gzh:61}
+    ],
+    "摄影": [
+      {kw:"摄影渐进镜", social:36, xhs:0, dy:0, gzh:36},
+      {kw:"摄影老花镜", social:1, xhs:1, dy:0, gzh:0},
+      {kw:"摄影师老花镜", social:4, xhs:0, dy:0, gzh:4},
+      {kw:"摄影渐进片", social:72, xhs:3, dy:0, gzh:69},
+      {kw:"相机老花镜", social:6, xhs:0, dy:0, gzh:6}
+    ],
+    "时尚": [
+      {kw:"偏光渐进镜", social:3, xhs:0, dy:0, gzh:3},
+      {kw:"变色渐进镜", social:12, xhs:4, dy:0, gzh:8},
+      {kw:"渐进太阳镜", social:13, xhs:6, dy:0, gzh:7},
+      {kw:"渐进墨镜", social:27, xhs:6, dy:0, gzh:21},
+      {kw:"染色渐进镜片", social:0, xhs:0, dy:0, gzh:0},
+      {kw:"时尚渐进镜", social:25, xhs:2, dy:0, gzh:23}
+    ]
+  };
 
-  var platforms = ["小红书", "抖音", "公众号"];
+  var SCENE_ORDER = ["驾驶", "办公数码", "户外运动", "摄影", "时尚"];
+  var SCENE_META = {
+    "驾驶": {icon:"🚗", color:"#58a6ff"},
+    "办公数码": {icon:"💻", color:"#f78166"},
+    "户外运动": {icon:"🏕️", color:"#7ee787"},
+    "摄影": {icon:"📷", color:"#d2a8ff"},
+    "时尚": {icon:"🕶️", color:"#fbbf24"}
+  };
+  // 聚合各场景
+  var AGG = {};
+  SCENE_ORDER.forEach(function(sc) {
+    var recs = CROSS_DATA[sc];
+    var social = 0, xhs = 0, dy = 0, gzh = 0;
+    recs.forEach(function(r) { social += r.social; xhs += r.xhs; dy += r.dy; gzh += r.gzh; });
+    AGG[sc] = { social: social, xhs: xhs, dy: dy, gzh: gzh, recs: recs };
+  });
 
-  // ===== Card 1: Platform content =====
-  var platformHtml = "";
-
-  // Scenario cards grid
-  platformHtml += '<div class="scenario-grid">';
-  scenarios.forEach(function(sc) {
-    var matched = ITEMS.filter(function(item) {
-      var text = (item.title || "") + " " + (item.desc || "");
-      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
-    });
-    var byPlatform = {};
-    platforms.forEach(function(p) {
-      byPlatform[p] = matched.filter(function(m) { return m.platform === p; }).length;
-    });
-    // Also check "未知" platform
-    var otherCount = matched.filter(function(m) { return platforms.indexOf(m.platform) < 0; }).length;
-
+  // ===================== Card 1: 平台内容场景分布（真实社媒量）=====================
+  var platformHtml = '<div class="scenario-grid">';
+  SCENE_ORDER.forEach(function(sc) {
+    var a = AGG[sc], m = SCENE_META[sc];
     platformHtml += '<div class="scenario-item">';
-    platformHtml += '<div class="sc-icon">' + sc.icon + '</div>';
-    platformHtml += '<div class="sc-name">' + sc.name + '</div>';
-    platformHtml += '<div class="sc-count" style="color:' + sc.color + '">' + matched.length + '</div>';
-    platformHtml += '<div class="sc-detail">';
-    var parts = [];
-    platforms.forEach(function(p) {
-      if (byPlatform[p] > 0) parts.push(p.substring(0,1) + byPlatform[p]);
-    });
-    if (otherCount > 0) parts.push("其他" + otherCount);
-    platformHtml += parts.length > 0 ? parts.join(" · ") : "暂无";
-    platformHtml += '</div>';
+    platformHtml += '<div class="sc-icon">' + m.icon + '</div>';
+    platformHtml += '<div class="sc-name">' + sc + '</div>';
+    platformHtml += '<div class="sc-count" style="color:' + m.color + '">' + a.social.toLocaleString() + '</div>';
+    platformHtml += '<div class="sc-detail">近30天社媒内容量</div>';
     platformHtml += '</div>';
   });
   platformHtml += '</div>';
 
-  // Platform breakdown bars
+  // 各场景平台分布条
   platformHtml += '<div style="margin-top:20px;">';
-  scenarios.forEach(function(sc) {
-    var matched = ITEMS.filter(function(item) {
-      var text = (item.title || "") + " " + (item.desc || "");
-      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
-    });
-    var total = matched.length;
-    var maxVal = Math.max(1, total);
-
+  SCENE_ORDER.forEach(function(sc) {
+    var a = AGG[sc], m = SCENE_META[sc];
+    var total = a.social; var maxVal = Math.max(1, total);
     platformHtml += '<div style="margin-bottom:12px;">';
-    platformHtml += '<div style="font-size:13px;font-weight:600;margin-bottom:6px;">' + sc.icon + ' ' + sc.name + ' <span style="color:#8a8f9a;font-size:12px;">(' + total + '条)</span></div>';
-
-    platforms.forEach(function(p) {
-      var cnt = matched.filter(function(m) { return m.platform === p; }).length;
-      var pct = total > 0 ? (cnt / total * 100) : 0;
-      var width = total > 0 ? (cnt / maxVal * 100) : 0;
+    platformHtml += '<div style="font-size:13px;font-weight:600;margin-bottom:6px;">' + m.icon + ' ' + sc + ' <span style="color:#8a8f9a;font-size:12px;">(' + total + '条)</span></div>';
+    [['小红书', a.xhs, '#FF2442'], ['抖音', a.dy, '#FE2C55'], ['公众号', a.gzh, '#07C160']].forEach(function(p) {
+      var cnt = p[1]; var width = total > 0 ? (cnt / maxVal * 100) : 0;
       platformHtml += '<div class="scenario-bar-row">';
-      platformHtml += '<span class="scenario-bar-label">' + p + '</span>';
-      platformHtml += '<div class="scenario-bar-track"><div class="scenario-bar-fill" style="width:' + width + '%;background:' + sc.color + ';"></div></div>';
+      platformHtml += '<span class="scenario-bar-label">' + platLogo(p[0], 16) + p[0] + '</span>';
+      platformHtml += '<div class="scenario-bar-track"><div class="scenario-bar-fill" style="width:' + width + '%;background:' + p[2] + ';"></div></div>';
       platformHtml += '<span class="scenario-bar-val">' + cnt + '</span>';
       platformHtml += '</div>';
     });
@@ -1557,179 +1636,74 @@ function renderScenarioComparison() {
   });
   platformHtml += '</div>';
 
-  // Brand association per scenario
-  platformHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
-  platformHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">各场景品牌关联</h4>';
-  platformHtml += '<table class="scenario-table"><tr><th>场景</th><th>关联品牌（提及次数）</th><th>典型内容</th></tr>';
-  scenarios.forEach(function(sc) {
-    var matched = ITEMS.filter(function(item) {
-      var text = (item.title || "") + " " + (item.desc || "");
-      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
-    });
-    var brandCounts = {};
-    matched.forEach(function(m) {
-      (m.brands || []).forEach(function(b) {
-        brandCounts[b] = (brandCounts[b] || 0) + 1;
-      });
-    });
-    var sortedBrands = Object.keys(brandCounts).sort(function(a, b) { return brandCounts[b] - brandCounts[a]; });
-    var brandStr = sortedBrands.length > 0
-      ? sortedBrands.map(function(b) { return b + "(" + brandCounts[b] + ")"; }).join("、")
-      : '<span style="color:#555;">无品牌提及</span>';
-
-    // Find a representative post
-    var sample = matched.length > 0 ? matched[0] : null;
-    var sampleStr = sample
-      ? '<span style="color:#8a8f9a;">' + escapeHtml(sample.title.substring(0, 30)) + (sample.title.length > 30 ? "..." : "") + '</span>'
-      : '<span style="color:#555;">-</span>';
-
-    platformHtml += '<tr><td style="font-weight:600;color:' + sc.color + ';">' + sc.icon + ' ' + sc.name + '</td>';
-    platformHtml += '<td>' + brandStr + '</td>';
-    platformHtml += '<td>' + sampleStr + '</td></tr>';
-  });
-  platformHtml += '</table>';
-  platformHtml += '</div>';
-
-  // Insight
   platformHtml += '<div class="scenario-insight">';
-  platformHtml += '<strong>洞察：</strong>电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。';
+  platformHtml += '<strong>社媒洞察（红狐近30天真实数据 · 各场景=渐进镜关联子关键词内容量之和）：</strong>办公数码场景社媒声量最高（' + AGG['办公数码'].social + '条），主因"手机渐进镜""阅读渐进镜"在公众号有稳定讨论；摄影（' + AGG['摄影'].social + '条）、户外运动（' + AGG['户外运动'].social + '条）次之；驾驶（' + AGG['驾驶'].social + '条）与时尚（' + AGG['时尚'].social + '条）相对较小。整体社媒讨论以<strong>公众号深度内容</strong>为主，小红书/抖音偏少——短视频种草仍有空间。';
   platformHtml += '</div>';
-
   document.getElementById("scenario-platform-card").innerHTML = platformHtml;
 
-  // ===== Card 2: Baidu Index =====
-  var baiduScenarios = [
-    { name: "驾驶", icon: "🚗", color: "#58a6ff", keywords: [
-      { kw: "驾驶眼镜", vol: 480, intent: "驾驶专用眼镜", trend: "稳定" },
-      { kw: "开车眼镜", vol: 210, intent: "开车场景需求", trend: "稳定" },
-      { kw: "夜驾眼镜", vol: 0, intent: "夜间驾驶(百度无收录)", trend: "—" },
-      { kw: "蔡司驾驶渐进镜", vol: 0, intent: "品牌驾驶渐进(百度无收录)", trend: "—" }
-    ]},
-    { name: "办公", icon: "💻", color: "#f78166", keywords: [
-      { kw: "办公眼镜", vol: 0, intent: "办公场景(百度无收录)", trend: "—" },
-      { kw: "电脑眼镜", vol: 1170, intent: "电脑护目", trend: "稳定" },
-      { kw: "防蓝光办公镜", vol: 0, intent: "防蓝光办公(百度无收录)", trend: "—" },
-      { kw: "蔡司办公镜", vol: 0, intent: "品牌办公镜(百度无收录)", trend: "—" }
-    ]},
-    { name: "户外运动", icon: "⛳", color: "#7ee787", keywords: [
-      { kw: "运动眼镜", vol: 86490, intent: "运动防护", trend: "稳定" },
-      { kw: "户外眼镜", vol: 600, intent: "户外场景", trend: "稳定" },
-      { kw: "变色镜片", vol: 1470, intent: "户外变色需求", trend: "稳定" },
-      { kw: "偏光眼镜", vol: 45750, intent: "户外防眩光", trend: "稳定" }
-    ]},
-    { name: "摄影", icon: "📷", color: "#d2a8ff", keywords: [
-      { kw: "相机取景器", vol: 4980, intent: "相机附件", trend: "稳定" }
-    ]},
-    { name: "电子产品", icon: "📱", color: "#fbbf24", keywords: [
-      { kw: "手机眼镜", vol: 480, intent: "手机护目", trend: "稳定" },
-      { kw: "防蓝光眼镜", vol: 192060, intent: "电子屏幕防护", trend: "稳定" },
-      { kw: "豪雅手机镜", vol: 0, intent: "品牌手机镜(百度无收录)", trend: "—" },
-      { kw: "依视路爱赞数码", vol: 0, intent: "品牌数码镜(百度无收录)", trend: "—" }
-    ]}
-  ];
-
-  // Baidu scenario cards
+  // ===================== Card 2: 百度指数场景热度（真实搜索）=====================
   var baiduHtml = '<div class="scenario-grid">';
-  baiduScenarios.forEach(function(sc) {
-    var totalVol = sc.keywords.reduce(function(sum, k) { return sum + k.vol; }, 0);
+  SCENE_ORDER.forEach(function(sc) {
+    var a = AGG[sc], m = SCENE_META[sc];
     baiduHtml += '<div class="scenario-item">';
-    baiduHtml += '<div class="sc-icon">' + sc.icon + '</div>';
-    baiduHtml += '<div class="sc-name">' + sc.name + '</div>';
-    baiduHtml += '<div class="sc-count" style="color:' + sc.color + '">' + totalVol.toLocaleString() + '</div>';
-    baiduHtml += '<div class="sc-detail">月搜索总量</div>';
+    baiduHtml += '<div class="sc-icon">' + m.icon + '</div>';
+    baiduHtml += '<div class="sc-name">' + sc + '</div>';
+    baiduHtml += '<div class="sc-count" style="color:' + m.color + '">0</div>';
+    baiduHtml += '<div class="sc-detail">场景词百度无收录</div>';
     baiduHtml += '</div>';
   });
   baiduHtml += '</div>';
 
-  // Baidu detail table
+  // 子关键词明细表
   baiduHtml += '<div style="margin-top:20px;">';
-  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>核心关键词</th><th>月搜索量</th><th>搜索意图</th><th>趋势</th></tr>';
-  baiduScenarios.forEach(function(sc) {
-    sc.keywords.forEach(function(item, idx) {
+  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>子关键词（渐进镜关联）</th><th>百度月搜索量</th><th>社媒内容量(近30天)</th></tr>';
+  SCENE_ORDER.forEach(function(sc) {
+    var a = AGG[sc], m = SCENE_META[sc];
+    a.recs.forEach(function(r, idx) {
       baiduHtml += '<tr>';
-      if (idx === 0) {
-        baiduHtml += '<td rowspan="' + sc.keywords.length + '" style="font-weight:bold;color:' + sc.color + ';">' + sc.icon + ' ' + sc.name + '</td>';
-      }
-      baiduHtml += '<td><span class="baidu-tag" style="background:' + sc.color + '22;color:' + sc.color + ';">' + item.kw + '</span></td>';
-      baiduHtml += '<td style="font-weight:600;">' + item.vol.toLocaleString() + '</td>';
-      baiduHtml += '<td>' + item.intent + '</td>';
-      baiduHtml += '<td>' + item.trend + '</td>';
+      if (idx === 0) baiduHtml += '<td rowspan="' + a.recs.length + '" style="font-weight:bold;color:' + m.color + ';">' + m.icon + ' ' + sc + '</td>';
+      baiduHtml += '<td><span class="baidu-tag" style="background:' + m.color + '22;color:' + m.color + ';">' + r.kw + '</span></td>';
+      baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(无收录)</span></td>';
+      baiduHtml += '<td>' + r.social.toLocaleString() + '</td>';
       baiduHtml += '</tr>';
     });
   });
   baiduHtml += '</table>';
   baiduHtml += '</div>';
 
-  // Baidu insight
   baiduHtml += '<div class="scenario-insight" style="border-left-color:#f78166;">';
-  baiduHtml += '<strong>洞察（真实数据 2026-08-20，月搜索量 = 日均 PC+移动 ×30）：</strong>百度搜索维度上，电子产品（防蓝光眼镜 19.2万/月）搜索量绝对领先，反映大众对电子屏幕护目的刚性需求；户外运动（运动眼镜 8.6万 + 偏光 4.6万 + 变色 0.15万）次之，是百度侧真实高需求场景。但社媒内容（左卡）显示办公/电子场景讨论更多——存在供需错位：用户在百度搜"运动/偏光/防蓝光"等功能词，在社媒聊"办公/电子"等使用场景。驾驶、办公类细分词（夜驾眼镜、办公眼镜、蔡司办公镜等）百度几乎无收录（趋0），属长尾，内容缺口即机会；摄影场景百度侧仅"相机取景器"有弱需求（约0.5万/月），与渐进镜关联弱，原"摄影眼镜"词被低质内容占据已剔除。';
+  baiduHtml += '<strong>搜索洞察（Chinaz 真实数据）：</strong>各场景"场景专属渐进镜词"（如驾驶渐进镜、办公渐进镜、户外渐进镜等）在百度<strong>均无收录</strong>（长尾），故搜索量≈0。但渐进镜<strong>类目整体</strong>搜索需求真实且巨大（类目词如"老花镜""渐进镜片""防蓝光镜片"等搜索量庞大），说明"<strong>场景 + 渐进镜</strong>"是尚待开发的内容/SEO 蓝海——当前社媒已出现真实场景讨论，正是抢先布局搜索词与种草内容的窗口期。';
   baiduHtml += '</div>';
 
-  // Cross-comparison summary
+  // ===================== 双维度交叉对比（场景级）=====================
   baiduHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
-  baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 双维度交叉对比</h4>';
-  baiduHtml += '<table class="scenario-table"><tr><th>场景 / 关键词</th><th>社媒内容量</th><th>百度搜索量(月)</th><th>供需匹配度</th><th>策略建议</th></tr>';
-
-  // Compute per-keyword cross comparison (keyword-level, not scenario-sum)
-  var crossData = [];
-  scenarios.forEach(function(sc) {
-    var baiduMatch = baiduScenarios.filter(function(b) { return b.name === sc.name || b.displayName === sc.displayName; })[0];
-    if (!baiduMatch) return;
-    baiduMatch.keywords.forEach(function(kwObj) {
-      var kw = kwObj.kw;
-      var vol = kwObj.vol;
-      var socialCount = ITEMS.filter(function(item) {
-        var text = (item.title || "") + " " + (item.desc || "");
-        return text.indexOf(kw) >= 0;
-      }).length;
-      var matchLevel, strategy;
-      if (vol === 0) {
-        matchLevel = '<span style="color:#8a8f9a;">○ 百度无收录</span>';
-        strategy = "百度无该词数据，属长尾/品牌词，内容缺口即机会";
-      } else if (vol > 3000 && socialCount < 5) {
-        matchLevel = '<span style="color:#f87171;">⚠️ 供不应求</span>';
-        strategy = "搜索需求高但社媒内容少，应加大内容种草投入";
-      } else if (vol > 2000 && socialCount >= 5) {
-        matchLevel = '<span style="color:#4ade80;">✓ 匹配良好</span>';
-        strategy = "供需均衡，维持现有内容策略";
-      } else if (vol < 1000 && socialCount >= 3) {
-        matchLevel = '<span style="color:#fbbf24;">→ 供过于求</span>';
-        strategy = "搜索需求有限，内容可转向长尾SEO";
-      } else if (vol < 1000 && socialCount < 3) {
-        matchLevel = '<span style="color:#8a8f9a;">○ 长尾场景</span>';
-        strategy = "小众需求，适合精准投放而非规模化";
-      } else {
-        matchLevel = '<span style="color:#8a8f9a;">→ 待提升</span>';
-        strategy = "搜索和内容均有增长空间";
-      }
-      crossData.push({
-        scene: sc.name, icon: sc.icon, color: sc.color,
-        kw: kw, social: socialCount, baidu: vol,
-        match: matchLevel, strategy: strategy
-      });
-    });
-  });
-
-  crossData.forEach(function(d) {
+  baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 双维度交叉对比（场景级 · 真实数据）</h4>';
+  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>社媒内容量(近30天)</th><th>百度搜索量(月)</th><th>供需匹配度</th><th>策略建议</th></tr>';
+  SCENE_ORDER.forEach(function(sc) {
+    var a = AGG[sc], m = SCENE_META[sc];
+    var match, strategy;
+    if (a.social >= 150) {
+      match = '<span style="color:#4ade80;">✓ 社媒热度高</span>';
+      strategy = '社媒讨论活跃，应同步布局"场景+渐进镜"搜索词与种草内容，承接已被激活的需求';
+    } else if (a.social >= 80) {
+      match = '<span style="color:#fbbf24;">→ 社媒中等</span>';
+      strategy = '内容初具规模，可加大精准场景化种草，培育用户搜索心智';
+    } else {
+      match = '<span style="color:#8a8f9a;">○ 长尾小众</span>';
+      strategy = '需求尚早期，适合精准投放与 KOL 教育，暂不宜规模化投放';
+    }
     baiduHtml += '<tr>';
-    baiduHtml += '<td style="font-weight:600;color:' + d.color + ';">' + d.icon + ' ' + d.scene + '<br><span style="font-size:11px;color:#8a8f9a;">' + d.kw + '</span></td>';
-    baiduHtml += '<td>' + d.social + ' 条</td>';
-    baiduHtml += '<td' + (d.baidu === 0 ? ' style="color:#8a8f9a;"' : '') + '>' + d.baidu.toLocaleString() + (d.baidu === 0 ? ' <span style="font-size:11px;">(无收录)</span>' : '') + '</td>';
-    baiduHtml += '<td>' + d.match + '</td>';
-    baiduHtml += '<td style="font-size:12px;">' + d.strategy + '</td>';
+    baiduHtml += '<td style="font-weight:600;color:' + m.color + ';">' + m.icon + ' ' + sc + '</td>';
+    baiduHtml += '<td>' + a.social.toLocaleString() + ' 条</td>';
+    baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(无收录)</span></td>';
+    baiduHtml += '<td>' + match + '</td>';
+    baiduHtml += '<td style="font-size:12px;">' + strategy + '</td>';
     baiduHtml += '</tr>';
   });
-
   baiduHtml += '</table>';
   baiduHtml += '</div>';
-
   document.getElementById("scenario-baidu-card").innerHTML = baiduHtml;
 }
-
-
-
-
-
 
 
 // ==================== SCENARIO 30-DAY TREND + HEATMAP ====================
