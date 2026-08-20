@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.8</title>
+<title>渐进镜舆情监控平台 v2.8.2</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -1648,50 +1648,53 @@ function renderScenarioComparison() {
   // Cross-comparison summary
   baiduHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
   baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 双维度交叉对比</h4>';
-  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>社媒内容量</th><th>百度搜索量</th><th>供需匹配度</th><th>策略建议</th></tr>';
+  baiduHtml += '<table class="scenario-table"><tr><th>场景 / 关键词</th><th>社媒内容量</th><th>百度搜索量(月)</th><th>供需匹配度</th><th>策略建议</th></tr>';
 
-  // Compute social media counts
+  // Compute per-keyword cross comparison (keyword-level, not scenario-sum)
   var crossData = [];
   scenarios.forEach(function(sc) {
-    var socialCount = ITEMS.filter(function(item) {
-      var text = (item.title || "") + " " + (item.desc || "");
-      return sc.keywords.some(function(kw) { return text.indexOf(kw) >= 0; });
-    }).length;
-    var baiduTotal = 0;
     var baiduMatch = baiduScenarios.filter(function(b) { return b.name === sc.name || b.displayName === sc.displayName; })[0];
-    if (baiduMatch) {
-      baiduTotal = baiduMatch.keywords.reduce(function(sum, k) { return sum + k.vol; }, 0);
-    }
-    var matchLevel;
-    var strategy;
-    if (baiduTotal > 3000 && socialCount < 5) {
-      matchLevel = '<span style="color:#f87171;">⚠️ 供不应求</span>';
-      strategy = "搜索需求高但社媒内容少，应加大内容种草投入";
-    } else if (baiduTotal > 2000 && socialCount >= 5) {
-      matchLevel = '<span style="color:#4ade80;">✓ 匹配良好</span>';
-      strategy = "供需均衡，维持现有内容策略";
-    } else if (baiduTotal < 1000 && socialCount >= 3) {
-      matchLevel = '<span style="color:#fbbf24;">→ 供过于求</span>';
-      strategy = "搜索需求有限，内容可转向长尾SEO";
-    } else if (baiduTotal < 1000 && socialCount < 3) {
-      matchLevel = '<span style="color:#8a8f9a;">○ 长尾场景</span>';
-      strategy = "小众需求，适合精准投放而非规模化";
-    } else {
-      matchLevel = '<span style="color:#8a8f9a;">→ 待提升</span>';
-      strategy = "搜索和内容均有增长空间";
-    }
-    crossData.push({
-      name: sc.displayName || sc.name, icon: sc.icon, color: sc.color,
-      social: socialCount, baidu: baiduTotal,
-      match: matchLevel, strategy: strategy
+    if (!baiduMatch) return;
+    baiduMatch.keywords.forEach(function(kwObj) {
+      var kw = kwObj.kw;
+      var vol = kwObj.vol;
+      var socialCount = ITEMS.filter(function(item) {
+        var text = (item.title || "") + " " + (item.desc || "");
+        return text.indexOf(kw) >= 0;
+      }).length;
+      var matchLevel, strategy;
+      if (vol === 0) {
+        matchLevel = '<span style="color:#8a8f9a;">○ 百度无收录</span>';
+        strategy = "百度无该词数据，属长尾/品牌词，内容缺口即机会";
+      } else if (vol > 3000 && socialCount < 5) {
+        matchLevel = '<span style="color:#f87171;">⚠️ 供不应求</span>';
+        strategy = "搜索需求高但社媒内容少，应加大内容种草投入";
+      } else if (vol > 2000 && socialCount >= 5) {
+        matchLevel = '<span style="color:#4ade80;">✓ 匹配良好</span>';
+        strategy = "供需均衡，维持现有内容策略";
+      } else if (vol < 1000 && socialCount >= 3) {
+        matchLevel = '<span style="color:#fbbf24;">→ 供过于求</span>';
+        strategy = "搜索需求有限，内容可转向长尾SEO";
+      } else if (vol < 1000 && socialCount < 3) {
+        matchLevel = '<span style="color:#8a8f9a;">○ 长尾场景</span>';
+        strategy = "小众需求，适合精准投放而非规模化";
+      } else {
+        matchLevel = '<span style="color:#8a8f9a;">→ 待提升</span>';
+        strategy = "搜索和内容均有增长空间";
+      }
+      crossData.push({
+        scene: sc.name, icon: sc.icon, color: sc.color,
+        kw: kw, social: socialCount, baidu: vol,
+        match: matchLevel, strategy: strategy
+      });
     });
   });
 
   crossData.forEach(function(d) {
     baiduHtml += '<tr>';
-    baiduHtml += '<td style="font-weight:600;color:' + d.color + ';">' + d.icon + ' ' + d.name + '</td>';
+    baiduHtml += '<td style="font-weight:600;color:' + d.color + ';">' + d.icon + ' ' + d.scene + '<br><span style="font-size:11px;color:#8a8f9a;">' + d.kw + '</span></td>';
     baiduHtml += '<td>' + d.social + ' 条</td>';
-    baiduHtml += '<td>' + d.baidu.toLocaleString() + '</td>';
+    baiduHtml += '<td' + (d.baidu === 0 ? ' style="color:#8a8f9a;"' : '') + '>' + d.baidu.toLocaleString() + (d.baidu === 0 ? ' <span style="font-size:11px;">(无收录)</span>' : '') + '</td>';
     baiduHtml += '<td>' + d.match + '</td>';
     baiduHtml += '<td style="font-size:12px;">' + d.strategy + '</td>';
     baiduHtml += '</tr>';
