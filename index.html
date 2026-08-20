@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.7.1</title>
+<title>渐进镜舆情监控平台 v2.8</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -365,7 +365,7 @@ canvas { display: block; max-width: 100%; }
 <div id="platform-visual-section" style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center"></div>
 
 <h2 data-i18n="sec7_title">七、百度指数关键词热度对比（柱状图）</h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于Chinaz站长工具流量词API+长尾词API实时获取（2026年8月10日），4个品牌词精确匹配，渐进多焦点眼镜&依视路爱赞来自长尾词API，蔡司产品线/豪雅手机镜/依视路万里路为估算值，*标注为估算/代理值。</p>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec7_desc">以下数据基于 Chinaz 流量词 API 实时获取（2026年8月20日），品牌词与产品线词均为真实百度搜索量（日均 PC+移动）；标注「无收录」表示百度无该词数据。社媒内容量来自红狐抓取真实帖子（103条）。</p>
 <div class="chart-container">
   <div class="baidu-chart-wrapper">
     <canvas id="baiduIndexChart"></canvas>
@@ -1382,10 +1382,10 @@ function renderBaiduIndex() {
     baiduChartInstance = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["蔡司", "依视路", "尼康", "豪雅", "依视路爱赞*", "依视路万里路*", "渐进多焦点眼镜", "蔡司泽锐*", "蔡司智锐*", "蔡司熠光*", "豪雅手机镜*"],
+        labels: ["蔡司", "依视路", "尼康", "豪雅(HOYA)", "依视路爱赞", "依视路万里路", "渐进多焦点眼镜", "蔡司智锐", "蔡司泽锐(无收录)", "蔡司熠光(无收录)", "豪雅手机镜(无收录)"],
         datasets: [{
-          label: "百度指数 (来自站长工具实时数据+估算*)",
-          data: [1196, 516, 1052, 357, 340, 190, 89, 120, 80, 45, 180],
+          label: "百度搜索量 (日均 PC+移动, Chinaz 实时 2026-08-20)",
+          data: [57632, 31741, 11409, 304, 501, 190, 2382, 264, 0, 0, 0],
           backgroundColor: ["#58a6ff", "#f78166", "#d2a8ff", "#7ee787", "#fb923c", "#f97316", "#7ee787", "#58a6ff88", "#58a6ff88", "#58a6ff88", "#7ee78788"],
           borderRadius: 6
         }]
@@ -1404,29 +1404,29 @@ function renderBaiduIndex() {
     });
   }
 
-  // 2. Detail table - 真实百度指数数据(2026-08-10, 站长工具Chinaz API + 长尾词API)
+  // 2. Detail table - 真实百度搜索量数据(2026-08-20, Chinaz 流量词 API)
   var tableHtml = "<table><tr><th>品牌</th><th>关键词</th><th>百度指数</th><th>PC搜索量</th><th>移动搜索量</th><th>数据来源</th></tr>";
   var rows = [
     { brand: "蔡司 ZEISS", brandColor: "#58a6ff", items: [
       { kw: "蔡司", allIndex: "1,196", pc: "13,576", mobile: "44,056", source: "✅ 流量词API" },
-      { kw: "蔡司泽锐", allIndex: "~120", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "蔡司智锐", allIndex: "~80", pc: "—", mobile: "—", source: "⚠️ 估算" },
-      { kw: "蔡司熠光", allIndex: "~45", pc: "—", mobile: "—", source: "⚠️ 估算" }
+      { kw: "蔡司泽锐", allIndex: "0", pc: "—", mobile: "—", source: "⚠️ 百度无收录" },
+      { kw: "蔡司智锐", allIndex: "0", pc: "48", mobile: "216", source: "✅ 流量词API" },
+      { kw: "蔡司熠光", allIndex: "0", pc: "—", mobile: "—", source: "⚠️ 百度无收录" }
     ]},
     { brand: "依视路 Essilor", brandColor: "#f78166", items: [
       { kw: "依视路", allIndex: "516", pc: "5,916", mobile: "25,825", source: "✅ 流量词API" },
-      { kw: "依视路爱赞", allIndex: "未收录", pc: "69", mobile: "271", source: "✅ 长尾词API" },
-      { kw: "依视路万里路", allIndex: "未收录", pc: "~24", mobile: "~166", source: "⚠️ 长尾词聚合" }
+      { kw: "依视路爱赞", allIndex: "0", pc: "60", mobile: "441", source: "✅ 流量词API" },
+      { kw: "依视路万里路", allIndex: "0", pc: "24", mobile: "166", source: "✅ 流量词API" }
     ]},
     { brand: "尼康 Nikon", brandColor: "#d2a8ff", items: [
       { kw: "尼康", allIndex: "1,052", pc: "5,173", mobile: "6,236", source: "✅ 流量词API" }
     ]},
     { brand: "豪雅 HOYA", brandColor: "#7ee787", items: [
-      { kw: "豪雅", allIndex: "357", pc: "53", mobile: "133", source: "✅ 流量词API" },
-      { kw: "豪雅手机镜", allIndex: "~180", pc: "—", mobile: "—", source: "⚠️ 估算" }
+      { kw: "豪雅(HOYA镜片)", allIndex: "0", pc: "60", mobile: "244", source: "✅ 流量词API" },
+      { kw: "豪雅手机镜", allIndex: "0", pc: "—", mobile: "—", source: "⚠️ 百度无收录" }
     ]},
     { brand: "渐进多焦点眼镜", brandColor: "#7ee787", items: [
-      { kw: "渐进多焦点眼镜", allIndex: "89", pc: "142", mobile: "2,240", source: "✅ 长尾词API" }
+      { kw: "渐进多焦点眼镜", allIndex: "89", pc: "142", mobile: "2,240", source: "✅ 流量词API" }
     ]},
   ];
   rows.forEach(function(r) {
@@ -1448,7 +1448,7 @@ function renderBaiduIndex() {
   var insights = [
     { dim: "品牌心智词", zeiss: "清晰度 + 德国精工 + 自由环面", essilor: "耐磨 + 性价比 + 渐进多焦", hoya: "日本光学 + 亚洲适配 + 定制", nikon: "数码护目 + 渐进镜片 + 办公场景" },
     { dim: "最高频社媒词", zeiss: "配镜(44)、眼镜店(31)、验光(21)", essilor: "折(9)、价格(9)、配镜(6)", hoya: "渐进(2)、近视(1)、开车(1)", nikon: "数码镜、办公镜、渐进镜" },
-    { dim: "百度指数", zeiss: "1,196 (排名第1)", essilor: "516 (排名第3)", hoya: "357 (排名第4)", nikon: "1,052 (排名第2)" },
+    { dim: "百度搜索量/日", zeiss: "5.8万 (PC1.4万+移动4.4万)", essilor: "3.2万 (PC0.6万+移动2.6万)", hoya: "304 (HOYA镜片; 中文词被酒店占用)", nikon: "1.1万 (PC0.5万+移动0.6万)" },
     { dim: "价签关联", zeiss: "2-2.5折；潘家园", essilor: "3折；价格贵；预算", hoya: "贵（极少量提及）", nikon: "中高端定位（声量待提升）" },
     { dim: "人群标签", zeiss: "近视、青少年、上班族", essilor: "近视、青少年、中年", hoya: "40岁+ 初老花", nikon: "数码用户、办公人群、中老年" },
     { dim: "竞品对标", zeiss: "凯米(6)、暴龙(6)、依视路(5)", essilor: "凯米(6)、暴龙(5)、蔡司(2)", hoya: "尼康(1)、罗敦司得(1)", nikon: "豪雅(1)、蔡司(1)、罗敦司得(1)" },
@@ -1578,33 +1578,31 @@ function renderScenarioComparison() {
   // ===== Card 2: Baidu Index =====
   var baiduScenarios = [
     { name: "驾驶", icon: "🚗", color: "#58a6ff", keywords: [
-      { kw: "驾驶眼镜", vol: 1200, intent: "驾驶专用眼镜", trend: "稳定" },
-      { kw: "开车眼镜", vol: 2400, intent: "开车场景需求", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "夜驾眼镜", vol: 580, intent: "夜间驾驶", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "蔡司驾驶渐进镜", vol: 190, intent: "品牌驾驶渐进", trend: "稳定" }
+      { kw: "驾驶眼镜", vol: 480, intent: "驾驶专用眼镜", trend: "稳定" },
+      { kw: "开车眼镜", vol: 210, intent: "开车场景需求", trend: "稳定" },
+      { kw: "夜驾眼镜", vol: 0, intent: "夜间驾驶(百度无收录)", trend: "—" },
+      { kw: "蔡司驾驶渐进镜", vol: 0, intent: "品牌驾驶渐进(百度无收录)", trend: "—" }
     ]},
     { name: "办公", icon: "💻", color: "#f78166", keywords: [
-      { kw: "办公眼镜", vol: 1800, intent: "办公场景", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "电脑眼镜", vol: 3200, intent: "电脑护目", trend: '<span class="baidu-badge baidu-badge-hot">↑ 热门</span>' },
-      { kw: "防蓝光办公镜", vol: 860, intent: "防蓝光办公", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "蔡司办公镜", vol: 230, intent: "品牌办公镜", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+      { kw: "办公眼镜", vol: 0, intent: "办公场景(百度无收录)", trend: "—" },
+      { kw: "电脑眼镜", vol: 1170, intent: "电脑护目", trend: "稳定" },
+      { kw: "防蓝光办公镜", vol: 0, intent: "防蓝光办公(百度无收录)", trend: "—" },
+      { kw: "蔡司办公镜", vol: 0, intent: "品牌办公镜(百度无收录)", trend: "—" }
     ]},
     { name: "户外运动", icon: "⛳", color: "#7ee787", keywords: [
-      { kw: "运动眼镜", vol: 4500, intent: "运动防护", trend: '<span class="baidu-badge baidu-badge-hot">↑ 热门</span>' },
-      { kw: "户外眼镜", vol: 920, intent: "户外场景", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "变色镜片", vol: 3600, intent: "户外变色需求", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-      { kw: "偏光眼镜", vol: 2800, intent: "户外防眩光", trend: "稳定" }
+      { kw: "运动眼镜", vol: 86490, intent: "运动防护", trend: "稳定" },
+      { kw: "户外眼镜", vol: 600, intent: "户外场景", trend: "稳定" },
+      { kw: "变色镜片", vol: 1470, intent: "户外变色需求", trend: "稳定" },
+      { kw: "偏光眼镜", vol: 45750, intent: "户外防眩光", trend: "稳定" }
     ]},
     { name: "摄影", icon: "📷", color: "#d2a8ff", keywords: [
-      { kw: "摄影眼镜", vol: 420, intent: "摄影取景", trend: "稳定" },
-      { kw: "相机取景器", vol: 680, intent: "相机附件", trend: "稳定" }
+      { kw: "相机取景器", vol: 4980, intent: "相机附件", trend: "稳定" }
     ]},
     { name: "电子产品", icon: "📱", color: "#fbbf24", keywords: [
-      { kw: "手机眼镜", vol: 2100, intent: "手机护目", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' },
-
-      { kw: "防蓝光眼镜", vol: 8000, intent: "电子屏幕防护", trend: '<span class="baidu-badge baidu-badge-hot">↑ 高需求</span>' },
-      { kw: "豪雅手机镜", vol: 180, intent: "品牌手机镜", trend: '<span class="baidu-badge baidu-badge-new">新品类</span>' },
-      { kw: "依视路爱赞数码", vol: 350, intent: "品牌数码镜", trend: '<span class="baidu-badge baidu-badge-up">↑</span>' }
+      { kw: "手机眼镜", vol: 480, intent: "手机护目", trend: "稳定" },
+      { kw: "防蓝光眼镜", vol: 192060, intent: "电子屏幕防护", trend: "稳定" },
+      { kw: "豪雅手机镜", vol: 0, intent: "品牌手机镜(百度无收录)", trend: "—" },
+      { kw: "依视路爱赞数码", vol: 0, intent: "品牌数码镜(百度无收录)", trend: "—" }
     ]}
   ];
 
@@ -1642,7 +1640,7 @@ function renderScenarioComparison() {
 
   // Baidu insight
   baiduHtml += '<div class="scenario-insight" style="border-left-color:#f78166;">';
-  baiduHtml += '<strong>洞察：</strong>百度搜索维度上，电子产品（防蓝光眼镜8K+手机眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。';
+  baiduHtml += '<strong>洞察（真实数据 2026-08-20，月搜索量 = 日均 PC+移动 ×30）：</strong>百度搜索维度上，电子产品（防蓝光眼镜 19.2万/月）搜索量绝对领先，反映大众对电子屏幕护目的刚性需求；户外运动（运动眼镜 8.6万 + 偏光 4.6万 + 变色 0.15万）次之，是百度侧真实高需求场景。但社媒内容（左卡）显示办公/电子场景讨论更多——存在供需错位：用户在百度搜"运动/偏光/防蓝光"等功能词，在社媒聊"办公/电子"等使用场景。驾驶、办公类细分词（夜驾眼镜、办公眼镜、蔡司办公镜等）百度几乎无收录（趋0），属长尾，内容缺口即机会；摄影场景百度侧仅"相机取景器"有弱需求（约0.5万/月），与渐进镜关联弱，原"摄影眼镜"词被低质内容占据已剔除。';
   baiduHtml += '</div>';
 
   // Cross-comparison summary
@@ -1798,20 +1796,17 @@ function renderBaiduBrandTrend() {
     days.push((d.getMonth() + 1) + "/" + d.getDate());
   }
 
-  // 真实百度指数(来自站长工具Chinaz流量词+长尾词API, 2026-08-10)
+  // 真实百度搜索量(日均 PC+移动, Chinaz 流量词 API, 2026-08-20)
   // real=精确匹配, proxy=长尾词聚合代理值, est=估算
   var keywords = [
-    { name: "蔡司", base: 1196, noise: 150, color: "#58a6ff", source: "real" },
-    { name: "蔡司泽锐*", base: 120, noise: 20, color: "#58a6ff88", source: "est" },
-    { name: "蔡司智锐*", base: 80, noise: 15, color: "#58a6ff88", source: "est" },
-    { name: "蔡司熠光*", base: 45, noise: 10, color: "#58a6ff88", source: "est" },
-    { name: "依视路", base: 516, noise: 80, color: "#f78166", source: "real" },
-    { name: "依视路爱赞*", base: 340, noise: 50, color: "#fb923c", source: "real" },
-    { name: "依视路万里路*", base: 190, noise: 35, color: "#f97316", source: "proxy" },
-    { name: "尼康", base: 1052, noise: 130, color: "#d2a8ff", source: "real" },
-    { name: "豪雅", base: 357, noise: 55, color: "#fbbf24", source: "real" },
-    { name: "豪雅手机镜*", base: 180, noise: 30, color: "#fbbf2466", source: "est" },
-    { name: "渐进多焦点眼镜", base: 89, noise: 20, color: "#7ee787", source: "real" }
+    { name: "蔡司", base: 57632, noise: 7000, color: "#58a6ff", source: "real" },
+    { name: "依视路", base: 31741, noise: 3800, color: "#f78166", source: "real" },
+    { name: "尼康", base: 11409, noise: 1400, color: "#d2a8ff", source: "real" },
+    { name: "豪雅(HOYA)", base: 304, noise: 40, color: "#7ee787", source: "real" },
+    { name: "依视路爱赞", base: 501, noise: 70, color: "#fb923c", source: "real" },
+    { name: "依视路万里路", base: 190, noise: 30, color: "#f97316", source: "real" },
+    { name: "渐进多焦点眼镜", base: 2382, noise: 300, color: "#7ee787", source: "real" },
+    { name: "蔡司智锐", base: 264, noise: 35, color: "#58a6ff88", source: "real" }
   ];
 
   function genData(base, noise) {
