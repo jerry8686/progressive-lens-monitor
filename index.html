@@ -471,6 +471,7 @@ var I18N = {
     'baidu_30day_title': '过去30天百度搜索量趋势', 'baidu_heatmap_title': '场景×关键词相关性热力图',
     'scene_driving': '驾驶', 'scene_office': '办公', 'scene_outdoor': '户外运动', 'scene_photo': '摄影', 'scene_digital': '电子产品',
     'brand_zeiss': '蔡司 ZEISS', 'brand_essilor': '依视路 Essilor', 'brand_hoya': '豪雅 HOYA', 'brand_nikon': '尼康 Nikon', 'brand_generic': '通用品类',
+    'ai_name': '万里灵镜', 'ai_title': '🤖 万里灵镜', 'ai_welcome': '你好！我是万里灵镜 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」', 'ai_intro': '你好！我是万里灵镜。', 'ai_unconfigured': '⚠️ **后端未配置**\n\n万里灵镜 需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）'
   },
   en: {
     'lang_label': '中', 'lang_tip': 'Switch to Chinese', 'back_to_main': '← Back to Report', 'back_to_main_cancel': '← Back to Report (Discard)', 'confirm_save': '✓ Done (Save)',
@@ -494,6 +495,7 @@ var I18N = {
     'baidu_30day_title': 'Past 30-Day Baidu Search Trend', 'baidu_heatmap_title': 'Scenario × Keyword Correlation Heatmap',
     'scene_driving': 'Driving', 'scene_office': 'Office', 'scene_outdoor': 'Outdoor Sports', 'scene_photo': 'Photography', 'scene_digital': 'Digital Devices',
     'brand_zeiss': 'ZEISS', 'brand_essilor': 'Essilor', 'brand_hoya': 'HOYA', 'brand_nikon': 'Nikon', 'brand_generic': 'Generic',
+    'ai_name': 'PAL Mate', 'ai_title': '🤖 PAL Mate', 'ai_welcome': 'Hello! I am PAL Mate 🤖\n\nBased on the platform 103 real posts + Baidu Index data, I can help you interpret:\n• Brand share-of-voice and sentiment comparison\n• Scenario heat and content opportunities\n• Competitive landscape insights\n\nAsk me: "What is the sentiment for ZEISS across platforms?"', 'ai_intro': 'Hello! I am PAL Mate.', 'ai_unconfigured': '⚠️ **Backend not configured**\n\nPAL Mate needs to connect to the backend Worker. Please deploy the Cloudflare Worker and fill in the real `AI_API_ENDPOINT` address in the HTML.\n(See deployment guide)'
   }
 };
 
@@ -1961,13 +1963,13 @@ window.addEventListener("DOMContentLoaded", function() {
 <!-- ==================== AI Assistant Widget ==================== -->
 <button class="ai-fab" id="ai-fab" onclick="toggleAIPanel()">
   <span class="ai-fab-icon">🤖</span>
-  <span>PAL Mate</span>
+  <span data-i18n="ai_name">万里灵镜</span>
 </button>
 
 <div class="ai-panel" id="ai-panel">
   <div class="ai-panel-header">
     <div>
-      <div class="ai-title">🤖 万里灵镜 PAL Mate</div>
+      <div class="ai-title" data-i18n="ai_title">🤖 万里灵镜</div>
       <div class="ai-sub">基于真实舆情数据，帮你解读洞察</div>
     </div>
     <button class="ai-close" onclick="toggleAIPanel()">✕</button>
@@ -1992,8 +1994,8 @@ function toggleAIPanel() {
   var panel = document.getElementById('ai-panel');
   panel.classList.toggle('open');
   if (panel.classList.contains('open') && aiHistory.length === 0) {
-    addAIMessage('bot', '你好！我是万里灵镜 PAL Mate 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」或「What\'s the sentiment across platforms?」');
-    aiHistory.push({ role: 'assistant', content: '你好！我是万里灵镜 PAL Mate。' });
+    addAIMessage('bot', t('ai_welcome'));
+    aiHistory.push({ role: 'assistant', content: t('ai_intro') });
   }
   if (panel.classList.contains('open')) {
     setTimeout(function(){ document.getElementById('ai-input').focus(); }, 100);
@@ -2052,7 +2054,7 @@ async function sendAIMessage() {
 
   if (AI_API_ENDPOINT.includes('your-subdomain')) {
     thinkingMsg.classList.remove('thinking');
-    thinkingMsg.innerHTML = renderMarkdown('⚠️ **后端未配置**\n\nPAL Mate 需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）');
+    thinkingMsg.innerHTML = renderMarkdown(t('ai_unconfigured'));
     document.getElementById('ai-status').textContent = '';
     return;
   }
