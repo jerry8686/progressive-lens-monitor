@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>渐进镜舆情监控平台 v2.8.5</title>
+<title>渐进镜舆情监控平台 v2.8.6</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: #0f1117; color: #e8eaed; line-height: 1.6; }
@@ -359,12 +359,12 @@ canvas { display: block; max-width: 100%; }
 <div id="platform-kw-section"></div>
 
 <h2 style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;"><span data-i18n="sec3_title">三、品牌 × 评论情感关联图谱</span><button class="kw-settings-btn" onclick="openCommentSearch()" data-i18n="comment_search_btn">🔍 评论关键词搜索</button></h2>
-<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;">展示各品牌在评论中关联的正负面关键词网络，点击品牌卡片可查看按平台下钻的详细数据</p>
+<p style="color:#8a8f9a;font-size:13px;margin-bottom:16px;" data-i18n="sec3_desc">展示各品牌在评论中关联的正负面关键词网络，点击品牌卡片可查看按平台下钻的详细数据</p>
 <div class="brand-graph" id="brand-graph"></div>
 
 <h2 data-i18n="sec4_title">四、品牌评论按平台下钻明细</h2>
 <div id="brand-platform-table"></div>
-<p style="font-size:12px;color:#8a8f9a;margin-top:4px;">⬆ 点击品牌行查看详细正负面关键词分布</p>
+<p style="font-size:12px;color:#8a8f9a;margin-top:4px;" data-i18n="sec4_hint">⬆ 点击品牌行查看详细正负面关键词分布</p>
 
 <h2 data-i18n="sec5_title">五、评论存量 vs 增量（周维度更新框架）</h2>
 <div class="update-notice">
@@ -472,7 +472,7 @@ var I18N = {
     'sec6_title': '六、各平台正负面关键词对比',
     'sec7_title': '七、百度指数关键词热度对比', 'sec7_desc': '以下数据基于Chinaz站长工具百度指数API实时获取（2026年8月10日），其中7个关键词均来自Chinaz API真实数据，其中*标注词为长尾词聚合值。', 'sec7_5_title': '过去30天品牌百度搜索量趋势', 'sec7_5_desc': '基于Chinaz百度指数API真实数据校准的日搜索趋势（2026年7月10日—8月8日），蔡司/依视路/尼康/豪雅为真实指数，*标注为估算值，反映消费者品牌关注度的波动与竞品格局。', 'baidu_est_monthly': '百度指数 (来自站长工具实时数据)',
     'sec8_title': '八、百度指数关键词详情', 'core_keyword': '关键词', 'all_index': '百度指数', 'pc_volume': 'PC搜索量', 'mobile_volume': '移动搜索量', 'data_source': '数据来源',
-    'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公、户外运动、摄影、电子产品），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
+    'sec9_title': '九、渐进镜选配主要场景对比', 'sec9_desc': '从平台社媒内容和百度搜索指数两个维度，对比渐进镜/老花镜的五大核心选配场景（驾驶、办公数码、户外运动、摄影、时尚），揭示不同场景的用户关注度和品牌布局差异。', 'card1_title': '平台内容场景分布', 'card1_desc': '基于小红书/抖音/公众号三平台103条帖子的场景关键词匹配统计', 'card2_title': '百度指数场景热度对比', 'card2_desc': '基于百度估算月搜索量（2026年7月），反映用户主动搜索各场景相关关键词的频次', 'scenario_driving': '驾驶', 'scenario_office': '办公', 'scenario_outdoor': '户外运动', 'scenario_photo': '摄影', 'scenario_digital': '电子产品', 'scenario_monthly_total': '月搜索总量', 'scenario_brand_assoc': '各场景品牌关联', 'scenario_brand_mentions': '关联品牌（提及次数）', 'scenario_sample': '典型内容', 'scenario_no_brand': '无品牌提及', 'insight_platform': '洞察：电子产品（手机/数码/屏幕）是渐进镜内容提及最多的场景，其次是办公场景。驾驶场景虽然专业需求明确（蔡司驾驶渐进镜），但社媒讨论量较低。摄影场景提及最少，属于小众需求。户外运动场景有一定讨论但品牌关联较弱。', 'insight_baidu': '洞察：百度搜索维度上，电子产品（防蓝光眼镜8K+手机眼镜）搜索量最高，反映大众对电子屏幕护目的刚性需求。户外运动（运动眼镜4.5K+变色镜片3.6K）搜索热度第二，但社媒内容关联较弱，存在内容供给缺口。办公场景搜索量可观（电脑眼镜3.2K），与社媒内容基本匹配。驾驶场景搜索量中等但增长趋势明显（开车眼镜↑），蔡司驾驶渐进镜有先发优势。摄影场景搜索量最低，属长尾需求。', 'cross_comparison': '双维度交叉对比', 'cross_social': '社媒内容量', 'cross_baidu': '百度搜索量', 'cross_match': '供需匹配度', 'cross_strategy': '策略建议', 'match_shortage': '⚠️ 供不应求', 'match_good': '✓ 匹配良好', 'match_oversupply': '→ 供过于求', 'match_longtail': '○ 长尾场景', 'match_improve': '→ 待提升', 'strategy_shortage': '搜索需求高但社媒内容少，应加大内容种草投入', 'strategy_good': '供需均衡，维持现有内容策略', 'strategy_oversupply': '搜索需求有限，内容可转向长尾SEO', 'strategy_longtail': '小众需求，适合精准投放而非规模化', 'strategy_improve': '搜索和内容均有增长空间',
     'sec10_title': '十、品牌关键词策略洞察', 'dim_brand_mind': '品牌心智词', 'dim_social_kw': '最高频社媒词', 'dim_baidu_search': '百度指数', 'dim_price_tag': '价签关联', 'dim_audience': '人群标签', 'dim_competitor': '竞品对标', 'dim_strategy': '声量策略建议',
     'sec11_title': '十一、分析方法与局限', 'method_sentiment': '情感分类方法: 基于关键词匹配 + 正面/负面类别进行情感判定', 'method_brand': '品牌识别: 精确匹配 + 别名识别', 'method_source': '数据来源: cn-last30days 红狐引擎 × 4轮关键词搜索 × 3平台', 'method_config': '关键词配置: 点击顶部「⚙️ 设置关键词」按钮打开独立配置页面。评论关键词搜索请点击第三部分旁「🔍 评论关键词搜索」按钮。', 'method_limit': '⚠️ 局限: 情感分析基于标题/描述的关键词匹配，非人工标注；豪雅样本量过少',
     'drilldown_all_items': '全部帖子列表', 'drilldown_platform_data': '各平台评论数据分布', 'drilldown_pos_summary': '正面评论关键词汇总', 'drilldown_neg_summary': '负面评论关键词汇总', 'drilldown_detail': '下钻详情', 'drilldown_no_data': '暂无下钻数据', 'close_panel': '✕ 收起', 'col_title': '标题', 'col_abstract': '内容摘要', 'col_sentiment': '情感', 'col_match_kw': '匹配词', 'col_link': '链接', 'col_no_kw': '无关键词',
@@ -482,7 +482,8 @@ var I18N = {
     'baidu_30day_title': '过去30天百度搜索量趋势', 'baidu_heatmap_title': '场景×关键词相关性热力图',
     'scene_driving': '驾驶', 'scene_office': '办公', 'scene_outdoor': '户外运动', 'scene_photo': '摄影', 'scene_digital': '电子产品',
     'brand_zeiss': '蔡司 ZEISS', 'brand_essilor': '依视路 Essilor', 'brand_hoya': '豪雅 HOYA', 'brand_nikon': '尼康 Nikon', 'brand_generic': '通用品类',
-    'ai_name': '万里灵镜', 'ai_title': '🤖 万里灵镜', 'ai_welcome': '你好！我是万里灵镜 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」', 'ai_intro': '你好！我是万里灵镜。', 'ai_unconfigured': '⚠️ **后端未配置**\n\n万里灵镜 需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）'
+    'ai_name': '万里灵镜', 'ai_title': '🤖 万里灵镜', 'ai_welcome': '你好！我是万里灵镜 🤖\n\n我可以基于平台上的 103 条真实帖子 + 百度指数数据，帮你解读：\n• 品牌声量与情感对比\n• 场景热度与内容机会\n• 竞品格局洞察\n\n试试问我：「蔡司在各平台的正负面评价是什么？」', 'ai_intro': '你好！我是万里灵镜。', 'ai_unconfigured': '⚠️ **后端未配置**\n\n万里灵镜 需要连接到后端 Worker。请先部署 Cloudflare Worker 并在 HTML 中填入 `AI_API_ENDPOINT` 的真实地址。\n（详见部署指南）',
+    'scenario_office_digital': '办公数码', 'scenario_fashion': '时尚', 'scenario': '场景', 'social_volume_30d': '近30天社媒内容量', 'no_baidu_index': '场景词百度无收录', 'subkw_progressive': '子关键词（渐进镜关联）', 'baidu_monthly': '百度月搜索量', 'no_index': '无收录', 'match_active': '✓ 内容活跃', 'match_medium': '→ 内容中等', 'strategy_medium': '内容初具规模，可加大精准场景化种草，培育用户搜索心智', 'insight_social_title': '社媒洞察（红狐近30天真实数据 · 各场景=渐进镜关联子关键词内容量之和）：', 'insight_social': '办公数码场景社媒声量最高（{office}条），主因"手机渐进镜""阅读渐进镜"在公众号有稳定讨论；摄影（{photo}条）、户外运动（{outdoor}条）次之；驾驶（{driving}条）与时尚（{fashion}条）相对较小。整体社媒讨论以<strong>公众号深度内容</strong>为主，小红书/抖音偏少——短视频种草仍有空间。', 'insight_search_title': '搜索洞察（Chinaz 真实数据）：', 'insight_search': '各场景"场景专属渐进镜词"（如驾驶渐进镜、办公渐进镜、户外渐进镜等）在百度<strong>均无收录</strong>（长尾），故搜索量≈0。但渐进镜<strong>类目整体</strong>搜索需求真实且巨大（类目词如"老花镜""渐进镜片""防蓝光镜片"等搜索量庞大），说明"<strong>场景 + 渐进镜</strong>"是尚待开发的内容/SEO 蓝海——当前社媒已出现真实场景讨论，正是抢先布局搜索词与种草内容的窗口期。',
   },
   en: {
     'lang_label': '中', 'lang_tip': 'Switch to Chinese', 'back_to_main': '← Back to Report', 'back_to_main_cancel': '← Back to Report (Discard)', 'confirm_save': '✓ Done (Save)',
@@ -496,7 +497,7 @@ var I18N = {
     'sec6_title': 'VI. Positive vs. Negative Comparison by Platform',
     'sec7_title': 'VII. Baidu Index Keyword Heat Comparison', 'sec7_desc': 'Real-time Baidu Index from Chinaz Traffic + Long-tail APIs (2026-08-10). 4 brands exact-match; 渐进多焦点眼镜 & 依视路爱赞 from long-tail API; 依视路万里路 uses long-tail proxy; * = estimate.', 'sec7_5_title': 'Past 30-Day Brand Baidu Search Trend', 'sec7_5_desc': 'Daily Baidu Index trends calibrated with real Chinaz API data (Jul 10-Aug 8, 2026). ZEISS/Essilor/Nikon/HOYA/渐进多焦点眼镜/依视路爱赞 use real values; * marks proxy/estimate. Tracks brand attention fluctuations and competitive dynamics.', 'baidu_est_monthly': 'Baidu Index (Real-time from Chinaz API)',
     'sec8_title': 'VIII. Baidu Index Keyword Details', 'core_keyword': 'Keyword', 'all_index': 'Baidu Index', 'pc_volume': 'PC Volume', 'mobile_volume': 'Mobile Volume', 'data_source': 'Source',
-    'sec9_title': 'IX. Progressive Lens Scenario Comparison', 'sec9_desc': 'Compare five core progressive/reading glasses scenarios (Driving, Office, Outdoor Sports, Photography, Digital Devices) from both social media content and Baidu search index dimensions.', 'card1_title': 'Social Media Scenario Distribution', 'card1_desc': 'Based on keyword matching from 103 posts across XHS/Douyin/WeChat OA', 'card2_title': 'Baidu Index Scenario Heat', 'card2_desc': 'Based on estimated Baidu monthly search volume (Jul 2026), reflecting user proactive search frequency for each scenario', 'scenario_driving': 'Driving', 'scenario_office': 'Office', 'scenario_outdoor': 'Outdoor Sports', 'scenario_photo': 'Photography', 'scenario_digital': 'Digital Devices', 'scenario_monthly_total': 'Monthly Total', 'scenario_brand_assoc': 'Brand Association by Scenario', 'scenario_brand_mentions': 'Associated Brands (mentions)', 'scenario_sample': 'Sample Content', 'scenario_no_brand': 'No brand mentions', 'insight_platform': 'Insight: Digital devices (phone/digital/screen) dominate progressive lens content, followed by office use. Driving has clear professional demand but low social media discussion. Photography has the least mentions (niche). Outdoor sports show moderate discussion but weak brand association.', 'insight_baidu': 'Insight: On Baidu search, digital devices (blue-light glasses 8K+ + phone/digital glasses) generate the highest volume, reflecting mass demand for screen eye protection. Outdoor sports ranks second (sports glasses 4.5K + photochromic lens 3.6K) but social media content is insufficient — an unmet supply gap. Office search demand is healthy (computer glasses 3.2K) and matches social content. Driving shows moderate but growing search volume (driving glasses ↑), with Zeiss having first-mover advantage. Photography is the lowest-volume long-tail scenario.', 'cross_comparison': 'Dual-Dimension Cross Comparison', 'cross_social': 'Social Content Volume', 'cross_baidu': 'Baidu Search Volume', 'cross_match': 'Supply-Demand Match', 'cross_strategy': 'Strategy', 'match_shortage': '⚠️ Unmet Demand', 'match_good': '✓ Well-Matched', 'match_oversupply': '→ Oversupplied', 'match_longtail': '○ Long-Tail', 'match_improve': '→ Needs Growth', 'strategy_shortage': 'High search demand but low social content — increase content seeding', 'strategy_good': 'Balanced supply-demand — maintain current strategy', 'strategy_oversupply': 'Limited search demand — pivot content to long-tail SEO', 'strategy_longtail': 'Niche demand — suitable for targeted campaigns, not mass marketing', 'strategy_improve': 'Both search and content have growth potential',
+    'sec9_title': 'IX. Progressive Lens Scenario Comparison', 'sec9_desc': 'Compare five core progressive/reading glasses scenarios (Driving, Office & Digital, Outdoor Sports, Photography, Fashion) from both social media content and Baidu search index dimensions.', 'card1_title': 'Social Media Scenario Distribution', 'card1_desc': 'Based on keyword matching from 103 posts across XHS/Douyin/WeChat OA', 'card2_title': 'Baidu Index Scenario Heat', 'card2_desc': 'Based on estimated Baidu monthly search volume (Jul 2026), reflecting user proactive search frequency for each scenario', 'scenario_driving': 'Driving', 'scenario_office': 'Office', 'scenario_outdoor': 'Outdoor Sports', 'scenario_photo': 'Photography', 'scenario_digital': 'Digital Devices', 'scenario_monthly_total': 'Monthly Total', 'scenario_brand_assoc': 'Brand Association by Scenario', 'scenario_brand_mentions': 'Associated Brands (mentions)', 'scenario_sample': 'Sample Content', 'scenario_no_brand': 'No brand mentions', 'insight_platform': 'Insight: Digital devices (phone/digital/screen) dominate progressive lens content, followed by office use. Driving has clear professional demand but low social media discussion. Photography has the least mentions (niche). Outdoor sports show moderate discussion but weak brand association.', 'insight_baidu': 'Insight: On Baidu search, digital devices (blue-light glasses 8K+ + phone/digital glasses) generate the highest volume, reflecting mass demand for screen eye protection. Outdoor sports ranks second (sports glasses 4.5K + photochromic lens 3.6K) but social media content is insufficient — an unmet supply gap. Office search demand is healthy (computer glasses 3.2K) and matches social content. Driving shows moderate but growing search volume (driving glasses ↑), with Zeiss having first-mover advantage. Photography is the lowest-volume long-tail scenario.', 'cross_comparison': 'Dual-Dimension Cross Comparison', 'cross_social': 'Social Content Volume', 'cross_baidu': 'Baidu Search Volume', 'cross_match': 'Supply-Demand Match', 'cross_strategy': 'Strategy', 'match_shortage': '⚠️ Unmet Demand', 'match_good': '✓ Well-Matched', 'match_oversupply': '→ Oversupplied', 'match_longtail': '○ Long-Tail', 'match_improve': '→ Needs Growth', 'strategy_shortage': 'High search demand but low social content — increase content seeding', 'strategy_good': 'Balanced supply-demand — maintain current strategy', 'strategy_oversupply': 'Limited search demand — pivot content to long-tail SEO', 'strategy_longtail': 'Niche demand — suitable for targeted campaigns, not mass marketing', 'strategy_improve': 'Both search and content have growth potential',
     'sec10_title': 'X. Brand Keyword Strategy Insights', 'dim_brand_mind': 'Brand Mind Words', 'dim_social_kw': 'Top Social Keywords', 'dim_baidu_search': 'Baidu Monthly Searches', 'dim_price_tag': 'Price Tag', 'dim_audience': 'Audience Tags', 'dim_competitor': 'Competitor Benchmark', 'dim_strategy': 'Strategy Recommendation',
     'sec11_title': 'XI. Methodology & Limitations', 'method_sentiment': 'Sentiment classification: keyword matching + positive/negative category判定', 'method_brand': 'Brand detection: exact match + alias recognition', 'method_source': 'Data sources: cn-last30days RedFox API × 4 keyword rounds × 3 platforms', 'method_config': 'Keyword config: click 「⚙️ Keyword Settings」 at top. Comment search: click 「🔍 Comment Search」 in Section 3.', 'method_limit': '⚠️ Limitations: sentiment analysis based on title/description keyword matching, not human annotation; Hoya sample size too small',
     'drilldown_all_items': 'All Posts List', 'drilldown_platform_data': 'Platform Comment Distribution', 'drilldown_pos_summary': 'Positive Keyword Summary', 'drilldown_neg_summary': 'Negative Keyword Summary', 'drilldown_detail': 'Drill-down Detail', 'drilldown_no_data': 'No drill-down data', 'close_panel': '✕ Close', 'col_title': 'Title', 'col_abstract': 'Abstract', 'col_sentiment': 'Sentiment', 'col_match_kw': 'Match Keywords', 'col_link': 'Link', 'col_no_kw': 'No keywords',
@@ -506,7 +507,8 @@ var I18N = {
     'baidu_30day_title': 'Past 30-Day Baidu Search Trend', 'baidu_heatmap_title': 'Scenario × Keyword Correlation Heatmap',
     'scene_driving': 'Driving', 'scene_office': 'Office', 'scene_outdoor': 'Outdoor Sports', 'scene_photo': 'Photography', 'scene_digital': 'Digital Devices',
     'brand_zeiss': 'ZEISS', 'brand_essilor': 'Essilor', 'brand_hoya': 'HOYA', 'brand_nikon': 'Nikon', 'brand_generic': 'Generic',
-    'ai_name': 'PAL Mate', 'ai_title': '🤖 PAL Mate', 'ai_welcome': 'Hello! I am PAL Mate 🤖\n\nBased on the platform 103 real posts + Baidu Index data, I can help you interpret:\n• Brand share-of-voice and sentiment comparison\n• Scenario heat and content opportunities\n• Competitive landscape insights\n\nAsk me: "What is the sentiment for ZEISS across platforms?"', 'ai_intro': 'Hello! I am PAL Mate.', 'ai_unconfigured': '⚠️ **Backend not configured**\n\nPAL Mate needs to connect to the backend Worker. Please deploy the Cloudflare Worker and fill in the real `AI_API_ENDPOINT` address in the HTML.\n(See deployment guide)'
+    'ai_name': 'PAL Mate', 'ai_title': '🤖 PAL Mate', 'ai_welcome': 'Hello! I am PAL Mate 🤖\n\nBased on the platform 103 real posts + Baidu Index data, I can help you interpret:\n• Brand share-of-voice and sentiment comparison\n• Scenario heat and content opportunities\n• Competitive landscape insights\n\nAsk me: "What is the sentiment for ZEISS across platforms?"', 'ai_intro': 'Hello! I am PAL Mate.', 'ai_unconfigured': '⚠️ **Backend not configured**\n\nPAL Mate needs to connect to the backend Worker. Please deploy the Cloudflare Worker and fill in the real `AI_API_ENDPOINT` address in the HTML.\n(See deployment guide)',
+    'scenario_office_digital': 'Office & Digital', 'scenario_fashion': 'Fashion', 'scenario': 'Scenario', 'social_volume_30d': 'Social Volume (30d)', 'no_baidu_index': 'Scene keywords not indexed on Baidu', 'subkw_progressive': 'Sub-keywords (progressive)', 'baidu_monthly': 'Baidu Monthly Volume', 'no_index': 'No Index', 'match_active': '✓ Content-active', 'match_medium': '-> Moderate content', 'strategy_medium': 'Content gaining traction; increase targeted scenario-based seeding to build search mindshare', 'insight_social_title': 'Social Insight (RedFox real 30-day data - each scenario = sum of progressive-related sub-keyword content volume):', 'insight_social': 'Office & Digital has the highest social volume ({office}), driven by steady discussions of "phone progressive" and "reading progressive" on WeChat OA; Photography ({photo}) and Outdoor Sports ({outdoor}) follow; Driving ({driving}) and Fashion ({fashion}) are smaller. Overall social discussion is dominated by <strong>WeChat OA in-depth content</strong>, with XHS/Douyin underrepresented - room for short-video seeding.', 'insight_search_title': 'Search Insight (Chinaz real data):', 'insight_search': 'All scenario-specific progressive terms (e.g. driving progressive, office progressive, outdoor progressive) are <strong>not indexed</strong> on Baidu (long-tail), so search volume ~ 0. However, the progressive lens <strong>category as a whole</strong> has real and huge search demand (category terms like "reading glasses", "progressive lenses", "blue-light blocking lenses" have massive volume), meaning "<strong>scenario + progressive</strong>" is an untapped content/SEO blue ocean - with real scenario discussions already emerging on social media, now is the window to capture search terms and seeding content.',
   }
 };
 
@@ -909,6 +911,14 @@ function setupCollapsibles() {
   h2s.forEach(function(h2, idx) {
     var key = h2.getAttribute('data-i18n') || ('sec' + idx);
     if (h2.parentNode && h2.parentNode.classList && h2.parentNode.classList.contains('sec-wrap')) return; // 已处理
+    // 1) 先收集 h2 之后的兄弟内容节点（此时 h2 仍在原父节点，nextSibling 有效）
+    var contentNodes = [];
+    var n = h2.nextSibling;
+    while (n && !(n.nodeType === 1 && n.tagName === 'H2')) {
+      contentNodes.push(n);
+      n = n.nextSibling;
+    }
+    // 2) 创建包裹结构
     var wrap = document.createElement('div');
     wrap.className = 'sec-wrap';
     var headrow = document.createElement('div');
@@ -918,16 +928,12 @@ function setupCollapsibles() {
     btn.textContent = '▼';
     btn.title = '点击折叠/展开本模块';
     headrow.appendChild(btn);
+    // 3) 把 wrap 插到 h2 原位置，再把 h2 移入 headrow，headrow 入 wrap
     h2.parentNode.insertBefore(wrap, h2);
-    wrap.appendChild(headrow);
     headrow.appendChild(h2);
-    // 收集 h2 之后到下一个 h2 之前的兄弟节点
-    var n = h2.nextSibling;
-    while (n && !(n.nodeType === 1 && n.tagName === 'H2')) {
-      var nx = n.nextSibling;
-      wrap.appendChild(n);
-      n = nx;
-    }
+    wrap.appendChild(headrow);
+    // 4) 把收集到的内容节点移入 wrap（保持在 headrow 之后）
+    contentNodes.forEach(function(node) { wrap.appendChild(node); });
     if (states[key]) { wrap.classList.add('collapsed'); btn.textContent = '▶'; }
     function toggle() {
       wrap.classList.toggle('collapsed');
@@ -1074,19 +1080,19 @@ function renderBrandGraph() {
     html += "<div class=\"brand-node\" onclick=\"showBrandCommentDetail('" + escapeJs(brand) + "')\" style=\"cursor:pointer\">";
     html += "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:8px\">";
     html += "<span style=\"font-size:18px;font-weight:700\">" + escapeHtml(brand) + "</span>";
-    html += "<span style=\"font-size:13px;color:#8a8f9a\">共 " + bd.total + " 条提及</span>";
+    html += "<span style=\"font-size:13px;color:#8a8f9a\">" + t('brand_total_mentions', {count: bd.total}) + "</span>";
     html += "</div>";
     html += "<div style=\"display:flex;gap:16px;margin-bottom:10px\">";
     html += "<span>😊 <span style=\"color:#4ade80\">" + bd.positive + "</span> (" + pp + "%)</span>";
     html += "<span>😟 <span style=\"color:#f87171\">" + bd.negative + "</span> (" + np + "%)</span>";
     html += "</div>";
-    html += "<div style=\"font-size:12px;color:#8a8f9a;margin-bottom:6px\">正面关联词:</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;margin-bottom:6px\">" + t('brand_pos_kw') + ":</div>";
     html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
     bd.pos_keywords.slice(0, 8).forEach(function(pair) {
       html += "<span class=\"kw-tag pos\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
     });
     html += "</div>";
-    html += "<div style=\"font-size:12px;color:#8a8f9a;margin:10px 0 6px\">负面关联词:</div>";
+    html += "<div style=\"font-size:12px;color:#8a8f9a;margin:10px 0 6px\">" + t('brand_neg_kw') + ":</div>";
     html += "<div style=\"display:flex;flex-wrap:wrap;gap:6px\">";
     bd.neg_keywords.slice(0, 6).forEach(function(pair) {
       html += "<span class=\"kw-tag neg\" style=\"cursor:pointer\" onclick=\"event.stopPropagation();quickSearch('" + escapeJs(pair[0]) + "')\">" + escapeHtml(pair[0]) + " (" + pair[1] + ")</span>";
@@ -1128,7 +1134,7 @@ function renderStockIncr() {
   html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + sp + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + sn + "%\"></div></div>";
   html += "<div style=\"font-size:12px;color:#8a8f9a\">" + t('brand_distribution') + ":</div>";
   Object.entries(STOCK_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
-    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
+    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (" + t('total_mentions') + ": " + pair[1].total + ")</div>";
   });
   html += "</div></div>";
 
@@ -1144,7 +1150,7 @@ function renderStockIncr() {
   html += "<div class=\"bar-track\" style=\"height:14px;margin-bottom:12px\"><div class=\"bar-fill pos\" style=\"width:" + ip + "%\"></div><div class=\"bar-fill neg\" style=\"width:" + ine + "%\"></div></div>";
   html += "<div style=\"font-size:12px;color:#8a8f9a\">" + t('brand_distribution') + ":</div>";
   Object.entries(INCR_DATA.brands).sort(function(a,b) { return b[1].total - a[1].total; }).forEach(function(pair) {
-    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (共" + pair[1].total + ")</div>";
+    html += "<div style=\"font-size:12px;margin:3px 0\"><strong>" + pair[0] + "</strong>: 😊" + pair[1].positive + " 😟" + pair[1].negative + " ➖" + pair[1].neutral + " (" + t('total_mentions') + ": " + pair[1].total + ")</div>";
   });
   html += "</div></div>";
   document.getElementById("stock-incr-section").innerHTML = html;
@@ -1160,9 +1166,9 @@ function renderPlatformVisual() {
     html += "<div style=\"text-align:center\"><strong style=\"display:flex;align-items:center;justify-content:center;gap:6px;\">" + platLogo(plat,22) + plat + "</strong>";
     html += "<svg width=\"280\" height=\"80\" viewBox=\"0 0 280 80\">";
     html += "<rect x=\"0\" y=\"5\" width=\"" + (pd.positive/max*280) + "\" height=\"30\" rx=\"4\" fill=\"#4ade80\" opacity=\"0.8\"/>";
-    html += "<text x=\"5\" y=\"24\" fill=\"white\" font-size=\"12\">😊 " + pd.positive + "条</text>";
+    html += "<text x=\"5\" y=\"24\" fill=\"white\" font-size=\"12\">😊 " + pd.positive + t('stock_count') + "</text>";
     html += "<rect x=\"0\" y=\"40\" width=\"" + (pd.negative/max*280) + "\" height=\"30\" rx=\"4\" fill=\"#f87171\" opacity=\"0.8\"/>";
-    html += "<text x=\"5\" y=\"59\" fill=\"white\" font-size=\"12\">😟 " + pd.negative + "条</text>";
+    html += "<text x=\"5\" y=\"59\" fill=\"white\" font-size=\"12\">😟 " + pd.negative + t('stock_count') + "</text>";
     html += "</svg></div>";
   }
   document.getElementById("platform-visual-section").innerHTML = html;
@@ -1538,11 +1544,9 @@ function renderBaiduIndex() {
 
 // ==================== SCENARIO COMPARISON ====================
 function renderScenarioComparison() {
-  // ===== 真实数据（2026-08-21）=====
-  // 社媒内容量 = 红狐多平台近30天真实总量(xhs+dy+gzh)；百度搜索量 = Chinaz 月搜索量
-  // 场景专属渐进镜词在百度均"无收录"(长尾)，故搜索量≈0；以下为真实抓取结果
+  // 真实数据（2026-08-21）：社媒内容量 = 红狐多平台近30天真实总量(xhs+dy+gzh)；百度场景专属词均"无收录"(长尾)，搜索量≈0
   var CROSS_DATA = {
-    "驾驶": [
+    'scenario_driving': [
       {kw:"驾驶渐进镜", social:13, xhs:0, dy:0, gzh:13},
       {kw:"开车渐进镜", social:20, xhs:1, dy:0, gzh:19},
       {kw:"驾驶老花镜", social:0, xhs:0, dy:0, gzh:0},
@@ -1550,7 +1554,7 @@ function renderScenarioComparison() {
       {kw:"驾驶多焦点眼镜", social:0, xhs:0, dy:0, gzh:0},
       {kw:"夜间驾驶老花镜", social:0, xhs:0, dy:0, gzh:0}
     ],
-    "办公数码": [
+    'scenario_office_digital': [
       {kw:"办公渐进镜", social:22, xhs:1, dy:0, gzh:21},
       {kw:"电脑渐进镜", social:9, xhs:1, dy:0, gzh:8},
       {kw:"手机渐进镜", social:94, xhs:2, dy:0, gzh:92},
@@ -1561,7 +1565,7 @@ function renderScenarioComparison() {
       {kw:"室内渐进镜", social:13, xhs:1, dy:0, gzh:12},
       {kw:"阅读渐进镜", social:23, xhs:2, dy:0, gzh:21}
     ],
-    "户外运动": [
+    'scenario_outdoor': [
       {kw:"户外渐进镜", social:27, xhs:6, dy:0, gzh:21},
       {kw:"徒步老花镜", social:2, xhs:0, dy:0, gzh:2},
       {kw:"旅游老花镜", social:1, xhs:1, dy:0, gzh:0},
@@ -1570,14 +1574,14 @@ function renderScenarioComparison() {
       {kw:"户外老花镜", social:6, xhs:2, dy:0, gzh:4},
       {kw:"运动渐进镜", social:67, xhs:5, dy:1, gzh:61}
     ],
-    "摄影": [
+    'scenario_photo': [
       {kw:"摄影渐进镜", social:36, xhs:0, dy:0, gzh:36},
       {kw:"摄影老花镜", social:1, xhs:1, dy:0, gzh:0},
       {kw:"摄影师老花镜", social:4, xhs:0, dy:0, gzh:4},
       {kw:"摄影渐进片", social:72, xhs:3, dy:0, gzh:69},
       {kw:"相机老花镜", social:6, xhs:0, dy:0, gzh:6}
     ],
-    "时尚": [
+    'scenario_fashion': [
       {kw:"偏光渐进镜", social:3, xhs:0, dy:0, gzh:3},
       {kw:"变色渐进镜", social:12, xhs:4, dy:0, gzh:8},
       {kw:"渐进太阳镜", social:13, xhs:6, dy:0, gzh:7},
@@ -1587,15 +1591,14 @@ function renderScenarioComparison() {
     ]
   };
 
-  var SCENE_ORDER = ["驾驶", "办公数码", "户外运动", "摄影", "时尚"];
+  var SCENE_ORDER = ['scenario_driving','scenario_office_digital','scenario_outdoor','scenario_photo','scenario_fashion'];
   var SCENE_META = {
-    "驾驶": {icon:"🚗", color:"#58a6ff"},
-    "办公数码": {icon:"💻", color:"#f78166"},
-    "户外运动": {icon:"🏕️", color:"#7ee787"},
-    "摄影": {icon:"📷", color:"#d2a8ff"},
-    "时尚": {icon:"🕶️", color:"#fbbf24"}
+    'scenario_driving': {icon:"🚗", color:"#58a6ff"},
+    'scenario_office_digital': {icon:"💻", color:"#f78166"},
+    'scenario_outdoor': {icon:"🏕️", color:"#7ee787"},
+    'scenario_photo': {icon:"📷", color:"#d2a8ff"},
+    'scenario_fashion': {icon:"🕶️", color:"#fbbf24"}
   };
-  // 聚合各场景
   var AGG = {};
   SCENE_ORDER.forEach(function(sc) {
     var recs = CROSS_DATA[sc];
@@ -1610,20 +1613,19 @@ function renderScenarioComparison() {
     var a = AGG[sc], m = SCENE_META[sc];
     platformHtml += '<div class="scenario-item">';
     platformHtml += '<div class="sc-icon">' + m.icon + '</div>';
-    platformHtml += '<div class="sc-name">' + sc + '</div>';
+    platformHtml += '<div class="sc-name">' + t(sc) + '</div>';
     platformHtml += '<div class="sc-count" style="color:' + m.color + '">' + a.social.toLocaleString() + '</div>';
-    platformHtml += '<div class="sc-detail">近30天社媒内容量</div>';
+    platformHtml += '<div class="sc-detail">' + t('social_volume_30d') + '</div>';
     platformHtml += '</div>';
   });
   platformHtml += '</div>';
 
-  // 各场景平台分布条
   platformHtml += '<div style="margin-top:20px;">';
   SCENE_ORDER.forEach(function(sc) {
     var a = AGG[sc], m = SCENE_META[sc];
     var total = a.social; var maxVal = Math.max(1, total);
     platformHtml += '<div style="margin-bottom:12px;">';
-    platformHtml += '<div style="font-size:13px;font-weight:600;margin-bottom:6px;">' + m.icon + ' ' + sc + ' <span style="color:#8a8f9a;font-size:12px;">(' + total + '条)</span></div>';
+    platformHtml += '<div style="font-size:13px;font-weight:600;margin-bottom:6px;">' + m.icon + ' ' + t(sc) + ' <span style="color:#8a8f9a;font-size:12px;">(' + total + t('stock_count') + ')</span></div>';
     [['小红书', a.xhs, '#FF2442'], ['抖音', a.dy, '#FE2C55'], ['公众号', a.gzh, '#07C160']].forEach(function(p) {
       var cnt = p[1]; var width = total > 0 ? (cnt / maxVal * 100) : 0;
       platformHtml += '<div class="scenario-bar-row">';
@@ -1637,7 +1639,11 @@ function renderScenarioComparison() {
   platformHtml += '</div>';
 
   platformHtml += '<div class="scenario-insight">';
-  platformHtml += '<strong>社媒洞察（红狐近30天真实数据 · 各场景=渐进镜关联子关键词内容量之和）：</strong>办公数码场景社媒声量最高（' + AGG['办公数码'].social + '条），主因"手机渐进镜""阅读渐进镜"在公众号有稳定讨论；摄影（' + AGG['摄影'].social + '条）、户外运动（' + AGG['户外运动'].social + '条）次之；驾驶（' + AGG['驾驶'].social + '条）与时尚（' + AGG['时尚'].social + '条）相对较小。整体社媒讨论以<strong>公众号深度内容</strong>为主，小红书/抖音偏少——短视频种草仍有空间。';
+  platformHtml += '<strong>' + t('insight_social_title') + '</strong>' + t('insight_social', {
+    office: AGG['scenario_office_digital'].social, photo: AGG['scenario_photo'].social,
+    outdoor: AGG['scenario_outdoor'].social, driving: AGG['scenario_driving'].social,
+    fashion: AGG['scenario_fashion'].social
+  });
   platformHtml += '</div>';
   document.getElementById("scenario-platform-card").innerHTML = platformHtml;
 
@@ -1647,23 +1653,22 @@ function renderScenarioComparison() {
     var a = AGG[sc], m = SCENE_META[sc];
     baiduHtml += '<div class="scenario-item">';
     baiduHtml += '<div class="sc-icon">' + m.icon + '</div>';
-    baiduHtml += '<div class="sc-name">' + sc + '</div>';
+    baiduHtml += '<div class="sc-name">' + t(sc) + '</div>';
     baiduHtml += '<div class="sc-count" style="color:' + m.color + '">0</div>';
-    baiduHtml += '<div class="sc-detail">场景词百度无收录</div>';
+    baiduHtml += '<div class="sc-detail">' + t('no_baidu_index') + '</div>';
     baiduHtml += '</div>';
   });
   baiduHtml += '</div>';
 
-  // 子关键词明细表
   baiduHtml += '<div style="margin-top:20px;">';
-  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>子关键词（渐进镜关联）</th><th>百度月搜索量</th><th>社媒内容量(近30天)</th></tr>';
+  baiduHtml += '<table class="scenario-table"><tr><th>' + t('scenario') + '</th><th>' + t('subkw_progressive') + '</th><th>' + t('baidu_monthly') + '</th><th>' + t('social_volume_30d') + '</th></tr>';
   SCENE_ORDER.forEach(function(sc) {
     var a = AGG[sc], m = SCENE_META[sc];
     a.recs.forEach(function(r, idx) {
       baiduHtml += '<tr>';
-      if (idx === 0) baiduHtml += '<td rowspan="' + a.recs.length + '" style="font-weight:bold;color:' + m.color + ';">' + m.icon + ' ' + sc + '</td>';
+      if (idx === 0) baiduHtml += '<td rowspan="' + a.recs.length + '" style="font-weight:bold;color:' + m.color + ';">' + m.icon + ' ' + t(sc) + '</td>';
       baiduHtml += '<td><span class="baidu-tag" style="background:' + m.color + '22;color:' + m.color + ';">' + r.kw + '</span></td>';
-      baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(无收录)</span></td>';
+      baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(' + t('no_index') + ')</span></td>';
       baiduHtml += '<td>' + r.social.toLocaleString() + '</td>';
       baiduHtml += '</tr>';
     });
@@ -1672,30 +1677,30 @@ function renderScenarioComparison() {
   baiduHtml += '</div>';
 
   baiduHtml += '<div class="scenario-insight" style="border-left-color:#f78166;">';
-  baiduHtml += '<strong>搜索洞察（Chinaz 真实数据）：</strong>各场景"场景专属渐进镜词"（如驾驶渐进镜、办公渐进镜、户外渐进镜等）在百度<strong>均无收录</strong>（长尾），故搜索量≈0。但渐进镜<strong>类目整体</strong>搜索需求真实且巨大（类目词如"老花镜""渐进镜片""防蓝光镜片"等搜索量庞大），说明"<strong>场景 + 渐进镜</strong>"是尚待开发的内容/SEO 蓝海——当前社媒已出现真实场景讨论，正是抢先布局搜索词与种草内容的窗口期。';
+  baiduHtml += '<strong>' + t('insight_search_title') + '</strong>' + t('insight_search');
   baiduHtml += '</div>';
 
   // ===================== 双维度交叉对比（场景级）=====================
   baiduHtml += '<div style="margin-top:16px;border-top:1px solid #2a2d3a;padding-top:16px;">';
-  baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 双维度交叉对比（场景级 · 真实数据）</h4>';
-  baiduHtml += '<table class="scenario-table"><tr><th>场景</th><th>社媒内容量(近30天)</th><th>百度搜索量(月)</th><th>供需匹配度</th><th>策略建议</th></tr>';
+  baiduHtml += '<h4 style="color:#c4c9d4;margin-bottom:10px;">📊 ' + t('cross_comparison') + '</h4>';
+  baiduHtml += '<table class="scenario-table"><tr><th>' + t('scenario') + '</th><th>' + t('cross_social') + '</th><th>' + t('cross_baidu') + '</th><th>' + t('cross_match') + '</th><th>' + t('cross_strategy') + '</th></tr>';
   SCENE_ORDER.forEach(function(sc) {
     var a = AGG[sc], m = SCENE_META[sc];
     var match, strategy;
     if (a.social >= 150) {
-      match = '<span style="color:#4ade80;">✓ 社媒热度高</span>';
-      strategy = '社媒讨论活跃，应同步布局"场景+渐进镜"搜索词与种草内容，承接已被激活的需求';
+      match = '<span style="color:#4ade80;">' + t('match_active') + '</span>';
+      strategy = t('strategy_good');
     } else if (a.social >= 80) {
-      match = '<span style="color:#fbbf24;">→ 社媒中等</span>';
-      strategy = '内容初具规模，可加大精准场景化种草，培育用户搜索心智';
+      match = '<span style="color:#fbbf24;">' + t('match_medium') + '</span>';
+      strategy = t('strategy_medium');
     } else {
-      match = '<span style="color:#8a8f9a;">○ 长尾小众</span>';
-      strategy = '需求尚早期，适合精准投放与 KOL 教育，暂不宜规模化投放';
+      match = '<span style="color:#8a8f9a;">' + t('match_longtail') + '</span>';
+      strategy = t('strategy_longtail');
     }
     baiduHtml += '<tr>';
-    baiduHtml += '<td style="font-weight:600;color:' + m.color + ';">' + m.icon + ' ' + sc + '</td>';
-    baiduHtml += '<td>' + a.social.toLocaleString() + ' 条</td>';
-    baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(无收录)</span></td>';
+    baiduHtml += '<td style="font-weight:600;color:' + m.color + ';">' + m.icon + ' ' + t(sc) + '</td>';
+    baiduHtml += '<td>' + a.social.toLocaleString() + ' ' + t('stock_count') + '</td>';
+    baiduHtml += '<td style="color:#8a8f9a;">0 <span style="font-size:11px;">(' + t('no_index') + ')</span></td>';
     baiduHtml += '<td>' + match + '</td>';
     baiduHtml += '<td style="font-size:12px;">' + strategy + '</td>';
     baiduHtml += '</tr>';
@@ -2063,7 +2068,7 @@ async function sendAIMessage() {
     var resp = await fetch(AI_API_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messages: aiHistory.slice(0, -1) }) // 不含刚加的占位
+      body: JSON.stringify({ messages: aiHistory })
     });
 
     if (!resp.ok) {
@@ -2109,7 +2114,7 @@ async function sendAIMessage() {
     document.getElementById('ai-status').textContent = '';
   } catch (e) {
     thinkingMsg.classList.remove('thinking');
-    thinkingMsg.innerHTML = renderMarkdown('❌ **请求失败**：' + escapeHtmlSafe(e.message) + '\n\n请检查：\n1. Worker 是否已部署并填入正确 URL\n2. 混元 API Key 是否有效\n3. 网络是否可访问');
+    thinkingMsg.innerHTML = renderMarkdown('❌ **请求失败**：' + escapeHtmlSafe(e.message) + '\n\n请检查：\n1. Worker 是否已部署并填入正确 URL\n2. TokenHub API Key 是否有效\n3. 网络是否可访问');
     document.getElementById('ai-status').textContent = '';
   } finally {
     aiIsSending = false;
