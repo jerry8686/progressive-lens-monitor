@@ -1,6 +1,5607 @@
 // ==================== SHARED DATA ====================
 // Auto-extracted from main report. Do not edit manually.
-const RAW_ITEMS = [{"id": "XHS1", "platform": "小红书", "title": "40岁近视+初老花！豪雅渐进眼镜一步到位", "desc": "近视的朋友，到了40岁+的年纪\n真的很难逃出近视叠加老花的尴尬[暗中观察R]\n两幅眼镜来回切换，麻烦，又很尴尬\n一眼告诉别人，我已经老花了\n\t\n这次这位顾客，就选择直接一步到位\n[吧唧R]配的豪雅悦览S1渐进镜片[吧唧R]\n把近视和老花度数，做在同一副镜片上\n再也不用两幅眼镜来回切换，方便省事又好用[哇R]\n\t\n[看R]他的度数：\n右眼：-6.00/-1.00散光\n左眼：-5.50/-1.25散光", "likes": 3, "comments": 0, "brands": ["豪雅"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a50a38e0000000006030979", "published_at": "2026-07-11 17:30:25"}, {"id": "XHS2", "platform": "小红书", "title": "中老年如何守护^眼前”", "desc": "#世界杯聊个球 #蔡司  #蔡司渐进", "likes": 6, "comments": 0, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5743fc000000000f01dfe5", "published_at": "2026-07-15 16:25:32"}, {"id": "XHS3", "platform": "小红书", "title": "这些品牌的镜片，如果高于这个价，那就直接走", "desc": "✴️要想清晰度高，体验感好，就选蔡司\n✴️要想镜片耐磨，使用时间长，就选依视路\n✴️要想性价比高，实用，就选凯米、某月\n✅中高预算考虑依视路镜片，2.5折一副\n[一R]依视路钻晶膜岩（主打耐磨，清晰度）\n[二R]依视路钻晶膜臻（升级版的膜岩）\n[三R]依视路钻晶膜御防蓝光（防蓝光底色浅）\n[四R]依视路钻晶膜致防蓝光（升级版的膜御）\n[五R]依视路变色（变色里面的天花板，懂的都懂）\n✅ 中高预算考", "likes": 5, "comments": 6, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"清晰度": ["清晰"], "性价比": ["性价比", "折"], "功能效果": ["防蓝光"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a6ecbb0000000002201046d", "published_at": "2026-08-02 12:46:40"}, {"id": "XHS4", "platform": "小红书", "title": "巴南万达配镜｜实现蔡司镜片自you啦", "desc": "#重庆配眼镜 #巴南万达配镜 #视野联行 #蔡司镜片 #巴南配镜#重庆配镜、#重庆眼镜店 #眼镜店 #近视眼镜 #专业验光配镜", "likes": 15, "comments": 1, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "服务体验": ["专业验光"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a7581380000000005020bb2", "published_at": "2026-08-07 14:54:48"}, {"id": "XHS5", "platform": "小红书", "title": "如果暴龙 蔡司 依视路高于这个价，请不要配！", "desc": "⚛️其实大家都知道蔡司，依视路，暴龙是比较好的眼镜，但是你们知道什么价格买到才不算贵吗!看完你就基本全明白了。\n⚛️蔡司镜片行业里的龙头老大，蔡司推荐新清锐，泽锐，智锐，蔡某司镜片2.5折一副\n🅾️蔡某司钻立方防蓝光\n1.50折射率折扣价295一副\n1.60折射率折扣价520一副\n1.67折射率折扣价745一副\n1.74折射率折扣价995一副\n🅾️蔡某司新清锐铂金膜\n1.56折射率折扣价395一副", "likes": 90, "comments": 30, "brands": ["依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["折扣", "折"], "功能效果": ["防蓝光"], "服务体验": ["推荐"]}, "neg_keywords": {"价格问题": ["贵"]}, "url": "https://www.xiaohongshu.com/explore/6a660079000000000f029587", "published_at": "2026-07-26 20:41:29"}, {"id": "XHS6", "platform": "小红书", "title": "就是配副眼镜而已，高于这个价就别买了吧！", "desc": "[斜眼R]建议只选品牌镜片，杂牌镜片不建议选，靠谱品牌才能放心，蔡司(德国)，依视路(法国)，凯米(韩国)，国产的话，某月也不错，品牌镜片价格透明，而且质量有保证!\n[斜眼R]镜框也别只追求轻便，选框子要看设计，不稳定的框加上镜片容易滑下，超不舒服，顺带提醒，高度近视要小心选大框\n[斜眼R]镜框选择:镜框也是一样的道理，尽量选择带有品牌的(暴龙、陌森、帕莎、川久保玲、施洛华)都是可以的，价位一般在", "likes": 5, "comments": 30, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"舒适度": ["舒服", "轻便"], "品质感": ["德国"]}, "neg_keywords": {"佩戴不适": ["不舒服"]}, "url": "https://www.xiaohongshu.com/explore/6a6ae1e00000000011004ed4", "published_at": "2026-07-30 13:32:16"}, {"id": "XHS7", "platform": "小红书", "title": "如果配眼镜高于这个价格，那就直接走吧！", "desc": "⚛️戴眼镜的赶紧存一下内容太好了，都说眼镜行业水很深今天给大家挤干水分，来点干货，戴眼镜的姐妹们，记得一定要收藏实用，简单，易懂，避坑，省钱!\n⚛️选镜片：这4个牌子闭眼选都不会错，国产某月，凯米，进口蔡司，依视路，其他杂牌能不选就不选!\n⚛️蔡司和依视路都是国际品牌，折扣都是2.5折一副，预算高一点，想佩戴体验好一些的选它准没错，从2百多到2千都有，年轻人推荐蔡司新清锐，蔡司泽锐，蔡司智锐，都是", "likes": 14, "comments": 16, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["省钱", "折扣", "折"], "服务体验": ["推荐"]}, "neg_keywords": {"价格问题": ["坑"], "验配失败": ["避坑"]}, "url": "https://www.xiaohongshu.com/explore/6a66fc8b0000000011017f31", "published_at": "2026-07-27 14:36:59"}, {"id": "XHS8", "platform": "小红书", "title": "今年配暴龙➕蔡司➕依视路，这价格难道贵吗？", "desc": "近期有打算配暴龙镜框、蔡司镜片、依视路镜片的朋友们都可以来看看，其实今年的暴龙镜框，蔡司镜片，依视路镜片真的没有你想象中的那么贵了，今年我们眼镜的价格真的很透明，暴龙镜框才5折一副，不限款式，全场300到500一副，蔡司镜片和依视路镜片现在都是2.5折一副，图3有这两个镜片的实价表，如果这样的价格朋友们还会买贵了，那真的是妥妥的冤大头了!\n\t\n#配眼镜 #蔡司镜片 #依视路镜片 #暴龙镜框 #高颜", "likes": 3, "comments": 2, "brands": ["依视路", "蔡司"], "sentiment": "neutral", "pos_keywords": {"性价比": ["折"]}, "neg_keywords": {"价格问题": ["贵"]}, "url": "https://www.xiaohongshu.com/explore/6a69eecd000000002201afe3", "published_at": "2026-07-29 20:15:09"}, {"id": "XHS9", "platform": "小红书", "title": "上班族配镜｜蔡司镜片自用真实分享✨", "desc": "#蔡司配镜 #上班族眼镜 #蔡司小瞳堡 #青少年近视防控 #配眼镜攻略 #日常配镜 #近视眼镜#沈阳配镜 #沈阳眼镜店 #沈阳验光", "likes": 93, "comments": 9, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a674de5000000001101561f", "published_at": "2026-07-27 20:24:05"}, {"id": "XHS10", "platform": "小红书", "title": "再也不做大冤种。。。配镜百元拿下蔡司镜片😭", "desc": "-\n真的被之前配镜坑怕了！！！\n每次配副眼镜动不动大几百上千\n以为好镜片都很贵，结果这次直接颠覆认知🤯\n在某大某众刷到这家诺亚视光评分超高\n没想到小红书也有同款套餐，性价比真的绝了\n现在蔡司/依视路镜片+镜框全套才398\n还送镜盒、镜布、清洗液、全套专业蔡司仪器验光\n甚至还有99r防蓝光全套套餐\n学生党、换眼镜频繁的姐妹真的闭眼冲！！！\n-\n最惊喜的是它家是全国连锁\n广州、上海、深圳、长沙、东莞、", "likes": 83, "comments": 3, "brands": ["依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["性价比"], "品质感": ["专业"], "功能效果": ["防蓝光"], "服务体验": ["惊喜"]}, "neg_keywords": {"价格问题": ["贵", "坑"]}, "url": "https://www.xiaohongshu.com/explore/6a64aa13000000000f010250", "published_at": "2026-07-25 20:20:35"}, {"id": "XHS11", "platform": "小红书", "title": "眼镜验配大有讲究，认准这三点很关键！", "desc": "我自己常年戴眼镜，所以深知度数飙升的烦恼，孩子近视后我格外谨慎，配镜牢记3个关键点🥳🥳具体放在了视频里！\n我家选择依视路星趣控2.0✅信号区更强、覆盖范围更广，75mm大镜片适配多款镜框，膜岩材质耐刮耐磨。 配镜务必专业验配，精准测量瞳高瞳距，再加上定期复查，才能更好的守护孩子视力～\n#青少年眼镜#星趣控2.0 #青少年近视防控 #依视路星趣控镜片 #青少年近视 #近视防控#育儿经验howto #", "likes": 1084, "comments": 27, "brands": ["依视路"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a56439d000000001700af50", "published_at": "2026-07-15 09:02:09"}, {"id": "XHS12", "platform": "小红书", "title": "如果配眼镜高于这个价格，别犹豫，可以直接走", "desc": "⚛️很多人不知道镜片怎么选择，价格究竟多少才不会被坑！今天我来一次性讲清楚！市面上的镜片品牌很多，不懂的情况下容易摸不着头脑，其实镜片我们只需要认准蔡司，依视路，凯米，某月这些就可以，都是大品牌的镜片质量售后都比较好！\n⚛️蔡司镜片选择\n👉蔡司新清锐：非球面设计，视野清晰且美观，钻立方铂金膜，硬度最高，成像效果好视觉清晰，容易适应\n👉蔡司泽锐：自由环面设计，比普通非球面镜片薄8%视野清晰区域更大，", "likes": 10, "comments": 0, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "neutral", "pos_keywords": {"清晰度": ["清晰"]}, "neg_keywords": {"价格问题": ["坑"]}, "url": "https://www.xiaohongshu.com/explore/6a531b590000000011005ab8", "published_at": "2026-07-12 12:43:05"}, {"id": "XHS13", "platform": "小红书", "title": "眼镜店老板打死都不会告诉你的镜片攻略！", "desc": "✴️我们只要认准蔡司、依视路、凯米、某月这些知名品牌镜片就好了！可以满足大多数人群的配镜需求，主要是价格透明，不容易被坑\n✴️如果你镜片怕踩坑，那就直接问商家折扣只要是品牌镜片价格表都是全国统一，折扣越低越便宜，千万不要考虑杂牌镜片\n✴️在选择依视路镜片的时候，务必要看清楚是不是依视路旗下，或者是依视路集团出品这种真的很坑\n✴️挑选镜片要自己事先做好攻略，千万不要只听销售小姐姐的介绍，市面上认可的", "likes": 6, "comments": 8, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["便宜", "折扣", "折"]}, "neg_keywords": {"价格问题": ["坑"], "验配失败": ["踩坑"]}, "url": "https://www.xiaohongshu.com/explore/6a5b03f0000000001003f0aa", "published_at": "2026-07-18 12:41:20"}, {"id": "XHS14", "platform": "小红书", "title": "配眼镜而已，做完攻略再去，大概率不会踩坑！", "desc": "真的不要随便就去配眼镜，配镜前要了解好自己的预算和需求，否则被宰的可能性很大！看完图片内容，再去配眼镜，眼镜店老板以后也别想随随便便坑你了！\n\t\n#近视眼镜  #配眼镜  #配镜攻略  #镜片推荐  #镜框推荐  #蔡司镜片  #依视路镜片  #上海配眼镜 ", "likes": 8, "comments": 0, "brands": ["依视路", "蔡司"], "sentiment": "negative", "pos_keywords": {"服务体验": ["推荐"]}, "neg_keywords": {"价格问题": ["坑", "被宰"], "验配失败": ["踩坑"]}, "url": "https://www.xiaohongshu.com/explore/6a5eff86000000001101e1bc", "published_at": "2026-07-21 13:11:34"}, {"id": "XHS15", "platform": "小红书", "title": "蔡司镜片热销爆单！价格实在，验光服务拉满", "desc": "#重庆配眼镜 #重庆眼镜店 #实体店配镜 #眼镜店 #蔡司镜片 #近视眼镜 #专业验光配镜 #配眼镜 #防蓝光镜片 #镜片的选择", "likes": 13, "comments": 5, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "功能效果": ["防蓝光"], "服务体验": ["专业验光"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5ee8910000000001000a30", "published_at": "2026-07-21 17:00:55"}, {"id": "XHS16", "platform": "小红书", "title": "高度数终于挖到适配的蔡司镜片配镜店", "desc": "#潘家园配镜 #高度近视镜片 #蔡司智锐 #北京眼镜店推荐 #超薄镜片分享", "likes": 125, "comments": 7, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a55dd7d000000001700b9da", "published_at": "2026-07-14 14:55:57"}, {"id": "XHS17", "platform": "小红书", "title": "我不希望直到现在，你配眼镜居然还要被坑！", "desc": "⚛️今天给大家挤干水分，内容简单，非常实用，想要配镜的或者戴眼镜的薯友们，请记得一定看!可以让你避免大多数的坑\n⚛️千万不要买杂牌镜片，杂牌镜片100，可能比品牌镜片1000的利润都要大\n⚛️千万别相信买镜片送镜框的活动，这类镜框通常丑材质重，批发价可能10块\n⚛️不管在哪里配眼镜，一定要手写验光单，千万不要拿着电脑验光单配眼镜\n⚛️高度近视一定要选择小尺寸镜框，不然你的镜片\t会像啤酒瓶底一样的厚", "likes": 18, "comments": 16, "brands": [], "sentiment": "negative", "pos_keywords": {}, "neg_keywords": {"价格问题": ["坑"]}, "url": "https://www.xiaohongshu.com/explore/6a572579000000001003f2d1", "published_at": "2026-07-15 14:15:21"}, {"id": "XHS18", "platform": "小红书", "title": "暴龙 蔡司 依视路！高于这个价！那就走吧！", "desc": "如果你也想要配一副暴龙镜框、依视路镜片和蔡司镜片，那就千万不要轻易就相信眼镜店的价格，请一定要多多比较一下，因为这种品牌镜框镜片都是有很低的折扣的，你千万别买贵被坑了，暴龙镜框5折一副，全场300到488，不限款式，蔡司镜片和依视路镜片都是2.5折一副，图三就是这两个镜片的实价表，高于这个价，我建议你可以直接走！\n\t\n#配眼镜 #暴龙镜框 #蔡司镜片 #依视路镜片 #近视眼镜 #上海配眼镜", "likes": 5, "comments": 10, "brands": ["依视路", "蔡司"], "sentiment": "neutral", "pos_keywords": {"性价比": ["折扣", "折"]}, "neg_keywords": {"价格问题": ["贵", "坑"]}, "url": "https://www.xiaohongshu.com/explore/6a5e111a0000000011018d4d", "published_at": "2026-07-20 20:14:18"}, {"id": "XHS19", "platform": "小红书", "title": "就算是配暴龙➕蔡司➕依视路，也不用总被坑吧！", "desc": "那些想配暴龙镜框、蔡司镜片、依视路镜片的朋友们，但是又不知道价格多少合适的，你们看过来，我把暴龙镜框，蔡司镜片，依视路镜片的底价都整理在这里了，以后真的别总是被坑了！暴龙镜框5折一副，全场300到488，蔡司和依视路都是2.5折一副，下面就是实价表\n✅蔡司镜片综合排名天花板高透光，高成像。视觉还原性高，蔡司推荐新清锐，泽锐，智锐\n1.50钻立方防蓝光折后价295一副\n1.60钻立方防蓝光折后价52", "likes": 2, "comments": 10, "brands": ["依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["折"], "功能效果": ["防蓝光"], "服务体验": ["推荐"]}, "neg_keywords": {"价格问题": ["坑"]}, "url": "https://www.xiaohongshu.com/explore/6a562446000000001101df90", "published_at": "2026-07-14 19:57:58"}, {"id": "XHS20", "platform": "小红书", "title": "在天河！！！找到了我的人生眼镜…", "desc": "#配眼镜 #鲸渝眼镜  #蔡司镜片 #近视眼镜 #同城配镜 #广州配眼镜   #广州眼镜店   #蔡司配镜  #配镜攻略  #专业验光配镜", "likes": 161, "comments": 103, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "服务体验": ["专业验光"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a731a440000000005032017", "published_at": "2026-08-05 19:11:00"}, {"id": "XHS21", "platform": "小红书", "title": "鲸渝眼镜✨换新眼镜的满意体验👓", "desc": "#广州配眼镜 #广州鲸渝眼镜 #天河配眼镜 #广州配镜#写字楼眼镜店 #蔡司镜片 #广州配镜攻略 #打工人配镜 #平价配镜推荐", "likes": 39, "comments": 2, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"服务体验": ["满意", "推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a73205b000000002403e458", "published_at": "2026-08-05 19:36:59"}, {"id": "XHS23", "platform": "小红书", "title": "一眼看懂：五大品牌渐进镜片的特点‼️", "desc": "到底谁更适合你？\n\t\n蔡司、依视路、豪雅、尼康、罗敦司得，配渐进镜片时经常绕不开这五个品牌。\n\t\n但很多人真正纠结的不是“哪个品牌最贵”，而是：它们到底有什么区别？我应该选哪个？\n\t\n简单来说👇\n\t\n🔵 蔡司 ZEISS\n更强调精密光学、个性化设计与整体视觉体验。对于远中近切换、日常办公、开车、阅读等多场景使用，可以根据不同系列和验配参数进行选择。\n\t\n🔷 依视路 Essilor\n渐进镜片产品线成", "likes": 3, "comments": 0, "brands": ["豪雅", "依视路", "蔡司"], "sentiment": "negative", "pos_keywords": {}, "neg_keywords": {"价格问题": ["贵"]}, "url": "https://www.xiaohongshu.com/explore/6a7038d7000000002800a7c2", "published_at": "2026-08-03 14:44:40"}, {"id": "XHS24", "platform": "小红书", "title": "目之所及💁🏻‍♀️｜皆是清晰温柔💕", "desc": "看清世间美好💕不必花费高昂代价💖\n总觉得品牌镜片遥不可及✨直到遇见视野联行〰️\n在这里245便能安排上蔡司镜片👓打破配镜价格壁垒👻\n💕最戳我的是全程超舒服的体验！！没有聒噪的推销，验光师温柔又专业，会细致测瞳距、调度数，还会根据日常看手机、通勤的用眼习惯微调，戴起来通透又舒适，完全不会干涩头晕\n💕店里的镜框款式都很戳女生审美！！温柔素颜框、百搭通勤款、氛围感墨镜应有尽有，款式精致不笨重\n💕镜片支持", "likes": 3, "comments": 2, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"清晰度": ["清晰", "通透"], "舒适度": ["舒服", "舒适"], "品质感": ["专业"]}, "neg_keywords": {"佩戴不适": ["头晕"]}, "url": "https://www.xiaohongshu.com/explore/6a758192000000002201772e", "published_at": "2026-08-07 14:56:18"}, {"id": "XHS25", "platform": "小红书", "title": "后来，我长成了小时候向往的律政俏佳人", "desc": "周末又来深圳啦，天气特别好，随便走走都特别治愈☁️\n-\n朋友说很喜欢我身上的高智感\n工作中专业犀利，闲暇的时候优雅得体。\n其实我小时候是邻里皆知的野小孩，\n但是现在成长为了小时候会羡慕的样子。\n是无数靠自己拼搏的经历蜕变成为了如今的自己：漂亮、自信、独立。\n眼镜是我工作中不可或缺的单品，蔡司的知名度和信赖度自不必说\n蔡司新清锐S膜镜片，以高性价比体验🖤\n视野清晰从中心到边缘都通透，科学曲率看东西真", "likes": 1115, "comments": 58, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"清晰度": ["清晰", "通透"], "性价比": ["性价比"], "品质感": ["专业"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5617bc000000001503e9e4", "published_at": "2026-07-15 18:15:30"}, {"id": "XHS27", "platform": "小红书", "title": "青少年配镜抄作业！蔡司小瞳堡防控一步到位", "desc": "给孩子配防控镜片\n担心佩戴效果打折扣的家长看过来[暗中观察R]\n今天分享的这副蔡司小瞳堡防控镜片\n直接解决大部分问题\n\t\n[看R]先看这位小朋友的度数：\n右眼 近视300度，有50度散光\n左眼：没有近视，有75 散光\n[向右R]选择的就是蔡司小瞳堡防控镜片\n\t\n这款镜片是蔡司26年新出的防控新产品\n蔡司镜片的实力，大家基本都知道\n\t\n这款新产品，它最核心的设计就是：\n---M.O.V.E动态离焦技", "likes": 1, "comments": 0, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["折扣", "折"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a6aff3b000000000401d4c9", "published_at": "2026-07-31 17:40:05"}, {"id": "XHS28", "platform": "小红书", "title": "配镜天花板！398r拿下了蔡司眼镜！", "desc": "#诺亚视光 #蔡司镜片#高颜值眼镜 #眼镜探店 #配镜攻略#配镜#配眼镜", "likes": 96, "comments": 14, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["值"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a64d8dd000000000101feb4", "published_at": "2026-07-25 23:40:13"}, {"id": "XHS29", "platform": "小红书", "title": "真的没开玩笑😭398真的能拿下蔡司眼镜啊啊", "desc": "#诺亚视光  #蔡司镜片 #配眼镜#东莞眼镜#东莞眼镜店#东莞蔡司#蔡司#高端眼镜推荐#验光配镜#配眼镜#眼镜", "likes": 52, "comments": 18, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["高端"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a6979bf000000001101d640", "published_at": "2026-07-29 11:55:43"}, {"id": "XHS30", "platform": "小红书", "title": "鲸渝眼镜｜打工人私藏配镜地👓", "desc": "久坐办公室看电脑，旧眼镜模糊干涩\n终于来天河更换新眼镜！\n写字楼高空门店，环境简约明亮\n落地窗光线超好，试戴拍照很出片\n镜框款式超多，韩系大框\n纯钛商务框、素颜镜框应有尽有\n\t\n重点是蔡司授权合作门店✔️\n镜片正品可溯源，不用担心踩坑\n明码标价无隐形消费，性价比在线\n地铁体育西路站步行几分钟就能到\n配镜还享受镜框终身维护，清洗、调松紧都免费\n想要配眼镜的朋友可以来逛逛！\n\t\n📍鲸渝眼镜\n地址：广州", "likes": 88, "comments": 17, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {"性价比": ["性价比"], "品质感": ["正品", "授权"]}, "neg_keywords": {"质量问题": ["模糊"], "价格问题": ["坑"], "验配失败": ["踩坑"]}, "url": "https://www.xiaohongshu.com/explore/6a6478a5000000001302c856", "published_at": "2026-07-25 16:49:41"}, {"id": "XHS31", "platform": "小红书", "title": "东莞市区！这样配镜至少省一半！", "desc": "#诺亚视光  #蔡司镜片 #配眼镜#东莞眼镜#东莞眼镜店#东莞蔡司#蔡司#高端眼镜推荐#验光配镜#配眼镜#眼镜店", "likes": 64, "comments": 11, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["高端"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a65c19d000000000503b860", "published_at": "2026-07-26 16:13:17"}, {"id": "XHS32", "platform": "小红书", "title": "沈阳！上班族配镜！护眼不压眼太香了", "desc": "#配镜攻略 #上班族护眼眼镜 #蔡司镜片 #电脑党必备 #素颜神器眼镜#通勤眼镜 #打工人好物", "likes": 52, "comments": 4, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"功能效果": ["护眼"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a68143e000000000101c491", "published_at": "2026-07-28 10:30:22"}, {"id": "XHS33", "platform": "小红书", "title": "我的人生眼镜topppppp1️⃣诞生了….", "desc": "无锡想配新眼镜的姐妹快看过来🥹\n万象城西区这家OPTIC MASTER眼镜大师真的好惊喜！\n\t\n店内是简约原木风 慢慢试镜框特别放松～\n陈列款式敲丰富！Lindberg Cartier DITA MiuMiu Chopard萧邦全都有\n奢牌和小众设计师镜框一网打尽👓\n\t\n可以自由试戴 总能挑到适配脸型的梦中情镜👓！\n独立验光区域超专业 配备蔡司IT2定位系统 验光师细致测量眼部各项参数\n高度近视配", "likes": 103, "comments": 0, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "服务体验": ["惊喜"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a671e06000000000c015631", "published_at": "2026-07-27 16:59:50"}, {"id": "XHS34", "platform": "小红书", "title": "社恐配镜❗️❗️他家太友好了❗️❗️", "desc": "千款可选！颜值高！\n#郑州配镜 #郑州眼镜店 #郑州配眼镜 #蔡司镜片\n#素颜眼镜 #高颜值镜框 #郑州探店 #近视眼镜", "likes": 34, "comments": 0, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["值"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a69dcb2000000000103151e", "published_at": "2026-07-29 18:57:54"}, {"id": "XHS35", "platform": "小红书", "title": "💰398配蔡司？！以前想都不敢想！", "desc": "398配蔡司还送镜框？？我没听错吧！！\n以前配副蔡司没个千把块下不来\n这次直接对半砍了属于是👀\n\t\n门店镜框尊的多！！\n轻量钛架戴着太舒服了\n素颜款通勤款都好好看\n店员审美在线 帮忙搭完就下单\n\t\n验光过程细致\n用的还是专业的蔡司仪器\n先聊20分钟日常用眼\n不是那种流水线验光\n\t\n50+连锁店 线上线下都能配\n最快半小时取镜 急用也不怕\n懒得跑就邮寄到家 超方便\n\t\n终身免费验光调整保养\n这个售后", "likes": 12, "comments": 0, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"舒适度": ["舒服"], "品质感": ["专业"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a6378a60000000014006048", "published_at": "2026-07-26 12:36:01"}, {"id": "XHS36", "platform": "小红书", "title": "实体店配暴龙➕蔡司，知道这些就很难被坑了！", "desc": "✅暴龙镜框一般分为三大系列，BT系列，BA系列，BJ系列\n1️⃣BT纯钛系列:暴龙的纯钛系列，属于高定位，材质一般由纯钛，钛+板材，钛+TR组成\n2️⃣BA和BJ半钛系列:属于暴龙中端定位，材质一般半钛+TR，合金+钛合金\n3️⃣BJ常规系列:多属于暴龙入门系列，(此系列材质组合比较多)，半钛，合金，板材，TR不锈钢的都有\n4️⃣不管是暴龙镜框的什么材质，都可以有5折一副的折扣，贵了不建议买\n✅蔡", "likes": 11, "comments": 4, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {"性价比": ["折扣", "折"]}, "neg_keywords": {"价格问题": ["贵", "坑"]}, "url": "https://www.xiaohongshu.com/explore/6a6de3610000000022015f54", "published_at": "2026-08-01 20:15:29"}, {"id": "XHS37", "platform": "小红书", "title": "拒绝度数涨｜M.O.V.E.动态离焦真香", "desc": "家里有学龄近视娃的应该都深有体会，每次复查看到度数上涨，心里真的慌。\n暑假更是用眼高峰期，作业、电子产品轮番来，用眼负荷直接拉满。之前给孩子配过普通管控镜片，没戴多久度数依旧往上走，后来才知道静态光路会让眼睛慢慢适应，控视力效果越来越差。\n对比多款镜片后入手蔡司小瞳堡，老牌光学品牌专门针对青少年研发，靠谱度拉满。\n独特M.O.V.E动态阵列微结构，孩子看书、抬头看黑板时光路不断变化，避免眼部适应麻", "likes": 936, "comments": 11, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a60701b000000000301fee7", "published_at": "2026-07-24 11:17:58"}, {"id": "XHS38", "platform": "小红书", "title": "眼镜一戴 我妈说我起码博士毕业🎓", "desc": "#广州配眼镜 #广州眼镜店  #配眼镜 #实体店配镜 #广州维多利亚广场 #广州平价眼镜店 #专业验光配镜 #蔡司镜片", "likes": 101, "comments": 18, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "服务体验": ["专业验光"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a68938d000000001303c175", "published_at": "2026-07-28 19:33:33"}, {"id": "XHS39", "platform": "小红书", "title": "👩🏻‍💻Plog｜商科生的外企实习日记｜新眼镜", "desc": "hii大家欢迎来到我的实习plog！\n没想到一晃就已经实习满一个月啦🫶🏻进入了实习中期后期会忙一些，但是适应的更加好啦！\n\t\n唯一美中不足的就是每天盯电脑💻好久\n✨最近入手了蔡司新清锐S膜镜片，镜片边缘成像很清晰而且镜片本身也比较轻薄，戴一整天都很舒服！性价比超级高适合学生党和职场新人\n真的越戴越喜欢😘被好多朋友夸特别高质感！\n\t\n现在一到周末真的就经常约我的朋友们一起见面出来玩，真的是我生活的调", "likes": 1068, "comments": 44, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"清晰度": ["清晰"], "舒适度": ["舒服"], "性价比": ["性价比"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5a11ca000000001101dd9c", "published_at": "2026-07-17 19:57:06"}, {"id": "XHS41", "platform": "小红书", "title": "白山眼鏡店 | 两周年夏日祭开启🎊", "desc": "@白山眼鏡店 两周年夏日祭开启👀\n\t\n现场打卡分享，即可参与抽奖赢原创周边🛍️\n活动期间，买框即送蔡司1.5非球面镜片\n升级镜片系列，更享专属优惠👓\n\t\n📍地址：张园W9\n🕘时间：8月1日-8月31日\n\t\n持续关注@上海张园 ，收获更多惊喜。\n#上海张园#张园#白山眼鏡店#白山眼鏡店上海#蔡司镜片#专属优惠#hakusanmegane#镜片升级", "likes": 2, "comments": 0, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"服务体验": ["惊喜"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a66c7160000000004028177", "published_at": "2026-07-27 11:00:37"}, {"id": "XHS42", "platform": "小红书", "title": "广州配眼镜｜挖到天河写字楼宝藏眼镜店✨", "desc": "谁懂高度近视配眼镜的痛！镜片厚、预算高，逛了好多店终于在广州天河挖到这家藏在写字楼里的夕和眼镜，真心推荐给广州需要配镜的朋友！\n店铺在丰兴广场C座19楼，写字楼门店安静不嘈杂，没有过度推销这点真的好感拉满。进店先做全套专业验光，配备蔡司验光仪、三合一屈光分析仪，高度近视还能体验数字定位系统，验光师持证上岗，一对一细致检查，每一项数据都会耐心讲解，比起商场流水线验光靠谱太多。\n镜框选择范围巨广！有增", "likes": 11, "comments": 2, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"], "服务体验": ["专业验光", "耐心", "推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a682c1a0000000010025336", "published_at": "2026-07-28 15:16:52"}, {"id": "XHS43", "platform": "小红书", "title": "不知道这些，真的不建议随便就去配眼镜！", "desc": "虽然大家都知道蔡司、依视路、凯米、某月都是比较不错的镜片，但是价格上千万不要买贵了！\n⚛️蔡某司镜片2.5折一副\n🅾️蔡某司新清锐铂金膜\n1.56折射率折扣价395一副\n1.60折射率折扣价595一副\n1.67折射率折扣价820一副\n1.74折射率折扣价1070一副\n🅾️蔡某司泽锐铂金膜\n1.56折射率折扣价495一副\n1.60折射率折扣价645一副\n1.67折射率折扣价870一副\n1.74折射率", "likes": 21, "comments": 0, "brands": ["凯米", "依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["折扣", "折"]}, "neg_keywords": {"价格问题": ["贵"]}, "url": "https://www.xiaohongshu.com/explore/6a6305c20000000011011d91", "published_at": "2026-07-24 14:27:14"}, {"id": "XHS44", "platform": "小红书", "title": "👓ootd•͈ᴗ•͈ 佛山配镜太香了✨🤓", "desc": "#花小钱办大事 #高颜值眼镜  #眼镜推荐 #配镜攻略 #配镜 #配眼镜 #蔡司镜片 #平价配镜 #学生党配镜 #佛山配镜 #佛山眼镜店 #佛山平价眼镜店", "likes": 84, "comments": 15, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["值"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a595ca20000000010027eb5", "published_at": "2026-07-17 17:31:44"}, {"id": "XHS45", "platform": "小红书", "title": "精致千金感✨我悟了！", "desc": "夏日想要时髦出片📸\n和氛围感只差一副「赫本镜」🕶️\n\t\n上扬猫眼剪裁🐱精致显脸小\n珍珠镶饰镜腿，细节处藏巧思\n甄选蔡司镜片🔝高清视物+全天候防晒\n稳稳驾驭不同场景⛱️\n\t\nVideo：﻿@曼妥思～﻿\n🕶型号：赫本镜Yaoll 颜色：dem（玳瑁色-蔡司镜片）\n\t\n﻿#Fakeme﻿ ﻿#Fakeme墨镜﻿ ﻿#fakeme赫本镜﻿ ﻿#墨镜推荐﻿ ﻿#防晒墨镜﻿ ﻿#迪丽热巴﻿ ﻿#吴昕﻿ ﻿#墨", "likes": 9, "comments": 3, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"清晰度": ["高清"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5db8c9000000000f02b52f", "published_at": "2026-07-20 14:05:14"}, {"id": "XHS47", "platform": "小红书", "title": "无锡配镜👓｜这家治好了我的选择困难症！", "desc": "以前配镜只简单测个度数，总是忽略佩戴舒适度\n直到来体验了一把【蔡司iTerminal 2】才知道什么叫专业！\n🧐精准验光还得是黑科技啊\n港式1+7深度验光🔬\n资深验光师细致检测\n结合用眼习惯量身调校参数\n数据精准度拉满🈵！！\n\t\n镜框款式多多，不少热门明星同款\n素颜戴也很衬五官🫣颜值💯洋气得很～\n这次选了这副卡地亚眼镜，直接拿捏高智感\n想要时尚感➕舒适度双重buff的朋友，可以冲万象城西区眼镜大师", "likes": 67, "comments": 22, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"舒适度": ["舒适"], "性价比": ["值"], "品质感": ["专业"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a5a5dac000000000f00a694", "published_at": "2026-07-18 09:40:02"}, {"id": "XHS48", "platform": "小红书", "title": "398拿下蔡司全套‼️广州配镜我太会找了🥹", "desc": "#诺亚视光 #蔡司镜片#高颜值眼镜 #眼镜探店 #配镜攻略#配镜#配眼镜 #广州配眼镜 #配眼镜攻略#平价眼镜", "likes": 43, "comments": 10, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["值"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a50c6540000000011016cb3", "published_at": "2026-07-10 18:15:48"}, {"id": "XHS49", "platform": "小红书", "title": "宁波配镜！拿下热巴同款👓", "desc": "在宁波配眼镜终于不当大冤种了😭\n#平价眼镜 #宁波配眼镜 #FAKEME迪丽热巴同款 #蔡司镜片", "likes": 54, "comments": 14, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a60665d000000001f01df2e", "published_at": "2026-07-22 14:42:37"}, {"id": "XHS50", "platform": "小红书", "title": "宁波 被问过最多次的眼镜……", "desc": "妹妹生日 送了她一副时尚款眼镜\n据说已经被同学问爆了\n\t\n#宁波配眼镜\n#宁波探店\n#高颜值眼镜\n#宁波眼镜店\n#时尚\n#性价比超高\n#蔡司镜片\n#好物推荐\n#平价眼镜\n#宁波逛街", "likes": 20, "comments": 3, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["性价比", "值"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.xiaohongshu.com/explore/6a58bd5c000000001f01d78a", "published_at": "2026-07-16 19:15:41"}, {"id": "DY1", "platform": "抖音", "title": "配大牌眼镜，认准闪乐配 #珠海配眼镜 #中山配眼镜 #蔡司镜片 #依视路镜片", "desc": "", "likes": 2063, "comments": 25, "brands": ["依视路", "蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["大牌"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7669721921530213733", "published_at": "2026-08-06 14:00:00"}, {"id": "DY2", "platform": "抖音", "title": "姐妹们听我一句劝吧 #蔡司镜片 #观山眼镜#荆门#眼镜店 #眼镜", "desc": "", "likes": 4001, "comments": 44, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7670842271474156217", "published_at": "2026-08-06 17:05:44"}, {"id": "DY3", "platform": "抖音", "title": "一个很简单的办法，判断你买的镜片是个什么水平？ 当场能不能取 #配镜攻略 #眼镜团购 #蔡司镜片 #", "desc": "", "likes": 1409, "comments": 451, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7671217685343537499", "published_at": "2026-08-07 17:22:32"}, {"id": "DY4", "platform": "抖音", "title": "如果你刚好想配副好眼镜，快来观山眼镜！#蔡司镜片 #观山眼镜#荆门荆门 #银泰百货", "desc": "", "likes": 1638, "comments": 27, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7670432414376596206", "published_at": "2026-08-05 14:35:17"}, {"id": "DY5", "platform": "抖音", "title": "苏雅眼镜值得信赖 青少年防控👍🏼 #苏雅眼镜 #蔡司镜片#南京眼镜店#南京配镜#眼镜团购", "desc": "", "likes": 1032, "comments": 3, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["值"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7669819586199910251", "published_at": "2026-08-03 22:57:12"}, {"id": "DY6", "platform": "抖音", "title": "今天也是来咨询了，挺不错#蔡司#好眼镜选蔡司 #蔡司镜片 #蔡司全新视界#蔡司抖音团购", "desc": "", "likes": 2871, "comments": 13, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7668737238120839161", "published_at": "2026-08-01 08:30:00"}, {"id": "DY7", "platform": "抖音", "title": "今天和好闺闺逛到一家蔡司授权的眼镜店，他们家镜片佩戴体验超棒#蔡司镜片 #配眼镜 #眼镜探店 #成都", "desc": "", "likes": 2095, "comments": 43, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["授权"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7666476429048319973", "published_at": "2026-07-25 22:44:02"}, {"id": "DY8", "platform": "抖音", "title": "在昆明配蔡司镜片，我只来他家#琨华眼镜#昆明蔡司 #真实配镜体验 #眼镜店 #平价眼镜店", "desc": "", "likes": 1761, "comments": 3, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7667500241268752527", "published_at": "2026-07-28 16:56:57"}, {"id": "DY9", "platform": "抖音", "title": "老精华眼镜 #盘锦配镜#蔡司镜片#蔡司全新视界#蔡司抖音团购#心动生活节", "desc": "", "likes": 1636, "comments": 44, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7668244822474381170", "published_at": "2026-07-30 17:06:18"}, {"id": "DY10", "platform": "抖音", "title": "在昆明配蔡司眼镜不用黑科技 那真是白配了 #琨华眼镜#昆明蔡司#昆明配镜 #配镜攻略 #蔡司镜片", "desc": "", "likes": 1526, "comments": 15, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7667466260250461056", "published_at": "2026-07-28 14:45:05"}, {"id": "DY11", "platform": "抖音", "title": "最近有配镜需求的朋友看过来 #配眼镜 #青少年配镜 #蔡司镜片 #近视眼镜 #近视眼镜推荐", "desc": "", "likes": 1417, "comments": 12, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7666486052987631525", "published_at": "2026-07-25 23:21:23"}, {"id": "DY12", "platform": "抖音", "title": "普通人配眼镜的天花板就是蔡司泽锐或者智锐就不得了了！ #配镜攻略 #验光配镜 #蔡司镜片 #依视路镜", "desc": "", "likes": 1245, "comments": 425, "brands": ["依视路", "蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7668986469948077422", "published_at": "2026-08-01 17:04:17"}, {"id": "DY13", "platform": "抖音", "title": "配蔡司不用吃土 #镜山眼镜工厂店 #蔡司镜片  #同城配镜 #近视 #眼镜", "desc": "", "likes": 1146, "comments": 87, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664486591137897961", "published_at": "2026-07-26 11:00:00"}, {"id": "DY14", "platform": "抖音", "title": "#盘锦配镜#蔡司镜片#蔡司全新视界#蔡司抖音团购#心动生活节 蔡司真不错", "desc": "", "likes": 1127, "comments": 99, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7668535279011194542", "published_at": "2026-07-31 11:53:25"}, {"id": "DY15", "platform": "抖音", "title": "这家配镜服务真的太牛了！有需求的宝子闭眼冲！#蔡司 #好眼镜选蔡司 #蔡司镜片 #蔡司全新视界 #蔡", "desc": "", "likes": 4044, "comments": 24, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664809851919678074", "published_at": "2026-07-21 10:56:52"}, {"id": "DY16", "platform": "抖音", "title": "想配一副舒服、精准、不踩坑的眼镜，直接来沃司就对了！#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 4011, "comments": 64, "brands": ["蔡司"], "sentiment": "negative", "pos_keywords": {"舒适度": ["舒服"]}, "neg_keywords": {"价格问题": ["坑"], "验配失败": ["踩坑"]}, "url": "https://www.iesdouyin.com/share/video/7663491910216205307", "published_at": "2026-07-17 21:42:34"}, {"id": "DY17", "platform": "抖音", "title": "什么样子的验光单才可以用来配眼镜？ #配镜攻略 #验光配镜 #高度近视 #蔡司镜片 #验光单", "desc": "", "likes": 3733, "comments": 389, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664537424966850675", "published_at": "2026-07-20 17:19:43"}, {"id": "DY19", "platform": "抖音", "title": "只有近视眼才懂，在配镜上面花了多少钱#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 2566, "comments": 38, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663736874125292133", "published_at": "2026-07-18 13:33:10"}, {"id": "DY20", "platform": "抖音", "title": "天天刷手机、对着电脑！眼睛干涩模糊真的太难受 一副蔡司镜片，还原清晰视界趁着抖音团购，给自己升级一副", "desc": "", "likes": 2407, "comments": 64, "brands": ["蔡司"], "sentiment": "negative", "pos_keywords": {"清晰度": ["清晰"]}, "neg_keywords": {"佩戴不适": ["难受"], "质量问题": ["模糊"]}, "url": "https://www.iesdouyin.com/share/video/7666025400376568945", "published_at": "2026-07-24 17:33:49"}, {"id": "DY21", "platform": "抖音", "title": "验光一定要付费！别想着白嫖！ #验光配镜 #配镜攻略 #线上配镜 #眼镜团购 #蔡司镜片", "desc": "", "likes": 2277, "comments": 671, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7661195046603043162", "published_at": "2026-07-11 17:09:34"}, {"id": "DY22", "platform": "抖音", "title": "平价又专业，配眼镜就来沃司眼镜#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 2220, "comments": 23, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["专业"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664969381835630543", "published_at": "2026-07-21 21:15:56"}, {"id": "DY23", "platform": "抖音", "title": "给孩子配眼镜可以看看这个蔡司小瞳堡镜片了#蔡司 #好眼镜选蔡司 #蔡司镜片 #蔡司全新视界 #蔡司抖", "desc": "", "likes": 2121, "comments": 5, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665228264038480741", "published_at": "2026-07-22 14:00:31"}, {"id": "DY24", "platform": "抖音", "title": "这家沃司眼镜真的很不错！#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 2016, "comments": 20, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663699390330525802", "published_at": "2026-07-18 11:07:43"}, {"id": "DY25", "platform": "抖音", "title": "想要配镜的宝子赶紧看这里#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1970, "comments": 2, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663694592608371878", "published_at": "2026-07-18 10:49:05"}, {"id": "DY26", "platform": "抖音", "title": "家里孩子需要配近视防控眼镜的家长，快来沃司眼镜看看吧#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1849, "comments": 13, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664552884214647204", "published_at": "2026-07-20 18:19:43"}, {"id": "DY27", "platform": "抖音", "title": "王斌眼镜这次出的蔡司活动太合适啦！ #蔡司#蔡司泽锐#蔡司镜片#蔡司全新视界#蔡司抖音团购", "desc": "", "likes": 1385, "comments": 17, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665705813450168244", "published_at": "2026-07-23 20:53:39"}, {"id": "DY28", "platform": "抖音", "title": "验光单怎么看？ #验光单怎么看 #配眼镜 #干货知识分享 #蔡司镜片", "desc": "", "likes": 1154, "comments": 4, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664223291799784714", "published_at": "2026-07-19 21:00:50"}, {"id": "DY29", "platform": "抖音", "title": "配好眼镜！#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1113, "comments": 21, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664435645419730405", "published_at": "2026-07-20 10:44:45"}, {"id": "DY30", "platform": "抖音", "title": "蔡司眼镜居然搞这么大活动 #蔡司#好眼镜选蔡司 #蔡司镜片#蔡司全新视界#蔡司抖音团购", "desc": "", "likes": 1069, "comments": 43, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664864023825336483", "published_at": "2026-07-21 14:27:05"}, {"id": "DY31", "platform": "抖音", "title": "配眼镜你会遇到的几个专有名字！你知道哪几个？ #配镜攻略 #验光配镜 #蔡司镜片 #超薄镜片 #折射", "desc": "", "likes": 1061, "comments": 48, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"性价比": ["折"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7660823823466401774", "published_at": "2026-07-10 17:09:02"}, {"id": "DY32", "platform": "抖音", "title": "蔡司眼镜居然也有活动了！！他家的镜片真的不一样啊#蔡司#好眼镜选蔡司 #蔡司镜片#蔡司全新视界#蔡司", "desc": "", "likes": 1052, "comments": 11, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665296299163492082", "published_at": "2026-07-22 18:24:32"}, {"id": "DY33", "platform": "抖音", "title": "给孩子配镜不用盲目选，来这家沃司眼镜品质好，配镜更精准！#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1023, "comments": 15, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"品质感": ["品质"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663852992738660209", "published_at": "2026-07-18 21:03:46"}, {"id": "DY34", "platform": "抖音", "title": "最近有想换眼镜的可以来蔡司泽锐看看了～#蔡司 #蔡司泽锐 #蔡司镜片 #蔡司全新视界 #蔡司抖音团购", "desc": "", "likes": 1022, "comments": 1, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665590015989101923", "published_at": "2026-07-23 13:24:19"}, {"id": "DY35", "platform": "抖音", "title": "沃司眼镜配眼镜来这准没错 #配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1020, "comments": 10, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663508137727535330", "published_at": "2026-07-17 22:45:33"}, {"id": "DY36", "platform": "抖音", "title": "❗ 王斌眼镜这次的活动太合适啦！ #蔡司#蔡司泽锐#蔡司镜片#蔡司全新视界#蔡司抖音团购", "desc": "", "likes": 1014, "comments": 12, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665692213564959089", "published_at": "2026-07-23 20:00:53"}, {"id": "DY37", "platform": "抖音", "title": "想配一副精准、舒服又划算的眼镜，这家新店真的可以闭眼冲！#配眼镜#蔡司镜片#眼镜店#星趣控#控优点", "desc": "", "likes": 1010, "comments": 10, "brands": ["蔡司"], "sentiment": "positive", "pos_keywords": {"舒适度": ["舒服"], "性价比": ["划算"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7664978413144307106", "published_at": "2026-07-21 21:50:58"}, {"id": "DY38", "platform": "抖音", "title": "这个眼镜活动太合适#蔡司#好眼镜选蔡司 #蔡司镜片#蔡司全新视界#蔡司抖音团购", "desc": "", "likes": 1005, "comments": 19, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665201469189017573", "published_at": "2026-07-22 12:16:32"}, {"id": "DY39", "platform": "抖音", "title": "2000块配的蔡司竟然是串货！如何查验蔡司真伪？如何查询镜片生产日期？动态二维码在哪里？保姆级攻略！", "desc": "", "likes": 1849, "comments": 329, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7666785803607084334", "published_at": "2026-07-26 18:44:42"}, {"id": "DY40", "platform": "抖音", "title": "孩子配镜千万别盲目选择❗️蔡司小瞳堡，适配学龄孩子日常读写，蔡司山东专场，宝妈可以过来看看#蔡司#好", "desc": "", "likes": 1684, "comments": 22, "brands": ["蔡司"], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7668891916620233807", "published_at": "2026-08-01 10:57:22"}, {"id": "DY42", "platform": "抖音", "title": "配眼镜就来他们家#眼镜", "desc": "", "likes": 1051, "comments": 11, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7666391053357156089", "published_at": "2026-07-25 17:12:44"}, {"id": "DY43", "platform": "抖音", "title": "孩子每年度数疯涨，跑遍各大眼镜店，要么验光潦草，送的镜框廉价软塌，控轴镜片还疯狂加价，作为家长真的特", "desc": "", "likes": 4177, "comments": 29, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663879407681709753", "published_at": "2026-07-18 22:46:16"}, {"id": "DY44", "platform": "抖音", "title": "一个视频完整教会你！镜框怎么选最合适！ #配镜攻略 #眼镜选购指南 #眼镜框推荐 #高度数眼镜 #蔡", "desc": "", "likes": 2654, "comments": 209, "brands": [], "sentiment": "positive", "pos_keywords": {"服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7666020781079645171", "published_at": "2026-07-24 17:15:53"}, {"id": "DY45", "platform": "抖音", "title": "沃司眼镜直接刷新了我对配镜验光的认知👓 想精准配镜、性价比配镜的朋友真的可以来试试‼️ #配眼镜#", "desc": "", "likes": 1538, "comments": 30, "brands": [], "sentiment": "positive", "pos_keywords": {"性价比": ["性价比"]}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7663410316130749106", "published_at": "2026-07-17 16:25:57"}, {"id": "DY46", "platform": "抖音", "title": "配了这么多年眼镜，你可能从来没体验过真正的5度精调", "desc": "", "likes": 1017, "comments": 0, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://www.iesdouyin.com/share/video/7665617524818770149", "published_at": "2026-07-23 15:11:03"}, {"id": "GZH1", "platform": "公众号", "title": "近视/老花眼的茶饮小方，它来了", "desc": "答应我，看完文章就把手机放下", "likes": 2114, "comments": 9, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MzU0MTA3ODk2NQ==&mid=2247528489&idx=1&sn=7e5bc1f86c98834bc3922721baebf384#rd", "published_at": "2026-08-07 09:59:00"}, {"id": "GZH2", "platform": "公众号", "title": "卢秀燕2028 年备战箭在弦上？副手郑照新一句“光芹姐没老花眼”引爆政坛联想", "desc": "卢秀燕是否会出战2028年“大选”？如果她真的出战，胜算有多大？", "likes": 24, "comments": 32, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDU4MjA4NA==&mid=2247593378&idx=1&sn=6345d22046a61c81d61620a015892a12#rd", "published_at": "2026-08-03 00:00:00"}, {"id": "GZH3", "platform": "公众号", "title": "【科普】老花眼和远视是一回事吗？", "desc": "门诊经常遇到这样的患者：“医生，我最近看手机得拿远一点才清楚，是不是远视了？”或者“我家孩子查出来远视，是不是提前老花了？”       每次听到这些问题，我都想跟大家说清楚——老花眼和远视，真不是一回事。\n01\n本质完全不同：一个是“老化”，一个是“结构问题”\n老花眼，就像人老了头发会白、皮肤会皱", "likes": 164, "comments": 0, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MzA3NzIwODYwMQ==&mid=2653127246&idx=1&sn=0b9543ecf033fc053e2d3196816e81a8#rd", "published_at": "2026-07-10 20:18:48"}, {"id": "GZH4", "platform": "公众号", "title": "受试者招募 | 北京清华长庚医院眼科中心正在开展老视（老花眼）改善临床试验", "desc": "老视俗称“老花眼”，常表现为视近困难，阅读需要更强的照明度，视近不能持久，甚至有眼胀、流泪、头痛等视疲劳症状。毛果芸香碱是一种胆碱能毒蕈碱受体激动剂，它通过虹膜括约肌上的胆碱能受体发挥作用，引起瞳孔括约肌收缩带来瞳孔缩小，瞳孔缩小增加焦深，减少像差，改善近视力。       清华大学北京清华长庚医院", "likes": 33, "comments": 0, "brands": [], "sentiment": "positive", "pos_keywords": {"功能效果": ["改善"]}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MzU4MzE2NjE2NQ==&mid=2247496263&idx=1&sn=ba9c0db6235c7191ab2471324f6b5192#rd", "published_at": "2026-07-20 13:33:29"}, {"id": "GZH5", "platform": "公众号", "title": "车管所提醒：70周岁以上驾照体检有多严格？2026体检标准有哪些变化，执行标准一次性讲清", "desc": "很多高龄车主有疑问：年满70岁之后，驾照每年体检要检查哪些项目？严格吗？老花眼、听力下降、手脚轻微不灵活会直接导致不能通过、被注销驾照吗？", "likes": 117, "comments": 17, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MzY5MjI3MzQxNA==&mid=2247484612&idx=1&sn=1455e54b92b65b07d656267025868f4a#rd", "published_at": "2026-07-28 17:04:34"}, {"id": "GZH8", "platform": "公众号", "title": "换证体检视力不过关怎么办？交警提醒：老花、近视都有办法！这4套补救方案你一定要知道！", "desc": "咱们现在每位老司机啊，都要经历6年、 10年的驾照期满换证考验，或者咱们到了六七十岁的时候，还每年都需要去提交身体条件证明。                然而咱们随着年龄的增长，很多中老年车主老花眼的不断加深，许多年轻朋友也因为常年看手机导致眼睛度数老化，很多人就卡在了体检的第一关，也就是视力检测", "likes": 40, "comments": 5, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTYyNDI2MA==&mid=2247484600&idx=1&sn=d97a06cfea00306b4cee8ae3e2d73c65#rd", "published_at": "2026-07-21 17:10:32"}, {"id": "GZH9", "platform": "公众号", "title": "南宁人注意！小心爸妈出现这些症状，很多人都忽略了！", "desc": "雨天路滑摔一跤，罪魁祸首竟是“看不清”？\n雨水不断，路面湿滑，摔倒的老人多了起来。不少老人叹气：“不是路太滑，是真看不清啊！踩到水坑，一跤就摔下去了。”\n年纪大了，视物模糊、眼干酸涩成了常态，但很多人第一反应是：“没事，就是老花眼，正常现象。”这一念之差，可能白白错失眼病的“黄金诊疗期”。\n7月爱眼", "likes": 21, "comments": 0, "brands": [], "sentiment": "negative", "pos_keywords": {}, "neg_keywords": {"质量问题": ["模糊"], "价格问题": ["坑"]}, "url": "https://mp.weixin.qq.com/s?__biz=MzU4NjAxNzM0NQ==&mid=2248163021&idx=2&sn=701a6efd8f8685e7bf3717b3c04c46ce#rd", "published_at": "2026-07-15 21:27:01"}, {"id": "GZH10", "platform": "公众号", "title": "看不清东西别只当是老花！这些症状或是眼底疾病→", "desc": "视力模糊、看东西变形、眼前有黑影飘动……许多中老年朋友遇到这些情况时，第一反应往往是“老花眼又加重了”，于是配一副老花镜了事。但您可能不知道，这些看似常见的视觉异常，很可能是眼底疾病早期的“求救信号”。\n近日，首都医科大学附属北京佑安医院眼科副主任孔文君在央广网《中华名医号》节目中介绍，与单纯的老花", "likes": 40, "comments": 0, "brands": [], "sentiment": "negative", "pos_keywords": {}, "neg_keywords": {"质量问题": ["模糊"]}, "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NjcwMzI1Mg==&mid=2247924492&idx=2&sn=2b1b39c79c87555540bdd976368226f3#rd", "published_at": "2026-07-12 19:52:03"}, {"id": "GZH13", "platform": "公众号", "title": "到底还是确诊了😭", "desc": "眼睛持续几天不舒服，又痒又干又易流泪，今天早上居然刺痛，吓得我赶紧去了眼科医院。挂了个专家号，接受了一顿从来没有做过的奇奇怪怪眼睛检查之后，医生给我下了诊断结论：干眼症。以前工作只需要用电脑就能完成，我又是超大屏幕的台式机，所以眼睛还好。这半年增加了自己的友邦事业，工作强度增大的同时，用眼也加倍，因为只能用iPad做，没有电脑端，这点很讨厌。暑假基本处于歇业状态，看iPad少了很多，却因为要安排旅", "likes": 34, "comments": 20, "brands": [], "sentiment": "neutral", "pos_keywords": {"舒适度": ["舒服"]}, "neg_keywords": {"佩戴不适": ["不舒服"]}, "url": "https://mp.weixin.qq.com/s?__biz=Mzk0NTAyNjM2NQ==&mid=2247488210&idx=1&sn=da255004df9e21ffaaf5dfa234fa99b6#rd", "published_at": "2026-08-01 22:55:49"}, {"id": "GZH14", "platform": "公众号", "title": "受试者招募 | 北京清华长庚医院眼科中心正在开展老视（老花眼）改善临床试验", "desc": "老视俗称“老花眼”，常表现为视近困难，阅读需要更强的照明度，视近不能持久，甚至有眼胀、流泪、头痛等视疲劳症状。毛果芸香碱是一种胆碱能毒蕈碱受体激动剂，它通过虹膜括约肌上的胆碱能受体发挥作用，引起瞳孔括约肌收缩带来瞳孔缩小，瞳孔缩小增加焦深，减少像差，改善近视力。       清华大学北京清华长庚医院", "likes": 33, "comments": 0, "brands": [], "sentiment": "positive", "pos_keywords": {"功能效果": ["改善"]}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=MzU4MzE2NjE2NQ==&mid=2247496263&idx=1&sn=ba9c0db6235c7191ab2471324f6b5192#rd", "published_at": "2026-07-20 13:33:29"}, {"id": "GZH17", "platform": "公众号", "title": "看不清东西别只当是老花！这些症状或是眼底疾病→", "desc": "视力模糊、看东西变形、眼前有黑影飘动……许多中老年朋友遇到这些情况时，第一反应往往是“老花眼又加重了”，于是配一副老花镜了事。但您可能不知道，这些看似常见的视觉异常，很可能是眼底疾病早期的“求救信号”。\n近日，首都医科大学附属北京佑安医院眼科副主任孔文君在央广网《中华名医号》节目中介绍，与单纯的老花", "likes": 40, "comments": 0, "brands": [], "sentiment": "negative", "pos_keywords": {}, "neg_keywords": {"质量问题": ["模糊"]}, "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NjcwMzI1Mg==&mid=2247924492&idx=2&sn=2b1b39c79c87555540bdd976368226f3#rd", "published_at": "2026-07-12 19:52:03"}, {"id": "GZH19", "platform": "公众号", "title": "如果您需要一副眼镜，请进→种类很多，150多款，儿童防控镜降价啦", "desc": "近视镜、渐进镜、老花镜、太阳镜墨镜、单镜片、单镜架等都有", "likes": 12, "comments": 0, "brands": [], "sentiment": "neutral", "pos_keywords": {}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=Mzk0ODU5MjU0MA==&mid=2247567605&idx=1&sn=5aa7b7a966c590411fc3993cd623131c#rd", "published_at": "2026-07-31 17:25:05"}, {"id": "GZH36", "platform": "公众号", "title": "名老中医的护眼方，到80岁还能穿针引线（附护眼歌）", "desc": "亲爱的粉丝朋友们，感谢一路相伴！我们的公众号《嘉传生活馆》即将迁入新家——《新嘉传生活馆》，期待在那里与您继续分享生活的美好点滴，欢迎您来关注哦！\n现在，很多人的眼睛都过于疲劳，大人容易老花，小孩容易近视。    关于护眼，张老师推荐了贺普仁贺老的方子，就是顺时针转眼睛36下，然后按摩承泣穴50下。", "likes": 269, "comments": 18, "brands": [], "sentiment": "positive", "pos_keywords": {"功能效果": ["护眼"], "服务体验": ["推荐"]}, "neg_keywords": {}, "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NDIzMjgyNA==&mid=2247510777&idx=1&sn=8be736f1d67fbef9a0be0bb10459f9c3#rd", "published_at": "2026-07-18 18:00:00"}];
+const RAW_ITEMS = [
+{
+"id": "GZH228",
+"platform": "公众号",
+"title": "霞起江阴",
+"desc": "脚下有路，江海有潮。霞行万里，心有归处。",
+"likes": 138,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=OTYyNDk0MDgx&mid=2657102497&idx=1&sn=a8fe188cd28339e0c91ac6363ca114c2#rd",
+"published_at": "2026-09-25 20:59:23"
+},
+{
+"id": "GZH107",
+"platform": "公众号",
+"title": "宁波男子在家打扫厨房卫生，竟发现灶台下盘着一条蛇，经辨认是有毒的舟山眼镜蛇；所幸蛇未逃窜，消防员5分钟将其抓获放归山林",
+"desc": "男子在家打扫厨房卫生，竟发现灶台下盘着一条有毒的眼镜蛇。9月24日，北仑区白峰街道一居民家中就遇到了这惊险一幕。消防员到场后，使用捕蛇钳三人配合，仅用5分钟就将蛇抓获，随后放归山林。\n当天15时03分，北仑区消防救援大队接到报警：白峰街道门浦村一居民家中厨房发现蛇，急需帮助。白峰消防救援站随即出动1",
+"likes": 87,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjAxNTIyMA==&mid=2658689956&idx=2&sn=7a5ba6ffef3a2f008b18cb007189a8b3#rd",
+"published_at": "2026-09-25 20:52:24"
+},
+{
+"id": "GZH255",
+"platform": "公众号",
+"title": "还能这么拍？今晚第一批中秋月亮已出片！评论区等你PK",
+"desc": "但愿人长久，千里共婵娟。  中秋佳节，团圆赏月。虽然今天杭州天空云量较多，赏月条件不是特别好，但还是有一轮明月出现了。  在橙友圈，橙友的第一批满月照片已经出片了。  橙友“里尔”拍摄了一组西湖上空的月亮，可以看出，断桥上站满了赏月的市民、游客，一派祥和。                橙友“心心依",
+"likes": 82,
+"comments": 106,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyMjM4NjI2OQ==&mid=2249425647&idx=1&sn=add59e995b66d762861ebf3145bb9b6c#rd",
+"published_at": "2026-09-25 20:14:48"
+},
+{
+"id": "GZH264",
+"platform": "公众号",
+"title": "今～晚～8～点～见～🥮🥮🥮",
+"desc": "人道秋中明月好，欲邀同赏意如何？              今晚（25日）8点           《中央广播电视总台2026年中秋晚会》       将与全球观众见面       你最期待哪个节目？       ↓↓↓      秋夜悬玉镜，淮水共长天  中秋之夜，总台秋晚与蓝月亮邀您  共赏明月",
+"likes": 35,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg3NTI5NzA4Ng==&mid=2247857616&idx=1&sn=8d335d918dc18546a312cb1d5f282b8d#rd",
+"published_at": "2026-09-25 18:45:31"
+},
+{
+"id": "DY93",
+"platform": "抖音",
+"title": "小团眼镜新店开业，49就可以配到一副防蓝光眼镜。#深圳眼镜店#深圳配眼镜#新沙天虹购物中心",
+"desc": "",
+"likes": 1039,
+"comments": 20,
+"url": "https://www.iesdouyin.com/share/video/7689414939141107706",
+"published_at": "2026-09-25 18:17:10"
+},
+{
+"id": "GZH209",
+"platform": "公众号",
+"title": "2026山东卫视中秋晚会直播链接",
+"desc": "我们的节日·中秋——2026山东卫视中秋晚会  以“明月几时有 家国万里明”为主题  集结文化名家、艺人嘉宾与网络达人  林依轮、萨顶顶、李依晓、黄龄等  奉上中秋视听盛宴    9月25日19:30，  闪电新闻、爱诸城客户端  全程直播，  敬请关注！         2026山东卫视中秋晚会 ",
+"likes": 345,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MTQ2NDA1Mg==&mid=2652796453&idx=1&sn=dc2ba88a3f2de95c91dc5f80bb90a4f6#rd",
+"published_at": "2026-09-25 17:54:44"
+},
+{
+"id": "GZH268",
+"platform": "公众号",
+"title": "今 晚 8 点 见 ~",
+"desc": "人道秋中明月好，  欲邀同赏意如何？              今晚（9月25日）8时           《中央广播电视总台2026年中秋晚会》       将与全球观众见面       你最期待哪个节目？       ↓↓↓           秋夜悬玉镜，淮水共长天  中秋之夜，四海同庆  共",
+"likes": 171,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxNzQxNjg2MA==&mid=2247871101&idx=1&sn=c68ec6b051b6d5fa5b1a0f58a7883b1b#rd",
+"published_at": "2026-09-25 16:45:00"
+},
+{
+"id": "GZH214",
+"platform": "公众号",
+"title": "此刻，徐州多条道路已堵成“深红”！",
+"desc": "中秋假期首日喜提雨天        谁的出游计划被大雨拦在家里了？\n 万万没想到！       阴雨根本劝退不了来徐州的游客！        根据手机地图实时路况显示       徐州市中心周边全线车流涌动        多条道路飘起拥堵 “红丝带”       雨中徐州，热度依旧拉满       ",
+"likes": 44,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3ODA1NjcwNA==&mid=2651282005&idx=1&sn=03c0f4ff05ad30fcd808aa924ec0ed9f#rd",
+"published_at": "2026-09-25 15:37:21"
+},
+{
+"id": "GZH250",
+"platform": "公众号",
+"title": "官宣！央视2026年中秋晚会节目单来了",
+"desc": "人道秋中明月好，欲邀同赏意如何？              今晚（25日）8点             《中央广播电视总台2026年中秋晚会》             将与全球观众见面             你最期待哪个节目？             ↓↓↓          秋夜悬玉镜，淮水共长",
+"likes": 40,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3ODIyNTUwNQ==&mid=2650689499&idx=2&sn=b22c7eaeb22524d780eae2d7713c2d66#rd",
+"published_at": "2026-09-25 15:10:03"
+},
+{
+"id": "DY92",
+"platform": "抖音",
+"title": "白云三元里新开了全国连锁高性价比眼镜店！66块配一副防蓝光眼镜！全国多家门店通用！刷到的赶紧囤#广州",
+"desc": "",
+"likes": 1095,
+"comments": 39,
+"url": "https://www.iesdouyin.com/share/video/7689335024915632498",
+"published_at": "2026-09-25 13:07:03"
+},
+{
+"id": "GZH242",
+"platform": "公众号",
+"title": "祝各位干员中秋快乐！中秋福利掉落中！",
+"desc": "明月如镜，皎皎当空      中秋佳节已至      洲宝在这里祝各位干员：      月满人团圆，洲里共此时      把把大红满载回，次次战场得胜归！\n千里之外，洲宝与你共度此时      洲宝还为大家准备了专属好礼(o´∀`o)~🎁      在本条推送下方留下你的节日祝福      洲宝将",
+"likes": 1357,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkwMzUyNzM3OQ==&mid=2247527664&idx=1&sn=83dae73e508f2751c113112c2e1d07e1#rd",
+"published_at": "2026-09-25 12:36:00"
+},
+{
+"id": "GZH265",
+"platform": "公众号",
+"title": "“秋晚”节目单发布！你最期待哪个节目？",
+"desc": "人道秋中明月好，欲邀同赏意如何？              今晚（25日）8点           《中央广播电视总台2026年中秋晚会》       将与全球观众见面       你最期待哪个节目？       ↓↓↓           秋夜悬玉镜，淮水共长天  中秋之夜，四海同庆  共赏明月，",
+"likes": 56,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjEyMzYxMg==&mid=2657812358&idx=1&sn=cccab6adfb5c14aeab2f266219b08bc2#rd",
+"published_at": "2026-09-25 12:32:53"
+},
+{
+"id": "GZH251",
+"platform": "公众号",
+"title": "“秋晚”节目单发布，今晚见",
+"desc": "人道秋中明月好，欲邀同赏意如何？              今晚（25日）8点           《中央广播电视总台2026年中秋晚会》       将与全球观众见面       你最期待哪个节目？       ↓↓↓           秋夜悬玉镜，淮水共长天  中秋之夜，总台秋晚邀您  共赏明",
+"likes": 284,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MzA0MTg2MA==&mid=2654635237&idx=1&sn=47e4685cecb74bc15b032ac1553de3b0#rd",
+"published_at": "2026-09-25 12:30:44"
+},
+{
+"id": "GZH245",
+"platform": "公众号",
+"title": "【正式海报与格式】明月两乡，青山同云 |2026上海市高中跨校明信片互寄活动",
+"desc": "明月两乡，青山同云 |2026上海市高中跨校明信片互寄活动正式版海报与明信片格式",
+"likes": 434,
+"comments": 45,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyNTY3MTMyOA==&mid=2247484520&idx=1&sn=1b93779da6ee1e2cbb62afb4a37f2d22#rd",
+"published_at": "2026-09-25 12:20:45"
+},
+{
+"id": "GZH241",
+"platform": "公众号",
+"title": "“秋晚”节目单发布！今晚8点见",
+"desc": "人道秋中明月好，欲邀同赏意如何？              今晚（25日）8点           《中央广播电视总台2026年中秋晚会》       将与全球观众见面       你最期待哪个节目？       ↓↓↓      秋夜悬玉镜，淮水共长天  中秋之夜，总台秋晚与蓝月亮邀您  共赏明月",
+"likes": 4343,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=2657974711&idx=1&sn=211588747f6babfd8f03dfa0099d62ca#rd",
+"published_at": "2026-09-25 11:58:25"
+},
+{
+"id": "GZH110",
+"platform": "公众号",
+"title": "1300度散光镜片创基尼斯纪录，三联公司续写老字号匠心",
+"desc": "9月24日，上海三联（集团）有限公司“三联匠人，匠心定制”主题活动在三联 VIP 中心隆重举行。本次活动同步开展大世界基尼斯纪录授牌、上海市劳模创新工作室焕新揭牌仪式，行业工匠、受邀嘉宾、媒体代表齐聚现场，共同见证老字号眼镜技艺的硬核实力与工匠精神的接续传承。\n一份民生期盼下的验配故事\n本次纪录的诞",
+"likes": 29,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=Nzg1MzAxMTgx&mid=2655363774&idx=1&sn=e17f449dfc77e5dee89674888ccd3e30#rd",
+"published_at": "2026-09-25 11:58:00"
+},
+{
+"id": "DY91",
+"platform": "抖音",
+"title": "在三元里，66块配一副防蓝光眼镜！刷到的赶紧囤了#广州配眼镜 #广州眼镜店 #广州眼镜 #广州性价比",
+"desc": "",
+"likes": 1225,
+"comments": 36,
+"url": "https://www.iesdouyin.com/share/video/7689315526409547254",
+"published_at": "2026-09-25 11:51:24"
+},
+{
+"id": "XHS82",
+"platform": "小红书",
+"title": "韩系学姐感📚瞬间有",
+"desc": "韩味书呆子素颜镜👓\n「课代表」文艺时髦感🈵\n\t\n复古玳瑁拼接湖蓝色🩵\n撞色自带独特的辨识度\n经典书呆子框型〰️遮掩素颜倦容\n自带防蓝光，日常用眼0️⃣负担\n\t\nVideo：﻿@immahua_﻿\n👓型号：课代表Rooney 颜色：ded（玳瑁色）\n\t\n﻿#Fakeme﻿ ﻿#Fakeme眼镜﻿ ﻿#Fakeme课代表﻿ ﻿#书呆子﻿ ﻿#迪丽热巴﻿ ﻿#吴昕﻿ ﻿#素颜眼镜﻿ ﻿#方圆脸眼镜框﻿ ﻿#知识分子风﻿ ﻿#防蓝光眼镜﻿ ",
+"likes": 5,
+"comments": 14,
+"url": "https://www.xiaohongshu.com/explore/6ab4b21a000000001a02aa60",
+"published_at": "2026-09-25 11:00:42"
+},
+{
+"id": "GZH71",
+"platform": "公众号",
+"title": "“LPL参赛队伍全部淘汰，无人晋级八强”，青训被LCK碾压，仅赢下一场BO1",
+"desc": "前言：S16赛季的比赛已经正式开始了，相信绝大多数的玩家都关注了最近一段时间的对抗。各大赛区的比赛进入到了一小段时间的休赛期，这几天的次级对抗赛成为了很多网友讨论的焦点。首场比赛结束之后，确实让很多的粉丝非常激动，本以为这是lpl次级的开端，没想到仅仅是昙花一现。随着比赛的逐渐进行，Lpl参赛的三支",
+"likes": 8,
+"comments": 36,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg4ODkzMjg4MQ==&mid=2247501901&idx=2&sn=d043366ae23cb444b5ae625c70b69e96#rd",
+"published_at": "2026-09-25 09:22:13"
+},
+{
+"id": "GZH152",
+"platform": "公众号",
+"title": "50岁林心如路人照，治愈了容貌焦虑",
+"desc": "刚刷到林心如这带娃的路人实拍图，楞了一下，有点不敢相信是她，一向爱精致的人，竟然可以这样松弛。可看着看着却莫名觉得这照片还让人挺舒服的，越看越觉得好看。 穿着简简单单的条纹上衣，脸上的细纹都清晰可见。大大方方对着镜头，不刻意美颜，也不强行装年轻。温柔护着孩子的样子，特别自然接地气。 从小看《还珠格格》长大，真的对紫薇滤镜很深。那时候她才22岁，长相温柔水灵，一双眼睛特别灵动，是很多人的童年白月光。小时候总天真以为，荧幕上这么好看的人，永远不会老。 没想到一晃多年，她已经50岁了。 和很多拼命凹少女感的女星不一样，她私下状态特别真实。不遮皱纹、不端明星架子，带娃出门的模样，和普通宝妈没任何区别。 以前总有人吐槽她颜值下滑、不服老。现在反倒觉得，她终于和自己的年龄和解了，不纠结容貌，活得松弛又自在。 看着她，突然就释怀了自己的容貌焦虑。 我们平时拍照，总把滤镜、美颜拉满，一点点细纹都要修半天。死死执着于少女感，跟自己较劲，真的活得太累了。 其实人随着年纪增长，脸上留下痕迹太正常了。刻意装嫩、强行维持完美状态，反而透着僵硬。 人老了有皱纹很正常，能接受自己当下的样子，就挺好。 想问下大家，你",
+"likes": 20,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwNTM1NDg4MQ==&mid=2247484101&idx=1&sn=74bfb9f9fad8cbbe65f2ef51d2f67d6f#rd",
+"published_at": "2026-09-25 07:35:07"
+},
+{
+"id": "GZH261",
+"platform": "公众号",
+"title": "我们花了一个月，把祖国各地的月亮“打包”送给你",
+"desc": "“海上生明月，天涯共此时。”   又是一年中秋至。   9月初，小新在微博平台   发起话题互动   #我拍了拍月亮#    #想看看你镜头里的月亮#，   向全网征集大家镜头里的月光。   网友们把镜头对准头顶的那一轮明月，\n也将背后的故事娓娓道来   👇\n（左右滑动查看更多）\n明月照亮了奋斗者",
+"likes": 167,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MDIxNjczNA==&mid=2652907100&idx=1&sn=a2e0083b9d916e9aeb57fff5cad8e423#rd",
+"published_at": "2026-09-25 07:30:00"
+},
+{
+"id": "XHS8",
+"platform": "小红书",
+"title": "被问爆！我的时尚潮酷老花镜👓",
+"desc": "退休走进自媒体 拍摄 剪辑 阅读\n忙的不亦乐乎  充实开心的同时\n眼睛却老化的看不清东西\n\t\n现在每天频率最高的事\n就是不停的找老花镜\n\t\n直到看到电子姐妹分享折叠老花镜\n果断入手了时尚折叠老花镜\n最戳中我的是收纳的小巧牛皮包\n出门可以斜挎或挂在脖子上\n看书、拍摄 剪辑  随时取用，\n再也不用到处翻找眼镜\n\t\n镜框简约高级\n没有传统老花镜的刻板做工精良\n佩戴雅致    视野通透清晰\n不仅搭配时尚穿搭  还适配各种场所\n让每一次阅读 穿搭 都成为悦己时刻\n\t\n老花眼不是衰老的标志\n是我们人生阅历的勋章\n老花镜不再是中老年的工具🛠️\n而是我们的时尚穿搭配饰\n\t\n#老花镜分享 #中年好物 #精致生活 #随身好物推荐 #我的户外挂件 #礼物推荐 #EZBZ宜伴老花镜 #EZBZ #退休生活 #我的早秋ootd",
+"likes": 53,
+"comments": 80,
+"url": "https://www.xiaohongshu.com/explore/6ab5aa420000000018017282",
+"published_at": "2026-09-25 06:54:58"
+},
+{
+"id": "GZH212",
+"platform": "公众号",
+"title": "又是一年中秋节，花好月圆人团圆",
+"desc": "又是一年中秋。桂子飘香，玉盘初升，清辉漫洒人间。把第一缕月光，寄给远渡重洋、异乡打拼的孩子——海上生明月，天涯共此时。纵隔山海万里，抬头望的，总是同一轮团圆。愿你披星戴月的路上，有梦可栖，有暖可依。把第二缕月光，赠予我深爱的和深爱我的亲人——但愿人长久，千里共婵娟。岁月温柔，灯火可亲，愿年年岁岁，人月两圆，笑语盈盈。把第三缕月光，送给一路同行的朋友们——月圆人团圆，家家福满门。愿世间所有的奔赴，终有归途；所有的思念，皆得回响。今夜，月色如诗，光阴如酒。愿我们心有所念，梦有所归，在这圆满的月色里，共赴一场温柔的团圆。中秋安康，万事胜意。",
+"likes": 83,
+"comments": 20,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzOTc5ODg0Ng==&mid=2247487214&idx=1&sn=7566ee1c007b23a66e576e63297517e4#rd",
+"published_at": "2026-09-25 06:30:00"
+},
+{
+"id": "GZH244",
+"platform": "公众号",
+"title": "今日中秋！您触摸一下图片，立马亮起一轮明月！太神奇了",
+"desc": "你想看的，这里都有！\r马上关注！",
+"likes": 1339,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwMzA2MTcwOA==&mid=2652115058&idx=1&sn=f4e86ebdfe48c13a32316efe9496ca4c#rd",
+"published_at": "2026-09-25 06:28:00"
+},
+{
+"id": "GZH231",
+"platform": "公众号",
+"title": "祝大家中秋节快乐，阖家幸福！",
+"desc": "千江有水千江月，万里无云万里天。又是月到中秋时，一轮明月寄相思。今年中秋节，你是回家了呢，还是在出游路上，抑或在工作岗位默默付出。祝福朋友们的生活如这轮明月一般圆满晶莹剔透。祝大家中秋节快乐，阖家幸福。",
+"likes": 41,
+"comments": 20,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk4ODM3NDkwMg==&mid=2247487501&idx=1&sn=fdb9ba5a6d946572768121700bc8a885#rd",
+"published_at": "2026-09-25 06:04:57"
+},
+{
+"id": "GZH243",
+"platform": "公众号",
+"title": "今天中秋！您触摸一下图片，立马亮起一轮明月，太神奇了",
+"desc": "你想看的，这里都有！\r马上关注！",
+"likes": 673,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkwNjQ5MTY2MA==&mid=2247705052&idx=1&sn=ba1c7cba8ce8ee54d22ccea0fef5c0bf#rd",
+"published_at": "2026-09-25 06:00:00"
+},
+{
+"id": "DY3",
+"platform": "抖音",
+"title": "地漏提前戴上了老花镜",
+"desc": "",
+"likes": 22601,
+"comments": 194,
+"url": "https://www.iesdouyin.com/share/video/7689050129814342946",
+"published_at": "2026-09-24 20:46:00"
+},
+{
+"id": "DY7",
+"platform": "抖音",
+"title": "#思考 #认知 #老花镜",
+"desc": "",
+"likes": 2952,
+"comments": 264,
+"url": "https://www.iesdouyin.com/share/video/7689071663849229577",
+"published_at": "2026-09-24 20:05:11"
+},
+{
+"id": "GZH270",
+"platform": "公众号",
+"title": "中秋假期，总台大剧、大片已安排！",
+"desc": "中秋假期将至      👏🏻👏🏻👏🏻\n总台大剧、大片      陪您一起过中秋\n桂香入夜🌕天涯此时      CCTV-8      万家灯火共明月      CCTV-9      山河锦绣话团圆                                            ",
+"likes": 115,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=Mjg0NDcyODU4MA==&mid=2652154774&idx=1&sn=78e1ea7ecb47e6670d6b5ed56cc2b804#rd",
+"published_at": "2026-09-24 19:15:18"
+},
+{
+"id": "DY95",
+"platform": "抖音",
+"title": "花不到100块就可以配到广州诺亚视光600多的防蓝光眼镜啦，而且选的款式多，真的好划算，#诺亚视光 ",
+"desc": "",
+"likes": 1020,
+"comments": 1,
+"url": "https://www.iesdouyin.com/share/video/7689055522343104505",
+"published_at": "2026-09-24 19:02:27"
+},
+{
+"id": "GZH257",
+"platform": "公众号",
+"title": "中秋“热”情赏月，月亮时隐时现",
+"desc": "平分夜色一轮满，长伴云衢千里明。中秋的圆满，不止是远在天边的明月皎洁，更是近在咫尺的烟火滋味。一桌饭，盛着家的牵挂；一轮月，寄托远方的思念～本期「上海城市映像」以#月满申城 团圆此刻# 为主题，邀请你用镜头记录中秋月色下的团圆的时刻。看完天气别走开，一起来看看小布的例子吧🌰！\n今日回顾 \n节前最后",
+"likes": 226,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NTA5NzYyMA==&mid=2655474804&idx=1&sn=3e08a0e7ceccd064be9ebdb6d8e3c82c#rd",
+"published_at": "2026-09-24 18:11:39"
+},
+{
+"id": "GZH38",
+"platform": "公众号",
+"title": "手机品牌那么多，怎么选啊？",
+"desc": "这是一位博主提供的，说实在的，我都没有用过。准备放假去买一部折叠屏手机，因为我眼睛花的厉害，必须戴上老花镜才能看，一直没有戴过眼镜，现在一会戴上一会摘下老花镜，非常麻烦。大屏手机就那几款，可选的余地也不多。",
+"likes": 760,
+"comments": 405,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyMzk4MDQ0Ng==&mid=2247485304&idx=1&sn=3ae735cb6ffc690165de62214440c6a4#rd",
+"published_at": "2026-09-24 16:53:13"
+},
+{
+"id": "GZH64",
+"platform": "公众号",
+"title": "现在流行做老花手术？明星都在做的手术，到底是不是“智商税”？",
+"desc": "人到中年    很多人会发现看书    看手机越来越费劲    字要拿远一点才能看清    这就是老花眼找上门了\n曾经，演员胡兵讲述了自己的困扰，看不清楚剧本，严重影响了他拍戏；平常生活中如果需要填表，也很困难。他这个描述，是很典型的老花症状。除了老花，检查发现，他的晶状体也有一定程度的混浊，也就是",
+"likes": 35,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MzE0OTA4MQ==&mid=2655075550&idx=1&sn=b8cddb171c7e3d69e323cf08585ae1c4#rd",
+"published_at": "2026-09-24 16:00:00"
+},
+{
+"id": "GZH252",
+"platform": "公众号",
+"title": "【🧧13万份红包】富国合唱团｜《借我一片月》 月满归途，共盼团圆",
+"desc": "每个人心里，都藏着一轮故乡的月。\n《借我一片月》\n从一轮明月出发，唱出每一个奔赴远方的人的心声。圆缺的月，是思念的舟；异乡的窗口，是漂泊者与故乡之间的又一次凝望。\n古人以月寄情，今人以月怀远。“如矿出金，如铅出银；流水今日，明月前身。”一轮明月穿越千年时光，照见人间聚散，也见证一代代人的成长与追寻。",
+"likes": 110,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3OTMyNzEwMQ==&mid=2651569304&idx=1&sn=0748a2eeef0e69f3684b0c950cc00925#rd",
+"published_at": "2026-09-24 15:10:16"
+},
+{
+"id": "GZH271",
+"platform": "公众号",
+"title": "月满山河，团圆安康｜在国博邂逅笔墨秋韵",
+"desc": "古镜映月，玉兔衔秋          中秋佳节将至          祝愿大家          岁岁月明，事事圆满          家家团圆，岁岁安康\n秋风有信，明月如期。中秋的诗意，不只囿于佳节当日，也藏在古人笔墨丹青中。\n世人望月，望的是圆满光景，寄的是心底情思，是归乡的期盼，是独处的安然，",
+"likes": 55,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDA5MzM0MA==&mid=2653065631&idx=1&sn=7e0406946dafeaa28b6f1d91e92cc356#rd",
+"published_at": "2026-09-24 15:03:24"
+},
+{
+"id": "GZH224",
+"platform": "公众号",
+"title": "看完李要得打车去拉萨，这批旅游博主的国庆，靠豆包工作提前躺平了（限时免费30天）",
+"desc": "这两天刷到李要得那条《青春没有售价，从重庆打出租车直达拉萨》，我盯着屏幕愣了好一会儿。\n一辆出租车，从山城直接开到日光城，沿途4000多公里，司机师傅陪他一路狂飙。视频上线22小时，点赞破千万，总点赞量超2164万，粉丝从300万级飙到450万。西藏文旅直接兑现了50万元奖励。评论区全是同一句话：\"",
+"likes": 139,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxNzc1ODc3MQ==&mid=2247504511&idx=1&sn=13c7b1ab1a8d97f882135a026a4eb60d#rd",
+"published_at": "2026-09-24 14:03:00"
+},
+{
+"id": "GZH101",
+"platform": "公众号",
+"title": "绿城又出圈了：以长期主义，铸就封面恒产",
+"desc": "为什么又是绿城？\n当行业进入深度调整期，地产市场的每一次发声都需要更多的底气。2026年9月，绿城・潮鸣庐州生活美学馆的正式启幕，再度成为合肥楼市的焦点话题。从生活美学馆开放当日的高规格呈现，到即将携手著名财经作家吴晓波举办“全球新坐标 合肥正潮鸣”城市价值解码盛会，绿城每一次动作，都牵引着市场的目",
+"likes": 172,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyMDY0NTg4MA==&mid=2247572065&idx=1&sn=f4ecf261ffa26bdb759c6f2a7b5dfeba#rd",
+"published_at": "2026-09-24 11:07:05"
+},
+{
+"id": "GZH74",
+"platform": "公众号",
+"title": "敬一丹好友李修平，及几段婚变",
+"desc": "                      李修平和敬一丹是央视多年的同事，也是彼此惺惺相惜的挚友。           两人渊源很深，李修平1989年进央视，而敬一丹1995年开始主持《焦点访谈》，两人在央视共事多年，见证了彼此职业生涯的高光时刻。并且皆是央视的骨干，一个主持《新闻联播》26年，一",
+"likes": 49,
+"comments": 14,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk4ODQ3NjY3OQ==&mid=2247486878&idx=1&sn=bbd98e73f4d009ceeb31ddba1d86fc69#rd",
+"published_at": "2026-09-24 10:52:13"
+},
+{
+"id": "GZH248",
+"platform": "公众号",
+"title": "今日中秋！您触摸一下图片，立马亮起一轮明月，太神奇了",
+"desc": "你想看的，这里都有！\r马上关注！",
+"likes": 379,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyOTUxNjg0Ng==&mid=2247658818&idx=1&sn=a4bd05c12722f0847565414e8170cdf6#rd",
+"published_at": "2026-09-24 10:28:18"
+},
+{
+"id": "GZH90",
+"platform": "公众号",
+"title": "为什么世界需要中国故事？",
+"desc": "9月23日  第五届华语纪录电影大会进入第二天议程  多场焦点对话活动在广州举行\n活动围绕影视版权保护与价值新生、影像美学多元路径、中医药文化影像传播、生态纪录片创作与国际传播等议题展开深入交流，来自不同行业的专家及从业者展开思维碰撞，现场氛围热烈，干货满满。\n生态纪录片创作交流营现场。\nIP传播关",
+"likes": 50,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA0MDk2MA==&mid=2653675373&idx=1&sn=f1ac47dc993dd3b4d2f707924210b238#rd",
+"published_at": "2026-09-24 09:52:43"
+},
+{
+"id": "GZH218",
+"platform": "公众号",
+"title": "放大迷彩细看，原来里面藏着祖国山河轮廓",
+"desc": "很多人看迷彩服，只记住烈日下训练的身影，很少有人仔细观察布料上的纹路。放大图片才发现，斑驳纹路之间，竟然藏着形似祖国山河的轮廓。原来这身青春戎装背后，是大好万里河山，少年强，则山河安。 被这份细节打动的，帮忙点个赞！你是第一次发现迷彩这个小秘密吗？大爷的省力妙招，看完我恍然大悟！第一次见！地铁扶梯居然藏着小浪漫#生活随记#人间感悟",
+"likes": 102,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNTk5MjgxNg==&mid=2247486577&idx=1&sn=4f5e87bb8a22c74c13d116653f27701b#rd",
+"published_at": "2026-09-24 08:01:57"
+},
+{
+"id": "GZH66",
+"platform": "公众号",
+"title": "老花和远视是一回事……是真是假？｜谣言终结站",
+"desc": "点击查看答案\n▼                                                                                                                             ×\n老视俗称“老花”“老花眼”，它",
+"likes": 112,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjI2ODA4Mw==&mid=2653189033&idx=1&sn=d76c910ac7abcfaa7e6bba669262ecba#rd",
+"published_at": "2026-09-24 07:30:00"
+},
+{
+"id": "GZH154",
+"platform": "公众号",
+"title": "敬一丹离去后，杨澜晒出旧照为何被热议?",
+"desc": "2026年9月13日凌晨5时，我们喜欢的主持人敬一丹——在北京因病离去。女儿王尔晴在微博发布消息，这时，我们才知道我们最喜欢的敬大姐走了。在英国的杨澜微博发文怀念，提及两人相识至今的交往，发了以往的照片，引起了大家的热议。回想起敬大姐最后在《焦点访谈》结尾，她没有过多说太多的话，而是在节目结尾的时候有个明显的沉顿。《焦点访谈》这种类型的节目最难的不是问答，而是在追问时情绪不失控、不表演情感、不把观众的情绪当成“燃剂”。尊重事实，把事实说清楚，我想，这就是她的风格，所以她选择用沉默而不是漂亮话来收尾。宁可少说一句，也不多说一句不该说的。她像锚一般，船还在走，只是不再被拉住。",
+"likes": 41,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMjY4NjYyMA==&mid=2247487622&idx=1&sn=a07da395e79edaa66975078ad97e6d83#rd",
+"published_at": "2026-09-24 06:35:00"
+},
+{
+"id": "GZH146",
+"platform": "公众号",
+"title": "在北京被抓捕的5位明星，看看谁最让人意外？",
+"desc": "2022年9月，北京警方通报艺人李易峰因多次嫖娼被行政拘留，这位凭《古剑奇谭》《麻雀》走红的“国民校草”，多个代言品牌随之终止合作，公众形象随之改变。房祖名系成龙之子，2014年8月与柯震东在北京因吸毒被抓获，二人同属当时舆 论焦点，柯震东曾为禁毒宣传片出镜，片中那句我不吸毒与此刻形成刺眼反差。20",
+"likes": 10,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5NjMyMzQ4Mg==&mid=2247485708&idx=1&sn=fba179be686207ae1bf1376a6ae7ce46#rd",
+"published_at": "2026-09-24 06:30:00"
+},
+{
+"id": "GZH36",
+"platform": "公众号",
+"title": "梅姨案9名被拐儿童全部找回，多数家庭面临亲子隔阂难题；60岁“电竞老太”，戴着老花镜苦练8千小时游戏与儿子成为“战友” ｜ 三工晨报",
+"desc": "头条速递\n梅姨案9名被拐儿童全部找回，多数家庭面临亲子隔阂难题                      9月，横跨二十余年的“梅姨”张维平拐卖儿童案进入审判程序。2003年至2005年间，人贩子张维平拐走9名儿童，均通过谢家梅转卖，2024年10月最后一名被拐儿童认亲，9名孩子全部找回。\n多名受害",
+"likes": 114,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NTE1NzAwMw==&mid=2649856150&idx=1&sn=06d03d1704567fbb11abe625bc6cc7c7#rd",
+"published_at": "2026-09-24 05:47:00"
+},
+{
+"id": "DY44",
+"platform": "抖音",
+"title": "有什么方法可以缓解老花眼? #老花眼 #老人 #看不清 #医学科普 #抖出健康知识宝藏",
+"desc": "",
+"likes": 2125,
+"comments": 33,
+"url": "https://www.iesdouyin.com/share/video/7688736935052938547",
+"published_at": "2026-09-23 22:26:24"
+},
+{
+"id": "DY94",
+"platform": "抖音",
+"title": "63就能配防蓝光眼镜啦！镜架镜框全包！！ #恒瑜眼镜 #配镜省钱 #平价眼镜 #高颜值镜框推荐 #如",
+"desc": "",
+"likes": 1030,
+"comments": 29,
+"url": "https://www.iesdouyin.com/share/video/7688734222614485733",
+"published_at": "2026-09-23 22:15:38"
+},
+{
+"id": "GZH164",
+"platform": "公众号",
+"title": "传奇一瞬，小米18Pro百变背屏AI自由玩！",
+"desc": "最新爪机圈发布新机有亿点点多啊，刚刚预热已久的小米18Pro系列也来了，一起来看看⬇️小米18 Pro 和小米18 Pro Max 两款旗舰手机的产品核心亮点总结：- 性能：均搭载高通 2nm 旗舰芯片骁龙8 Elite Gen6 系列- 影像：主摄+长焦双两亿像素，引入全新的「传奇一瞬」技术，通过接入大模型还原经典相机- 背屏：带来「AI 百变背屏」功能，预置了 100 款日常高频使用的背屏精品应用卡- 屏幕：边框宽度收窄至 0.99mm，新一代国产 M11、全 RGB 无损排列、4000nits 屏- 续航：分别搭载 7000mAh 和 8500mAh 超大容量电池- 系统：首发预装小米澎湃OS 4 正式版系统- 配置周边：全系更换超大马达，全系支持IP66+IP68+IP69、全系支持 UWB 车钥匙，小米18 ProMax 搭载三扬声器以上你咋看👀-个人最大感jio：屏幕升级，这次超级像素级 防窥技术，既不影响显示，还能定制防窥[强]这不比贴那膜的强了（）几个倍你说！马达升级，终于升级马达了！！！终于在小屏里也升级马达了，对于不开震感反馈就难受，开了又觉得软绵绵的17Pro来说",
+"likes": 97,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI3ODM4NjU1NQ==&mid=2247486006&idx=1&sn=3d2ced954100bf55c7d3deeed86ea39a#rd",
+"published_at": "2026-09-23 22:12:11"
+},
+{
+"id": "GZH249",
+"platform": "公众号",
+"title": "【活动通知】明月两乡，青山同云 |2026上海市高中跨校明信片互寄活动",
+"desc": "近期网络上传播的“明信片海报”并非官方发布。该海报未经主办方及各校外联同学确认，且其中信息存在明显错误。",
+"likes": 107,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyNTY3MTMyOA==&mid=2247484515&idx=1&sn=b7277fa4881c08b585b6f2366e4d8f73#rd",
+"published_at": "2026-09-23 21:57:10"
+},
+{
+"id": "DY8",
+"platform": "抖音",
+"title": "80后的我开始带老花镜了，你们需不需要带？",
+"desc": "",
+"likes": 1894,
+"comments": 257,
+"url": "https://www.iesdouyin.com/share/video/7688711395701002597",
+"published_at": "2026-09-23 20:47:04"
+},
+{
+"id": "GZH17",
+"platform": "公众号",
+"title": "一张图看懂英语启蒙学习路径",
+"desc": "👇点击下方蓝色字，领取PDF资料👇点我领取【更多英语资料】✅ 英语启蒙要循序渐进，选对学习顺序很重要！我们整理了从儿歌磨耳朵、启蒙动画、自然拼读到分级阅读的学习路径，并推荐了不同阶段适合的英语学习资源。帮助家长理清启蒙思路，让孩子逐步培养英语语感和阅读能力。✅ 扫最后一张图片二维码进群领取完整资料#英语 #小学英语 #英语启蒙 #英语知识 #小学生英语 #英语资料",
+"likes": 53,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI2MTIxOTUxMg==&mid=2650515689&idx=1&sn=d6315f9ec457228c8a101c72482aae85#rd",
+"published_at": "2026-09-23 20:05:18"
+},
+{
+"id": "GZH40",
+"platform": "公众号",
+"title": "“过中秋节，1.45元” 湖北一农民1981年分家起记账，当年分了10.6元，2018年收入10万元；45年记了47本账，捐了41本",
+"desc": "“卖刘文彬鸽子一对，60元。”9月22日，干完农活，74岁的沈怀德搁下农具，洗净双手，坐到堂屋木桌前，戴上老花镜翻开那本卷了边的“现金日记账”，一笔一画写下当天的进项与开销。\n从1981年分户单过那天起，记账就成了崇阳县铜钟乡清水村村民沈怀德每天的必修课，如同吃饭、睡觉般自然。45年下来，老人足足记",
+"likes": 81,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4OTM0MDMyNA==&mid=2651181636&idx=2&sn=563464e7d2abfc385f3e225c56046c37#rd",
+"published_at": "2026-09-23 18:48:24"
+},
+{
+"id": "XHS46",
+"platform": "小红书",
+"title": "冰雪奇缘联名新品丨防蓝光护瞳盾",
+"desc": "学生党打工人全部都有！ 可啦啦 x 冰雪奇缘 防蓝光半年抛来啦！ \n-\n《艾莎魔法·抗疲劳护瞳盾 》\n✅️净化有害蓝光/UvaUvb，佩戴轻松护眼抗疲劳 \n✅️长时面对屏幕，眼睛不干不累，视野清晰明亮 \n-\n 素材来源已授权 苏械广审(文)第280704-32788号 温馨提示：请仔细阅读产品说明书或者在医务人员的指导下购买和使用，禁忌内容或者注意事项详见说明#可啦啦美瞳 #防蓝光隐形眼镜",
+"likes": 8,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6ab3a89b00000000140381cf",
+"published_at": "2026-09-23 18:23:23"
+},
+{
+"id": "DY88",
+"platform": "抖音",
+"title": "中秋家人出行潮流单品来咯 #中秋礼物 #家庭好物 #小米墨镜 #小米防蓝光眼镜",
+"desc": "",
+"likes": 6166,
+"comments": 80,
+"url": "https://www.iesdouyin.com/share/video/7688661420842999547",
+"published_at": "2026-09-23 17:33:08"
+},
+{
+"id": "DY108",
+"platform": "抖音",
+"title": "中秋团圆，白天带全家出去玩，晚上一起窝沙发追剧，眼睛可不能掉链子～",
+"desc": "",
+"likes": 3548,
+"comments": 37,
+"url": "https://www.iesdouyin.com/share/video/7688645652532745721",
+"published_at": "2026-09-23 16:31:57"
+},
+{
+"id": "DY89",
+"platform": "抖音",
+"title": "🎑中秋馈赠，审美与实用同样重要#中秋送礼 #中秋伴手礼 #小米墨镜 #小米防蓝光眼镜",
+"desc": "",
+"likes": 3004,
+"comments": 56,
+"url": "https://www.iesdouyin.com/share/video/7688640875799410341",
+"published_at": "2026-09-23 16:13:25"
+},
+{
+"id": "GZH143",
+"platform": "公众号",
+"title": "还记得央视“五朵金花”当年的风釆吗",
+"desc": "照片拍摄于1994年，被誉为“首届金话筒五朵金花”这五位，从左往右依次为鞠萍、杨澜、倪萍、敬一丹和高丽萍。那时没有滤镜，没有精修，五位风华正茂的主持人往那儿一站，妥妥的端庄大气、国泰民安脸啊。她们颜值在线，才华也是实打实。只记得听“鞠萍姐姐”讲故事，看杨澜和姜昆的《正大综艺》，领略“不看不知道，世界真奇妙”。还有守着电视等一年一度鞠萍的春晚，和敬一丹的《焦点访谈》，倒是对边上的高丽萍印象不深，一度把她认成了另一位主持人“海霞”。让人唏嘘的是，敬一丹大姐已经离世，跟她关系最好的鞠萍，发长文悼念，读来情真意切、让人眼眶发红……只愿剩下的几位姐姐事事如意，身体健康呢！",
+"likes": 1831,
+"comments": 119,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU0NjA2NzAzMA==&mid=2247492339&idx=1&sn=107e25c0b2e0eb5ec05e606c3a2c9bb4#rd",
+"published_at": "2026-09-23 15:55:26"
+},
+{
+"id": "XHS90",
+"platform": "小红书",
+"title": "提升幸福感✨自用分享“品质生活”好物",
+"desc": "最近整理了一下身边常用的东西，发现品质生活真的不只是待在家的舒适，出门在外的轻松自在同样重要。简单分享几个我近期很爱的好物～\n\t\n🌙睡衣\n在家里放松，穿它最合适。很适合秋冬的磨毛面料，软乎乎的特别亲肤，领口的小花边很精致又带点甜美，侧边还有口袋，随手放眼镜、发圈，简直不要太方便~穿上它，慵懒又自在，就是属于我的满分宅家时刻✨\n\t\n👓防蓝光\n手机电脑党刚需，戴着不晕不夹耳朵，日常防有害蓝光。方圆镜框对脸型包容度高，是出门穿搭也很韩的小豹纹款~\n\t\n🏖️沙滩包\n种草很久的沙滩包，终于GET了！EVA材质，防水防污还抗压，一擦即净，特别好打理。而且容量超级大，带娃出门拎着太合适了\n\t\n🎨画板\n黑白双面使用的画板，孩子可以尽情涂鸦创作，升降调节设计也很贴心，让成长自然而然发生，宅家时光也变得更温馨充实啦。\n\t\n👶早教机\n随时随地打开早教机让他们磨磨耳朵、听听故事，在外慢慢就安静下来了，简直是我的出门安抚神器\n\t\n#歌媄芮睡衣 #歌媄芮 #睡衣 #凯普克蓝光镜 #凯普克眼镜 #防蓝光眼镜 #梵高范购购包 #沙滩包 #带娃出行 #九月小朋友SEPTEMBER",
+"likes": 128,
+"comments": 15,
+"url": "https://www.xiaohongshu.com/explore/6ab3796e000000000a01f2a6",
+"published_at": "2026-09-23 15:02:06"
+},
+{
+"id": "DY90",
+"platform": "抖音",
+"title": "中秋走心礼｜把户外的从容送给身边人 #中秋送礼 #中秋伴手礼 #小米墨镜 #小米防蓝光眼镜",
+"desc": "",
+"likes": 2030,
+"comments": 101,
+"url": "https://www.iesdouyin.com/share/video/7688619383900176049",
+"published_at": "2026-09-23 14:50:00"
+},
+{
+"id": "GZH43",
+"platform": "公众号",
+"title": "亚运会的颁奖台，一场日本超老龄化社会的集中展示",
+"desc": "► 文 观察者网专栏作者 余淳于  这几天正值名古屋亚运会，但率先“出圈”的却不是哪位冠军，而是一群银发老人。  颁奖仪式上，托着奖牌托盘走在前面的，不再是人们习惯看到的年轻礼仪人员，而是一张张布满皱纹的面孔——有的头发全白，有的戴着老花镜，步伐不算快，但走得很稳。他们穿着统一的礼仪服装，站在领奖台",
+"likes": 87,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA4MjA4MA==&mid=2655378617&idx=5&sn=32a8d57b2f87d9540c7000adaf1fdba5#rd",
+"published_at": "2026-09-23 12:11:08"
+},
+{
+"id": "GZH165",
+"platform": "公众号",
+"title": "如果感染了艾滋病，红疹必须是大片的吗？",
+"desc": "“请问如果感染了艾滋病，红疹必须是大片的吗？如果总共有两三个是不是感染了呢？”\n那估计不是，不过有时候没有红疹也可能是感染了，这并不是危言耸听。\n很多朋友发生过高危行为后，眼睛直接开启“显微镜模式”，身上随便冒出来两三颗小红点，就直接自我确诊为艾滋病，甚至陷入焦虑失眠、反复自己检查身体的内耗里。\n首",
+"likes": 15,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIyMDM0NTAxMw==&mid=2247486310&idx=1&sn=c11002a81a5e2abbfae2c5601cf5c66c#rd",
+"published_at": "2026-09-23 12:00:00"
+},
+{
+"id": "GZH222",
+"platform": "公众号",
+"title": "30分钟订单突破16815台！传祺越7正式上市，16.18万元起",
+"desc": "□河南日报社视觉全媒体中心·大河报记者 史歌  \n明日尾号4和9停驶\n鸣沙山，月牙泉，是千年丝路上远行的最好见证。如今，这里也见证了科技越野奔赴远方的重要时刻。9月22日，传祺越7正式上市，上市权益价16.18万元-20.78万元，并带来了至高56000元的重磅权益。值得一提的是，越7上市30分钟订",
+"likes": 11,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDM1MDY1OQ==&mid=2652726004&idx=6&sn=624e31e6cc02d467e308e72224d20b34#rd",
+"published_at": "2026-09-23 12:00:00"
+},
+{
+"id": "GZH227",
+"platform": "公众号",
+"title": "一个人最大的本事，学会看人",
+"desc": "人活到一定年纪就慢慢懂了：一个人最大的本事，就是学会看人。\n读万卷书不如行万里路，行万里路不如识人有数，人看准了，人生的路自然就顺了。               年轻的时候总傻呵呵的，看人只看表面。\n人家笑脸相迎、嘴上说几句暖心话，你就掏心掏肺把人当知己；别人主动搭把手、凑个热闹，你就觉得人家是真",
+"likes": 214,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNjE5MDI3MA==&mid=2247484925&idx=1&sn=c36877d2058b7528527361007f8c47cc#rd",
+"published_at": "2026-09-23 11:30:00"
+},
+{
+"id": "GZH216",
+"platform": "公众号",
+"title": "国内首条跨海市域铁路通车！央视《新闻联播》关注宁波地铁12号线",
+"desc": "9月22日、23日，央视《新闻联播》《朝闻天下》《新闻直播间》《今日环球》栏目播出《浙江宁波至象山市域铁路通车运营》，报道了宁波至象山市域铁路通车运营。线路跨越象山港，连接宁波主城区与象山半岛，全长61.45公里，共设10座车站，最高运行时速160公里。象山半岛由此结束不通轨道交通的历史，近58万象",
+"likes": 236,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwOTAwMzMwNA==&mid=2653498246&idx=1&sn=5a73c22e48d41f877478a6a8edc3c71a#rd",
+"published_at": "2026-09-23 11:07:51"
+},
+{
+"id": "DY4",
+"platform": "抖音",
+"title": "借钱时是恩人，破产后拿刀逼签字。这次站在刀前面的，是周家那个戴老花镜的保姆。她一个人养大三个儿子，从",
+"desc": "",
+"likes": 21032,
+"comments": 208,
+"url": "https://www.iesdouyin.com/share/video/7688282316971461898",
+"published_at": "2026-09-23 11:05:00"
+},
+{
+"id": "XHS42",
+"platform": "小红书",
+"title": "近视、老花、散光都有，怎么配镜？",
+"desc": "很多中老年朋友都有这样的困扰，但眼镜可不要随便乱配，今天来提醒大家几点。\n#一起守护健康 #老花眼加近视散光 #眼睛健康 #保护眼睛 #老花眼",
+"likes": 672,
+"comments": 33,
+"url": "https://www.xiaohongshu.com/explore/6ab331540000000014000409",
+"published_at": "2026-09-23 09:54:28"
+},
+{
+"id": "GZH145",
+"platform": "公众号",
+"title": "90年代央视老照片，右边这位是敬一丹",
+"desc": "这张经典老照片，拍摄于90年代央视大楼门前，右边这位女士，正是央视名主持敬一丹。 当年39岁的敬一丹，一身花衬衫配长裙，手提皮包，笑容温和爽朗。那正是她事业高光的阶段，即将接手《焦点访谈》。她主持的《焦点访谈》《东方时空》，陪伴了一代人的电视记忆。语调温婉沉稳，真诚克制，被大家亲切称作“敬大姐”，拿过多届金话筒奖。 几十年匆匆而过，再回看这张旧照，满是怀旧感。她用专业、理性又饱含温度的报道，成为无数老观众心中值得信赖的新闻人。 💬当年你是不是经常守着电视看《焦点访谈》？#敬一丹  #央视老主持人  #老照片  #时代回忆",
+"likes": 75,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMjQwMjc3Mw==&mid=2247487835&idx=1&sn=f3f243cb2d60485f0be66fd34c1b3bf6#rd",
+"published_at": "2026-09-23 09:24:01"
+},
+{
+"id": "GZH34",
+"platform": "公众号",
+"title": "梅州“电竞老太”：60岁的她戴着老花镜打游戏，在8000小时的枪声里与儿子成为“战友”",
+"desc": "新京报记者 咸运祯 编辑 陈晓舒 校对 柳宝庆                         打游戏的时候，钟娟娟鼻梁上总架着一副老花镜。                         屏幕里是一局正在僵持的《反恐精英》（CS）。她身子微微往前倾，左手搭在键盘上切换键位，右手推拉着鼠标。耳机里枪",
+"likes": 756,
+"comments": 18,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU2MzA2ODk3Nw==&mid=2248181612&idx=1&sn=f7cb1f087981fecd274254509e932f3e#rd",
+"published_at": "2026-09-23 08:05:19"
+},
+{
+"id": "GZH102",
+"platform": "公众号",
+"title": "喜遇秋分，解锁秋日养生小妙招",
+"desc": "团团为您准备的秋季养生指南：秋分为秋季中点，恪守养收原则，收敛精气、养护肺气。起居养生｜早卧早起，与鸡俱兴昼夜均分，阳收阴长。宜22点前入睡，天亮早起；循序渐进添衣，适度秋冻，护好颈肩腰腹。情志养生｜使志安宁，以缓秋刑秋气肃杀，谨防悲秋。收敛神气，平和心境，勿忧思过甚，护肺气清净。饮食养生｜润肺滋阴，少辛增酸应对凉燥，多食银耳、百合、梨、柿子、山药等润燥之物；适当吃山楂、葡萄等酸味食材；少食葱姜辣椒等辛辣，忌大温猛补。运动养生｜宜收不宜散切忌大汗耗伤津液，可选散步、八段锦、慢跑，微微出汗为佳；避开雾露寒凉的清晨锻炼。",
+"likes": 29,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3OTIwMjgwMg==&mid=2922479553&idx=1&sn=22054cf17a62b58e34093357faba7b4e#rd",
+"published_at": "2026-09-23 06:00:00"
+},
+{
+"id": "GZH207",
+"platform": "公众号",
+"title": "央视采访报道！擎旗！铸魂！",
+"desc": "“90多年前，很多人从这里踏上长征路，那其中的很多人会和眼前的这些学生年纪相仿。90多年后，新时代的青年站在纪念碑前，前赴后继。”近日，中央广播电视总台央视新闻频道（CCTV-13）首播特别节目《江山万里新长征》，该节目采访报道了我校国旗护卫队在瑞金开展“重走长征路”暑期实践活动。\n央视CCTV—1",
+"likes": 203,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NzQ4NjE1Ng==&mid=2651963535&idx=1&sn=7cef7a0de7cf0007c3226040b4d62587#rd",
+"published_at": "2026-09-22 23:52:51"
+},
+{
+"id": "GZH139",
+"platform": "公众号",
+"title": "人间自有真情在",
+"desc": "在北京一地铁车厢内，一位刚下夜班的农民工师傅因为过度劳累，在乘车时不自觉地靠在旁边一位年轻女生的肩膀上睡着了。 女生戴着眼镜，穿着黑色外套，正低头看手机。画面中她的表情平静自然，没有闪躲，也没有表现出一丝反感或嫌弃，直到师傅醒了才挪开！在快节奏、人际关系疏离的现代城市公共交通中，这种微小的善举让人感到人情的温度，是对“人间自有真情在”的生动诠释。为那位心灵美的女生点赞👍#农民工#正能量#感人瞬间",
+"likes": 212,
+"comments": 40,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwMzM1OTA3NQ==&mid=2247485556&idx=1&sn=1d82b48dc8b8b67c8efc9a7b59dfef52#rd",
+"published_at": "2026-09-22 23:33:02"
+},
+{
+"id": "GZH160",
+"platform": "公众号",
+"title": "日本选手仰视1.98米的张展硕",
+"desc": "2026年名古屋亚运会男子1500米自由泳颁奖仪式上，身高1.98米的张展硕让身旁两位日本选手不停仰头打量、搭肩膀伸手比划身高的画面，成为本届赛事最出圈的名场面。\t名场面：颁奖台上的身高“降维打击”核心画面：在1500米自由泳颁奖合影时，获得银牌和铜牌的日本选手今福和志与田渊海斗站在张展硕两侧，多次仰头注视、搭肩膀、伸手比划，试图丈量双方巨大的身高差距，这一略带喜感的互动被直播镜头完整记录。身高数据：张展硕的身高约为1.98米，在同场竞技的日本选手中形成鲜明的视觉反差，被网友戏称为“物理层面的绝对压制”。\t实力印证：身高背后的金牌统治力夺冠表现：在这场长距离对决中，张展硕游出14分42秒42的个人最好成绩夺金，将银牌得主田渊海斗（14分45秒99）甩在身后超过3秒，用绝对实力呼应了身高的“硬件优势”。天赋兑现：对于长距离游泳项目，身高与超长臂展意味着更高效的划水效率。张展硕不仅拥有1.98米的身高，臂展更达到2.1米，这种身体条件是他能连续两天逆转日本队、斩获双金的强大基础。\t热议焦点：赛场内外的多维解读网友反应：该画面引发全网热议，大众认为这直观展示了竞技体育中无法逾越的生理天赋差异",
+"likes": 36,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU4NTA1MTAzMw==&mid=2247536153&idx=1&sn=5c6082637c8697c4e77b20c57ee6c4d3#rd",
+"published_at": "2026-09-22 23:07:15"
+},
+{
+"id": "GZH109",
+"platform": "公众号",
+"title": "新机：小米18Pro摄像头公布；vivoX500Ultra发布时间定了；荣耀新机防抖超强；千问AI眼镜N1系列亮相",
+"desc": "嚯！",
+"likes": 34,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MDYxMDA0MQ==&mid=2751693946&idx=4&sn=5fd6ba5f95d34cd380c233a5671b12c1#rd",
+"published_at": "2026-09-22 22:24:30"
+},
+{
+"id": "GZH204",
+"platform": "公众号",
+"title": "中国的人口红利，可能被严重低估了",
+"desc": "桐花万里丹山路，雏凤清于老凤声",
+"likes": 384,
+"comments": 22,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxMjM4MTEwNg==&mid=2651726212&idx=1&sn=7faa6490620dd7eca148220e0e97029a#rd",
+"published_at": "2026-09-22 22:15:23"
+},
+{
+"id": "GZH221",
+"platform": "公众号",
+"title": "煤企为抄近道拦腰截断明长城，持续损毁近20年！当地通报",
+"desc": "万里长城是中华民族的精神象征，也是世界文化遗产。其中，明长城是历代长城中规模最大、建筑水准最高的精华所在。然而，山西省忻州市宁武县境内的明长城被人为损毁持续了近20年，损毁程度令人触目惊心。\n据报道，遭到损毁的郭家窑段明长城属于省级文物保护范畴。通过航拍画面可以看到，一条人为开挖的土路延伸至明长城本",
+"likes": 301,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkwMjMwMTAwMw==&mid=2247924730&idx=1&sn=e469fc414f437121641540956dcd2db6#rd",
+"published_at": "2026-09-22 21:30:00"
+},
+{
+"id": "GZH72",
+"platform": "公众号",
+"title": "今晚，迪荡双子楼亮灯！",
+"desc": "今晚7点38分，迪荡双子楼亮灯，光彩夺目。这座沉寂多年的建筑，终于以完整姿态重新站进了绍兴的夜色里。\n亮灯那一刻，迪荡湖畔聚了不少市民。家住周边的伊旭松也在人群中。他告诉记者，自己在迪荡住了十多年，最大的感受是这片区域曾是整个城市的焦点，随着双子楼停工，好像也渐渐失去了光彩。“别人一提起这栋楼，总归",
+"likes": 98,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5NzQ4MTE0MQ==&mid=2652046982&idx=1&sn=e0ba95ac356d5bd2447a5f48a6a0538e#rd",
+"published_at": "2026-09-22 21:05:00"
+},
+{
+"id": "GZH158",
+"platform": "公众号",
+"title": "这个云南山村的丰收节，办在了360米高空",
+"desc": "金秋时节，五谷飘香。\n9月21日，宣威市尼珠河村，一场别开生面的“云端丰收节”在“空中校车”的出口平台上开场。\n房前屋后，金黄的玉米、火红的辣椒铺满院落，一场“云端晒秋”让人再次把目光投向这片峡谷。\n过去一个多月，这里一直是全网关注的焦点。\n8月30日，秋季开学第一天。尼珠河大峡谷谷底，13名小学生",
+"likes": 44,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NzI4Nzg3Mw==&mid=2649793994&idx=1&sn=c8bbcecd5036f068d907698a2b0933ae#rd",
+"published_at": "2026-09-22 21:02:23"
+},
+{
+"id": "DY14",
+"platform": "抖音",
+"title": "有个粉丝留言说我错了一个字。我回复她，你慢慢找，错字多了去了，我戴着老花镜耶！",
+"desc": "",
+"likes": 1899,
+"comments": 102,
+"url": "https://www.iesdouyin.com/share/video/7688341215489740923",
+"published_at": "2026-09-22 20:50:34"
+},
+{
+"id": "XHS86",
+"platform": "小红书",
+"title": "儿童护眼，读懂远视储备，控光才是底层逻辑",
+"desc": "一年级开学才一个月，我就发现，孩子写作业要盯课本和台灯，复习要用学习机，好不容易写完还想看会儿动画片。一天下来，眼睛根本没离开过屏幕。\n\t\n之前也给他试过很多款防蓝光眼镜，要么戴上画面发黄发暗，要么镜框太重压鼻梁，娃戴一会就扔一边，远视储备根本守不住，看得我是又着急又无奈。\n\t\n直到后来我给娃入手了这款梅奥的点阵控光护眼镜，才真正解决了我的心头大事。\n以前只知道防蓝光，后面做功课才搞明白，普通防蓝光大多都是镀膜镜，只过滤一小段蓝光波段，管不了屏幕的高对比度刺激\n\t\n这个梅奥点阵控光护眼镜，依靠镜片上的数百万个光学点阵，能够对屏幕的强直射光进行扩散和柔化处理，光线柔和了，对比度也降低了，孩子再看屏就没那么刺眼了。\n\t\n这款眼镜就是专门给3-10岁远视储备不足、还没近视的娃看电子屏幕的时候用的。\n看屏的时候戴着，不看就摘下来。镜片是TR材质的，戴着很轻，鼻托也贴合孩子的小鼻梁，娃戴得不抗拒，还觉得有点小酷🕶️\n\t\n想当年我六年级戴上眼镜，至今没摘下来，所以现在我就会格外重视孩子的用眼习惯。当妈最大的心愿就是能够给孩子一双清晰的眼睛。先把屏前环境调整好，至于以后，那是他自己的事了😊\n#护眼#",
+"likes": 7,
+"comments": 3,
+"url": "https://www.xiaohongshu.com/explore/6ab0ceda0000000034003213",
+"published_at": "2026-09-22 18:37:46"
+},
+{
+"id": "GZH178",
+"platform": "公众号",
+"title": "斯柯达推出Epiq 55纯电小型SUV！",
+"desc": "2027款斯柯达Epiq 55纯电小型SUV将在欧洲市场上市，是该品牌最便宜的电动车型，定位低于Elroq与Enyaq。顶配Epiq 55搭载55千瓦时NMC电池，电机输出155千瓦、290牛·米，前驱，WLTP续航最高440公里，10%至80%直流快充约23分钟。后备箱475升，另配25升前备箱，拖曳能力1200公斤。座舱配13英寸中控屏，标配7个气囊。奥地利官方起售价32880欧元，约合人民币25.3万元。#斯柯达24V高压无线洗车机大飙车护目镜偏光太阳镜内饰保护剂环保防老化大屏手机支架/无线充电手机支架/圆形铝合金手机支架高性能车载充电器苹果安卓高性价比雨刷大部分车型适用扫码太阳能发光停车牌后排平板电脑手机支架车载眼镜盒豪车头枕，你也能拥有车载充气泵打气泵便携式汽车破窗器安全锤车漆划痕修复膏",
+"likes": 22,
+"comments": 18,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4Mjc1NDcxOQ==&mid=2457591817&idx=1&sn=2ee09162a6e0a7e2adb1f2884468cb86#rd",
+"published_at": "2026-09-22 18:30:00"
+},
+{
+"id": "DY49",
+"platform": "抖音",
+"title": "真实问题，老花眼了，钱头穿不过针眼了😂这日子可咱过呀😂",
+"desc": "",
+"likes": 1864,
+"comments": 40,
+"url": "https://www.iesdouyin.com/share/video/7688301389529732091",
+"published_at": "2026-09-22 18:16:02"
+},
+{
+"id": "XHS2",
+"platform": "小红书",
+"title": "42岁我刚知道：近视的人，照样老花",
+"desc": "我以为我要瞎了。\n最近大促早7早1，开车途中突然视力模糊，约了眼科检查。整个走廊都是六七岁的小孩在疯跑，老师几次管我叫孩儿，实际上他还没我年纪大，他说，中年人可能觉得自己的命没那么重要。结果：两眼各涨100度，另外我老花了。\n\"老花\"我一开始是拒绝的。但查完才知全是误解：近视也会老花；四十多就开始，看近发虚、聚焦变慢就是信号；而且有渐进多焦点镜片一副解决，不用两副来回摘。\n老镜架配新片，选艾适多渐近镜片，对电脑又开车，选日常全能款，远中近一副搞定。适应一周没眩晕，视线上下扫是顺的，余光不晃不变形。光学分区按亚洲脸型设计，视野宽不压鼻梁。\n说个冷知识：像散系数。渐进片两边有模糊区，像散越小清楚面积越大；像散大只有中间一小块能用，转头就晕，参数再好看白搭。见过同事戴双光镜，中间一截糊的还有分界线，渐进片缓坡过渡没分界线，没人看得出我戴的是老花镜。\n验光也关键，配镜需要度数、单眼瞳距、单眼瞳高三项，我配了这么多年镜子，没遇到过主动量瞳高的。\n两条总结：\n1️⃣瞳高和瞳距一样重要，必须戴选定镜架实测。渐进片别网上配，戴着不舒服大概率是验配没对，好多人拿到手直接闲置，不是镜片问题。\n2️⃣四五十",
+"likes": 441,
+"comments": 30,
+"url": "https://www.xiaohongshu.com/explore/6ab0e171000000003a02ea48",
+"published_at": "2026-09-22 18:15:04"
+},
+{
+"id": "GZH274",
+"platform": "公众号",
+"title": "陕西中医药大学附属医院中秋节门急诊工作安排",
+"desc": "金秋送爽，明月高悬      一轮满月，承载着无数的思念与牵挂      无论身在何方，此刻我们共享同一片清辉      愿您在这个中秋，与家人欢聚一堂      共享花好月圆，阖家幸福安康                                                       ",
+"likes": 85,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzUxOTc5NDQxNg==&mid=2247497528&idx=1&sn=34a8e37226461a766c07bd3261cfaeef#rd",
+"published_at": "2026-09-22 18:08:16"
+},
+{
+"id": "GZH259",
+"platform": "公众号",
+"title": "月亮脸上那团黑影，被中国人读了上千年",
+"desc": "中秋之夜，仰望一轮圆满明月，皎皎清辉洒满人间。今天我们知道，月亮之上没有广寒宫，没有嫦娥、吴刚，也没有捣药的玉兔与婆娑桂树。可为什么会有这些神话？\n这些流传千年的浪漫故事，来自古人肉眼望月时，对月面朦胧光影的想象。可能很多人没想到，在没有望远镜的时代，月亮看上去非常之“小”。从地球看出去，月亮的视直",
+"likes": 121,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzNDE4Mjk5NA==&mid=2247626163&idx=1&sn=ffc2c8fbcbc90b6925c30f2c6051b818#rd",
+"published_at": "2026-09-22 17:45:38"
+},
+{
+"id": "DY12",
+"platform": "抖音",
+"title": "经历一翻波折后，终于迎来了三件天大的喜事！ #巴基斯坦 #海外生活 #混血儿 #老花镜",
+"desc": "",
+"likes": 3063,
+"comments": 68,
+"url": "https://www.iesdouyin.com/share/video/7688286726825004298",
+"published_at": "2026-09-22 17:19:11"
+},
+{
+"id": "XHS5",
+"platform": "小红书",
+"title": "分享厦门我很爱的配镜店👓",
+"desc": "被朋友安利的配镜店，体验感很不错～\n\t\n镜框镜片款式多，验光很细心，店里环境干净设备齐全。蔡司、依视路折扣很香，还有长辈能用的渐进镜片。\n\t\n网红、商务款、墨镜都有，配完还能🆓清洗调镜架，售后很到位！\n\t\n#厦门明发眼镜城配镜 #厦门莱配眼镜店 #厦门配镜 #厦门配镜攻略 #莱配眼镜 #平价眼镜店 #厦门明发眼镜店推荐 #厦门验光@莱配眼镜总部",
+"likes": 24,
+"comments": 16,
+"url": "https://www.xiaohongshu.com/explore/6ab238f700000000310173f1",
+"published_at": "2026-09-22 16:14:47"
+},
+{
+"id": "XHS119",
+"platform": "小红书",
+"title": "01年新职场人发工资后，新眼镜，新状态！",
+"desc": "入职快满两个月了\n近期终于收到了完整的工资\n也是拿到真正的人生第一笔工资啦\n别提多开心~\n\t\n于是二话不说，打算给自己一个小奖励\n这次决定配一副新眼镜！！\n之前那副戴了好几年，已经感觉镜片有些磨损了\n而且很讨厌的是每次拍照镜片都反光\n拍个工作照、和朋友合个影，出来全是一片白光...\n\t\n这次做了好多功课\n最后选了明月1.71PMC超亮镜片~\n我度数不算低，本来还怕厚\n结果选了1.71高折射率的版本，真的轻好多！\n戴了一整天下来，鼻子也不会累\n透光率也是真的绝，镜片特别透亮\n重点是拍照真的不反光！\n前几天拍活动集体照，效果果然很不错\n\t\n关键感觉戴上之后气质都不一样了\n就是那种干净利落的“高智感”\n我甚至特地选了不那么幼稚的衣服来搭配\n感觉整个人状态更好了嘿嘿嘿\n\t\n对了！我最近一直在追《你好星期六》\n才发现明月镜片居然是节目官方合作伙伴！\n而且我选的还是吴泽林和张颜齐同款镜片\n没想到本人眼光还不错呢，选到明星同款咯\n真的建议经常拍照或者要戴一整天眼镜的姐妹试试\n选对镜片真的舒服很多~\n\t\n#明月镜片 #明月PMC超亮镜片 #明月1.71PMC超亮A8膜 #戴你去看场面 #你好星期六 #",
+"likes": 118,
+"comments": 8,
+"url": "https://www.xiaohongshu.com/explore/6ab22d950000000034016167",
+"published_at": "2026-09-22 15:26:13"
+},
+{
+"id": "GZH258",
+"platform": "公众号",
+"title": "新片来袭！CCTV-9《伏羲》定档中秋佳节",
+"desc": "这是一条溯源华夏文明原点的精神长河！\n大型人文纪录片《伏羲》将于9月25日20:00，在CCTV-9纪录频道开播。\n伏羲，不只是上古传说里的人文始祖，更是烙印在亿万华夏儿女血脉深处的文化根脉。\n△纪录片《伏羲》\n本片的开播恰逢中华民族的传统节日——中秋佳节，在“海上生明月，天涯共此时”的月圆之时，本",
+"likes": 557,
+"comments": 35,
+"url": "https://mp.weixin.qq.com/s?__biz=MTU5MzQ2Nzk0MQ==&mid=2652170363&idx=1&sn=6294a6774b9eea85fab16f5b118423cd#rd",
+"published_at": "2026-09-22 15:24:08"
+},
+{
+"id": "DY97",
+"platform": "抖音",
+"title": "59‼️打卡天津新店！1.67防蓝光眼镜🤓到手！！！",
+"desc": "",
+"likes": 1162,
+"comments": 35,
+"url": "https://www.iesdouyin.com/share/video/7688218553094524323",
+"published_at": "2026-09-22 12:54:35"
+},
+{
+"id": "GZH82",
+"platform": "公众号",
+"title": "好大学颜值女生少，原因很现实",
+"desc": "不少人发现，优质高校里高颜值女生的占比并不高，根源其实藏在初高中的成长阶段。 读书时代，长相出众、气质亮眼的女生，永远是校园里的焦点。日常走在教室、走廊，总能吸引所有人的目光。身边从不缺追求者，有人主动送早餐、递情书、帮忙打理琐事，甚至有同学会因为争抢关注产生矛盾。 长期被簇拥、被偏爱，很容易让人迷失重心。很多女生渐渐沉浸在这份追捧里，把精力放在穿搭打扮、交友玩乐上，慢慢懈怠了学业。课堂走神、敷衍作业，成绩持续下滑，最终早早告别校园、步入社会，错过了升学深造的机会。 反观那些长相普通、性格内敛的女生，没有外界的喧嚣打扰，少了多余的诱惑和纷扰。她们沉下心扎根学习，把所有时间和精力都投入课本和习题中，日复一日沉淀积累，稳步提升自己的成绩。 没有捷径、没有浮躁，踏实努力成了她们唯一的底气。最终凭借优异的分数，顺利考入理想的大学，拥有了更广阔的成长平台，开启全新的人生赛道。 同为青春年少，不同的选择，造就了截然不同的人生轨迹。颜值是一时的天赋，内在沉淀和持续深耕的能力，才是伴随一生、最靠谱的底气。真正的长远成长，从来都是耐得住寂寞、抵得住诱惑的结果。",
+"likes": 9,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4MTQ1ODE2Mw==&mid=2247483806&idx=1&sn=af4dbbeef86dcfc3e404f585de62b571#rd",
+"published_at": "2026-09-22 12:54:18"
+},
+{
+"id": "DY99",
+"platform": "抖音",
+"title": "花50在睛小白能配一副防蓝光眼镜！！砂之船奥莱新店～#睛小白 #睛小白配镜体验记 #睛小白镜框搭配挑",
+"desc": "",
+"likes": 1036,
+"comments": 26,
+"url": "https://www.iesdouyin.com/share/video/7688212597821434314",
+"published_at": "2026-09-22 12:31:29"
+},
+{
+"id": "XHS84",
+"platform": "小红书",
+"title": "戴上新眼镜",
+"desc": "分享一下最近日常爱戴的两副眼镜!\nalvari·萤火虫\n清透质感的无框设计搭配几何椭圆轮廓，简简单单但很有细节 ；镜腿有加入镶钻工艺，低调精致感\n整体非常轻，戴起来几乎没有负担 ，而且任何场合都很容易搭出优雅质感\n\t\nrooney·课代表\n韩系椭圆框型，经典的书呆子味道 ，柔和的椭圆线条特别修饰脸型!  还带一点鬼马少女的感觉\n实物细节比想象中更有质感，属于越看越喜欢的款\n这两副眼镜不仅颜值高，还自带0度防蓝光镜片，最近很爱这种简单实用但有记忆点的小配饰\n\t\n#Fakeme#Fakeme眼镜#防蓝光眼镜#眼镜推荐#高智感眼镜#无眼镜不出门#氛围感",
+"likes": 109,
+"comments": 7,
+"url": "https://www.xiaohongshu.com/explore/6ab1dce7000000003b006a6f",
+"published_at": "2026-09-22 12:01:47"
+},
+{
+"id": "DY17",
+"platform": "抖音",
+"title": "年龄大一点，需要戴老花镜才能轻松近距离的看字，看手机，穿针引线，戴一款防蓝光高清的轻的老花镜，是不错",
+"desc": "",
+"likes": 1264,
+"comments": 607,
+"url": "https://www.iesdouyin.com/share/video/7688183474641318208",
+"published_at": "2026-09-22 10:38:29"
+},
+{
+"id": "GZH199",
+"platform": "公众号",
+"title": "晓艳考研写作句型带写DAY17！读万卷书，行万里路。",
+"desc": "晓艳考研写作句型带写DAY17！读万卷书，行万里路。",
+"likes": 89,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyNzI5Njc3OA==&mid=2247577484&idx=1&sn=d4770da2727ba15be0bc754ad5a9a6fa#rd",
+"published_at": "2026-09-22 10:30:00"
+},
+{
+"id": "XHS87",
+"platform": "小红书",
+"title": "这是打工人梦寐以求的实用“魔法”！",
+"desc": "可啦啦x冰雪奇缘防蓝光隐形眼镜半年抛来了❗️\n多维防护科技，给眼睛来个魔法护盾!\n-\n✅ 有效过滤有害蓝光\n💻 日常忙碌 通勤、开会、上课…\n舒缓久盯屏幕的干涩感 ，眼睛依然清澈润润的\n✅ 拦截UVA/UVB 有效阻隔紫外线\n给眼睛撑把防晒伞，户外运动更放心\n✅ 40%科学含水量\n水润Q弹贴合无感 ，全天候锁水不干涩\n- 更多限定周边好物等你解锁，助力轻松用眼 ！\n温馨提示：请仔细阅读产品说明书或者在医务人员的指导下购买和使用，禁忌内容或者注意事项详见说明书~苏械广审(文)第280704-32788号\n#可啦啦迪士尼 #可啦啦迪士尼系列 #可啦啦冰雪奇缘  #美瞳推荐 #超舒适美瞳 #可啦啦美瞳 #防蓝光眼镜 #半年抛 #美瞳推荐哪个牌子舒服  #美瞳哪个牌子安全舒服",
+"likes": 12,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6ab1e804000000003101243f",
+"published_at": "2026-09-22 10:29:24"
+},
+{
+"id": "GZH108",
+"platform": "公众号",
+"title": "柳州深夜连发两起！两条剧毒眼镜蛇入户，消防紧急抓捕",
+"desc": "9月18日晚，柳州市柳城县接连发生两起眼镜蛇入户扰民事件，辖区消防救援人员深夜连续作战，成功抓捕两条剧毒眼镜蛇。\n当日20时许，柳州市消防救援支队119指挥中心接到群众报警，柳城县马山镇四塘工业园区一处出租房有大蛇闯入，住户受惊不敢靠近。\n消防救援人员迅速赶到现场，在卧室床底成功锁定一条约1米长的剧",
+"likes": 28,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU4NjAxNzM0NQ==&mid=2248176880&idx=2&sn=3722a453428f28e098cc7f0736295d95#rd",
+"published_at": "2026-09-22 09:40:32"
+},
+{
+"id": "GZH81",
+"platform": "公众号",
+"title": "女生喜欢的男生身高",
+"desc": "这份男生理想身高榜单传得挺热闹，其实，就是闲着起哄，大家不要当一回事，就当看个热闹。这个榜单，不少人是懵的——排在头一个的既不是 190，也不是 185，偏偏是 178。178 嘛，说不上多惊艳，胜在几乎不翻车。衣服撑得起，版型也不挑；站在谁旁边都不突兀，合照不用蹲、也不用垫脚。紧跟其后的 180，是很多人心里那句\"差不多行了\"的分界线。再往上到 182，优势肉眼可见，压迫感也跟着一起长出来。185 往上的，走到哪都自带焦点，想低调都难。高的麻烦其实特别具体：进门先看门框，坐车腿伸不开，买裤子先问一句有没有加长款？当然，这就是一群网友闲聊出来的东西，审美没有统一的答案。现实里拿三个数字去给人贴标签，本身就挺单薄。身高是爹妈给的，又不是考出来的分数，犯不着为它内耗。真正让人愿意靠近的，从来不是海拔，而是说话算不算数、遇事扛不扛得住、对人有没有分寸。你觉得男生的身高多少合适？#身高焦虑 #男生身高 #恋爱观 #真实想法",
+"likes": 104,
+"comments": 21,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMjg3ODU3NA==&mid=2247489870&idx=1&sn=fc77601274da2eebb1b210a577cb713b#rd",
+"published_at": "2026-09-22 08:48:42"
+},
+{
+"id": "GZH273",
+"platform": "公众号",
+"title": "成龙摸背风波大反转！5秒视频骗了所有人，容祖儿亲自回应了",
+"desc": "《明明白白我的心》唱得正热闹，台下5秒钟的镜头却把全网搅翻了天。\n9月28日晚，澳门银河综艺馆星光熠熠，“湾区升明月”2025大湾区电影音乐晚会上，成龙与容祖儿同台合唱《在我生命中的每一天》和《明明白白我的心》，台下掌声雷动。可谁也没想到，晚会后一段台下5秒的视频，竟让这场文化盛宴以另一种方式冲上了",
+"likes": 3,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyMzY2NTIwNg==&mid=2247485814&idx=1&sn=4b173ab1250c54aea90b80bce2202586#rd",
+"published_at": "2026-09-22 08:27:28"
+},
+{
+"id": "GZH269",
+"platform": "公众号",
+"title": "武汉园博园中秋最强攻略快收藏！",
+"desc": "中秋，是刻在中国人骨子里的诗意  张九龄笔下“海上生明月，天涯共此时”的辽阔  苏轼“但愿人长久，千里共婵娟”的深情  辛弃疾“一轮秋影转金波，飞镜又重磨”的澄明  是中华儿女对团圆、美好、家国的共同守望\n01                                             ",
+"likes": 26,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIzODEwNzAxMA==&mid=2649840303&idx=1&sn=ed39468ef0d11d9cddde8c89a6800718#rd",
+"published_at": "2026-09-22 08:27:06"
+},
+{
+"id": "GZH93",
+"platform": "公众号",
+"title": " 成年人高级自保：不内耗，学“外耗别人”",
+"desc": "你是不是也这样？别人阴阳你两句，你要反复琢磨一整晚；有人无端指责你，你急着不停自证、拼命解释；亲戚打探你的工资和感情，你尴尬得手足无措，生怕得罪对方。 很多老实人一辈子都在学讨好，习惯性接住所有人丢过来的负面情绪，最后把自己耗得身心俱疲。 知名心理学家阿德勒，在课题分离理论里讲过一个核心观点：别人的情绪，是别人的课题，不是你的责任。 很多人对你发火、阴阳怪气、刻意挑刺，根本不是你做错了，而是他在进行情绪投射。他把自身的焦虑、嫉妒和无力感，打包扔到你的身上，试探你的底线，看你是不是那个容易拿捏的老好人。 这个时候，如果你急于辩解、忙着自证，就等于主动接过了这份负面情绪，替别人消化他本该处理的问题。 真正成熟的边界感，从来不是去和对方吵赢，而是不提供情绪燃料。 被冒犯的时候，沉默不接话；遇到杠精纠缠，直接顺着他认输；面对无端的怒火，选择已读不回；有人打探隐私，反问回去转移焦点；遭遇道德绑架，不必争辩，顺势认可；面对反复倾倒负能量的人，悄悄远离就好。 很多人会误以为，这样做是冷漠、是没有情商。其实不是。这种合理的“外耗别人”，不是主动去伤害谁，而是守住自己的能量。我们不需要对所有人的情绪负责",
+"likes": 1230,
+"comments": 32,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxMDA1MTY3MQ==&mid=2652115072&idx=1&sn=d4849b696daf909f8276c710c842b76b#rd",
+"published_at": "2026-09-22 06:16:14"
+},
+{
+"id": "GZH256",
+"platform": "公众号",
+"title": "港澳台明星疯狂合照，湾区晚会秒变交友现场",
+"desc": "伙伴们都刷到了吧！大湾区后台那38张合照：你看这哪是唱歌晚会，分明是明星交友盛宴。港澳台大咖往那一站，笑脸碰笑脸，镜头就是咔咔的响——这年头，同框本身就是资源，合照就是态度。台上唱的是歌，台下传递的是交情。一张照片发出去，比发通稿都管用哈：好比是老百姓的土话“咱们是一伙的”，不用开口，看照片就传遍了。我觉得娱乐圈最贵的不是排练，是互相给面子的那种默契。其实也都明知道镜头前热乎归热乎，但散场了，也还是各忙各的了，但即使这样大咖们还是愿意大大方方同框、把场面撑起来，这也是一种体面。但你也可别小看这38张合照。它可不是瞎凑热闹的，是粤港澳这台大戏里，明星们用“我肯跟你站一起”，在替行业攒信任。你最希望的明星大咖合照，里面有么？#2026湾区升明月#胡歌#张凌赫#刘宇宁#古力娜扎#檀健次#孟子义 #王嘉尔",
+"likes": 34,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5NjE4MzAxNg==&mid=2247489276&idx=1&sn=d323093c6954773b4b0c660b939dd142#rd",
+"published_at": "2026-09-22 05:52:55"
+},
+{
+"id": "GZH210",
+"platform": "公众号",
+"title": "早安 丨心怀阳光，一路生花",
+"desc": "晴空万里，花开遍野，美好就藏在清晨的光景里。守住内心暖意，不慌不忙，慢慢收获属于自己的小欢喜。朋友们！早上好！🌼#清晨问候 #生活感悟 #一路生花#早安正能量#向阳而生#说明:配图AI辅助生成。Flower Dance (花之舞) (钢琴版)",
+"likes": 133,
+"comments": 29,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk4ODM4NjcxOA==&mid=2247485736&idx=1&sn=7879cfb6adb4661fc13959b13f6f80dd#rd",
+"published_at": "2026-09-22 00:15:53"
+},
+{
+"id": "GZH86",
+"platform": "公众号",
+"title": "人到中年｜人淡，真的很养人！",
+"desc": "以前总怕自己不够热情，怕被人说冷淡、不合群、没意思。后来才发现：那些活得最舒服的人，身上都有一股“淡”劲儿。不是冷漠，是不浓不烈、不争不抢、不慌不忙。🌙🌿 01. 情绪淡一点，不内耗别人一句话，不反复琢磨；一件事没做好，不整夜自责。被误解了，不急着解释；被冷落了，不马上怀疑自己。不是没情绪，是不让情绪在心里住太久。情绪淡了，日子就轻了。心里腾出空间，才能装下真正重要的东西。🌿 02. 关系淡一点，不纠缠“君子之交淡如水。”不追问谁为什么不回消息，不纠结谁为什么渐行渐远。合得来就靠近，合不来就远离。不讨好，不挽留，不把谁当成全世界。不浓不淡的关系，才走得最远。太浓了容易腻，太近了容易伤。淡淡的，刚刚好。🌿 03. 欲望淡一点，不焦虑不盯着别人有什么，不焦虑自己缺什么。吃好每顿饭，睡好每个觉，把手头的事做好，把身边的人爱好。不跟别人比房子、比孩子、比存款，只跟昨天的自己比，有没有多一点进步。欲望少了，心就静了；心静了，福就来了。🌿 04. 表达淡一点，不争辩不急着证明自己对，不忙着纠正别人错。你说你的，我过我的。懂的人不用多说，不懂的人说了也白说。被人误解了，笑一笑就走；被人质疑了，点点头",
+"likes": 269,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk1NzM4ODc2OQ==&mid=2247486879&idx=1&sn=afc6de6e7157e0214d61e11c356ea9ff#rd",
+"published_at": "2026-09-21 23:58:40"
+},
+{
+"id": "GZH254",
+"platform": "公众号",
+"title": "救命！湾区升明月后台同框，网友集体催本子",
+"desc": "从白玉兰到湾区升明月，张凌赫和关晓彤同框真的好好看。俊男美女同框，光是坐在一起，氛围感直接拉满。晚会舞台上各自发光，后台合照轻松又养眼。网友都在催，快点安排两人的影视剧合作！💬互动讨论：你期待他俩搭戏吗？#张凌赫#关晓彤#湾区升明月#晚会搭子#明星同框【免责声明：图片来自网络，侵删】",
+"likes": 74,
+"comments": 12,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5ODMwOTczMA==&mid=2247485916&idx=1&sn=66e66903af5627ebcfdfe3c9257c4c9d#rd",
+"published_at": "2026-09-21 22:54:28"
+},
+{
+"id": "GZH105",
+"platform": "公众号",
+"title": "深夜连发两起！柳州两条剧毒眼镜蛇入户，消防紧急抓捕",
+"desc": "入秋后气温仍居高不下，蛇类活动趋于频繁，时常闯入居民住宅引发险情。9月18日晚，柳州市柳城县接连发生两起眼镜蛇入户扰民事件，辖区消防救援人员深夜连续作战，成功抓捕两条剧毒眼镜蛇，快速消除安全隐患，全力守护群众居家安全。\n当日20时许，柳州市消防救援支队119指挥中心接到群众报警，柳城县马山镇四塘工业",
+"likes": 119,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDgwNjEwMA==&mid=2651382256&idx=1&sn=2e78e6487177eeb29e939b10d356109a#rd",
+"published_at": "2026-09-21 22:51:42"
+},
+{
+"id": "GZH240",
+"platform": "公众号",
+"title": "“湾区升明月晚会”成了歌手照妖镜？六公主让不少人都显了原形",
+"desc": "湾区升明月晚会 ，一档由中央广播电视总台电影频道主办的音乐晚会。自从2021第一届举办以来，我从来就没缺席过线上的音乐盛典。",
+"likes": 407,
+"comments": 42,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxOTM2MzU5Ng==&mid=2247513988&idx=1&sn=1546efdf8fcc2160e5c99ab3b08e8ee2#rd",
+"published_at": "2026-09-21 22:42:03"
+},
+{
+"id": "GZH170",
+"platform": "公众号",
+"title": "vivo X500系列发布会，不如不办",
+"desc": "9月21日，vivo发布年度旗舰X500系列，不出意外，又是一场无聊的发布会。  新旗舰对比X300系列，从外观到配置到功能，全无惊喜。X500 Pro和Pro Max几乎原样保留了X300系列的设计语言，奥利奥大圆居中放置的蔡司镜头模组。唯一的新意落在标准版身上——镜头被挪到了左上角，可这套造型早在2022年的X90上就出现过。然后，换几个“晴天”“大地回声”“览霞”的新配色，一个“新”系列的外观便交代完毕了。其他无非就是天玑芯片升个级，电池加大了不少，屏幕加大一点，重量减少1克……重要的升级，几乎全在影像上，但也主要集中在功能上。vivo把“动态影像”提为公司级战略，大讲8K原生Live、4K电影感Live等功能。但细看规格：vivo X500ProMax的影像配置相比vivo X300Pro在影像配置，尤其是传感器面积层面几乎没有任何进步，主摄依旧是1/1.28/长焦也依旧是1/1.4两亿像素。提出的多摄协同以及动态拍摄的一致性，对于创作者来说是个好消息，向苹果在影像创作领域的地位追了一大步。vivo又一次在“拍照”上精耕细作，把参数再堆高了一格，却始终没能跳出影像内卷的叙事框架",
+"likes": 34,
+"comments": 25,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxMDU5MTcyMA==&mid=2247642870&idx=1&sn=d155d48dca11bfde76ac0bfe7210c0c2#rd",
+"published_at": "2026-09-21 22:03:08"
+},
+{
+"id": "GZH114",
+"platform": "公众号",
+"title": "官方通报“某考生佩戴智能眼镜参加考试”：存在利用高科技手段实施作弊风险，损害考试的公平公正；多所高校严防智能穿戴类设备等进考场",
+"desc": "9月18日，中国特种设备检验协会发布警示通报称，9月8日，该协会在长沙考点组织的压力容器检验师资格考试期间，监考人员在考务巡查中发现某考生佩戴智能眼镜参加考试。       智能眼镜等智能设备具有拍照、传输等功能，携带此类设备进入考场，存在利用高科技手段实施作弊的风险，严重扰乱考试秩序，损害了特种设",
+"likes": 18,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MTQzMTQxNg==&mid=2653664680&idx=1&sn=c621db0a2488e026654c9fd6c2bbb959#rd",
+"published_at": "2026-09-21 20:52:19"
+},
+{
+"id": "GZH213",
+"platform": "公众号",
+"title": "【恩施三中优秀毕业生】周伊涵：筑梦三中，圆梦北大",
+"desc": "他们在施州北苑镌刻芳华         他们从金龙河畔奋起腾飞         他们秉承三中拼搏精神砥砺前行         继续用努力与智慧铺就锦绣前程         如今，他们已站在时光的彼岸         回首过去，一路繁花         展望未来，万里晴空         让我们一同聆",
+"likes": 249,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIzNjIzMjIwMQ==&mid=2650026581&idx=1&sn=19fc39f6c84c4114c73fa42dfafdbc8e#rd",
+"published_at": "2026-09-21 19:00:00"
+},
+{
+"id": "GZH92",
+"platform": "公众号",
+"title": "退休时间对照表曝光！测一测你什么时候退休",
+"desc": "2025年1月1日起，开始渐进式延迟退休。直到2039年，大家都从原来的：女50岁/55岁、男60岁的退休年龄旧基准线，挪到女55岁/58岁、男63岁的新的法定退休年龄。蓝小保特别整理了80、90、00后的退休时间测算表，快点来对号入座吧！除了按照上面退休时间表直接对照，你也可以在国家社会保险公共服务平台官方网站的【法定退休年龄计算器】，输入性别、出生年月可查自己延迟后的退休年龄。延迟退休办法施行后，职工基本养老保险最低缴费年限也从2030年起由原15年逐步提升到20年。想在退休的年纪生活滋润，光靠社保可是不够，打工人还得给自己备点提前退休的养老本，比如锦鲤 ·特定疾病险（瑞驰版），锁定2.0%预定利率，它的现金价值可以快速增长，白纸黑字写进了保险合同。这款产品覆盖15种特定疾病，核心高发的有三种：严重原发性帕金森病、严重阿尔茨海默病、严重运动神经元病。举个例子，王女士投锦鲤·特定疾病险（瑞驰版），3年交，年交保费10万，可以获得的保障和现金价值如下——在她34岁时，现金价值已经超过保费，这意味着第5年开始，这笔钱就活了，不再是退保有损失的沉没成本。在她68岁的时候，现金价值已经是已交",
+"likes": 397,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1ODM2MDA5NQ==&mid=2247563335&idx=1&sn=5d85f71fcd9f46c3858c332b30d5ea8d#rd",
+"published_at": "2026-09-21 18:00:00"
+},
+{
+"id": "GZH16",
+"platform": "公众号",
+"title": "你不是懒，而是气血真的不足了！",
+"desc": "很多人整日疲惫乏力、不爱动弹，总觉得是自己天性懒惰。其实大多并非懈怠，而是气血不足。身体气血亏虚、能量供给不足，才会持续精神萎靡，这是身体发出的亚健康预警，需要及时调理。💡大家可以对照以下表现，自查自身气血状态。🚫面色差、气色差：皮肤暗沉发黄、无光泽，嘴唇苍白或暗沉，黑眼圈厚重难消，整体状态憔悴虚浮。🚫掉发多、发质差：头发干枯分叉、易断裂，频繁掉发、发际线后移，气血不足无法滋养发根，发质发量持续变差。🚫昏沉健忘、反应慢：整日困倦嗜睡、精神涣散，经常健忘走神、反应迟钝，是大脑气血供氧不足的典型表现。🚫经期紊乱、手脚冰凉：女性经量少、经期短、经血暗沉有血块，伴随痛经、常年手脚冰凉，大多是气血亏虚、宫寒淤堵导致。🚫肠燥便秘：大便干结、排便费力，肠道缺乏气血滋润，运化代谢缓慢，形成持续性便秘问题。✨针对气血亏虚、身体虚乏问题，分享四个养生小动作（大家可以对照图片示意，跟着标准动作实操）✅金鸡独立｜引火下行、调寒热适配上热下寒体质，改善脸上上火、脚底冰凉的问题。单腿站立，另一只脚贴于支撑腿内侧，双手自然放松。初学者可睁眼练习，闭眼练习效果更佳，能疏导虚火、引导气血归位。✅踮脚跟｜通肾气、活气血脚",
+"likes": 468,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MDQ1NjU4Mg==&mid=2651314835&idx=1&sn=3b77edb5830febc4f3d4e53e3cd55436#rd",
+"published_at": "2026-09-21 17:30:00"
+},
+{
+"id": "DY48",
+"platform": "抖音",
+"title": "眼睛要用一辈子，千万当心这2大伤眼元凶 #飞蚊症  #老花眼  #眼疲劳 #健康科普 #眼科秦书艳",
+"desc": "",
+"likes": 2005,
+"comments": 151,
+"url": "https://www.iesdouyin.com/share/video/7687822352311355881",
+"published_at": "2026-09-21 17:00:00"
+},
+{
+"id": "GZH267",
+"platform": "公众号",
+"title": "“杰克船长”登陆上海！这次不是拍电影",
+"desc": "澎湃新闻记者 朱伟辉 薛晶    一身黑色休闲西装，深灰色报童帽，红粉色镜片的太阳镜架在鼻梁上，棕褐色中长发从帽檐两侧随意散落，垂在肩头。他微微一笑，那个瞬间，仿佛“杰克船长”从加勒比海的甲板上走下来，只不过这一次，他登陆的是上海。         2026年9月20日，约翰尼·德普亮相上海艺仓美术",
+"likes": 45,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MzI5NTU3MQ==&mid=2652571158&idx=2&sn=b69124644771f6c939394cf974b0c255#rd",
+"published_at": "2026-09-21 16:51:47"
+},
+{
+"id": "XHS4",
+"platform": "小红书",
+"title": "35+我的厦门配镜之旅！",
+"desc": "人到中年的视力困扰谁懂哇🤦‍♀️\n开车看远处能清楚，一低头刷手机、看书立马就模糊。\n来回换两副眼镜，真的又麻烦又折腾。\n被同事安利了渐进镜片，先戴一阵子，\n后续再来跟大家分享真实佩戴感受！\n#厦门探店 #配眼镜 #厦门配镜 #厦门配镜攻略 #平价眼镜店 #厦门明发眼镜店推荐 #厦门配镜推荐 #厦门高性价比配镜 #渐进片 #WeeklyPick",
+"likes": 131,
+"comments": 7,
+"url": "https://www.xiaohongshu.com/explore/6ab0ef88000000003300f497",
+"published_at": "2026-09-21 16:49:12"
+},
+{
+"id": "GZH98",
+"platform": "公众号",
+"title": "宝宝才五个多月，儿媳的奶水已经供不上了，今天儿媳说让宝宝喝奶…",
+"desc": "宝宝才五个多月，儿媳的奶水已经供不上了，今天儿媳说让宝宝喝奶粉，因为是第一次喝，就给她冲了60毫升，结果宝宝喝了一口就不喝了，还把之前吃的母乳全部吐了出来，看来吃母乳的孩子想让喝奶粉真是太难了。宝宝不喝奶粉，母乳又不够，米粉还没买，今天就先熬点小米粥吧，小火慢熬，熬得浓浓的，儿媳又拿过滤网给过滤一下，宝宝还挺爱喝的。可能是喂多了，宝宝喝了不到一个小时，又拉了，也许是第一次添加辅食，肠胃有点不适应，看来给宝宝添加辅食还真得循序渐进。",
+"likes": 18,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyNjc5Njk1NA==&mid=2247487650&idx=1&sn=08eb6ad1acacf1b1cec745598dcb47d0#rd",
+"published_at": "2026-09-21 14:48:02"
+},
+{
+"id": "GZH65",
+"platform": "公众号",
+"title": "眼睛出现这3种变化，是脑梗最后通牒，别拖",
+"desc": "别小看眼睛的变化，有些眼睛异常可能跟年纪渐长、衰老有关，而有些却可能隐藏着严重的大脑疾病！这是因为眼睛和大脑的供血来源于同一套血管系统，眼底血管的变化间接反映了颅内血管的变化。换句话说就是，眼睛是大脑的“窗户”。有些眼睛的异常，不是眼睛本身的毛病，而是脑血管在“喊救命”！那什么样的眼睛异常需要我们提高警惕呢？1、视物模糊如果是长期两只眼睛都看不清，多半是眼底动脉硬化、老花眼这些眼病。虽然也要治，但至少不是急症。但如果出现突发的单眼视物模糊，可能是脑卒中和颅脑疾病的信号。更危险的是：反复出现、一会好一会坏。这可能意味着血管已经狭窄，或者长了不稳定的斑块。发作越频繁、越严重，脑血管病的风险就越高。2、一过性黑矇一过性黑矇指的是单眼或双眼突然性地眼前发黑，很快又能恢复的症状，持续时间一般小于10分钟，反映一过性的脑缺血。久蹲之后突然站立也会出现眼前发黑，但通常为双眼发黑，是因为体位变化、血压没跟上，和脑血管疾病常引发的单眼一过性黑矇不同。还有一个重要的表现：如果眼前发黑的同时，还伴有对侧的面部、胳膊、腿发麻或没力气（比如左眼发黑，右边身子发麻），那更要赶紧去医院。3、视野缺损①眼部颞侧（外侧",
+"likes": 798,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI3NjA3NzU4OQ==&mid=2658354577&idx=1&sn=829a6451a4044bcc5572c22d77505b4b#rd",
+"published_at": "2026-09-21 14:30:00"
+},
+{
+"id": "GZH91",
+"platform": "公众号",
+"title": "29岁吴艳妮出征亚运会",
+"desc": "9月23日至29日，2026年爱知·名古屋亚运会田径项目将展开角逐。由72名运动员组成的中国田径军团（男女选手各36人）已陆续奔赴日本。9月21日，吴艳妮更新社交媒体晒照：那就出发了撒~跨栏组，集结，起飞。吴艳妮，1997年7月出生于四川省自贡市富顺县，中国女子田径运动员，主攻女子100米栏，效力于四川田径队和中国国家田径队。本届亚运会上，吴艳妮将与林雨薇一同参加女子100米栏的比赛。今年吴艳妮的最好成绩是12秒99，而竞争对手——日本的福部真子和中岛瞳本赛季多次跑进13秒，其中中岛瞳的12秒60更是刷新了日本全国纪录。吴艳妮在赛前也坦承“和日本选手相比自己还差很多”，外界也普遍认为她的目标应该是“冲击领奖台”。不过，女子100米栏具备不小的偶然性，打栏、节奏失误都可能导致意外发生。不管结果如何，9月27日的亚运会女子100米栏决赛都将是一场不容错过的焦点对决。除了吴艳妮外，“北大甜妹”刘峡君和刘国怡这两位四川妹子也都将出战亚运会田径比赛。（来源：微博、红星新闻、钱江晚报）",
+"likes": 504,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI3MTQzNjYxNw==&mid=2248031099&idx=1&sn=f6b445888794ad3f09a075076de538b4#rd",
+"published_at": "2026-09-21 14:02:02"
+},
+{
+"id": "GZH197",
+"platform": "公众号",
+"title": "疆来人物｜其那儿：一个晚熟小孩的万里路",
+"desc": "从新疆到海南，再从中国到爱尔兰，晚熟的小孩儿迎来了属于她的季节。",
+"likes": 237,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjY4MTQ4OA==&mid=2650582202&idx=1&sn=5c35dadf32fd3b35fb3372a30da2ada0#rd",
+"published_at": "2026-09-21 13:00:50"
+},
+{
+"id": "GZH75",
+"platform": "公众号",
+"title": "惊艳世界，周迅新片太动人了！",
+"desc": "短视频｜77、Heng  文｜Heng\n自电影《明天，会更好》官宣之后，就备受关注，这是周迅和陈可辛的第三次合作（《如果·爱》《你好，之华》）。此番入围2026年多伦多国际电影节特别展映单元，更是成为焦点。\n影片于当地时间9月18日进行了全球首映，影片结束后，全程在场观影的陈可辛、周迅和王骁收获了持",
+"likes": 150,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA3MTcwMA==&mid=2652270461&idx=1&sn=1fd98192b59688aee1b3f43d78800acc#rd",
+"published_at": "2026-09-21 12:01:28"
+},
+{
+"id": "GZH95",
+"platform": "公众号",
+"title": "祖母绿突然爆火，太太太时髦了",
+"desc": "🍂 今年就快结束了宝贝们，趁着最后的假期，抓住秋天的尾巴，穿上这套祖母绿套装，去拍一组惊艳自己的人生照片吧~喜欢的宝子，点击这里就可以下单购买了~  💚 为什么非要安利祖母绿？因为它真的太“时髦”了！秋天出游，满大街都是美拉德色系——棕色、焦糖、卡其，好看是好看，但穿的人太多了这时候你穿一套上白下绿的祖母绿，直接脱颖而出不是乍一看很炸眼的荧光绿，也不是老气横秋的深墨绿，而是带着一点珠宝光泽、像老宝石一样的绿！温润、沉静、有厚度。更妙的是这套的配色——上白下绿。白色在上，靠近脸部，自带反光板效果，把肤色衬得透亮干净✨；绿色在下，远离面部，不抢肤色，黄皮也能放心穿祖母绿。白色短袖把视觉重心往上提，祖母绿A字大摆把胯宽、腿粗、小肚子全藏进去。这种绿一上身，肤色一下子就被衬亮了，显白是真的显白！走到哪里都是街头焦点，拍出来就是朋友圈里最亮的那一个！✨🌿 15%亚麻+85%棉，会呼吸的面料亚麻干爽透气、自带肌理🍃，棉柔软亲肤、好打理☁️。一上身，那种干爽通透的感觉，皮肤就像在自由呼吸一样，闷热黏腻根本贴不上身。特别适合初秋，热可单穿，冷可套外套~质地柔软亲肤，甚至有一点软糯感，洗过几次之后会越穿",
+"likes": 54,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU4MjUwODU0Nw==&mid=2248139671&idx=1&sn=3aa331e7a4ea5c74fae192dfd08c266f#rd",
+"published_at": "2026-09-21 12:00:00"
+},
+{
+"id": "GZH153",
+"platform": "公众号",
+"title": "看了伊能静的生图，我真不怕变老了",
+"desc": "说实话，以前我也挺焦虑的。每次刷到那些“逆龄生长”“20岁皮肤”的广告，再照照镜子，心里就犯嘀咕：怎么又长了一条纹？但前几天看了伊能静和秦昊的一组无滤镜生图，我突然就“解套”了。现在网上那种“冻龄”的风气太卷了，搞得好像脸上有条细纹就是犯了天大的错。可咱们静下心来想想，人又不是塑料模特，哪能一辈子停在二十岁啊？自然老去，本来就是咱每个人都躲不过的常态。有网友说得好，看惯了那些磨皮磨得五官都模糊的照片，再看这种原相机直出的，心里反而踏实了。我觉得吧，这世上根本就不存在只有一种标准的“好看”。你看58岁的伊能静，眼角带着纹路，笑起来眼眯成一条缝，身板挺得直直的。那种从容劲儿，是演了多少戏、读了多少书、经历了多少事儿才磨出来的。这玩意儿，你就是开十级美颜也P不出来。咱们普通人过日子，真没必要天天盯着镜子里那点变化较劲。皮囊这东西，岁月想留点印子，咱就让它留。守住心里的那股精气神，该吃吃该睡睡，坦然接着岁月给的每一份“礼物”，这就是最好的生活姿态。话说回来，你介意脸上慢慢长出来的皱纹吗？反正我现在是不怎么介意了，评论区聊聊呗",
+"likes": 11,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwNzMxOTI4Ng==&mid=2247486550&idx=1&sn=e6a66d1f58c653a95aca5d53f897a0cc#rd",
+"published_at": "2026-09-21 10:13:34"
+},
+{
+"id": "GZH223",
+"platform": "公众号",
+"title": "奔六而已·西藏行·序章",
+"desc": "还没抵达布达拉宫，先把身心安顿在瑞吉。第一天晚上6:00抵达拉萨瑞吉有些高反马上进医务室医用氧和药安排上睡了一晚第二天基本上恢复正常！早晨做了一组简单的运动，留下这个背影，交个作业。给自己的作业！即将奔六，谈不上对抗自然，只是想按自己想法活一生！人得时时刻刻勇敢地活在路上，带着一份平和与无畏的底气。这趟远赴西藏，围绕着我心里的三个人与三件事。第一，是江南的云锦。从江南制造的丝线经纬，走向雪域的经幡红墙，我想在这千万里的跨越中，去探究文化脉络里那些隐秘的牵连。第二，是红墙之内的仓央嘉措。这位六世达赖、我心念已久的诗人，他的诗与情，他的往事，我会在明天单独写一篇，慢慢讲给你听。第三，是那个在奔六的年纪，依然选择出发的自己。此刻站在露台，布达拉宫还在远方的视线里，尚未走近。但心，已经先到了。所有的美，都是在路上发现的。这是我的西藏序章。明天，我们聊聊布达拉宫，聊聊仓央嘉措。#吕雪飛#有六块腹肌的三十年老裁缝的生活美学#拉萨旅拍#布达拉宫#西藏旅行分享#非遗云锦#吕雪飛定制美学#美是一种能力",
+"likes": 108,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU1OTU0MjM5MQ==&mid=2247491797&idx=1&sn=769906fb57e20c4739f1440fa6d66199#rd",
+"published_at": "2026-09-21 09:06:10"
+},
+{
+"id": "GZH77",
+"platform": "公众号",
+"title": "国际金融要情 |（周一 2026.9.21）",
+"desc": "2026.9.20–9.26本周关键点\n国际：\n9月21日（周一）联合国第81届大会高级别周开幕与全球经济议题\n第81届联合国大会高级别周在纽约正式拉开帷幕。首日焦点集中于全球可持续发展目标（SDG）进展与新兴市场债务压力，多国财政官员与国际组织代表就债务重组、多边开发银行改革及全球绿色融资机制展开",
+"likes": 63,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5Nzc1NTQ4MA==&mid=2653425659&idx=1&sn=02a6614b0cb8e653d92beca51d73f7a3#rd",
+"published_at": "2026-09-21 07:00:00"
+},
+{
+"id": "GZH246",
+"platform": "公众号",
+"title": "1分钟看湾区升明月爆点！檀健次西装唱跳好炸，任嘉伦黑衣亮片太绝，刘宇宁坐着唱高音，三个人都选了......",
+"desc": "“湾区升明月”最妙的地方就在于，它能让旧梦与新声在今夜重逢。澳门的夜色被光影点亮，银幕里的旧梦与舞台上的新声，在今夜撞了个满怀。",
+"likes": 251,
+"comments": 153,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzMzY4NzEzNQ==&mid=2247501521&idx=1&sn=52f65c81c3fa793193a40295c9319812#rd",
+"published_at": "2026-09-21 00:01:00"
+},
+{
+"id": "GZH19",
+"platform": "公众号",
+"title": "每天一台富士相机：X-H2S极速捕捉 定格瞬间",
+"desc": "从漫长曝光到瞬间定格，摄影技术始终在与“时间”赛跑。1826年，法国发明家尼塞福尔·尼埃普斯利用“日光蚀刻法”，经过数小时曝光，让光线第一次在金属板上留下永久痕迹。1838年，路易斯·达盖尔拍下巴黎街头影像，摄影术由此逐渐走入公众视野。胶片时代，快门速度受制于胶片感光度；进入数码时代，影像传感器与处理芯片不断突破，让捕捉瞬间成为可能。1934年成立的富士胶片，跨越胶片与数码影像两个时代，将百年影像经验融入今天的数字技术。X-H2S，正是这一技术演进中的全新成果，以高速性能捕捉转瞬即逝的精彩，让光影在一瞬之间被精准记录。作为富士X系列高速旗舰机型，X-H2S以高性能与可靠性，为专业摄影与视频创作提供强劲支持。搭载约2610万像素X-Trans CMOS 5 HS传感器与X-Processor 5处理器，实现高速读取与出色的影像处理能力，电子快门下最高可达40fps连拍，面对运动、野生动物等高速运动主体，也能及时捕捉关键瞬间。机身配备最高7.0挡五轴防抖，提升手持拍摄稳定性；79处密封点则进一步增强防尘、防滴与耐低温能力，即使面对复杂天气也能从容创作。结合丰富的视频功能与专业操控，X-H2",
+"likes": 57,
+"comments": 20,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwMTE4MTAxMw==&mid=2691786055&idx=1&sn=780e344559700970472347b200534b93#rd",
+"published_at": "2026-09-20 22:15:21"
+},
+{
+"id": "GZH211",
+"platform": "公众号",
+"title": "投资路上对我影响最大的两位老师！",
+"desc": "读万卷书，不如行万里路，行万里路不如明师指路！",
+"likes": 267,
+"comments": 18,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI0MzgwODk5Nw==&mid=2247507436&idx=1&sn=3dce6a867a8085bfe70c30297b2dcf16#rd",
+"published_at": "2026-09-20 20:47:37"
+},
+{
+"id": "GZH219",
+"platform": "公众号",
+"title": "全网破防！一张照片细节，暴露董路人品！",
+"desc": "吕孟洋官宣加盟西班牙人U19B梯队，在西班牙人俱乐部门口拍摄纪念合影。两组照片里董路截然不同的肢体动作，被球迷细心捕捉，很多人被这个下意识的细节打动。董路单独和吕孟洋二人合影的时候，董路一只手揽住吕孟洋的肩膀，是长辈鼓励少年、师徒之间轻松亲近的姿态。换到吕孟洋全家一起的大合影，董路马上调整姿态，身体微微侧向吕孟洋的父亲，双手稳稳搀扶住吕孟洋的父亲。吕孟洋父亲大病初愈，身体还很虚弱，行动不便。为了亲眼见证儿子留洋签约的圆梦时刻，他不远万里跟着家人一起来到西班牙。合影时，董路和吕孟洋母亲一左一右，共同搀扶吕父，帮助他站稳，完成这张极具纪念意义的照片。很多球迷感慨，球场上看实力，生活里看人品。不需要刻意言语，一个搀扶的小动作，就能看出董路待人的体贴。你被董路下意识的细节打动了吗？你期待吕孟洋今晚加盟西班牙人后的首秀吗？#足球小将#董路#吕孟洋#正能量",
+"likes": 134,
+"comments": 19,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5NjMxODEyMg==&mid=2247487769&idx=1&sn=5c010469652fbff262e0118f8d5b49f0#rd",
+"published_at": "2026-09-20 20:34:25"
+},
+{
+"id": "GZH141",
+"platform": "公众号",
+"title": "来长白山赏秋，这份保姆级赏秋攻略请收好",
+"desc": "当山林被秋色层层浸染，不必刻意寻找滤镜，漫山彩林、山风与辽阔山野，就是最动人的风景，长白山赏秋出行的保姆级攻略来啦来啦，计划赏秋的宝子们可以收好～💡赏秋天花板｜动静结合玩转长白山🟠峡谷浮石林五彩的枫叶盖在由火山喷发形成的奇特景观上，每一步都是惊叹大自然的奇妙之处⚫️和平山地运动公园漫步在火山遗址徒步公园，风卷起满地金黄落叶，四周彩林环抱，静谧得只剩风声🍁乘坐越野车登上山顶，远眺长白山壮阔山景和茫茫林海，喝上一杯咖啡，格外惬意🔴聚龙火山温泉部落天然火山自溢温泉，户外汤池被原始森林包裹着，秋景在舒服的泡汤中尽收眼底🟣雪绒花温顺的驯鹿是这里的NPC，互动、拍照、要吃的，全程粘着你，出片轻而易举🏨住宿优选｜按需选择不踩雷1️⃣坐落于长白山景区腹地，沉浸山野林海，游玩赏秋十分便捷🔹长白山温泉皇冠假日酒店林海环绕，下楼即享天然火山温泉，舒缓登山劳累，亲子家庭首选🔹长白山蓝景国际生态交流中心2️⃣性价比高，住在恩都里景区里，出门偶遇巡游表演，吃住出行一站式超方便！🔹花筑奢・深林原木野奢私院，小众安静，适配情侣慢游，自在松弛🔹花筑・白河左岸🧥秋日穿搭｜山下山上分层穿长白山秋天气温分层超级明显！山下温和",
+"likes": 122,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg2MTcxMzI4Ng==&mid=2247512816&idx=1&sn=0d7911fbe98889080a8f5e9fd072b56f#rd",
+"published_at": "2026-09-20 19:30:00"
+},
+{
+"id": "GZH176",
+"platform": "公众号",
+"title": "道奇在欧洲发布Charger Sixpack！",
+"desc": "最近道奇在欧洲市场发售2027款道奇Charger Sixpack欧洲版将于欧洲市场发售。该车搭载3.0升双涡轮Hurricane直列六缸机，R/T版功率313千瓦、扭矩635牛米，Scat Pack版410千瓦、720牛米，0至60英里每小时加速分别为4.6秒与3.9秒。标配四驱，可按需将全部扭矩输送至后轴。#道奇塑料镀膜车外塑料保护剂内饰保护剂环保防老化大蓝瓶发动机积碳抑制剂四季超薄透气座垫汽车后视辅助镜广角大视野车漆终极养护：封体保护剂车漆上光保护剂让车焕然一新记忆棉头枕腰靠扶手箱垫后排平板电脑手机支架车载眼镜盒车载充气泵打气泵便携式汽车破窗器安全锤",
+"likes": 30,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4Mjc1NDcxOQ==&mid=2457591575&idx=1&sn=e3df4814f5eaa343d2e484a6dd3409cb#rd",
+"published_at": "2026-09-20 18:30:00"
+},
+{
+"id": "XHS56",
+"platform": "小红书",
+"title": "中秋送婆婆的礼物✨被夸到不停",
+"desc": "中秋给婆婆安排了轻眸老花镜👓\n戴上直夸看得太清晰了！\n\t\n平时陪佑佑看书读绘本，再也不用眯眼睛凑很近\n给小朋友讲故事也顺顺畅畅，读好久眼睛也不会累。\n\t\n真的一改传统老花镜老气感✨\n方圆镜框特别修饰脸型，戴上气质一下子上来 而且很百搭，穿什么衣服都能搭，还配了好看的眼镜链，不用的时候挂脖子上，直接变身穿搭小配饰，出门买菜遛弯都戴着，爱不释手👏\n\t\n镜框是超轻材质，一体式反重力鼻托\n久戴鼻梁不留压痕，镜腿柔韧不夹耳朵，舒适度拉满。\n镜片是高清PC镜片，新国标三阶防蓝光，看书写字刷手机，缓解眼睛疲劳，不容易眩晕，还防油污好打理。\n\t\n中秋送礼不用纠结，实用又体面，长辈真心喜欢才最重要❤️\n\t\n#时尚老花镜 #中秋送礼 #长辈送礼 #凯普克老花镜 #kigooptical老花镜 #koo老花镜 #时尚老花镜",
+"likes": 31,
+"comments": 16,
+"url": "https://www.xiaohongshu.com/explore/6aafa77b0000000011030b44",
+"published_at": "2026-09-20 17:29:31"
+},
+{
+"id": "GZH10",
+"platform": "公众号",
+"title": "手札 | “中国算力地图”核心概念全景梳理",
+"desc": "当算力芯片的需求呈指数级膨胀，传统制程微缩的物理极限已然逼近，半导体产业的底层逻辑正悄然发生位移。纵观当前的产业链图谱，材料端的规模化演进与封装环节的技术重构，构成了抵御外部技术封锁、承接高端算力落地的双重底座。在硅片这一核心材料赛道，国内企业已初步构筑起多梯队的竞争格局。西安奕材与TCL中环分别以71万片、70万片的产能规模稳居第一梯队，沪硅产业则凭借65万片的产能，在12英寸主流硅片及外延片领域占据关键生态位。紧随其后的立昂微与有研硅，在扩张产能版图的同时，各自向功率芯片和刻蚀单晶硅技术纵深延展。值得注意的是，产业内部的专业分工愈发清晰。中晶科技侧重中小尺寸稳定营收，上海超硅的12英寸产能正处爬坡期，神工股份把控着刻蚀单晶硅材料关口，上海合晶则在硅外延片赛道深耕。这种多维度的卡位，使得国内硅片供应链在面对海外不确定性时，具备了更强的抗风险韧性。退一步讲，当先进制程的推进阻力重重，Chiplet等先进封装技术便顺理成章地从配角走向舞台中央。国内封测龙头在此领域的布局早已脱离纸上谈兵。通富微电不仅稳居国内先进封装头把交椅，其2.5D/3D及Chiplet工艺更是已实现为AMD算力芯片的",
+"likes": 44,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3ODQ0ODk2NA==&mid=2454999267&idx=1&sn=0305f86f633595e6294d7651341f4c5f#rd",
+"published_at": "2026-09-20 16:42:07"
+},
+{
+"id": "XHS1",
+"platform": "小红书",
+"title": "结婚5年vs热恋:结婚和恋爱真的不一样…",
+"desc": "今天来聊聊 从恋爱到结婚 老夫老妻相处方式的一些变化\n#夫妻 #婚姻 #夫妻相处#渐进镜片#艾适多渐进镜片  #中年夫妻 #热恋期",
+"likes": 1269,
+"comments": 14,
+"url": "https://www.xiaohongshu.com/explore/6aaf41a00000000011035711",
+"published_at": "2026-09-20 16:15:44"
+},
+{
+"id": "GZH15",
+"platform": "公众号",
+"title": "80后的游戏成长史：从街头游戏到数字世界",
+"desc": "80后的游戏记忆，不只是电子游戏的更新换代，更是一代人从童年走向成年的成长轨迹。整理为以下五个阶段：80后·童年：游戏就在院子里那时没有互联网，甚至很多家庭还没有电脑。放学后的院子、胡同和操场，就是孩子们最早的“游戏大厅”。跳皮筋、踢毽子、丢沙包、跳房子、滚铁环、打弹珠、拍画片、老鹰捉小鸡、上山下水、偷地瓜……没有账号，没有充值，只要喊上一声，小伙伴们就能玩到天黑。最早接触的电子游戏和娱乐记忆保持不变：小霸王学习机俄罗斯方块掌机电子宠物《七龙珠》等漫画80后·少年：第一次闯进电子游戏世界随着红白机和小霸王逐渐进入家庭，游戏从院子走进电视屏幕。《超级玛丽》《魂斗罗》《坦克大战》《冒险岛》《双截龙》《赤色要塞》成为共同记忆。为了多玩一会儿，反复研究“秘籍”，和同学交换游戏卡；两个人挤在一台电视机前，也能快乐一整个下午。游戏第一次让80后感受到：原来小小的屏幕里，也能装下一个巨大的世界。80后·青年：游戏厅里的黄金时代进入青年时期，电脑开始普及，单机游戏和局域网对战成为主流。《大富翁》带来经营与策略的乐趣《红色警戒》让人学会调兵遣将《帝国时代》打开历史与文明的大门《暗黑破坏神》带来冒险、装备",
+"likes": 52,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU3OTgwMjI5Nw==&mid=2247491742&idx=1&sn=fe674519542e56b97d129160b47421a5#rd",
+"published_at": "2026-09-20 15:47:20"
+},
+{
+"id": "GZH150",
+"platform": "公众号",
+"title": "敬一丹母亲的警服照，藏着一户人家的家风",
+"desc": "昨晚刷老照片，看到敬一丹她妈韩殿云那张80年代的警服照，我愣是盯着看了好一会儿。这老太太，一身制服往那一坐，没笑，但那股子认真劲儿，真挺打动人的。以前我看敬一丹主持《焦点访谈》，就觉得这大姐太稳了，啥场面都不带慌的。后来看了这张照片才咂摸出味儿来——人家那不叫稳，那是刻在骨子里的底气。她妈韩殿云，1930年生，17岁就入党了，那会儿搁现在也就是个高二小姑娘，人家已经投身革命工作了。后来一直在黑龙江公安系统干，从底层一路干到省厅治安处副处长，这一干就是47年。47年啊，可不是闹着玩的。那个年代没监控没大数据，治安全靠两条腿走，一个女同志能在公安线熬到这个位置，心里没点硬气，早就被淘汰了。她爸敬毓嵩也不简单，省检察院副检察长。这俩人，当年在黑龙江政法圈里，那是出了名的硬骨头。但我最服的，不是他们官当多大，是照片里那个细节。那制服，洗得都有点发白了，领口袖口却收拾得板板正正。那个年代，手里有权，工资却不高，可你看她那眼神，清清亮亮的，一点杂质都没有。现在老有人说，普通孩子拼不过有资源的。看看敬一丹一家，爹妈都是厅级干部，可留给孩子的，不是啥人脉存折，也不是啥豪宅，就是这种“公家的事再小也是大",
+"likes": 73,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwODMyMjA0MA==&mid=2247487170&idx=1&sn=3b5c2349f3b0e57f9cd039b3f3b48426#rd",
+"published_at": "2026-09-20 12:19:00"
+},
+{
+"id": "GZH253",
+"platform": "公众号",
+"title": "“湾区升明月”2026大湾区电影音乐晚会9月20日在中国澳门举办",
+"desc": "文 | 康康\n“湾区升明月”2026大湾区电影音乐晚会9月20日在中国澳门银河综艺馆举办，来自海峡两岸暨香港澳门地区以及海外多国的百余位电影人、音乐人，将以光影之声唱响全球华人“我们一家”的心声。\n湾升明月，心安为港，山海盼归，我们一家。作为闪闪发亮的文化名片，“湾区升明月”大湾区电影音乐晚会始终坚",
+"likes": 80,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5OTY5NzMyMA==&mid=2653779504&idx=1&sn=591a682fb83c1ff5823e7f6b750a3f87#rd",
+"published_at": "2026-09-20 12:15:04"
+},
+{
+"id": "GZH200",
+"platform": "公众号",
+"title": "万里征途，一卷入画",
+"desc": "90多年前，一支英雄的队伍血战湘江，四渡赤水，强渡大渡河，飞夺泸定桥，征服空气稀薄的冰山雪岭，穿越渺无人烟的沼泽草地，纵横十余省，长驱二万五千里。从万里长征到复兴之路，从烽火岁月到时代新程，伟大远征，从未止步。\n让这幅手绘长卷带你回顾这段壮丽史诗，共同致敬这座巍峨丰碑！\n↓请翻转手机观看↓     ",
+"likes": 2958,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NDI3NjcyNA==&mid=2650239800&idx=1&sn=f24fded378bfa66fa1f820ee6c2b62fa#rd",
+"published_at": "2026-09-20 12:00:40"
+},
+{
+"id": "GZH147",
+"platform": "公众号",
+"title": "港姐王菲宣布订婚了！",
+"desc": "点击👆家庭壹读👇关注我，加★星标★       手机弹窗跳出来“王菲订婚”四个字的时候，我正在厨房煮螺蛳粉，汤刚开，热气熏得眼镜片雾蒙蒙的，我举着勺子差点把手里的腐竹掉锅里。       01       第一反应是——天后跟谢霆锋终于修成正果了？赶紧点开想看看戒指有多大、婚礼定在哪，结果图片加",
+"likes": 26,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyMzMxMTY4MQ==&mid=2247487134&idx=1&sn=f8ffbedbddf02fbdf68a4aa11522bea4#rd",
+"published_at": "2026-09-20 12:00:00"
+},
+{
+"id": "GZH73",
+"platform": "公众号",
+"title": "全新奥迪S5 Avant丨重磅上市",
+"desc": "德系纯血，尽显性能本色锋芒内敛，「罐」装燃擎信仰全新奥迪S5 Avant重磅上市「首发版」全国99台限量供应！「瓦罐车身 认证格调生活」经典Avant车身造型打造低趴运动姿态尾部四出真排气布局高性能燃油属性实力尽显「V6轰鸣 点燃性能期待」EA839evo 3.0T V6发动机带来4.5秒百公里加速实力搭载全域智混技术至高输出扭矩达550N·mRS级后轴运动差速器复刻赛道级稳定控感运动悬架配合渐进式转向系统随心召唤性能操控「智感进化 焕新空间享受」多屏联动数字舞台兼顾主副驾驶位置智慧交互体验九分区智能全景天幕，多种遮光模式随心切换带头枕扬声器的Bang & Olufsen高端音响系统营造临场感听觉盛筵宽适装载空间，容纳更多出行所需卓越性能，逐美而行全新奥迪S5 Avant重磅上市恭迎莅临Audi Sport授权经销商试驾品鉴扫描图8二维码了解更多车型信息",
+"likes": 1348,
+"comments": 28,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzMzM4NDMwNw==&mid=2247587686&idx=1&sn=43bd18306902f14b62370b7aa222a2a1#rd",
+"published_at": "2026-09-20 10:05:00"
+},
+{
+"id": "GZH18",
+"platform": "公众号",
+"title": "假面骑士狸断官方设定",
+"desc": "身高：189.7cm重量：82.5kg拳力：7.1t踢力：11.2t跳跃力：10.3m（一跳）运行功率：7.2秒（100m）头部复眼：硬质合金镜片可以保护眼睛，同时大大提高改造者的视力。感觉器官：构成变身装甲“里多装甲”的一部分，利用左右6个器官来掌握与目标的距离、周围障碍物的配置等周围的信息，增强空间控制力。转化阻断剂：如果它受到的伤害超过其活动极限，它会取消变身以保护变身者。嘴和下巴部分：他配备了一种特殊的机制，可以让他改变语气，擅长使目标保持警惕的谈话技巧。身体变身装甲：它将变身者强化为拥有猫之力的超人，赋予他灵活的动作和极高的爆发力。腿：擅长利用高爆发力采取行动进行回避，并利用轨迹上留下的标记形成领地，反过来捕捉目标并发动致命一脚。姿势控制装置：即使在高墙或树顶等狭窄的立足点上也能保持平衡感，因此它们能够高速移动并扩大行动范围。手臂：他快速抽动的肌肉产生强大的爆发力，他的猛拳可以粉碎岩石。它还以极其广泛的运动范围展示了超人的力量。身体：使用与变形装甲兼容的算法，从组织角度重新排列了用户的身体。",
+"likes": 33,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU5NzQ4NTU1Mw==&mid=2247522758&idx=1&sn=14d71b753f1513f0a95a0c307feb8f37#rd",
+"published_at": "2026-09-20 09:10:41"
+},
+{
+"id": "DY11",
+"platform": "抖音",
+"title": "工作也要戴上老花镜 ，上班中的我记录自己的点点滴滴 ，真实的我在工作中的样子 。",
+"desc": "",
+"likes": 3225,
+"comments": 44,
+"url": "https://www.iesdouyin.com/share/video/7687384909594137019",
+"published_at": "2026-09-20 06:59:38"
+},
+{
+"id": "GZH142",
+"platform": "公众号",
+"title": "曼城富人区的一栋别墅里，警方从里面搜出来了一条鳄鱼……",
+"desc": "英国当地时间九月十六日上午十一点，特拉福德当地政府、大曼彻斯特警方和皇家防止虐待动物协会的联合队伍，带着搜查令敲开了海尔（Hale）一栋半独立屋的大门。  屋里等着他们的，是一条名叫Lyle的眼镜凯门鳄。         它被养在一个带水的围栏里。  同一个地址还搜出了一条蟒蛇，警方依据《动物福利法",
+"likes": 15,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjAwNzI0MA==&mid=2652414956&idx=7&sn=9ff4b95d954a794ddb9f6f52e721dd73#rd",
+"published_at": "2026-09-19 23:13:22"
+},
+{
+"id": "DY16",
+"platform": "抖音",
+"title": "#老花镜 #日本进口",
+"desc": "",
+"likes": 1282,
+"comments": 146,
+"url": "https://www.iesdouyin.com/share/video/7687255949359026533",
+"published_at": "2026-09-19 22:39:11"
+},
+{
+"id": "GZH167",
+"platform": "公众号",
+"title": "王祖贤近照，原来我们看的根本不是那张脸",
+"desc": "最近网上流出了王祖贤的一组近照。早就退圈多年的她，平时很低调，几乎不出来露面营业。 相片中的她还是留着一头柔顺乌黑的标志长发，没有浓妆，也没有特意修图，就是一个上了年纪女人很真实的状态。 照片一传开，好多网友都在转发、感慨。岁月从不曾饶过谁。不少人也纳闷，她都离开镜头这么久了，只要一有一点近况，总能引起大家的注意。 其实，我们好奇的，并不是她样貌变了多少。提起王祖贤，很多人心里立刻就冒出不少经典角色。那是香港电影最好的年代，留下了太多好作品，而她就是那个时代里特别亮眼的存在。一部《倩女幽魂》，把聂小倩留在了几代人的记忆里。不是那种刻意装出来的柔弱，是带着一点孤冷、一点怅然，眼波流转之间，又藏着说不尽的风情。即便后来无数人翻拍、模仿这个角色，可至今无人超越。还有《东方不败之风云再起》里的雪千寻，爱得执着又刚烈，那份心碎和倔强，看得人无比揪心。《赌神》里灵动俏皮的阿珍，笑起来明媚透亮。《青蛇》里介于天真与魅惑之间的微妙分寸，更是拿捏得恰到好处。她不是花瓶，可盐可甜，能悲情也能洒脱。在那个没有一键美颜，没有流水线式的医美包装的年代，她的好看胜在骨相，胜在眼神里自带的故事感。是鲜活的、舒展的、",
+"likes": 9,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1MDQ0Njg5NQ==&mid=2247489189&idx=1&sn=100dd6e6ffd9e662be22c72ec2ddb983#rd",
+"published_at": "2026-09-19 22:38:07"
+},
+{
+"id": "DY13",
+"platform": "抖音",
+"title": "我每天戴着老花镜给你们写情书，到底谁在谈恋爱呀？",
+"desc": "",
+"likes": 2775,
+"comments": 167,
+"url": "https://www.iesdouyin.com/share/video/7687250711855317477",
+"published_at": "2026-09-19 22:18:51"
+},
+{
+"id": "DY47",
+"platform": "抖音",
+"title": "知识分享 #散光#青光眼#白内障 #老花眼",
+"desc": "",
+"likes": 2301,
+"comments": 85,
+"url": "https://www.iesdouyin.com/share/video/7687250624480153727",
+"published_at": "2026-09-19 22:18:31"
+},
+{
+"id": "GZH217",
+"platform": "公众号",
+"title": "一眼沦陷，东营黄河入海口的秋日盛景",
+"desc": "我们的母亲河黄河，一路奔涌万里，在东营与渤海汇合，造就了这片年轻的三角洲湿地，每到秋日，碱蓬草由绿转红，铺成一望无际的红地毯……\n清澈的浅水中，成群的候鸟在此栖息落脚休憩，东方白鹳，丹顶鹤，野鸭等水鸟点缀着红滩，飞鸟.红草.碧水，相应成趣……\n这里是国家级自然保护区，是黄河泥沙孕育出的新生天地，也是",
+"likes": 66,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMzg1OTg1Mg==&mid=2247484767&idx=1&sn=5df1929020a4e7b37acdaca949470f39#rd",
+"published_at": "2026-09-19 20:09:12"
+},
+{
+"id": "GZH198",
+"platform": "公众号",
+"title": "60岁藏族阿妈带4个子女参加长征，母女三人走完万里长路，平凡人铸就不凡丰碑",
+"desc": "四川理县杂谷脑河畔，坐落着一座安静的红军墓园。\n里面长眠着一位藏族老人和她的两个女儿。\n老人出生于雪域农奴之家，在60岁那年义无反顾地踏上了九死一生的长征路。\n她是走上长征路的女性中，年龄最大的一人。朱德总司令和康克清尊称她为“老妈妈”。\n她原名板登卓，后来有了一个广为人知的汉族名字——杨金莲。\n更",
+"likes": 445,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5OTg2NTQ0Mg==&mid=2652761181&idx=1&sn=2799ae2659375049b9b7993b27c074ed#rd",
+"published_at": "2026-09-19 20:02:12"
+},
+{
+"id": "XHS89",
+"platform": "小红书",
+"title": "See me through my eyes🍂",
+"desc": "秋意悄悄漫入街巷\n风变得柔和，落日晕开一层暖金\n一副喜欢的眼镜，就是看待日常的新视角🌾\n\t\n▫️Alvari 萤火虫｜GLD 金色\n几何椭圆无框设计，利落切割线条自带精英质感✨\n金色β钛镜腿前端镶钻，光泽低调显贵不浮夸\n配有0°防蓝光双抗镜片，视野清晰舒适\n素颜出门也能悄悄提亮气色\n松弛高级感不用刻意营造💠\n\t\n▫️Ansel 点点镜 / BSV 黑银色\n细边椭圆框优雅耐看，镜腿侧边珍珠Logo精致吸睛🤍\nβ钛框架搭配板材腿套，上脸轻到几乎无感\n0°防蓝光尼龙镜片高清通透\n长时间办公、追剧，舒缓屏幕带来的用眼压力\n知性千金感随手就有，日常佩戴很出彩\n\t\n#ootd #Fakeme26新品 #氛围感眼镜\n#韩系穿搭 #Fakeme #日常配饰\n#防蓝光眼镜 #眼镜种草 #小众配饰 #生活随拍",
+"likes": 474,
+"comments": 21,
+"url": "https://www.xiaohongshu.com/explore/6aae407500000000250363a5",
+"published_at": "2026-09-19 19:42:45"
+},
+{
+"id": "GZH140",
+"platform": "公众号",
+"title": "晚清街头民间拔牙老照片",
+"desc": "这是一张记录晚清市井行医场景的真实历史影像，完整还原了当年民间街头牙医摆摊拔牙的全过程。‌左侧留长辫、戴眼镜的是民间拔牙郎中，正用金属拔牙钳为患者操作；后方一名男子死死按住患者头部，防止其因剧痛挣扎影响操作；中间的患者疼到五官扭曲，双手不受控制地张开，把痛苦的状态完全展现了出来。右侧的木柜里摆满了药瓶、药具，柜台上还站着一只作为招揽噱头的猫头鹰，背景墙面上贴满了手写的宣传文字，是当年街头游医典型的摆摊布置。当时没有现代牙科的专业设备，郎中使用的是类似老虎钳的简易工具，几乎是直接硬拽将牙齿拔出，手法非常粗暴。即便部分郎中会使用麻沸散类的传统麻醉药，镇痛效果也十分有限，患者全程要承受剧烈的痛感。整个操作完全在露天市井环境下完成，没有任何消毒措施，拔牙属于极高风险的行为，很容易出现创面感染，甚至有因拔牙感染致死的案例记载。#历史#老照片",
+"likes": 38,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4MjIyODkyNw==&mid=2247484373&idx=1&sn=f518777b8176e810739b4baa305dc695#rd",
+"published_at": "2026-09-19 18:41:10"
+},
+{
+"id": "GZH220",
+"platform": "公众号",
+"title": "骂醒无数餐饮人的“勇哥”，自己开店却被骂上热搜：填不平自己的坑？",
+"desc": "\"            在短视频餐饮赛道里，很多准备开店的新手创业者，几乎都刷到过勇哥的避坑视频。靠着直白犀利的点评、拆解餐饮行业的各类套路、劝退盲目创业的小白，勇哥积攒了五百多万粉丝，被很多人当成靠谱的行业引路者。可谁也没想到，常年教别人避坑、教人踏实做餐饮的他，亲自下场开的实体门店，开业没几天",
+"likes": 26,
+"comments": 16,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyMTc1MzA3MQ==&mid=2247496261&idx=2&sn=910767b2a34a17ee3c7a0a13560a80d2#rd",
+"published_at": "2026-09-19 18:14:30"
+},
+{
+"id": "GZH59",
+"platform": "公众号",
+"title": "按摩哪里，散光缓解了，眼前小黑点不见了，还缓解老花眼？",
+"desc": "亲爱的粉丝朋友们，感谢一路相伴！我们的公众号《嘉传生活馆》即将迁入新家——《新嘉传生活馆》，期待在那里与您继续分享生活的美好点滴，欢迎您来关注哦！\n近年来，老花眼越来越年轻化了。现代人长时间盯手机、电脑，近距离用眼过度，让睫状肌长期处于紧张状态，加上熬夜、睡眠不足、户外活动少等因素，也会加重眼睛的调",
+"likes": 231,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg4NDIzMjgyNA==&mid=2247511109&idx=1&sn=428a7b1ecc3d0059e185b47f9314927d#rd",
+"published_at": "2026-09-19 18:00:00"
+},
+{
+"id": "DY15",
+"platform": "抖音",
+"title": "草帽姐同款老花镜",
+"desc": "",
+"likes": 1608,
+"comments": 66,
+"url": "https://www.iesdouyin.com/share/video/7687170355085502309",
+"published_at": "2026-09-19 17:07:02"
+},
+{
+"id": "GZH148",
+"platform": "公众号",
+"title": "年轻时她们多亮：央视“金话筒五朵金花”老照片",
+"desc": "年轻时她们多亮：央视“金话筒五朵金花”老照片翻出那张老合影：左起鞠萍28岁（《七巧板》姐姐）、杨澜26岁（《正大综艺》）、倪萍35岁（《综艺大观》春晚脸）、敬一丹39岁（《焦点访谈》《一丹话题》）、高丽萍36岁（《天涯共此时》）。五个女人，五种声线，长发披肩或利落短发，站一块儿是九十年代“知性”俩字的样板间。后来呢？鞠萍童花头到退休，杨澜波波头闯江湖，倪萍挽发散步，敬一丹齐耳白发探蔡磊（2026.9.13离世，享寿71），高丽萍淡出后也短发素颜。她们不是被岁月打败，是把“说话”从职业熬成人生态度——敬一丹最后写“感谢这世界让我走过”，杨澜60岁还在访谈，倪萍把眼泪留給书信。咱普通女人照镜子叹“要是像她们多好”，可她们最贵的不在脸，在三十多年没把嘴闭上、没把心交给滤镜。头发会短，声峰会退，但“我见过事、还愿意好好说”这股劲，谁也剪不掉。你30岁那年许的“要活成自己”的愿，现在还剩几句没划掉？#央视五朵金花 #鞠萍杨澜倪萍敬一丹高丽萍 #金话筒的老照片 #秋日生活打卡季",
+"likes": 49,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MTIyNjg5Mw==&mid=2647579069&idx=1&sn=e83ba5c530286e9b7c4b600fc06bef4f#rd",
+"published_at": "2026-09-19 16:54:25"
+},
+{
+"id": "GZH39",
+"platform": "公众号",
+"title": "58岁的王小丫完全变了样在大山里教书做公益",
+"desc": "你还记得王小丫吗？“请听题。”“你确定吗？”这两句话一出来，多少人的青春就回来了。2000年《开心辞典》开播，王小丫站在台上，不疾不徐，笑起来眼睛弯弯的。那时候没有短视频，一家人吃完晚饭就守着电视机，跟着选手一起紧张、一起答题。她不是那种锋芒毕露的主持人，就像邻居家姐姐，坐在那儿跟你聊天，让你觉得踏实。后来她突然不见了。2016年，长期高强度工作把身体拖垮了，肾积水、慢性肾炎，医生下了最后通牒。她放下话筒，从荧幕上消失了将近十年。再出现时，是在贵州深山的教室里。58岁的王小丫，戴着一副老花镜，一字一句给乡村孩子们读绘本。她创办的“爱小丫基金”，已经惠及超过72万人次的女童。从央视舞台到深山教室，她只是换了个地方，继续发光。大家怀念的，不只是那个主持人王小丫。是那个守在电视机前、还不知道生活有多累的自己。#王小丫#国民主持人#公益   48岁黄晓明二战考上戏博士，白衬衫报到：全网“只恭喜不提问”，原因扎心啦敬一丹走了，复读、三战考研，她留下的不只是声音，还有一个不肯认输的人生，我想写她的不甘敬一丹给我们的启示：人生走到最后，看的永远不是钱，而是你有没有这个",
+"likes": 484,
+"comments": 40,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwMjk4NjEzMg==&mid=2247490130&idx=1&sn=3b62acf1a330d4e0dfe32766a465355a#rd",
+"published_at": "2026-09-19 16:41:34"
+},
+{
+"id": "GZH11",
+"platform": "公众号",
+"title": "圆肩+背厚＝显老10岁｜这套练背法收好",
+"desc": "有没有姐妹和我一样：体重不算重，可一穿紧身衣、吊带，就显得后背厚厚壮壮的？很多人以为是肉多，其实大多是含胸圆肩、斜方肌紧张、上背无力、久坐僵硬造成的厚背感。 不要上来就疯狂猛练！女生练背正确顺序是：先放松，再训练，最后改习惯。 - 第一步：把紧绷的肩颈先松开（胸前打开、斜方肌放松、猫牛式舒展，每个动作做到位）- 第二步：重点激活、练习我们的上背，俯身飞鸟、弹力带外展、靠墙Y字抬手，轻重量、慢一点，找背部发力感，不要耸肩代偿- 第三步：顺带练一下肩膀，让整个肩背线条更舒展- 最重要：避开那些让背越来越紧的坏习惯！别总含胸低头、不要一练就耸肩、不要只练胸不练背、别指望节食就能让背变薄。 记住：我们追求的不是极致“纸片背”，而是平整、舒展、有力量的后背，整个人挺拔轻盈，气质真的会加分～不用天天练，每周3‑4次，每次10‑15分钟就够，坚持一段时间，你会爱上这种打开肩膀的舒服感❤️ （⚠️温馨提示：运动前做好热身，身体不适请暂停，循序渐进～） #改善背厚 #开肩美背 #居家体态训练 #女生练背 #久坐救星 #体态提升",
+"likes": 159,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwNDQxMTQ3Mw==&mid=2247485208&idx=1&sn=35716ab5496ed2f5f83edc66855839d0#rd",
+"published_at": "2026-09-19 15:12:46"
+},
+{
+"id": "DY96",
+"platform": "抖音",
+"title": "帅哥美女们 49 一副防蓝光眼镜，一副墨镜，心不心动 ？#青少年配镜 #防蓝光眼镜 #近视镜 #眼镜",
+"desc": "",
+"likes": 1397,
+"comments": 43,
+"url": "https://www.iesdouyin.com/share/video/7687139335830039035",
+"published_at": "2026-09-19 15:06:40"
+},
+{
+"id": "DY109",
+"platform": "抖音",
+"title": "今天才知道什么叫做老实人开眼镜店，两副眼镜只要 49块，想配副靠谱的眼镜，就来他们家看看#青少年护眼",
+"desc": "",
+"likes": 2168,
+"comments": 25,
+"url": "https://www.iesdouyin.com/share/video/7687135542630823522",
+"published_at": "2026-09-19 14:51:58"
+},
+{
+"id": "GZH89",
+"platform": "公众号",
+"title": "免费接种！守护“一老一小”",
+"desc": "流感逐渐进入高发期，为切实保障群众身体健康，我县将贯彻落实江西省流感季免费接种流感疫苗政策，目前，各项准备工作已经就绪。哪些人需要重点防护？免费接种对象是谁？到哪里接种？一起来听听三位医师怎么说。         儿童：症状重、恢复慢，建议及时接种  县人民医院儿科主任陈海卫介绍，近年来流感患儿增多",
+"likes": 63,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxNjE3MzIwOQ==&mid=2655578008&idx=1&sn=8baf9ca074440605ebc276cd7ae35c3c#rd",
+"published_at": "2026-09-19 14:30:00"
+},
+{
+"id": "DY98",
+"platform": "抖音",
+"title": "99元配全套防蓝光眼镜🤓 超划算！",
+"desc": "",
+"likes": 1039,
+"comments": 18,
+"url": "https://www.iesdouyin.com/share/video/7687113958164014321",
+"published_at": "2026-09-19 13:28:11"
+},
+{
+"id": "GZH14",
+"platform": "公众号",
+"title": "女生一定要狠狠抓住运动的“溢出效应”",
+"desc": "开始运动之后，人身上发生的改变，会“溢出”到方方面面。【溢出效应】原本是一个经济学概念，指的是某一项活动不仅产生了预期内的效果，还意外地带动了其他领域的变化。放在运动上，就是：你开始运动，原本只是为了瘦一点、健康一点，但坚持一段时间后，你发现，不仅身材变了，你的情绪、精力、工作效率、人际关系、甚至对自己的看法，全都跟着变了。气色不一样了，说话的方式不一样了，面对麻烦时的反应也不一样了。运动从身体溢出来的那部分，会渗透进生活的每一个角落。💦溢出效应1️⃣：从身体秩序，到生活秩序运动是一件“有秩序”的事。几点练、练多久、练什么、怎么循序渐进——它天然要求你安排、执行、坚持。当你开始每天完成一件对身体的承诺，你会发现自己对生活的掌控感也在变强。你会不自觉地想：既然我能管住身体，那作息是不是也可以调一调？饮食是不是也可以变一变？房间是不是也该收拾一下？💦溢出效应2️⃣：从身体能量，到情绪能量运动不会替你去解决问题，但它会改变你面对问题的状态。运动能促进多巴胺、血清素、内啡肽的分泌，这些神经递质直接关系到我们的情绪、动力和幸福感。一次运动，就是一次天然的“情绪重置”。这也是为什么状态不好的时候反",
+"likes": 196,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NTI0ODQwMQ==&mid=2651273518&idx=1&sn=36cfa608803f979b5fa6a6a248c01b47#rd",
+"published_at": "2026-09-19 12:00:00"
+},
+{
+"id": "GZH138",
+"platform": "公众号",
+"title": "《交锋》：直到李凤歌一根眼镜腿自尽，马憩递辞职信当叛徒，才知贾春霖朱应甲接连落网，马憩诈降换来两大战果，第二内鬼至今没人猜对！",
+"desc": "当《交锋》播出到李凤歌自杀的那一段时，在弹幕中出现了大量的“破防”二字。  谁会想到，在档案室里坐了二十多年的人，天天给同事们送盒饭，看着最老实本分的内勤大姐，却是军情局埋藏最深的一颗钉子。\n被抓之后没有等到审判就被掰断眼镜腿跑了出去，并且以一种最为悲壮的方式来为自己画上一个句号。  但是让人心惊肉",
+"likes": 28,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzNjY4Mzc1MA==&mid=2247488006&idx=1&sn=d2922431217af8f8f8509e82dea4cfd8#rd",
+"published_at": "2026-09-19 11:43:56"
+},
+{
+"id": "DY6",
+"platform": "抖音",
+"title": "你见过带老花镜的狙击手嘛？ #名场面 #高燃 #敢死队 #不服输的人 #因为一个片段看了整部剧",
+"desc": "",
+"likes": 18390,
+"comments": 455,
+"url": "https://www.iesdouyin.com/share/video/7686975564049141026",
+"published_at": "2026-09-19 11:35:00"
+},
+{
+"id": "GZH99",
+"platform": "公众号",
+"title": "永远不要向任何人证明自己",
+"desc": "“有很多时候我很抵触竞争，每一次需要拼命证明自己价值的时刻，都让我倍感疲惫和沉重。”韩国女演员朴宝英的这段获奖感言视频一度在各大媒体疯传，为什么这样的一句自白能获得这么多人的转发？我想是我们都在这句话里，看到了那个因为想要拼命向外界证明我们的价值而精疲力尽的自己。我们晒曾经去过的地方，用各个地方的国旗宣示我们的足迹。我们考各种各样的证书，期望别人能在这些证书里看到我们的闪光点。我们参加各种各样的比赛，在个人介绍里不知疲倦地罗列头衔、展示阅历，大谈我们认识的某某某……我们相信靠这些“有”就能向别人证明自己。《道德经》说“有之以为利，无之以为用”。车轮、陶器、房子，都是因为中间空着，才真正派上用场。我们总是过分纠结“无”。无让我们焦虑，让我们怀疑自己。我们都喜欢做加法，什么都想要越多越好。没有烦恼、没有疾病、没有挂碍，也是无的作用呀。伊索寓言里有一则关于乌鸦喝水的故事，一只乌鸦口渴了，到处找水喝。乌鸦看见一个瓶子，瓶子里有水。但是，瓶子里水不多，瓶口又小，乌鸦喝不着水。怎么办呢？乌鸦看见旁边有许多小石子，想出办法来了。乌鸦把小石子一颗一颗地放进瓶子里。瓶子里的水渐渐升高，乌鸦就喝着水了。我",
+"likes": 366,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU0NTkzNDY2Ng==&mid=2247487154&idx=1&sn=545b814dc13123ec013e608bf25d352f#rd",
+"published_at": "2026-09-19 11:26:37"
+},
+{
+"id": "GZH194",
+"platform": "公众号",
+"title": "司机称代驾百万路虎24天跨7城倒贴2.2万元：途中与车主相谈甚欢，达成口头合作，车主还向其借款3万元，抵达后态度反转；车主最新回应",
+"desc": "‍‍         据湖南广播电视台都市频道《风芒新闻》9月17日报道，近日，一名北京代驾司机刘师傅向记者求助称，他代驾百万路虎，历时24天跨越7城，总行程4000余公里，却倒贴了22000元。\n7月29日，刘师傅接了一笔五小时600元的普通计时代驾单，代驾车辆为一台价值过百万的路虎越野车。途中，",
+"likes": 387,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA0MDk2MA==&mid=2653673671&idx=1&sn=75c326d0e8ee4b7be105c7e6b7289f25#rd",
+"published_at": "2026-09-19 11:11:15"
+},
+{
+"id": "DY46",
+"platform": "抖音",
+"title": "#我要上热门 #看一遍笑一遍 哈哈，老花眼的婆婆 @郎酒1956直播间 #见老朋友喝老郎酒",
+"desc": "",
+"likes": 3803,
+"comments": 162,
+"url": "https://www.iesdouyin.com/share/video/7687044045096580297",
+"published_at": "2026-09-19 11:00:00"
+},
+{
+"id": "GZH67",
+"platform": "公众号",
+"title": "【仁医为民·专家话健康】守护晚年清晰视界，聊聊白内障那些事！",
+"desc": "“                不少中老年人出现视物模糊，大多以为只是老花眼。殊不知，白内障才是夺走中老年视力最常见的元凶。白内障并非只有高龄老人才会患病，糖尿病、高度近视等，都会加速晶状体老化浑浊。早识别、正确治疗，才能守住晚年清晰视界。\n一、到底什么是白内障？\n我们眼球内有一枚透明的凸透镜，叫",
+"likes": 7,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU5MzIzNzE4NQ==&mid=2247515843&idx=3&sn=17e6ce0eeca76ce11114ea9fc46d494b#rd",
+"published_at": "2026-09-19 10:38:23"
+},
+{
+"id": "XHS80",
+"platform": "小红书",
+"title": "蓝光盾pro，眼睛终于能喘气了",
+"desc": "隐形眼镜换了优瞳蓝光盾pro才知道硅水凝胶多好用，高透氧真的太舒服了😌。眼睛像开了扇窗一样透气🫧，一天下来都水润润的。防蓝光本来觉得是噱头，结果看电脑眼睛不酸了🤔，度数也一年多没涨过\n\t\n#隐形眼镜推荐哪个牌子舒服 #隐形眼镜推荐新手怎么选 #优瞳隐形眼镜 #优瞳 #优瞳蓝光盾pro #防蓝光镜片真的有用吗 #防蓝光眼镜推荐 #防蓝光眼镜 #高度近视 #硅水凝胶",
+"likes": 138,
+"comments": 13,
+"url": "https://www.xiaohongshu.com/explore/6aadf161000000002802ac44",
+"published_at": "2026-09-19 10:20:17"
+},
+{
+"id": "GZH159",
+"platform": "公众号",
+"title": "16岁姚明女儿被偶遇，这股淡定劲儿太绝了！",
+"desc": "这两天有路人拍了逛博物馆的姚明一家, 还发到网上的那几张随手的照片中, 有人瞄着身高称约莫快到两米了吧，有人还在旁议论长得瞧着挺壮实。我就想问一句, 你们盯着外形对他指指点点的时候, 有没有想过这孩子最厉害的根本真不是个子高? 真正让我眼前一亮的，是她面对镜头的样子。不藏、不避、不扮娇柔、不凹造型。身边有人举手机对着她拍摄, 她连余光都未多扫那边一下。该看展看展, 该聊天聊天。16歲, 换做普通孩子叫, 被陌生人闹哄哄围着不停拍的, 早都慌得六神无主了, 哎，但她竟半分没慌。那“你尽管拍你的、该咋过我的自管咋过我的”的一派淡定的劲儿, 简直就是见过大世面的那种成年人常有的沉稳劲儿。她说句实话她从小被全圈着看自然是逃肯定躲不掉的不管跑啥都跑不掉的。她爹妈是圈子里的名人她又高出普通人大一截高得特别扎眼特显眼走到啥地方哪里都是全场的焦点。不往热度上炒, 不搞刻意营业, 不强行设立人设, 被路人无意间拍到? 拍就拍吧, 这种松弛的状态, 往浅了讲就是自身心里自有定数, 清清楚了解到根本的自己, 彻底不必要朝着任何人去证明出什么。当下多少孩子活着活成旁人嘴里的模样? 网上一句评价就能低迷整三天,",
+"likes": 68,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTI3MTA3Ng==&mid=2247486260&idx=1&sn=013fd1ef9b2a988ef989166570f93fee#rd",
+"published_at": "2026-09-19 09:22:00"
+},
+{
+"id": "GZH195",
+"platform": "公众号",
+"title": "司机称代驾百万路虎24天倒贴2.2万元，途中与车主相谈甚欢，双方口头达成合作，跨7城后态度反转；车主称需抵扣轮胎、酒店、车损等费用",
+"desc": "9月16日，据湖南广播电视台风芒新闻，近日，一名北京代驾司机刘师傅求助称，代驾百万路虎，历时24天跨越7城，总行程4000余公里，却倒贴了22000元。\n7月29日，刘师傅接了一笔五小时600元的普通计时代驾单，代驾车辆为一台价值过百万的路虎越野车。途中，他与车主相谈甚欢，抵达目的地后，双方口头达成",
+"likes": 220,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4OTM0MDMyNA==&mid=2651180586&idx=1&sn=3fd420d640cd1320c0779f096cc3e51c#rd",
+"published_at": "2026-09-19 09:15:06"
+},
+{
+"id": "DY5",
+"platform": "抖音",
+"title": "高档老花眼镜中老年高清护目防蓝光老花镜自动高端男女时尚老视镜",
+"desc": "",
+"likes": 35716,
+"comments": 594,
+"url": "https://www.iesdouyin.com/share/video/7687042448723299610",
+"published_at": "2026-09-19 08:50:50"
+},
+{
+"id": "GZH206",
+"platform": "公众号",
+"title": "今天，是你的Special Day：）",
+"desc": "9·19              今天，是你的Special Day：）                            长空之下              镌刻着航空人              踏过的千重风雨              跨越的万里关山              纵前路迢迢",
+"likes": 531,
+"comments": 40,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MzE4OTA3MQ==&mid=2650805984&idx=1&sn=235b6783350f4899567e80fe3aabc49b#rd",
+"published_at": "2026-09-19 08:00:00"
+},
+{
+"id": "GZH58",
+"platform": "公众号",
+"title": "坚持3个月，初期老花眼恢复，孩子视力升2行？ | 粉丝反馈",
+"desc": "#                              点击蓝字 关注我们\n目为肝之窍，常熬夜、肝不好的人群，常常会眼睛干涩、流泪、白睛遍布红丝、视物模糊。经常运转眼球，也能够使气血很好地上达头目，对于养肝亮眼都有很大帮助。\n今天给大家分享三招视疲劳保养法：\n01\n炼眼法\n童子功的炼眼法，缓解",
+"likes": 2164,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDE4NTU2Mw==&mid=2651462921&idx=1&sn=44cc4323b739bc7176497c7d385a41f6#rd",
+"published_at": "2026-09-19 07:05:00"
+},
+{
+"id": "GZH35",
+"platform": "公众号",
+"title": "找老花镜，找了半天没找着",
+"desc": "今天上午，我想看报纸，找老花镜，找了半天没找着。   茶几上没有，沙发上没有，餐桌上也没有。我翻了抽屉，翻了柜子，都没有。我站在屋里，想了半天，也想不起来放哪儿了。后来，我在自己的头上摸了摸，老花镜就架在脑门上。我忍不住笑了。   这已经不是头一回了。上回，我找眼镜，找了半天，最后发现挂在脖子上。还",
+"likes": 132,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5MzQzNjg2OQ==&mid=2247483738&idx=1&sn=d7720cf953ac975fb18ef8c4e13a2e3c#rd",
+"published_at": "2026-09-19 03:00:00"
+},
+{
+"id": "GZH266",
+"platform": "公众号",
+"title": "什么！？已经偷偷谈了四年半了？！",
+"desc": "九月中旬，早上七点之前。       在一处被葱郁绿意包裹，兼具自然美感与老城区风情的都心地段，一栋公寓楼里，一名浑身散发着极强魅力气场的男子现身。              他身着知名运动品牌运动套装、卡其色长裤，佩戴配色时髦的有色镜片太阳镜，头戴一顶早秋风格针织帽，整体穿搭随性休闲，穿搭功力果然",
+"likes": 20,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5NTA2Nzg1OQ==&mid=2247533069&idx=1&sn=fef1d9277c565b89943cf4534c450be8#rd",
+"published_at": "2026-09-18 22:01:47"
+},
+{
+"id": "DY43",
+"platform": "抖音",
+"title": "世界第一老花眼。#爸爸 #猫咪 #生活中的摄像头 #聊天记录 #小猫你抢我镜头了",
+"desc": "",
+"likes": 253379,
+"comments": 1014,
+"url": "https://www.iesdouyin.com/share/video/7686852284241060259",
+"published_at": "2026-09-18 20:32:45"
+},
+{
+"id": "DY117",
+"platform": "抖音",
+"title": "还好有加持buff  根本不怕嗑花了眼#明月镜片#明月镜片戴你去看明场面#明月轻松控#魏哲鸣#你好星",
+"desc": "",
+"likes": 20953,
+"comments": 33,
+"url": "https://www.iesdouyin.com/share/video/7686799366345985307",
+"published_at": "2026-09-18 19:42:46"
+},
+{
+"id": "GZH149",
+"platform": "公众号",
+"title": "9999，牙膏挤爆了",
+"desc": "佳能最近发了台新机  EOS R8 Mark II    上一代R8最大的槽点，就是没有机身防抖  很多人想入手轻便全画幅，在这纠结了，这次Mark II直接补上了  五轴机身防抖，配上带IS的RF镜头，协同最高能到7.5级         手持夜景、拍视频，会稳不少  上一代改对焦点只能戳屏幕，这",
+"likes": 75,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwODU2MTMzMA==&mid=2669001683&idx=1&sn=c6c1acfac7249592319cef8ab1829ccc#rd",
+"published_at": "2026-09-18 18:40:48"
+},
+{
+"id": "GZH177",
+"platform": "公众号",
+"title": "沃尔沃推出2027款XC90长续航插混版！",
+"desc": "2027款沃尔沃XC90长续航插混版将在全球市场陆续开放订购，2026年秋后投产。新车配备更大的地板集成电池与更强的电机，纯电续航最高160公里，是现款插混的2.5倍以上。插混系统由184千瓦2.0T汽油机与130千瓦电机组成，综合功率339千瓦，综合扭矩759牛·米，零百加速5.2秒。七座布局保留北欧风格座舱，新增Google Gemini语音助手。欧洲起售价约9.5万至10万欧元，约合人民币73万至77万元。#沃尔沃内饰保护剂环保防老化大蓝瓶发动机积碳抑制剂四季超薄透气座垫汽车后视辅助镜广角大视野大号车载折叠拉杆箱带盖扫码太阳能发光停车牌后排平板电脑手机支架记忆棉头枕腰靠扶手箱垫车载眼镜盒豪车头枕，你也能拥有车载充气泵打气泵便携式汽车破窗器安全锤",
+"likes": 48,
+"comments": 30,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4Mjc1NDcxOQ==&mid=2457591362&idx=1&sn=8af0418c880cf9b1618032cbb708ffd3#rd",
+"published_at": "2026-09-18 18:33:00"
+},
+{
+"id": "XHS78",
+"platform": "小红书",
+"title": "蔡司小瞳堡｜青少年防控镜，大龄孩子也适配",
+"desc": "不少家长都明白\n给孩子配眼镜镜片才是核心\n但选哪款防控镜片依旧会纠结\n既要防控效果靠谱\n膜层还要耐磨，扛得住孩子日常造\n那么这副客片可以参考\n\t\n[看R]先看孩子度数：\n右眼：‑1.00近视 /‑1.00散光\n左眼：‑1.25近视 /‑0.75散光\n家长首要诉求是近视管理\n[向右R]老沙推荐选择蔡司小瞳堡1.59铂金膜\n\t\n[加一R]小瞳堡是蔡司2026年的防控产品\n专门针对儿童青少年近视设计\n[加一R]采用M.O.V.E.三维动态阵列技术\n眼球在转动时会产生时刻变化的的离焦信号\n避免视觉神经产生耐受，防控效果减弱\n从而减缓近视加深，一直戴到 18 岁都合适\n\t\n[加一R]搭配蔡司铂金膜，膜层耐磨抗污\n孩子日常跑动、擦镜片不容易刮花\n透光表现优秀，能减少反光\n孩子室内看书、上网课视野都更通透\n\t\n[向右R]搭配 SUEEY 钛架镜框\n镜身轻盈，鼻托可调节，佩戴不易下滑\n保证镜片光学中心和孩子瞳距对齐\n更好发挥镜片的近视管理作用\n这款钛架镜框尺寸偏大\n很适合年龄偏大一点的青少年\n\t\n有给孩子配镜的家长\n欢迎留下度数\n给你搭配合适的配镜方案[派对R][派对R]\n\t\n[打卡R]观音桥店：观音",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aad03110000000012003785",
+"published_at": "2026-09-18 17:23:29"
+},
+{
+"id": "XHS48",
+"platform": "小红书",
+"title": "*SeeYooi｜网上配镜👓675度数参考",
+"desc": "🧾客宝数据\n右眼近视度数650度/散光度数50度/瞳距30.5mm\n左眼近视度数675度/瞳距29mm\n-\n👓客定1.74康耐特防蓝光镜片\n（1.74折射率适合600度及以上的度数适配）\n这款防蓝光可以阻隔有害短波蓝光抵御紫外线\n适合长期看手机电脑💻缓解疲劳\n康耐特镜片即便是1.74高折射率价格💰也很美丽！\n-\n🍃配的是【长岛冰茶】\n颜色是调和的很温柔的透茶色\n素颜戴上也很提气色\n低调又有质感\n素颜早八人可放心冲！\n-\n#眼镜框女 #素颜眼镜 #网上配镜 #学生党眼镜 #冷茶色镜框 #早八人必备 #秋冬必备 #高级小众眼镜 \n",
+"likes": 3,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aacfd9d0000000026031b6a",
+"published_at": "2026-09-18 17:00:13"
+},
+{
+"id": "DY140",
+"platform": "抖音",
+"title": "只花100多在南吴眼镜配品质眼镜‼️ #明月镜片 #南吴眼镜 #南京配镜 #明月PMC超亮镜片 #赴",
+"desc": "",
+"likes": 1143,
+"comments": 35,
+"url": "https://www.iesdouyin.com/share/video/7686764194046655302",
+"published_at": "2026-09-18 14:50:56"
+},
+{
+"id": "DY81",
+"platform": "抖音",
+"title": "高度近视和散光也能戴，裸眼的爽感，就选这种渐进多焦隐形#渐进多焦点镜片 #sweetcolor #半",
+"desc": "",
+"likes": 12272,
+"comments": 78,
+"url": "https://www.iesdouyin.com/share/video/7686764049950212507",
+"published_at": "2026-09-18 14:50:22"
+},
+{
+"id": "DY138",
+"platform": "抖音",
+"title": "鹭卓离了你谁还逗我笑啊 #明月轻松控 #明月镜片 #明月镜片戴你去看明场面 #好视力就要轻松控#你好",
+"desc": "",
+"likes": 1428,
+"comments": 25,
+"url": "https://www.iesdouyin.com/share/video/7686758433203307866",
+"published_at": "2026-09-18 14:28:34"
+},
+{
+"id": "DY137",
+"platform": "抖音",
+"title": "青少年需要配防控眼镜，一定不要错过这家 #何医生眼镜 #何医生眼镜团购 #明月镜片#明月轻松控",
+"desc": "",
+"likes": 1723,
+"comments": 100,
+"url": "https://www.iesdouyin.com/share/video/7686756652842561769",
+"published_at": "2026-09-18 14:21:40"
+},
+{
+"id": "XHS103",
+"platform": "小红书",
+"title": "不愧是被追着问的玳瑁色👓时髦圈的精致小框",
+"desc": "天啊！琥珀玳瑁才是真正的复古眼镜！\n复古玳瑁圆框真的长在审美上🌰\n玳瑁花纹自带复古滤镜，搭配细金色镜腿，精致感直接拉满！\n\t\n圆润镜框柔和脸部线条，方圆脸、鹅蛋脸都适配✨\n日常素颜、通勤上课都可以戴，不化妆也很有氛围感。\n上脸轻盈不压鼻梁，久戴耳朵也不会疼。\n\t\n黄皮姐妹放心冲，色调衬肤色，显白不沉闷，\n日常配近视镜片也完全ok，复古知性感拿捏住～。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 4,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aacc321000000000d024a1a",
+"published_at": "2026-09-18 12:50:41"
+},
+{
+"id": "GZH202",
+"platform": "公众号",
+"title": "眼里有泪，心中有光，少年加油！",
+"desc": "刷到付北航的视频，心里一下子就酸了。别人入伍，身边有父母相送、千叮万嘱；而这个重庆小伙子，只能一个人背着行囊，胸前戴着光荣的大红花，独自踏上从军路。他说，父母生前也有参军的心愿，只是没能实现，现在，他要替爸爸妈妈完成这个梦想。眼里含着泪，却依旧挺直腰板敬军礼。那份懂事、坚强，看得人鼻子发酸。没有亲人送行，但从今往后，军营就是他的家，战友就是他的亲人。少年自有凌云志，一身戎装担荣光。付北航，别怕，往后前路坦荡，未来可期，我们都为你加油❤️",
+"likes": 2529,
+"comments": 619,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5MDAzMjQxOQ==&mid=2247488754&idx=1&sn=cb34c3ca24d696fd22daa7e4e7331b67#rd",
+"published_at": "2026-09-18 12:33:55"
+},
+{
+"id": "XHS44",
+"platform": "小红书",
+"title": "从外网学到的护眼细糠方法总结",
+"desc": "我挑了8个自己觉得比较能落地好坚持的👇\n1️⃣屏幕位置先摆对\n电脑尽量放在正前方，屏幕别太低，手机也别贴脸、别侧躺着刷。我会把屏幕稍微后仰一点，字体鼠标直接放大，少低头、少眯眼。\n2️⃣别把“练眼”做成新任务\n不用专门盯一个点练半天，走路时看看路牌、远处建筑就行。近距离用眼一阵后，按20-20-20思路主动把视线放远，比硬撑几个小时靠谱。\n3️⃣眼周紧就轻轻松一圈\n我会从眉心往额头轻推，再沿眉骨往眉尾带，最后顺着太阳穴附近放松几下。力度轻一点，别压眼球，也不用追求越酸越好。\n4️⃣叶黄素我先看形态和纯度\n很多吃叶黄素没有很可能是纯度和技术都不到位，光看mg是不够的。踩过坑后我现在重点看纯度和技术。\n我现在吃的 amerrition就是共晶技术，60%纯度，和4mg玉米黄质，刚好5:1配比。适当的营养补充，会帮眼睛分担部分压力。\n5️⃣看近多的人，眼镜别自己乱减度数\n外网有人会配专门看书、电脑的眼镜，或者渐进多焦点，但这个真别自己照搬“少50度、少100度”。需要的话按验光结果和实际用眼距离去配，更稳妥。\n6️⃣干涩的时候，先松肩颈和眼周\n后颈紧、眉骨紧的时候，我会先活动肩颈，再轻按风池",
+"likes": 132,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6aacb84b00000000290153ba",
+"published_at": "2026-09-18 12:26:00"
+},
+{
+"id": "XHS6",
+"platform": "小红书",
+"title": "56岁戴上臻澜内渐进，换一种方式看世界",
+"desc": "“岁月不饶人，我亦未曾饶过岁月。”王小波的这句话，我到现在才咂摸出真味。\n\t\n女儿常劝，老物件用着不方便，就要果断舍弃，可我们这一代人节约习惯了。\n就像我之前，一副近视镜，一副老花镜，每天换着戴，都舍不得扔，直到女儿给我配了新眼镜，我才知道用另一种方式看世界，感觉真好。\n\t\n德国品质的施耐德臻澜内渐进镜片，远中近一副搞定，省去换镜动作，无论是宅家看书，还是开车出远门，都不用在摘和戴之间反复拉扯了。\n\t\n现在无论是在看书看手机，还是户外散步，我都会戴上它：镜片平滑，远近切换很顺畅，视野开阔，心里稳当。\n\t\n每次站在阳台看窗外，一切美景尽收眼底，视野开了，心也宽了，原来这才是生活本来的样子。\n\t\n#施耐德光学 #德国施耐德镜片 #眼镜推荐 #近视眼镜 #内渐进镜片 #施耐德内渐进 #臻澜内渐进 #德国品质 #近视老花 #退休必备",
+"likes": 192,
+"comments": 175,
+"url": "https://www.xiaohongshu.com/explore/6aab910d000000002502dc4e",
+"published_at": "2026-09-18 12:10:17"
+},
+{
+"id": "GZH162",
+"platform": "公众号",
+"title": "回不去的青春",
+"desc": "这张珍贵的老照片，是敬一丹在北京广播学院读书的时候拍下的。中间短发含笑的就是她，身旁是同窗好友，几个人手挽着手，一脸干净又明亮的笑意。很多人熟悉的，是后来《焦点访谈》里沉稳从容的她，却很少看见她年轻时这般松弛温柔的模样。那时候的敬一丹已经有过基层广播站的经历，深知学习机会来之不易。她知道自己一开始口音并不占优势，就肯下苦功，一遍遍练发音、磨稿件，沉下心啃专业知识。她不是一路顺风顺水的天才，靠着那份踏实和坚持，一点点把短板补上来，为后来几十年的新闻主持生涯打下了扎实根基。那个年代没有美颜滤镜，没有短视频，年轻的姑娘们眼里有光，朴素的衣着也挡不住蓬勃的朝气。一晃几十年匆匆而过，当年校园里的身影，已经成了一代人难忘的荧屏记忆。青春一去不再，这一张定格下来的画面，也就格外让人珍惜。文中图片来源于网络",
+"likes": 59,
+"comments": 17,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4NzA3MDk1Mw==&mid=2247486607&idx=1&sn=c41ea5d9b96613ae224b78a5da578b5d#rd",
+"published_at": "2026-09-18 07:35:08"
+},
+{
+"id": "GZH97",
+"platform": "公众号",
+"title": "高市内阁人事“洗牌”，政治加速右转，日本民众开始担忧“发动战争的可能性增加”",
+"desc": "一连两日，日本首相、自民党总裁高市早苗接连对自民党高层进行人事调整并改组内阁。舆论认为，此次人事洗牌，暗藏深层政治考量。\n而在权力布局之外，随着高市执政即将满一年，民生困局仍是绕不开的执政考验。\n焦点与意外       自民党小幅调整\n9月16日，高市早苗调整自民党高层人事，多数人留任。自民党四大高",
+"likes": 191,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5ODA4OTIyMA==&mid=2652882400&idx=2&sn=b6d884a0040473491223787554739b8c#rd",
+"published_at": "2026-09-18 07:31:45"
+},
+{
+"id": "DY141",
+"platform": "抖音",
+"title": "今天是配眼镜的一天！#何医生眼镜 #何医生眼镜团购 #明月镜片 #明月PMC超亮镜片",
+"desc": "",
+"likes": 1090,
+"comments": 51,
+"url": "https://www.iesdouyin.com/share/video/7686644777232776433",
+"published_at": "2026-09-18 07:07:32"
+},
+{
+"id": "GZH115",
+"platform": "公众号",
+"title": "这个留言值得回复，为了不戴镜而戴镜有意义吗？戴了能保证18岁脱镜吗？",
+"desc": "前一段写了一篇文章，见：不近视戴眼镜，到底有意义吗？留言回复：近视防控，没有必须选项，只有选择题里的最优解。",
+"likes": 85,
+"comments": 44,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIyODIxNDE3Nw==&mid=2247512078&idx=1&sn=13af991fb4c6d3627d6f18c00446abb4#rd",
+"published_at": "2026-09-18 06:32:00"
+},
+{
+"id": "GZH184",
+"platform": "公众号",
+"title": "灿烂明媚的笑容，尽显军民鱼水情深",
+"desc": "北海舰队舰艇开放日，钢铁战舰威武雄壮，而镜头里这位海军女战士笑容格外打动人心。 一身洁白海军军装，身姿挺拔，灿烂明媚的笑容，温暖又有力量，成为现场最亮眼、最动人的风景。眉眼间满是真诚温暖，没有刻意的修饰，一个发自内心的笑容，就成为现场最亮、最美的风景。战舰是大国重器，彰显国防力量，而美女兵妹的笑容，尽显军民鱼水情深。这笑容里，有军人的飒爽，也有子弟兵的温柔，见过万千风景，依旧会被这样纯粹的笑容深深感染。这才是我们该追捧的光芒，一身洁白的军装，一腔赤诚，笑容藏着信仰，芳华献给深蓝，致敬可爱的人民海军。",
+"likes": 365,
+"comments": 29,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5MjIwNjM0NA==&mid=2247485078&idx=1&sn=44a34c2a786ed9db1effef81967e56f6#rd",
+"published_at": "2026-09-18 06:15:22"
+},
+{
+"id": "GZH41",
+"platform": "公众号",
+"title": "去邮局寄东西，碰见一位老人不会填单子",
+"desc": "今天上午，我去邮局寄个包裹。   进门一看，人不多。我取了号，坐在椅子上等着。旁边坐着一位老人，看着七十多岁，手里拿着一张单子，戴着老花镜，凑近了看，可就是不动笔。   我看他坐了半天，单子还是空的。就问了句，您是要寄东西啊。他说是，给外地的孙子寄点吃的。可这单子他不会填。我说，我帮您看看。   我",
+"likes": 379,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5MDQxMjk2MA==&mid=2247483947&idx=1&sn=12f4d5621c0f3f88e8712273f54b54d0#rd",
+"published_at": "2026-09-18 03:00:00"
+},
+{
+"id": "GZH106",
+"platform": "公众号",
+"title": "给孩子配完第二副功能镜，我才理清近视防控眼镜的区别",
+"desc": "日本豪雅的新乐学、法国依视路的星趣控、日本尼康的控优点。新乐学和星趣控属于同一类型，都是通过控制眼轴来控制眼睛度数增长，而控优点，是通过模糊清晰度，减轻孩子的视觉疲劳。",
+"likes": 34,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTc2MDgyNA==&mid=2247485729&idx=1&sn=2e7f1f24961204b710413e0cde00a8c6#rd",
+"published_at": "2026-09-17 21:25:35"
+},
+{
+"id": "XHS115",
+"platform": "小红书",
+"title": "素颜大框！🖤眼镜届的经典无需多言！",
+"desc": "复古调调的玳瑁方框🤎显脸小！男女都🉑戴！\n经典玳瑁花纹，色调柔和衬肤色，黄皮上脸很适配。\n镜腿做精致雕花金属细节，低调增添精致感，不会过于浮夸。\n框型方圆适度，柔和面部线条，适配多种脸型。\n镜架佩戴轻盈，日常久戴负担小。\n素颜、淡妆都能hold住，通勤上学都适配，可配近视、防蓝光镜片。\n复古又不会老气，日常穿搭随手搭都很出彩。#玳瑁猫眼镜框#韩系眼镜#复古镜框#方圆脸眼镜#素颜近视镜框#女士配镜#氛围感眼镜 。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 6,
+"comments": 3,
+"url": "https://www.xiaohongshu.com/explore/6aabe7b2000000002502ff7a",
+"published_at": "2026-09-17 21:14:27"
+},
+{
+"id": "GZH42",
+"platform": "公众号",
+"title": "浪姐第一都没捧红她，如今自曝“得病”上热搜！妈妈们：天塌了，这毛病我好像也有",
+"desc": "姐妹们你们发现没，那些年我们一起追过的女明星，好多都开始老花了。\nElla 开演唱会，读歌迷来信的环节，很自然地掏出老花镜，边戴边说：“不要笑，等你们到 39 岁就渐渐有感觉了。”\n林心如、陈乔恩之前也在节目里大方承认过。谢依霖更早，35 岁就发现自己老花了。\n以前咱总觉得老花眼是“老年人”的事，离",
+"likes": 66,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxNzY4MTA0Mg==&mid=2248616819&idx=1&sn=7186f91702fa1b3f2c46c2a4a592b4bc#rd",
+"published_at": "2026-09-17 20:40:00"
+},
+{
+"id": "GZH186",
+"platform": "公众号",
+"title": "来发一个超值好物合集吧，赶上你的假期！",
+"desc": "这几天在忙着写稿+上新，准备给自己的中秋国庆攒攒假，那今晚就先来整理一期我自己都在用的小合集~换季➕日常➕假期都能用得上✔️①【深睡无感睡衣】裸感胸垫+瑜伽腰头，超柔面料，裸睡级亲肤柔软婴儿级外置缝线+运动剪裁 贴身0摩擦，翻身无拉扯感②【0激素中药小黄膏】艾宜舒草本，超级好用的口碑款！二十余味草本配伍，不含激素各种皮肤奇痒，顽固的溃烂问题都可用③【红豆宝宝秋衣秋裤套装】吊牌价359！A类一等品7A抗菌，新疆棉莱卡款云朵裸睡肤感 透气吸汗，换季正好给宝宝安排④【恒大溯源大路灯】高端线！量子点纯净光，中国眼谷新科研技术！快速吸收蓝光，释放有益红光 让显色更好，灯光更柔和⑤【去屑温泉洗发水】摆脱头油头痒头屑反复100%天然温泉水基底 温和去屑：天然矿物硫磺+OCT+氯咪巴唑⑥【渔小觅临安山核桃仁】五星推荐！酥酥脆脆的山核桃仁太好吃了！不含防腐剂，调味料减少到只有少量糖和盐，每天吃一把，补充全天营养⑦【温柔精致蕾丝长袖/背心/打底裤】奶皮触感轻暖透气上身巨舒服，叠穿|单穿|三季可穿。软蕾丝V领贴肤不扎，四面高弹隐形包裹。⑧【黄精中的天花板】天台山千亩林下基地，有机种植黄精古法炮制，柴火蒸、太",
+"likes": 21,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxMDc0MDQ0Ng==&mid=2648148392&idx=1&sn=a5d4b6cf4b61add2667c526b1d32f701#rd",
+"published_at": "2026-09-17 19:56:01"
+},
+{
+"id": "DY20",
+"platform": "抖音",
+"title": "中巴混血儿麦子，终究还是翻车了！ #巴基斯坦  #海外生活  #混血儿  #老花镜",
+"desc": "",
+"likes": 2155,
+"comments": 57,
+"url": "https://www.iesdouyin.com/share/video/7686395430896192820",
+"published_at": "2026-09-17 19:15:00"
+},
+{
+"id": "GZH80",
+"platform": "公众号",
+"title": "定了！无锡4家影院",
+"desc": "在家看球不过瘾？     @无锡乒乓球爱好者     福利又来了\n在影院看乒乓球赛\n直播覆盖范围     进一步扩大\n9月27日19:40     2026-2027赛季     德国乒乓球甲级联赛     将迎来一场焦点对决     杜塞尔多夫主场迎战多特蒙德     樊振东\n代表杜塞尔多夫   ",
+"likes": 47,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5ODA4MTM2Mg==&mid=2651055879&idx=1&sn=deb4393e96238d13679024f23eb73a4c#rd",
+"published_at": "2026-09-17 19:13:45"
+},
+{
+"id": "DY121",
+"platform": "抖音",
+"title": "仪颜为定小细节谁又嗑美了! #颜安赵昭仪轻松甜到我了 #明月镜片  #明月镜片戴你去看明场面 #明月",
+"desc": "",
+"likes": 11363,
+"comments": 46,
+"url": "https://www.iesdouyin.com/share/video/7686392255388732707",
+"published_at": "2026-09-17 19:00:45"
+},
+{
+"id": "DY142",
+"platform": "抖音",
+"title": "孩子近视可以看看1.56明月轻松控镜片 #何医生眼镜 #何医生眼镜团购 #明月镜片#明月轻松控",
+"desc": "",
+"likes": 1045,
+"comments": 27,
+"url": "https://www.iesdouyin.com/share/video/7686455414015480811",
+"published_at": "2026-09-17 18:52:42"
+},
+{
+"id": "DY122",
+"platform": "抖音",
+"title": "戴上明月轻松控，get同款默契 #明月镜片 #明月镜片戴你去看明场面 #明月轻松控 #好视力就要轻松",
+"desc": "",
+"likes": 11045,
+"comments": 95,
+"url": "https://www.iesdouyin.com/share/video/7686385856365546761",
+"published_at": "2026-09-17 18:30:20"
+},
+{
+"id": "GZH183",
+"platform": "公众号",
+"title": "宝马MINI推出1998 GT限量版！",
+"desc": "最近，宝马MINI推出2026款MINI Cooper 1998 GT限量版，10月投产，11月起交付。该车以Cooper C两门版为基础，命名来自其1998毫升涡轮增压发动机，最大功率120千瓦，峰值扭矩249牛·米，匹配7速双离合变速箱。外观采用午夜黑金属漆配橙色1998 GT贴花，17英寸JCW轮毂与JCW空气套件为标配，内饰为JCW运动座椅。作为MINI八款Icon Drops中的第六款，美国限量发售。售价36875美元，另加1350美元运费，约合人民币24.7万元。#宝马内饰保护剂环保防老化汽车后视辅助镜广角大视野玻璃深度清洁剂大蓝瓶发动机积碳抑制剂记忆棉头枕腰靠扶手箱垫豪车头枕，你也能拥有车载眼镜盒后排平板电脑手机支架扫码太阳能发光停车牌车载充气泵打气泵便携式汽车破窗器安全锤车漆划痕修复膏",
+"likes": 24,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4Mjc1NDcxOQ==&mid=2457591189&idx=1&sn=88ec02ff156e142571142ca1978e1709#rd",
+"published_at": "2026-09-17 18:30:00"
+},
+{
+"id": "DY61",
+"platform": "抖音",
+"title": "四个动作赶走老花 建议收藏转发 #抖出健康知识宝藏 #医疗健康创作训练营 #老花眼  #医学科普 #",
+"desc": "",
+"likes": 1333,
+"comments": 30,
+"url": "https://www.iesdouyin.com/share/video/7686444272861711625",
+"published_at": "2026-09-17 18:09:33"
+},
+{
+"id": "DY119",
+"platform": "抖音",
+"title": "孟子义 主打一个实力不详 眼力超强 孟子义眼力开挂！#明月镜片#明月镜片戴你去看明场面#明月轻松控#",
+"desc": "",
+"likes": 14600,
+"comments": 93,
+"url": "https://www.iesdouyin.com/share/video/7686376332279713087",
+"published_at": "2026-09-17 18:01:46"
+},
+{
+"id": "GZH96",
+"platform": "公众号",
+"title": "西湖生命科学 | 从医院到家庭，极智医疗打通康复“最后一公里”",
+"desc": "日前，西湖区社会福利中心（一期）的康复室内，六台智能康复机器人平稳运转，陪着在场老人循序渐进完成屈伸、力量训练。\n这些温柔又专业的“智能康复伙伴”，正是扎根西湖、稳步成长的科创企业——杭州极智医疗科技有限公司的自研成果。作为西湖城投集团产业运营空间——紫金科创中心的重点入驻企业，极智医疗多年来深耕智",
+"likes": 48,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDExMzgwNw==&mid=2651949941&idx=1&sn=cc7a9a8bfa36677455a031d601be4117#rd",
+"published_at": "2026-09-17 17:46:38"
+},
+{
+"id": "DY118",
+"platform": "抖音",
+"title": "守护孩子的清晰世界选对镜片只是第一步#你好星期六#明月轻松控#明月镜片戴你去看明场面#明月镜片#好视",
+"desc": "",
+"likes": 18129,
+"comments": 33,
+"url": "https://www.iesdouyin.com/share/video/7686372573801712902",
+"published_at": "2026-09-17 17:31:13"
+},
+{
+"id": "DY120",
+"platform": "抖音",
+"title": "保护视力，本身就是一场长期修炼。#鹭卓卓沅爆改版青春修炼手册  #明月镜片 #明月镜片戴你去看明场面",
+"desc": "",
+"likes": 13486,
+"comments": 50,
+"url": "https://www.iesdouyin.com/share/video/7686360560497134884",
+"published_at": "2026-09-17 17:02:24"
+},
+{
+"id": "XHS15",
+"platform": "小红书",
+"title": "吴越戴老花镜自带书生气质，慢慢的自然老去",
+"desc": "#娱乐八卦 #近视老花镜 #老了也要活得精彩 #新中式眼镜 #眼镜搭配脸型 #优雅地老去 #手工眼镜 #眼镜",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aabac19000000002b0001e3",
+"published_at": "2026-09-17 17:00:09"
+},
+{
+"id": "XHS67",
+"platform": "小红书",
+"title": "4款隐形按场景对号入座！把钱花在刀刃上💰",
+"desc": "作为一个重度干敏眼+每天戴镜超过12小时的打工人\n我真的是隐形眼镜挑剔精本精！\n直到我挖到了欧舒天这个宝藏\n救命，真的是打开了新世界的大门✨！\n和台湾top级工厂深度合作\n是有专业背书和“只做透片”的匠心\n这安全感直接拉满好吗！\n\t\n它家这四款我直接按场景给你们盘明白了\n👩‍🦰欧舒天每日U新（新手日抛）\n适合：初次尝试隐形眼镜的新手姐妹\n\t\n👩‍💻欧舒天全氧维度（高透氧日抛）\n适合：经常用眼、容易眼疲劳人群\n\t\n🏃‍♀️欧舒天小轻袋（运动超薄日抛）\n适合：热爱运动、追求无感佩戴的人群\n\t\n📱欧舒天小蓝袋（防蓝光日抛）\n适合：办公族、手机重度爱好者\n\t\n这些镜片水润服帖没异物感\n真的像没戴一样舒服😭！\n宝子们，眼睛的舒适和健康真的是无价的\n咱就是说，日常通勤、周末约会、运动健身\n戴上欧舒天\n一双清透水灵的眼睛就是你最好的名片✨！\n真正的“隐形”财富，是把钱花在刀刃上\n让每一天都用最饱满的状态去发现\n“新鲜视界，不止一面”！ 听我的，赶紧去冲\n\t\n#欧舒天 #欧舒天每日u新 #欧舒天全氧维度#欧舒天小蓝袋 #欧舒天小轻袋 #日抛分享 #隐形眼镜分享 #月抛隐形  #好物分享",
+"likes": 116,
+"comments": 10,
+"url": "https://www.xiaohongshu.com/explore/6aaba1fe0000000026016ae6",
+"published_at": "2026-09-17 16:17:02"
+},
+{
+"id": "XHS83",
+"platform": "小红书",
+"title": "今天是温柔高智风👓",
+"desc": "开车路上随手拍📸\n两副自带温柔知性滤镜💫\n\t\nalvari·萤火虫\n清透无框眼镜自带清冷感\n镶钻镜腿又增加几分精致，上脸气质++++\n镜片自带0度防蓝光，平时看手机也能保护眼睛\n\t\nansel·点点镜\n自带温柔气质的金丝眼镜\n侧边点缀小珍珠，低调的同时又有小心机\n镜片自带防蓝光，长时间对着电子屏完全无负担~\nβ 钛镜框加板材镜腿，轻盈不压鼻梁\n\t\n这两副眼镜上班通勤、日常佩戴都很合适~实用又出片！\n#Fakeme#Fakeme眼镜#防蓝光眼镜#眼镜推荐#高智感眼镜#早秋穿搭#氛围感",
+"likes": 1486,
+"comments": 34,
+"url": "https://www.xiaohongshu.com/explore/6aab80210000000012026903",
+"published_at": "2026-09-17 16:12:33"
+},
+{
+"id": "DY62",
+"platform": "抖音",
+"title": "当你有一个老花眼的婆婆……#婆媳 #万万没想到 #乡村生活 #萌宠",
+"desc": "",
+"likes": 1171,
+"comments": 104,
+"url": "https://www.iesdouyin.com/share/video/7686404349190710182",
+"published_at": "2026-09-17 15:34:34"
+},
+{
+"id": "DY55",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆！ #看一遍笑一遍",
+"desc": "",
+"likes": 9085,
+"comments": 571,
+"url": "https://www.iesdouyin.com/share/video/7686402608425176689",
+"published_at": "2026-09-17 15:27:47"
+},
+{
+"id": "GZH187",
+"platform": "公众号",
+"title": "来亚庇必看的3️⃣场日落，每一场都封神✨",
+"desc": "国内慢慢入秋🍂，凉意越来越浓天色黑得越来越早，真的很想念海边的落日晚风🌊而在沙巴，至至治愈的事当然就是欣赏落日啦~🌅第一场｜丹绒亚路海滩 · 烟火橘子海这里的落日海滩口碑一直妥妥的，也是亚庇🔝烟火气息的观日落点位🏖️赤脚踩在软乎乎的沙滩上，氛围感拉满，夕阳缓缓沉入海面，整片大海染成温柔橘色🍊🪞退潮后的海面像镜面，倒映漫天晚霞，随手拍都是大片，街边有椰子摊、特色小吃，烟火气十足🥥晚风配海浪🌊，热闹但不嘈杂，松弛感直接拉满👭适配人群：闺蜜结伴、年轻人、亲子出游、喜欢热闹氛围感的朋友🌅第二场｜丹绒亚路香格里拉Sunset Bar · 海平面静谧落日想安安静静看一场高级感日落🌇，选这里就对了标志性草帽海景凉亭，视野零遮挡，点一杯饮品静坐等候🥤，看晚霞层层渐变暖黄、橘粉、柔紫，层层铺满整片蓝海，温柔到心底远离沙滩喧闹，只有海风、落日和治愈海景，静谧又出片📸，度假质感直接拉满。👭适配人群：非常适合情侣💑、蜜月出行、喜欢慢节奏度假、想要拍质感高级大片的小伙伴🌅第三场｜可可山Kokol Hill · 山顶俯瞰山海落日换个山顶视角，解锁沙巴不一样的绝美黄昏，站在可可山高处远眺👀，视野超级开阔，落日铺满绵",
+"likes": 5,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NjI5NzMxNw==&mid=2650215222&idx=1&sn=ecd6f3f9fadcff4e4edb4708618ceee5#rd",
+"published_at": "2026-09-17 14:30:14"
+},
+{
+"id": "DY28",
+"platform": "抖音",
+"title": "每月八千退休金养全家，花十块买老花镜被骂一晚上#免费保姆#家庭伦理#养老 #短剧推荐#一定要看到最后",
+"desc": "",
+"likes": 1029,
+"comments": 398,
+"url": "https://www.iesdouyin.com/share/video/7686356026525781248",
+"published_at": "2026-09-17 14:30:00"
+},
+{
+"id": "GZH208",
+"platform": "公众号",
+"title": "【品牌】以丝为脉 看见建设银行的出海故事",
+"desc": "一针起，传丝路之韵           一线落，承远行之志\n穿越千年驼铃帆影           跨越山海文明相望\n建设银行海外形象视频           《万里同心，锦绣前行》正式发布\n以苏绣为意，借匠心叙事           诉说金融联通世界的时代篇章\n苏绣，是布帛之上的建设        ",
+"likes": 2142,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MTA4Mzc2MQ==&mid=2247722345&idx=2&sn=b7e4e1502cfaab4045971232a7d4552e#rd",
+"published_at": "2026-09-17 14:02:15"
+},
+{
+"id": "GZH45",
+"platform": "公众号",
+"title": "临终前她在病房，等来一场迟到60年的婚礼",
+"desc": "60年前，李姨嫁给王叔，她们没拍过结婚照，没穿过婚纱，但老两口，恩爱有加，日子平淡却幸福的过了60年。     结婚60年，没穿过婚纱，没办过仪式。她重病时说一句是“这辈子有点遗憾”。王叔连夜让儿女找来红布、假花，自己颤巍巍戴上老花镜写婚书。di二天她醒来，看到病房里红彤彤的一片，他握着她的手说：“老太婆，今天补你一个婚礼。”她笑着流泪，当晚安详离世。儿女说，母亲走的时候，嘴角是翘着的。婚姻zui美的样子，是爱到zui后一刻都不留遗憾。     点评： 这世上zui动人的情话，往往在沉默的行动里。有些人的爱像火焰，燃烧时耀眼，熄灭后余温却持续一生。婚姻是一场漫长的目送，我们都要学会在拥有时深深烙印，在失去后温柔延续。珍惜不是挂在嘴边的口号，而是转身就能给身边人的一碗热汤，一次耐心倾听。愿我们都懂得：当下每一刻的寻常，都是未来回不去的珍宝。     送给所有婚姻中的男女，婚姻就是一场平淡的旅行，不求轰轰烈烈，但求平安抵达终点，放下浮躁的心态，对别人的要求不要太高，自己的想法不要太多，认真对待别人，但不要高估自己，你才能收获婚姻的幸福，经营好婚姻其实不难。     每天一分钟，帮你打开情感",
+"likes": 30,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNjA5MjEyNQ==&mid=2247485954&idx=1&sn=b8f83e24c3f72393ed2cdcf531053937#rd",
+"published_at": "2026-09-17 12:34:59"
+},
+{
+"id": "DY136",
+"platform": "抖音",
+"title": "小丁就这样瞪着大眼睛在线求夸夸 #丁程鑫遮了眼睛就不许遮腹肌咯 #明月镜片戴你去看明场面 #明月轻松",
+"desc": "",
+"likes": 2010,
+"comments": 38,
+"url": "https://www.iesdouyin.com/share/video/7686349400062726106",
+"published_at": "2026-09-17 12:01:19"
+},
+{
+"id": "GZH155",
+"platform": "公众号",
+"title": "被新恋情刷屏的“达妹”：实则好莱坞千金",
+"desc": "这几天，好莱坞的舆论焦点几乎都聚焦在“达妹”达科塔·约翰逊的新恋情上。达科塔·约翰逊是谁？说出她演过的电影，您大概率有印象～她是11年前（2015年）现象级情色电影《五十度灰》的女主角，之后又接拍了该系列的《五十度黑》和《五十度飞》。虽然评分和口碑都不高，但在那几年让“达妹”站上了好莱坞顶流的位置。比起抓马满满的恋情八卦，要想真正了解她，就要从她独一无二的成长环境说起。她从来不是依附流量的花瓶，而是出身顶级演艺世家、在喧嚣好莱坞里清醒生长的独立女性。011989年，“达妹”出生于美国得克萨斯州的演艺名门，她的人生，从出生起就和好莱坞光影深度绑定。父亲是老牌实力派演员唐·约翰逊，母亲是奥斯卡提名女星梅兰尼·格里菲斯，外祖母更是希区柯克御用女主、经典影片《群鸟》的主演蒂比·海德莉，三代都是好莱坞家喻户晓的实力派。除此之外，她的继父是被誉为“拉丁情人”的知名演员安东尼奥·班德拉斯，这样的家庭配置，堪称好莱坞顶配世家。优渥的演艺底蕴，并未让达妹养成娇纵的性格。父母在她年幼时便离异，童年的她常年跟随父母辗转各个片场，在加州、科罗拉多甚至西班牙多地生活，常年奔波的成长日常，让她早早褪去浮躁，练就了",
+"likes": 326,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU3MTY1MzcwMQ==&mid=2247500461&idx=1&sn=051760a922984df31df5600ead767ad6#rd",
+"published_at": "2026-09-17 11:55:19"
+},
+{
+"id": "GZH118",
+"platform": "公众号",
+"title": "近视是怎么从2500度到1.0的",
+"desc": "“有一病必有一法。”但未病一定要先防，这是我一直坚信的！\n身边的姐妹是一位四十多年的近视人，眼睛度数发展的很快，五年前已经发展到了2500度的超高度数近视，这个度数是什么概念呢？就是眼睛几乎失明， 裸眼眼前几十厘米外基本一片模糊，连近处人脸轮廓都很难分辨，伸手不见五指，不戴眼镜几乎无法独立正常生活，",
+"likes": 57,
+"comments": 15,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyNDY1NTYxOQ==&mid=2247485910&idx=1&sn=ffe110b17a41a2b5ff3e7715a3781fac#rd",
+"published_at": "2026-09-17 11:38:00"
+},
+{
+"id": "XHS3",
+"platform": "小红书",
+"title": "🇲🇾Eco Botanic｜配一副眼镜👓还宋那么多😍",
+"desc": "#马来西亚眼镜店 #yoloeyewear #ecobotanic #ecobotanic眼镜店 #新山眼镜店 #JB眼镜店 #配眼镜 #蓝光眼镜 #变色镜片 #渐进镜片 #新山眼镜",
+"likes": 57,
+"comments": 2,
+"url": "https://www.xiaohongshu.com/explore/6aaa7827000000001401c2e2",
+"published_at": "2026-09-17 11:06:00"
+},
+{
+"id": "GZH87",
+"platform": "公众号",
+"title": "很多人以为领导干部都是60岁退休，其实市管正处57岁就退二线了",
+"desc": "退休和退二线，在体制内是两个岁数，中间差着好几年。退休的年龄写在1978年《国务院关于安置老弱病残干部的暂行办法》里，男60周岁、女55周岁，这两年又赶上渐进式延迟退休，2025年起男职工的退休年龄往后逐步延到63岁，也就是得多干几年才到点。\n退二线是另一码事。实职交出去，待遇不动，人还照常上班，就",
+"likes": 7,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwNzQzNjgxNg==&mid=2247483680&idx=1&sn=fafec939f3aa437a44dfaf0b94caff53#rd",
+"published_at": "2026-09-17 10:51:11"
+},
+{
+"id": "GZH201",
+"platform": "公众号",
+"title": "76岁，生！日！快！乐！🥳",
+"desc": "风云叱咤，铁骨铮铮筑起空中壁垒  丹心碧血，无畏勇士守护万里河山  2026年9月17日  这个承载荣光的日子  英雄的中国空降兵迎来76岁生日\n76载漫漫征途  这支部队从零起步、由小到大、自弱变强  一路闯关夺隘，淬火成钢  孤胆凌云，热血铸剑，勇毅坚韧  英雄的中国空降兵  始终挺立在  祖国",
+"likes": 11169,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3NTE5MzQzMA==&mid=2657621661&idx=1&sn=cd756b8379c2e410f4c6716d89261db3#rd",
+"published_at": "2026-09-17 10:31:57"
+},
+{
+"id": "XHS95",
+"platform": "小红书",
+"title": "📷松弛感带娃出行",
+"desc": "一到周末就爱推着娃往外跑，长时间户外遛娃，装备真的会影响出行幸福感。\n\t\nTakbebe口袋精灵是我的常驻搭档，整车轻便，整车6.5kg超轻碳纤维车架，轻量同时足够稳固，单手一键收车，独自带娃出门超方便！超大UPF50+遮阳棚，宝宝坐躺可调，自带储物篮超能装，推行顺滑，草地小路都好走，背部自带透气网窗，久坐不闷汗宝宝在车里看风景，安安稳稳。\n\t\n户外阳光刺眼，长时间看手机拍娃，眼睛很容易酸胀。随身戴这副防蓝光眼镜，轻框不压鼻，户外能抵挡眩光，随手拍照片、刷手机时还能阻隔蓝光。镜架柔韧，颜值也在线，遛娃穿搭也能搭。\n好好享受户外亲子时光，宝宝舒服，妈妈也要照顾好自己。\n\t\n#Takbebe #Takbebe口袋精灵#遛娃神器 #遛娃好搭子 #独自带娃 #带娃出行好物 #母婴好物#宝宝推车#凯普克蓝光镜#凯普克眼镜#素颜眼镜#防蓝光眼镜\n#方圆脸眼镜#母婴好物",
+"likes": 264,
+"comments": 10,
+"url": "https://www.xiaohongshu.com/explore/6aa75ee1000000002a004b2d",
+"published_at": "2026-09-17 10:18:52"
+},
+{
+"id": "XHS117",
+"platform": "小红书",
+"title": "央企打工人配镜｜长时间盯屏幕真的会爱上",
+"desc": "上班从早到晚泡在电脑、手机之间\n视线不停远近来回切换，下班下来眼睛闷闷的酸胀感谁懂😭\n这次探店配了蔡司智锐系列，终于体会到定制镜片的魅力\n\t\n▫️智锐单光｜视野开阔，视线切换过渡柔和，日常通勤、办公室办公都适配\n▫️智锐数码｜更偏向长时间近距离看电子屏幕，适合用眼强度高的上班族\n▫️智锐渐进｜适合有老花困扰，一副眼镜兼顾远中近，不用频繁摘戴眼镜\n\t\n💡小tips\n智锐想要佩戴体验好，验光测准各项佩戴参数很关键！\n配镜之后记得注册蔡司电子质保卡，也可以用来核验ZhengPin，买得更安心\n\t\n#蔡司智锐 #蔡司镜片 #配眼镜 #上班族配镜攻略  #眼镜探店 #央企牛马 #央企打工人 #眼镜 #北京央企 #北京国企",
+"likes": 95,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6aab4cca000000002803b470",
+"published_at": "2026-09-17 10:13:30"
+},
+{
+"id": "XHS118",
+"platform": "小红书",
+"title": "这眼力我真的笑不活了",
+"desc": "hi6眼力游戏，这眼力属实跟不上#明月镜片#明月轻松控 #好视力就要轻松控#你好星期六",
+"likes": 947,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aaa17b70000000029018c34",
+"published_at": "2026-09-17 10:06:21"
+},
+{
+"id": "DY27",
+"platform": "抖音",
+"title": "#抖音记录我的业余爱好 #带老花镜留短发真实的我 #人老了要有自己的一点爱好 老有所乐。老有所依。",
+"desc": "",
+"likes": 1040,
+"comments": 98,
+"url": "https://www.iesdouyin.com/share/video/7686309723696092387",
+"published_at": "2026-09-17 09:27:22"
+},
+{
+"id": "DY57",
+"platform": "抖音",
+"title": "当你有个老花眼的妈妈 #抖音玩法达人挑战赛 #抖音上热门 #记录真实生活 #看一遍笑一次 @抖音小助",
+"desc": "",
+"likes": 2036,
+"comments": 96,
+"url": "https://www.iesdouyin.com/share/video/7686270679021811569",
+"published_at": "2026-09-17 06:55:50"
+},
+{
+"id": "GZH156",
+"platform": "公众号",
+"title": "央视五朵金花",
+"desc": "1993年首届金话筒奖珍贵合影，被网友称作央视“五朵金花”：鞠萍、杨澜、倪萍、敬一丹、高丽萍。 鞠萍主持《七巧板》，陪伴几代少年儿童成长；杨澜凭借《正大综艺》一炮走红，年轻灵气；倪萍端庄温情，后来多次主持央视春晚；敬一丹主持《焦点访谈》《一丹话题》，理性沉稳；高丽萍深耕综艺晚会主持，台风大方。 老照片定格了一代电视人的高光时刻，他们的节目烙印在人们的记忆中。（图片来自网络，联系侵删。）#明星老照片",
+"likes": 77,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4NzM2NTgwMw==&mid=2247485910&idx=1&sn=20538c4ca2883b1a87ba0643ac8f5c49#rd",
+"published_at": "2026-09-17 06:12:50"
+},
+{
+"id": "DY26",
+"platform": "抖音",
+"title": "这个老花镜以后再也不往下摘了#军儿严选车 #看一遍笑一遍 #搞笑段子",
+"desc": "",
+"likes": 1078,
+"comments": 72,
+"url": "https://www.iesdouyin.com/share/video/7685984315292874587",
+"published_at": "2026-09-16 19:26:00"
+},
+{
+"id": "XHS26",
+"platform": "小红书",
+"title": "哲学书籍推荐｜告别老花镜",
+"desc": "如果你在寻找适合长辈阅读的哲学入门书，这套典藏版中的哲理卷精选了经典思想对话，比普通哲学书更易上手\n👓我们是否时常看到父母眯着眼睛，\n依靠着架在鼻梁上的老花镜来阅读？\n“适老化”产品的缺失，\n为老年群体的生活造成了一定的困扰。\n但出版行业从未放弃老年人，\n正如我们从未停止爱他们。\n💥所以我们特别推出——\n《读者》回忆典藏版。\n📚以温暖放大的文字，重现经典内容，\n让父母重新享受沉浸阅读的宁静与喜悦。\n有些书，滋养灵魂；\n有些字，照亮岁月。\n四卷书，是回溯、是陪伴，\n也是一次跨越时光的情感共鸣。\nVOL.1——人文卷🏘️\n重走胡同巷陌，\n触摸城市肌理。\nVOL.2——哲理卷🧘‍｜哲学书籍推荐：对话古今智者，感悟生命真谛。\nVOL.3——名篇卷✍️\n名家荟萃，\n岁月华章。\nVOL.4——亲情卷💌\n温暖信札，\n亲情天长。\n📖大字舒适排版，减轻视觉压力，\n让父母告别老花镜，\n品味一场回归心灵原点的旅行，\n让他们真正看得清、读得进、品得懂。\n🎁愿这一份精心编排的礼物，\n成为他们午后窗台的一缕光，\n夜晚灯下的一句问候。\n阅读不再费力，岁月依旧深情。\n送给每一位爸爸妈妈，\n也送给每一位值得温柔以待的长",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aaa7704000000002900cfd4",
+"published_at": "2026-09-16 19:01:24"
+},
+{
+"id": "DY133",
+"platform": "抖音",
+"title": "找到配眼镜的好去处啦～ 一个好的镜片真的太重要啦！#何医生眼镜 #何医生眼镜团购 #明月镜片 #明月",
+"desc": "",
+"likes": 2753,
+"comments": 136,
+"url": "https://www.iesdouyin.com/share/video/7686081972285183921",
+"published_at": "2026-09-16 18:43:33"
+},
+{
+"id": "DY135",
+"platform": "抖音",
+"title": "孩子近视度数年年涨？配镜前先看这款#何医生眼镜 #何医生眼镜团购 #明月镜片 #明月轻松控",
+"desc": "",
+"likes": 2140,
+"comments": 37,
+"url": "https://www.iesdouyin.com/share/video/7686066475794633978",
+"published_at": "2026-09-16 17:43:25"
+},
+{
+"id": "DY10",
+"platform": "抖音",
+"title": "当我爷没带老花镜….#董先生 #父子日常 #家庭",
+"desc": "",
+"likes": 10481,
+"comments": 192,
+"url": "https://www.iesdouyin.com/share/video/7686025833307449265",
+"published_at": "2026-09-16 15:05:42"
+},
+{
+"id": "DY100",
+"platform": "抖音",
+"title": "两位配一副防蓝光眼镜 #开学季 #眼镜 #专业学生配眼镜 #学生专业配镜 #眼镜店",
+"desc": "",
+"likes": 1538,
+"comments": 81,
+"url": "https://www.iesdouyin.com/share/video/7686023102694224870",
+"published_at": "2026-09-16 14:55:07"
+},
+{
+"id": "XHS104",
+"platform": "小红书",
+"title": "快！戴上眼镜被同事夸了！冷棕色好显白！",
+"desc": "温柔知性复古冷茶棕圆框🤎\n通透茶棕色调柔和衬肤，黄皮素颜上脸显白不暗沉。圆润框型适配方圆脸，弱化颧骨与宽下颌，视觉收紧脸型。镜腿搭配镜腿链条设计，低调精致提升细节质感，镜架轻盈柔韧，久戴不压鼻，可配近视防蓝光镜片。通勤、校园素颜穿搭全能适配，书卷氛围感拉满。\n#复古冷茶棕眼镜 #方圆脸素颜神器 #显脸小通勤镜框 #素颜神器 #方圆脸显瘦眼镜 #通勤镜框 #高质感眼镜 #素颜神器 #男生眼镜  #显脸小眼镜 #菱形脸救星 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新      #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 7,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aaa28c50000000011037d0a",
+"published_at": "2026-09-16 14:19:01"
+},
+{
+"id": "DY134",
+"platform": "抖音",
+"title": "配眼镜主打一个清晰！！#何医生眼镜 #何医生眼镜团购 #明月镜片 #明月PMC超亮镜片",
+"desc": "",
+"likes": 2175,
+"comments": 92,
+"url": "https://www.iesdouyin.com/share/video/7685996697180789349",
+"published_at": "2026-09-16 13:12:39"
+},
+{
+"id": "DY123",
+"platform": "抖音",
+"title": "丁程鑫：戴上装备咱就是“狙击手圣体”！#明月镜片#明月镜片戴你去看明场面#明月轻松控#好视力就要轻松",
+"desc": "",
+"likes": 10418,
+"comments": 87,
+"url": "https://www.iesdouyin.com/share/video/7685733136558608484",
+"published_at": "2026-09-16 12:19:21"
+},
+{
+"id": "DY116",
+"platform": "抖音",
+"title": "在好六意识到近视防控有多重要了 #军训完第一个种草居然是在好六#明月镜片#明月镜片戴你去看明场面 #",
+"desc": "",
+"likes": 32410,
+"comments": 52,
+"url": "https://www.iesdouyin.com/share/video/7685752120250936947",
+"published_at": "2026-09-16 12:03:00"
+},
+{
+"id": "XHS54",
+"platform": "小红书",
+"title": "锐跑运动墨镜，可配近视，跑得更轻松～",
+"desc": "锐跑运动墨镜，轻装上阵！保护眼睛、提高颜值，提升运动舒适体感！\n\t\n但大白天长时间跑步，紫外线对眼睛的伤害是累积的，而且强光下眯眼跑，面部肌肉紧张，跑半小时眼睛就疲劳。我一直在用锐跑家大的运动墨镜，之前我就推荐过锐跑的常规款，今天这款不一样——它能折叠。\n\t\n第一，折起来巴掌大。 镜腿一折，镜架一叠，塞短裤口袋、塞腰包、甚至塞手表盒里都不占地。出差、旅行、比赛，不用额外带眼镜盒，出门没负担。\n\t\n第二，轻，戴得住。 虽然能折叠，但结构很稳，戴着不压鼻梁，出汗也不往下滑。跑步跳跃，稳得很。\n第三，该有的防护都有。 UV400防紫外线，偏光镜片过滤路面眩光，看跑道标线、看坑看石头，清清楚楚。折叠只是让它更方便，专业性能没打折。\n\t\n更重要的是，他们可以做成近期眼镜片，你看我的这款眼镜，其实就是锐跑的近视变色眼镜，光线不强烈的时候他就是普通的近视眼镜，光线强烈的时候他就是保护我们眼镜的防紫外线墨镜，非常智能！\n\t\n那不同场景适合不同装备。像我带的这款适合日常固定佩戴，这款呢可折叠的，适合经常出差、比赛、或者嫌眼镜盒麻烦的朋友。\n\t\n好的眼镜不仅能保护我们的眼镜，还能提升我们的颜值，链接我放评",
+"likes": 9,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aaa12e000000000110309ca",
+"published_at": "2026-09-16 11:54:08"
+},
+{
+"id": "DY83",
+"platform": "抖音",
+"title": "隐形眼镜都有这技术了，买也不用戴个大厚镜框子了。#sweetcolor   #开学季 #渐进多焦点镜",
+"desc": "",
+"likes": 3201,
+"comments": 45,
+"url": "https://www.iesdouyin.com/share/video/7685970254157139236",
+"published_at": "2026-09-16 11:30:07"
+},
+{
+"id": "DY132",
+"platform": "抖音",
+"title": "丁程鑫帮赵昭仪拍的神图简直不要太招笑发轻#明月轻松控 #明月镜片 #明月镜片戴你去看明场面 #好视力",
+"desc": "",
+"likes": 2886,
+"comments": 143,
+"url": "https://www.iesdouyin.com/share/video/7685964187805732526",
+"published_at": "2026-09-16 11:06:29"
+},
+{
+"id": "DY115",
+"platform": "抖音",
+"title": "不敢想要是我小时候有这条件 看电视能有多轻松#好六街干禧年游戏堪比视力考验 #明月轻松控 #明月镜片",
+"desc": "",
+"likes": 39679,
+"comments": 65,
+"url": "https://www.iesdouyin.com/share/video/7685678546257268003",
+"published_at": "2026-09-16 10:34:44"
+},
+{
+"id": "GZH100",
+"platform": "公众号",
+"title": "获批！南通新机场空铁枢纽，再迈一步",
+"desc": "南通新机场的建设进度，一直是大家关注的焦点。\n近日，南通市海门自然资源和规划局发布了一则行政许可，虽然字数不多，但信息量极大，标志着南通新机场的配套路网建设迈出了实质性的一步。\n根据公示，南通城市建设集团有限公司正式获得了“南通新机场配套道路等涉铁节点预留工程”的行政许可（建设项目用地预审与选址意见",
+"likes": 32,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYxNDk4Mg==&mid=2650958711&idx=1&sn=cbd5a1943bd26751ba274e9f01db8bdd#rd",
+"published_at": "2026-09-16 10:04:26"
+},
+{
+"id": "XHS16",
+"platform": "小红书",
+"title": "日本｜大创的老花镜 不止是便宜",
+"desc": "十块二十块的东西 它也很美观\n\t\n问 我现在近视900度\n那我老了以后是不是\n近的看不清 远的也看不清\n[石化R][石化R][石化R][石化R][石化R][石化R]#眼镜 #日常佩戴眼镜 #眼镜行业的内卷 #一镜多用眼镜 #眼睛框种草 #眼镜天花板 #高端眼镜 #眼镜搭配 #时尚眼镜框 #不压鼻梁的眼镜 #大创 #日本daiso",
+"likes": 0,
+"comments": 2,
+"url": "https://www.xiaohongshu.com/explore/6aa979b80000000026014971",
+"published_at": "2026-09-16 01:00:40"
+},
+{
+"id": "XHS114",
+"platform": "小红书",
+"title": "精致咖金框✨温柔贵气感镜框太戳我！",
+"desc": "被这副细金框狠狠拿捏住贵气感✨\n圆润的框型，日常上脸柔和修饰脸型，素颜佩戴也很适配。\n\t\n镜腿是点睛之处，珍珠+雕花细节，做工很有质感，低调又精致，不会显得浮夸。\n整体镜框自重轻巧，长时间佩戴，鼻子耳朵负担比较小。\n\t\n通勤、约会都很合适，温柔的千金氛围感，配近视镜片也好看，喜欢精致挂镜框可以参考。#玳瑁猫眼镜框#韩系眼镜#复古镜框#方圆脸眼镜#素颜近视镜框#女士配镜#氛围感眼镜 。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 9,
+"comments": 6,
+"url": "https://www.xiaohongshu.com/explore/6aa950c6000000001001c74e",
+"published_at": "2026-09-15 22:22:01"
+},
+{
+"id": "XHS29",
+"platform": "小红书",
+"title": "泡茶看水温说明！透灰老花镜很应景🍵",
+"desc": "新买的茶叶标着水温、冲泡时间，字小得像蚂蚁，得看清才不糟蹋。\n\t\n戴上它按说明泡，茶汤颜色正、味道也对，午后很舒服～🌿\n#老花镜 #老花镜推荐 #老花眼镜 #时尚老花镜 #老花眼镜女 #显年轻老花镜 #防蓝光老花镜 #高颜值老花镜 #透灰色镜框 #老花眼",
+"likes": 0,
+"comments": 17,
+"url": "https://www.xiaohongshu.com/explore/6aa94a2500000000120344a5",
+"published_at": "2026-09-15 21:37:41"
+},
+{
+"id": "DY59",
+"platform": "抖音",
+"title": "手机也是老了，都得老花眼了， 站这么近都看不清我的脸🤓#卖萌摇 #笨蛋学跳舞 #抖音舞蹈ootd#",
+"desc": "",
+"likes": 1804,
+"comments": 74,
+"url": "https://www.iesdouyin.com/share/video/7685755384288466843",
+"published_at": "2026-09-15 21:36:13"
+},
+{
+"id": "GZH169",
+"platform": "公众号",
+"title": "郑秀文半辈子都在减肥，54岁发福圆润不敢认",
+"desc": "最近好多明星扎堆开演唱会，郑秀文原定的演出因故延期，再次露面，肉眼可见圆润不少。对比上一轮巡演骨感单薄的模样，还有之前腿伤休养时期，不管是活动合照还是自拍，脸上多了肉，不少网友感叹 Sammi 胖了。熟悉她的人都清楚，郑秀文几十年反复胖瘦，从来不是单纯管不住嘴，体重的起伏，就是她人生状态的写照。90 年代刚出道，她自带婴儿肥，一边发歌一边在 TVB 拍戏，《宠物情缘》搭档古天乐、宣萱，圆脸看着亲切。可当年港圈盛行以瘦为美，这份肉感在舞台上并不吃香。为了符合天后形象，她对自己极为严苛，长期节食，几乎不吃主食，身体不适家人劝喝粥她都不肯。极端减肥，让她患上厌食症、深陷抑郁，硬生生把自己饿成纸片人。她的体重，也跟着和许志安的感情跌宕。两人纠缠二十多年，分分合合。当年风波暴发，遭遇背叛的她跌入低谷，情绪波动带来身材变化；要强的她又咬牙减脂，重回舞台，依旧瘦得紧绷。经历腿伤、风波之后，她选择留下来修复这段感情。如今两人一同出席好友生日会，同框状态松弛。几十年爱恨拉扯，不再互相捆绑，多了包容。这次长胖，不是失控，是松弛。从前一点体重上涨，都会让她焦虑，拼命迎合外界审美。现在她坦然接纳身形变化，不再",
+"likes": 30,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk0NDcyMjIyOQ==&mid=2247498686&idx=1&sn=1e7de3c5af82a2eb26e914a298c44aca#rd",
+"published_at": "2026-09-15 21:07:46"
+},
+{
+"id": "GZH79",
+"platform": "公众号",
+"title": "关于延迟退休，最新发布！",
+"desc": "   提示：点击上方\"沭阳发布\"↑快来关注我们！\n随着渐进式延迟法定退休年龄改革              的推进              退休政策有了新变化              不少人对现有政策存在疑问              法定退休年龄怎么算？              社保要缴多少",
+"likes": 71,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkxMzM0NzI0Nw==&mid=2247701203&idx=1&sn=05cb2cbe87251ddc4fc41e4c2f542946#rd",
+"published_at": "2026-09-15 20:58:00"
+},
+{
+"id": "DY60",
+"platform": "抖音",
+"title": "新站有影，答案将明 《飞机大厨》新机场视觉设计抢先看（老花眼篇~👓💐）",
+"desc": "",
+"likes": 1429,
+"comments": 486,
+"url": "https://www.iesdouyin.com/share/video/7685742263967780148",
+"published_at": "2026-09-15 20:50:36"
+},
+{
+"id": "GZH83",
+"platform": "公众号",
+"title": "2028“大选”国民党谁最有机会出线？",
+"desc": "台湾2028年“大选”人选布局逐渐受到关注，蓝营谁最有机会出线，成为政坛讨论的焦点。根据《ETtoday民调云》最新“2028‘大选’候选人支持度调查”，进一步讨论泛蓝族群对国民党党内可能人选的态度，台北市长蒋万安以43.4%的看好度居首，台中市长卢秀燕则以22.4%排名第二，领先台民意机构负责人韩",
+"likes": 84,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU0Mjk0NzgyNg==&mid=2247592740&idx=1&sn=eefa48c3757cfb4be57b58b75596aabc#rd",
+"published_at": "2026-09-15 19:12:00"
+},
+{
+"id": "XHS91",
+"platform": "小红书",
+"title": "防蓝光猫眼眼镜｜豹纹金链贵气叠满",
+"desc": "玳瑁金链+猫眼框=贵气buff叠满，我焊脸上了\n而且还是防蓝光的，通勤追剧都不累眼\n新入的眼镜一戴上，直接从甜妹变贵气拽姐！\n▫️框型是显脸小杀器：玳瑁纹+轻猫眼弧度，不是死板的圆框，上脸自动收窄下颌，方圆脸戴完脸小一圈，自带“不好惹的贵气”氛围~\n▫️细节是高级感密码：玳瑁框+金链镜腿的组合太绝了！镜腿精致的金属扣设计，不是廉价镀金，拿在手里能摸到的质感，搭黑色高领直接把拽姐气场拉满~\n▫️防蓝光+舒适没负担：不仅是防蓝光护目镜，长时间对着屏幕也不干涩，通勤/约会戴一整天都舒服到忘摘~\n现在已经是我“素颜撑气场”的刚需，昨天戴去咖啡厅被邻座追着要链接——这副真的是“美貌+护眼”双buff叠满#新春市集 #小红书新春市集 #清冷初恋感 #防蓝光眼镜 #男生眼镜 #宝克利眼镜 眼镜 #拽酷穿搭 #素颜神器 #眼镜推荐#1年1度购物狂欢 #新年味 #舒服过年 #内外兼修 #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜 #浅春系穿搭 #小红书市集1年1度购物",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa91b8f000000002802fd5e",
+"published_at": "2026-09-15 18:18:55"
+},
+{
+"id": "XHS96",
+"platform": "小红书",
+"title": "*SeeYooi｜网上配镜👓575度数参考",
+"desc": "客宝数据：\n右眼近视度数575度/散光度数50度\n左眼近视度数425度/散光度数50度\n瞳距62mm\n-\n客定1.67折射率康耐特防蓝光镜片\n（1.67折射率适合400度-600度）\n这款镜片的1.67折射率，比1.60薄很多\n做出来边缘不臃肿\n大镜框也不容易厚\n而且防蓝光底色很浅\n色彩失真小\n-\n客宝选择的【奶雾棕】加大版\n镜腿做了外扩处理肉肉脸带不夹脸了\n跟普通的棕色不一样\n是有点雾蒙蒙的棕色\n很显温柔不会显得死气沉沉的\n上脸韩女味更强（见p4）\n是秋冬天很爱戴的棕色系眼镜\n-\n#眼镜框女 #素颜眼镜 #网上配镜 #平价眼镜 #方圆脸眼镜 #近视眼镜 #学生党眼镜 #防蓝光眼镜 \n",
+"likes": 6,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa9197b000000002601fb61",
+"published_at": "2026-09-15 18:10:03"
+},
+{
+"id": "DY18",
+"platform": "抖音",
+"title": "我一定要努力搞钱，有钱了就给我妈买个好的老花镜哈哈哈#万万想不到 #搞笑",
+"desc": "",
+"likes": 2527,
+"comments": 50,
+"url": "https://www.iesdouyin.com/share/video/7685700754812055418",
+"published_at": "2026-09-15 18:04:14"
+},
+{
+"id": "GZH61",
+"platform": "公众号",
+"title": "近视眼能做手术，老花眼行不行？眼科陈敏教授团队新技术，一次手术摘掉两副眼镜",
+"desc": "近视能做手术，老花眼行不行？近视叠加老花就更麻烦了！随着老花眼年轻化，不少人随身携带两副眼镜，频繁摘戴十分不便。能否一次手术实现视力自由？日前，青岛市妇女儿童医院眼科新引入老视矫正手术，帮助近视老花人群轻松摘镜。\n40岁近视➕老花成功摘镜\n45岁的办公室职员晓晓（化名），有着30年近视史，双眼近视3",
+"likes": 50,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIzMjAzMjA5Ng==&mid=2651785818&idx=1&sn=7c415a274bdfabc6d3cdfe4bcdf06bd8#rd",
+"published_at": "2026-09-15 17:34:39"
+},
+{
+"id": "DY58",
+"platform": "抖音",
+"title": "滴眼药水改善老花？这次是真的！ 近日，一款治疗老花眼的滴眼液，在海南博鳌超级医院眼科中心开始使用了！",
+"desc": "",
+"likes": 1959,
+"comments": 237,
+"url": "https://www.iesdouyin.com/share/video/7685693010608147727",
+"published_at": "2026-09-15 17:34:15"
+},
+{
+"id": "GZH262",
+"platform": "公众号",
+"title": "“只想做一个务实的第一书记”，没有虚招，全是硬活！",
+"desc": "初秋时分，千岛湖的水软得像绸缎，包裹、滋养着湖畔一片十亩的菜地。几个月前，这里还是杂草齐腰的荒地；如今，栅栏崭新，田垄分明，这片地有了新名字——共富新农园。\n王雪春穿着白衬衣，站在田垄边，目光透过镜片，落在地里一株发黄的玉米苗上：“肥也施了……这棵苗咋还有点黄？”\n“那片地，也要开出来”\n去年12月",
+"likes": 113,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwMDAwNDc1NQ==&mid=2650960146&idx=1&sn=fcee63337c4eaca0ad60ebe37da64d25#rd",
+"published_at": "2026-09-15 17:29:34"
+},
+{
+"id": "DY139",
+"platform": "抖音",
+"title": "见过霸总定力不好的，没见过霸总视力不好的 #魏哲鸣手动给自己加视力buff #明月轻松控 #明月镜片",
+"desc": "",
+"likes": 1298,
+"comments": 30,
+"url": "https://www.iesdouyin.com/share/video/7685685842027713765",
+"published_at": "2026-09-15 17:06:22"
+},
+{
+"id": "XHS55",
+"platform": "小红书",
+"title": "孩子近视而已， 没什么好怕的",
+"desc": "这年头养孩子，流行着一句笑谈——儿有三孝：没有近视，不戴牙套，不打增高药。看似好笑，其实说出了很多父母的心酸和不易。因为这三件事真的是太费娃费妈，费钱费力了。很不巧，我家四个孩子，三件就中了两件。两个近视，三个戴牙套，除了不打增高药。\n\t\n刚开始的我，可焦虑了，天天反思是不是我没带好。后来我想通了，一切顺其自然，来什么接纳什么。不要给自己和孩子上太多枷锁。近视了就戴眼镜，牙齿不齐就戴牙套；长不高那就怪遗传，早睡喝奶运动监督好；其他的就只能交给命运了。\n\t\n我家老二近视三年了，换了三副眼镜，但是始终没有找到一副适合她的眼镜。要么镜框容易变形移位，要么镜片难对焦，要么容易有划痕。还有就是有时候会戴着头晕，久而久之就不愿意坚持带了。导致孩子因为眼镜问题影响了心情，也影响了学习。\n\t\n直到我给她配了这款新天鸿的贝悦小葵花防控眼镜，孩子的笑容又回来了。孩子现在每天都愿意戴它，哪怕每天上足球课也戴着它。之前的眼镜孩子不愿意戴，很大一个原因就是眼镜佩戴不够舒适。现在换了这副眼镜，孩子说“戴了就跟没戴一样”，超轻镜架，不会压鼻子压耳朵，跑动的时候也不会移位。而且这款镜片采用了识别度平衡技术，孩子在踢球",
+"likes": 246,
+"comments": 34,
+"url": "https://www.xiaohongshu.com/explore/6aa8c67f000000002802d89b",
+"published_at": "2026-09-15 13:24:56"
+},
+{
+"id": "GZH196",
+"platform": "公众号",
+"title": "谁不说俺家乡好丨给世界加点“料”",
+"desc": "百味聚乐陵，香飘万里路",
+"likes": 129,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4MTExMzczMw==&mid=2663063767&idx=2&sn=d16b6b020ab4410430d3c4141656503a#rd",
+"published_at": "2026-09-15 11:02:28"
+},
+{
+"id": "GZH179",
+"platform": "公众号",
+"title": "笑不活了！三星请来 “库克” 拍折叠屏广告",
+"desc": "苹果终于憋出了自家首款折叠屏iPhone Duo，正式踏进折叠屏赛道。谁都没想到，老对手三星没有硬刚参数、没有搞技术对标，反倒在新西兰玩了一手四两拨千斤，靠一支恶搞短片刷爆了海外全网。很多人刷到视频的第一秒，估计都和我一样懵了：等等？库克怎么跑去给三星代言了？画面一出来，那味简直太熟悉了。干净到极致的纯白背景、沉稳克制的说话语气，再加上黑衬衫配眼镜的穿搭，整个人的神态、气场，简直和大家印象里的苹果前CEO蒂姆·库克一模一样。可反转来得猝不及防。这位撞脸大佬的男士，根本不是我们熟知的苹果高管。他只是新西兰帕默斯顿北市的一个普通房产经纪人，日常工作就是卖房，和科技圈八竿子打不着。唯一的巧合，就是他真的同名蒂姆·库克，还偏偏长了一张高度相似的脸。三星也正是抓住了这个奇妙的缘分，专门邀请他出镜为Galaxy Z Fold8拍宣传片。这其实不是三星第一次这么“调皮”。早些年，三星就拍过短片，调侃果粉通宵排队抢新机的名场面，吐槽苹果机型常年迭代保守、缺少新意。在苹果折叠屏曝光前夕，三星还发过短片温柔喊话，欢迎新玩家入局。这种找撞脸者、隔空调侃对手的玩法，其实商业圈早就玩过不少。最出名的要数宝马当年",
+"likes": 31,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3MzMyNzYxMA==&mid=2649502825&idx=1&sn=f2c1983237baf9d63703349968967a2d#rd",
+"published_at": "2026-09-15 10:59:58"
+},
+{
+"id": "GZH21",
+"platform": "公众号",
+"title": "很少再上春晚后，宋祖英把重心挪去了别处",
+"desc": "咱说大伙有没有这感觉, 早年春晚的片段找出来, 小背篓好日子啦的旋律哗啦啦往身上串, 塞得满满当当的可都是回忆, 一点缝儿没留。此前晚几乎每年都能瞧见她, 这几年却极少公开露面。不少人第一反应都会认为, 是不是没啥表演场合的机会了, 才渐渐淡出演艺视野。我早先还也是这么想着, 直到摸清她后续的生活状况, 才察觉压根不是这么回事情。在湘西大山里长大的宋祖英, 小时候家里条件普通, 十几岁抓住机会进了地方剧团日复一日练唱功踏实, 一步一步走到全国大众面前, 这么多年扎根舞台, 从不再搞花边热度, 心思这些年一直放在唱歌和作品上。圈内很多人抱着一个心态: 好不容易攒就了观众缘, 绝不肯淡出大众视线。够热度高到处跑凑曝光, 热度降成半点就慌张, 拼了命找话题搞博关注, 整个人被流量给牵住鼻子走。一个人的底气, 不一定来自那种观众在台下的台上的掌声, 也可以是他自己指尖握的住手上的、自己眼里有选择权的手里可以安排的生活往向。这是我看完她的经历，比较真实的感触。她未曾正式公开发布退出所在圈子的声明，也未曾刻意营造氛围宣告别过各方, 只是平平淡淡换了生活的核心聚焦方向。舞台演出变少以后, 她把大量时",
+"likes": 14,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzNDkxNDc0MA==&mid=2247491261&idx=1&sn=acdd70a6afe23d4b35f08484b01a7891#rd",
+"published_at": "2026-09-15 09:19:00"
+},
+{
+"id": "XHS13",
+"platform": "小红书",
+"title": "不知道配什么？黑框老花镜永远不会出错👍",
+"desc": "衣服颜色多、挑花眼的时候，鼻梁上架一副黑框准没错。\n\t\n配大衣、毛衣、衬衫都和谐，出门随手一抓就走，省事～🧥\n\t\n定制渐进多焦点镜片，看远看近一副搞定✅\n#老花镜 #老花镜推荐 #老花眼镜 #老花眼镜女 #时尚老花镜 #老花镜远近两用 #老花眼 #防蓝光老花镜 #近视老花镜 #远近一体老花镜 ",
+"likes": 0,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6aa893190000000012035695",
+"published_at": "2026-09-15 08:36:41"
+},
+{
+"id": "GZH157",
+"platform": "公众号",
+"title": "43岁范冰冰香港红毯杀疯了！真空穿“窗帘裙”惊艳四座！",
+"desc": "分享一篇文章。当晚红毯星光璀璨、大咖云集，众多当红演员、实力影后纷纷盛装亮相，各展风姿争夺镜头焦点。",
+"likes": 1,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMzMxOTgzOQ==&mid=2247486306&idx=1&sn=2e884cd4a313012bfc5bf2b21a17fb58#rd",
+"published_at": "2026-09-15 08:03:00"
+},
+{
+"id": "GZH172",
+"platform": "公众号",
+"title": "白岩松悼念敬一丹：难忘二人一温一锐的主持搭档；原定夏至共读之约，终究遗憾落空",
+"desc": "划到下方观看视频！当敬一丹离世的消息在九月初传来，很多人的第一反应，是想起她和白岩松站在镜头前的模样，一温一锐，刚好是那个年代新闻荧幕最动人的搭配。三十多年的共事时光，他们一起走过《东方时空》《焦点访谈》，一同主持十八届《感动中国》，白岩松的表达锋利直接，总能一针见血戳破现实，而敬一丹自带温和的底色",
+"likes": 33,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4NjI5MDU2Mg==&mid=2247484868&idx=1&sn=6ffd4aa9011804c7cc3487d0e865f0aa#rd",
+"published_at": "2026-09-15 08:02:03"
+},
+{
+"id": "DY22",
+"platform": "抖音",
+"title": "中秋月满松江岸，四桥灯火待归人。#这个中秋你回家吗 #松原 #四桥 #最美城市的夜景 #松原老花镜飞",
+"desc": "",
+"likes": 1616,
+"comments": 615,
+"url": "https://www.iesdouyin.com/share/video/7685494528237726201",
+"published_at": "2026-09-15 04:44:02"
+},
+{
+"id": "XHS105",
+"platform": "小红书",
+"title": "Ins氛围感电竞文女主，金丝边眼镜框真的爱！",
+"desc": "精致感满满的细金椭圆镜框，珍珠装饰镜腿细节很出彩🤍\n纤细金属框身，整体轻盈，佩戴起来减轻鼻梁负担。\n柔和椭圆轮廓，修饰脸部线条，不挑五官。\n金色调温润显贵，上脸是温柔的千金氛围感。\n素颜淡妆都适配，日常通勤、约会都合适。\n可配近视、散光以及防蓝光镜片，精致耐看。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 3,
+"comments": 5,
+"url": "https://www.xiaohongshu.com/explore/6aa80ae0000000002503664f",
+"published_at": "2026-09-14 22:55:28"
+},
+{
+"id": "XHS100",
+"platform": "小红书",
+"title": "方圆脸天菜！显白栗子棕🌰眼镜框秋冬坠爱！",
+"desc": "温柔知性复古冷茶棕圆框🤎\n通透茶棕色调柔和衬肤，黄皮素颜上脸显白不暗沉。圆润框型适配方圆脸，弱化颧骨与宽下颌，视觉收紧脸型。镜腿搭配镜腿链条设计，低调精致提升细节质感，镜架轻盈柔韧，久戴不压鼻，可配近视防蓝光镜片。通勤、校园素颜穿搭全能适配，书卷氛围感拉满。\n#复古冷茶棕眼镜 #方圆脸素颜神器 #显脸小通勤镜框 #素颜神器 #方圆脸显瘦眼镜 #通勤镜框 #高质感眼镜 #素颜神器 #男生眼镜  #显脸小眼镜 #菱形脸救星 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新      #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 2,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa80778000000002502ed8e",
+"published_at": "2026-09-14 22:40:56"
+},
+{
+"id": "XHS66",
+"platform": "小红书",
+"title": "同样是防控镜片，线下试戴这一步千万不能省",
+"desc": "我给孩子选镜片做功课的时候，通过网上看参数、测评看得眼花缭乱，直接网购防控镜片风险很高。\n带娃在河南宝视达配迪士尼ApeD镜片，全程现场试戴、调整参数。验光师也跟我们说，如果瞳高瞳距测不准，光微浮点结构就发挥不出该有的作用。\n之前网上看不到孩子真实佩戴反馈，参数稍有偏差，孩子戴久了就容易头晕疲劳。这次我算是懂了，防控镜片还是得线下配！\n#迪士尼ApeD镜片 #宝视达眼镜 #迪士尼光微浮点镜片 #配镜避坑",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa805c80000000028002e84",
+"published_at": "2026-09-14 22:33:44"
+},
+{
+"id": "XHS10",
+"platform": "小红书",
+"title": "老花镜戴着化个妆💃🏻眉毛画得不歪了～",
+"desc": "对着镜子画眉，凑再近也看不清，一笔画歪，两只眉毛还不对称，越描越黑。\n\t\n戴上这副透茶色，眉形看得清清楚楚，眼线也画得顺，出门不用返工。👍\n#老花镜 #老花镜推荐 #时尚老花镜 #老花眼镜 #防蓝光老花镜 #老花眼镜女 #显年轻老花镜 #高颜值老花镜 #近视老花镜 #老花镜女时尚洋气 ",
+"likes": 0,
+"comments": 3,
+"url": "https://www.xiaohongshu.com/explore/6aa7fc5b0000000029010fbc",
+"published_at": "2026-09-14 21:53:31"
+},
+{
+"id": "XHS92",
+"platform": "小红书",
+"title": "蓝光盾pro，润到眼睛像装了自动续水系统😳",
+"desc": "隐形眼镜换了优瞳蓝光盾pro之后，下午三点眼睛还是水水的。以前到点就干得难受，现在硅水凝胶把润度拉满，一整天都像刚滴过眼💊水。防蓝光本来觉得是智商税，结果看一天电脑眼睛不酸了，度数也一年多没涨👍\n#隐形眼镜推荐哪个牌子舒服 #隐形眼镜推荐新手怎么选  #防蓝光镜片真的有用吗 #防蓝光眼镜推荐 #防蓝光眼镜 #高度近视 #硅水凝胶 #隐形眼镜 #舒服隐形眼镜 #好物分享",
+"likes": 99,
+"comments": 15,
+"url": "https://www.xiaohongshu.com/explore/6aa7db1a000000002502e7aa",
+"published_at": "2026-09-14 19:31:38"
+},
+{
+"id": "DY110",
+"platform": "抖音",
+"title": "我的“夜生活”，晚上八点准时开始 “哥们儿，要不要去……”",
+"desc": "",
+"likes": 1409,
+"comments": 19,
+"url": "https://www.iesdouyin.com/share/video/7685342239437933839",
+"published_at": "2026-09-14 18:53:08"
+},
+{
+"id": "XHS94",
+"platform": "小红书",
+"title": "近期快乐开箱🛒｜我和女鹅的心动好物",
+"desc": "记录一波最近挖到心头好的好物，有我的，也有小☁️的\n\t\n#howto买买买 \n#母婴好物 \n#好物分享 \n#购物开箱 \n#亲子日常 \n#防蓝光眼镜 \n#平衡车 \n#儿童玩具howto \n#九月小朋友SEPTEMBER \n#splat牙膏 ",
+"likes": 86,
+"comments": 15,
+"url": "https://www.xiaohongshu.com/explore/6aa7cbff000000000b00ee87",
+"published_at": "2026-09-14 18:27:11"
+},
+{
+"id": "XHS102",
+"platform": "小红书",
+"title": "方圆脸年度本命眼镜！冰透绿猫眼真的很上头",
+"desc": "素颜天菜！清透冰川绿💚猫眼眼镜框真的太美了\n清透绿框搭配细金内圈，质感高级又耐看。\n利落的猫眼上扬框型，能柔和修饰脸部线条，素颜佩戴也很提气质。\n整体轻盈舒适，可配近视、防蓝光镜片，日常通勤、约会出游都适配，低调又精致。。#眼镜框怎么选 。#玳瑁猫眼镜框#韩系眼镜#复古镜框#方圆脸眼镜#素颜近视镜框#女士配镜#氛围感眼镜 。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 11,
+"comments": 30,
+"url": "https://www.xiaohongshu.com/explore/6aa7c3c4000000000d025e7d",
+"published_at": "2026-09-14 17:52:05"
+},
+{
+"id": "XHS37",
+"platform": "小红书",
+"title": "一贴一靠厚甲消失😌老花眼爸妈不能没有他",
+"desc": "修剪深度恰到好处的同时还不用担心夹到肉，厚甲也能游刃有余\n再加上可以替换不同指甲厚薄大小的3个刀头，不管是左手剪右手，还是右手剪左手，怎么握都很顺手。\n剪完了指甲碎屑也不会乱飞，也更方便打理修剪，又快又好\n正好中秋节给爸妈都带上一份，爸妈喜欢的礼物无非是好看、好用、耐用、便捷，而它全都有，送礼就要送到点上，每次用到都能想到你。\n#氧鲨 #氧鲨电动指甲刀 #电动指甲刀 #电动指甲刀测评 #大开口指甲剪 #指甲刀防飞溅 #修剪 神器#老花眼的福音 #送老人的实用礼物 #长辈好物选购清单",
+"likes": 0,
+"comments": 32,
+"url": "https://www.xiaohongshu.com/explore/6aa7bdcc000000002601a6b3",
+"published_at": "2026-09-14 17:26:36"
+},
+{
+"id": "GZH238",
+"platform": "公众号",
+"title": "蝶泳全攻略：解锁水中海豚，速成速度与优雅",
+"desc": "蝶泳，是仅次于自由泳的“速度王者”，也是泳姿中公认的优雅担当。它对力量、节奏与技术的要求极高，但只要掌握核心技巧，你也能化身水中灵动的海豚。今天这份干货，带你拆解蝶泳全攻略，让进阶有迹可循。一、手臂路径：动力核心的六步法则蝶泳的推进力，大半来自手臂的精准配合，可拆解为入水、抱水、划水、推水、出水、空中移臂六个环节。入水时，双臂同步切入肩部延长线，手掌领先呈45度，小臂与大臂依次入水；抱水阶段，手臂外旋，掌心由外向后，为划水蓄力；划水时，屈肘保持高位，前臂与手掌为核心对水面，划至腹下两手间距最近；随后推水，向外、向上发力，借助惯性提肘出水；最后空中移臂要快，沿身体两侧抛物线前摆，避免因移臂迟缓导致下沉。二、海豚腿：节奏把控的关键蝶泳腿如海豚摆尾，核心是双腿紧贴、协同发力。划水时配合一次小幅踢水，借助手臂动力推进；手臂出水移臂时，则需一次大幅踢水，维持前进动力。初学者易犯“踢水力度均等”的错，错把两次踢水混为一谈，实则大小交替的节奏，才是蝶泳腿的灵魂。三、身体波浪：让力量流动起来蝶泳的灵魂，在于身体的波浪式扭动。想象海豚游动的姿态，让身体呈现S型曲线：背部过水面时，胸高臀低，胸落则臀高，通",
+"likes": 171,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4MzQwNTcyNA==&mid=2649425256&idx=1&sn=cb47518e712b1f1bad3bf645ca91a3cd#rd",
+"published_at": "2026-09-14 17:00:00"
+},
+{
+"id": "XHS97",
+"platform": "小红书",
+"title": "清冷感封神！有被冰透灰绿🪐猫眼镜框拿捏🫴",
+"desc": "素颜天菜！清冷冰川绿💚猫眼眼镜框真的绝\n清透绿框搭配细金内圈，质感高级又耐看。\n利落的猫眼上扬框型，能柔和修饰脸部线条，素颜佩戴也很提气质。\n整体轻盈舒适，可配近视、防蓝光镜片，日常通勤、约会出游都适配，低调又精致。\n#灰金猫眼眼镜 #清冷感眼镜 #方圆脸眼镜 #素颜眼镜 #通勤眼镜 #金丝眼镜 #微猫眼眼镜 #好视频扶持计划  #椭圆眼镜 #素颜眼镜 #通勤眼镜 #金丝眼镜框 #半钛眼镜 #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新     #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 2,
+"comments": 30,
+"url": "https://www.xiaohongshu.com/explore/6aa7af7e000000002502d546",
+"published_at": "2026-09-14 16:25:34"
+},
+{
+"id": "GZH166",
+"platform": "公众号",
+"title": "摄像头模组全流程缺陷库（收藏级）",
+"desc": "摄像头模组全流程缺陷库适用范围： 手机摄像头模组、车载摄像头、安防摄像头、笔记本摄像头、医疗内窥镜模组、无人机摄像头核心标准： ISO 12233(分辨率)、ISO 15739(噪点)、IEC 62676(安防)、客户规格书 → 镜片与镜筒(光学元件)  → 感光芯片贴装 (COB/CSP邦定) → 洁净组装 (对位/锁附)  → 调焦与点胶 (AF/FF调焦) → 焊接与FPC (连接器/FPC)  → 测试检验  (光学/电气) → 包装出货(终检)标准编号                适用范围ISO 12233     数字相机分辨率测试ISO 15739     噪点测试ISO 14524     光电转换函数(OECF)IEC62676       安防摄像机系统GB/T 29298  数字照相模组通用规范GB/T 2828.1 计数抽样检验程序客户规格书Apple/华为/小米/Tesla/海康等特定要求⭐收藏防丢失，验货检验直接用。➕关注我不迷路塑胶|五金|电子|线束|显示屏|硅胶|包材|紧固件|弹簧|扬声器|马达|振动电机|移动电源|摄像头全流程缺陷库已更新13期",
+"likes": 162,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMzg1MzE1NA==&mid=2247484458&idx=1&sn=a680c006b0fae4178d6a8a55145e9f4e#rd",
+"published_at": "2026-09-14 15:27:43"
+},
+{
+"id": "XHS113",
+"platform": "小红书",
+"title": "秋冬本命镜框✨冷茶棕猫眼镜框太提气质",
+"desc": "秋冬氛围感镜框挖到啦🍂\n冷茶棕猫眼框型，柔和的猫眼轮廓，不会过于锐利，日常佩戴刚刚好。\n上脸柔和修饰颧骨，方圆脸、鹅蛋脸都可以驾驭，素颜出门也不突兀。\n框边搭配细金金属拼接，细节精致，自带轻熟贵气感。\n镜框自重轻巧，长时间戴也不容易压鼻梁。\n不管是搭配毛衣大衣，还是通勤日常，都很适配，配近视镜片也好看。\n喜欢轻熟知性风的姐妹，可以参考这款。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 6,
+"comments": 30,
+"url": "https://www.xiaohongshu.com/explore/6aa7828d0000000011030494",
+"published_at": "2026-09-14 13:37:00"
+},
+{
+"id": "XHS111",
+"platform": "小红书",
+"title": "不夸张！奶咖色🧸是我最近想一直戴着的眼镜！",
+"desc": "温柔氛围感感~显白奶咖棕🤎素颜眼镜拿捏方圆脸！\n椭圆框镜框真的巨显乖了‼️\n小翅膀🪽搭配复古精致有腔调\n修饰五官，柔和面部线条，让面部看起来更精致，遮颧骨显脸小！日常学院风穿搭好物[赞R][赞R][赞R]\n减龄又不失格调，有种贵气的娇态[偷笑R]\n重点是非常轻，不压鼻梁，高度数的宝宝也完全无压力💫减龄又气质✨\n高度数的姐妹看过来啦‼️配镜，配变色 配防蓝光都🉑#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 2,
+"comments": 90,
+"url": "https://www.xiaohongshu.com/explore/6aa77a1d000000002802f4e4",
+"published_at": "2026-09-14 12:37:49"
+},
+{
+"id": "GZH175",
+"platform": "公众号",
+"title": "敬一丹：人生最后留下的，从来不是头衔",
+"desc": "小时候看《焦点访谈》，最敬佩的就是敬一丹。她的镜头不尖锐刻薄，却自带力量；她的话语不激昂高调，却句句清醒通透、直击人心。多年以后再回望才懂，真正的新闻人，从不是高高在上的点评者，而是俯身倾听的记录者。打开手机，想多看下镜头，刷到了敬大姐在北大兰园书院做客分享时，当众落泪，此刻我也悄然红了眼眶。她坦言，自己一辈子最大的遗憾，是从未考入北大。深耕新闻行业数十年，手握金话筒、坐镇央视一线，见证时代变迁、读懂人间百态，成为无数人心中的行业标杆。世人皆羡她的成就、头衔与荣誉，可在她心底，始终藏着一个朴素又纯粹的少年求学梦。这也是敬一丹最动人的底色：一辈子清醒，一辈子谦卑。从业半生，她的镜头从来不对准权贵名流，而是始终向下扎根，对准普通人。她写的书、记录的故事，全是大山里的孩子、基层的老师、困境中坚守的平凡人。她始终践行初心：放大弱者的声音，传递理性的力量，替普通人发声、为平凡者立言。她曾感慨，是这个时代给了新闻工作者发声的机会，让人能看见众生、倾听烟火。而行走半生，她也悟透了最通透的人生真相：人这一生，最后能留下的，从来不是职位、头衔和名利，而是留给世间的温度、善意与风骨。世人追逐光鲜的身份标签",
+"likes": 112,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxODcwNjY1NA==&mid=2652233203&idx=1&sn=00a0bae19ee55065e406cf649db58a9b#rd",
+"published_at": "2026-09-14 10:20:25"
+},
+{
+"id": "GZH173",
+"platform": "公众号",
+"title": "央视铁娘子退休后，生活让无数人破防了",
+"desc": "敬一丹这种人，越老越让人服气说实话，一提敬一丹，年轻人可能没那么熟。但在不少家庭里，她就是“新闻联播之外，最敢说人话的那个女主持”。不是那种炸场子的厉害，是你说完真话以后，心里还稳得住的那种厉害。我以前也以为，这种央视大姐，背后肯定有人撑、日子肯定松快。后来才知道，她老公王梓木是做企业的，家境确实好。换别人，可能早就开始晒下午茶、晒夫妻同框、晒“我不用上班也很体面”了。敬一丹没走这条道。她有一句话，我记了好多年：人别把日子过成“靠谁、靠钱、靠面子”，你得有点自己扛事的东西。她在《焦点访谈》那阵子，不是坐在演播室念稿子这么简单。那是真刀真枪碰现实的地方。老百姓被欺负了、冤了、没人听，镜头一对，话一出口，分量就不一样。她拿金话筒，不是因为声音好听，是因为——她替不会说话的人，把话说出去了。这点，比赚多少钱都硬。再说她婚姻。现在网上老聊“嫁得好”，好像女人后半生全押在老公银行卡上。敬一丹这段反而最不“爽文”：老公低调，不抢镜；她忙新闻，他不闹情绪；她要上前线，他不当绊脚石。就这么简单。但你想想，多少夫妻栽就栽在“你别干了、你挣得没我多、你年纪到了该顾家”这几句上。王梓木最难得的是：没把敬一丹",
+"likes": 133,
+"comments": 22,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMzYzNjYzNg==&mid=2247486024&idx=1&sn=e3ebf6c13c720f4667158ef0986b4f88#rd",
+"published_at": "2026-09-14 08:54:44"
+},
+{
+"id": "GZH111",
+"platform": "公众号",
+"title": "贵州遵义一女子早上开窗通风时，发现窗户上盘着一条蛇，当事人：当时以为是防撞胶条，准备用手去拿；蛇已被消防抓走处理",
+"desc": "新闻荐读\n印度将对小米公司展开调查？\n近日，贵州遵义一女子早起后准备开窗通风，不料窗户上盘踞着一条蛇。“我当时没戴眼镜，还以为是窗户的防撞胶条掉下来了，准备用手去拿，结果它就动了，把我吓了一跳。”当事人告诉记者，自己住在4楼，后来蛇被消防抓走处理了。                         ",
+"likes": 28,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4OTcyMTUyMA==&mid=2650849127&idx=4&sn=da7ccba64ca89fa53e164783b4e202e7#rd",
+"published_at": "2026-09-14 01:40:00"
+},
+{
+"id": "GZH46",
+"platform": "公众号",
+"title": "我向女儿借200元车 费，但女婿却让打欠条，不料回家打开欠条…",
+"desc": "我向女儿借200元车 费，但女婿却让打欠条，不料回家打开欠条一看，我傻眼痛哭流涕，竟然救我一命！[恐惧] 我当时气得胸 口 发 堵，直 骂 这女婿太见外、抠门[发怒] 可等回到家戴上老花镜展开那张纸，才发现上面歪歪扭扭写的根本不是借 款 条 款，而是女婿用红笔标注的血 液 透 析 预约时间，背面还夹",
+"likes": 78,
+"comments": 9,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk5MDUxODIwMQ==&mid=2247491236&idx=1&sn=066f4f3706dcd760b8d4c1a8aee91db6#rd",
+"published_at": "2026-09-14 00:25:00"
+},
+{
+"id": "GZH26",
+"platform": "公众号",
+"title": "职场步履匆匆，也要留时间修炼自己[庆祝]",
+"desc": "职场步履匆匆，也要留时间修炼自己[庆祝] 有人说：“真正的自律，不是苦行僧式的煎熬，而是在忙碌生活里守住分寸。”人到中年，职场总有忙不完的工作、扛不完的压力，会议、事务填满大部分日常。很多人感叹，根本没有多余精力打理自己。可身材与状态，从来不是靠大把空闲时间换来的。再忙碌，也可以学会拆分时间，一点点塑造更好的自己。 做好这三点，在高压工作中，也能掌控身材：1.用好碎片时间，不等待整块空闲不必非要等完整的一两个小时才运动。午休抽空快走几千步，居家间隙做一组平板支撑，见缝插针激活核心。碎片化的微小坚持，日积月累，也会看见体态的改变。 2.好好管理三餐，拒绝极端节食管理身材，从来不是不吃。学会把控分量，均衡搭配，偶尔也可以适度解馋。好好吃饭，身体才有能量应对职场压力，这种方式更容易长久坚持。 3.量力安排运动，循序渐进修炼不必盲目追求高强度训练。慢跑、快走、全身拉伸，选择适合自己身体的方式。坚持规律运动，保护好关节与足底，稳步塑造体态。 作家亦舒说：“一个人，要拥有很多很多的底气，最实在的那一种，就是健康的身体。”职场是战场，也是谋生的阵地，但我们依然拥有掌控自己身体的权利。不必追求一蹴而就",
+"likes": 148,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwODMwMDc5MQ==&mid=2247484222&idx=1&sn=6ff7e66d8e359b77a9c72d8f5875fa53#rd",
+"published_at": "2026-09-13 23:17:37"
+},
+{
+"id": "GZH20",
+"platform": "公众号",
+"title": "淋巴清扫后，我依然穿上了无袖衣裙",
+"desc": "乳腺癌手术后的那段日子，我对未来的想象是灰暗的。最让我抵触的，不是脱发，而是右胳膊可能要“废”了——不能拎重物，无法自如抬举，我想夏天也不能再穿无袖了。我知道腋下是淋巴回流的要道，一旦清扫，右臂极易“淋巴水肿”——那是一种如象皮般粗糙、坚硬、肿胀的并发症，且不可逆。我曾上网搜索，看到过那些肿胀变形的手臂，那是无数姐妹心里过不去的坎。我想象中，那个被掏空了淋巴的腋窝，会塌陷、畸形，像一块被揉皱后勉强抚平的布料，再也无法见人。那种身体上被迫的残缺感，比疾病本身更让我难以接受。我把吊带、背心、露肩裙藏进衣柜深处。告诉自己，这是为活下去必须割舍的“美丽”。时至今日，我非常感恩我的主刀医生——时主任。术前他未渲染难度，只笃定道：“放心，我们会尽量精细。”后来我才懂这份“精细”的分量。很多人和我一样，以为“清扫”靠机器，实则是外科医生一颗一颗手工剥离。我的27颗淋巴结，不是被“扫”走，而是医生在错综复杂的血管、神经与筋膜间，一毫米一毫米地“剔”出。他小心翼翼地避开淋巴管，精准结扎创面——那是方寸之间完成的高难度“手工活”，这需要的不仅是技术，更是极大的耐心与对生命的敬畏。术后，在日复一日的监测与循",
+"likes": 149,
+"comments": 24,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNzgyNTI5MA==&mid=2247484623&idx=1&sn=82861de9b02a72162aa06304ca69a1bd#rd",
+"published_at": "2026-09-13 22:44:42"
+},
+{
+"id": "XHS98",
+"platform": "小红书",
+"title": "时髦圈都在戴的小猎豹🐆猫眼镜框加分➕",
+"desc": "豹纹猫眼眼镜｜方圆脸闭眼入\n上扬猫眼线柔和修饰高颧骨、宽脸\n豹纹纹理增加复古感，告别单调基础框\n素颜上脸立体提气色，复古酷感刚刚好\n通勤休闲都能搭，秋冬氛围感神器\n可定制近视、防蓝光镜片，通勤、约会、探店拍照适配各种穿搭，低调耐看的知性氛围感单品。\n#玳瑁镜框 #复古眼镜 #素颜氛围感眼镜 #通勤配镜 #显脸小镜框 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新    #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 21,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa6b165000000001001ec8e",
+"published_at": "2026-09-13 22:21:25"
+},
+{
+"id": "GZH103",
+"platform": "公众号",
+"title": "著名主持人敬一丹急性脑出血去世！脑出血早期信号不是头痛！如身体频现这些症状，千万要在意！丨星空夜话",
+"desc": "小蕊小问\n9月13日，央视《焦点访谈》主持人敬一丹微信公众号发布讣告：感谢这世界，让我走过。其女儿称母亲离世原因是三个月前突发急性脑出血，很多人可能觉得脑出血离自己很遥远，但它其实就像大脑的一次“急刹车”，发病突然，进展迅速，非常凶险，致死率和致残率都很高。如何及早察觉并预防？今天一文告诉你。\n什么",
+"likes": 183,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1NTAzMDU1NA==&mid=2652009778&idx=1&sn=7fa0a4a07f15d81e966e14fff0b5be3c#rd",
+"published_at": "2026-09-13 22:01:25"
+},
+{
+"id": "GZH85",
+"platform": "公众号",
+"title": "敬一丹：我们这一行就是为了让人保持痛感",
+"desc": "退休11年之后，那个理性、温和、有痛感的“敬大姐”走了。9月13日，央视著名主持人敬一丹的女儿王尔晴发布讣告称，母亲于2026年6月在家中突发急性脑出血，治疗多日后于今日去世。敬一丹陪伴许多观众走过了中国电视新闻的黄金年代，那时，电视是人们了解世界的最重要窗口。1988年，敬一丹进入中央电视台，先后主持《经济半小时》《一丹话题》《东方时空》《焦点访谈》《新闻调查》《感动中国》等节目。一头利落的短发、神情沉静、娓娓道来，是很多人关于她最鲜明的记忆。敬一丹主持生涯中最具代表性的节目，是著名舆论监督栏目《焦点访谈》。1995年，敬一丹加入新闻评论部，次年，她开始在演播室主持《焦点访谈》。《焦点访谈》诞生于1994年，用扎实的现场调查介入大量公共事件，如手术刀一般划开社会现象的表层，剖析背后的问题。栏目影响力辐射全国，前总理朱镕基也是《焦点访谈》的忠实观众。后来，在接受《南方周末》采访时，敬一丹这样形容它：“《焦点访谈》不是一个让人舒服的栏目，我们这一行就是为了让人保持痛感，对社会机体是不是健康保持警觉。”她自认缺少一点“锐”。她说，痛感有刺痛，也有隐痛，“我可能就属于那种隐痛”。 她曾说“记",
+"likes": 665,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5ODMzMDMyMw==&mid=2654911905&idx=1&sn=c2800ce7a9d1233ab5e9ae65926d790d#rd",
+"published_at": "2026-09-13 19:24:16"
+},
+{
+"id": "GZH62",
+"platform": "公众号",
+"title": "肝不好，眼睛先知道！一个动作，把肝血\"刮\"到眼睛里，近视老花眼干统统有救了",
+"desc": "朋友们问你几个扎心的问题。你早上醒来，眼睛是不是又干又涩，像蒙了一层雾？",
+"likes": 291,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI0ODM2MTc1NQ==&mid=2247513946&idx=1&sn=9234b2daf3b4da6adfdc3ce771faff2e#rd",
+"published_at": "2026-09-13 19:13:00"
+},
+{
+"id": "GZH22",
+"platform": "公众号",
+"title": "长了斑块50岁以后，这样运动，很毁血管",
+"desc": "大家好，我是段亚君，一名从事心血管内科临床工作40余年的老中医。人过五十，容易出现血管和斑块问题，多因气虚血瘀、痰浊瘀阻、脉络失养，时间久了，血管会硬化、硬化同时也会变脆，失去弹性。如果血管情况良好，适当运动是很好的方法，但如果本身血管有硬化，时间越久，我也越不建议你以下面几种方法再去运动。第一，剧烈运动不可取。中医认为“脉道贵缓不贵急”，快跑，负重，高强度的运动，会让气血瞬间奔涌，血压骤升，会冲击斑块和血管，导致斑块破裂甚至血管破裂，很多脑出血就是这么来的。另外，导致血压突然升高的不光是运动，还有情绪，包括吃太饱，憋尿等等，都会让血压升高，这些都是危险因素。第二，大汗淋漓不可取。部分斑块患者，本身自己气虚痰湿很重，此时出汗增多，血液黏稠度增加，气虚无力，血瘀痰凝严重，并且毛孔大开，更容易受到风寒湿邪侵袭，寒凝血瘀，加重血管淤堵，养脉养心的运动，就好以周身微微发热，微微出汗为宜，切记过犹不及。第三，不看天气不可取。运动也结合季节温度，气温低的天气，血管容易收缩，更容易破裂；气温高的天气运动，气血燥热，血压波动，对身体对血管对心脏亦是没有好处的。第四，过劳过懒不可取。很多朋友要么很爱运动",
+"likes": 30,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMjE2ODczMg==&mid=2247487331&idx=1&sn=ead9be48101310a6870d199e26070eb1#rd",
+"published_at": "2026-09-13 18:45:00"
+},
+{
+"id": "DY82",
+"platform": "抖音",
+"title": "高度近视和散光，不想度数越戴越高，就选这种渐进多焦隐形#渐进多焦点镜片 #sweetcolor #隐",
+"desc": "",
+"likes": 6222,
+"comments": 67,
+"url": "https://www.iesdouyin.com/share/video/7684945970920399782",
+"published_at": "2026-09-13 17:15:17"
+},
+{
+"id": "GZH68",
+"platform": "公众号",
+"title": "眼睛出现这4种异常，当心是大病前兆！尤其第3种，很多人不当回事",
+"desc": "中医有道，健康有方！大家好，我是老刘！       都说人上了年纪，眼睛先老。看东西花了、眼干了、眼皮松了，大家都觉得正常，年纪大了都这样，  可老刘想跟你说，眼睛老不老不光是老花眼的事，有些眼睛的变化，不是老了，是身体出了大问题，     眼睛和五脏的关系    中医讲肝开窍于目，眼睛和肝的关系最",
+"likes": 35,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU1MjkzMTYzMA==&mid=2247498573&idx=1&sn=76699a6ea612ce964464b71cf8c3ac84#rd",
+"published_at": "2026-09-13 16:42:28"
+},
+{
+"id": "XHS50",
+"platform": "小红书",
+"title": "淡颜居家氛围感👓",
+"desc": "宅家随手拍都巨出片的神仙眼镜✨\n都是热巴代言的Fakeme眼镜，两种完全不同的高级质感(˃̵ᴗ˂̵)\n\t\n🤎 Rooney · 「课代表」\n经典玳瑁色真的自带贵气滤镜\n温润通透的板材纹理，质感直接拉满💫\n前框进口板材，耐汗耐腐蚀，日常久戴都不易磨损变形~\n镜腿板材包裹β钛材质，颜值与舒适度双在线\n鬼马精灵少女感拿捏到位！不挑脸型不挑风格\n修饰脸型超绝\n自带0°高清防蓝光镜片👓 视线通透清晰\n长时间看手机电脑，有效缓解眼疲劳！\n\t\n🤍 Daolin · 「蛋壳镜」\n温柔通透的月光银配色，干净又高级\n上脸自带冷白皮滤镜，清冷知性氛围感直接拉满\n全镜超轻β钛打造近乎零负重\n独立可调节鼻托太贴心！高低鼻梁都适配✅\n修饰脸型超给力，高智椭圆框轻松弱化脸部线条\n素颜也能稳稳撑住氛围感\n同款0°专业防蓝光镜片，精准抵御电子屏幕有害蓝光\n守护双眼舒适，宅家护眼刚需好物🌿\n\t\n💡两款都巨耐看，实物质感远超预期✨\n\t\n#淡颜#热巴同款 #Fakeme2026新品 #素颜眼镜 #防蓝光眼镜#Fakeme #ins风眼镜 #书呆子眼镜 #蛋壳镜 #氛围感#韩系眼镜 #高颜值眼镜",
+"likes": 7,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa64092000000001203f747",
+"published_at": "2026-09-13 16:13:32"
+},
+{
+"id": "XHS108",
+"platform": "小红书",
+"title": "绝了‼️秋冬氛围感直接拉满～显白栗子棕🌰",
+"desc": "方圆脸天菜！显白栗子棕🌰眼镜框秋冬坠爱！\n温柔知性复古冷茶棕圆框🤎\n通透茶棕色调柔和衬肤，黄皮素颜上脸显白不暗沉。圆润框型适配方圆脸，弱化颧骨与宽下颌，视觉收紧脸型。镜腿搭配镜腿链条设计，低调精致提升细节质感，镜架轻盈柔韧，久戴不压鼻，可配近视防蓝光镜片。通勤、校园素颜穿搭全能适配，书卷氛围感拉满。\n#复古冷茶棕眼镜 #方圆脸素颜神器 #显脸小通勤镜框 #素颜神器 #方圆脸显瘦眼镜 #通勤镜框 #高质感眼镜 #素颜神器 #男生眼镜  #显脸小眼镜 #菱形脸救星 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新      #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 4,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa62e86000000002503636c",
+"published_at": "2026-09-13 13:03:02"
+},
+{
+"id": "GZH163",
+"platform": "公众号",
+"title": "再见敬一丹，再见敬大姐（生平照片）",
+"desc": "9月13日，敬一丹女儿发布讣告：我最亲爱的妈妈，大家熟悉的敬大姐，今天走了。其表示：朋友们，我是敬一丹的女儿王尔晴。我最亲爱的妈妈，大家熟悉的敬大姐，今天走了。2026年6月，她在家乡哈尔滨突发急性脑出血，病情重，后转回北京住院治疗至今。两地医护救治及时，专业用心，陪伴家属渡过艰难时光。在此感谢每一位参与其中的医护人员。从夏至到白露，过去近三个月的时间里，我妈妈得到了很多祝福和关切。作为家人，我们也收到了四面八方的问询和关心。在此感谢每一位给予我们希望与力量的朋友!我珍惜她的真诚、善良、清醒、坚持，在字里行间、声音影像中。我记得她的洒脱、热情、可爱、独一无二，在我的心里。告别母亲、知己、朋友，我永远思念。敬一丹，1955年4月27日生于黑龙江省哈尔滨市，1976年考入北京广播学院（今中国传媒大学）播音主持专业。1988年，敬一丹入职中央电视台，担任记者、编辑、主持人，播音指导。先后主持《经济半小时》《一丹话题》《焦点访谈》《东方时空》《直播中国》《声音》《新闻调查》等王牌新闻栏目，以及《感动中国》等极具影响力的节目。此外，她还主持了香港回归、澳门回归等重大事件直播。获得第一届、第二届、",
+"likes": 342,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjAxNTIyMA==&mid=2658679707&idx=1&sn=6882518a7c80aad366a170175efa6184#rd",
+"published_at": "2026-09-13 11:43:43"
+},
+{
+"id": "XHS77",
+"platform": "小红书",
+"title": "吉林长春将争取德国光学巨头蔡司开展合作",
+"desc": "蔡司 Carl Zeiss：光电产业重点招商目标，多次来长春新区、长光系企业对接，考察光学检测、车载光学合作；暂无明确建厂投资计划，优先技术合作。\n\t\n#眼镜行业的内卷 #科技前沿与未来 #多焦点镜片 #近视防控 #专业验光配镜 #科技引领未来 #验光 #关爱视力健康 #护眼光无处不在 #重塑新视界",
+"likes": 13,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa61bd9000000002502d2bb",
+"published_at": "2026-09-13 11:43:21"
+},
+{
+"id": "GZH233",
+"platform": "公众号",
+"title": "5亿人点赞到刀郎《山歌万里》音乐会，不少歌迷失望离场，到底为什么？",
+"desc": "昨晚，万众期待的刀郎《山歌万里》线上音乐会圆满落幕。视频号直播间，我特意留意了，开播仅半小时，直播间观看人数破千万，最终5亿人点赞，热度一路狂飙，再度印证了刀郎经久不衰的国民号召力。               整场音乐会曲目编排胸怀山河，汇聚大江南北民间旋律。有经典《苏武牧羊》新编，陕西民歌《兰花",
+"likes": 170,
+"comments": 200,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxMjYzNDIyMA==&mid=2247484305&idx=1&sn=8b54891dc7c6a1d207d14e10e597047b#rd",
+"published_at": "2026-09-13 09:45:06"
+},
+{
+"id": "GZH94",
+"platform": "公众号",
+"title": "20年老舰进厂爆改：6个口48枚弹全拆，051C选择什么路",
+"desc": "大连造船厂，2026年初。\n工人攥着气割枪，把115沈阳舰上那6组俄制左轮垂发基座一块块切下来。\n6个发射口，48枚弹架，全拆。\n116石家庄舰还没进场，按照计划，它也要走同一条路。\n军迷圈为这事吵了半年多。\n焦点就一个，要不要牺牲垂发数量，硬塞一个直升机固定机库上舰。\n2005年，国产346相控阵",
+"likes": 106,
+"comments": 81,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyMjk3NTU2Mw==&mid=2247491622&idx=1&sn=2aa5542bdefbba97258aa057d69534e5#rd",
+"published_at": "2026-09-13 08:33:47"
+},
+{
+"id": "GZH171",
+"platform": "公众号",
+"title": "敬一丹去世，享年71岁",
+"desc": "今天早晨，敬一丹个人微信公众号发布讣告，敬一丹于今天去世，享年71岁。2026年6月，她在家乡哈尔滨突发急性脑出血，病情重，后转回北京住院治疗至今。据公开资料，敬一丹1955年4月27日生于黑龙江哈尔滨，央视资深新闻主持人、作家、播音指导，中国传媒大学播音系硕士，包揽前三届全国金话筒奖（国内主持人最高奖），多次获评央视优秀播音员主持人。央视早期经济王牌栏目《经济半小时》，她是栏目初代主持人，也是台内首位播音硕士出镜记者。《焦点访谈》《东方时空》是她最具代表性的栏目。她和白岩松搭档主持18届《感动中国》，温情庄重的主持风格成为年度人物盛典标志性记忆。",
+"likes": 246,
+"comments": 46,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyMjM4NjI2OQ==&mid=2249416291&idx=1&sn=7f93881358160d89a7fb7530416f25d3#rd",
+"published_at": "2026-09-13 08:06:04"
+},
+{
+"id": "GZH84",
+"platform": "公众号",
+"title": "亚运会倒计时10天，张本美和突然宣战：国乒这次真遇到了硬茬？",
+"desc": "点击上方蓝字 了解更多体育正能量                   早上好！这里是乐说，欢迎收看体育讯息    亚运会进入最后的十天倒计时🥳，很多球迷就已经开始提前推演女团赛场的走势，大家讨论的焦点，基本都围着莎莎、曼昱的对话打转。看多了比赛我才意识到，有一个很容易被低估😯，那就是张本美和。老",
+"likes": 6,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTU2MTMxMA==&mid=2247486326&idx=2&sn=8480c4fe7f2c1d74b7bb053257a0bcbc#rd",
+"published_at": "2026-09-13 06:20:00"
+},
+{
+"id": "XHS65",
+"platform": "小红书",
+"title": "显脸小神器！方圆脸天菜冷茶棕圆框眼镜",
+"desc": "想显脸小又怕眼镜显老？宝子们！方圆脸的减龄本命眼镜终于被我挖到了！这副冷茶棕超轻圆框眼镜，自带元气少女感，两侧小翅膀设计太戳我了，素颜戴也能嫩回18岁✨\n▫️ 方圆脸修容级框型，搭配空气刘海一键显脸小又减龄\n圆润的框型完美柔化颧骨突出和下颌线硬朗的问题，视觉上脸直接小一圈，自带原生美颜滤镜！两侧的小翅膀设计更是点睛之笔，不仅修饰脸型，还自带俏皮元气感，完全不会显老气，早八党随便套件卫衣都元气满满！\n▫️ 冷茶棕yyds，温柔显白不挑皮\n低饱和冷茶棕调真的太绝了！清透又高级，不偏黄不偏红，黄皮、白皮都能轻松驾驭，自带温柔慵懒的松弛感。配毛衣、卫衣、衬衫都超有氛围感，咖啡馆随拍直接出片，日常通勤、上学都能戴！\n▫️ 超轻材质，久戴零负担\n整副眼镜采用超轻材质，轻到离谱！戴一整天从早八通勤到下午茶，舒服到忘记它的存在，敏感鼻和长时间办公党直接狂喜！\n▫️ 可配近视度数，实用性拉满\n支持0-1000度近视/散光配镜，可搭配防蓝光镜片，缓解眼疲劳，长时间办公、刷手机都能戴，近视党也能轻松拥有高颜值减龄眼镜！\n这副冷茶棕小翅膀眼镜，素颜党、早八党、学生党闭眼冲！\n#冷茶棕眼镜 #方圆脸救星 #显脸",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa5848e000000001203585c",
+"published_at": "2026-09-13 00:57:50"
+},
+{
+"id": "XHS60",
+"platform": "小红书",
+"title": "早八党防蓝光战镜！豹纹猫眼眼镜框🐆封神",
+"desc": "这款豹纹猫眼眼镜采用防蓝光设计，早八党长时间佩戴也不累眼！过年不打烊🧨豹纹猫眼镜框🐆方圆脸天菜\n方圆脸给我冲！过年战镜终于找到了！\n柔化下颌线一绝！琥珀色玳瑁猫眼镜框焊脸上\n方圆脸&近视党姐妹集合！这副玳瑁金链猫眼眼镜真的可以闭眼冲，颜值与实用双在线～\n✅颜值天花板\n打破对玳瑁眼镜的刻板印象，这款圆润猫眼镜框+金链拼接的设计，既有复古氛围感，又带点精致小性感，不挑肤色，黄皮戴也显白，玳瑁纹的色调很高级，完全不会显老气～\n✅显脸小+适配度拉满\n柔和自然微猫眼框型能完美包裹脸部轮廓，柔化方圆脸的硬朗线条，视觉上脸直接小一圈；金链镜腿的设计还能修饰脸部比例，让五官更立体，不管是长发还是短发，都能轻松驾驭～\n✅佩戴体验满分\n超轻材质+防蓝光镜片加持，告别厚重压鼻和眼疲劳烦恼，长时间佩戴也舒适；近视度数在400度左右的姐妹，配1.61折射率镜片，侧面都不怎么出框！ps瞳距小于55的不建议配了哦~搭配玳瑁框型，颜值直接拉满～属于“戴上就不想摘”的宝藏款了！#新春市集 #小红书新春市集 #清冷初恋感 #防蓝光眼镜 #男生眼镜 #宝克利眼镜 眼镜 #拽酷穿搭 #素颜神器 #眼镜推荐#1年1度购物狂欢 ",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa58489000000001200383a",
+"published_at": "2026-09-13 00:57:45"
+},
+{
+"id": "GZH225",
+"platform": "公众号",
+"title": "任泽平博士入选耶鲁创新学者",
+"desc": "读万卷书，行万里路",
+"likes": 91,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg3NzYwMzU1MQ==&mid=2247591015&idx=2&sn=ea5edcd4a011824dfa85f13d195cbaa4#rd",
+"published_at": "2026-09-13 00:00:00"
+},
+{
+"id": "XHS9",
+"platform": "小红书",
+"title": "透茶色老花镜，光一照像块清透的茶冻🍵",
+"desc": "浅棕茶色的料子是透明的，阳光底下能看见淡淡的光晕。\n\t\n像把泡开的清茶冻进框里，拿在手里特别清爽干净～✨\n\t\n升级高清防蓝光镜片，可配：近视、老花、变色镜片等✅\n#老花镜 #老花镜推荐 #透茶色眼镜 #猫眼眼镜框 #老花眼镜 #时尚老花镜 #老花眼镜女 #防蓝光老花镜 #显年轻老花镜 #高颜值老花镜",
+"likes": 0,
+"comments": 12,
+"url": "https://www.xiaohongshu.com/explore/6aa56c0d00000000120352e2",
+"published_at": "2026-09-12 23:13:17"
+},
+{
+"id": "XHS112",
+"platform": "小红书",
+"title": "别再选黑框！冷茶棕👓才是秋冬氛围感密码🍂",
+"desc": "秋冬很适配的冷茶棕镜框，色调偏清冷的棕调，不发黄，黄皮上脸很衬肤色。\n\t\n圆润的框型，柔和修饰脸部线条，方圆脸佩戴也很友好。\n自重比较轻巧，日常久戴，鼻梁不会有明显压迫感。\n\t\n素颜、通勤都能hold住，自带淡淡的书卷氛围感，搭配毛衣氛围感直接出来。\n可配近视镜片，低调耐看，日常出门佩戴很省心。\n\t\n#冷茶棕眼镜#素颜镜框#方圆脸眼镜#秋冬眼镜#近视眼镜#氛围感镜框# #夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 1,
+"comments": 90,
+"url": "https://www.xiaohongshu.com/explore/6aa5674200000000260164fa",
+"published_at": "2026-09-12 23:05:00"
+},
+{
+"id": "GZH232",
+"platform": "公众号",
+"title": "刀郎这一晚，20条把人看破防的评论",
+"desc": "9月12日晚，刀郎《山歌万里》线上音乐会，1216万人看过、点赞4.92亿。他全程未唱，把C位让给了唢呐、二胡和一群年轻人。整理了他直播间的20条评论——从\"众望所归\"到那句\"刀郎唱了吗\"：有人守着等偶像开口，有人看懂了他在给年轻人让路。你被哪一条戳到了？#刀郎 #山歌万里 #刀郎线上音乐会 #神评论",
+"likes": 91,
+"comments": 34,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MDIwNzQ2OA==&mid=2652027506&idx=1&sn=544a70adaced9524aea94238dd9b10c9#rd",
+"published_at": "2026-09-12 22:42:30"
+},
+{
+"id": "GZH192",
+"platform": "公众号",
+"title": "27届国网、南网提前批校招最新行程！各省宣讲时间持续更新！",
+"desc": "随着秋招逐渐进入高峰期，国家电网、南方电网2027届提前批校园招聘也陆续开始有了新消息。对于准备参加国网、南网提前批的同学来说，这个阶段除了要及时关注各省公司、直属单位的宣讲行程，更要提前了解不同单位的招聘节奏、竞争难度以及具体招聘条件。                             什么",
+"likes": 63,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk4ODc5MTg1Mw==&mid=2247678021&idx=1&sn=830472a3c5f66d08dde0f7aea9589d2d#rd",
+"published_at": "2026-09-12 22:31:25"
+},
+{
+"id": "XHS12",
+"platform": "小红书",
+"title": "方中带圆的多边形！紫色老花镜修饰脸型",
+"desc": "框型不是纯方也不是纯圆，是磨圆了角的多边形，很柔和。\n\t\n方脸戴显得柔和，圆脸戴又有点轮廓感，不挑人～😊\n\t\n升级高清防蓝光镜片，可配：近视、老花、变色镜片等👓\n#老花镜 #老花眼镜 #老花镜推荐 #老花眼镜女 #防蓝光老花镜 #时尚老花镜 #显年轻老花镜 #高颜值老花镜 #老花镜远近两用 #老花眼",
+"likes": 0,
+"comments": 3,
+"url": "https://www.xiaohongshu.com/explore/6aa55bb1000000002700a5bd",
+"published_at": "2026-09-12 22:03:29"
+},
+{
+"id": "XHS20",
+"platform": "小红书",
+"title": "张婧仪笑的好甜！还有老花镜never哈哈哈哈哈",
+"desc": "怎么回事never戴上墨镜那瞬间感觉被硬控住了[笑哭R][笑哭R]可爱可爱可爱！\n#张婧仪 #狗狗日常 #明星不止AB面 #别管了脸笑烂了 #名场面 #好视频扶持计划 #下饭综艺推荐 #小狗把情绪价值全部拉满 #李佳琦直播",
+"likes": 41,
+"comments": 1,
+"url": "https://www.xiaohongshu.com/explore/6aa546700000000027008bb3",
+"published_at": "2026-09-12 20:32:48"
+},
+{
+"id": "XHS14",
+"platform": "小红书",
+"title": "奈娃带墨镜像带了老花镜哈哈",
+"desc": "#李佳琦 #李佳琦官方社群 #李佳琦直播间 #张婧仪",
+"likes": 27,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa53ac60000000012034a56",
+"published_at": "2026-09-12 19:43:02"
+},
+{
+"id": "XHS17",
+"platform": "小红书",
+"title": "never戴墨镜带出了老花镜的感觉哈哈哈哈",
+"desc": "never戴墨镜带出了老花镜的感觉哈哈哈哈\n哈哈哈哈我要笑死了，不愧是我们老李头的狗狗\nnever在张婧仪怀里好乖\n#李佳琦官方社群 #所有女生会员服务中心#张婧仪 #never #奈娃",
+"likes": 20,
+"comments": 2,
+"url": "https://www.xiaohongshu.com/explore/6aa53ab000000000110387dd",
+"published_at": "2026-09-12 19:42:40"
+},
+{
+"id": "GZH88",
+"platform": "公众号",
+"title": "男同志是不是必须要干到63岁才能退休？",
+"desc": "    男性难道非要熬到63岁才能退休？普通人四十多岁提前退休，真的一点机会都没有吗？      我专门对照湖北现行社保和退休新规查清楚了，先说大实话：普通男性职工，想在40多岁正式办退休、领国家养老金，基本没有可能。2025年起实施的渐进式延迟退休政策，明确男职工法定退休年龄逐步延后至63岁，这是",
+"likes": 12,
+"comments": 28,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MTc4NTY1Nw==&mid=2657144171&idx=1&sn=e39ab3669bb98c5187dde74e67f2545d#rd",
+"published_at": "2026-09-12 19:22:53"
+},
+{
+"id": "DY45",
+"platform": "抖音",
+"title": "#看一遍笑一遍 #原创视频 哈哈，老花眼的婆婆",
+"desc": "",
+"likes": 47121,
+"comments": 1261,
+"url": "https://www.iesdouyin.com/share/video/7684592936919362161",
+"published_at": "2026-09-12 18:25:20"
+},
+{
+"id": "XHS43",
+"platform": "小红书",
+"title": "超高度远视眼合并白内障，手术要如何做？",
+"desc": "#关爱眼睛健康 #远视 #白内障 #上海五官科医院眼科杨晋 #老花眼 #爱眼护眼",
+"likes": 16,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa3cc72000000002b011a10",
+"published_at": "2026-09-12 17:01:08"
+},
+{
+"id": "XHS116",
+"platform": "小红书",
+"title": "我的早八素颜搭子！这副眼镜也太温柔了吧！",
+"desc": "终于选到人生眼镜啦！冷棕调🤎秋冬的时髦感\n温柔氛围感感~显白奶咖棕🤎素颜眼镜拿捏方圆脸！\n椭圆框镜框真的巨显乖了‼️\n小翅膀🪽搭配复古精致有腔调\n修饰五官，柔和面部线条，让面部看起来更精致，遮颧骨显脸小！日常学院风穿搭好物[赞R][赞R][赞R]\n减龄又不失格调，有种贵气的娇态[偷笑R]\n重点是非常轻，不压鼻梁，高度数的宝宝也完全无压力💫减龄又气质✨\n高度数的姐妹看过来啦‼️配镜，配变色 配防蓝光都🉑#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 2,
+"comments": 90,
+"url": "https://www.xiaohongshu.com/explore/6aa4fc410000000026015e49",
+"published_at": "2026-09-12 15:16:17"
+},
+{
+"id": "DY21",
+"platform": "抖音",
+"title": "戴老花镜＋大户外，儿子三周退0.04和0.05，女儿三周退0.02，女儿有储备，主要是大户外＋打球多",
+"desc": "",
+"likes": 1781,
+"comments": 702,
+"url": "https://www.iesdouyin.com/share/video/7684543493297801664",
+"published_at": "2026-09-12 15:13:30"
+},
+{
+"id": "DY23",
+"platform": "抖音",
+"title": "#抖音记录个人爱好 #带着老花镜的阿姨 @抖音小助手",
+"desc": "",
+"likes": 1385,
+"comments": 61,
+"url": "https://www.iesdouyin.com/share/video/7684521118280211621",
+"published_at": "2026-09-12 13:46:38"
+},
+{
+"id": "DY25",
+"platform": "抖音",
+"title": "婆婆退休那天，我陪她去银行查账。她站在ATM机前，戴着老花镜，手指在屏幕上戳了好几下才点对余额查询。",
+"desc": "",
+"likes": 1202,
+"comments": 90,
+"url": "https://www.iesdouyin.com/share/video/7684497043977277312",
+"published_at": "2026-09-12 12:13:13"
+},
+{
+"id": "GZH13",
+"platform": "公众号",
+"title": "罗永浩夸的折叠动画，Three.js 实测一下",
+"desc": "苹果刚发完 iPhone Duo，折叠动画很快就被网友拿出来研究了。罗永浩连用七个「抄的」吐槽这台机器时，唯一正面评价的是开合动画：原创，而且效果好看。巧的是，网上已经有一个 Three.js 项目，专门研究的就是这件事。它不是苹果官方项目，也不是 iPhone Duo 的源码，而是一份独立的折叠动画研究。真正有意思的地方，其实不是把手机模型折起来。而是：手机在折，屏幕里的 UI 怎么办？如果只是把一张图片贴在屏幕模型上，手机一折，文字、图标和界面也会跟着几何一起“拧”过去，视觉上很容易穿帮。这个项目的处理方式更细：一边让机身围绕铰链旋转，一边在 Shader 里重新计算屏幕内容的投影。内屏按照展开状态重新采样 UI。外屏则根据折叠角度计算铰链侧的位置，让内容始终从铰链一侧开始对齐。折叠过程中，再加入渐进式模糊和变暗。源码里甚至直接写死了：最大模糊半径 72 个源像素，5×5 采样核，变暗强度最高为过渡强度的 2 倍。铰链附近的柔性屏幕也没有简单做成一条硬折线，而是通过三次 Hermite 插值，让屏幕在弯折区域连续过渡。所以你看到的并不是：“一个 3D 手机模型转了个角度。”而是：几",
+"likes": 52,
+"comments": 54,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIzOTkxMTI2MA==&mid=2247495099&idx=1&sn=00c94de6cf21d6c9e9bede508981bc05#rd",
+"published_at": "2026-09-12 12:00:00"
+},
+{
+"id": "XHS36",
+"platform": "小红书",
+"title": "老花眼穿针方法分享",
+"desc": "#针线活 #穿针技巧 #实用小技巧",
+"likes": 25,
+"comments": 1,
+"url": "https://www.xiaohongshu.com/explore/6aa4ca09000000002901a926",
+"published_at": "2026-09-12 11:42:01"
+},
+{
+"id": "XHS18",
+"platform": "小红书",
+"title": "姐姐就是老眼昏花看不清渣男‼️老花镜配上",
+"desc": "╯^╰  这就把眼镜配上\n\t\n#厦门配镜 #厦门拍照 #性感是一种感觉 #御姐 #厦门眼镜 #厦门 #时尚潮流眼镜",
+"likes": 3,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa499b8000000002a027fbb",
+"published_at": "2026-09-12 10:15:03"
+},
+{
+"id": "DY87",
+"platform": "抖音",
+"title": "渐进多焦技术终于做进隐形眼镜里了，我们眼睛也是吃上细糠了#sweetcolor #隐形眼镜 #渐进多",
+"desc": "",
+"likes": 3199,
+"comments": 42,
+"url": "https://www.iesdouyin.com/share/video/7684465587153685794",
+"published_at": "2026-09-12 10:11:17"
+},
+{
+"id": "XHS11",
+"platform": "小红书",
+"title": "圆框老花镜不挑脸！豹纹这副谁戴都合适",
+"desc": "圆框比方框柔和，不挑脸型，圆脸方脸戴上都不突兀。\n\t\n豹纹深浅交织，把视线往中间收，脸看着还小了一圈～😊\n\t\n渐进多焦点镜片，看远看近一副搞定，告别频繁摘戴👍\n#老花镜 #老花镜推荐 #老花眼镜 #老花眼镜女 #老花镜远近两用 #远近一体老花镜 #看远看近老花镜 #老花镜女时尚洋气 #老花镜推荐送妈妈 #高颜值老花镜",
+"likes": 0,
+"comments": 14,
+"url": "https://www.xiaohongshu.com/explore/6aa4b3db0000000028037778",
+"published_at": "2026-09-12 10:07:23"
+},
+{
+"id": "DY56",
+"platform": "抖音",
+"title": "当家里有个老花眼的老妈时😂#搞笑视频 #神反转 #农村生活 #内容过于真实",
+"desc": "",
+"likes": 8313,
+"comments": 149,
+"url": "https://www.iesdouyin.com/share/video/7684437727282595569",
+"published_at": "2026-09-12 08:23:02"
+},
+{
+"id": "GZH229",
+"platform": "公众号",
+"title": "常按脚，身体好",
+"desc": "读万卷书，行万里路不如昨天一天的感受5点出发，21：32到家去程电瓶车回程电瓶车-公交-地铁路上遇到：两位好人5位交警长长长长的拥堵丢掉垃圾收拾好心/:heart情",
+"likes": 278,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkyODk1NDAxNA==&mid=2247485967&idx=1&sn=ffea6f3b4b8545e0a72e59fc1dcbda60#rd",
+"published_at": "2026-09-12 06:46:03"
+},
+{
+"id": "GZH60",
+"platform": "公众号",
+"title": "治疗老花眼的神药在海南开出第一张药方，全球治疗老花眼，露出第一道锋刃—— 剥开迷雾，看清全球老花治疗的真相与未来",
+"desc": "各位东单九号院的粉丝，大家早上好。这几天，我很多朋友咨询我一款神药水：“听说海南能买到治老花的眼药水了，是真的吗？",
+"likes": 129,
+"comments": 14,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg2Njc4ODg5Mg==&mid=2247497408&idx=1&sn=61d15459f634be4fdf2fa45a03b99c10#rd",
+"published_at": "2026-09-12 06:15:00"
+},
+{
+"id": "DY111",
+"platform": "抖音",
+"title": "#天津配眼镜#天津配镜#天津眼镜店#天津一网达镜国际眼镜仓#天津眼镜工厂店，天津眼镜仓储店，天津配近",
+"desc": "",
+"likes": 1130,
+"comments": 71,
+"url": "https://www.iesdouyin.com/share/video/7684346189822573669",
+"published_at": "2026-09-12 02:27:50"
+},
+{
+"id": "XHS23",
+"platform": "小红书",
+"title": "沉浸阅读自由，告别老花镜",
+"desc": "让父母也能轻松进入沉浸阅读状态。\n👓我们是否时常看到父母眯着眼睛，\n依靠着架在鼻梁上的老花镜来阅读？\n“适老化”产品的缺失，\n为老年群体的生活造成了一定的困扰。\n但出版行业从未放弃老年人，\n正如我们从未停止爱他们。\n💥所以我们特别推出——\n《读者》回忆典藏版。\n📚以温暖放大的文字，重现经典内容，\n让父母重新享受沉浸阅读的宁静与喜悦。\n有些书，滋养灵魂；\n有些字，照亮岁月。\n四卷书，是回溯、是陪伴，\n也是一次跨越时光的情感共鸣。\nVOL.1——人文卷🏘️\n重走胡同巷陌，\n触摸城市肌理。\nVOL.2——哲理卷🧘\n对话古今智者，\n感悟生命真谛。\nVOL.3——名篇卷✍️\n名家荟萃，\n岁月华章。\nVOL.4——亲情卷💌\n温暖信札，\n亲情天长。\n📖大字舒适排版，减轻视觉压力，\n让父母告别老花镜，\n品味一场回归心灵原点的旅行，\n让他们真正看得清、读得进、品得懂。\n🎁愿这一份精心编排的礼物，\n成为他们午后窗台的一缕光，\n夜晚灯下的一句问候。\n阅读不再费力，岁月依旧深情。\n送给每一位爸爸妈妈，\n也送给每一位值得温柔以待的长辈。\n✨《读者》大字典藏版——\n让阅读，从容如初。\n#读者 #文学 #大字版 #",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa42d19000000001103114e",
+"published_at": "2026-09-12 00:32:25"
+},
+{
+"id": "XHS27",
+"platform": "小红书",
+"title": "👋大字版阅读自由！告别老花镜",
+"desc": "父母读报总眯眼？试试专为他们设计的大字版《读者》回忆典藏版！\n👓我们是否时常看到父母眯着眼睛，\n依靠着架在鼻梁上的老花镜来阅读？\n“适老化”产品的缺失，\n为老年群体的生活造成了一定的困扰。\n但出版行业从未放弃老年人，\n正如我们从未停止爱他们。\n💥所以我们特别推出——\n《读者》回忆典藏版。\n📚以温暖放大的文字，重现经典内容，\n让父母重新享受沉浸阅读的宁静与喜悦。\n有些书，滋养灵魂；\n有些字，照亮岁月。\n四卷书，是回溯、是陪伴，\n也是一次跨越时光的情感共鸣。\nVOL.1——人文卷🏘️\n重走胡同巷陌，\n触摸城市肌理。\nVOL.2——哲理卷🧘\n对话古今智者，\n感悟生命真谛。\nVOL.3——名篇卷✍️\n名家荟萃，\n岁月华章。\nVOL.4——亲情卷💌\n温暖信札，\n亲情天长。\n📖大字版设计看得清、读得进、品得懂，专为老年人阅读需求打造，\n让父母告别老花镜，\n品味一场回归心灵原点的旅行，\n让他们真正看得清、读得进、品得懂。\n🎁愿这一份精心编排的礼物，\n成为他们午后窗台的一缕光，\n夜晚灯下的一句问候。\n阅读不再费力，岁月依旧深情。\n送给每一位爸爸妈妈，\n也送给每一位值得温柔以待的长辈。\n✨《读者》大字典",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa42d18000000000b0358b9",
+"published_at": "2026-09-12 00:32:24"
+},
+{
+"id": "XHS19",
+"platform": "小红书",
+"title": "姐就是老眼昏花看不清渣男，赶紧老花镜配上",
+"desc": "╯^╰  这就把眼镜配上\n#厦门配镜 #厦门拍照 #性感是一种感觉 #御姐 #厦门眼镜 #厦门 #时尚潮流眼镜 #眼镜带来的高智感",
+"likes": 130,
+"comments": 12,
+"url": "https://www.xiaohongshu.com/explore/6aa428f3000000002b000236",
+"published_at": "2026-09-12 00:14:43"
+},
+{
+"id": "XHS99",
+"platform": "小红书",
+"title": "肉脸淡颜闭眼入，微猫眼框视觉缩小脸部轮廓",
+"desc": "豹纹猫眼眼镜｜方圆脸闭眼入\n上扬猫眼线柔和修饰高颧骨、宽脸\n豹纹纹理增加复古感，告别单调基础框\n素颜上脸立体提气色，复古酷感刚刚好\n通勤休闲都能搭，秋冬氛围感神器\n可定制近视、防蓝光镜片，通勤、约会、探店拍照适配各种穿搭，低调耐看的知性氛围感单品。\n#玳瑁镜框 #复古眼镜 #素颜氛围感眼镜 #通勤配镜 #显脸小镜框 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新    #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 9,
+"comments": 28,
+"url": "https://www.xiaohongshu.com/explore/6aa4136300000000250350c1",
+"published_at": "2026-09-11 22:42:43"
+},
+{
+"id": "XHS107",
+"platform": "小红书",
+"title": "终于选到人生眼镜啦！冷棕调🤎秋冬的时髦感",
+"desc": "温柔氛围感感~显白奶咖棕🤎素颜眼镜拿捏方圆脸！\n椭圆框镜框真的巨显乖了‼️\n小翅膀🪽搭配复古精致有腔调\n修饰五官，柔和面部线条，让面部看起来更精致，遮颧骨显脸小！日常学院风穿搭好物[赞R][赞R][赞R]\n减龄又不失格调，有种贵气的娇态[偷笑R]\n重点是非常轻，不压鼻梁，高度数的宝宝也完全无压力💫减龄又气质✨\n高度数的姐妹看过来啦‼️配镜，配变色 配防蓝光都🉑#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 3,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa4039500000000110334bd",
+"published_at": "2026-09-11 21:54:00"
+},
+{
+"id": "XHS109",
+"platform": "小红书",
+"title": "方圆脸天菜！素颜显白冷茶棕🧸焊脸上了谁懂",
+"desc": "温柔氛围感感~显白奶咖棕🤎素颜眼镜拿捏方圆脸！\n椭圆框镜框真的巨显乖了‼️\n小翅膀🪽搭配复古精致有腔调\n修饰五官，柔和面部线条，让面部看起来更精致，遮颧骨显脸小！日常学院风穿搭好物[赞R][赞R][赞R]\n减龄又不失格调，有种贵气的娇态[偷笑R]\n重点是非常轻，不压鼻梁，高度数的宝宝也完全无压力💫减龄又气质✨\n高度数的姐妹看过来啦‼️配镜，配变色 配防蓝光都🉑#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 3,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa400f800000000110324ef",
+"published_at": "2026-09-11 21:24:08"
+},
+{
+"id": "GZH263",
+"platform": "公众号",
+"title": "从“到店选”到“在线配”，拼多多正改写眼镜这门老生意",
+"desc": "记者丨赵晓晨    编辑丨李振 丁海利\n眼镜是一门跨越七百年的老生意。元明之际传入中国时，它还有个雅称叫“叆叇”。二十世纪以来，成熟的验光与镜片加工技术，加上铺满城市商圈的连锁门店，把眼镜从稀罕物变成了寻常日用品。但线下门店解决了配镜的可得性，也让这门生意长期受困于款式有限、比价困难、退换不便的痛点",
+"likes": 250,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjI3Njc0NTk4MQ==&mid=2650641246&idx=1&sn=a0658648302f10e1adc4bd2311ae8190#rd",
+"published_at": "2026-09-11 20:42:23"
+},
+{
+"id": "GZH205",
+"platform": "公众号",
+"title": "为兵服务万里行丨“英雄路•新长征”文化为兵服务万里行活动正式启动",
+"desc": "      9月11日  “英雄路·新长征”\n文化为兵服务万里行活动  出征动员仪式  在武警江西总队赣州支队举行  忠诚卫士文艺小分队\n沿着长征足迹再出发  用振奋人心的文化盛宴  拉开活动帷幕\n此次活动由武警部队政治工作部  中国融通集团  中央广播电视总台军事节目中心  中影集团联手组织  以",
+"likes": 169,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIyMDEwMTYwNQ==&mid=2651824530&idx=1&sn=d4fda76145abd56002537be71460701a#rd",
+"published_at": "2026-09-11 20:42:00"
+},
+{
+"id": "GZH24",
+"platform": "公众号",
+"title": "路转粉｜石化大道改造进度条已刷新",
+"desc": "石化大道改造，已经一个多月了变化正在一点点发生那些曾经的小坑洼正在被抚平像一位老朋友，渐渐换上更精神的新装新的面貌已经越来越清晰再等等，等它焕新舒展的那天路更平，灯更暖来日方长，我们继续在这条路上不急不赶✨@梨城市民不妨一起用镜头为梨城存档✨你的记录将成为石化大道30年记忆与新生历程的珍贵档案图1：🚜石化大道道路改造有序推进图2：👷石化大道迎宾路至民生路同步推进各类综合管沟开挖作业图3：🚧石化大道民生路至机场路各类地下管线配套建设有序推进图4：✅石化大道机场路（杜鹃河）已完成沟槽开挖作业图5：✅石化大道民生路至机场路大型管道已铺设到位图6：👷搬运电力保护管道图7：🚜开展清运作业图8：👷调试施工设备图9：👷开展管道安装作业图10：👷开展管道基底压实作业本期图片来源：李洁 努尔扎提江·艾热提 阿依乔丽潘·艾买提 田青青 古丽米热·依明 迪丽努尔·艾买尔—————————️📷️关于「“路转粉”改造计划」小编将从8月7日至11月20日每周五发布所收集到的「随手拍」上班路上，下班途中步履所见皆是变化热火朝天的施工现场路面的更新细节、沿线的点滴变化......凡是你留意的瞬间，都可以记录下来三个月",
+"likes": 43,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwOTI3MTE1Mw==&mid=2652418946&idx=1&sn=0a3ae50f8ea4cad9a34685da779def72#rd",
+"published_at": "2026-09-11 20:04:00"
+},
+{
+"id": "XHS45",
+"platform": "小红书",
+"title": "𝒹𝓋.淡人逛街日记👓换新眼镜看新世界🌍",
+"desc": "我在重庆配新眼镜的一天✌️\n#vlog #dv #淡人vlog#千叶眼镜#千叶眼镜高端门店#千叶眼镜配眼镜#重庆千叶眼镜#配镜到千叶#千叶眼镜防疲劳 #防疲劳镜片配镜",
+"likes": 379,
+"comments": 31,
+"url": "https://www.xiaohongshu.com/explore/6aa3be32000000000d025942",
+"published_at": "2026-09-11 20:00:39"
+},
+{
+"id": "XHS58",
+"platform": "小红书",
+"title": "被这副透灰猫眼眼镜框的清冷松弛感硬控！",
+"desc": "宝子们！挖到一副能焊在脸上的透灰猫眼眼镜，清冷千金感直接拉满～\n▫️方圆脸修容级框型\n微微上扬的猫眼弧度太懂方圆脸了！上脸自动柔化脸部棱角，收窄下颌线，视觉上脸小一圈，自带清冷又松弛的贵气感，素颜戴也能撑起全脸气场！\n▫️细节质感拉满\n透灰色镜框清透不沉闷，在暖光下泛着高级光泽，金属链条镜腿精致又不浮夸，完全没有廉价感。配针织衫、小香风外套、西装都适配，日常通勤、约会、探店拍照都能hold住～\n▫️佩戴感绝了\n金属细腿超轻，柔韧亲肤，戴了一整天上班+逛街，久戴无负担，防蓝光镜片还能缓解眼疲劳，对近视党和早八党太友好了！\n现在这副已经成为我的出门必备，随手一拍都是清冷千金既视感，喜欢高级感的姐妹直接冲！\n#透灰猫眼眼镜 #清冷感眼镜 #千金风眼镜 #方圆脸救星 #早八素颜神器 #防蓝光眼镜 #清冷初恋感 #防蓝光眼镜 #男生眼镜 #宝克利眼镜 眼镜 #拽酷穿搭 #素颜神器 #眼镜推荐#1年1度购物狂欢 #新年味 #舒服过年 #内外兼修 #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa3e681000000002601a85a",
+"published_at": "2026-09-11 19:31:13"
+},
+{
+"id": "XHS110",
+"platform": "小红书",
+"title": "秋冬氛围感豹纹猫眼👓太适合方圆脸了谁懂！",
+"desc": "被10W多人种草的🐆复古豹纹猫眼镜框👓\n秋冬氛围感💫💫💫\n经典玳瑁拼金猫眼镜框，满满的韩系复古感🤎\n微上扬猫眼轮廓，柔和不凌厉，修饰脸部轮廓。\n玳瑁花纹温润显贵，对黄皮很友好。\n镜架轻巧，久戴鼻梁没有负担。\n素颜淡妆都适配，通勤上学都出彩。\n可配近视、散光、防蓝光镜片，复古耐看不容易过时。\n\t\n#玳瑁猫眼镜框#韩系眼镜#复古镜框#方圆脸眼镜#素颜近视镜框#女士配镜#氛围感眼镜 。#夏日穿搭秀  #小红书市集秋上新   #眼镜#眼镜框推荐女#眼镜框#方圆脸眼镜框推荐#眼镜框推荐#镜框#眼镜推荐#素颜眼镜#方圆脸眼镜框#半框眼镜 #高智感眼镜#防蓝光眼镜#镜框怎么选#眼镜框怎么选男生#变色近视眼镜#老钱风墨镜#线上配眼镜#小框眼镜#眼镜女#钛架眼镜框#茶色眼镜框#大框眼镜#男士眼镜#黑框眼镜穿搭#墨镜女#半框眼镜男#大脸眼镜框#黑色眼镜#黑框眼镜女#方形眼镜框#tr90眼镜框#椭圆眼镜框#金丝框眼镜女#女士眼镜#猫眼眼镜 #宝克利眼镜 #小脸眼镜#浅色眼镜框#配近视眼镜#眼镜显脸小",
+"likes": 2,
+"comments": 28,
+"url": "https://www.xiaohongshu.com/explore/6aa3e5cd0000000026014751",
+"published_at": "2026-09-11 19:28:13"
+},
+{
+"id": "XHS106",
+"platform": "小红书",
+"title": "配到人生眼镜了！复古摩卡棕🌰方圆脸本命",
+"desc": "方圆脸天菜！显白栗子棕🌰眼镜框秋冬坠爱！\n温柔知性复古冷茶棕圆框🤎\n通透茶棕色调柔和衬肤，黄皮素颜上脸显白不暗沉。圆润框型适配方圆脸，弱化颧骨与宽下颌，视觉收紧脸型。镜腿搭配镜腿链条设计，低调精致提升细节质感，镜架轻盈柔韧，久戴不压鼻，可配近视防蓝光镜片。通勤、校园素颜穿搭全能适配，书卷氛围感拉满。\n#复古冷茶棕眼镜 #方圆脸素颜神器 #显脸小通勤镜框 #素颜神器 #方圆脸显瘦眼镜 #通勤镜框 #高质感眼镜 #素颜神器 #男生眼镜  #显脸小眼镜 #菱形脸救星 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新      #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 0,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa3e12f0000000025035f2f",
+"published_at": "2026-09-11 19:08:31"
+},
+{
+"id": "GZH215",
+"platform": "公众号",
+"title": "“英雄路·新长征”文化为兵服务万里行活动在江西赣州举行",
+"desc": "9月11日  “英雄路·新长征”文化为兵服务  万里行活动出征动员仪式  在武警江西总队赣州支队举行  忠诚卫士文艺小分队沿着长征足迹再出发  用振奋人心的文化盛宴  拉开活动帷幕         此次活动由武警部队政治工作部及中影集团  中央广播电视总台军事节目中心  中国融通集团联手组织  以纪",
+"likes": 124,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU1ODc1NTg3NQ==&mid=2247771852&idx=1&sn=d0fa953d35c2a3c37bfe3472f1c1010c#rd",
+"published_at": "2026-09-11 18:23:08"
+},
+{
+"id": "GZH151",
+"platform": "公众号",
+"title": "【联动套餐购入赠送衣着】卡卡尼亚 | 镜中上校",
+"desc": "镜中上校                        The Gourmet Counselor\n*多焦点舞台*系列，卡卡尼亚全新联动衣着。       她尤其擅长招待那些会对着菜单说出“随便”的客人。\n衣 着 展 示                        Garment\n<衣着宣传折页>",
+"likes": 155,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkxNTIzODM1OQ==&mid=2247500875&idx=3&sn=4cfad077e5990c83dd76eecf2b0c11cf#rd",
+"published_at": "2026-09-11 18:00:00"
+},
+{
+"id": "XHS61",
+"platform": "小红书",
+"title": "1100多度！配伊藤1.74双非究竟能有多薄？",
+"desc": "高度近视的朋友\n今天老沙分享一副上千度绝美眼镜\n[看R]先看度数：\n右眼：-10.00近视/-1.00散光\n左眼：-9.50近视/-2.00散光\n双眼度数很高，同时还有比较高的散光度数\n联合光度都超了1000度以上\n[向右R]镜片选择的是伊藤1.74折射率的双面非球面镜片\n伊藤镜片是日本专注做高度近视的专业光学厂家\n[加一R]1.74高折射率+前后两面非球面设计\n比普通1.74单非更薄8%-10%左右\n做出来的眼镜，边缘更加平整，没有厚边的尴尬\n[加一R]镜片采用日本三井化学Mr-174的树脂原材料加工\n光学性能非常稳，膜层配的是防蓝光膜\n长时间面对电子屏幕，有害蓝光被挡在镜片外面\n眼睛没那么容易发涩、发酸，佩戴体验感好\n[加一R]关键价格也很实在\n是很多进口高端镜片的性价比选择\n[向右R]镜架选择的是老沙店里的钛架镜框\n片宽48、中梁21，镜框比较偏小\n再加上加厚的边缘\n高度近视做出来的眼镜\n视觉就会显得更加平整利落\n做出来的成品，看上图\n千度的近视，侧面看几乎见不到镜片厚度[哇R]\n高度近视想要配轻薄眼镜\n欢迎留下你的度数\n老沙给你推荐合适的配镜方案[派对R][派对R]\n[打卡R]",
+"likes": 3,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6aa2753a0000000028003d36",
+"published_at": "2026-09-11 17:30:35"
+},
+{
+"id": "XHS101",
+"platform": "小红书",
+"title": "被这副眼镜种草了！！！方圆脸闭眼冲！",
+"desc": "温柔知性复古冷茶棕圆框🤎\n通透茶棕色调柔和衬肤，黄皮素颜上脸显白不暗沉。圆润框型适配方圆脸，弱化颧骨与宽下颌，视觉收紧脸型。镜腿搭配镜腿链条设计，低调精致提升细节质感，镜架轻盈柔韧，久戴不压鼻，可配近视防蓝光镜片。通勤、校园素颜穿搭全能适配，书卷氛围感拉满。\n#复古冷茶棕眼镜 #方圆脸素颜神器 #显脸小通勤镜框 #素颜神器 #方圆脸显瘦眼镜 #通勤镜框 #高质感眼镜 #素颜神器 #男生眼镜  #显脸小眼镜 #菱形脸救星 #素颜眼镜 #金丝眼镜框 #好视频扶持计划  #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜  #老钱风眼镜  #眼镜推荐#墨镜推荐    #墨镜推荐女   #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜   #小红书市集秋上新      #显脸小眼镜框   #猫眼眼镜#太阳眼镜    、#镜框怎么选",
+"likes": 3,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6aa39ae7000000002601652f",
+"published_at": "2026-09-11 14:08:39"
+},
+{
+"id": "DY19",
+"platform": "抖音",
+"title": "白头发，皱纹，川字纹，法令纹，脸下垂，颈纹，焦虑，冒虚汗，这又喜提防蓝光老花镜一枚，妥妥的老年人了，",
+"desc": "",
+"likes": 2398,
+"comments": 261,
+"url": "https://www.iesdouyin.com/share/video/7684131584002600948",
+"published_at": "2026-09-11 12:35:04"
+},
+{
+"id": "GZH144",
+"platform": "公众号",
+"title": "当44岁范冰冰和44岁郭晶晶站在一起，我才懂了：什么叫，相由心生",
+"desc": "划到下方看视频！一张合影让44岁的范冰冰和郭晶晶再度成为热议焦点。范冰冰妆容精致、礼服华贵，举手投足间依然是娱乐圈顶级女星的排面；而几步之外的郭晶晶，简洁红裙、笑容清爽，周身散发着沉静笃定的气场。同样出生于1981年的两位女性，在镜头下呈现出的状态截然不同——一个光芒四射，一个从容舒展。很多网友看过",
+"likes": 173,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNzgzNjIxNA==&mid=2247483749&idx=1&sn=5baf1054fbd4bd06249cd323eb238790#rd",
+"published_at": "2026-09-11 12:00:00"
+},
+{
+"id": "GZH44",
+"platform": "公众号",
+"title": "内分泌科主任：糖尿病最危险信号，不是口渴",
+"desc": "夜里起两三回，脚底像踩棉花，吃完饭困得睁不开眼。这些不是累，是身体在递信。尿多是因为糖排不出去；饭照吃人却瘦了，是身体在拆脂肪供能。饭后总犯困、脑子发懵，血糖忽高忽低也会心慌手抖冒冷汗。眼睛一阵清楚一阵模糊，别急着换老花镜。手脚发麻、小伤口拖十天半月不好，这都是血糖偏高惹的祸。真要查，就查空腹血糖、餐后两小时和糖化血红蛋白。家里测一次定不了论，记好时间和吃了啥才管用。已经确诊的，千万别听偏方擅自停药。苦瓜玉米须山药各有各的吃法，不能顶替降糖药。想喝汤就做个番茄菌菇豆腐汤，主食配半拳头杂粮饭就行。",
+"likes": 13,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3MzczODIzNg==&mid=2657147260&idx=1&sn=0815020a18c28b8d3c0f7edd913f01fc#rd",
+"published_at": "2026-09-11 11:41:39"
+},
+{
+"id": "GZH2",
+"platform": "公众号",
+"title": "交房3年，西安一小区地库渗水严重，物业：渗水因地下水位上涨",
+"desc": "近日，西安市长安区翠景台小区一期业主打进华商报新闻热线称，小区交房才3年，负二层地下车库多处渗水积水，一到下雨情况就会加剧，多次处理效果并不明显。         地下车库有多处渗水痕迹  9月9日上午，记者和小区业主从小区西南侧的10号楼进入负二层地库。一进车库，记者的眼镜片上沿瞬间起了一层薄雾，",
+"likes": 112,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=ODUzMjkwMzYx&mid=2655231369&idx=2&sn=7cea8ee5daab748e6967e7c85cafe3d6#rd",
+"published_at": "2026-09-11 11:27:15"
+},
+{
+"id": "XHS81",
+"platform": "小红书",
+"title": "近期好物分享｜生活里的细碎小幸福",
+"desc": "来盘点下最近挖到的各类小东西\n一部分是给宝宝囤的母婴用品\n剩下都是我自己日常在用的\n没有花里胡哨，主打一个好用顺手\n\t\n马克笔\nA2水牛奶\n身体乳\n防风油霜\n防蓝光眼镜\nAi早教机器人\n\t\n#howto发现小众好物 #我的好物清单 #爱用物分享 #Ai早教机#高铁米粉#宝宝水牛奶#宝宝面霜#马克笔#防蓝光眼镜#爷爷的农场超懂宝宝胃",
+"likes": 556,
+"comments": 101,
+"url": "https://www.xiaohongshu.com/explore/6aa362f90000000026020b68",
+"published_at": "2026-09-11 10:10:01"
+},
+{
+"id": "XHS24",
+"platform": "小红书",
+"title": "名著好书推荐｜告别老花镜",
+"desc": "还在为爸妈挑选适合阅读的名著好书？\n👓我们是否时常看到父母眯着眼睛，\n依靠着架在鼻梁上的老花镜来阅读？\n“适老化”产品的缺失，\n为老年群体的生活造成了一定的困扰。\n但出版行业从未放弃老年人，\n正如我们从未停止爱他们。\n💥所以我们特别推出——\n《读者》回忆典藏版。\n📚以温暖放大的文字，重现经典内容，\n让父母重新享受沉浸阅读的宁静与喜悦。\n比起零散挑选名著好书，这套典藏版已精选经典篇目，让父母看得清、读得进、品得懂。\n有些书，滋养灵魂；\n有些字，照亮岁月。\n四卷书，是回溯、是陪伴，\n也是一次跨越时光的情感共鸣。\nVOL.1——人文卷🏘️\n重走胡同巷陌，\n触摸城市肌理。\nVOL.2——哲理卷🧘\n对话古今智者，\n感悟生命真谛。\nVOL.3——名篇卷✍️\n名家荟萃，\n岁月华章。\nVOL.4——亲情卷💌\n温暖信札，\n亲情天长。\n📖大字舒适排版，减轻视觉压力，\n让父母告别老花镜，\n品味一场回归心灵原点的旅行，\n让他们真正看得清、读得进、品得懂。\n🎁愿这一份精心编排的礼物，\n成为他们午后窗台的一缕光，\n夜晚灯下的一句问候。\n阅读不再费力，岁月依旧深情。\n送给每一位爸爸妈妈，\n也送给每一位值得温柔以待的",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa35c83000000002802eacf",
+"published_at": "2026-09-11 09:42:27"
+},
+{
+"id": "XHS25",
+"platform": "小红书",
+"title": "杂志订阅推荐｜告别老花镜",
+"desc": "还在为父母寻找适合的杂志订阅推荐？👓我们是否时常看到父母眯着眼睛，依靠着架在鼻梁上的老花镜来阅读？“适老化”产品的缺失，为老年群体的生活造成了一定的困扰。但出版行业从未放弃老年人，正如我们从未停止爱他们。💥所以我们特别推出——《读者》回忆典藏版，不同于普通杂志订阅，专为长辈设计，阅读更轻松。📚以温暖放大的文字，重现经典内容，让父母重新享受沉浸阅读的宁静与喜悦。有些书，滋养灵魂；有些字，照亮岁月。四卷书，是回溯、是陪伴，也是一次跨越时光的情感共鸣。VOL.1——人文卷🏘️重走胡同巷陌，触摸城市肌理。VOL.2——哲理卷🧘对话古今智者，感悟生命真谛。VOL.3——名篇卷✍️名家荟萃，岁月华章。VOL.4——亲情卷💌温暖信札，亲情天长。📖大字舒适排版，减轻视觉压力，让父母告别老花镜，品味一场回归心灵原点的旅行，让他们真正看得清、读得进、品得懂。🎁愿这一份精心编排的礼物，成为他们午后窗台的一缕光，夜晚灯下的一句问候。阅读不再费力，岁月依旧深情。送给每一位爸爸妈妈，也送给每一位值得温柔以待的长辈。✨《读者》大字典藏版——让阅读，从容如初。#读者 #文学 #大字版 #老年人精神生活 #中老年阅读 ",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa35c830000000028031ca0",
+"published_at": "2026-09-11 09:42:27"
+},
+{
+"id": "DY24",
+"platform": "抖音",
+"title": "小时候坐在爸妈中间，总盼着快点长大。后来终于长大了，才发现爸爸的头发白了，妈妈也戴上了老花镜。两张照",
+"desc": "",
+"likes": 1239,
+"comments": 79,
+"url": "https://www.iesdouyin.com/share/video/7684066116654710452",
+"published_at": "2026-09-11 08:21:00"
+},
+{
+"id": "DY75",
+"platform": "抖音",
+"title": "知识分享 #散光#老花眼#青光眼#白内障#胬肉",
+"desc": "",
+"likes": 1436,
+"comments": 63,
+"url": "https://www.iesdouyin.com/share/video/7683932920701390918",
+"published_at": "2026-09-10 23:44:11"
+},
+{
+"id": "DY53",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆时……！#婆媳日常 #范超超和周英英 @周英英爱生活",
+"desc": "",
+"likes": 18494,
+"comments": 390,
+"url": "https://www.iesdouyin.com/share/video/7683886956786400667",
+"published_at": "2026-09-10 20:45:46"
+},
+{
+"id": "XHS31",
+"platform": "小红书",
+"title": "奶茶细边老花镜，戴上有种不费力的贵气✨",
+"desc": "米咖奶茶细边在光下泛着柔光，不像亮金那么张扬，是低调的暖。\n\t\n配素色衣服特别提气，整个人看着讲究又从容～👑\n\t\n升级高清防蓝光镜片，可配：近视、老花、变色镜片等👓\n#老花镜 #老花镜推荐 #细框眼镜 #老花眼镜 #时尚老花镜 #老花眼镜女 #防蓝光老花镜 #老花眼 #高颜值老花镜 #高档老花镜",
+"likes": 0,
+"comments": 1,
+"url": "https://www.xiaohongshu.com/explore/6aa2a5140000000012002861",
+"published_at": "2026-09-10 20:39:48"
+},
+{
+"id": "GZH55",
+"platform": "公众号",
+"title": "入秋眼睛总发雾？中老年护眼5 大误区，千万别踩！",
+"desc": "入秋后天气干燥、风沙增多，昼夜温差变大，不少中老年人常常感觉眼睛干涩发沉、看东西朦朦胧胧。很多人简单归因为年纪大了、老花眼加重，随便配一副老花镜就凑合过日子。殊不知，视物发雾、视力下降，也可能是白内障的信号，很容易被忽视，最终错过最佳治疗时机。             步入中老年，眼部机能会发生生理",
+"likes": 5,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTgxNzY0Mw==&mid=2247650645&idx=1&sn=a101bac13b7c39034a6d78bcb007407f#rd",
+"published_at": "2026-09-10 18:09:50"
+},
+{
+"id": "GZH276",
+"platform": "公众号",
+"title": "三星加码AI眼镜",
+"desc": "三星电子已着手开发其首款配备显示屏的AI眼镜。与Meta Ray-Ban Display智能眼镜类似，该产品不仅能提供音频功能，还能在镜片上显示彩色视觉信息。  据业内人士透露，三星电子正在考虑为AI眼镜研发尺寸仅为0.2英寸或更小的超小型屏幕，并于上个月将该研发任务交给三星显示，并提出了关于产品外",
+"likes": 72,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg5MzEyNzEwNQ==&mid=2247848162&idx=1&sn=c6c99a6f411a0e8ee658e9d18fb95e0a#rd",
+"published_at": "2026-09-10 18:02:08"
+},
+{
+"id": "DY70",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆时#搞笑婆媳 #万万没想到",
+"desc": "",
+"likes": 2191,
+"comments": 36,
+"url": "https://www.iesdouyin.com/share/video/7683834899904426606",
+"published_at": "2026-09-10 17:23:46"
+},
+{
+"id": "DY1",
+"platform": "抖音",
+"title": "带老妈在南京吴良材总店配了一副渐进镜片 一副顶三副 真的方便了不少#配镜#南京吴良材#老花眼#崔崔只",
+"desc": "",
+"likes": 1045,
+"comments": 28,
+"url": "https://www.iesdouyin.com/share/video/7683832577912567780",
+"published_at": "2026-09-10 17:14:45"
+},
+{
+"id": "XHS22",
+"platform": "小红书",
+"title": "正圆框型！豹纹老花镜复古味很足",
+"desc": "不是椭圆是正圆，配上棕黄豹纹，复古感一下子就出来了。\n\t\n有点文艺又有点俏皮，配毛衣衬衫都很有味道～📖\n\t\n高清防蓝光镜片，可配：近视、老花、变色镜片等✅\n#老花镜 #老花镜推荐 #老花眼镜 #老花眼镜女 #防蓝光老花镜 #老花镜女时尚洋气 #老花镜推荐送妈妈 #中年老花镜 #气质老花镜 #老花眼",
+"likes": 0,
+"comments": 8,
+"url": "https://www.xiaohongshu.com/explore/6aa263500000000027009a65",
+"published_at": "2026-09-10 15:59:12"
+},
+{
+"id": "DY2",
+"platform": "抖音",
+"title": "南京吴良材眼镜店中老年渐进镜片，一副兼顾远中近，告别频繁摘戴眼镜 #南京吴良材眼镜 #中老年配镜 #",
+"desc": "",
+"likes": 1007,
+"comments": 46,
+"url": "https://www.iesdouyin.com/share/video/7683797825683824457",
+"published_at": "2026-09-10 14:59:54"
+},
+{
+"id": "XHS38",
+"platform": "小红书",
+"title": "谁家老花眼镜落噩梦这了",
+"desc": "#第五人格 #第五人格你的人来了",
+"likes": 96,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6aa22a7900000000290134cc",
+"published_at": "2026-09-10 11:56:41"
+},
+{
+"id": "XHS57",
+"platform": "小红书",
+"title": "月子碎片🌙照顾宝宝同时也要好好爱自己呀🌟",
+"desc": "还没坐月子的时候家里人就说月子里要少玩手机，多休息保护好眼睛！可是我做不到啊😂日常工作要用手机～哄完娃、喂完奶就想刷会儿放松下～\n\t\n产后感觉眼睛特别脆弱，很容易干涩酸胀…\n我早就给自己备上神器啦，安排上防蓝光眼镜👓\n减少蓝光刺激，缓 解眼睛疲劳～\n素颜戴也很好看，很有居家氛围感～\n小小的物件，治愈月子里的琐碎时光～我很喜欢✨\n\t\n围着小宝宝团团转的日子，也要记得偏爱自己一点哦  ˗ˋˏᰔᩚˎˊ˗\n\t\n#月子日记 #母婴好物 #好好爱自己才是终身浪漫#凯普克眼镜#素颜眼镜 #凯普克蓝光镜 #素颜神器 #防蓝光眼镜",
+"likes": 142,
+"comments": 40,
+"url": "https://www.xiaohongshu.com/explore/6aa22276000000002a0057b9",
+"published_at": "2026-09-10 11:22:30"
+},
+{
+"id": "GZH116",
+"platform": "公众号",
+"title": "礼谢恩师丨杭州宝岛眼镜临平旗舰店698元防蓝光眼镜免费领！升级再享折上折！",
+"desc": "金秋谢师恩            致敬教师节                                                                                                                  TEACHERS' DAY ",
+"likes": 54,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5OTE2NzY0MA==&mid=2653039953&idx=1&sn=edc558e14b0ebde191ce49d686bb2645#rd",
+"published_at": "2026-09-10 11:18:00"
+},
+{
+"id": "DY73",
+"platform": "抖音",
+"title": "当你有个老花眼婆婆时#婆媳 #搞笑视频 #万万想不到 #看一遍笑一遍",
+"desc": "",
+"likes": 1682,
+"comments": 130,
+"url": "https://www.iesdouyin.com/share/video/7683731331671291003",
+"published_at": "2026-09-10 10:41:52"
+},
+{
+"id": "DY69",
+"platform": "抖音",
+"title": "家里有个老花眼婆婆可不得了#婆媳#搞笑视频 #看一遍笑一遍 #结局万万没想到",
+"desc": "",
+"likes": 2263,
+"comments": 71,
+"url": "https://www.iesdouyin.com/share/video/7683676821385300899",
+"published_at": "2026-09-10 07:10:22"
+},
+{
+"id": "DY34",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆不戴老花镜的时候#家庭婆媳趣事分享 #搞笑家庭日常 #婆媳",
+"desc": "",
+"likes": 2779,
+"comments": 97,
+"url": "https://www.iesdouyin.com/share/video/7683531988720482417",
+"published_at": "2026-09-10 07:01:00"
+},
+{
+"id": "DY78",
+"platform": "抖音",
+"title": "大林问一下广大网友， 老花加近视的隐形眼镜 有吗？#大林子夫妇 #老花眼 #大林子精选 #夫妻日常 ",
+"desc": "",
+"likes": 1242,
+"comments": 367,
+"url": "https://www.iesdouyin.com/share/video/7683525977921792626",
+"published_at": "2026-09-09 21:25:00"
+},
+{
+"id": "XHS127",
+"platform": "小红书",
+"title": "开学上课眼力直接封神 谁也别想上课摸鱼✨",
+"desc": "姐妹们谁懂！好镜片对老师太重要👓\n换了明月 1.71PMC 超亮镜片 A8 膜\n站讲台全班小动作一览无余😂\n\t\n98.6% 高透光率，镜片通透干净\n批改作业看小字再也不用眯眼\n晚上下班开车视线也很清晰\n镜片轻薄，久戴不压鼻梁\n\t\n老师们值得拥有啊✨\n\t\n#教师#教师日常#班主任#校园#教师好物#明月镜片#明月PMC超亮镜片#明月171超亮镜片A8膜",
+"likes": 192,
+"comments": 9,
+"url": "https://www.xiaohongshu.com/explore/6aa13091000000002601b4ac",
+"published_at": "2026-09-09 18:43:03"
+},
+{
+"id": "XHS35",
+"platform": "小红书",
+"title": "墨然∣这墨镜为啥画出来跟个老花镜一样😭",
+"desc": "重发∣#墨魇梦 #自行避雷 #墨然 #梦胜漓败 #邪魔墨然 #风叙团队 #邪墨教主墨魇梦 #XL✨漫剪群",
+"likes": 314,
+"comments": 58,
+"url": "https://www.xiaohongshu.com/explore/6aa13517000000000b002f95",
+"published_at": "2026-09-09 18:29:43"
+},
+{
+"id": "DY38",
+"platform": "抖音",
+"title": "高颜值老花镜，日常看书刷手机，护眼更舒适 #老花镜 #老花镜防蓝光",
+"desc": "",
+"likes": 1417,
+"comments": 23,
+"url": "https://www.iesdouyin.com/share/video/7683480522378530100",
+"published_at": "2026-09-09 18:28:41"
+},
+{
+"id": "XHS121",
+"platform": "小红书",
+"title": "配近视眼镜别再乱花钱了！三个配镜核心思路",
+"desc": "配近视眼镜别再乱花钱了！三个配镜核心思路\n配镜前先看这篇，材质、折射率+阿贝数、膜层，看懂再下手。\n#明月镜片#明月PMC超亮镜片#明月171PMC超亮镜片A8膜 #有用 #近视眼镜 #有用的知识",
+"likes": 1533,
+"comments": 1,
+"url": "https://www.xiaohongshu.com/explore/6aa0efa8000000000b037eab",
+"published_at": "2026-09-09 17:41:08"
+},
+{
+"id": "DY9",
+"platform": "抖音",
+"title": "山东能修大爷，火补老花镜 #老式手艺人 #记录身边手艺人 #老手艺",
+"desc": "",
+"likes": 55983,
+"comments": 4153,
+"url": "https://www.iesdouyin.com/share/video/7683418370355646565",
+"published_at": "2026-09-09 14:27:25"
+},
+{
+"id": "DY85",
+"platform": "抖音",
+"title": "原来隐形眼镜也有渐进多焦的了，舒服不累眼！#sweetcolor #隐形眼镜#渐进多焦点镜片",
+"desc": "",
+"likes": 1152,
+"comments": 42,
+"url": "https://www.iesdouyin.com/share/video/7683415694688067813",
+"published_at": "2026-09-09 14:17:02"
+},
+{
+"id": "XHS32",
+"platform": "小红书",
+"title": "没有老花镜围读也很心酸",
+"desc": "#眉山东坡万达广场 #逛万达 #一句话证明我看过龙餐馆 #好狡猾的劝读方式",
+"likes": 47,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a9fb7fe000000000b00ef03",
+"published_at": "2026-09-09 12:30:13"
+},
+{
+"id": "GZH8",
+"platform": "公众号",
+"title": "肌肉流失有多快？",
+"desc": "【涨肌肉练力量啦。图片by猫主。】大家好，我是猫主。晨起带操，我们的目的是涨肌肉练力量，这也是群名。所以，我最近就关注怎么涨肌肉多些。但一直好奇，不同年龄肌肉流失到底什么情况？我们做哪些动作，做多少能有效阻碍肌肉流失并循序渐进涨肌肉呢？",
+"likes": 16,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzE5ODY0MTY2Nw==&mid=2247485257&idx=1&sn=eac155cf258fb5f4349cf01d1bddf2fa#rd",
+"published_at": "2026-09-09 11:55:00"
+},
+{
+"id": "GZH78",
+"platform": "公众号",
+"title": "安徽、山东、河南连夜核查！",
+"desc": "9月8日晚，总台《焦点访谈》栏目播发《黑加油点：死灰因何易复燃》。记者对消费者举报的“以新能源加注站为幌子的黑加油点”进行了持续的追踪调查，其中涉及安徽淮南市曹庵镇相关问题。\n报道指出，淮南曹庵镇的多家加注站卖的劣质调和油都来源于山东东营泽宇化工。泽宇化工有限公司位于山东东营垦利区胜坨化工产业园内。",
+"likes": 775,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NzI1MTY0MQ==&mid=2655477506&idx=1&sn=439eb1337f951d1c420f3a56577dde2d#rd",
+"published_at": "2026-09-09 11:50:47"
+},
+{
+"id": "XHS52",
+"platform": "小红书",
+"title": "窄框墨镜｜穿搭的冷感密码",
+"desc": "穿搭氛围感 墨镜直接定调\n爱上这种复古窄黑框\n冷感Y2K味儿拿捏住\n千叶可配近视墨镜\n近视人不用再妥协好看\n上脸利落，拍照巨出片\n配饰选对 简单白T也很有腔调\n\t\n#千叶眼镜#千叶眼镜高端门店#千叶眼镜配眼镜#重庆千叶眼镜#配镜到千叶#千叶眼镜防疲劳 #瑜伽老师日常 #Ootd #购物 #墨镜推荐",
+"likes": 131,
+"comments": 23,
+"url": "https://www.xiaohongshu.com/explore/6aa0bc680000000026009423",
+"published_at": "2026-09-09 10:33:06"
+},
+{
+"id": "GZH30",
+"platform": "公众号",
+"title": "凿崖观海-nCAVED House | MOLD",
+"desc": "SuperpowersnCAVED 是希腊建筑事务所 MOLD Architects 的代表作，坐落于爱琴海塞里福斯岛，2020年建成，面积约360㎡。\"nCAVED\"取自\"encaved\"（嵌入洞穴），精准点出住宅的核心姿态——不建造于地面之上，而是嵌入山崖斜坡之中，仿佛从大地内部生长而出。设计面临的核心矛盾在于：塞里福斯岛拥有壮阔海景，却常年遭受猛烈北风。传统的地面排布方案无法兼顾观景与防风，于是主创 Iliana Kerestetzi 做出大胆决定——不对地形做加法，而是做减法，直接在斜坡上挖掘，将住宅\"钻入\"山体。这体现一种\"负建筑\"哲学：通过切割和移除岩石形成负空间，刻意保留洞穴般的粗粝质感，使建筑既宣告自身存在，又消融于环境之中。空间生成依赖一套三维\"棋盘\"网格系统。设计师在斜坡上叠加矩形网格，生成实体（居住空间）与留白（庭院）交替的三维结构。为避免几何过于刻板，网格最后一根轴线被旋转，为起居室打开更广阔的视野，同时使建筑体量在视觉上最小化，仿佛消失于斜坡尽头。住宅分三层嵌入山坡：上层起居室坐拥最开阔海景，木制格栅遮阳，视线随倾斜天花板延伸至海平线；中层为卧室区，与上层内部",
+"likes": 48,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNjEwOTE0Mg==&mid=2247496911&idx=1&sn=b04043e425089dd1cc217b54f039c68c#rd",
+"published_at": "2026-09-09 08:00:00"
+},
+{
+"id": "GZH230",
+"platform": "公众号",
+"title": "关于“星河万里 遇见南昌”无人机典型应用场景示范活动临时道路交通管制的通告",
+"desc": ".",
+"likes": 45,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI2NDY0NzA4Ng==&mid=2247728506&idx=1&sn=21da2b55144ea0b75b77e2cc741b1af9#rd",
+"published_at": "2026-09-09 08:00:00"
+},
+{
+"id": "GZH76",
+"platform": "公众号",
+"title": "山东东营连夜成立调查组",
+"desc": "9月8日晚，总台《焦点访谈》栏目播发《黑加油点：死灰因何易复燃》。记者对消费者举报的“以新能源加注站为幌子的黑加油点”进行了持续的追踪调查，其中涉及安徽淮南市曹庵镇相关问题（详细报道）。\n‍      报道指出，淮南曹庵镇的多家加注站卖的劣质调和油都来源于山东东营泽宇化工。泽宇化工有限公司位于山东东",
+"likes": 741,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MDA0NDA4NA==&mid=2651537988&idx=1&sn=35fefe3cbda155419d28a9cf4e8f130d#rd",
+"published_at": "2026-09-09 06:56:52"
+},
+{
+"id": "GZH31",
+"platform": "公众号",
+"title": "川西赏秋篇：9个景点，一次讲透",
+"desc": "稻城亚丁 · 被誉为“蓝色星球上最后一片净土”，亚丁不是景区，是“目的地”。仙乃日、央迈勇、夏诺多吉三座神山呈品字站了一万年；牛奶海、五色海、珍珠海三枚蓝宝石安静地躺在 4500 米。秋天金黄的洛绒牛场铺到雪山脚下，是川西秋天最硬的一张“王牌”。达古冰川 · “世界最孤独的咖啡馆”达古冰川是“反差感”拉满的景区：山顶是千年冰川，山腰却有一家咖啡馆，窗外是云海，店内是拿铁—被《国家地理》评为“世界最孤独”。索道一路把你送上 4800 米，眼睛在天堂，肺却在地狱。毕棚沟 · “川西红叶的 C 位”如果说新都桥是“摄影天堂”，毕棚沟就是“川西红叶天花板”。磐羊湖、龙王海、燕子岩窝一路彩林穿行，国庆期间以“渐变色”出现在你的视野里。九寨沟 · “人这一辈子得来一次”九寨归来不看水—秋天是它一年里最稳的窗口：五花海、镜海、长海、五彩池、芦苇海，每个海子蓝得不一样、安静得不一样。黄龙 · “人间瑶池”黄龙和九寨沟是“姐妹景区”，但气质各不同：九寨沟是水海子，黄龙是钙华彩池。3400 米到 5588 米的落差里，数千个钙华池层层叠叠铺开，像谁在山坡上打翻了一盒五彩琉璃。党岭·葫芦海 · “藏在丹巴县",
+"likes": 165,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwOTM4NTI2OQ==&mid=2247484530&idx=1&sn=5f4ae016a177941d078013a48820be14#rd",
+"published_at": "2026-09-08 22:50:58"
+},
+{
+"id": "GZH9",
+"platform": "公众号",
+"title": "人科迎新季｜你好，2026级新同学！",
+"desc": "夏意将尽，秋风渐起       时序更迭，新章待启       当第一缕晨光落在校园的枝头       当第一片秋叶吻过路旁的横幅       金秋九月，重人科迎来了2026级新同学       此刻，请把镜头转向迎新现场       让我们一同走进这场初见                     ",
+"likes": 74,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3NzY0ODIxMA==&mid=2247640985&idx=1&sn=845b0e2970055090757eebfdbfec2679#rd",
+"published_at": "2026-09-08 22:07:09"
+},
+{
+"id": "DY37",
+"platform": "抖音",
+"title": "#到了戴老花镜的年纪 #日常随拍分享",
+"desc": "",
+"likes": 1613,
+"comments": 22,
+"url": "https://www.iesdouyin.com/share/video/7683140982632088522",
+"published_at": "2026-09-08 20:31:01"
+},
+{
+"id": "GZH49",
+"platform": "公众号",
+"title": "9月份养老金调整上涨，人社部发文？通知2026年养老金“22连涨”的谣言，该停了",
+"desc": "这从春天盼到夏天，又从夏天等到秋天。       唉，也没等来官方上调养老金的信\n老赵是我的老邻居今年65岁，退休前在工厂干了三十多年。他说这几天他每天早起第一件事，就是戴上老花镜刷手机——家族群里又有人在转“红头文件”了，说2026年养老金涨3%，8月底就补发到账。老赵越看越心焦，翻来覆去查社保卡",
+"likes": 44,
+"comments": 10,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNjQwOTQyMw==&mid=2247485050&idx=1&sn=2e366de85d475c51d4c6b6e4646d3d8d#rd",
+"published_at": "2026-09-08 17:53:40"
+},
+{
+"id": "XHS39",
+"platform": "小红书",
+"title": "没想到硬纸还能这么用，老花眼可以试试",
+"desc": "#穿针技巧 #妙招分享 #教你一招",
+"likes": 7,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a9fda55000000000b003e43",
+"published_at": "2026-09-08 17:50:13"
+},
+{
+"id": "GZH122",
+"platform": "公众号",
+"title": "【阳谷眼镜行】教师节献礼//480元超薄清底防蓝光镜片免费验配~",
+"desc": "教师节献礼//480元超薄清底防蓝光镜片免费验配~",
+"likes": 245,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MzUyNzAzOQ==&mid=2469186147&idx=1&sn=b653d66a14b4bb0d490964665430723d#rd",
+"published_at": "2026-09-08 17:38:21"
+},
+{
+"id": "DY74",
+"platform": "抖音",
+"title": "老眼昏花的古人如何解决看不清？ #人文社科#老花眼 #叆叇 #眼镜 #古代老人",
+"desc": "",
+"likes": 1479,
+"comments": 7,
+"url": "https://www.iesdouyin.com/share/video/7683091080035749161",
+"published_at": "2026-09-08 17:17:26"
+},
+{
+"id": "DY76",
+"platform": "抖音",
+"title": "当你有个老花眼的父亲时 #今日搞笑分享 #创作者中心 #创作灵感",
+"desc": "",
+"likes": 1314,
+"comments": 74,
+"url": "https://www.iesdouyin.com/share/video/7683089042192159225",
+"published_at": "2026-09-08 17:09:27"
+},
+{
+"id": "DY51",
+"platform": "抖音",
+"title": "当你有个老花眼婆婆时！#万万没想到 #看一遍笑一遍 #婆媳 #原创视频",
+"desc": "",
+"likes": 29914,
+"comments": 389,
+"url": "https://www.iesdouyin.com/share/video/7683086975892518073",
+"published_at": "2026-09-08 17:01:27"
+},
+{
+"id": "GZH123",
+"platform": "公众号",
+"title": "【周世民眼镜】第九届——致“镜”师恩，免费配镜！",
+"desc": "折射率升级，镜片更轻、更薄！集18个赞免费领取1.60防蓝光眼镜一副！",
+"likes": 664,
+"comments": 21,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1NDczODMwMA==&mid=2247485862&idx=1&sn=95e76c636fcda530d837fec7d4f2d312#rd",
+"published_at": "2026-09-08 16:40:29"
+},
+{
+"id": "GZH27",
+"platform": "公众号",
+"title": "早上不用久练！3 个居家小动作，唤醒全身。",
+"desc": "☀️很多朋友早上起来，浑身发僵，肩膀腰腿都舒展不开，又不想出门剧烈运动。 其实清晨不用练很久，在家抽几分钟，做几组简单拉伸，身体慢慢活络，一整天都舒服。下面这 3 个动作，无器械、难度低，适合居家练习，跟着图片一步步学。✅动作一：大鹏展翅双脚分开与肩同宽站立，身体保持中正稳定。 双手在身前交叉，以肩膀为圆心，双臂缓缓向两侧向上画大圆打开，像鸟儿展翅一样，双脚顺势踮脚。充分扩开胸腔，感受肩背拉伸。 再缓慢收回，回到身前交叉，循环重复。💡要点： 肩膀放松，不要耸肩；动作速度放缓，配合自然呼吸，打开时吸气，收回时呼气。 作用：舒展肩颈胸腔，缓解晨起肩膀僵硬，改善含胸。✅动作二：上下齐发双脚站稳，核心微微收住。 一手向上高高举过头顶，另一手向后下方舒展，一上一下交替进行，双脚顺势踮脚。 左右来回轮换，手臂充分延展，带动侧腰跟着舒展。💡要点： 膝盖不要锁死，保持微微松弛；身体不要过度后仰，只做舒展，不猛发力。 作用：拉伸全身躯干，活络腰腹，唤醒身体，赶走晨起困倦。✅动作三：左右摸脚双脚大幅度分开站立，双腿保持伸直但膝盖不绷死。 身体侧向弯腰，一只手轻轻向下去触碰对侧脚面，另一只手向上延展，做完一",
+"likes": 61,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY5MjM5OTg4NQ==&mid=2247484850&idx=1&sn=0698977947d75fe9276eca0daee0bf72#rd",
+"published_at": "2026-09-08 16:19:07"
+},
+{
+"id": "DY79",
+"platform": "抖音",
+"title": "77岁没有老花眼，三个简单养眼小动作，一起练出精气神~ #眼神训练#护眼爱眼#亮眼#退休生活#银发",
+"desc": "",
+"likes": 1176,
+"comments": 53,
+"url": "https://www.iesdouyin.com/share/video/7683071779916631323",
+"published_at": "2026-09-08 16:02:32"
+},
+{
+"id": "GZH135",
+"platform": "公众号",
+"title": "保护眼睛居然有这么冷门的办法，看完我差点",
+"desc": "保护眼睛最便宜的办法，其实是每天去户外晒晒太阳。阳光能刺激眼睛分泌多巴胺。这东西就像护盾，能防止眼球过度生长，从而预防近视。小孩防近视：每天在户外待够两小时，近视率能降一半以上。大人缓解疲劳：户外光线比室内亮几十上百倍。就算天天盯电脑，出门晒个二三十分钟也能缓解眼疲劳。怎么晒才对：千万别直视太阳。在树荫下、阳台上正常待着就行。散步、遛狗、等公交时顺便把时间凑够。别光顾着滴眼药水，偶尔放下手机出去走走，眼睛会舒服很多。",
+"likes": 34,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzMTk5OTQxOQ==&mid=2247484117&idx=1&sn=b9cce48bbaefae17162c9a7b9bf403b0#rd",
+"published_at": "2026-09-08 13:37:44"
+},
+{
+"id": "GZH193",
+"platform": "公众号",
+"title": "如何看待热点文章《杜绝“告洋状”乱象｜国家应尽快立法将告洋状纳入扫黑除恶范围》",
+"desc": "文｜财鲸局\n星宇股份的应届生解约风波，本来已经逐渐进入收尾阶段，没想到最近又丨因为一篇文章重新火了起来。\n事情的最新进展是，9月7日，星宇股份再次发布通报，承认此前对部分新入职大学生进行调岗减员的决定存在问题，对总经理、人力资源总监等4名管理人员作出处理。\n按照公司披露的数据，2026届毕业生中共有",
+"likes": 365,
+"comments": 16,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg3OTg5NzIzMw==&mid=2247485127&idx=1&sn=443994e7d9d44d20ed767f9dc8087a4c#rd",
+"published_at": "2026-09-08 11:34:00"
+},
+{
+"id": "XHS53",
+"platform": "小红书",
+"title": "长期主义好物，一直陪伴我的梦中情👓",
+"desc": "作为近视十几年的人，从配镜开始，到丢弃一副眼镜，我跟它打了太多次交道。对于我来说，一戴眼镜可能就是一天，陪伴我的通勤、生活💻我很注重它的佩戴感+美观度。\n.\n千叶眼镜作为重庆30多年本土老牌子，除了有保障，他们款式也很多。我大概去过两次门店，最后决定配一副！整个过程体验感也很棒，他们的验光师经验很丰富，检查了好多步，比之前配眼镜会仔细很多，最后给到的建议也很中肯📝\n.\n虽然我度数比较高（600度了⦁֊⦁꧞ ）但是配出来的眼镜，我日常佩戴不会觉得累，不压鼻梁也不压耳朵。而且因为门店确实很大很舒服，我又买了一副墨镜🕶️不得不说，我对待事物的满意方式表达就是长期使用+合理回购！\n-\n#长期主义 #精简主义 #我的消费观 #极简生活 #1000小时选物哲学 #打工人护眼 #上班族好物 #千叶眼镜 #千叶眼镜高端门店 #千叶眼镜配眼镜 #重庆千叶眼镜 #配镜到千叶 #千叶眼镜防疲劳 #防疲劳镜片配镜",
+"likes": 201,
+"comments": 39,
+"url": "https://www.xiaohongshu.com/explore/6a9f619c00000000270083e6",
+"published_at": "2026-09-08 10:10:21"
+},
+{
+"id": "GZH63",
+"platform": "公众号",
+"title": "一个实用的中成药，能改善近视、老花眼、青光眼、白内障、飞蚊症等10多种眼部疾病。",
+"desc": "最接地气的中医",
+"likes": 1461,
+"comments": 26,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg5MTcyODQ4MA==&mid=2247521248&idx=1&sn=78abbc7ed1ca1bbb5a8fb88360cf0147#rd",
+"published_at": "2026-09-08 09:00:00"
+},
+{
+"id": "GZH7",
+"platform": "公众号",
+"title": "击败尼康！索尼新445/663 轻到离谱，用的也是PF镜片",
+"desc": "FE 400mm F4.5 GM重量994g，FE 600mm F6.3 GM重量995g，两颗镜头全部压进1000g以内，很多人看到不足1kg的恐怖重量，第一反应就是索尼是不是用上了亚克力、树脂镜片，塑料外壳来压缩成本和重量，甚至还有按照事实依据说利用算法后期矫正光学的思路来减重，虽然有道理，但无",
+"likes": 26,
+"comments": 27,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI2ODAyMzI2OQ==&mid=2459123680&idx=1&sn=46c8a359a2feb49b6c28963d54aaf8ee#rd",
+"published_at": "2026-09-08 07:04:07"
+},
+{
+"id": "GZH50",
+"platform": "公众号",
+"title": "母女俩长得好像，一个模子出来的",
+"desc": "偶然刷到一张王菲年轻时候短头发的照片，这角度的侧颜，跟窦靖童好像好像啊，感叹遗传基因的强大，母女俩的脸真是一个模子刻出来的[偷笑]一样的下颌线，一样的大眼睛，一样的脸型，一样的清冷又纯真的气质！窦靖童完美遗传了父母的优点。两代人，遗传的不只是长相和眉眼，连那股有点儿酷酷的、有点自在洒脱的劲儿，似乎也一脉相通。你们觉得呢？当王菲在万人面前摘下“老花镜”：我们好像从来没有准备好，看她老去",
+"likes": 10,
+"comments": 24,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzODk0MDYwNw==&mid=2247485814&idx=1&sn=1caa98e6f70fadbf496fb73ea53564fa#rd",
+"published_at": "2026-09-08 06:54:51"
+},
+{
+"id": "XHS62",
+"platform": "小红书",
+"title": "开学新装备👓孩子护眼攻略收好",
+"desc": "马上开学，孩子迎来高强度用眼模式，上课学习、课外阅读、网课加餐，双眼时刻处于疲劳状态，视力很容易悄悄下滑\n\t\n超实用学生护眼小贴士收好：日常用眼记得劳逸结合，近距离看书、写字30分钟后，及时抬头远眺放松双眼，有效缓解视疲劳。\n\t\n新学期配镜别只看颜值，舒适适配、科学护眼才是关键。贴合脸型不滑落的镜框，搭配专业护眼镜片，适配室内学习、户外活动全场景，搭配良好用眼习惯，稳稳守护孩子新学期清晰视力！\n\t\n   #暴龙眼镜BOLON #BOLON小星同学 #小星同学PRO#BOLON小稳架 #开学季护眼 #儿童近视防控 #学生配镜攻略 #孩子护眼小知识 #新学期视力守护 #青少年眼镜 #科学护眼 #开学配镜不踩坑",
+"likes": 292,
+"comments": 15,
+"url": "https://www.xiaohongshu.com/explore/6a9ac76c000000002b01c470",
+"published_at": "2026-09-07 22:08:27"
+},
+{
+"id": "GZH234",
+"platform": "公众号",
+"title": "新品｜见微知著的美学",
+"desc": "无死角追踪，锁定全新泰格豪雅卡莱拉系列运动计时码表多维进化",
+"likes": 111,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjM2MTI4NA==&mid=2651879178&idx=1&sn=c6e8023394a20cd5723aba8c836b8852#rd",
+"published_at": "2026-09-07 20:45:00"
+},
+{
+"id": "GZH53",
+"platform": "公众号",
+"title": "城乡居民养老金又有新消息，一定要多留意",
+"desc": "老赵今年68，农村户口，在郑州跟儿子住了七八年了。前几天在小区门口碰见他，他拿个老花镜看手机看得眼睛都快贴屏幕上了。",
+"likes": 19,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU4ODgyMDk3Mw==&mid=2247484745&idx=1&sn=55bbf445355d5edb59e9aad79c8755fd#rd",
+"published_at": "2026-09-07 19:20:00"
+},
+{
+"id": "GZH236",
+"platform": "公众号",
+"title": "全新雅诗兰黛白金黑神话面霜臻耀上市",
+"desc": "    　　                       肌肤的老化，是细胞机能循序渐进的自然更迭，亦是内在肌理与岁月磨合的悄然呈现。深耕高端护肤领域多年，雅诗兰黛始终秉持前沿探索精神，以严谨科研为基石，探索肌肤年轻的内在节律。雅诗兰黛白金系列凝聚品牌二十年肌肤长寿科学研究积淀，携手全球权威学府，以",
+"likes": 37,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NTE1OTQyMQ==&mid=2651594709&idx=2&sn=5f1208ec9d6a6d4fb7fa13c1c9aa726e#rd",
+"published_at": "2026-09-07 19:16:59"
+},
+{
+"id": "DY32",
+"platform": "抖音",
+"title": "当你有个老眼昏花的婆婆不戴老花镜会发生什么事情#搞笑视频#婆媳相处 #幽默段子 #家庭生活中的搞笑瞬",
+"desc": "",
+"likes": 4059,
+"comments": 45,
+"url": "https://www.iesdouyin.com/share/video/7682748689785550803",
+"published_at": "2026-09-07 19:08:43"
+},
+{
+"id": "GZH119",
+"platform": "公众号",
+"title": "lnsta360影石 ONE RS 360°全景版运动相机 全新未拆封 5.7K全景鱼眼镜头 FlowState超强防抖 模块化机身可玩性超高",
+"desc": "李小鹿捡漏 lnsta360影石 ONE RS 360°全景版运动相机 全新未拆封 5.7K全景鱼眼镜头 FlowState超强防抖 模块化机身可玩性超高 可以隐藏自拍杆 轻松拍出第三人称大片",
+"likes": 19,
+"comments": 12,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NTIyOTMxMw==&mid=2447730156&idx=1&sn=c1dfc289ae9afa3b9cc9a2910d240f60#rd",
+"published_at": "2026-09-07 18:33:10"
+},
+{
+"id": "GZH33",
+"platform": "公众号",
+"title": "每左滑一次，齐云山变黄10%",
+"desc": "-齐云山的秋天不是突然泛黄的从攀上枝头的金色到漫山橙黄渐变夏天的热爱以另一种色系留存下来🌞——————图二 图三 ✨ 秋日进度30%-40%秋天是云海高发的季节云朵垂落成更绵软的姿态☁️在这片山水大地缓缓铺展山景与秋色的轮廓更为明显🏔️原本郁郁葱葱的草木之间一抹抹金色占据了视线🌾——这是秋天刚开始的样子把叶脉里的青涩悄悄酿成透亮的金黄🌟——————图四 🍊 秋日进度50%金色的枝叶渐渐褪去光辉转而用淡淡的橙色写下斑驳诗意这是万物趋于成熟的美🎨——————图五 图六🎑 秋日进度60%~70%很快，月华天街也将迎来热烈之喜大片橙黄在山风间飘飘欲动铺陈在家家户户门前的晒秋作物给齐云山增添上一层美拉德滤镜☕——————图七🔥 秋日进度80%橙红相间的暖系色调从崖壁渗出🍂秋的况味更易入人心同时激活了齐云山的DNA🧬丹霞山貌的底蕴通过一云一叶彻底舒展——————秋天不必做太多繁复的事只需好好赏场秋色，毕竟这是人间第二个“春”🌸来齐云山的渐变光景中，赴一场与季节的约会全新的晒秋场景也将在近日上线，敬请期待🎇#安徽齐云山 #晒秋 #祥源文旅",
+"likes": 70,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg5OTg0NTA5MQ==&mid=2247587492&idx=1&sn=0762f666f13cd039561f8e836f3772f4#rd",
+"published_at": "2026-09-07 17:59:37"
+},
+{
+"id": "DY54",
+"platform": "抖音",
+"title": "为什么导师喜欢开护眼模式，因为老花眼？那你错了 #护眼模式 #开题报告 #aigcbiye #大四 ",
+"desc": "",
+"likes": 14414,
+"comments": 63,
+"url": "https://www.iesdouyin.com/share/video/7682680752965815562",
+"published_at": "2026-09-07 17:30:00"
+},
+{
+"id": "DY64",
+"platform": "抖音",
+"title": "当你有个老花眼婆婆时！#婆媳 #搞笑婆媳 #婆媳相处 #万万没想到 @DOU+小助手 @抖音作者助手",
+"desc": "",
+"likes": 7040,
+"comments": 218,
+"url": "https://www.iesdouyin.com/share/video/7682709045682572409",
+"published_at": "2026-09-07 16:34:54"
+},
+{
+"id": "DY40",
+"platform": "抖音",
+"title": "#到了戴花镜的年龄 #戴上老花镜臭美一下",
+"desc": "",
+"likes": 1371,
+"comments": 38,
+"url": "https://www.iesdouyin.com/share/video/7682708299657407089",
+"published_at": "2026-09-07 16:31:59"
+},
+{
+"id": "DY35",
+"platform": "抖音",
+"title": "#老了也要时尚 #老花镜配旗袍 😜",
+"desc": "",
+"likes": 2278,
+"comments": 79,
+"url": "https://www.iesdouyin.com/share/video/7682649816724054501",
+"published_at": "2026-09-07 12:45:02"
+},
+{
+"id": "XHS59",
+"platform": "小红书",
+"title": "少年时的眼镜店，见证我长成现在的自己",
+"desc": "谁能想到，高中配第一副眼镜的店，十六年后我还会再来👓\n\t\n那时候还是懵懂读书的少年，如今已经活成自己喜欢的样子。重回千叶，选一副新眼镜，算是给自己一份小小的仪式感。\n\t\n重庆三十多年的本土老品牌真的不是说说，始于1992年，专注功能型配镜，当时我记得在千叶配了新眼镜就刚好生日约了朋友们在解放碑吃饭，其实是想炫耀我的新眼镜，很潮（当时自我感觉良好，哈哈）\n\t\n这次来的是万象城店，因为离这边近一些，验光体验印象很深，检查了好多步，感觉是比之前细致很多。验光师多年的经验，还和我耐心沟通平时我工作或者休息的用眼习惯。\n\t\n门店数量越来越多，在重庆走到哪里基本都能找到，后续镜框调整、清洗保养都有保障。\n\t\n很惊喜，不只是长辈会选择的老店，我现在也能挑到很合心意的喜欢款式，而且很多都是新款，love it！\n时光在变，但是这份踏实和热爱新事物的我感觉一直没变[红色心形R]\n\t\n#重庆探店 #千叶眼镜 #配镜分享 #重庆生活\n#千叶眼镜高端门店#千叶眼镜配眼镜#重庆千叶眼镜#配镜到千叶#千叶眼镜防疲劳 #防疲劳镜片配镜",
+"likes": 408,
+"comments": 28,
+"url": "https://www.xiaohongshu.com/explore/6a9e23d700000000120026ac",
+"published_at": "2026-09-07 12:22:33"
+},
+{
+"id": "GZH260",
+"platform": "公众号",
+"title": "黎明眼镜视光中心│教师节献礼最后四天！500元镜框加镜片免费领，名品配镜享 5 折，还有青控折后立减！",
+"desc": "转发链接至朋友圈即可参与         需携带教师证\nHAPPY TEACHERS' DAY                                                                                                       ",
+"likes": 21,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MzA3NDAwMg==&mid=2651004596&idx=1&sn=678b628eebbcfcc0b7409a4469e153e5#rd",
+"published_at": "2026-09-07 10:31:36"
+},
+{
+"id": "XHS49",
+"platform": "小红书",
+"title": "在千叶，终于找到了打工人护眼自救方法啦！！！",
+"desc": "谁懂我们这些打工人的痛啊，每天上班盯着电脑，一看就是好几个小时，一到下午眼睛就特别酸胀，视力都越来越模糊了，之前配的眼镜真的越戴越累，这次终于决定换一副眼镜！！！\n姐妹带我来的这家是重庆30多年的老牌子，全城有很多门店，后期调框、保养也非常省心👌！\n\t\n他家的专业验光真的不是简单测一下度数，验光师持证上岗，整套流程检查好多项，比以往配镜细致太多了，结合打工人长期看屏幕的用眼状态，给我定制了适配的防疲劳镜片，别说戴上新镜片，屏幕的光线都变得柔和多了，眼部酸胀的感觉也得到了缓解，再也不用下午眯着眼睛硬扛了😭……\n一副合适镜片就是给眼部减负，真的不能将就，他家的镜框选择很多，完全能挑到自己喜欢的款式！！\n#重庆配镜  #打工人护眼  #防疲劳镜片  #重庆配眼镜  #上班族护眼攻略 #千叶眼镜 #千叶眼镜高端门店 #千叶眼镜配眼镜 #重庆千叶眼镜 #配镜到千叶 #千叶眼镜防疲劳  #护眼神器 #缓解眼疲劳 ",
+"likes": 144,
+"comments": 40,
+"url": "https://www.xiaohongshu.com/explore/6a9be7050000000012026b1f",
+"published_at": "2026-09-07 10:30:49"
+},
+{
+"id": "XHS51",
+"platform": "小红书",
+"title": "重庆解放碑！！打工人护眼指南地！！快去",
+"desc": "谁懂啊！！九月开工直接高强度用眼，妥妥的打工人专属工伤😭白天盯电脑、晚上刷手机，每天下午眼睛干涩酸胀、对焦迟缓…\n\t\n周末果断去解放碑千叶配防疲劳镜片👓\n重庆30多年本土老牌子，门店遍布全城\n位置好找、环境舒服，后续调整保养超省心\n\t\n这次体验真的夸爆他家专业度！！\n验光师持证上岗、经验超足\n步骤超多，比普通配镜细致太多\n不只是测度数，会结合日常用眼习惯适配\n\t\n还帮我选了适合脸型的镜框，入了小白同款的轻盈钛镜框✨上脸超轻不压鼻、不勒耳，佩戴巨舒服😌\n\t\n戴上直观感受：长时间看屏幕不累眼👀\n酸胀干涩感缓解超多，高强度用眼的打工人、学生党直接闭眼冲！！\n-\n#千叶眼镜#千叶眼镜高端门店 #千叶眼镜配眼镜#重庆千叶眼镜 #配镜到千叶 #千叶眼镜防疲劳 #防疲劳镜片配镜 #近视党邪修自救 #打工人护眼 #上班族好物 #屏幕党必备 #重庆同城 #重庆购物 #重庆眼镜店 #重庆周末去哪儿",
+"likes": 120,
+"comments": 80,
+"url": "https://www.xiaohongshu.com/explore/6a9d79e9000000002b002a0c",
+"published_at": "2026-09-07 10:27:24"
+},
+{
+"id": "GZH104",
+"platform": "公众号",
+"title": "“幼有善育”的西安实践：首批204所幼儿园托班开班",
+"desc": "点击上方蓝字关注我们\n渐进式入托：用温情化解分离焦虑                                                 在高新区第十一幼儿园，托一班班主任高老师早早守候在校门迎接新生。入园仅三天，不少孩子已能主动问好。这份从容源于园所从暑假启动的全链条衔接。针对双职工及",
+"likes": 52,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIzMjQ1NTY4MQ==&mid=2247811820&idx=1&sn=dd9b118589c8a0de57c1d337ae2bf9c1#rd",
+"published_at": "2026-09-07 09:35:57"
+},
+{
+"id": "GZH23",
+"platform": "公众号",
+"title": "欧美人一年换好几副，中国卖家却在亚马逊上",
+"desc": "中国供应链能撑起百亿墨镜出海，但低价内卷只会让利润见底。老外买的是场景，不是防晒工具。欧美人眼睛对光敏感，加上开车、海滩、骑行等细分需求，他们常备好几副换着戴。这东西在海外成了高频复购品。中国制造包揽了中低端走量市场。高端大牌留在意大利和日本，剩下的快时尚和电商现货全靠咱们。浙江杜桥做注塑，江苏丹阳做镜片，深圳横岗搞装配。分工细到极致，成本和交期别人根本拼不过。想赚钱就得避开“通用型”陷阱。别再拿“UV400”这种基础功能当卖点去打价格战了。真正的高手都在切微观人群：比如钓鱼用的浮水款、骑行防风款，或者专门给小脸防滑落的款式。算账得把退货率和抛货体积算进去。墨镜加上包装盒特别占体积，头程运费和退货率一扣，利润薄得很。另外，硬件成本多花一两美元，搭个硬壳盒和挂绳做成套装，感知价值立马就上去了。出海卖货，拼的不是谁更便宜，而是谁能精准踩中具体场景。",
+"likes": 8,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI3OTY1NjAxMg==&mid=2247486843&idx=1&sn=c491d449fee35de1c8be52fa973303a2#rd",
+"published_at": "2026-09-07 08:29:20"
+},
+{
+"id": "GZH48",
+"platform": "公众号",
+"title": "殷桃手机打字的方式把导演逗笑了",
+"desc": "殷桃用手机发信息要戴老花镜，捣鼓半天有点着急说：我不会用这个文字，好讨厌。导演问：平时是用手写的？殷桃：对。导演笑了，殷桃也有点忍俊不禁：干嘛笑我？我这样是为了避免以后我不会写字了，你长时间用拼音我告诉你，很多字都不会写了。没想到殷桃这个年纪就戴老花镜了，感觉跟她的形象真心有点不搭。然后这个工作团队估计都是比较年轻，拿给殷桃的手机输入法是26键的。因为每个年代的人，用什么手机输入法都跟当时用的主流有关。像殷桃是70后，那个年代的人很多人不懂拼音，所以大部分总是用手写或者笔画。80后主要是九宫格9键，00后就是26键，因为他们一出生接触的就是智能机。说实话，小编也不喜欢26键，太多键盘了，打得不顺手，[捂脸]（一不小心泄露年龄了）",
+"likes": 4,
+"comments": 14,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk2NDUyNTg3MQ==&mid=2247487498&idx=1&sn=b8a6547618670d86e113304bab7203de#rd",
+"published_at": "2026-09-06 20:17:17"
+},
+{
+"id": "XHS70",
+"platform": "小红书",
+"title": "告别度数疯涨｜给近视娃的长久护眼投资",
+"desc": "告别度数疯涨｜给近视娃的长久护眼投资\n开学倒计时，孩子视力告急！\n假期沉迷平板上网课，孩子视力检查果然近视了。\n做功课选了柯达柯学优点扩散镜片，专门针对儿童用眼情况设计\n镜片密布散射微点，看上去像毛玻璃一样，但可以弱化屏幕眩光，缓解用眼疲劳从而延缓度数加深；双面防UV，户外可隔绝紫外线。\n而且孩子佩戴起来舒适无负担。材质耐磨抗老化，无需频繁更换，是超省心的长期护眼投资。\n再配合规律作息、户外锻炼和护眼饮食，用心守护孩子的清晰视界，养娃护眼贵在长期坚持！\n#近视#近视防控#近视眼镜#儿童近视#小学生近视#柯达柯学优#点扩散镜片#眼轴#控制度数",
+"likes": 415,
+"comments": 17,
+"url": "https://www.xiaohongshu.com/explore/6a9ac1f60000000011030eba",
+"published_at": "2026-09-06 18:26:58"
+},
+{
+"id": "GZH25",
+"platform": "公众号",
+"title": "国产剧的亲密戏，终于有人管了",
+"desc": "床戏，可能是片场最不能“自由发挥”的戏。最近播出的《早春晴朗》中，一个过去很少出现在国产剧里的职业，引起了注意——亲密戏指导员。剧组请来曾担任台剧《爱爱内含光》亲密戏指导的蔡嘉茵，为井柏然、孙千的亲密戏“保驾护航”。剧中亲密戏也因此受到不少讨论。比起直白的裸露和激情，更多时候，它依靠动作、距离和节奏制造暧昧与张力。而比“怎么拍得好看”更重要的，是“怎么拍得安全”。开拍前，蔡嘉茵会与井柏然、孙千提前沟通亲密动作的边界：哪些动作可以接受，哪些需要借位，身体接触可以进行到什么程度，都要事先确认。很长时间里，片场中的亲密戏，都缺少一套明确的规则。演员可以脱到哪里？哪里可以触碰？临时增加的动作能不能拒绝？导演想要的效果，与演员能够接受的身体边界发生冲突时，究竟听谁的？过去，这些问题往往依赖导演和剧组的“自觉”。但片场本身，就是一个权力并不对等的地方。近些年，越来越多名导因性侵、性骚扰等指控跌落神坛。韩国导演金基德、日本导演园子温先后陷入相关争议，中国台湾导演钮承泽则因性侵案件获刑。一次次丑闻之后，人们开始追问：为什么打戏有武术指导，床戏却没有？演员拍摄危险动作时，要设计招式、确认走位、做好保护；",
+"likes": 332,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg2NTAyODE1MQ==&mid=2247726377&idx=1&sn=86a1b09e4fad15b3d4d33919fc9f8b8f#rd",
+"published_at": "2026-09-06 18:00:00"
+},
+{
+"id": "DY72",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆时#搞笑视频 #离谱又好笑的操作 #婆媳",
+"desc": "",
+"likes": 1762,
+"comments": 24,
+"url": "https://www.iesdouyin.com/share/video/7682354187996563697",
+"published_at": "2026-09-06 17:37:51"
+},
+{
+"id": "DY107",
+"platform": "抖音",
+"title": "配眼镜还得来潘先生！！！  #潘先生眼镜   #北京平价眼镜#配镜攻略#潘家园配镜#防蓝光眼镜",
+"desc": "",
+"likes": 1032,
+"comments": 11,
+"url": "https://www.iesdouyin.com/share/video/7682334632370038449",
+"published_at": "2026-09-06 16:21:57"
+},
+{
+"id": "DY31",
+"platform": "抖音",
+"title": "#撒贝宁人老了干什么都心酸  撒贝宁分拣快递时直接戴上老花镜，低头“眼忙手乱”对着单号看了半天，结果",
+"desc": "",
+"likes": 4816,
+"comments": 99,
+"url": "https://www.iesdouyin.com/share/video/7682028141958778112",
+"published_at": "2026-09-06 12:28:00"
+},
+{
+"id": "GZH28",
+"platform": "公众号",
+"title": "为什么双鱼座逻辑能力很强，但是说话很乱",
+"desc": "因为脑子跟不上嘴啊。他明明逻辑清晰得像一张精密的设计图，可一开口，却像打翻了一盒拼图。你听着他跳跃的语句，努力在脑海中拼凑，却只捕捉到几个闪闪发光的碎片。有人说，双鱼座说话很乱。可只有双鱼自己知道，不是脑子乱，是嘴太慢，慢到追不上那匹正在脑子里奔腾的野马。他们习惯把每一件事都放在因果的链条上审视——为什么发生、会怎样发展、隐藏的逻辑是什么。这种思维方式，在独处时是一种享受，像在深夜安静地拆解一个复杂的结。可一旦要开口表达，尤其是站在人群面前，那根链条就开始剧烈摇晃。因为嘴在说第一点的时候，脑子已经跑到了第三点、第五点，甚至已经想好结论要如何升华。于是你说出来的，是跳跃的、浓缩的、只留精华的。你把中间的过渡省略了，把转折藏起来了，你以为对方能和你一样，瞬间穿越那条思维的隧道。可别人还在原地，试图理解你第一句话里的隐喻。你觉得自己讲得足够清楚了，可对方眼神里的迷茫，像一面诚实的镜子。于是，你开始解释。解释第一句，再补充第二句，又绕回第三句。原本三句话能说完的事，最后变成了一段需要反复确认的长途对话。精准，又啰嗦。高级，又混乱。这八个字，大概是双鱼座语言风格最贴切的注脚。所以很多双鱼，渐渐爱",
+"likes": 262,
+"comments": 56,
+"url": "https://mp.weixin.qq.com/s?__biz=MzcwNDQwNzc3OA==&mid=2247484541&idx=1&sn=890049481658f7cc30453c68fc2fd2d9#rd",
+"published_at": "2026-09-06 11:53:26"
+},
+{
+"id": "XHS72",
+"platform": "小红书",
+"title": "让孩子日常看得清楚",
+"desc": "新学期开学，娃的眼睛度数又是很多家长的关注点，我家同样也是，从小就开始定期检查，娃6-16岁正处在生产发育期，眼轴和身高一样必然都在增长，所以在日常做好防控是非常重要的。\n如果只是解决当下的看得清，确实普通的眼睛够用，但在发育期的娃，眼轴也处于发育期，只要在经济条件允许下，建议给孩子佩戴防控类的眼镜，减少眼轴增长太快发展成高度近视的风险很高。\n开学前，和娃一起去配了新天鸿贝悦小葵花系列的防控眼镜，还联名了哆啦A梦，这个系列主要针对青少年近视防控的，它采用的双信道“双效”技术，通过低对比度散射柔和刺眼的强光，让眼睛没那么疲劳；同时还辅助了一些离焦信号，来拉住眼轴），在整个近视防控的过程中，家长也需要密切检测娃的眼轴、眼压的变化。\n娃佩戴的感受也非常重要，低龄的娃有时会很抗拒，戴不住，贝悦小葵花这个系列就做得非常好，孩子戴了“跟没戴一样清楚”，不会糊成一片，且光线比较柔和，不会刺眼或者有密集恐惧感，最重要的是孩子户外运动时的视觉感受，就比如戴眼镜打羽毛球，普通眼镜大幅动作容易晕，孩子总是出现差一点碰到球的情况，这就是视物距离不准确，小葵花的识别度平衡技术就是保证清晰的同时减少这种视觉误差，",
+"likes": 729,
+"comments": 45,
+"url": "https://www.xiaohongshu.com/explore/6a9bef49000000002803202c",
+"published_at": "2026-09-06 11:36:00"
+},
+{
+"id": "GZH56",
+"platform": "公众号",
+"title": "成龙确诊ADHD，粉丝心疼极了",
+"desc": "功夫巨星成龙开通个人社交账号，第一条视频该发什么？按常理猜，怎么也得是几句一段片场花絮，至少也要亮个功夫架势。结果成龙的视频画风却是：戴着老花镜，两鬓斑白，聊自己每天爱到处跑，日常喜欢健身养花、陪狗狗玩耍，还认认真真纠结“哪个角度自拍显脸小”，然后说了一句：“怎么才能让我这个ADHD集中注意力？”视",
+"likes": 4,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk5MDU2MTEwMw==&mid=2247490307&idx=1&sn=63514f4a13e1b64bc2bdd566ceb02376#rd",
+"published_at": "2026-09-06 09:00:00"
+},
+{
+"id": "XHS30",
+"platform": "小红书",
+"title": "《医探究竟》| 成品老花镜能不能买？",
+"desc": "配花镜有哪些注意事项，成品老花镜能不能买？#天津卫视医探究竟",
+"likes": 3,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a991c60000000002802d8ba",
+"published_at": "2026-09-05 22:00:19"
+},
+{
+"id": "GZH275",
+"platform": "公众号",
+"title": "【活动转载】明月两乡，青山同云 | 2026上海市高中跨校明信片互寄活动",
+"desc": "笔尖落下的时候，有些情绪比语言更先抵达。友谊、成长、思念、离别与重逢，都可以安放在一张薄薄的明信片里，穿过走廊、校门与街巷，落进另一所校园的晨光与晚风里。",
+"likes": 105,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyNTY3MTMyOA==&mid=2247484475&idx=1&sn=107ca9b5be961d984aa18a7d63372212#rd",
+"published_at": "2026-09-05 21:45:00"
+},
+{
+"id": "GZH180",
+"platform": "公众号",
+"title": "49克！AI眼镜100%国产化！解码长沙制造进阶之路！",
+"desc": "近日，一位财经博主探访蓝思科技长沙总部。这家从精密玻璃加工起家的长沙本土企业，做了一系列意想不到的新品：其中仅49克的Rokid GlassesAI眼镜在蓝思湘潭基地完成生产组装，手机、电脑的功能全部集成在内，从光波导镜片加工一直到整机装配，实现制造全链路100%国产化。\nRokid Glasses",
+"likes": 67,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NDExNjc3MQ==&mid=2650552137&idx=1&sn=36b2a6c5bbb467fe396d35a8af634e7a#rd",
+"published_at": "2026-09-05 19:47:28"
+},
+{
+"id": "DY128",
+"platform": "抖音",
+"title": "神兽归笼！开学第一件事，先给娃把眼镜选对#明月镜片 #明月轻松控  #好视力就要轻松控 #开学季  ",
+"desc": "",
+"likes": 17918,
+"comments": 159,
+"url": "https://www.iesdouyin.com/share/video/7681958782663106277",
+"published_at": "2026-09-05 17:37:14"
+},
+{
+"id": "GZH3",
+"platform": "公众号",
+"title": "丹阳市政府与阿里千问达成战略合作",
+"desc": "9月4日，丹阳市人民政府与阿里千问达成战略合作，双方将围绕千问AI眼镜的镜片供应、验光配镜及周边配套资源方面展开合作，进一步丰富用户在近视、老花、太阳、变色等不同镜片类型上的选择，并完善配镜、安装及售后等服务体验。值得关注的是，签约仪式上，阿里千问还与丹阳市江苏美乐集团签订供需合作协议，成为此次战略",
+"likes": 60,
+"comments": 4,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1MTUzMTI4OA==&mid=2247664401&idx=1&sn=144a1637484bb1d5309607c79ec2903b#rd",
+"published_at": "2026-09-05 15:52:59"
+},
+{
+"id": "DY36",
+"platform": "抖音",
+"title": "人家自己淘宝买了一个能翻盖的老花镜，才9元。",
+"desc": "",
+"likes": 2206,
+"comments": 92,
+"url": "https://www.iesdouyin.com/share/video/7681951834428489844",
+"published_at": "2026-09-05 15:36:31"
+},
+{
+"id": "DY52",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆时#婆媳生活 #搞笑 #闫妮和刘婆婆 #离谱又好笑 #家庭日常 @上汽大众 #大",
+"desc": "",
+"likes": 18996,
+"comments": 196,
+"url": "https://www.iesdouyin.com/share/video/7681936125359160390",
+"published_at": "2026-09-05 14:35:33"
+},
+{
+"id": "DY113",
+"platform": "抖音",
+"title": "现在在潘家园找一个靠谱不踩雷的店还是比较难的！#潘先生眼镜 #北京平价眼镜#配镜攻略#潘家园配镜#防",
+"desc": "",
+"likes": 1081,
+"comments": 48,
+"url": "https://www.iesdouyin.com/share/video/7681883161977949834",
+"published_at": "2026-09-05 11:10:02"
+},
+{
+"id": "GZH117",
+"platform": "公众号",
+"title": "不近视戴眼镜，到底有意义吗？留言回复：近视防控，没有必须选项，只有选择题里的最优解",
+"desc": "看到一条家长留言：没近视，戴镜有什么意义？\n \n这条留言，道出了很多家长，甚至一部分医生内心真实的疑惑。很多人心里会想：反正孩子长大大概率还是要戴眼镜，那小时候提前戴镜干预，多戴几年眼镜，意义在哪里？近视防控，科普先行，最终还是要解决认知问题，下方也有别的家长留言回复，意义是什么？\n \n这也是我为什",
+"likes": 125,
+"comments": 68,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIyODIxNDE3Nw==&mid=2247512037&idx=1&sn=9043eab1d1918cf04f16ec5105ed2b2c#rd",
+"published_at": "2026-09-05 06:36:00"
+},
+{
+"id": "GZH191",
+"platform": "公众号",
+"title": "蔡司半导体CEO直言，中国研发出EUV光刻机还需要15年！这是阿斯麦独家供应商首次量化差异！网友：",
+"desc": "近日，蔡司半导体业务负责人Frank Rohmund在接受彭博电视采访时，谈到中国极紫外光刻机研发进度。他表示，中国造出EUV光刻机可能还需要约15年。这一判断被他定义为“合理的假设”，不是确定时间表。    蔡司是ASML EUV光刻机光学系统独家供应商，ASML是目前全球唯一量产EUV光刻机的公",
+"likes": 43,
+"comments": 50,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwNzM1NjQyNg==&mid=2649992490&idx=1&sn=f8fcfed3c4cc2f8c23be025ccc7fdb2c#rd",
+"published_at": "2026-09-04 23:32:48"
+},
+{
+"id": "DY106",
+"platform": "抖音",
+"title": "内行人教你配眼镜攻略！！居然这么划算…… #潘先生眼镜 #北京平价眼镜  #潘家园配镜 #防蓝光眼镜",
+"desc": "",
+"likes": 1041,
+"comments": 56,
+"url": "https://www.iesdouyin.com/share/video/7681657682689125358",
+"published_at": "2026-09-04 20:35:03"
+},
+{
+"id": "DY67",
+"platform": "抖音",
+"title": "永远不变的味道就是妈妈牌的番茄鸡蛋面，唯一变的却是切面条时看不清的老花眼，感叹时光的无情#妈妈的味道",
+"desc": "",
+"likes": 2371,
+"comments": 602,
+"url": "https://www.iesdouyin.com/share/video/7681638875664991231",
+"published_at": "2026-09-04 19:22:04"
+},
+{
+"id": "GZH237",
+"platform": "公众号",
+"title": "夏末乐章切换！解锁igc变奏音乐盒",
+"desc": "🍁季节轮转，生活也在悄然变奏🎵igc化身巨大「音乐盒」超多惊喜等待你来和鸣✈️序曲·挑战有惊喜乐章开篇，迎接趣味惊喜有机会把豪华大奖带回家图2立即点击报名🥮主歌·中秋团圆时借积分兑换入口的醇甜御宝轩经典月饼抢先尝图3立即点击进入积分商城🖐️渐进·得华韵匠心静下来学习非遗广彩私享沙龙，给你不一样的体验图4立即点击报名🎁副歌·礼遇拿不停副歌响起，福利全面放送礼遇不停拿到手软图5🏠间奏·开新总动员新声暗涌，品牌揭幕LEGO乐高焕新升级图6❤️高潮·幻彩闪流光音浪沸腾，幻彩流转的配饰让生活的光芒夺目绽放图7图8图9",
+"likes": 112,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxNDUzNzc4MA==&mid=2247589696&idx=1&sn=8fdf3e8e65850a242ec4c9458309dab4#rd",
+"published_at": "2026-09-04 18:58:22"
+},
+{
+"id": "DY68",
+"platform": "抖音",
+"title": "当你有个老花眼的婆婆时…#婆媳#搞笑婆媳#万万没想到#笑不活了家人们 #婆媳关系",
+"desc": "",
+"likes": 2265,
+"comments": 39,
+"url": "https://www.iesdouyin.com/share/video/7681566340822659967",
+"published_at": "2026-09-04 18:10:01"
+},
+{
+"id": "GZH5",
+"platform": "公众号",
+"title": "瞳乐眼镜丨感恩教师节 · 为爱免单！",
+"desc": "为了感谢每一位辛勤付出的园丁，瞳乐眼镜特别推出教师专属福利：👩‍🏫 活动对象： 全体教师（凭本人教师证）🎁 活动内容： 进店出示教师证，即可免费领取价值 398元 的眼镜一副（包含镜框 + 镜片）",
+"likes": 87,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIwMDg3Mjc1OA==&mid=2247484788&idx=1&sn=e5ba0b9302053b76b7516bc4112c2078#rd",
+"published_at": "2026-09-04 18:00:00"
+},
+{
+"id": "XHS88",
+"platform": "小红书",
+"title": "被问爆了的眼镜👓高清防蓝光",
+"desc": "#高颜值眼镜 #防蓝光眼镜 #素颜眼镜 #眼镜 #高颜值太阳镜 #防晒眼镜 #无度数眼镜 #适合方圆脸的眼镜框 #眼镜爱好者 #眼镜框 ",
+"likes": 10,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a9a963e00000000280314a9",
+"published_at": "2026-09-04 17:58:22"
+},
+{
+"id": "GZH69",
+"platform": "公众号",
+"title": "【科普】夜盲、视野缩小、视物模糊？当心是这一眼病找上门！",
+"desc": "“天一黑就看不清路，走夜路总担心撞到东西”         “看东西范围越来越小，像通过一根管子看世界”         ——如果出现这些症状，可别当成普通的“老花眼”或“眼疲劳”。这很可能是已经出现视网膜色素变性而发出的“预警信号”。         我们一起来揭开这种疾病的神秘面纱，读懂它背后的",
+"likes": 128,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3NzIwODYwMQ==&mid=2653129240&idx=1&sn=780b753151a882c614d1498f9d9b4332#rd",
+"published_at": "2026-09-04 17:19:48"
+},
+{
+"id": "DY104",
+"platform": "抖音",
+"title": "不到100就可以配一副1.56防蓝光眼镜 还得是上海的诺亚视光啊！#诺亚视光#防蓝光眼镜#眼镜团购#",
+"desc": "",
+"likes": 1073,
+"comments": 41,
+"url": "https://www.iesdouyin.com/share/video/7681598072538816357",
+"published_at": "2026-09-04 16:43:44"
+},
+{
+"id": "XHS21",
+"platform": "小红书",
+"title": "全新超高清超轻老花镜",
+"desc": "全新超高清超轻老花镜，200度老花镜，托管价39.9包邮出～\n德国进口TR90高清树脂防摔老花镜，防蓝光老视镜，镜架折不断，超轻仅重9克，戴着不压鼻不累，日常看手机、看书、看电视都方便。\n家里人买重了",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a9a84060000000012037df4",
+"published_at": "2026-09-04 16:40:38"
+},
+{
+"id": "GZH112",
+"platform": "公众号",
+"title": "【预约领眼镜】贺2026教师节，老师预约领485元防蓝光眼镜！",
+"desc": "✨贺 9・10 教师节👩‍🏫        致敬每一位辛勤耕耘的老师        三尺讲台育桃李，一支粉笔写春秋        常年伏案备课、批改作业        长时间用眼，眼睛格外容易疲劳干涩        值此 2026 教师节来临之际        信诚眼视光        向全体人",
+"likes": 164,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3Nzc3NzYyOA==&mid=2649669857&idx=1&sn=e4301fe2d584c61df310da8c6b2b3721#rd",
+"published_at": "2026-09-04 16:05:13"
+},
+{
+"id": "GZH113",
+"platform": "公众号",
+"title": "【预约领眼镜】贺2026教师节，老师预约领取485元防蓝光眼镜！",
+"desc": "✨贺 9・10 教师节👩‍🏫\n致敬每一位辛勤耕耘的老师        三尺讲台育桃李，一支粉笔写春秋         常年伏案备课、批改作业        长时间用眼，眼睛格外容易疲劳干涩        值此 2026 教师节来临之际        直通车眼视光        向全体人民教师致以",
+"likes": 138,
+"comments": 5,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxMDk1NDUxMw==&mid=2247490127&idx=1&sn=8e981c895a7e73eb94ef83712d50a3f5#rd",
+"published_at": "2026-09-04 16:04:14"
+},
+{
+"id": "GZH277",
+"platform": "公众号",
+"title": "镜片的“暴利”去哪了：专家解读镜片行业发展",
+"desc": "据《2026年中国眼镜消费趋势白皮书》，被调研用户最近购买一副眼镜（含镜片、镜架）花费500-2000元占比达65%。国投证券研究所2025年8月的报告则显示，2025年中国树脂眼镜镜片平均单价约为8.78元。",
+"likes": 22,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg2MjczNTIzOA==&mid=2247521584&idx=1&sn=d78d4055fbc70ba9fbf79975ce6ace91#rd",
+"published_at": "2026-09-04 16:02:34"
+},
+{
+"id": "XHS34",
+"platform": "小红书",
+"title": "殷桃看手机带老花镜，打字手写，真是上年纪了hhh！#殷桃 #花儿与少年",
+"desc": "殷桃看手机带老花镜，打字手写，真是上年纪了hhh！#殷桃 #花儿与少年",
+"likes": 266,
+"comments": 10,
+"url": "https://www.xiaohongshu.com/explore/6a9a4415000000002900cb19",
+"published_at": "2026-09-04 12:07:49"
+},
+{
+"id": "GZH137",
+"platform": "公众号",
+"title": "短剧圈美人大赏｜盘点明艳大方女演员，这十位短剧女神你刷到过几位",
+"desc": "刷短剧刷久了我真的有点审美疲劳。               放眼望去一大半都是柔弱小白花女主，委屈落泪、等待男主救赎的剧本看多了，实在有点提不起兴致。\n反倒越来越吃那种明艳大气的长相，眉眼舒展，气场拉满，不需要刻意扮可怜，往镜头一站，大女主那味儿直接就出来了。               所以今天",
+"likes": 40,
+"comments": 18,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY0MDY0OTUyOQ==&mid=2247486122&idx=1&sn=8d253906a9f2b5cd668326f02d85f36b#rd",
+"published_at": "2026-09-04 08:11:45"
+},
+{
+"id": "GZH161",
+"platform": "公众号",
+"title": "一香港女孩在黑暴时说“我希望香港可以像乌克兰一样，有这样好的结局”，然后呢？",
+"desc": "2019年，香港“黑暴”。\n \n当时，一批上街参加暴乱的年轻人在全城二十多个放映点，观看一部由美、乌、英三方联合摄制的纪录片。这部纪录片聚焦2013年主义2014年乌克兰政局变动，经过精心剪辑，把街头游行、政权更迭的画面被渲染得热血澎湃，充满理想化的色彩。\n \n一名参加暴乱的香港女孩面对BBC的镜头",
+"likes": 311,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYyNDIwMzY4Nw==&mid=2247490980&idx=1&sn=25b1fb630fa500d4fdef40815632abf0#rd",
+"published_at": "2026-09-04 00:02:00"
+},
+{
+"id": "DY102",
+"platform": "抖音",
+"title": "重庆人都这么会配眼镜的吗？ 两位数拿下一整幅防蓝光眼镜！ #重庆配眼镜 #重庆眼镜店 #重庆龙湖高新",
+"desc": "",
+"likes": 2348,
+"comments": 43,
+"url": "https://www.iesdouyin.com/share/video/7681307793160355299",
+"published_at": "2026-09-03 21:57:18"
+},
+{
+"id": "GZH52",
+"platform": "公众号",
+"title": "社区医院拿药，才知道很多老人的医保都用错",
+"desc": "前几天去社区医院拿常备药，大厅里飘着淡淡的消毒水味。 取药窗口前排着小队，都是拎着布袋子的老头老太太，手里攥着医保卡和皱巴巴的缴费单。排在我前面的是同小区的张姨。 她递进去医保卡，另一只手已经翻开钱包准备掏钱。 药师刷完卡抬头说：“统筹报完了，自付八块。” 她愣了一下，扶了扶老花镜：“我这就是门诊拿个药，也能报销？”张姨有高血压，常年吃降压药，每个月都来拿一次，拿了快三年。 每次都直接付现金，从来没想着走医保。 总觉得只有住院才能报，门诊拿药都是自己掏钱。 一盒药三十多，一个月两盒，一年下来也小一千。 她总说 “医保就是保大病的，平时这点小钱犯不上麻烦”，就这么白白扔了好几年的福利。正说着，后面的李阿姨凑过来搭话。 “我早就走门诊报销了，像咱们这种慢性病，还能多报点。 一年下来能省大几百，够买两桶油再加一袋米了。”李阿姨早就在社区办了定点，平时拿药、感冒看个小病，都走医保统筹。 超过起付线的部分按比例报，不用自己全掏。 她跟张姨说：“咱们交了一辈子医保，该享的福利就得享。 能省下来的钱，留着自己买点吃的喝的，不比白扔了强。”我站在边上听着，心里挺有感触。其实身边好多老人都跟张姨一样。 ",
+"likes": 159,
+"comments": 31,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzg2NjE5MTM2Mw==&mid=2247492448&idx=1&sn=3d9c37b0da00cfced781d5b94b68b083#rd",
+"published_at": "2026-09-03 21:18:21"
+},
+{
+"id": "DY144",
+"platform": "抖音",
+"title": "淡颜变美思路～普女到有点小漂亮就这么简单 #明月镜片#明月PMC超亮镜片#明月171PMC超亮镜片A",
+"desc": "",
+"likes": 7500,
+"comments": 134,
+"url": "https://www.iesdouyin.com/share/video/7681207547722866034",
+"published_at": "2026-09-03 18:01:30"
+},
+{
+"id": "DY146",
+"platform": "抖音",
+"title": "vlog｜咱就是换了副眼镜，今天走高智风#明月镜片#明月PMC超亮镜片#明月171PMC超亮镜片A8",
+"desc": "",
+"likes": 5668,
+"comments": 78,
+"url": "https://www.iesdouyin.com/share/video/7680861720776883145",
+"published_at": "2026-09-03 18:00:57"
+},
+{
+"id": "GZH132",
+"platform": "公众号",
+"title": "[资中爱德眼科]第八届教师节公益赠镜",
+"desc": "678元防蓝光眼镜免费送",
+"likes": 329,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MzE5ODQyMTcxOQ==&mid=2247485948&idx=1&sn=7b479fced9040c9a673d001fd7c371a0#rd",
+"published_at": "2026-09-03 17:57:25"
+},
+{
+"id": "GZH203",
+"platform": "公众号",
+"title": "长城H10持续热销，一路粤行万里",
+"desc": "",
+"likes": 225,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU5ODUyMDMzMw==&mid=2247678909&idx=2&sn=0dfafb1298c649da137c367a428d386a#rd",
+"published_at": "2026-09-03 17:40:52"
+},
+{
+"id": "XHS47",
+"platform": "小红书",
+"title": "乱买乱戴隐形眼镜真的会瞎！",
+"desc": "眼科医生手把手教你正确选择隐形眼镜，建议收藏#眼睛酸胀  #隐形眼镜  #护眼  #眼疲劳#健康知识收集器 #用眼好习惯 #近视防控",
+"likes": 62,
+"comments": 5,
+"url": "https://www.xiaohongshu.com/explore/6a97ef590000000012026599",
+"published_at": "2026-09-03 17:30:54"
+},
+{
+"id": "DY29",
+"platform": "抖音",
+"title": "同时戴老花镜和近视镜，狗子会有什么反应？ #非正常养狗 #整蛊狗子 #趣味测试 #眼镜 #瓜子二手车",
+"desc": "",
+"likes": 6945,
+"comments": 257,
+"url": "https://www.iesdouyin.com/share/video/7681161452971044968",
+"published_at": "2026-09-03 17:30:14"
+},
+{
+"id": "DY77",
+"platform": "抖音",
+"title": "婆婆的老花眼害了我#婆媳 #搞笑 #农村生活 #记录真实生活 #剧情",
+"desc": "",
+"likes": 1244,
+"comments": 61,
+"url": "https://www.iesdouyin.com/share/video/7681237368771169946",
+"published_at": "2026-09-03 17:24:01"
+},
+{
+"id": "GZH190",
+"platform": "公众号",
+"title": "温州人注意！10秒摘镜！温医大附二院这台“机器人”太神奇了",
+"desc": "温医大附二院眼科中心正式引进蔡司新一代机器人全飞秒™ VISUMAX™ 800设备，屈光手术中心全新启幕！",
+"likes": 172,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI1MzAxMTkwMw==&mid=2247502727&idx=1&sn=e4b2008405a9b21d673979f5cfd08e6c#rd",
+"published_at": "2026-09-03 16:00:00"
+},
+{
+"id": "GZH125",
+"platform": "公众号",
+"title": "吓人！余姚一村民家中发现一条眼镜蛇！",
+"desc": "近日，阳明街道潘巷村一村民在自家鸡舍内发现一条一米多长的眼镜蛇，吓得赶紧报警求助。当地消防部门接警后迅速赶赴现场，成功将蛇捕获并带至野外无人区域放生。         据该村民讲述，当天他发现自家鸡舍里有鸡被咬死后，便在鸡舍内仔细寻找，结果发现了一条眼镜蛇，吓得连忙后退并立即报警。  接到报警后，消",
+"likes": 35,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5OTExNTcwNQ==&mid=2654705589&idx=1&sn=14db8d1ecc9f499fef5065b4fd340334#rd",
+"published_at": "2026-09-03 15:26:59"
+},
+{
+"id": "GZH120",
+"platform": "公众号",
+"title": "浙江一条眼镜蛇钻进鸡舍咬死鸡还偷吃鸡蛋，村民多次驱赶都“不肯走” ；消防：蛇被网缠住，无法自行逃脱，目前已野外放生",
+"desc": "转发关注",
+"likes": 18,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MTIzNDg3NzY2MA==&mid=2654055430&idx=2&sn=f93528f8fa0b942dfa41b6d7a8ec8b45#rd",
+"published_at": "2026-09-03 13:00:00"
+},
+{
+"id": "GZH126",
+"platform": "公众号",
+"title": "1.5米眼镜蛇藏纸筒，女子徒手拎出，一开始不确定里面是蛇：听到“哈气”声，还以为是家中小猫发出的动静",
+"desc": "9月1日，广东深圳的高女士在家中发现一条眼镜蛇竟藏身于厨房角落的纸卷筒内。       起初，高女士听到“哈气”声，还以为是家中小猫发出的动静，随后察觉异常才发现不对劲。由于今年6月前院也曾出现过眼镜蛇，高女士这次较为镇定，先用扫把压住纸卷筒两端防止蛇窜出，随后徒手拎着纸卷筒两端将其转移到室外，并联",
+"likes": 126,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NjAxNTIyMA==&mid=2658671534&idx=2&sn=4480ed696d6b5fc616ec55ec246d5cd0#rd",
+"published_at": "2026-09-03 10:57:56"
+},
+{
+"id": "GZH136",
+"platform": "公众号",
+"title": "1.5米眼镜蛇藏纸筒，女子徒手拎出！",
+"desc": "9月1日，广东深圳的高女士在家中发现一条眼镜蛇竟藏身于厨房角落的纸卷筒内。       起初，高女士听到“哈气”声，还以为是家中小猫发出的动静，随后察觉异常才发现不对劲。由于今年6月前院也曾出现过眼镜蛇，高女士这次较为镇定，先用扫把压住纸卷筒两端防止蛇窜出，随后徒手拎着纸卷筒两端将其转移到室外，并联",
+"likes": 4,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAxMDY0ODUxMw==&mid=2736631622&idx=3&sn=4026035c8e02a9a023b8bdf55c3c0c10#rd",
+"published_at": "2026-09-03 08:42:39"
+},
+{
+"id": "GZH37",
+"platform": "公众号",
+"title": "72岁成龙加拿大与友人吃海底捞，戴着老花镜夹菜，看酸了多少人！",
+"desc": "大家好，我是沿沿，在进入正文之前，给大家做一个推荐。          我的一个设计师好友夏夏，从LXD离职后，经历过设计创业的失败，后同小伙伴一起经营了一些自媒体账号，分享全球优秀设计工作室的作品。良心干货，超前理念，你想看的好设计全都有❗          如果你也是设计师，想邀请你一起关注一下",
+"likes": 46,
+"comments": 19,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI4OTQ3Nzg2Mw==&mid=2247627335&idx=1&sn=6f612dcf8d32910159ec6eaa85dd4fcd#rd",
+"published_at": "2026-09-02 23:25:11"
+},
+{
+"id": "GZH128",
+"platform": "公众号",
+"title": "1.5米长眼镜蛇藏身厨房纸筒内，深圳一女子徒手拎出！当事人：听到“哈气”声，还以为是家中小猫",
+"desc": "9月1日，广东深圳的高女士在家中发现一条眼镜蛇竟藏身于厨房角落的纸卷筒内。\n起初，高女士听到“哈气”声，还以为是家中小猫发出的动静，随后察觉异常才发现不对劲。由于今年6月前院也曾出现过眼镜蛇，高女士这次较为镇定，先用扫把压住纸卷筒两端防止蛇窜出，随后徒手拎着纸卷筒两端将其转移到室外，并联系物业。\n物",
+"likes": 79,
+"comments": 8,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NzM2NTMwMQ==&mid=2652143788&idx=1&sn=4500a2f9df0f623418787fd10fe65451#rd",
+"published_at": "2026-09-02 23:14:55"
+},
+{
+"id": "GZH51",
+"platform": "公众号",
+"title": "73年53岁，10个衰老的信号，我全中了",
+"desc": "岁月不声不响，悄悄把我们都换了模样，这10个衰老的信号我一个也没落下！❶ 分房睡，年轻时腻歪在一块没够，现在老伴翻身、打呼噜都受不了，直接分床分房睡，生理上也没什么需求。❷ 腰酸腿疼，膝盖比天气预报还准，阴天下雨就发酸发紧，上下楼像踩在针尖上，走一步提醒一次。❸ 睡眠变浅，凌晨三四点醒了就睡不着，脑子比白天还忙，躺床上想怎么闹钟还不响。❹ 视力模糊，离不开老花镜，以前近视，现在老花，手机字号越调越大。晚上出门，看不清对面来人。➎ 吃饭主打清淡，不爱吃外面重口味的饭菜，在家炒个青菜、蒸条鱼，调料就那几样，吃着反而觉得香。吃多了腹胀，只能少吃。➏ 听力减退，接打电话习惯开免提，能用语音不用打字，对着小键盘戳了删、删了戳，不如直接按住说话省事。➐ 容易忘事，找个东西，人还没动，想不起来要找什么了，临出门，不是找手机，就是找钥匙，走出去多远，还不忘回来再看看门锁了吗。➑ 头发白了，以前有几根白头发还拔去，现在白头发越来越多了，拔都拔不完，更不想染了。➒ 脸上皮肤松了。肤色暗沉，眼角的皱纹、法令纹越来越深，照镜子不敢细看。➓ 不喜欢出门，也不想凑群，自己待家里，在家拖拖地，躺会儿，看会儿书，按自",
+"likes": 55,
+"comments": 44,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNDYzMDcyMg==&mid=2247485310&idx=1&sn=abb6e1a34f999fb349ea4ac4d425a8e5#rd",
+"published_at": "2026-09-02 21:17:56"
+},
+{
+"id": "XHS124",
+"platform": "小红书",
+"title": "南京配镜！！带男大弟弟配个帅的！！",
+"desc": "#南京配镜 #南吴眼镜 #明月镜片 #明月PMC超亮镜片 #学生党配镜 #南京眼镜店 #南京配眼镜 #青少年配镜 #南京探店#赴一场清晰视界",
+"likes": 10,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6a981c58000000002b002dee",
+"published_at": "2026-09-02 20:53:44"
+},
+{
+"id": "DY152",
+"platform": "抖音",
+"title": "让孩子近视快速加深的不是手机，而是这个！ #孩子视力 #儿童近视防控 #明月镜片 #明月光优点 #育",
+"desc": "",
+"likes": 1814,
+"comments": 48,
+"url": "https://www.iesdouyin.com/share/video/7680501736716953834",
+"published_at": "2026-09-02 20:00:28"
+},
+{
+"id": "GZH127",
+"platform": "公众号",
+"title": "1.5米眼镜蛇藏纸筒，女子徒手拎出！一开始不确定里面是蛇：听到“哈气”声，还以为是家中小猫发出的动静",
+"desc": "9月1日，广东深圳的高女士在家中发现一条眼镜蛇竟藏身于厨房角落的纸卷筒内。       起初，高女士听到“哈气”声，还以为是家中小猫发出的动静，随后察觉异常才发现不对劲。由于今年6月前院也曾出现过眼镜蛇，高女士这次较为镇定，先用扫把压住纸卷筒两端防止蛇窜出，随后徒手拎着纸卷筒两端将其转移到室外，并联",
+"likes": 109,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=NzEyNTY0NDYx&mid=2653764085&idx=1&sn=fd2ee13ed4573b789e5a613dc67a8bde#rd",
+"published_at": "2026-09-02 18:42:07"
+},
+{
+"id": "DY86",
+"platform": "抖音",
+"title": "远近自由对焦，用眼拒绝来回折腾✨#渐进多焦点镜片 #半年抛 #好物 #渐进多焦 #上镜",
+"desc": "",
+"likes": 1113,
+"comments": 41,
+"url": "https://www.iesdouyin.com/share/video/7680880297084341504",
+"published_at": "2026-09-02 18:18:33"
+},
+{
+"id": "DY150",
+"platform": "抖音",
+"title": "开学前这件事不重视，度数可能疯涨！ #孩子视力 #儿童近视防控 #明月镜片 #明月光优点 #育儿",
+"desc": "",
+"likes": 2508,
+"comments": 53,
+"url": "https://www.iesdouyin.com/share/video/7680502141073568763",
+"published_at": "2026-09-02 18:00:50"
+},
+{
+"id": "DY147",
+"platform": "抖音",
+"title": "开学前24小时！紧急通知暑假作业不许留白！ #明月镜片 #明月轻松控 #好视力就要轻松控 #小学生 ",
+"desc": "",
+"likes": 5537,
+"comments": 259,
+"url": "https://www.iesdouyin.com/share/video/7680840490287140137",
+"published_at": "2026-09-02 16:40:16"
+},
+{
+"id": "XHS7",
+"platform": "小红书",
+"title": "在时间的长河里，当一只淡水鱼，再戴上老花镜",
+"desc": "。",
+"likes": 14628,
+"comments": 596,
+"url": "https://www.xiaohongshu.com/explore/6a9791630000000028031466",
+"published_at": "2026-09-02 11:00:51"
+},
+{
+"id": "DY63",
+"platform": "抖音",
+"title": "当老顾老花眼没带眼镜👓#老两口 #农村生活 #搞笑 #王胖和老顾",
+"desc": "",
+"likes": 8610,
+"comments": 108,
+"url": "https://www.iesdouyin.com/share/video/7680616130075458725",
+"published_at": "2026-09-02 10:55:00"
+},
+{
+"id": "DY39",
+"platform": "抖音",
+"title": "#没事就刷手机 ，#老花镜一戴真的老了 ，该退休了，浙江长兴",
+"desc": "",
+"likes": 1416,
+"comments": 84,
+"url": "https://www.iesdouyin.com/share/video/7680697822349365883",
+"published_at": "2026-09-02 06:30:18"
+},
+{
+"id": "GZH54",
+"platform": "公众号",
+"title": "菜市场碰上老伙计，把《映山红》的来历讲了个明白",
+"desc": "早上买菜，正低头挑芹菜，旁边蹲着个穿灰夹克的老头，扒拉土豆，嘴里没闲住，哼着小调，调子低，听了一耳朵，咦，这不是那啥吗——夜半三更哟，盼天明——嘴一痒，顺口接下茬：寒冬腊月哟，盼春风。\n老头猛地抬头，扶了扶老花镜，瞅我半天，哎哟，你也知道这歌！\n我乐了，说咋不知道，小时候村里放《闪闪的红星》，散场了",
+"likes": 42,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4OTM2NTI2Mg==&mid=2247484293&idx=1&sn=0ac42ce22f953dde4a745ef42309ad05#rd",
+"published_at": "2026-09-02 05:03:00"
+},
+{
+"id": "GZH4",
+"platform": "公众号",
+"title": "上新了！",
+"desc": "今晚（9月2日)微店新品20:00准时上架。⬅️⬅️可左滑翻页查看更多图片⬅️⬅️点击即可进入店铺：木木三店家里一个孩子的话，你可能体会不到多个孩子的乐趣，特别是一言不合就打起来的哥俩，不仅给你带来了感官上的刺激，还容易让你在人群中闪闪发光😂，平时短途出游大多自驾，密闭的车厢里，我和媳妇包揽了观众和裁判的所有岗位，一路听着哥俩吵吵嚷嚷、哭哭笑笑。时而心累，时而无奈，气也气过，笑也笑过。关起门来的鸡飞狗跳，不用难为情，都是一家人最普通的烟火。也次去成都不一样，全是公共交通。哥俩相处还算融洽时，就相互跑着追闹，火车候车厅本来还算很静的，这俩一来之后就改变了气氛了，要是打起来就更热闹了，老二就扯着嗓子哭，整个候车厅都是他的声音😂高铁上老二要看我手机，我没给，一不留神就把我眼睛抢跑了，很生气又很无奈，哥哥看到机会来了，以“正义之师”名义开始下手了，帮抢我眼镜，我不太放心说：别使劲抢！主要是担心我的眼镜被他俩一使劲又弄烂了，我都忘了自己换了多少副了……老二手攥着就是不给，只听见老大𠳐𠳐𠳐好几拳打老二身上，老二张着大嘴哭，同时还不停还手反击，哥俩互不相让，整个车厢都是他俩的声音，老二嗓门又大，又扯",
+"likes": 47,
+"comments": 15,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NzQzMzcxMw==&mid=2654972958&idx=1&sn=78f170da92c2b47854d0f6b0a29b7487#rd",
+"published_at": "2026-09-02 00:21:42"
+},
+{
+"id": "GZH29",
+"platform": "公众号",
+"title": "得了精神分裂就废了？这8种工作很适合",
+"desc": "在我接诊过的不少案例中，很多家属出于保护，在患者病情稳定后依然选择把他们“圈”在家里。但这其实是一个极大的康复误区。工作不仅是谋生的手段，更是精神分裂症患者重塑社会功能、防止认知衰退的核心“处方”。图片中盘点的这8种职业，剥离了高强度社交与复杂决策的重压，为患者回归社会提供了最科学的过渡路径：🌟低压力的秩序感空间：如图书馆管理员、数据录入或轻型仓储分拣。这些岗位环境安静、职责明确且重复性高，不需要频繁交流与复杂决策。规律的日程安排有助于患者重建生活结构，享受秩序感带来的心理安定。🌟无条件的自然与情感疗愈：如动物照顾、宠物托管或园艺绿化养护。与大自然和小生命打交道，不需要应对高强度的复杂沟通。这种无条件的情感支持与适度的体力活动，能极大减轻焦虑，并重新唤醒患者的责任感与自身价值感。🌟高弹性的自我表达出口：如自由撰稿、内容校对或手工艺与艺术创作。这类工作时间自由、弹性大，可在家中或工作室独立完成，完美避开了通勤压力与办公室人际关系的负担。同时，创作过程本身就是情绪的出口，对自我认知与情绪管理有着积极的临床意义。🌟包容性强的社会过渡：如社区服务中心的辅助岗位。社区机构的工作氛围相对包容，同事",
+"likes": 97,
+"comments": 13,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzODk4Nzg2MA==&mid=2247484295&idx=1&sn=34902e882b2f848c66ef5fa60401a8c4#rd",
+"published_at": "2026-09-01 21:16:37"
+},
+{
+"id": "XHS129",
+"platform": "小红书",
+"title": "Office look・职场清冷姐感👓",
+"desc": "今日造型被朋友说像高启兰\n那种看起来是会为身边人遮风挡雨的类型\n工作里遇到突发状况，也能不慌不忙地笑着应对\n\t\n-\n毕竟不管是面试、汇报，还是日常见客户\n想要随时接住问题，眼神得先跟上脑子\n\t\n我戴的是明月1.71PMC超亮镜片A8膜\n透光率高达98.6%，镜片清透到几乎没什么存在感\n视觉上很清晰\n看得清楚，才能反应得快\n\t\n拍照时也没有烦人的反光\n不挡眼神，眉眼透亮还原\n戴上之后有种优雅高智的知性美感\n什么场合都撑得住，见客户也不会怯场\n\t\n无边框的设计搭配上1.71高折射率，久戴也不压鼻梁\n加上明月最前沿的24层天视A8膜系\n无论是夏天户外长时间出行久戴\n或者把眼镜放在车里暴晒\n都不会膜裂脱膜 ，始终保持清亮质感\n\t\n选对眼镜，气质和底气都在线\n职场加分项，有时候就在这些细节里\n\t\n#明月镜片#明月PMC超亮镜片#明月171PMC超亮镜片A8膜#ootdinspo #智性穿搭#清冷感#眼镜推荐#眼镜穿搭#职场穿搭",
+"likes": 332,
+"comments": 10,
+"url": "https://www.xiaohongshu.com/explore/6a967d790000000026021514",
+"published_at": "2026-09-01 20:11:28"
+},
+{
+"id": "GZH129",
+"platform": "公众号",
+"title": "刚刚，查了金湾8所学校食堂...",
+"desc": "金秋开学，学子返校      为守护广大师生   饮食、穿戴、配镜安全   金湾区市场监督管理局\n联合金湾区教育局   启动秋季校园安全专项检查   以学校食堂食品安全为重点   同步紧盯校服质量   眼镜配镜计量安全   全方位筑牢校园安全防护网   跟着小金来了解   👇👇👇\n检查前   ",
+"likes": 51,
+"comments": 1,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NzQ5MjUxMg==&mid=2651732143&idx=1&sn=97b088fd2b4681b26fc7fc15fd02110a#rd",
+"published_at": "2026-09-01 17:35:17"
+},
+{
+"id": "XHS125",
+"platform": "小红书",
+"title": "离焦镜片如何选？热门离焦镜片大测评！",
+"desc": "暑假孩子写作业、上网课、看平板，近距离用眼时间只增不减，复查度数还是涨了，想要给孩子配离焦镜片但又不知道怎么选。 现在市面上比较热门的四款离焦镜片我全都研究了一遍，今天一篇笔记分享下我的选购心得！\n\t\n✅ 看配戴的舒适度\n划重点：离焦镜片上有一块中心视像区，这个区域影响孩子配戴的舒适度和适应性！孩子愿意戴，防控才能持续有效！\n●轻*： 为中国孩子设计的“小贝壳”非对称中心视像区，根据孩子“左右用眼多、上下用眼少”的习惯，加宽横向视野\n●星*、小*、新*： 三款都是采用对称设计的中心视像区，星*、小*是圆形中心视像区，新*是六边形中心视像区\n\t\n✅ 看镜片材质\n划重点：市面上主流的离焦镜片材质分为PC材质和树脂材质，早期离焦镜片用PC材料，是因为微透镜加工工艺有限制，随着技术突破，现在树脂材质成为安全、光学性能好的选择。\n●星*、小*、新*：PC材质\n●轻*：树脂材质\n\t\n那镜片材质到底影响了什么？\n1.应力差异：PC 镜片是热塑性材料，注塑成型只需要几分钟，内部会留有大量热应力\n\t\n2.耐磨性：离焦镜的核心是微透镜功能层，磨损会影响效果。\nPC材质是把微透镜注塑在镜片表面\n新型的树脂镜",
+"likes": 2311,
+"comments": 61,
+"url": "https://www.xiaohongshu.com/explore/6a95152f000000002a03e7ea",
+"published_at": "2026-09-01 13:13:34"
+},
+{
+"id": "XHS76",
+"platform": "小红书",
+"title": "朋友约游泳｜我的护眼急救小妙招",
+"desc": "喝完下午茶后，朋友喊我去游泳，立马想起去年踩过的坑！之前毫无准备，游完眼睛又红又刺，难受好久。\n后来才知道，泳池水里的氯制剂、杂质真的很容易刺激眼结膜，加上长时间泡水，眼睛不抗议才怪！\n\t\n今年提前做好功课，安排上双重防护。\n🥽 下水前｜物理防护\n密封性好的泳镜一定要戴好！\n调整到贴合眼眶、不漏水的位置，尽量减少池水接触眼睛。\n（泳镜起雾的话可以提前用防雾喷雾处理一下～）\n\t\n💧 上岸后｜舒缓急救\n洗脸清洁完，如果眼睛还是不舒服、泛红发痒，我会用奈达乐滴眼液舒缓一下。\n每次滴1-2滴，闭眼休息一会儿，体感真的舒缓很多！红眼痒眼退退退👋\n\t\n📌 游泳护眼小tips：\n✅ 游泳前摘掉隐形眼镜（或者戴日抛+泳镜双重防护）\n✅ 游完不要揉眼睛！越揉越刺激\n✅ 随身带一瓶滴眼液，上岸就用别拖\n✅ 如果眼睛持续红肿不舒服，及时咨询专业人士\n\t\n其实不只是游泳，平时这些情况我也会用它：\n🌫️ 灰尘大的地方待久了眼睛痒\n😷 换季过敏眼睛泛红\n👓 隐形眼镜戴一天摘下来干涩\n💻 盯电脑手机太久眼睛疲劳\n小小一瓶，家里常备真的安心！\n\t\n#奈达乐 #马来酸非尼拉敏盐酸萘甲唑啉滴 眼液#奈达乐马来酸 #游泳护",
+"likes": 91,
+"comments": 3,
+"url": "https://www.xiaohongshu.com/explore/6a9644ba000000002902fc85",
+"published_at": "2026-09-01 11:21:30"
+},
+{
+"id": "GZH124",
+"platform": "公众号",
+"title": "【商河姜玉坤眼镜】庆祝第42个教师节，专享福利398元防蓝光镜片免费送（依视路集团成员企业出品）",
+"desc": "金秋九月谢师恩，又是一年教师节。姜玉坤眼镜，以光为礼，“镜”献恩师，致敬讲台之上的默默耕耘。",
+"likes": 147,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzU2OTg1MzU4Nw==&mid=2247488636&idx=1&sn=30bb71428f045cd192a06b66d7b899d8#rd",
+"published_at": "2026-09-01 11:20:02"
+},
+{
+"id": "XHS73",
+"platform": "小红书",
+"title": "来山姆购物还能验光配镜，一站式超省心！",
+"desc": "我家娃近视这一年，孩子从来没说过看东西模糊看不清，我便一直以为度数稳住了，心里挺踏实，压根没考虑过镜片会需要更换。\n\t\n早就听身边宝妈说，山姆眼镜中心验光特别专业，设备齐全，配备了蔡司黑科技-三维定位配镜系统，能做深度的眼轴监测。直到上周末我在前海逛山姆时，路过蔡司授权验配点，就让验光师给娃做了个深度眼轴检查。不查不知道，结果差点被自己固有的认知坑了！\n\t\n验光师特别专业，带娃做完复测眼轴和调节反应后，告诉我：表面看度数确实没有上涨很多，但眼轴和调节力已经有细微变化，旧镜片的静态离焦刺激孩子眼睛早就“适应”了，现在只是“惯性维稳”，防控效果其实在悄悄打折，红利期不够长。听到这话我才恍然大悟，原来只凭孩子说看得清、只看度数，是远远不够的。\n\t\n他接着科普：市面上很多传统的近视防控镜片用的是二维静态离焦，相当于固定模式的刺激，时间久了孩子的视神经就会慢慢适应，防控的效果自然也会打折扣。\n而蔡司小瞳堡跟这些镜片设计不一样，它的核心技术叫M.O.V.E.三维动态阵列设计，镜片微结构是随机起伏排布的新一代三维凸起设计，孩子每次转动眼球都能接收到不重复的离焦信号，眼球一直保持活跃，就不容易产生耐受",
+"likes": 276,
+"comments": 26,
+"url": "https://www.xiaohongshu.com/explore/6a9537dc0000000021030b35",
+"published_at": "2026-09-01 10:36:19"
+},
+{
+"id": "GZH185",
+"platform": "公众号",
+"title": "宋子文与他的大女儿宋琼颐在上海的一张合影",
+"desc": "这张上色老照片，拍在上世纪三十年代的上海。宽大柔软的沙发上，宋子文一身浅米色西装，戴着圆框眼镜。平日里在政坛运筹帷幄、被无数人敬畏的男人，此刻放下了所有锋芒。他的手臂轻轻环着怀里的大女儿宋琼颐。小姑娘扎着两个小发髻，别着白白的蝴蝶结，一身蓝花小裙子，大大方方坐在父亲腿上，笑得一脸天真烂漫。那个年代，大户人家拍全家福大多讲究端着架子，大人不苟言笑，孩子规规矩矩站得笔直。很少能见到这样松弛的画面：父亲没有摆出威严的姿态，孩子也没有半点拘谨，满满都是亲昵。世人提起宋子文，聊的都是时局、财富、宋家的风云往事，功过是非争论到今天。好像他生来就只有政客这一个身份。可在这张照片里，他不是搅动时代的大人物，只是一个疼女儿的爸爸。只是民国的安稳太短暂了。照片定格的温馨时刻，像一场易碎的美梦。没过多少年山河动荡，一家人被迫离开上海，远赴海外。当年那个坐在父亲腿上撒娇的小女孩，从此远离故土，在异国长大。宋琼颐后来定居美国，活了94岁，一辈子常常翻出这张旧照片，怀念上海的旧时光。轰轰烈烈的时代会过去，权势财富都会消散。只有镜头捕捉到的这一瞬父爱，穿过八十多年的岁月，还能打动今天的我们。很多人只盯着历史人物的功",
+"likes": 33,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkwNjYwODM1Nw==&mid=2247493951&idx=1&sn=f2acc40b9ef54c51b1f7a427ac55b173#rd",
+"published_at": "2026-09-01 08:13:45"
+},
+{
+"id": "GZH174",
+"platform": "公众号",
+"title": "谢霆锋估计现在心里五味杂陈，他怎么也想不到，王菲在那英的演唱会上，比在自己的演唱会开朗大方多了",
+"desc": "划到下方观看视频！镜头是最诚实的记录者，近日两段相隔三个月的演唱会现场视频，让王菲成为全网热议的焦点，同样是坐在台下观看演出，王菲在那英与谢霆锋的演唱会上，一放一收两种截然不同的状态，戳中了很多成年人内心深处的情感共鸣。事情的开端，就要从 8 月 22 日那英在北京五棵松举办的演唱会说起。这场万众期",
+"likes": 12,
+"comments": 2,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY0MDExMTg5MQ==&mid=2247485523&idx=1&sn=1319cdedac03423121d0fb2062ed333a#rd",
+"published_at": "2026-09-01 07:52:20"
+},
+{
+"id": "GZH12",
+"platform": "公众号",
+"title": "74岁刘晓庆素颜遭群嘲，真相让人惭愧",
+"desc": "难道上了年纪的女人，就必须活在美颜滤镜里，不许有一点皱纹吗？ 74岁的刘晓庆在首都机场被路人随手拍下一组生图，没有精修、没有滤镜加持，完全是很真实的素颜状态。镜头近距离拍摄下，眼角的细纹、岁月带来的面部松弛痕迹清晰可见。 照片流出后，网上瞬间炸开了锅。不少网友揪着她的容貌状态大肆点评，各种议论声层出不穷，仿佛岁月留下的痕迹，成了公众人物的“瑕疵”。 但全网都在挑剔她容貌变老的时候，很少有人愿意静下心了解，私下的刘晓庆，一直在默默深耕公益事业。熟悉她的人都知道，多年来她始终坚持走进偏远山区，参与助学帮扶、公益宣讲等活动，把时间和精力投入到乡村教育公益中，用实际行动传递温暖，默默回馈社会。 面对外界无休止的容貌争议，刘晓庆坦然的心态格外圈粉。对于脸上的皱纹和岁月痕迹，她从不会刻意遮掩，反而坦然接纳：生老盛衰是人生常态，没有人能永远年轻，岁月的痕迹，都是人生一路走来的珍贵印记。 说实话，在网红、明星全员追求完美的当下，这份通透和从容真的格外难得。 现在的娱乐圈和网络氛围里，仿佛有一条不成文的规矩：女明星必须永远光鲜靓丽、状态在线。不管多大年纪，亮相必是层层精修、厚重滤镜，极力掩盖所有岁月痕迹",
+"likes": 3482,
+"comments": 3441,
+"url": "https://mp.weixin.qq.com/s?__biz=MzY4NDM3MjQzMQ==&mid=2247486199&idx=1&sn=ac69dbe1506761d6a72ed5a9313d78f6#rd",
+"published_at": "2026-09-01 06:19:25"
+},
+{
+"id": "GZH131",
+"platform": "公众号",
+"title": "【会昌头条】后背发凉！会昌一居民家中床下惊现剧毒眼镜蛇，消防快速擒获带走.（附视频）",
+"desc": "  近日，赣州会昌一户居民家中上演惊险一幕，一条剧毒眼镜蛇悄悄溜进屋内，藏匿在卧室的床底下，把屋主吓得心惊胆战。\n   据屋主介绍，在家中发现毒蛇踪迹之后，看到眼镜蛇躲在床下阴暗角落，蛇具有很强攻击性，屋主不敢贸然上前驱赶、抓捕，担心被毒蛇咬伤，连忙退到安全区域，拨打119电话向消防部门求助。\n  ",
+"likes": 26,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5OTA5Mzc2Mg==&mid=2651124523&idx=1&sn=3f9692231b6db91928d7c3d0fb81698e#rd",
+"published_at": "2026-08-31 22:51:57"
+},
+{
+"id": "XHS68",
+"platform": "小红书",
+"title": "4年一度没涨，反降50度😎几个防控心法！",
+"desc": "这条是我们的儿童近视复查记录，也给暑假后准备开学前查眼睛的家长一点参考。\n这几年我最深的感受是：近视防控不是配完眼镜就结束，后面更重要的是定期复查。每次我都会看眼轴、度数变化、戴镜情况，也会关注孩子有没有视疲劳、调节问题，必要时做视功能检查。\n如果孩子戴的是防控镜片，比如离焦镜，也建议按时做离焦镜复查。不要只看“涨没涨度数”，更要看眼轴增长趋势和孩子真实用眼习惯。\n我们家这个结果不是一天来的，是长期坚持户外、控制近距离用眼、规律复查一点点换来的。继续记录，也希望给正在做儿童近视防控的家长一点信心。\n\t\n#儿童近视复查 #眼轴 #近视防控 #离焦镜复查 #开学前查眼睛 #视功能检查 #儿童近视防控 #孩子近视 #低度近视 #暑假后复查",
+"likes": 66,
+"comments": 19,
+"url": "https://www.xiaohongshu.com/explore/6a956bc800000000210260a6",
+"published_at": "2026-08-31 19:55:52"
+},
+{
+"id": "GZH181",
+"platform": "公众号",
+"title": "家长与孩子玩闹，致珍贵蛇标本受损！捐赠者最新发声：不怪小孩",
+"desc": "‍‍         据国家动物博物馆官方公众号28日消息，‍两个孩子在馆内的舟山眼镜蛇标本和莽山原矛头蝮标本前玩闹，不断用手抓、用脚踢标本。随行的父亲非但没有制止，反而把两件标本拿起来一起玩闹。其间标本受损。  点击查看此前报道：珍贵蛇标本受损图曝光：舌头断裂、腹部开裂；家长拒不承认，听说可能有防",
+"likes": 201,
+"comments": 51,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwOTQwMTYzNQ==&mid=2653990672&idx=1&sn=e9452085d2d96f06a39418a128594489#rd",
+"published_at": "2026-08-31 18:54:03"
+},
+{
+"id": "GZH6",
+"platform": "公众号",
+"title": "兰大人，免费配镜！",
+"desc": "99%的兰大人都点击了上方蓝字“兰小e”进行了关注\n寻找5位幸运儿，免费配镜！  原价308元眼镜一副  （防蓝光镜片 + 200 元内镜架）  0元配\n在开奖前配镜的小伙伴如果中奖了  可凭中奖记录兑换308元\n兰大宝藏眼镜店，五周年宠粉来啦！\n哈喽，兰大的同学们！不知不觉，陪伴咱们榆中校区5个年",
+"likes": 34,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4MTk1NDAzOA==&mid=2653849822&idx=1&sn=e4215b9ce64bcf45a131a334609a2785#rd",
+"published_at": "2026-08-31 18:00:00"
+},
+{
+"id": "GZH182",
+"platform": "公众号",
+"title": "捐赠者回应标本遭破坏：此事不怪小孩",
+"desc": "据国家动物博物馆官方公众号28日消息，‍两个孩子在馆内的舟山眼镜蛇标本和莽山原矛头蝮标本前玩闹，不断用手抓、用脚踢标本。随行的父亲非但没有制止，反而把两件标本拿起来一起玩闹。其间标本受损（此前报道→国家动物博物馆标本受损图曝光：舌头断裂、腹部开裂，“家长一开始不承认触摸标本，听说每年防腐洗了2分钟手",
+"likes": 85,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjI4MzU4MA==&mid=2658640782&idx=1&sn=afc3e125f50478e7772c0a5e5305a631#rd",
+"published_at": "2026-08-31 17:56:44"
+},
+{
+"id": "DY127",
+"platform": "抖音",
+"title": "教师开学vlog｜自能生羽翼，何必仰云梯。 #教师日常 #日常vlog #明月镜片 #明月PMC超亮",
+"desc": "",
+"likes": 17996,
+"comments": 439,
+"url": "https://www.iesdouyin.com/share/video/7680105632774857062",
+"published_at": "2026-08-31 17:52:15"
+},
+{
+"id": "GZH121",
+"platform": "公众号",
+"title": "礼谢师恩！MaxMara低至1折！拉夫劳伦/TOMMY HILFIGER/COACH低至3折！宝丽奥莱眼镜城配镜套餐198元起！",
+"desc": "官方线上商场\n发现更多折扣好物                                                                                                        在线pick 邮寄到家\n- 扫码加入下沙奥莱官方好物折扣群 -",
+"likes": 6,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4OTAyOTMwOQ==&mid=2650955195&idx=1&sn=e51cd4a77241af3fd73828c646968b9c#rd",
+"published_at": "2026-08-31 17:30:00"
+},
+{
+"id": "DY148",
+"platform": "抖音",
+"title": "已婚未孕真的是人生中最自由的阶段 #明月镜片 #明月pmc超亮镜片 #看我的高光修容百元repo #",
+"desc": "",
+"likes": 5315,
+"comments": 75,
+"url": "https://www.iesdouyin.com/share/video/7680099011235768826",
+"published_at": "2026-08-31 17:15:27"
+},
+{
+"id": "GZH235",
+"platform": "公众号",
+"title": "牵手两家德企，达州钠电“链”上全球！",
+"desc": "8月22日，德国豪雅集团董事长托马斯·豪雅一行抵达达州后，直奔位于达州东部经开区的四川星空钠电电池有限公司（以下简称星空钠电）项目现场，详细了解产品研发、生产运营与市场布局等情况。                 　　这场跨越山海的考察迅速转化为合作成果：双方共同推动星空钠电储能产品进入欧洲市场，将",
+"likes": 83,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA3NDg1ODczOQ==&mid=2650571559&idx=1&sn=a3fa0bd46442503942530d262b77d111#rd",
+"published_at": "2026-08-31 15:04:13"
+},
+{
+"id": "XHS75",
+"platform": "小红书",
+"title": "这些行为⚠️真的会导致孩子进视😭",
+"desc": "进视并不是突然出现的\n大多都是日常习惯不注意\n慢慢影响了孩子的眼部状态\n👉长期近距离用眼，一步步发展成进视的过程\n.\n①睫状肌（眼睛的调焦肌肉）\n孩子长期近距离用眼，睫状肌持续收紧。好比弹簧长期绷住，发生痉挛就没法正常舒张。不仅会严重视疲劳，调焦功能紊乱，看东西不清楚眯眼，持续忽视就会进一步拉扯眼轴变长，慢慢发展成真性进视。\n.\n②视网膜（负责感光成像）\n长期接触电子屏幕，蓝光损伤视网膜黄斑区，成像变模糊，孩子便会眯眼、凑近看，加重睫状肌痉挛。为了看清楚，眼球就会发出生长信号，让眼轴追上视网膜后方的成像，眼轴开始变长\n.\n③脉络膜（维持眼球韧性，影响眼轴）\n近距离用眼会让脉络膜变差、变薄，眼球壁韧性下降，抑制不住眼轴继续增长\n‼️多重因素叠加，眼轴异常拉长，最后就形成了进视\n.\n与其等到孩子戴上眼镜再后悔，不如提前做好护眼工作，预防＞干预。\n分享我家日常坚持的护眼小方法：\n✅ 每天保证 2 小时以上户外活动\n✅ 控制近距离用眼时长，遵循 20‑20‑20 护眼法\n✅ 减少电子产品使用\n✅ 少吃高糖\n✅️ 多吃花青素、叶黄素\n.\n详细的步骤我都放在图里啦，详见图1-3~\n主要是护眼营养要",
+"likes": 305,
+"comments": 17,
+"url": "https://www.xiaohongshu.com/explore/6a94df6d000000002003526e",
+"published_at": "2026-08-31 14:36:13"
+},
+{
+"id": "XHS71",
+"platform": "小红书",
+"title": "我发现一个预防近视加深很有效的方法",
+"desc": "我本人是个超级用眼党，平常要么手机，要么是电脑，绝对属于非常高强度用眼的那波人。但我上次去测视力依然还有4.9！（虽然这个度数不是最完美的，但是对于我这种高频使用电子产品的人来说，真的已经非常欣慰了）\n\t\n有两个方法，都特别简单，第一个就是每次连续盯屏幕二十分钟左右，我就强迫眼睛抬起来，去聚焦房间远处某个不起眼的杂物，或者找个带文字的东西死死盯上十秒钟。\n还有一个就是拿一个小东西往上抛，因为眼睛会追随小东西的移动过程看，这时候眼镜睫状肌就在调整，会帮助放松。\n几年前一个朋友告诉我这两个动作很管用，坚持下来我觉得这个小习惯真真切切是有效果的。（也可能只是我的个人主观体验哈，不一定在每个人身上都有同样的效果哦）\n还有一个原因，平常可能是我眼睛感觉疲劳酸胀的时候，我还会喜欢看远处房子的顶端，盯着看几秒马上就放大的胀感\n#保护眼睛视力 #预防近视 #护眼日常 #近视防控 #近距离用眼",
+"likes": 2125,
+"comments": 43,
+"url": "https://www.xiaohongshu.com/explore/6a950c57000000002903ef57",
+"published_at": "2026-08-31 13:08:39"
+},
+{
+"id": "GZH189",
+"platform": "公众号",
+"title": "国家动物博物馆标本损伤实图曝光！",
+"desc": "8月29日晚，国家动物博物馆发文提到，几天前，一层濒危动物展厅里，两个孩子在舟山眼镜蛇标本和莽山原矛头蝮标本前玩闹，不断手抓脚踢标本。随行的父亲非但没有制止，反而把两件标本拿起来递给孩子。8月30日，BRTV新闻记者专访了国家动物博物馆馆长张劲硕，张劲硕表示事发当天该家长带着孩子在展厅参观时临时起意，将标本拿起与孩子打闹嬉戏。期间有在场游客提出提醒，但家长并未太在意。待工作人员赶到时，该家长已带着孩子径直离开。此次遭破坏的是两件珍贵标本。其中莽山原矛头蝮标本受损严重，因家长把标本拿起来逗孩子，导致标本舌头断了一截、腹部开裂。另一件舟山眼镜蛇标本则因孩子脱下鞋子拍打，腹部两侧出现开裂。张劲硕表示，目前还在对标本的损伤程度进行评估，后续将找专业标本师进行修复。关于标本价值的认定，张劲硕坦言，这类标本类似于工艺品，没有统一的市场定价，馆方将根据实际损坏程度并查询相关法律案例进行综合评估。国家动物博物馆馆长张劲硕在接受采访时解释了展品为何直接暴露摆放的原因：“自然类博物馆把标本放在台子上展示非常普遍，主要是为了更好的观感和体验。如果加上玻璃，反光会影响观察，而且展厅面积不大，两侧都装玻璃会造成",
+"likes": 64,
+"comments": 12,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA4MjA4MA==&mid=2655365334&idx=1&sn=4f1eb7aa3081cdd53dcd9514ecc86bcb#rd",
+"published_at": "2026-08-31 08:26:19"
+},
+{
+"id": "XHS64",
+"platform": "小红书",
+"title": "全网疯传的“防蓝光眼镜”，真的能护眼吗？",
+"desc": "最近很多小伙伴都在问，防蓝光眼镜真的能护眼吗？是不是又被广告忽悠了呢？今天就来破解这个迷思！✨\n首先，要知道：普通日常使用手机、电脑的人，其实并没有必要非得买专门的防蓝光眼镜。根据最新研究，目前还没有确凿的证据证明它可以缓解视疲劳、改善睡眠或保护黄斑 😕。而且，“越戴越伤眼”的说法也缺乏科学依据！\n为什么不用太担心屏幕上的蓝光呢？原因有三点：\n🔹 剂量有限\n蓝光是可见光的一部分，自然光中的蓝光远高于电子设备发出的量，目前的测量都没有达到会造成损伤的程度 🚶‍♀️。\n🔹 临床效果未明\n2023年的Cochrane综述分析了17项试验，发现短期内佩戴防蓝光镜片可能对缓解屏幕引起的视疲劳没明显优势；对于睡眠和黄斑保护，也没有充分证据支持 🌙。\n🔹 眼睛不适多由别处引起\n比如：眨眼减少、长时间近距离用眼、环境干燥或反光、字号太小/太大，都比蓝光因素更容易导致干涩和疲劳 💧。\n那么我们该怎么做才更健康呢？推荐几点：👇👇👇\n✔️ 每20分钟抬头看远处（6米外）20秒，让眼睛放松一下🦅\n✔️ 有意识地完整眨眼，保持湿润💧\n✔️ 调整字体大小、屏幕距离和坐姿，营造舒适环境😊\n✔️ 晚上可以调暖色，但最",
+"likes": 43,
+"comments": 32,
+"url": "https://www.xiaohongshu.com/explore/6a90fb5c00000000200301fd",
+"published_at": "2026-08-31 06:01:00"
+},
+{
+"id": "GZH32",
+"platform": "公众号",
+"title": "中新网，请你看着我的眼睛说话！",
+"desc": "我之前发了一篇贴图谴责中新网把骑行防晒用具称为“仙王裹尸布”，未做到准确、客观、理性科普骑行风险。中国新闻网将防晒用具称为“仙王裹尸布”中新网这篇所谓的科普文章，还存在其它没有逻辑的地方，“裹尸布”因为我已经讨论过了，今天专门来讲“两仪窥天镜”的问题。文章称“两仪窥天镜”就是框式墨镜，很危险。按照墨镜行业的细分标准，有无边框墨镜，细边框墨镜，宽边框墨镜。文章称框式墨镜危险，至少囊括了细边框墨镜和粗边框墨镜，意思骑行者只能戴无边框墨镜？可细边框墨镜并不挡侧方视线。后文确实提及“宽大镜框会阻隔眼角两侧余光”，如果明确是宽大镜框的墨镜会阻碍侧方视线，为什么一开始要笼统地说框式墨镜？文章具体讲到墨镜的安全风险是这样表述的：不少电动车骑行人日常习惯佩戴各式各样的深色黑色遮阳墨镜用来抵挡强光，殊不知深色镜片会直接削减环境进光亮度，清晨黄昏、地下隧道、树荫背光路段、阴雨天气之下，路面辨识度大幅降低，很难及时留意路面坑洼、横穿行人与突发路况；宽大镜框会阻隔眼角两侧余光……骑行人难以察觉侧边风险，错过避险时机。前面说危险的是框式墨镜，后文却把风险重点放在了深色墨镜上，对宽边框眼镜的安全风险描写远少于深色",
+"likes": 26,
+"comments": 19,
+"url": "https://mp.weixin.qq.com/s?__biz=MzI4NTA0MDQ2Mw==&mid=2247489323&idx=1&sn=ec1ccc5ff3d1071f63ed68bffd9d9a79#rd",
+"published_at": "2026-08-30 19:32:05"
+},
+{
+"id": "DY124",
+"platform": "抖音",
+"title": "三婶子这次站起来了#明月镜片#明月轻松控#好视力就要轻松控#婆婆",
+"desc": "",
+"likes": 26507,
+"comments": 324,
+"url": "https://www.iesdouyin.com/share/video/7679390007823703153",
+"published_at": "2026-08-30 19:30:05"
+},
+{
+"id": "XHS85",
+"platform": "小红书",
+"title": "秋天需要一些高智感!°+",
+"desc": "两幅适合长期主义的眼镜~\n爱上温柔且精致的款！\n秋天搭配还是需要它才完整\nalvari萤火虫（银色）\n无框的，很有清透感\nβ钛超轻不压鼻，戴一天也不累\n镜腿小钻是小心机，精致不夸张\n银色很清冷，带高智感\n配针织衫好好看，素颜也能美丽\n防蓝光也有，日常戴很安心\nansel点点镜（金茶色）\nβ钛椭圆细框，是温柔知性的感觉\n金茶色暖暖的，和秋天很配\n珍珠logo小小的，很精致\n鼻托能调，戴着不会滑\n防蓝光通勤日常都能戴，很百搭\n\t\n#Fakeme眼镜#高智感眼镜#防蓝光眼镜 #素颜眼镜#显脸小#早秋穿搭#韩系穿搭#眼镜分享#知性风 #Fakeme",
+"likes": 5018,
+"comments": 28,
+"url": "https://www.xiaohongshu.com/explore/6a9410ac00000000250117bf",
+"published_at": "2026-08-30 19:24:37"
+},
+{
+"id": "GZH134",
+"platform": "公众号",
+"title": "温州这里惊现毒蛇！超级大",
+"desc": "近日，永嘉一户村民家中突发惊险一幕，一条眼镜蛇意外闯入民居，引发家人惊慌，后续消防员抵达现场，迅速做好防护措施",
+"likes": 19,
+"comments": 11,
+"url": "https://mp.weixin.qq.com/s?__biz=Mzk0NTIwMjkwOQ==&mid=2247642556&idx=1&sn=ff9b63b86a7e6156b9b192851c13c4a7#rd",
+"published_at": "2026-08-30 19:21:23"
+},
+{
+"id": "DY125",
+"platform": "抖音",
+"title": "儿童防控镜别乱买！认准临床数据才靠谱#明月镜片 #明月轻松控 #好视力就要轻松控#亲子教育",
+"desc": "",
+"likes": 22756,
+"comments": 163,
+"url": "https://www.iesdouyin.com/share/video/7679086759552041210",
+"published_at": "2026-08-30 17:30:32"
+},
+{
+"id": "DY131",
+"platform": "抖音",
+"title": "就这样斯斯文文地做了一堆鲁莽之事 #明月镜片 #明月PMC超亮镜片 #明月171PMC超亮镜片A8膜",
+"desc": "",
+"likes": 11032,
+"comments": 24,
+"url": "https://www.iesdouyin.com/share/video/7679399873037715603",
+"published_at": "2026-08-30 17:30:31"
+},
+{
+"id": "XHS40",
+"platform": "小红书",
+"title": "剪线头啦换线换得老花眼了，最后还要剪线头",
+"desc": "#织女的聚会 #织女日常 #编织 #毛线编织 #编织包",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a93ed5e0000000026036921",
+"published_at": "2026-08-30 16:44:14"
+},
+{
+"id": "GZH188",
+"platform": "公众号",
+"title": "1176元！小米发布24GHz雷达新品，11000lm太",
+"desc": "小米新出的米家立式学习灯2C卖1176元，主打护眼和智能。光线够亮：上下双光源加起来11000流明。384颗全光谱灯珠配4000K暖白光，看着像上午的太阳。护眼靠谱：防蓝光、无频闪，显色指数高。画画看绘本不偏色，大灯头连桌角都能照亮。智能控制：内置雷达，人走过去自动亮，离开自动灭。也能喊小爱同学开关，或者手机APP调亮度。不过这灯也有两个硬伤：色温固定4000K不能调，灯杆高度也是死的。要是桌子不合适，用起来就有点受限。",
+"likes": 6,
+"comments": 3,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIxMjY5NTIzMw==&mid=2247502506&idx=1&sn=cc2583d873c124d5e035da4a4ed20523#rd",
+"published_at": "2026-08-30 14:58:00"
+},
+{
+"id": "DY114",
+"platform": "抖音",
+"title": "在前山市场附近这家镜山眼镜工厂店58就可以配一副高品质眼镜#镜山眼镜#附近优惠团购#配眼镜#防蓝光眼",
+"desc": "",
+"likes": 1003,
+"comments": 9,
+"url": "https://www.iesdouyin.com/share/video/7679711196778626267",
+"published_at": "2026-08-30 14:41:45"
+},
+{
+"id": "GZH130",
+"platform": "公众号",
+"title": "省级名单！临海3家单位入选",
+"desc": "近日，省总工会发文公布了2026年职工创新体系建设成果名单，临海市浙江宏元药业股份有限公司朱镇星劳模工匠创新工作室、浙江海畅气体有限公司职工创新站、台州眼镜产业链工匠学院入选。\n2026年省总工会重点支持\n省劳模工匠创新工作室建设对象\n浙江宏元药业股份有限公司               朱镇星劳模",
+"likes": 23,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5MzQzMTIxOQ==&mid=2448256023&idx=1&sn=575dcf7d56522f396e826aefd321f1a4#rd",
+"published_at": "2026-08-30 14:30:00"
+},
+{
+"id": "GZH57",
+"platform": "公众号",
+"title": "上海两老人被质疑从自助餐店带走食物，倒空背包自证清白！餐厅回应：已批评涉事店员并向老人道歉",
+"desc": "8月25日，事发在上海一家连锁自助餐厅门口，两位老人们吃完饭要走的时候，被店员拦住了，认为他们把店里的东西带走了，于是让老人自己检查一下自己的背包。  受到无理的怀疑之后，老人很生气也很委屈地把包里所有的东西都倒在了地上以证明自己的清白，在地上散落着药盒、纸巾和老花镜等私人用品，并没有餐厅的酒水或水",
+"likes": 12,
+"comments": 16,
+"url": "https://mp.weixin.qq.com/s?__biz=MzAwNDU0ODE4Ng==&mid=2651269095&idx=1&sn=3ceaffe88ad8e9d6b951dcf22b08287c#rd",
+"published_at": "2026-08-30 08:30:00"
+},
+{
+"id": "GZH1",
+"platform": "公众号",
+"title": "本人2个专利转让：一是防治老花的眼镜（具有调节训练功能的渐进镜）、二是一种离焦镜",
+"desc": "拟转让本人2项专利如下，感兴趣的企业可以谈谈。",
+"likes": 54,
+"comments": 38,
+"url": "https://mp.weixin.qq.com/s?__biz=MzIyODIxNDE3Nw==&mid=2247511974&idx=1&sn=7300e46640d66da1e31dd0df5159a8e4#rd",
+"published_at": "2026-08-30 06:31:00"
+},
+{
+"id": "DY66",
+"platform": "抖音",
+"title": "二妹也老花眼啦😀",
+"desc": "",
+"likes": 2543,
+"comments": 828,
+"url": "https://www.iesdouyin.com/share/video/7679471042407298222",
+"published_at": "2026-08-29 23:09:46"
+},
+{
+"id": "DY126",
+"platform": "抖音",
+"title": "暑假volg｜逛超市的一天#明月镜片 #明月光优点#儿童近视防控",
+"desc": "",
+"likes": 18205,
+"comments": 128,
+"url": "https://www.iesdouyin.com/share/video/7679377683575368618",
+"published_at": "2026-08-29 20:01:32"
+},
+{
+"id": "XHS123",
+"platform": "小红书",
+"title": "开学配镜不踩雷 4大儿童离焦镜片终极PK‼️",
+"desc": "开学季配镜刚需预警⚠️ 很多宝妈踩坑：花大价钱配离焦镜，戴得不舒服、不愿意戴，最后近视度数照样疯涨！\n暑假网课、平板、看书用眼超负荷，开学复查度数暴涨的孩子真的太多了！想要配离焦镜但不知道怎么选？镜片适配度、材质工艺才是决定防控效果的关键！\n\t\n整理了市面上4大热门的儿童离焦镜：依视路星趣控、蔡司小瞳堡、明月轻松控、豪雅新乐学\n专门从【孩子配戴舒适度、镜片材质、工艺】三大核心维度深度对比，精准拆解四款离焦镜片，帮宝妈们避开配镜智商税！\n不想盲目跟风乱配镜的家长，一定要认真看完这条！\n\t\n#明月镜片 #明月轻松控 #好视力就要轻松控 #儿童近视防控 #开学配镜 #离焦镜片怎么选 #星趣控 #新乐学 #蔡司小瞳堡",
+"likes": 1192,
+"comments": 23,
+"url": "https://www.xiaohongshu.com/explore/6a92bb60000000002a03fe41",
+"published_at": "2026-08-29 19:52:59"
+},
+{
+"id": "DY112",
+"platform": "抖音",
+"title": "开学季前山市场附近58居然可以配一副高品质眼镜！就是这家镜山眼镜工厂店！#镜山眼镜#附近优惠团购#配",
+"desc": "",
+"likes": 2052,
+"comments": 20,
+"url": "https://www.iesdouyin.com/share/video/7679393615763924169",
+"published_at": "2026-08-29 18:09:19"
+},
+{
+"id": "DY153",
+"platform": "抖音",
+"title": "VLOG.自己缝包包也太有成就感了🥳～ #缝纫#明月镜片#明月PMC超亮镜片#明月171PMC超亮",
+"desc": "",
+"likes": 1405,
+"comments": 125,
+"url": "https://www.iesdouyin.com/share/video/7679361284991670897",
+"published_at": "2026-08-29 17:29:17"
+},
+{
+"id": "XHS122",
+"platform": "小红书",
+"title": "暑期孩子配镜指南 儿童离焦镜片到底怎么选？",
+"desc": "暑期儿童配镜高峰期，但是很多家长根本不知道如何挑选离焦镜片❗️❗️\n同样是离焦镜片，PC材质vs树脂镜片到底哪个才好?今天一篇给大家说清楚！[鼓掌R]\n#明月镜片 #明月轻松控 #好视力就要轻松控 #镜片的选择 #近视防控 #守护视力健康 #儿童眼镜",
+"likes": 1111,
+"comments": 23,
+"url": "https://www.xiaohongshu.com/explore/6a83f91d0000000025008588",
+"published_at": "2026-08-29 16:17:31"
+},
+{
+"id": "XHS33",
+"platform": "小红书",
+"title": "#智能变焦老花镜 #老花镜 #防蓝光老花镜 #",
+"desc": "#智能变焦老花镜 #老花镜 #防蓝光老花镜 #\n#智能变焦老花镜 #老花镜 #防蓝光老花镜 #老年人好物 #爸妈礼物 #日用好物推荐",
+"likes": 0,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a92925e000000001f001f5d",
+"published_at": "2026-08-29 16:03:42"
+},
+{
+"id": "XHS63",
+"platform": "小红书",
+"title": "屈光参差的危害，你了解吗？",
+"desc": "双眼度数相差太大的危害 1. 严重视疲劳：眼酸头晕、看书易犯困，用眼易疲惫 2. 单眼抑制，引发弱视：大脑舍弃差眼成像，配镜也难以矫正到正常视力\n3. 诱发斜视：双眼协同失衡，出现眼位偏斜#大眼熊猫眼科医院 #近视防控 #眼镜变形调整 #高度近视的危害 #眼睛模糊重影 #眼睛看不清",
+"likes": 13,
+"comments": 4,
+"url": "https://www.xiaohongshu.com/explore/6a92680b00000000210272da",
+"published_at": "2026-08-29 13:03:07"
+},
+{
+"id": "GZH239",
+"platform": "公众号",
+"title": "最好的抗老，是始终有精气神",
+"desc": "我们常常把“显年轻”这件事放在脸上。 但舒展的肩背、有力的身体、挺拔的站姿、轻快的步伐，都在影响一个人呈现出来的状态。 01｜为什么身体越来越容易显得“疲惫”？ 久坐、伏案、看手机，正在占据我们越来越多的时间。 长期保持相似的姿势，身体前侧的肌肉和软组织容易持续紧张，肩膀向前、头的位置前移；后侧一些肌肉长期被拉长，力量和控制能力逐渐减弱。 久而久之，头前引、圆肩、肩颈紧张、肩背显厚等问题随之出现。 很多时候，让人显得疲惫的并不只是年龄，还有身体长期形成的姿势和状态。02｜明明不胖，为什么还是厚背圆肩？ 肩背显厚，不一定只是脂肪多。 长期低头、伏案，身体前侧持续紧张，会影响肩胛骨的位置和运动方式；胸椎活动不足、后侧肌肉力量薄弱，也会让肩背显得厚重、不够利落。 所以有些人明明很瘦，依然有圆肩、厚背；体重减下来了，肩背却没有明显变化。 好看的背，不只是瘦，还需要良好的胸椎活动度、肩胛骨控制和肩背力量。体态改变，即使体重变化不大，肩背也可以变得更加轻薄、舒展。03｜为什么经常练背，却一直看不到效果？下拉、划船、弹力带训练做了不少，背部没什么感觉，反而手臂先酸、肩颈先紧、上斜方肌先累。 问题未必",
+"likes": 54,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NTI0ODQwMQ==&mid=2651273055&idx=1&sn=a94c8ac66497f956bda835e4d55932e2#rd",
+"published_at": "2026-08-29 12:00:00"
+},
+{
+"id": "DY103",
+"platform": "抖音",
+"title": "关于我只花49在万家丽配防蓝光眼镜这件事！#长沙万家丽#长沙眼镜店#长沙配眼镜#小团眼镜",
+"desc": "",
+"likes": 2006,
+"comments": 25,
+"url": "https://www.iesdouyin.com/share/video/7679291889414479781",
+"published_at": "2026-08-29 11:34:34"
+},
+{
+"id": "DY105",
+"platform": "抖音",
+"title": "小团眼镜竟然也开到万家丽了 现在49就可以配一整幅防蓝光眼镜 新店开业活动 你们快冲！#长沙万家丽#",
+"desc": "",
+"likes": 1061,
+"comments": 10,
+"url": "https://www.iesdouyin.com/share/video/7679287839373442030",
+"published_at": "2026-08-29 11:18:51"
+},
+{
+"id": "GZH226",
+"platform": "公众号",
+"title": "赛考斯万里赴华赴约，路费吃住谁买单？这个",
+"desc": "69 岁的美国退休教师赛考斯，飞了 30 多个小时、中间还多次中转，就为了来见治沙英雄殷玉珍一面。二十多年前他看到殷玉珍治沙的事迹，主动帮着募捐。这次跨越万里来重逢，没带任何官方任务，也没拉商业赞助。跨国路费全是他自己掏的腰包——人家有稳定退休金，这笔开销扛得住。到了国内，食宿和短途出行由我方工作人员和热心朋友承担。这是咱们中国人记恩情、尽地主之谊，不是外界传的“全程包干接待”。现在很多人习惯拿利益算一切，默认所有奔赴都带目的。可这场双向奔赴里，最扎心的就是：善意真能跨过山海，也真能等上二十年。",
+"likes": 34,
+"comments": 14,
+"url": "https://mp.weixin.qq.com/s?__biz=MzYzNzE0ODMyOQ==&mid=2247484487&idx=1&sn=4d0337459aaeb4e64ecc7540eefd2b59#rd",
+"published_at": "2026-08-29 06:54:35"
+},
+{
+"id": "XHS28",
+"platform": "小红书",
+"title": "比普通透光率高30% 智能变焦老花镜‼️",
+"desc": "#老花镜 #老花镜推荐 #老花镜推荐送妈妈 #好物#好物推荐 #好物分享 #爱用好物 ",
+"likes": 30,
+"comments": 15,
+"url": "https://www.xiaohongshu.com/explore/6a918f90000000002c03cd45",
+"published_at": "2026-08-28 21:39:28"
+},
+{
+"id": "XHS128",
+"platform": "小红书",
+"title": "GRWM 轻熟高智感👓职场人的本命眼镜 •₊˚🎧",
+"desc": "想要打造清淡的通勤妆，一副高智感的眼镜真的加分不少。\n很喜欢无框的简约利落，也越发体会到镜片选择的重要性。\n最近被种草了明月1.71PMC超亮镜片A8膜，镜片真的蛮透亮的，不管是日常上班，还是随手拍记录都很好戴~\n配镜不要只关注镜框，镜片也很重要，给准备配镜的朋友们做个小参考。\n#明月镜片#明月PMC超亮镜片#明月171PMC超亮镜片A8膜 #眼镜 #妆个新人设 #无边框眼镜 #高智感 #职场穿搭",
+"likes": 418,
+"comments": 35,
+"url": "https://www.xiaohongshu.com/explore/6a901c32000000000502b538",
+"published_at": "2026-08-28 21:33:33"
+},
+{
+"id": "DY41",
+"platform": "抖音",
+"title": "#思考  #认知 #老花镜",
+"desc": "",
+"likes": 1225,
+"comments": 61,
+"url": "https://www.iesdouyin.com/share/video/7679052134167366946",
+"published_at": "2026-08-28 20:04:20"
+},
+{
+"id": "DY151",
+"platform": "抖音",
+"title": "今天在公司一口气爽喝四杯奶茶！！！#日常vlog #深漂 #明月镜片 #明月PMC超亮镜片 #明月1",
+"desc": "",
+"likes": 2094,
+"comments": 63,
+"url": "https://www.iesdouyin.com/share/video/7678982533828563042",
+"published_at": "2026-08-28 19:31:01"
+},
+{
+"id": "DY149",
+"platform": "抖音",
+"title": "马上开学了，孩子心乱如麻，爹妈乐开了花#开学#明月镜片#明月轻松控#好视力就要轻松控",
+"desc": "",
+"likes": 3709,
+"comments": 142,
+"url": "https://www.iesdouyin.com/share/video/7678913378379274057",
+"published_at": "2026-08-28 18:01:34"
+},
+{
+"id": "XHS79",
+"platform": "小红书",
+"title": "孩子近视防控必看！尼康控优点2.0绝了   ",
+"desc": "[看R]先看小朋友度数：\n右眼：‑1.50 近视/‑0.50 散光\n左眼：‑1.25 近视/‑1.00 散光\n小朋友带有散光\n[向右R]选择的是尼康1.591控优点2.0镜片高透高洁UV\n兼顾矫正视力和近视管理需求[赞R]\n\t\n尼康在光学镜片领域口碑过硬\n[加一R]1.591折射率的镜片轻，小朋友佩戴不压鼻\n控优点2.0是主打近视管理的镜片\n[加一R]采用降低对比度的技术，\n让进入眼睛的光线实现柔和散射\n这种方式能适度降低视网膜上的视觉对比度\n帮助延缓近视度数增长\n[加一R]高透高洁膜层的透光率高\n抗油污好打理，小孩子佩戴清理也很方便[萌萌哒R]\n\t\n[向右R]镜架选的是目意\n目意这款是多边形金属镜框，金属框面精致耐看\n镜尾搭配薄荷绿软胶套\n佩戴稳固，运动低头不容易滑落[赞R]\n整体框型大小合适\n适配防控镜片加工\n\t\n镜整幅眼镜的外观配色清爽\n小孩子佩戴起来很显干净利落\n\t\n镜框采用纯钛材质生产，重量很轻[哇R]\n日常佩戴起来舒适又好看\n\t\n另外防控镜片对加工精度要求很高\n参数不准会影响防控效果\n有需要配眼镜的朋友\n可以评论区留下你的度数\n给你出专属配镜方案[派对R][派对R]\n\t\n[",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a8fd9b600000000240061dd",
+"published_at": "2026-08-28 18:00:24"
+},
+{
+"id": "DY130",
+"platform": "抖音",
+"title": "出片！戴眼镜拍照必吃榜！轻薄净透🧊素颜天菜 #明月镜片 #明月PMC超亮镜片 #明月171PMC超",
+"desc": "",
+"likes": 12909,
+"comments": 100,
+"url": "https://www.iesdouyin.com/share/video/7678643591250642594",
+"published_at": "2026-08-28 17:31:07"
+},
+{
+"id": "DY71",
+"platform": "抖音",
+"title": "老药新用：老花眼滴眼液原理。 #老花眼 #老花眼滴眼液 #老花眼手术 #北京协和医院眼科张顺华 #抖",
+"desc": "",
+"likes": 2062,
+"comments": 57,
+"url": "https://www.iesdouyin.com/share/video/7677768570394168602",
+"published_at": "2026-08-28 17:30:00"
+},
+{
+"id": "DY129",
+"platform": "抖音",
+"title": "我那阴晴不定的妈 #明月镜片 #明月轻松控 #好视力就要轻松控 #双胞胎 #搞笑父子",
+"desc": "",
+"likes": 16394,
+"comments": 213,
+"url": "https://www.iesdouyin.com/share/video/7678922700202488059",
+"published_at": "2026-08-28 16:30:50"
+},
+{
+"id": "DY42",
+"platform": "抖音",
+"title": "最近看东西总模糊，想着配副老花镜。岁月真是悄悄的来，不服老不行啦#生活碎片 #日常vlog #日常分",
+"desc": "",
+"likes": 1202,
+"comments": 112,
+"url": "https://www.iesdouyin.com/share/video/7678900620887986107",
+"published_at": "2026-08-28 16:00:00"
+},
+{
+"id": "XHS120",
+"platform": "小红书",
+"title": "离焦防控眼镜怎么选｜近视家庭真实亲测分享",
+"desc": "有没有宝妈跟我一样，发现孩子总爱眯眼、频繁揉眼睛😣\n我家娃前段时间也出现过这种情况，检查万幸只是假性近视，当时真的被吓到了。\n现在小朋友近视年龄越来越小，一旦发展成真性近视就不可逆，度数很容易一路上涨。\n翻了很多科普、咨询眼科医生之后，整理出全套护眼方案✨\n👉第一步先去医院散瞳验光，分清真性、假性近视\n假性近视调整用眼习惯有机会恢复；真性近视重点是控制眼轴、延缓度数加深。\n✅基础防护三件套\n▪每日户外≥2小时，光照是抑制眼轴增长最好办法\n▪严格执行20‑20‑20用眼法则，读写一拳一尺一寸\n▪3岁之后每半年复查视力、监测眼轴\n✅辅助干预\n真性近视听从医生建议，可以选择专业离焦防控眼镜\n✅日常食补\n多吃菠菜、玉米、南瓜等富含叶黄素、玉米黄质食材，均衡补充维A、钙和蛋白质\n近视防控是一场长期坚持，细节做好就能稳稳守护孩子清晰视界。\n#儿童近视防控#护眼干货#育儿干货#新手宝妈 #儿童眼镜 #明月镜片 #儿童护眼 #保护视力健康 #近视防控 #小学生视力",
+"likes": 3554,
+"comments": 59,
+"url": "https://www.xiaohongshu.com/explore/6a8c846e0000000025026883",
+"published_at": "2026-08-28 14:17:19"
+},
+{
+"id": "GZH47",
+"platform": "公众号",
+"title": "重庆再添10条适老化公交线路，看看经过爸妈家吗→",
+"desc": "老有所行，是一座城市的温柔    聚焦老年人高频出行需求    重庆今年新增10条适老化公交线路    🚌🚌🚌    低地板车辆，抬脚即上车    超大字体线路号远远就能看见    还有车厢里常备老花镜、纸巾、矿泉水    ……    一系列适老化细节    让老人买菜、逛公园的日常出行更顺畅",
+"likes": 181,
+"comments": 6,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4MzA0MTA4NA==&mid=2658856874&idx=1&sn=ef1d1dd10b24284f4f6bd01b98100e8f#rd",
+"published_at": "2026-08-28 09:06:17"
+},
+{
+"id": "GZH168",
+"platform": "公众号",
+"title": "第二天, 在丧父之后, 谢霆锋就赶去赴生日之约, 谢霆锋对霍…",
+"desc": "第二天, 在丧父之后, 谢霆锋就赶去赴生日之约, 谢霆锋对霍汶希极为珍视, 这份珍视包含着她情谊, 霍汶希是那种在谢霆锋生命里不可或缺的贵人。提到霍汶希, 不少人大概不会觉得陌生, 她作为资深经纪人, 在香港娱乐圈的地位相当重要, 她手下艺人资源极为丰富多得数不清, 她能在竞争这般激烈的圈子里一直保持自身影响力, 这和她的能力以及人脉有着很大关系。于霍汶希的朋友圈之中, 谢霆锋无疑是极为关键的人物。两人相识了好多好多年, 自谢霆锋事业刚起头的时候, 再到一步步不断发展直至当下这般状况, 一路走来都离不开霍汶希给予的支持以及提供的帮助。可以这样讲, 在谢霆锋的人生经历里, 霍汶希宛如一盏明亮的灯, 为他指引着向前走的方向。最近, 一则跟霍汶希相关的消息再度引起了众人的关注。就在不久之前, 霍汶希在她自己的社交平台上传了几张照片, 以此来庆祝自己54岁生日。而在这次生日聚会当中, 谢霆锋也依照约定抵达, 在霍汶希身边陪伴着。提及值得注意的是, 此次谢霆锋呈现出的状态似乎并非良好, 他不像以往那样，面对镜头展现出耀眼璀璨的笑容, 反而是神情庄重严肃地托着蛋糕的底盘, 看起来颇为沉重。心思较为",
+"likes": 576,
+"comments": 69,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzMzY0NzMzMg==&mid=2247485909&idx=1&sn=0462c679253b7cc618faba7cc2f60335#rd",
+"published_at": "2026-08-28 07:22:00"
+},
+{
+"id": "GZH133",
+"platform": "公众号",
+"title": "88岁奶奶遇到眼镜蛇，一脚踢过去被咬伤；夫妻双双去世，消防提醒；“兔子警官”回应辅警身份 | 夜读三分钟",
+"desc": "8月26日10时30分许，因尼泊尔一侧发生泥石流灾害，造成西藏日喀则市吉隆县吉隆口岸重大人员伤亡、失联。自然资源部有关专家表示，此次灾害由尼泊尔境内高位冰川崩塌引发。冰崩落体高速下泄，沿沟道裹挟冰碛物演变为碎屑流，进而汇入吉隆藏布形成泥石流，冲击吉隆口岸并向下游尼泊尔方向运动。（新华社）\n8月27日",
+"likes": 65,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA4NzAzNjYwNw==&mid=2652929671&idx=1&sn=5b3ce555e2aa8556b18800f9ae98f0cc#rd",
+"published_at": "2026-08-27 22:31:36"
+},
+{
+"id": "DY65",
+"platform": "抖音",
+"title": "我的老花眼，终于搭配上了我苍老的灵魂",
+"desc": "",
+"likes": 2616,
+"comments": 415,
+"url": "https://www.iesdouyin.com/share/video/7678712150377958696",
+"published_at": "2026-08-27 22:05:05"
+},
+{
+"id": "DY80",
+"platform": "抖音",
+"title": "#老花眼 #眼睛一带谁都不爱 #店内实拍视频 #上班娱乐两不误开心最重要 #肖克全牛汤锅天北店 @肖",
+"desc": "",
+"likes": 1140,
+"comments": 63,
+"url": "https://www.iesdouyin.com/share/video/7678691289647238777",
+"published_at": "2026-08-27 20:43:56"
+},
+{
+"id": "DY145",
+"platform": "抖音",
+"title": "千万别找90后当父母了！ #明月镜片 #明月轻松控 #好视力就要轻松控 #骗你生女儿 #亲子日常",
+"desc": "",
+"likes": 6844,
+"comments": 206,
+"url": "https://www.iesdouyin.com/share/video/7678554730704757234",
+"published_at": "2026-08-27 20:00:57"
+},
+{
+"id": "DY101",
+"platform": "抖音",
+"title": "欢迎收看和小姐妹在万家丽花49块配防蓝光眼镜的vlog～小团眼镜新店开业+开学季活动真的巨划算！！！",
+"desc": "",
+"likes": 4043,
+"comments": 102,
+"url": "https://www.iesdouyin.com/share/video/7678656670545721844",
+"published_at": "2026-08-27 18:29:35"
+},
+{
+"id": "XHS74",
+"platform": "小红书",
+"title": "远储25-125，1年时间慢慢养回来的眼睛",
+"desc": "远视储备不足千万別摆烂！班上同学很多都因为摆烂错过了Z佳“练眼”时间！\n\t\n远视储备不足以后的这一年，眼睛最开始干涩、酸胀、畏光，再到现在的远储125，今天就把我这一年带孩子护眼的心得分享出来，再次提醒各位宝妈，千万別摆烂！！\n\t\n❤️👀我的护眼思路超清晰：养成好习惯+光学放松睫状肌+戒掉伤眼误区\n\t\n🌿【坚持眼部放松训练】\n每天早晚10分钟远眺对焦训练\n盯着远处固定景物、远近交替视物\n配合护眼镜，双重放松眼部肌肉，告别用眼酸胀疲劳。\n\t\n👓【保持断近望远的好习惯】\n小学生近视原因：长时间近距离用眼，睫状肌持续紧绷！所以我选择科学的产品帮助“断近望远”：耐德佳正姿护眼镜。\n✅🌟原理很巧妙，光学反射可以把30厘米读写距离，拉远到3‑8米，相当于写作业的时候眼睛也在望远，做到“断近望远”，辅助孩子保持合理读写距离，减少贴书、趴近书本的情况。养成良好坐姿。\n✅孩子写作业、上网课的同时，眼睛一直在望远放松！从根本缓解视疲劳、稳住眼轴增长。自带抬高视线角度，孩子会主动抬头坐直、再也不用我一遍遍吼抬头、别趴桌！机身轻巧不压鼻，居家、写作业、上网课都能戴，日常护眼超省心。\n✅机身很轻巧，重量轻，放书",
+"likes": 302,
+"comments": 29,
+"url": "https://www.xiaohongshu.com/explore/6a900c370000000020032e07",
+"published_at": "2026-08-27 18:28:31"
+},
+{
+"id": "XHS41",
+"platform": "小红书",
+"title": "花画多了，弄把扇子放松一下我的老花眼",
+"desc": "经常刷到一些做扇子的博主的作品\n就一直挺羡慕的\n一个多月前买了四把扇子放着落灰\n今天不想画色彩的了\n拿出扇子来放松下\n#我的手工日常 #手工艺 #扇面 #定制 #扇子 #手绘 #礼物 #非遗 #折扇 #纹样 ",
+"likes": 22,
+"comments": 17,
+"url": "https://www.xiaohongshu.com/explore/6a900ce0000000002303e37a",
+"published_at": "2026-08-27 18:09:36"
+},
+{
+"id": "DY143",
+"platform": "抖音",
+"title": "竟然被作业做局了。。。 #满级小孩#斗智斗勇的日常#明月镜片 #明月轻松控 #好视力就要轻松控",
+"desc": "",
+"likes": 8358,
+"comments": 181,
+"url": "https://www.iesdouyin.com/share/video/7678539140921500913",
+"published_at": "2026-08-27 18:01:20"
+},
+{
+"id": "XHS93",
+"platform": "小红书",
+"title": "防蓝光猫眼眼镜框💚素颜天菜真的绝",
+"desc": "清透绿框搭配细金内圈，质感高级又耐看。\n利落的猫眼上扬框型，能柔和修饰脸部线条，素颜佩戴也很提气质。\n虽然普通人群使用防蓝光效果有限，但搭配这款清冷绿框，日常通勤也能兼顾舒适与护眼。\n整体轻盈舒适，可配近视、防蓝光镜片，日常通勤、约会出游都适配，低调又精致。\n#灰金猫眼眼镜 #清冷感眼镜 #方圆脸眼镜 #素颜眼镜 #通勤眼镜 #金丝眼镜 #微猫眼眼镜 #好视频扶持计划 #椭圆眼镜 #素颜眼镜 #通勤眼镜 #金丝眼镜框 #半钛眼镜 #高度数眼镜 #小框眼镜 #复古眼镜 #宝克利眼镜 #变色眼镜 #老钱风眼镜 #眼镜推荐#墨镜推荐 #墨镜推荐女 #眼镜框推荐女 #配眼镜 #半框眼镜#防蓝光眼镜 #近视眼镜 #眼镜框推荐 #眼镜框怎么选 #眼镜框 #眼镜推荐 #镜框 #方圆脸眼镜框 #素颜眼镜 #眼镜 #书呆子眼镜 #黑框眼镜 #小红书市集66周年庆 #显脸小眼镜框 #猫眼眼镜#太阳眼镜 、#镜框怎么选",
+"likes": 1,
+"comments": 0,
+"url": "https://www.xiaohongshu.com/explore/6a900496000000002003faa3",
+"published_at": "2026-08-27 17:34:14"
+},
+{
+"id": "DY84",
+"platform": "抖音",
+"title": "原来还有自动对焦的隐形眼镜？#隐形#半年抛#sweetcolor #渐进多焦点镜片",
+"desc": "",
+"likes": 1181,
+"comments": 35,
+"url": "https://www.iesdouyin.com/share/video/7678640012707546218",
+"published_at": "2026-08-27 17:24:58"
+},
+{
+"id": "DY50",
+"platform": "抖音",
+"title": "眼睛少干涩少模糊，一定要看完视频  #干眼症  #老花眼  #眼疲劳  #医学科普  #抖出健康知识",
+"desc": "",
+"likes": 43641,
+"comments": 575,
+"url": "https://www.iesdouyin.com/share/video/7678637119283137838",
+"published_at": "2026-08-27 17:13:47"
+},
+{
+"id": "XHS126",
+"platform": "小红书",
+"title": "英硕MKT打工人｜职场高智感👓分享",
+"desc": "职场氛围感真的全靠细节支撑✨\n日常通勤、开会很喜欢用无框眼镜做搭配\n干净利落，很有职场高智感!!!!\n之前买的镜片，上镜很闷还容易反光\n*整个人的精致感都被拉低了\n换了明月1.71PMC超亮镜片A8膜之后\n终于找到合适的职场配镜状态👓\n职场配饰真的不用复杂，选对镜片☑️\n轻松拿捏干净松弛的专业质感。\n#明月镜片 #明月PMC超亮镜片#明月171PMC超亮镜片A8膜 #职场好物 #近视眼镜 #眼镜分享 #打工人日常",
+"likes": 234,
+"comments": 40,
+"url": "https://www.xiaohongshu.com/explore/6a8fe11f000000002501cd9b",
+"published_at": "2026-08-27 17:10:21"
+},
+{
+"id": "DY33",
+"platform": "抖音",
+"title": "百善孝为先 #抖音短剧 #老花镜 #抖音短剧新番计划 #百亿剧好看计划 #短剧推荐",
+"desc": "",
+"likes": 2880,
+"comments": 110,
+"url": "https://www.iesdouyin.com/share/video/7678605134309510434",
+"published_at": "2026-08-27 15:09:42"
+},
+{
+"id": "DY30",
+"platform": "抖音",
+"title": "美妆老花镜，送给自己的一份清晰与精致。 #老花镜 #巴宝莎 #老花镜推荐#好物推荐🔥",
+"desc": "",
+"likes": 4873,
+"comments": 63,
+"url": "https://www.iesdouyin.com/share/video/7678604342848458047",
+"published_at": "2026-08-27 15:06:37"
+},
+{
+"id": "DY154",
+"platform": "抖音",
+"title": "南吴眼镜搞活动啦~100多就能配镜超划算！ #明月镜片 #南吴眼镜 #南京配镜 #明月pmc超亮镜片",
+"desc": "",
+"likes": 1252,
+"comments": 9,
+"url": "https://www.iesdouyin.com/share/video/7678579667493809382",
+"published_at": "2026-08-27 13:30:47"
+},
+{
+"id": "GZH272",
+"platform": "公众号",
+"title": "新疆发布重要消费提示！",
+"desc": "8月26日，自治区市场监督管理局、新疆生产建设兵团市场监督管理局联合发布消费提示，普及劣质太阳镜危害、太阳镜科学选购方法及佩戴保养常识，引导消费者安全、理性选购使用太阳镜。\n生活中，不少消费者存在“镜片颜色越深，防晒效果越好”的认知误区。事实上，太阳镜的防紫外线能力与镜片深浅无关联。多数劣质深色镜片",
+"likes": 89,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MjM5NDk5Nzc4MA==&mid=2652023588&idx=1&sn=6483434af2544db96e9a560a7a746097#rd",
+"published_at": "2026-08-27 13:30:00"
+},
+{
+"id": "GZH247",
+"platform": "公众号",
+"title": "黎明眼镜视光中心│教师节献礼：500元镜框加镜片免费领，名品配镜享 5 折，还有青控折后立减！",
+"desc": "转发链接至朋友圈即可参与         需携带教师证\nHAPPY TEACHERS' DAY                                                                                                       ",
+"likes": 94,
+"comments": 0,
+"url": "https://mp.weixin.qq.com/s?__biz=MzA5MzA3NDAwMg==&mid=2651004588&idx=1&sn=f04bc85a1b6d1d0677569f9b999fdf06#rd",
+"published_at": "2026-08-27 11:18:10"
+},
+{
+"id": "XHS69",
+"platform": "小红书",
+"title": "长期盯屏幕终于找到护眼镜片✨",
+"desc": "上班族、天天对着电脑手机的宝子应该都懂\n一天下来视线在屏幕、文件、远处景物来回切换，眼睛干涩酸胀，下班之后满眼疲惫，连头都会隐隐发沉。\n最近换新眼镜，选了这款专门适配数码用眼的镜片-藤目数码缓控镜片。镜片轻薄通透，上脸没有压迫感，久戴也不会压鼻梁。\n远-中-近视野过渡顺滑自然，看电脑、文件不用频繁调节眼球，有效舒缓睫状肌紧张，减少屏幕眩光刺激。\n长时间办公用眼也不容易眼胀头疼，就算是第一次佩戴数码功能镜片，适应起来也很轻松，日常通勤办公都很合适。\n#明星不止AB面\n#护眼好物\n#上班族眼镜\n#防视疲劳\n#配镜分享\n#数码缓控镜片\n#藤目镜片",
+"likes": 99,
+"comments": 2,
+"url": "https://www.xiaohongshu.com/explore/6a8fab46000000002003280a",
+"published_at": "2026-08-27 11:13:10"
+},
+{
+"id": "GZH70",
+"platform": "公众号",
+"title": "47岁刘涛彻底变了，前半生拿命换钱，后半生终于学会放过自己",
+"desc": "47岁刘涛彻底变了，前半生拿命换钱，后半生终于学会放过自己大伙眼中, 刘涛向来是内娱公认的“女强人”, 拍戏在行, 主持拿手, 带货也熟练。常常是常年持续连轴转动的状态, 致使人们觉得她精力无穷无尽、永远都不会感到疲惫。然而却没人晓得, 看似坚不可摧的她, 身体其实早就暗暗出现了透支的情况。刘涛的一生, 差不多都在“拼命”当中度过, 她自幼父母离异, 只能寄人篱下, 小小年纪就包揽了所有家务, 早早地就练就了坚韧隐忍的性格, 顺利入行之后, 她凭借多部经典作品站稳了脚跟, 本可以嫁入豪门安稳过生活, 哪知道却遭遇丈夫生意崩盘, 负债达到了数亿的绝境, 身怀二胎的她没有选择退缩, 产后很快地就复出了, 四年里连拍了25部戏, 还带着病以高强度拍戏, 十六年咬着牙还清了4.02亿的巨债。耗费巨大精力才迎来安稳状态, 可是身体也因此被严重损耗。现在这位47岁的她, 身体布满伤痛疾病, 腰椎出现错位情况, 膝盖有着旧有的病症, 还患有慢性胃炎, 甲状腺也有结节, 早早地就患上了老花眼, 并且长达八年都存在严重的失眠状况, 每天只能够睡三四个小时。在片场无数次强忍着病痛, 深夜里多次情绪崩溃忍不",
+"likes": 66,
+"comments": 7,
+"url": "https://mp.weixin.qq.com/s?__biz=MzkzNDkxNDc0MA==&mid=2247490992&idx=1&sn=16c10bfa6b572c143f28c18b97eb6b3b#rd",
+"published_at": "2026-08-27 07:37:00"
+}
+];
 const BRAND_NAMES = {"蔡司": ["zeiss", "蔡司镜片", "蔡司眼镜", "熠光", "驾驶渐进镜", "办公镜"], "依视路": ["essilor", "依视路镜片", "万里路", "爱赞数码"], "豪雅": ["hoya", "豪雅镜片", "悦览", "豪雅手机镜"], "明月": ["明月镜片"], "凯米": ["kemi", "凯米镜片"], "尼康": ["nikon", "尼康镜片", "尼康眼镜", "数码镜", "办公镜", "渐进镜"]};
 const DEFAULT_POS_GROUPS = {"清晰度": ["清晰", "高清", "透亮", "通透", "锐利"], "舒适度": ["舒服", "舒适", "无感", "不晕", "适应快", "自然", "轻松", "轻便", "轻盈"], "性价比": ["性价比", "值", "划算", "不贵", "便宜", "省钱", "折扣", "折", "实惠"], "品质感": ["品质", "做工好", "德国", "精工", "大牌", "高端", "专业", "正品", "授权", "进口"], "功能效果": ["防蓝光", "防疲劳", "抗疲劳", "护眼", "改善", "缓解", "有用"], "服务体验": ["服务好", "专业验光", "耐心", "满意", "推荐", "安利", "种草", "惊喜", "好镜片"]};
 const DEFAULT_NEG_GROUPS = {"佩戴不适": ["头晕", "眩晕", "不适应", "难受", "不舒服", "恶心"], "质量问题": ["划痕", "磨损", "脱膜", "气泡", "模糊", "反光", "眩光", "变形"], "价格问题": ["贵", "太贵", "不值", "智商税", "坑", "暴利", "被宰", "虚高"], "验配失败": ["验光不准", "度数不对", "配错了", "退货", "翻车", "踩坑", "避雷", "避坑"], "服务差": ["态度差", "敷衍", "不专业", "忽悠", "骗", "踩雷"], "适应失败": ["白配"]};
